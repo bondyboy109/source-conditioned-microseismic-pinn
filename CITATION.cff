@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated manuscript."
+title: "Source-Conditioned Frequency-Progressive PINN for Microseismic Imaging"
+type: software
+authors:
+  - family-names: Tian
+    given-names: Ruyun
+  - family-names: Wu
+    given-names: Xiaopeng
+version: 0.1.0
+date-released: 2026-09-22

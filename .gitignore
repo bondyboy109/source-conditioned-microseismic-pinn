@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.conda/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Models, checkpoints, and run products
+*.pth
+*.pt
+*.ckpt
+outputs/*
+!outputs/.gitkeep
+checkpoints/
+runs/
+logs/
+
+# Large or externally licensed scientific data
+*.vites
+*.sgy
+*.segy
+*.su
+*.npy
+*.npz
+data/velocity/*
+data/observations/*
+!data/velocity/.gitkeep
+!data/observations/.gitkeep
+!examples/*.npz
+
+# Generated figures and reports
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.log
