@@ -1,0 +1,1670 @@
+{
+  "purpose": "one-time untouched-event confirmation of the frozen five-member source-conditioned ensemble",
+  "protocol": "E:\\source-conditioned-microseismic-pinn\\experiments\\source_conditioned_ensemble_confirmation_protocol.json",
+  "protocol_sha256": "e727f50ff17fb6b60004d5686d78adde23822a8e2a5fac3e9b63a8cd31bd173c",
+  "ensemble_manifest_sha256": "0a62db782ca55a74645e812039ed14e3abaaa56761a432ca11013679d52d6822",
+  "independent_confirmation": true,
+  "ensemble_size": 5,
+  "event_count": 8,
+  "component_summary": {
+    "x": {
+      "covered_events": 7,
+      "empirical_coverage_fraction": 0.875,
+      "mean_nominal_interval_width": 2509.9553209837136,
+      "median_nominal_interval_width": 2128.813535151354,
+      "unit": "m"
+    },
+    "y": {
+      "covered_events": 6,
+      "empirical_coverage_fraction": 0.75,
+      "mean_nominal_interval_width": 1782.7089105362265,
+      "median_nominal_interval_width": 1952.2589733669074,
+      "unit": "m"
+    },
+    "z": {
+      "covered_events": 5,
+      "empirical_coverage_fraction": 0.625,
+      "mean_nominal_interval_width": 1143.4746204841026,
+      "median_nominal_interval_width": 1070.1745169738433,
+      "unit": "m"
+    },
+    "origin_time": {
+      "covered_events": 6,
+      "empirical_coverage_fraction": 0.75,
+      "mean_nominal_interval_width": 0.31202081974362755,
+      "median_nominal_interval_width": 0.28703446522259735,
+      "unit": "s"
+    }
+  },
+  "ensemble_mean_summary": {
+    "mean_location_error_m": 901.1066049003937,
+    "median_location_error_m": 753.318866538322,
+    "locations_below_500_m": 1,
+    "mean_origin_time_error_s": 0.08025438860058784,
+    "median_origin_time_error_s": 0.05273003205657005,
+    "origin_times_below_0_05_s": 3
+  },
+  "fmm_summary": {
+    "successful_events": 7,
+    "mean_location_error_m": 305.9479651121718,
+    "median_location_error_m": 336.4010641541288,
+    "setup_seconds": 38.926276599999255,
+    "total_search_seconds": 0.556622400003107
+  },
+  "predeclared_gate_results": {
+    "six_ensemble_locations_below_500_m": false,
+    "six_ensemble_origin_times_below_0_05_s": false,
+    "ensemble_median_location_below_500_m": false,
+    "ensemble_median_location_below_fmm_median": false,
+    "each_component_coverage_at_least_six_of_eight": false,
+    "mean_x_width_below_2000_m": false,
+    "mean_y_width_below_2000_m": true,
+    "mean_z_width_below_1000_m": false,
+    "mean_origin_time_width_below_0_30_s": false,
+    "all_fmm_events_have_six_valid_picks": false
+  },
+  "all_predeclared_gates_passed": false,
+  "cost": {
+    "fd_data_generation_seconds": 68.43617629999972,
+    "forty_member_event_inversions_seconds": 145.2021547000004,
+    "mean_inversion_seconds_per_member_event": 3.63005386750001,
+    "fmm_setup_seconds": 38.926276599999255,
+    "fmm_eight_search_seconds": 0.556622400003107
+  },
+  "events": [
+    {
+      "event": "confirm_01_sw_shallow.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\source_conditioned_ensemble_confirmation\\confirm_01_sw_shallow.npz",
+      "sha256": "64ee4fb43e0b92a78a10aee0835213165ec532d3f78a0035c49e5344387819e0",
+      "source_truth_m_s": [
+        2500.0,
+        2500.0,
+        300.0,
+        0.09000000357627869
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "estimated_source_m_s": [
+            2319.387451171875,
+            2000.0,
+            228.5817108154297,
+            0.20906007289886475
+          ],
+          "component_error_m_s": [
+            -180.612548828125,
+            -500.0,
+            -71.41828918457031,
+            0.11906006932258606
+          ],
+          "location_error_m": 536.3967419962977,
+          "origin_time_error_s": 0.11906006932258606,
+          "raw_true_source_waveform_relative_l2": 1.04950319750697,
+          "inversion_seconds": 4.604134200000772
+        },
+        {
+          "seed": 7,
+          "estimated_source_m_s": [
+            2000.0,
+            2000.0,
+            275.24847412109375,
+            0.07486467063426971
+          ],
+          "component_error_m_s": [
+            -500.0,
+            -500.0,
+            -24.75152587890625,
+            -0.015135332942008972
+          ],
+          "location_error_m": 707.5398490780107,
+          "origin_time_error_s": 0.015135332942008972,
+          "raw_true_source_waveform_relative_l2": 1.0195981742251816,
+          "inversion_seconds": 3.5014389000007213
+        },
+        {
+          "seed": 123,
+          "estimated_source_m_s": [
+            2000.0,
+            2000.0,
+            817.88623046875,
+            0.12683168053627014
+          ],
+          "component_error_m_s": [
+            -500.0,
+            -500.0,
+            517.88623046875,
+            0.036831676959991455
+          ],
+          "location_error_m": 876.4737005233707,
+          "origin_time_error_s": 0.036831676959991455,
+          "raw_true_source_waveform_relative_l2": 1.0905992175137247,
+          "inversion_seconds": 3.5460012999992614
+        },
+        {
+          "seed": 2028,
+          "estimated_source_m_s": [
+            2233.382080078125,
+            2342.371826171875,
+            320.13055419921875,
+            0.18746136128902435
+          ],
+          "component_error_m_s": [
+            -266.617919921875,
+            -157.628173828125,
+            20.13055419921875,
+            0.09746135771274567
+          ],
+          "location_error_m": 310.3820156198239,
+          "origin_time_error_s": 0.09746135771274567,
+          "raw_true_source_waveform_relative_l2": 1.0525124699531385,
+          "inversion_seconds": 3.6516986999995424
+        },
+        {
+          "seed": 4096,
+          "estimated_source_m_s": [
+            2172.82763671875,
+            2000.0,
+            730.9461059570312,
+            0.11881045997142792
+          ],
+          "component_error_m_s": [
+            -327.17236328125,
+            -500.0,
+            430.94610595703125,
+            0.02881045639514923
+          ],
+          "location_error_m": 736.7199614063454,
+          "origin_time_error_s": 0.02881045639514923,
+          "raw_true_source_waveform_relative_l2": 1.0926796573915074,
+          "inversion_seconds": 3.8671384999997827
+        }
+      ],
+      "ensemble_mean_m_s": [
+        2145.11943359375,
+        2068.474365234375,
+        474.55861511230466,
+        0.14340564906597136
+      ],
+      "sample_standard_deviation_m_s": [
+        142.3434940984249,
+        153.11333538021083,
+        277.3470716786028,
+        0.05438036095895403
+      ],
+      "nominal_95_percent_interval_lower_m_s": [
+        1866.126185160837,
+        1768.3722278891619,
+        -69.04164537775682,
+        0.03682014158642147
+      ],
+      "nominal_95_percent_interval_upper_m_s": [
+        2424.1126820266627,
+        2368.576502579588,
+        1018.1588756023662,
+        0.24999115654552126
+      ],
+      "nominal_interval_width_m_s": [
+        557.9864968658258,
+        600.2042746904262,
+        1087.200520980123,
+        0.2131710149590998
+      ],
+      "truth_covered_by_nominal_interval": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "ensemble_mean_location_error_m": 585.3420367465694,
+      "ensemble_mean_origin_time_error_s": 0.05340564548969268,
+      "ensemble_mean_waveform_relative_l2": 0.9860084696496207,
+      "fmm": {
+        "estimated_source_m_s": [
+          2414.814814814815,
+          2118.5185185185187,
+          603.7037037037038,
+          0.05
+        ],
+        "arrival_rmse_s": 0.08581899642472993,
+        "valid_fd_picks": 8,
+        "picked_arrivals_s": [
+          0.20000000298023224,
+          0.7880000472068787,
+          1.7640000581741333,
+          null,
+          null,
+          0.6960000395774841,
+          0.9900000691413879,
+          1.7760001420974731,
+          null,
+          null,
+          1.5420000553131104,
+          1.7080000638961792,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "candidate_count": 2340,
+        "source_truth_used_in_search": false,
+        "status": "ok",
+        "component_error_m_s": [
+          -85.18518518518522,
+          -381.4814814814813,
+          303.7037037037038,
+          -0.040000003576278684
+        ],
+        "location_error_m": 494.9955314259788,
+        "origin_time_error_s": 0.040000003576278684,
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\source_conditioned_ensemble_confirmation\\confirm_01_sw_shallow.npz",
+        "sha256": "64ee4fb43e0b92a78a10aee0835213165ec532d3f78a0035c49e5344387819e0",
+        "source_truth_m_s_post_search": [
+          2500.0,
+          2500.0,
+          300.0,
+          0.09000000357627869
+        ],
+        "search_seconds": 0.061260000000402215
+      }
+    },
+    {
+      "event": "confirm_02_se_deep.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\source_conditioned_ensemble_confirmation\\confirm_02_se_deep.npz",
+      "sha256": "1f218ee138130417d63a5c3e6a094483a40723f25f40cf401c33db0c87c8beca",
+      "source_truth_m_s": [
+        13500.0,
+        2500.0,
+        1300.0,
+        0.4399999976158142
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "estimated_source_m_s": [
+            13806.314453125,
+            3108.0439453125,
+            538.1034545898438,
+            0.5
+          ],
+          "component_error_m_s": [
+            306.314453125,
+            608.0439453125,
+            -761.8965454101562,
+            0.06000000238418579
+          ],
+          "location_error_m": 1021.7790022956963,
+          "origin_time_error_s": 0.06000000238418579,
+          "raw_true_source_waveform_relative_l2": 1.0095591853544157,
+          "inversion_seconds": 3.6629859000004217
+        },
+        {
+          "seed": 7,
+          "estimated_source_m_s": [
+            12913.6826171875,
+            2130.18408203125,
+            774.972412109375,
+            0.468254029750824
+          ],
+          "component_error_m_s": [
+            -586.3173828125,
+            -369.81591796875,
+            -525.027587890625,
+            0.028254032135009766
+          ],
+          "location_error_m": 869.5894747623254,
+          "origin_time_error_s": 0.028254032135009766,
+          "raw_true_source_waveform_relative_l2": 0.9488047394883651,
+          "inversion_seconds": 3.586607900000672
+        },
+        {
+          "seed": 123,
+          "estimated_source_m_s": [
+            12908.84765625,
+            2027.06005859375,
+            640.962890625,
+            0.47561192512512207
+          ],
+          "component_error_m_s": [
+            -591.15234375,
+            -472.93994140625,
+            -659.037109375,
+            0.03561192750930786
+          ],
+          "location_error_m": 1003.7246600695935,
+          "origin_time_error_s": 0.03561192750930786,
+          "raw_true_source_waveform_relative_l2": 1.1458000579470626,
+          "inversion_seconds": 3.5880883000008907
+        },
+        {
+          "seed": 2028,
+          "estimated_source_m_s": [
+            12954.4208984375,
+            2046.2716064453125,
+            1001.3464965820312,
+            0.43084895610809326
+          ],
+          "component_error_m_s": [
+            -545.5791015625,
+            -453.7283935546875,
+            -298.65350341796875,
+            -0.009151041507720947
+          ],
+          "location_error_m": 769.8830601352967,
+          "origin_time_error_s": 0.009151041507720947,
+          "raw_true_source_waveform_relative_l2": 0.9376266881045715,
+          "inversion_seconds": 3.7035592000011093
+        },
+        {
+          "seed": 4096,
+          "estimated_source_m_s": [
+            12980.5771484375,
+            2000.0,
+            1260.7132568359375,
+            0.37370529770851135
+          ],
+          "component_error_m_s": [
+            -519.4228515625,
+            -500.0,
+            -39.2867431640625,
+            -0.06629469990730286
+          ],
+          "location_error_m": 722.0412362973169,
+          "origin_time_error_s": 0.06629469990730286,
+          "raw_true_source_waveform_relative_l2": 1.0741224715705882,
+          "inversion_seconds": 3.849839399999837
+        }
+      ],
+      "ensemble_mean_m_s": [
+        13112.7685546875,
+        2262.3119384765623,
+        843.2197021484375,
+        0.4496840417385101
+      ],
+      "sample_standard_deviation_m_s": [
+        388.83589234261507,
+        475.27487387707475,
+        290.67438236495354,
+        0.04918415711014175
+      ],
+      "nominal_95_percent_interval_lower_m_s": [
+        12350.650205695974,
+        1330.7731856774958,
+        273.4979127131286,
+        0.3532830938026323
+      ],
+      "nominal_95_percent_interval_upper_m_s": [
+        13874.886903679026,
+        3193.850691275629,
+        1412.9414915837465,
+        0.5460849896743879
+      ],
+      "nominal_interval_width_m_s": [
+        1524.2366979830513,
+        1863.077505598133,
+        1139.4435788706178,
+        0.1928018958717556
+      ],
+      "truth_covered_by_nominal_interval": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "ensemble_mean_location_error_m": 644.2763749625927,
+      "ensemble_mean_origin_time_error_s": 0.009684044122695912,
+      "ensemble_mean_waveform_relative_l2": 0.8878313880640221,
+      "fmm": {
+        "estimated_source_m_s": [
+          13744.444444444445,
+          2314.814814814815,
+          1438.2716049382716,
+          0.2836296556123623
+        ],
+        "arrival_rmse_s": 0.028277906692748215,
+        "valid_fd_picks": 6,
+        "picked_arrivals_s": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1.808000087738037,
+          null,
+          null,
+          null,
+          null,
+          1.0780000686645508,
+          1.3440001010894775,
+          null,
+          null,
+          null,
+          0.6880000233650208,
+          1.0980000495910645,
+          1.842000126838684,
+          null,
+          null
+        ],
+        "candidate_count": 2340,
+        "source_truth_used_in_search": false,
+        "status": "ok",
+        "component_error_m_s": [
+          244.44444444444525,
+          -185.18518518518522,
+          138.2716049382716,
+          -0.1563703420034519
+        ],
+        "location_error_m": 336.4010641541288,
+        "origin_time_error_s": 0.1563703420034519,
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\source_conditioned_ensemble_confirmation\\confirm_02_se_deep.npz",
+        "sha256": "1f218ee138130417d63a5c3e6a094483a40723f25f40cf401c33db0c87c8beca",
+        "source_truth_m_s_post_search": [
+          13500.0,
+          2500.0,
+          1300.0,
+          0.4399999976158142
+        ],
+        "search_seconds": 0.0470645000004879
+      }
+    },
+    {
+      "event": "confirm_03_nw_deep.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\source_conditioned_ensemble_confirmation\\confirm_03_nw_deep.npz",
+      "sha256": "0aea217d2964f083ec6745c00866709cd69a54b5b26961ac7a1fea83ee831fcd",
+      "source_truth_m_s": [
+        2500.0,
+        13500.0,
+        1100.0,
+        0.17000000178813934
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "estimated_source_m_s": [
+            2076.934326171875,
+            13087.134765625,
+            1263.223876953125,
+            0.13213321566581726
+          ],
+          "component_error_m_s": [
+            -423.065673828125,
+            -412.865234375,
+            163.223876953125,
+            -0.03786678612232208
+          ],
+          "location_error_m": 613.2571239983911,
+          "origin_time_error_s": 0.03786678612232208,
+          "raw_true_source_waveform_relative_l2": 1.0729769566826046,
+          "inversion_seconds": 3.6152359999996406
+        },
+        {
+          "seed": 7,
+          "estimated_source_m_s": [
+            2301.96826171875,
+            13841.7763671875,
+            856.5020751953125,
+            0.11781404912471771
+          ],
+          "component_error_m_s": [
+            -198.03173828125,
+            341.7763671875,
+            -243.4979248046875,
+            -0.05218595266342163
+          ],
+          "location_error_m": 464.02466951528294,
+          "origin_time_error_s": 0.05218595266342163,
+          "raw_true_source_waveform_relative_l2": 1.0137722102246125,
+          "inversion_seconds": 3.557192700000087
+        },
+        {
+          "seed": 123,
+          "estimated_source_m_s": [
+            2969.68603515625,
+            13526.75390625,
+            1337.108154296875,
+            0.06018272042274475
+          ],
+          "component_error_m_s": [
+            469.68603515625,
+            26.75390625,
+            237.108154296875,
+            -0.10981728136539459
+          ],
+          "location_error_m": 526.8216206217268,
+          "origin_time_error_s": 0.10981728136539459,
+          "raw_true_source_waveform_relative_l2": 0.9255423440617723,
+          "inversion_seconds": 3.5459550999985368
+        },
+        {
+          "seed": 2028,
+          "estimated_source_m_s": [
+            2000.0,
+            12851.22265625,
+            792.0270385742188,
+            0.17226584255695343
+          ],
+          "component_error_m_s": [
+            -500.0,
+            -648.77734375,
+            -307.97296142578125,
+            0.002265840768814087
+          ],
+          "location_error_m": 875.0767890492076,
+          "origin_time_error_s": 0.002265840768814087,
+          "raw_true_source_waveform_relative_l2": 1.0687384902314105,
+          "inversion_seconds": 3.577444300000934
+        },
+        {
+          "seed": 4096,
+          "estimated_source_m_s": [
+            2000.0,
+            14000.0,
+            210.1763916015625,
+            0.3510896563529968
+          ],
+          "component_error_m_s": [
+            -500.0,
+            500.0,
+            -889.8236083984375,
+            0.18108965456485748
+          ],
+          "location_error_m": 1136.5676636536937,
+          "origin_time_error_s": 0.18108965456485748,
+          "raw_true_source_waveform_relative_l2": 1.0132029734197703,
+          "inversion_seconds": 3.7546665999998368
+        }
+      ],
+      "ensemble_mean_m_s": [
+        2269.717724609375,
+        13461.3775390625,
+        891.8075073242187,
+        0.166697096824646
+      ],
+      "sample_standard_deviation_m_s": [
+        410.38289241990793,
+        487.7084497273972,
+        450.57362861847406,
+        0.11063583681602505
+      ],
+      "nominal_95_percent_interval_lower_m_s": [
+        1465.3672554663558,
+        12505.468977596802,
+        8.683195232009552,
+        -0.050149143334763085
+      ],
+      "nominal_95_percent_interval_upper_m_s": [
+        3074.0681937523946,
+        14417.286100528197,
+        1774.931819416428,
+        0.38354333698405507
+      ],
+      "nominal_interval_width_m_s": [
+        1608.7009382860388,
+        1911.8171229313957,
+        1766.2486241844185,
+        0.43369248031881813
+      ],
+      "truth_covered_by_nominal_interval": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "ensemble_mean_location_error_m": 312.83499621127356,
+      "ensemble_mean_origin_time_error_s": 0.003302904963493336,
+      "ensemble_mean_waveform_relative_l2": 0.9712922309348064,
+      "fmm": {
+        "estimated_source_m_s": [
+          2185.185185185185,
+          13644.444444444445,
+          996.2962962962962,
+          0.08646865133488521
+        ],
+        "arrival_rmse_s": 0.035440673687096885,
+        "valid_fd_picks": 8,
+        "picked_arrivals_s": [
+          null,
+          null,
+          1.5760000944137573,
+          0.8100000619888306,
+          0.398000031709671,
+          null,
+          null,
+          1.5880000591278076,
+          1.0260000228881836,
+          0.8100000619888306,
+          null,
+          null,
+          null,
+          1.718000054359436,
+          1.5480000972747803,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "candidate_count": 2340,
+        "source_truth_used_in_search": false,
+        "status": "ok",
+        "component_error_m_s": [
+          -314.8148148148148,
+          144.44444444444525,
+          -103.70370370370381,
+          -0.08353135045325413
+        ],
+        "location_error_m": 361.5619218330605,
+        "origin_time_error_s": 0.08353135045325413,
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\source_conditioned_ensemble_confirmation\\confirm_03_nw_deep.npz",
+        "sha256": "0aea217d2964f083ec6745c00866709cd69a54b5b26961ac7a1fea83ee831fcd",
+        "source_truth_m_s_post_search": [
+          2500.0,
+          13500.0,
+          1100.0,
+          0.17000000178813934
+        ],
+        "search_seconds": 0.06198040000163019
+      }
+    },
+    {
+      "event": "confirm_04_ne_shallow.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\source_conditioned_ensemble_confirmation\\confirm_04_ne_shallow.npz",
+      "sha256": "b71b45cae97acd020a6941f013918c98d28d71f39450d489c303bea6a74b1aed",
+      "source_truth_m_s": [
+        13500.0,
+        13500.0,
+        350.0,
+        0.3799999952316284
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "estimated_source_m_s": [
+            12869.359375,
+            13787.0693359375,
+            553.7428588867188,
+            0.2603321671485901
+          ],
+          "component_error_m_s": [
+            -630.640625,
+            287.0693359375,
+            203.74285888671875,
+            -0.11966782808303833
+          ],
+          "location_error_m": 722.2378791529293,
+          "origin_time_error_s": 0.11966782808303833,
+          "raw_true_source_waveform_relative_l2": 0.8772368923667778,
+          "inversion_seconds": 3.6750577999991947
+        },
+        {
+          "seed": 7,
+          "estimated_source_m_s": [
+            12695.41015625,
+            13299.7900390625,
+            100.0,
+            0.21170422434806824
+          ],
+          "component_error_m_s": [
+            -804.58984375,
+            -200.2099609375,
+            -250.0,
+            -0.16829577088356018
+          ],
+          "location_error_m": 865.9958689995262,
+          "origin_time_error_s": 0.16829577088356018,
+          "raw_true_source_waveform_relative_l2": 1.0015559309267683,
+          "inversion_seconds": 3.666022999999768
+        },
+        {
+          "seed": 123,
+          "estimated_source_m_s": [
+            13956.8935546875,
+            14000.0,
+            255.87669372558594,
+            0.39813458919525146
+          ],
+          "component_error_m_s": [
+            456.8935546875,
+            500.0,
+            -94.12330627441406,
+            0.018134593963623047
+          ],
+          "location_error_m": 683.820822364314,
+          "origin_time_error_s": 0.018134593963623047,
+          "raw_true_source_waveform_relative_l2": 0.8523635156427922,
+          "inversion_seconds": 3.557091099999525
+        },
+        {
+          "seed": 2028,
+          "estimated_source_m_s": [
+            12824.7275390625,
+            13729.5537109375,
+            500.2315673828125,
+            0.08444414287805557
+          ],
+          "component_error_m_s": [
+            -675.2724609375,
+            229.5537109375,
+            150.2315673828125,
+            -0.29555585235357285
+          ],
+          "location_error_m": 728.8740128060962,
+          "origin_time_error_s": 0.29555585235357285,
+          "raw_true_source_waveform_relative_l2": 0.9665262010601907,
+          "inversion_seconds": 3.538164499999766
+        },
+        {
+          "seed": 4096,
+          "estimated_source_m_s": [
+            12745.607421875,
+            13703.86328125,
+            421.1927185058594,
+            0.24565327167510986
+          ],
+          "component_error_m_s": [
+            -754.392578125,
+            203.86328125,
+            71.19271850585938,
+            -0.13434672355651855
+          ],
+          "location_error_m": 784.6889845922111,
+          "origin_time_error_s": 0.13434672355651855,
+          "raw_true_source_waveform_relative_l2": 1.001960526536874,
+          "inversion_seconds": 3.5746833000011975
+        }
+      ],
+      "ensemble_mean_m_s": [
+        13018.399609375,
+        13704.0552734375,
+        366.2087677001953,
+        0.24005367904901503
+      ],
+      "sample_standard_deviation_m_s": [
+        528.9684565408717,
+        254.24161866869966,
+        186.54399989420534,
+        0.11230557198891276
+      ],
+      "nominal_95_percent_interval_lower_m_s": [
+        11981.62143455489,
+        13205.741700846847,
+        0.5825279075528442,
+        0.019934757950746007
+      ],
+      "nominal_95_percent_interval_upper_m_s": [
+        14055.177784195108,
+        14202.368846028152,
+        731.8350074928378,
+        0.46017260014728406
+      ],
+      "nominal_interval_width_m_s": [
+        2073.5563496402174,
+        996.6271451813045,
+        731.252479585285,
+        0.44023784219653805
+      ],
+      "truth_covered_by_nominal_interval": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "ensemble_mean_location_error_m": 523.2974441158344,
+      "ensemble_mean_origin_time_error_s": 0.13994631618261338,
+      "ensemble_mean_waveform_relative_l2": 0.9203780791972019,
+      "fmm": {
+        "status": "insufficient_valid_picks",
+        "reason": "Only 4 usable first-arrival picks",
+        "estimated_source_m_s": null,
+        "valid_fd_picks": 4,
+        "location_error_m": null,
+        "origin_time_error_s": null,
+        "source_truth_used_in_search": false,
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\source_conditioned_ensemble_confirmation\\confirm_04_ne_shallow.npz",
+        "sha256": "b71b45cae97acd020a6941f013918c98d28d71f39450d489c303bea6a74b1aed",
+        "source_truth_m_s_post_search": [
+          13500.0,
+          13500.0,
+          350.0,
+          0.3799999952316284
+        ],
+        "search_seconds": 0.00032439999995403923
+      }
+    },
+    {
+      "event": "confirm_05_west_deep.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\source_conditioned_ensemble_confirmation\\confirm_05_west_deep.npz",
+      "sha256": "e08db70f427f822bac22261bc85c606dc6737343ffc80699e88a418a2dc0d93b",
+      "source_truth_m_s": [
+        5500.0,
+        6500.0,
+        1450.0,
+        0.27000001072883606
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "estimated_source_m_s": [
+            4174.41259765625,
+            4554.810546875,
+            660.0756225585938,
+            0.5
+          ],
+          "component_error_m_s": [
+            -1325.58740234375,
+            -1945.189453125,
+            -789.9243774414062,
+            0.22999998927116394
+          ],
+          "location_error_m": 2482.9265981654353,
+          "origin_time_error_s": 0.22999998927116394,
+          "raw_true_source_waveform_relative_l2": 1.2205085868507166,
+          "inversion_seconds": 3.701250300000538
+        },
+        {
+          "seed": 7,
+          "estimated_source_m_s": [
+            5923.28564453125,
+            4745.9248046875,
+            982.2775268554688,
+            0.46592977643013
+          ],
+          "component_error_m_s": [
+            423.28564453125,
+            -1754.0751953125,
+            -467.72247314453125,
+            0.19592976570129395
+          ],
+          "location_error_m": 1864.0587006747555,
+          "origin_time_error_s": 0.19592976570129395,
+          "raw_true_source_waveform_relative_l2": 1.1784309947652443,
+          "inversion_seconds": 3.628602699998737
+        },
+        {
+          "seed": 123,
+          "estimated_source_m_s": [
+            4291.88330078125,
+            5529.19677734375,
+            730.47705078125,
+            0.5
+          ],
+          "component_error_m_s": [
+            -1208.11669921875,
+            -970.80322265625,
+            -719.52294921875,
+            0.22999998927116394
+          ],
+          "location_error_m": 1708.7182712499496,
+          "origin_time_error_s": 0.22999998927116394,
+          "raw_true_source_waveform_relative_l2": 1.1700424657431856,
+          "inversion_seconds": 3.502791000000798
+        },
+        {
+          "seed": 2028,
+          "estimated_source_m_s": [
+            4206.48095703125,
+            5600.3232421875,
+            732.0078125,
+            0.49063077569007874
+          ],
+          "component_error_m_s": [
+            -1293.51904296875,
+            -899.6767578125,
+            -717.9921875,
+            0.22063076496124268
+          ],
+          "location_error_m": 1731.5087537699133,
+          "origin_time_error_s": 0.22063076496124268,
+          "raw_true_source_waveform_relative_l2": 1.2755668267728597,
+          "inversion_seconds": 3.5401937999995425
+        },
+        {
+          "seed": 4096,
+          "estimated_source_m_s": [
+            5619.078125,
+            5577.59228515625,
+            1310.90234375,
+            0.4124147295951843
+          ],
+          "component_error_m_s": [
+            119.078125,
+            -922.40771484375,
+            -139.09765625,
+            0.14241471886634827
+          ],
+          "location_error_m": 940.4061623740179,
+          "origin_time_error_s": 0.14241471886634827,
+          "raw_true_source_waveform_relative_l2": 1.1454322046971617,
+          "inversion_seconds": 3.514467999999397
+        }
+      ],
+      "ensemble_mean_m_s": [
+        4843.028125,
+        5201.56953125,
+        883.1480712890625,
+        0.4737950563430786
+      ],
+      "sample_standard_deviation_m_s": [
+        855.162199340149,
+        508.342046888372,
+        268.66033494070507,
+        0.03703460115163623
+      ],
+      "nominal_95_percent_interval_lower_m_s": [
+        3166.910214293308,
+        4205.219119348791,
+        356.57381480528056,
+        0.4012072380858716
+      ],
+      "nominal_95_percent_interval_upper_m_s": [
+        6519.146035706692,
+        6197.91994315121,
+        1409.7223277728444,
+        0.5463828746002857
+      ],
+      "nominal_interval_width_m_s": [
+        3352.2358214133837,
+        1992.700823802419,
+        1053.1485129675639,
+        0.14517563651441406
+      ],
+      "truth_covered_by_nominal_interval": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "ensemble_mean_location_error_m": 1561.683334034999,
+      "ensemble_mean_origin_time_error_s": 0.20379504561424255,
+      "ensemble_mean_waveform_relative_l2": 1.092557173847212,
+      "fmm": {
+        "estimated_source_m_s": [
+          5377.777777777777,
+          6533.333333333333,
+          1337.037037037037,
+          0.14604841575374017
+        ],
+        "arrival_rmse_s": 0.027787988478238282,
+        "valid_fd_picks": 14,
+        "picked_arrivals_s": [
+          1.6180000305175781,
+          1.2380000352859497,
+          1.190000057220459,
+          1.6060000658035278,
+          null,
+          1.25,
+          0.6380000114440918,
+          0.6480000019073486,
+          1.3140000104904175,
+          null,
+          1.4660000801086426,
+          0.9260000586509705,
+          0.9660000205039978,
+          1.5760000944137573,
+          null,
+          null,
+          1.7320001125335693,
+          1.7620000839233398,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "candidate_count": 2340,
+        "source_truth_used_in_search": false,
+        "status": "ok",
+        "component_error_m_s": [
+          -122.22222222222263,
+          33.33333333333303,
+          -112.96296296296305,
+          -0.12395159497509589
+        ],
+        "location_error_m": 169.73512811855187,
+        "origin_time_error_s": 0.12395159497509589,
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\source_conditioned_ensemble_confirmation\\confirm_05_west_deep.npz",
+        "sha256": "e08db70f427f822bac22261bc85c606dc6737343ffc80699e88a418a2dc0d93b",
+        "source_truth_m_s_post_search": [
+          5500.0,
+          6500.0,
+          1450.0,
+          0.27000001072883606
+        ],
+        "search_seconds": 0.10454019999997399
+      }
+    },
+    {
+      "event": "confirm_06_east_shallow.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\source_conditioned_ensemble_confirmation\\confirm_06_east_shallow.npz",
+      "sha256": "263d00973c2997a0d6d6e6bfd53ba2ee7d97d2cad392ae32588c2239ece02abd",
+      "source_truth_m_s": [
+        10500.0,
+        5500.0,
+        250.0,
+        0.4099999964237213
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "estimated_source_m_s": [
+            11077.515625,
+            5476.9013671875,
+            830.243896484375,
+            0.34092867374420166
+          ],
+          "component_error_m_s": [
+            577.515625,
+            -23.0986328125,
+            580.243896484375,
+            -0.06907132267951965
+          ],
+          "location_error_m": 818.9876820589657,
+          "origin_time_error_s": 0.06907132267951965,
+          "raw_true_source_waveform_relative_l2": 0.9067725247486508,
+          "inversion_seconds": 3.533342199998515
+        },
+        {
+          "seed": 7,
+          "estimated_source_m_s": [
+            11296.7646484375,
+            5846.0419921875,
+            857.8238525390625,
+            0.2552664577960968
+          ],
+          "component_error_m_s": [
+            796.7646484375,
+            346.0419921875,
+            607.8238525390625,
+            -0.1547335386276245
+          ],
+          "location_error_m": 1060.2022453627678,
+          "origin_time_error_s": 0.1547335386276245,
+          "raw_true_source_waveform_relative_l2": 0.9544480910174861,
+          "inversion_seconds": 3.674980100000539
+        },
+        {
+          "seed": 123,
+          "estimated_source_m_s": [
+            11804.7734375,
+            4626.47802734375,
+            1166.3145751953125,
+            0.1970512717962265
+          ],
+          "component_error_m_s": [
+            1304.7734375,
+            -873.52197265625,
+            916.3145751953125,
+            -0.2129487246274948
+          ],
+          "location_error_m": 1817.9952586940922,
+          "origin_time_error_s": 0.2129487246274948,
+          "raw_true_source_waveform_relative_l2": 0.9328236994647293,
+          "inversion_seconds": 3.503830100000414
+        },
+        {
+          "seed": 2028,
+          "estimated_source_m_s": [
+            10713.5078125,
+            4815.6201171875,
+            1130.067626953125,
+            0.275346040725708
+          ],
+          "component_error_m_s": [
+            213.5078125,
+            -684.3798828125,
+            880.067626953125,
+            -0.1346539556980133
+          ],
+          "location_error_m": 1135.112522179141,
+          "origin_time_error_s": 0.1346539556980133,
+          "raw_true_source_waveform_relative_l2": 0.9281259479392348,
+          "inversion_seconds": 3.538237599999775
+        },
+        {
+          "seed": 4096,
+          "estimated_source_m_s": [
+            10344.88671875,
+            5592.8203125,
+            1375.88525390625,
+            0.1271016001701355
+          ],
+          "component_error_m_s": [
+            -155.11328125,
+            92.8203125,
+            1125.88525390625,
+            -0.2828983962535858
+          ],
+          "location_error_m": 1140.3040583091338,
+          "origin_time_error_s": 0.2828983962535858,
+          "raw_true_source_waveform_relative_l2": 0.9648221376847048,
+          "inversion_seconds": 3.6498914000003424
+        }
+      ],
+      "ensemble_mean_m_s": [
+        11047.4896484375,
+        5271.57236328125,
+        1072.067041015625,
+        0.2391388088464737
+      ],
+      "sample_standard_deviation_m_s": [
+        557.1608981281867,
+        524.2649025623043,
+        228.54471618902258,
+        0.08101842105323627
+      ],
+      "nominal_95_percent_interval_lower_m_s": [
+        9955.454288106255,
+        4244.013154259133,
+        624.1193972851406,
+        0.08034270358213061
+      ],
+      "nominal_95_percent_interval_upper_m_s": [
+        12139.525008768745,
+        6299.131572303366,
+        1520.0146847461092,
+        0.39793491411081683
+      ],
+      "nominal_interval_width_m_s": [
+        2184.07072066249,
+        2055.1184180442324,
+        895.8952874609686,
+        0.31759221052868625
+      ],
+      "truth_covered_by_nominal_interval": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "ensemble_mean_location_error_m": 1013.7644303719263,
+      "ensemble_mean_origin_time_error_s": 0.1708611875772476,
+      "ensemble_mean_waveform_relative_l2": 0.9203929954194732,
+      "fmm": {
+        "estimated_source_m_s": [
+          10459.259259259261,
+          5540.740740740741,
+          100.0,
+          0.3449410575509722
+        ],
+        "arrival_rmse_s": 0.06169038611203272,
+        "valid_fd_picks": 10,
+        "picked_arrivals_s": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1.7880001068115234,
+          null,
+          null,
+          null,
+          1.7260000705718994,
+          1.100000023841858,
+          1.3980001211166382,
+          null,
+          null,
+          1.4800000190734863,
+          0.49000000953674316,
+          1.1060000658035278,
+          null,
+          null,
+          1.8200000524520874,
+          1.4760000705718994,
+          1.6980000734329224,
+          null,
+          null
+        ],
+        "candidate_count": 2340,
+        "source_truth_used_in_search": false,
+        "status": "ok",
+        "component_error_m_s": [
+          -40.74074074073906,
+          40.740740740740875,
+          -150.0,
+          -0.0650589388727491
+        ],
+        "location_error_m": 160.68483410766672,
+        "origin_time_error_s": 0.0650589388727491,
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\source_conditioned_ensemble_confirmation\\confirm_06_east_shallow.npz",
+        "sha256": "263d00973c2997a0d6d6e6bfd53ba2ee7d97d2cad392ae32588c2239ece02abd",
+        "source_truth_m_s_post_search": [
+          10500.0,
+          5500.0,
+          250.0,
+          0.4099999964237213
+        ],
+        "search_seconds": 0.07447839999986172
+      }
+    },
+    {
+      "event": "confirm_07_north_mid.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\source_conditioned_ensemble_confirmation\\confirm_07_north_mid.npz",
+      "sha256": "d8fb78d58b7585a62792b2db809c1f048a1eb7efeb15d3d9173217e9225e278a",
+      "source_truth_m_s": [
+        6500.0,
+        10500.0,
+        800.0,
+        0.12999999523162842
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "estimated_source_m_s": [
+            5173.75634765625,
+            10226.23046875,
+            1447.961181640625,
+            0.19403062760829926
+          ],
+          "component_error_m_s": [
+            -1326.24365234375,
+            -273.76953125,
+            647.961181640625,
+            0.06403063237667084
+          ],
+          "location_error_m": 1501.2413778390367,
+          "origin_time_error_s": 0.06403063237667084,
+          "raw_true_source_waveform_relative_l2": 1.0064812280299045,
+          "inversion_seconds": 3.603750800000853
+        },
+        {
+          "seed": 7,
+          "estimated_source_m_s": [
+            5193.369140625,
+            10196.46484375,
+            1261.71337890625,
+            0.23400507867336273
+          ],
+          "component_error_m_s": [
+            -1306.630859375,
+            -303.53515625,
+            461.71337890625,
+            0.10400508344173431
+          ],
+          "location_error_m": 1418.6602969040155,
+          "origin_time_error_s": 0.10400508344173431,
+          "raw_true_source_waveform_relative_l2": 0.8693627924095343,
+          "inversion_seconds": 3.6685598000003665
+        },
+        {
+          "seed": 123,
+          "estimated_source_m_s": [
+            3279.115234375,
+            11598.6767578125,
+            894.5394897460938,
+            0.0684800073504448
+          ],
+          "component_error_m_s": [
+            -3220.884765625,
+            1098.6767578125,
+            94.53948974609375,
+            -0.061519987881183624
+          ],
+          "location_error_m": 3404.4275593283005,
+          "origin_time_error_s": 0.061519987881183624,
+          "raw_true_source_waveform_relative_l2": 0.9684463921663706,
+          "inversion_seconds": 3.5240990000002057
+        },
+        {
+          "seed": 2028,
+          "estimated_source_m_s": [
+            5372.1943359375,
+            10262.8193359375,
+            1364.2916259765625,
+            0.21551728248596191
+          ],
+          "component_error_m_s": [
+            -1127.8056640625,
+            -237.1806640625,
+            564.2916259765625,
+            0.0855172872543335
+          ],
+          "location_error_m": 1283.208994062876,
+          "origin_time_error_s": 0.0855172872543335,
+          "raw_true_source_waveform_relative_l2": 0.9630770880005436,
+          "inversion_seconds": 3.526439400000527
+        },
+        {
+          "seed": 4096,
+          "estimated_source_m_s": [
+            5320.7509765625,
+            10306.3017578125,
+            1500.0,
+            0.19823907315731049
+          ],
+          "component_error_m_s": [
+            -1179.2490234375,
+            -193.6982421875,
+            700.0,
+            0.06823907792568207
+          ],
+          "location_error_m": 1384.9719377318895,
+          "origin_time_error_s": 0.06823907792568207,
+          "raw_true_source_waveform_relative_l2": 0.9456171696807517,
+          "inversion_seconds": 3.576442699999461
+        }
+      ],
+      "ensemble_mean_m_s": [
+        4867.83720703125,
+        10518.0986328125,
+        1293.7011352539062,
+        0.18205441385507584
+      ],
+      "sample_standard_deviation_m_s": [
+        892.0625066244451,
+        605.4564062261607,
+        240.67178723724908,
+        0.06542773467257869
+      ],
+      "nominal_95_percent_interval_lower_m_s": [
+        3119.3946940473375,
+        9331.404076609226,
+        821.984432268898,
+        0.05381605389682162
+      ],
+      "nominal_95_percent_interval_upper_m_s": [
+        6616.279720015162,
+        11704.793189015774,
+        1765.4178382389143,
+        0.3102927738133301
+      ],
+      "nominal_interval_width_m_s": [
+        3496.8850259678243,
+        2373.3891124065485,
+        943.4334059700163,
+        0.25647671991650844
+      ],
+      "truth_covered_by_nominal_interval": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "ensemble_mean_location_error_m": 1705.2928646459027,
+      "ensemble_mean_origin_time_error_s": 0.052054418623447424,
+      "ensemble_mean_waveform_relative_l2": 0.9173635631017033,
+      "fmm": {
+        "estimated_source_m_s": [
+          6562.962962962963,
+          10503.703703703704,
+          277.77777777777777,
+          0.05
+        ],
+        "arrival_rmse_s": 0.0312748777606553,
+        "valid_fd_picks": 14,
+        "picked_arrivals_s": [
+          null,
+          null,
+          1.4100000858306885,
+          1.284000039100647,
+          1.6080000400543213,
+          null,
+          1.4940000772476196,
+          0.800000011920929,
+          0.492000013589859,
+          1.128000020980835,
+          null,
+          1.6600000858306885,
+          0.9100000262260437,
+          0.5320000052452087,
+          1.156000018119812,
+          null,
+          null,
+          1.5780000686645508,
+          1.378000020980835,
+          1.6060000658035278,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "candidate_count": 2340,
+        "source_truth_used_in_search": false,
+        "status": "ok",
+        "component_error_m_s": [
+          62.96296296296259,
+          3.7037037037043774,
+          -522.2222222222222,
+          -0.07999999523162842
+        ],
+        "location_error_m": 526.0172064760964,
+        "origin_time_error_s": 0.07999999523162842,
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\source_conditioned_ensemble_confirmation\\confirm_07_north_mid.npz",
+        "sha256": "d8fb78d58b7585a62792b2db809c1f048a1eb7efeb15d3d9173217e9225e278a",
+        "source_truth_m_s_post_search": [
+          6500.0,
+          10500.0,
+          800.0,
+          0.12999999523162842
+        ],
+        "search_seconds": 0.10541960000045947
+      }
+    },
+    {
+      "event": "confirm_08_center_deep.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\source_conditioned_ensemble_confirmation\\confirm_08_center_deep.npz",
+      "sha256": "225b9f316ecc8e4bff5186a1463427a2c5f107d1e6bb37a4215594437a41de1a",
+      "source_truth_m_s": [
+        10000.0,
+        10000.0,
+        1250.0,
+        0.3199999928474426
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "estimated_source_m_s": [
+            8963.55078125,
+            10658.908203125,
+            1068.248046875,
+            0.18621782958507538
+          ],
+          "component_error_m_s": [
+            -1036.44921875,
+            658.908203125,
+            -181.751953125,
+            -0.13378216326236725
+          ],
+          "location_error_m": 1241.539679453562,
+          "origin_time_error_s": 0.13378216326236725,
+          "raw_true_source_waveform_relative_l2": 0.6020343154405443,
+          "inversion_seconds": 3.5477384999994683
+        },
+        {
+          "seed": 7,
+          "estimated_source_m_s": [
+            9393.494140625,
+            10320.107421875,
+            426.3080749511719,
+            0.33709824085235596
+          ],
+          "component_error_m_s": [
+            -606.505859375,
+            320.107421875,
+            -823.6919250488281,
+            0.01709824800491333
+          ],
+          "location_error_m": 1071.8145858245775,
+          "origin_time_error_s": 0.01709824800491333,
+          "raw_true_source_waveform_relative_l2": 0.6580722894867638,
+          "inversion_seconds": 3.648004199998468
+        },
+        {
+          "seed": 123,
+          "estimated_source_m_s": [
+            11493.11328125,
+            11915.5078125,
+            909.4117431640625,
+            0.46781471371650696
+          ],
+          "component_error_m_s": [
+            1493.11328125,
+            1915.5078125,
+            -340.5882568359375,
+            0.14781472086906433
+          ],
+          "location_error_m": 2452.4595432113083,
+          "origin_time_error_s": 0.14781472086906433,
+          "raw_true_source_waveform_relative_l2": 0.6502799600780276,
+          "inversion_seconds": 3.5486194000004616
+        },
+        {
+          "seed": 2028,
+          "estimated_source_m_s": [
+            11584.4248046875,
+            10498.220703125,
+            1489.5042724609375,
+            0.3863147795200348
+          ],
+          "component_error_m_s": [
+            1584.4248046875,
+            498.220703125,
+            239.5042724609375,
+            0.06631478667259216
+          ],
+          "location_error_m": 1678.090619501353,
+          "origin_time_error_s": 0.06631478667259216,
+          "raw_true_source_waveform_relative_l2": 0.6116139542643287,
+          "inversion_seconds": 3.607547199999317
+        },
+        {
+          "seed": 4096,
+          "estimated_source_m_s": [
+            8946.6279296875,
+            10735.5703125,
+            1171.88623046875,
+            0.17762666940689087
+          ],
+          "component_error_m_s": [
+            -1053.3720703125,
+            735.5703125,
+            -78.11376953125,
+            -0.14237332344055176
+          ],
+          "location_error_m": 1287.1511815385834,
+          "origin_time_error_s": 0.14237332344055176,
+          "raw_true_source_waveform_relative_l2": 0.6465147012656268,
+          "inversion_seconds": 3.54035980000117
+        }
+      ],
+      "ensemble_mean_m_s": [
+        10076.2421875,
+        10825.662890625,
+        1013.0716735839844,
+        0.3110144466161728
+      ],
+      "sample_standard_deviation_m_s": [
+        1347.4414584313463,
+        629.779816743712,
+        390.60575353413986,
+        0.12679049939877549
+      ],
+      "nominal_95_percent_interval_lower_m_s": [
+        7435.256928974561,
+        9591.294449807325,
+        247.4843966570703,
+        0.06250506779457282
+      ],
+      "nominal_95_percent_interval_upper_m_s": [
+        12717.22744602544,
+        12060.031331442677,
+        1778.6589505108986,
+        0.5595238254377728
+      ],
+      "nominal_interval_width_m_s": [
+        5281.970517050879,
+        2468.736881635352,
+        1531.1745538538285,
+        0.49701875764319997
+      ],
+      "truth_covered_by_nominal_interval": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "ensemble_mean_location_error_m": 862.3613581140513,
+      "ensemble_mean_origin_time_error_s": 0.008985546231269848,
+      "ensemble_mean_waveform_relative_l2": 0.540314363339434,
+      "fmm": {
+        "estimated_source_m_s": [
+          10029.62962962963,
+          10074.074074074073,
+          1203.7037037037037,
+          0.22637722911082725
+        ],
+        "arrival_rmse_s": 0.03921196116226769,
+        "valid_fd_picks": 13,
+        "picked_arrivals_s": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1.630000114440918,
+          1.6160000562667847,
+          null,
+          null,
+          1.724000096321106,
+          1.1160000562667847,
+          0.9320000410079956,
+          1.4880000352859497,
+          null,
+          1.7020000219345093,
+          0.9460000395774841,
+          0.734000027179718,
+          1.3920000791549683,
+          null,
+          null,
+          1.540000081062317,
+          1.440000057220459,
+          1.818000078201294
+        ],
+        "candidate_count": 2340,
+        "source_truth_used_in_search": false,
+        "status": "ok",
+        "component_error_m_s": [
+          29.629629629629562,
+          74.074074074073,
+          -46.296296296296305,
+          -0.09362276373661538
+        ],
+        "location_error_m": 92.24006966971965,
+        "origin_time_error_s": 0.09362276373661538,
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\source_conditioned_ensemble_confirmation\\confirm_08_center_deep.npz",
+        "sha256": "225b9f316ecc8e4bff5186a1463427a2c5f107d1e6bb37a4215594437a41de1a",
+        "source_truth_m_s_post_search": [
+          10000.0,
+          10000.0,
+          1250.0,
+          0.3199999928474426
+        ],
+        "search_seconds": 0.10155490000033751
+      }
+    }
+  ],
+  "limitations": "One synthetic Overthrust velocity model, one receiver geometry, noise-free 5-Hz FD data, M=5, and intervals that vary training randomness only. Passing does not establish field-data calibration or uncertainty from velocity, acquisition, source mechanism, or model form."
+}

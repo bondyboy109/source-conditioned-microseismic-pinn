@@ -1,0 +1,14 @@
+{
+  "current_runner": "examples/run_traveltime_aligned_moe_localization_current.py",
+  "current_runner_sha256": "174a5d727b88ab957dcd659d043a3210cfc6efb8d73e97caeb15887afaaa7ce9",
+  "historical_runner_hash_recorded_by_three_protocols": "add81f105956c073f8b2331f15da37dbddc3906dc996bc5b6d33eb2429694c0e",
+  "historical_runner_path": "examples/run_traveltime_aligned_moe_localization.py",
+  "note": "The confirmation, noise/receiver-loss stress, and velocity-bias records retain the historical runner hash. The current runner is copied under an explicit versioned name and is not claimed to reproduce those historical records.",
+  "reliability_protocol": "experiments/reliability_adaptive_fusion_protocol.json",
+  "reliability_result": "experiments/reliability_adaptive_fusion_results_v2.json",
+  "reliability_result_sha256": "09153ad9ee51ea17f2cfa266727e9f2238787c5088603221256daecac70195c6",
+  "legacy_reliability_result": "experiments/reliability_adaptive_fusion_results_legacy.json",
+  "legacy_reliability_result_sha256": "b70bec9eb260d752edfe076cfb637d91c7113cad43ea168de7d9133c5d96296b",
+  "previously_recorded_legacy_reliability_result_sha256": "be6afeb1b44686ebf57d1955940ea7e31560782a77c2c3659e85bf5ca76bcf32",
+  "legacy_reliability_checksum_note": "The current checksum identifies the file carrying the legacy status and superseded_by annotations. The previous checksum from this mapping is retained for provenance; the legacy result file and v2 result file were not modified by this checksum correction."
+}

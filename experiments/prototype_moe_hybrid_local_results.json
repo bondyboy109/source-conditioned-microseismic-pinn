@@ -1,0 +1,512 @@
+{
+  "role": "independent holdout FMM-seeded local objective comparison",
+  "fmm_spacing_m": 160.0,
+  "local_step_m": [
+    2400.0,
+    2400.0,
+    466.6666564941406
+  ],
+  "candidate_count_per_event": 27,
+  "hybrid_arrival_scale_s": 0.1,
+  "hybrid_alpha": 0.25,
+  "summary": {
+    "waveform": {
+      "mean_location_error_m": 2635.417385738555,
+      "median_location_error_m": 2504.0185364753925,
+      "mean_origin_time_error_s": 0.15130689460784197
+    },
+    "arrival": {
+      "mean_location_error_m": 1097.3981952113757,
+      "median_location_error_m": 1128.2659002299893,
+      "mean_origin_time_error_s": 0.12121875723823905
+    },
+    "hybrid": {
+      "mean_location_error_m": 1021.4551628995521,
+      "median_location_error_m": 1049.5955784483895,
+      "mean_origin_time_error_s": 0.09734088880941272
+    }
+  },
+  "events": [
+    {
+      "event": "event_01.npz",
+      "truth_source_m_s": [
+        4200.0,
+        7200.0,
+        380.0,
+        0.18000000715255737
+      ],
+      "fmm_start_m_s": [
+        4400.0,
+        6800.0,
+        100.0,
+        0.1950331053252441
+      ],
+      "waveform_choice": {
+        "source_m_s": [
+          4400.0,
+          9200.0,
+          100.0,
+          0.12317420542240143
+        ],
+        "waveform_loss": 1.1657180786132812,
+        "arrival_rmse_s": 0.3738295168907646,
+        "arrival_normalized_loss": 13.974850769878246,
+        "hybrid_alpha_0.25": 4.659430771082842,
+        "hybrid_alpha_1.0": 15.140568848491528
+      },
+      "arrival_choice": {
+        "source_m_s": [
+          4400.0,
+          6800.0,
+          100.0,
+          0.19503310322761536
+        ],
+        "waveform_loss": 1.319120168685913,
+        "arrival_rmse_s": 0.14974661102833364,
+        "arrival_normalized_loss": 2.2424047514471055,
+        "hybrid_alpha_0.25": 1.8797213565476896,
+        "hybrid_alpha_1.0": 3.5615249201330186
+      },
+      "hybrid_choice": {
+        "source_m_s": [
+          4400.0,
+          6800.0,
+          100.0,
+          0.19503310322761536
+        ],
+        "waveform_loss": 1.319120168685913,
+        "arrival_rmse_s": 0.14974661102833364,
+        "arrival_normalized_loss": 2.2424047514471055,
+        "hybrid_alpha_0.25": 1.8797213565476896,
+        "hybrid_alpha_1.0": 3.5615249201330186
+      },
+      "waveform_location_error_m": 2029.3841430345315,
+      "waveform_origin_time_error_s": 0.056825801730155945,
+      "arrival_location_error_m": 527.6362383309167,
+      "arrival_origin_time_error_s": 0.015033096075057983,
+      "hybrid_location_error_m": 527.6362383309167,
+      "hybrid_origin_time_error_s": 0.015033096075057983
+    },
+    {
+      "event": "event_02.npz",
+      "truth_source_m_s": [
+        8800.0,
+        5200.0,
+        900.0,
+        0.2800000011920929
+      ],
+      "fmm_start_m_s": [
+        9200.0,
+        4400.0,
+        566.6666666666667,
+        0.11251899227034468
+      ],
+      "waveform_choice": {
+        "source_m_s": [
+          11600.0,
+          2000.0,
+          100.00003051757812,
+          0.05000000074505806
+        ],
+        "waveform_loss": 1.013298749923706,
+        "arrival_rmse_s": 0.668358685800871,
+        "arrival_normalized_loss": 44.670333288546736,
+        "hybrid_alpha_0.25": 12.18088207206039,
+        "hybrid_alpha_1.0": 45.68363203847044
+      },
+      "arrival_choice": {
+        "source_m_s": [
+          9200.0,
+          4400.0,
+          566.6666870117188,
+          0.11251898854970932
+        ],
+        "waveform_loss": 1.0961310863494873,
+        "arrival_rmse_s": 0.14416069934321277,
+        "arrival_normalized_loss": 2.0782307235124184,
+        "hybrid_alpha_0.25": 1.615688767227592,
+        "hybrid_alpha_1.0": 3.1743618098619057
+      },
+      "hybrid_choice": {
+        "source_m_s": [
+          9200.0,
+          4400.0,
+          566.6666870117188,
+          0.11251898854970932
+        ],
+        "waveform_loss": 1.0961310863494873,
+        "arrival_rmse_s": 0.14416069934321277,
+        "arrival_normalized_loss": 2.0782307235124184,
+        "hybrid_alpha_0.25": 1.615688767227592,
+        "hybrid_alpha_1.0": 3.1743618098619057
+      },
+      "waveform_location_error_m": 4326.661524914085,
+      "waveform_origin_time_error_s": 0.23000000044703484,
+      "arrival_location_error_m": 954.5213971136234,
+      "arrival_origin_time_error_s": 0.16748101264238358,
+      "hybrid_location_error_m": 954.5213971136234,
+      "hybrid_origin_time_error_s": 0.16748101264238358
+    },
+    {
+      "event": "event_03.npz",
+      "truth_source_m_s": [
+        11800.0,
+        13200.0,
+        1280.0,
+        0.36000001430511475
+      ],
+      "fmm_start_m_s": [
+        11600.0,
+        14000.0,
+        566.6666666666667,
+        0.20439881754923306
+      ],
+      "waveform_choice": {
+        "source_m_s": [
+          14000.0,
+          14000.0,
+          1033.3333740234375,
+          0.05000000074505806
+        ],
+        "waveform_loss": 1.3532567024230957,
+        "arrival_rmse_s": 0.25409324925554266,
+        "arrival_normalized_loss": 6.456337931723932,
+        "hybrid_alpha_0.25": 2.967341185354079,
+        "hybrid_alpha_1.0": 7.809594634147028
+      },
+      "arrival_choice": {
+        "source_m_s": [
+          11600.0,
+          14000.0,
+          566.6666870117188,
+          0.20439881086349487
+        ],
+        "waveform_loss": 1.3956773281097412,
+        "arrival_rmse_s": 0.15673835601711222,
+        "arrival_normalized_loss": 2.4566912246947017,
+        "hybrid_alpha_0.25": 2.0098501342834165,
+        "hybrid_alpha_1.0": 3.852368552804443
+      },
+      "hybrid_choice": {
+        "source_m_s": [
+          11600.0,
+          14000.0,
+          566.6666870117188,
+          0.20439881086349487
+        ],
+        "waveform_loss": 1.3956773281097412,
+        "arrival_rmse_s": 0.15673835601711222,
+        "arrival_normalized_loss": 2.4566912246947017,
+        "hybrid_alpha_0.25": 2.0098501342834165,
+        "hybrid_alpha_1.0": 3.852368552804443
+      },
+      "waveform_location_error_m": 2353.8998331217626,
+      "waveform_origin_time_error_s": 0.3100000135600567,
+      "arrival_location_error_m": 1090.3414214909187,
+      "arrival_origin_time_error_s": 0.15560120344161987,
+      "hybrid_location_error_m": 1090.3414214909187,
+      "hybrid_origin_time_error_s": 0.15560120344161987
+    },
+    {
+      "event": "event_04.npz",
+      "truth_source_m_s": [
+        13200.0,
+        6200.0,
+        700.0,
+        0.4399999976158142
+      ],
+      "fmm_start_m_s": [
+        14000.0,
+        6800.0,
+        100.0,
+        0.25508106468000546
+      ],
+      "waveform_choice": {
+        "source_m_s": [
+          14000.0,
+          4400.0,
+          566.6666259765625,
+          0.3383644223213196
+        ],
+        "waveform_loss": 1.1309599876403809,
+        "arrival_rmse_s": 0.2694720896199679,
+        "arrival_normalized_loss": 7.261520708415199,
+        "hybrid_alpha_0.25": 2.9463401647441807,
+        "hybrid_alpha_1.0": 8.39248069605558
+      },
+      "arrival_choice": {
+        "source_m_s": [
+          14000.0,
+          6800.0,
+          100.0,
+          0.25508105754852295
+        ],
+        "waveform_loss": 1.2267510890960693,
+        "arrival_rmse_s": 0.18904824886900212,
+        "arrival_normalized_loss": 3.573924040043616,
+        "hybrid_alpha_0.25": 2.1202320991069734,
+        "hybrid_alpha_1.0": 4.800675129139686
+      },
+      "hybrid_choice": {
+        "source_m_s": [
+          14000.0,
+          6800.0,
+          566.6666259765625,
+          0.3762541115283966
+        ],
+        "waveform_loss": 1.1509467363357544,
+        "arrival_rmse_s": 0.19239278542327523,
+        "arrival_normalized_loss": 3.7014983882926424,
+        "hybrid_alpha_0.25": 2.076321333408915,
+        "hybrid_alpha_1.0": 4.852445124628397
+      },
+      "waveform_location_error_m": 1974.279055409461,
+      "waveform_origin_time_error_s": 0.10163557529449463,
+      "arrival_location_error_m": 1166.19037896906,
+      "arrival_origin_time_error_s": 0.18491894006729126,
+      "hybrid_location_error_m": 1008.8497354058601,
+      "hybrid_origin_time_error_s": 0.0637458860874176
+    },
+    {
+      "event": "event_05.npz",
+      "truth_source_m_s": [
+        3000.0,
+        11000.0,
+        600.0,
+        0.11999999731779099
+      ],
+      "fmm_start_m_s": [
+        2000.0,
+        11600.0,
+        566.6666666666667,
+        0.05
+      ],
+      "waveform_choice": {
+        "source_m_s": [
+          2000.0,
+          14000.0,
+          566.6666870117188,
+          0.05000000074505806
+        ],
+        "waveform_loss": 1.0244193077087402,
+        "arrival_rmse_s": 0.491409106014426,
+        "arrival_normalized_loss": 24.148290947389732,
+        "hybrid_alpha_0.25": 7.061492044556173,
+        "hybrid_alpha_1.0": 25.172710255098472
+      },
+      "arrival_choice": {
+        "source_m_s": [
+          2000.0,
+          11600.0,
+          566.6666870117188,
+          0.05000000074505806
+        ],
+        "waveform_loss": 1.0758687257766724,
+        "arrival_rmse_s": 0.1855065369250479,
+        "arrival_normalized_loss": 3.4412675241924156,
+        "hybrid_alpha_0.25": 1.9361856068247763,
+        "hybrid_alpha_1.0": 4.517136249969088
+      },
+      "hybrid_choice": {
+        "source_m_s": [
+          2000.0,
+          11600.0,
+          566.6666870117188,
+          0.05000000074505806
+        ],
+        "waveform_loss": 1.0758687257766724,
+        "arrival_rmse_s": 0.1855065369250479,
+        "arrival_normalized_loss": 3.4412675241924156,
+        "hybrid_alpha_0.25": 1.9361856068247763,
+        "hybrid_alpha_1.0": 4.517136249969088
+      },
+      "waveform_location_error_m": 3162.45333716638,
+      "waveform_origin_time_error_s": 0.06999999657273293,
+      "arrival_location_error_m": 1166.6666660853796,
+      "arrival_origin_time_error_s": 0.06999999657273293,
+      "hybrid_location_error_m": 1166.6666660853796,
+      "hybrid_origin_time_error_s": 0.06999999657273293
+    },
+    {
+      "event": "event_06.npz",
+      "truth_source_m_s": [
+        7000.0,
+        14000.0,
+        1100.0,
+        0.23999999463558197
+      ],
+      "fmm_start_m_s": [
+        6800.0,
+        14000.0,
+        100.0,
+        0.11113940090152408
+      ],
+      "waveform_choice": {
+        "source_m_s": [
+          4400.0,
+          14000.0,
+          566.6666259765625,
+          0.16800621151924133
+        ],
+        "waveform_loss": 1.2668858766555786,
+        "arrival_rmse_s": 0.3762993462214906,
+        "arrival_normalized_loss": 14.160119796672124,
+        "hybrid_alpha_0.25": 4.8069158258236095,
+        "hybrid_alpha_1.0": 15.427005673327702
+      },
+      "arrival_choice": {
+        "source_m_s": [
+          6800.0,
+          14000.0,
+          100.0,
+          0.11113940179347992
+        ],
+        "waveform_loss": 1.4008285999298096,
+        "arrival_rmse_s": 0.1400675344832033,
+        "arrival_normalized_loss": 1.9618914216203347,
+        "hybrid_alpha_0.25": 1.8913014553348932,
+        "hybrid_alpha_1.0": 3.3627200215501443
+      },
+      "hybrid_choice": {
+        "source_m_s": [
+          6800.0,
+          14000.0,
+          566.6666259765625,
+          0.18098929524421692
+        ],
+        "waveform_loss": 1.3159288167953491,
+        "arrival_rmse_s": 0.1482905754542983,
+        "arrival_normalized_loss": 2.1990094768566935,
+        "hybrid_alpha_0.25": 1.8656811860095224,
+        "hybrid_alpha_1.0": 3.5149382936520426
+      },
+      "waveform_location_error_m": 2654.1372398290227,
+      "waveform_origin_time_error_s": 0.07199378311634064,
+      "arrival_location_error_m": 1019.803902718557,
+      "arrival_origin_time_error_s": 0.12886059284210205,
+      "hybrid_location_error_m": 569.6002877871673,
+      "hybrid_origin_time_error_s": 0.05901069939136505
+    },
+    {
+      "event": "event_07.npz",
+      "truth_source_m_s": [
+        10000.0,
+        3000.0,
+        450.0,
+        0.3199999928474426
+      ],
+      "fmm_start_m_s": [
+        9200.0,
+        2000.0,
+        100.0,
+        0.16164987639071615
+      ],
+      "waveform_choice": {
+        "source_m_s": [
+          11600.0,
+          2000.0,
+          100.0,
+          0.05000000074505806
+        ],
+        "waveform_loss": 1.1748363971710205,
+        "arrival_rmse_s": 0.24170546020658645,
+        "arrival_normalized_loss": 5.842152949367775,
+        "hybrid_alpha_0.25": 2.6353746345129645,
+        "hybrid_alpha_1.0": 7.016989346538796
+      },
+      "arrival_choice": {
+        "source_m_s": [
+          9200.0,
+          2000.0,
+          100.0,
+          0.1616498827934265
+        ],
+        "waveform_loss": 1.3924046754837036,
+        "arrival_rmse_s": 0.19058450240636807,
+        "arrival_normalized_loss": 3.632245255748291,
+        "hybrid_alpha_0.25": 2.3004659894207764,
+        "hybrid_alpha_1.0": 5.024649931231995
+      },
+      "hybrid_choice": {
+        "source_m_s": [
+          9200.0,
+          2000.0,
+          100.0,
+          0.1616498827934265
+        ],
+        "waveform_loss": 1.3924046754837036,
+        "arrival_rmse_s": 0.19058450240636807,
+        "arrival_normalized_loss": 3.632245255748291,
+        "hybrid_alpha_0.25": 2.3004659894207764,
+        "hybrid_alpha_1.0": 5.024649931231995
+      },
+      "waveform_location_error_m": 1918.9841062395487,
+      "waveform_origin_time_error_s": 0.26999999210238457,
+      "arrival_location_error_m": 1327.5918047351754,
+      "arrival_origin_time_error_s": 0.1583501100540161,
+      "hybrid_location_error_m": 1327.5918047351754,
+      "hybrid_origin_time_error_s": 0.1583501100540161
+    },
+    {
+      "event": "event_08.npz",
+      "truth_source_m_s": [
+        14000.0,
+        10000.0,
+        1400.0,
+        0.4000000059604645
+      ],
+      "fmm_start_m_s": [
+        14000.0,
+        9200.0,
+        100.0,
+        0.31049491415745223
+      ],
+      "waveform_choice": {
+        "source_m_s": [
+          11600.0,
+          9200.0,
+          566.6666259765625,
+          0.5
+        ],
+        "waveform_loss": 1.216760277748108,
+        "arrival_rmse_s": 0.388966307393462,
+        "arrival_normalized_loss": 15.129478828730516,
+        "hybrid_alpha_0.25": 4.999129984930737,
+        "hybrid_alpha_1.0": 16.346239106478624
+      },
+      "arrival_choice": {
+        "source_m_s": [
+          14000.0,
+          9200.0,
+          100.0,
+          0.31049489974975586
+        ],
+        "waveform_loss": 1.271872878074646,
+        "arrival_rmse_s": 0.18293321609143942,
+        "arrival_normalized_loss": 3.3464561549557272,
+        "hybrid_alpha_0.25": 2.108486916813578,
+        "hybrid_alpha_1.0": 4.618329033030373
+      },
+      "hybrid_choice": {
+        "source_m_s": [
+          14000.0,
+          9200.0,
+          100.0,
+          0.31049489974975586
+        ],
+        "waveform_loss": 1.271872878074646,
+        "arrival_rmse_s": 0.18293321609143942,
+        "arrival_normalized_loss": 3.3464561549557272,
+        "hybrid_alpha_0.25": 2.108486916813578,
+        "hybrid_alpha_1.0": 4.618329033030373
+      },
+      "waveform_location_error_m": 2663.539846193649,
+      "waveform_origin_time_error_s": 0.09999999403953552,
+      "arrival_location_error_m": 1526.4337522473747,
+      "arrival_origin_time_error_s": 0.08950510621070862,
+      "hybrid_location_error_m": 1526.4337522473747,
+      "hybrid_origin_time_error_s": 0.08950510621070862
+    }
+  ],
+  "limits": "Eight events, one MoE checkpoint, fixed threshold picks, and a coarse local grid. This is a diagnostic comparison, not a final localization benchmark."
+}

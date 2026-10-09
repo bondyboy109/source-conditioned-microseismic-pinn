@@ -1,0 +1,13 @@
+{
+  "purpose": "development-only audit of the frozen source-transfer localization objective at truth and recovered source",
+  "trajectory_protocol": "experiments/source_transfer_trajectory_protocol.json",
+  "trajectory_result": "experiments/source_transfer_trajectory_results.json",
+  "localization_protocol": "experiments/traveltime_aligned_moe_localization_protocol.json",
+  "target_updates": [0, 500, 1500],
+  "arms": ["source_to_target", "target_to_target"],
+  "seeds": [4101, 4102, 4103],
+  "output_json": "experiments/source_transfer_objective_audit_results.json",
+  "output_report": "experiments/source_transfer_objective_audit_results.md",
+  "comparison": "At each frozen model, evaluate the same fine-sampled waveform MSE and target-FMM arrival objective at the known true source and the existing hybrid estimate. Positive estimate-minus-truth loss means the true source has a lower objective value; no search parameter or loss weight is changed.",
+  "restriction": "Uses four previously inspected development events. The four source_transfer_moe_test events are excluded. These scores diagnose the objective and cannot establish independent transfer benefit."
+}

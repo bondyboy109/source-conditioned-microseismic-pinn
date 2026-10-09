@@ -1,0 +1,55 @@
+{
+  "purpose": "one-time prospective confirmation of the frozen FMM-aligned MoE and arrival-constrained localization objective on eight unused sources",
+  "protocol_written_before_fd_generation": true,
+  "model_checkpoint": "outputs/traveltime_aligned_moe_development/traveltime_aligned_moe.pth",
+  "model_checkpoint_sha256": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+  "receiver_fmm_fields": "outputs/traveltime_aligned_moe_development/receiver_fmm_fields_stride2.npy",
+  "receiver_fmm_fields_sha256": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",
+  "localization_protocol": "experiments/traveltime_aligned_moe_localization_protocol.json",
+  "localization_protocol_sha256": "62c69be47a4037d919e9704f407bae352b7c36c67d717e02e8877d4df6c9c167",
+  "localization_development_result": "experiments/traveltime_aligned_moe_localization_results.json",
+  "localization_development_result_sha256": "cdd8d08aab3feda97103883eb277739fb5b0de4ec333381328343770d7f3fe42",
+  "frozen_localization_implementation": "examples/run_traveltime_aligned_moe_localization.py",
+  "frozen_localization_implementation_sha256": "add81f105956c073f8b2331f15da37dbddc3906dc996bc5b6d33eb2429694c0e",
+  "frozen_localization_implementation_version": "historical runner used for this confirmation; the current working-tree runner has a different hash and must not be substituted for this record",
+  "confirmation_directory": "data/observations/traveltime_aligned_moe_confirmation",
+  "events": [
+    {"file": "confirm_01_west_shallow.npz", "source_m_s": [3100.0, 7200.0, 410.0, 0.18]},
+    {"file": "confirm_02_east_deep.npz", "source_m_s": [12800.0, 6600.0, 1330.0, 0.36]},
+    {"file": "confirm_03_north_mid.npz", "source_m_s": [5800.0, 12100.0, 690.0, 0.24]},
+    {"file": "confirm_04_south_deep.npz", "source_m_s": [11200.0, 2600.0, 1010.0, 0.42]},
+    {"file": "confirm_05_center_shallow.npz", "source_m_s": [8200.0, 8400.0, 300.0, 0.14]},
+    {"file": "confirm_06_southwest_deep.npz", "source_m_s": [4200.0, 3600.0, 1420.0, 0.31]},
+    {"file": "confirm_07_northeast_mid.npz", "source_m_s": [13700.0, 11800.0, 600.0, 0.27]},
+    {"file": "confirm_08_north_deep.npz", "source_m_s": [9500.0, 13200.0, 1240.0, 0.39]}
+  ],
+  "fd_configuration": {
+    "frequency_hz": 5.0,
+    "duration_s": 2.0,
+    "time_step_s": 0.002,
+    "receiver_count": 25,
+    "boundary": "zero Dirichlet on all six faces"
+  },
+  "fmm_baseline": {
+    "grid_spacing_m": 80.0,
+    "coarse_grid_xyz": [11, 11, 8],
+    "refinement_grid_xyz": 7,
+    "refinement_levels": 4,
+    "origin_time_bounds_s": [0.05, 0.50],
+    "uses_same_corrected_robust_picks_as_hybrid": true
+  },
+  "confirmation_gates": {
+    "all_events_have_at_least_six_valid_picks": true,
+    "hybrid_median_location_error_m_below": 500.0,
+    "hybrid_location_error_below_500_m_events_at_least": 5,
+    "hybrid_median_origin_time_error_s_below": 0.05,
+    "hybrid_origin_time_error_below_0_05_s_events_at_least": 6,
+    "hybrid_median_location_not_worse_than_waveform_only": true,
+    "hybrid_location_improves_over_waveform_events_at_least": 6
+  },
+  "output_result": "experiments/traveltime_aligned_moe_confirmation_results.json",
+  "output_report": "experiments/traveltime_aligned_moe_confirmation_results.md",
+  "reporting": "Report all eight sources, all three estimates, component errors, eloc, et, waveform and arrival losses, valid picks, FD generation time, and search time. Report every failed gate.",
+  "decision_rule": "Do not change the checkpoint, picker, bias correction, hybrid weight, search grid, optimizer, or gates after generating these records. These events may be used once for confirmation and never for later tuning.",
+  "limitations": "Unseen source positions share the same noise-free 5-Hz synthetic Overthrust velocity, receiver geometry, source mechanism, and FD solver as development. This is source-position confirmation, not validation on unseen geology, noise, or field data."
+}

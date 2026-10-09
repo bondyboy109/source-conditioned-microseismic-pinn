@@ -1,0 +1,94 @@
+{
+  "purpose": "frozen-model development audit of finite spatial source response",
+  "checkpoint": "outputs\\local_density_aug20_scratch_hybrid_1000\\conditioned_5Hz.pth",
+  "reference": "data\\observations\\window_0to2s\\train_09_0to2s.npz",
+  "source": [
+    6500.0,
+    3500.0,
+    700.0,
+    0.20000000298023224
+  ],
+  "reference_training_sha256": "8597e4f364af973e6d2ac035bd131593bab97ed0529c2b0836cd8e2e0219ed60",
+  "results": [
+    {
+      "reference_change_relative_to_original": 1.6013049688959886,
+      "model_change_relative_to_original": 1.583247726954977,
+      "model_to_fd_change_norm_ratio": 0.9877675520567146,
+      "change_cosine": 0.9875829601112617,
+      "change_relative_l2": 0.1570984753970075,
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a09_xp400.npz",
+      "displacement_m": 400.0,
+      "displacement_xyz_m": [
+        400.0,
+        0.0,
+        0.0
+      ],
+      "raw_waveform_relative_l2": 0.26486095061316883,
+      "prediction_to_fd_peak_ratio": 0.9207984280637456
+    },
+    {
+      "reference_change_relative_to_original": 0.7460172757278971,
+      "model_change_relative_to_original": 0.8354530938227047,
+      "model_to_fd_change_norm_ratio": 1.1188017078028116,
+      "change_cosine": 0.9625544693374863,
+      "change_relative_l2": 0.3128931016920497,
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a09_ym120.npz",
+      "displacement_m": 120.0,
+      "displacement_xyz_m": [
+        0.0,
+        -120.0,
+        0.0
+      ],
+      "raw_waveform_relative_l2": 0.2553421709162187,
+      "prediction_to_fd_peak_ratio": 1.0642940079891305
+    },
+    {
+      "reference_change_relative_to_original": 0.7529545365065383,
+      "model_change_relative_to_original": 0.8406279685841105,
+      "model_to_fd_change_norm_ratio": 1.1153598700323044,
+      "change_cosine": 0.9631026421976656,
+      "change_relative_l2": 0.30921766446916427,
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a09_yp120.npz",
+      "displacement_m": 120.0,
+      "displacement_xyz_m": [
+        0.0,
+        120.0,
+        0.0
+      ],
+      "raw_waveform_relative_l2": 0.24244595340263944,
+      "prediction_to_fd_peak_ratio": 0.9652451305947806
+    },
+    {
+      "reference_change_relative_to_original": 0.3762547560373848,
+      "model_change_relative_to_original": 0.29902033308462794,
+      "model_to_fd_change_norm_ratio": 0.7939600607117391,
+      "change_cosine": 0.08996347026165553,
+      "change_relative_l2": 1.219638378120262,
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a09_zm080.npz",
+      "displacement_m": 80.0,
+      "displacement_xyz_m": [
+        0.0,
+        0.0,
+        -80.0
+      ],
+      "raw_waveform_relative_l2": 0.4604974045117168,
+      "prediction_to_fd_peak_ratio": 0.9207430283933102
+    },
+    {
+      "reference_change_relative_to_original": 0.31958932461723827,
+      "model_change_relative_to_original": 0.3178097555385352,
+      "model_to_fd_change_norm_ratio": 0.9934703129242318,
+      "change_cosine": 0.07148018732793206,
+      "change_relative_l2": 1.358291711863341,
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a09_zp080.npz",
+      "displacement_m": 80.0,
+      "displacement_xyz_m": [
+        0.0,
+        0.0,
+        80.0
+      ],
+      "raw_waveform_relative_l2": 0.41885324648622885,
+      "prediction_to_fd_peak_ratio": 0.9923647647612758
+    }
+  ]
+}

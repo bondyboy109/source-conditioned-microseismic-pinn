@@ -1,0 +1,185 @@
+{
+  "bounds_m_s": [
+    [
+      2000.0,
+      14000.0
+    ],
+    [
+      2000.0,
+      14000.0
+    ],
+    [
+      100.0,
+      1500.0
+    ],
+    [
+      0.05000000074505806,
+      0.5
+    ]
+  ],
+  "grid_shape_xyzt": [
+    11,
+    11,
+    8,
+    6
+  ],
+  "grid_candidates": 5808,
+  "coarse_starts": [
+    {
+      "source_m_s": [
+        6800.0,
+        2000.0,
+        700.0,
+        0.5
+      ],
+      "coarse_normalized_mse": 0.5752840638160706
+    },
+    {
+      "source_m_s": [
+        6800.0,
+        2000.0,
+        900.0,
+        0.5
+      ],
+      "coarse_normalized_mse": 0.6513307690620422
+    },
+    {
+      "source_m_s": [
+        8000.0,
+        2000.0,
+        1500.0,
+        0.5
+      ],
+      "coarse_normalized_mse": 0.7343933582305908
+    },
+    {
+      "source_m_s": [
+        8000.0,
+        3200.0,
+        1300.0,
+        0.4099999964237213
+      ],
+      "coarse_normalized_mse": 0.8122142553329468
+    },
+    {
+      "source_m_s": [
+        9200.0,
+        2000.0,
+        1100.0,
+        0.4099999964237213
+      ],
+      "coarse_normalized_mse": 0.8257808685302734
+    }
+  ],
+  "refinements": [
+    {
+      "initial_source_m_s": [
+        6800.0,
+        2000.0,
+        700.0,
+        0.5
+      ],
+      "coarse_normalized_mse": 0.5752840638160706,
+      "estimated_source_m_s": [
+        6838.35888671875,
+        2048.05419921875,
+        884.5631103515625,
+        0.5
+      ],
+      "normalized_mse": 0.7463418245315552,
+      "on_region_boundary": true
+    },
+    {
+      "initial_source_m_s": [
+        6800.0,
+        2000.0,
+        900.0,
+        0.5
+      ],
+      "coarse_normalized_mse": 0.6513307690620422,
+      "estimated_source_m_s": [
+        6838.35498046875,
+        2048.053955078125,
+        884.56396484375,
+        0.5
+      ],
+      "normalized_mse": 0.7463418245315552,
+      "on_region_boundary": true
+    },
+    {
+      "initial_source_m_s": [
+        8000.0,
+        2000.0,
+        1500.0,
+        0.5
+      ],
+      "coarse_normalized_mse": 0.7343933582305908,
+      "estimated_source_m_s": [
+        7954.40625,
+        2067.532958984375,
+        1436.133544921875,
+        0.5
+      ],
+      "normalized_mse": 0.6023402214050293,
+      "on_region_boundary": true
+    },
+    {
+      "initial_source_m_s": [
+        8000.0,
+        3200.0,
+        1300.0,
+        0.4099999964237213
+      ],
+      "coarse_normalized_mse": 0.8122142553329468,
+      "estimated_source_m_s": [
+        8259.83984375,
+        3221.303955078125,
+        1253.168701171875,
+        0.38888978958129883
+      ],
+      "normalized_mse": 0.34915798902511597,
+      "on_region_boundary": false
+    },
+    {
+      "initial_source_m_s": [
+        9200.0,
+        2000.0,
+        1100.0,
+        0.4099999964237213
+      ],
+      "coarse_normalized_mse": 0.8257808685302734,
+      "estimated_source_m_s": [
+        8969.984375,
+        2485.2685546875,
+        1385.59521484375,
+        0.3946366012096405
+      ],
+      "normalized_mse": 0.666451096534729,
+      "on_region_boundary": false
+    }
+  ],
+  "estimated_source_m_s": [
+    8259.83984375,
+    3221.303955078125,
+    1253.168701171875,
+    0.38888978958129883
+  ],
+  "final_normalized_mse": 0.34915798902511597,
+  "source_truth_used_in_search": false,
+  "runtime_seconds": 3.7058737999977893,
+  "location_error_m": 96.5528110772769,
+  "origin_time_error_s": 0.0011101961135864258,
+  "component_error_m_s": [
+    -60.16015625,
+    -18.696044921875,
+    73.168701171875,
+    -0.0011101961135864258
+  ],
+  "truth_source_normalized_mse": 0.4251677691936493,
+  "source_truth_m_s_post_search": [
+    8320.0,
+    3240.0,
+    1180.0,
+    0.38999998569488525
+  ]
+}

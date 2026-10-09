@@ -1,0 +1,150 @@
+{
+  "role": "development-only local FD waveform interpolation baseline; no PINN or localization claim",
+  "protocol_sha256": "f3dd4cc77db5735369120501d15b68f1f5d2acaa46b5befc96b64bfb189047ba",
+  "training_offsets_m": [
+    -160,
+    0,
+    160
+  ],
+  "interpolation_offsets_m": [
+    -80,
+    80
+  ],
+  "summary": {
+    "interpolated": {
+      "full_l2": 0.1530157824458817,
+      "active_l2": 0.1476683862387927,
+      "response_l2": 0.3901038478973147,
+      "response_cosine": 0.9151997449378506,
+      "zero_lag_correlation": 0.993061317397097
+    },
+    "nearest_training_record": {
+      "full_l2": 0.4518150871021538,
+      "active_l2": 0.4133280992281899,
+      "response_l2": 1.0915980892558057,
+      "response_cosine": 0.9151997449378506,
+      "zero_lag_correlation": 0.8982599457727083
+    },
+    "registered_neural_reference": {
+      "baseline29_mean_full_l2": 0.3918158562322998,
+      "augmented33_mean_full_l2": 0.22432566978424917,
+      "baseline29_mean_active_l2": 0.3329376175915444,
+      "augmented33_mean_active_l2": 0.18013202829180563
+    }
+  },
+  "events": [
+    {
+      "event": "a10_zm80.npz",
+      "sha256": "4889354580ac4f728ba6c2aa1534f191ea304f205ae1b698bd26d0b5c11e683f",
+      "anchor": "a10",
+      "target_offset_m": -80,
+      "interpolation": {
+        "low_offset_m": -160,
+        "high_offset_m": 0,
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      "interpolated": {
+        "full_l2": 0.13349594251726718,
+        "active_l2": 0.12639099882083077,
+        "response_l2": 0.34494840777227864,
+        "response_cosine": 0.9474164409255065,
+        "zero_lag_correlation": 0.9913874309655057
+      },
+      "nearest_training_record": {
+        "full_l2": 0.48250196199731366,
+        "active_l2": 0.4393458567966061,
+        "response_l2": 1.2467666087787335,
+        "response_cosine": 0.9474164409255065,
+        "zero_lag_correlation": 0.8940689443194393
+      }
+    },
+    {
+      "event": "a10_zp80.npz",
+      "sha256": "d342e544ff168b7dc2c27f4b9118f85c379df716d44672f8cd5adaf18385071f",
+      "anchor": "a10",
+      "target_offset_m": 80,
+      "interpolation": {
+        "low_offset_m": 0,
+        "high_offset_m": 160,
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      "interpolated": {
+        "full_l2": 0.13129709615866383,
+        "active_l2": 0.12687213068011075,
+        "response_l2": 0.42117292647819604,
+        "response_cosine": 0.9070266631075898,
+        "zero_lag_correlation": 0.995382698937614
+      },
+      "nearest_training_record": {
+        "full_l2": 0.3169337593053477,
+        "active_l2": 0.2776270491817708,
+        "response_l2": 1.0166555301806754,
+        "response_cosine": 0.9070266631075898,
+        "zero_lag_correlation": 0.9490357118139906
+      }
+    },
+    {
+      "event": "a14_zm80.npz",
+      "sha256": "ffce923aa8a413e382f5aea4b3d41094e843a4b3e4b484d6f213bb3304ede2cb",
+      "anchor": "a14",
+      "target_offset_m": -80,
+      "interpolation": {
+        "low_offset_m": -160,
+        "high_offset_m": 0,
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      "interpolated": {
+        "full_l2": 0.19997049116175472,
+        "active_l2": 0.19589727368313212,
+        "response_l2": 0.562285754867818,
+        "response_cosine": 0.8329901346156572,
+        "zero_lag_correlation": 0.9925198237389349
+      },
+      "nearest_training_record": {
+        "full_l2": 0.4168680217148032,
+        "active_l2": 0.38215657815922127,
+        "response_l2": 1.172167697885776,
+        "response_cosine": 0.8329901346156572,
+        "zero_lag_correlation": 0.9110722713507184
+      }
+    },
+    {
+      "event": "a14_zp80.npz",
+      "sha256": "f3b25cf64e94d8b501f80a9b43d79ddb51a5cb7c9fe7acb1aeb18655a2f6cfb8",
+      "anchor": "a14",
+      "target_offset_m": 80,
+      "interpolation": {
+        "low_offset_m": 0,
+        "high_offset_m": 160,
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      "interpolated": {
+        "full_l2": 0.14729959994584108,
+        "active_l2": 0.14151314177109714,
+        "response_l2": 0.23200830247096632,
+        "response_cosine": 0.9733657411026486,
+        "zero_lag_correlation": 0.9929553159463332
+      },
+      "nearest_training_record": {
+        "full_l2": 0.5909566053911509,
+        "active_l2": 0.5541829127751615,
+        "response_l2": 0.9308025201780382,
+        "response_cosine": 0.9733657411026486,
+        "zero_lag_correlation": 0.838862855606685
+      }
+    }
+  ],
+  "limits": "four target records and two anchors already inspected; linear combination uses FD waveforms and is a diagnostic lower-complexity baseline, not a deployable forward operator or independent validation"
+}

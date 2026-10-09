@@ -1,0 +1,26 @@
+{
+  "purpose": "Development-only uniform-medium propagation calibration; not Overthrust localization",
+  "velocity_m_s": 3500.0,
+  "frequency_hz": 5.0,
+  "grid_shape": [401, 401, 94],
+  "spacing_m": 40.0,
+  "record_length_s": 9.0,
+  "time_step_s": 0.002,
+  "boundary": "zero top; lateral and bottom damped sponge ending at zero faces",
+  "sponge_width_m": 800.0,
+  "sponge_max_damping_s": 60.0,
+  "train_source_m_s": [3500.0, 4000.0, 500.0, 0.12],
+  "test_source_m_s": [3750.0, 4000.0, 500.0, 0.12],
+  "training": {
+    "architecture": "translation_invariant_travel_time_carrier",
+    "receiver_only": true,
+    "seed": 42,
+    "steps": 5000,
+    "receiver_batch_size": 1024,
+    "receiver_loss_weight": 0.1,
+    "wavefield_scale": 0.00001,
+    "reference_velocity_m_s": 3500.0,
+    "hard_initial": false
+  },
+  "evaluation": "Report original-amplitude full-record relative L2 for both events and source-centre PDE residual; do not tune on the test source"
+}

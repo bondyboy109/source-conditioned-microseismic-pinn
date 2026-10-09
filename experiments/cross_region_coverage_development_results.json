@@ -1,0 +1,43 @@
+{
+  "purpose": "source-coverage development pilot, not independent confirmation",
+  "protocol": "E:\\source-conditioned-microseismic-pinn\\experiments\\cross_region_coverage_development_protocol.json",
+  "control_sha256": "3a8b5251f12c308f9899ef5557347984e09b7a3d948ffd7a3146d6242b20041a",
+  "augmented_sha256": "5f3a27f85d32e8385b2d9ae7e3eff056cc373e037fd4dcd074dc75b88b503184",
+  "receiver_seconds": 27.473908399995707,
+  "hybrid_seconds": 47.829021400000784,
+  "added_fd_seconds": 34.49764389999473,
+  "rows": [
+    {
+      "file": "dev_r04.npz",
+      "sha256": "fa0b0fe354776ec0e28820e4ed5a69a34312cddd3c5b529b05c443d9d203c488",
+      "control_raw_l2": 0.8102734004237079,
+      "augmented_raw_l2": 0.4898665683947544
+    },
+    {
+      "file": "dev_r07.npz",
+      "sha256": "7c0639c20b7d8e5eb02f4580c25b36e2ab7173b2f9e22e84a78ab45d0788486f",
+      "control_raw_l2": 0.7842106349835521,
+      "augmented_raw_l2": 0.5290802079548865
+    },
+    {
+      "file": "dev_r08.npz",
+      "sha256": "886d85dd148f2784c7d96c4ddbd99044f469942656d2eae348055d254b6c3ebc",
+      "control_raw_l2": 1.3008945422110814,
+      "augmented_raw_l2": 0.6853585421139383
+    },
+    {
+      "file": "dev_center.npz",
+      "sha256": "1153cc5f39dbd4721655829794a074b763307287ea10f0d631563fd6ee48727c",
+      "control_raw_l2": 0.9397748433852269,
+      "augmented_raw_l2": 0.5194307744460046
+    }
+  ],
+  "control_mean_l2": 0.9587883552508921,
+  "augmented_mean_l2": 0.5559340232273959,
+  "gates": {
+    "mean_improvement": true,
+    "improvement_count": true,
+    "all_augmented_below": true
+  },
+  "all_gates_passed": true
+}

@@ -1,0 +1,2537 @@
+{
+  "purpose": "frozen stress test of FMM-aligned MoE localization under uniform inversion-velocity bias",
+  "protocol": "E:\\source-conditioned-microseismic-pinn\\experiments\\traveltime_aligned_moe_velocity_bias_protocol.json",
+  "protocol_sha256": "18c5e3023c69c022bac2a18a923a25ee12bc04803d37408e6e10d0b50e5835b4",
+  "implementation_sha256": "7acc79c3a44b609ed7bb66450bbb01cb800c9b2b217c02a0c29da3eba41f68d9",
+  "checkpoint_sha256": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+  "device": "cuda",
+  "conditions": [
+    {
+      "id": "velocity_90pct",
+      "velocity_factor": 0.9
+    },
+    {
+      "id": "velocity_95pct",
+      "velocity_factor": 0.95
+    },
+    {
+      "id": "velocity_105pct",
+      "velocity_factor": 1.05
+    },
+    {
+      "id": "velocity_110pct",
+      "velocity_factor": 1.1
+    }
+  ],
+  "trial_count": 32,
+  "runtime_seconds": 346.5589833000013,
+  "summary": {
+    "velocity_90pct": {
+      "trial_count": 8,
+      "velocity_factor": 0.9,
+      "waveform_only": {
+        "median_location_error_m": 1560.0354160507063,
+        "mean_location_error_m": 1951.979009171972,
+        "median_origin_time_error_s": 0.060659751296043396,
+        "mean_origin_time_error_s": 0.0961479521356523,
+        "events_below_500_m": 0
+      },
+      "hybrid": {
+        "median_location_error_m": 442.61265289845494,
+        "mean_location_error_m": 498.41695785081345,
+        "median_origin_time_error_s": 0.11705335229635239,
+        "mean_origin_time_error_s": 0.11646649846807122,
+        "events_below_500_m": 5
+      },
+      "fmm": {
+        "median_location_error_m": 254.93113356317536,
+        "mean_location_error_m": 295.4966127978124,
+        "median_origin_time_error_s": 0.1162940457217978,
+        "mean_origin_time_error_s": 0.122823468279421,
+        "events_below_500_m": 7
+      },
+      "hybrid_improved_over_waveform_events": 8
+    },
+    "velocity_95pct": {
+      "trial_count": 8,
+      "velocity_factor": 0.95,
+      "waveform_only": {
+        "median_location_error_m": 1171.2017320844643,
+        "mean_location_error_m": 2342.1912687789763,
+        "median_origin_time_error_s": 0.07456613704562187,
+        "mean_origin_time_error_s": 0.10939542669802904,
+        "events_below_500_m": 1
+      },
+      "hybrid": {
+        "median_location_error_m": 328.8115060106726,
+        "mean_location_error_m": 412.5879236697177,
+        "median_origin_time_error_s": 0.04935382306575775,
+        "mean_origin_time_error_s": 0.05613211588934064,
+        "events_below_500_m": 6
+      },
+      "fmm": {
+        "median_location_error_m": 212.3157941400324,
+        "mean_location_error_m": 199.53048850051061,
+        "median_origin_time_error_s": 0.05643145473055877,
+        "mean_origin_time_error_s": 0.06510690461117544,
+        "events_below_500_m": 8
+      },
+      "hybrid_improved_over_waveform_events": 8
+    },
+    "velocity_105pct": {
+      "trial_count": 8,
+      "velocity_factor": 1.05,
+      "waveform_only": {
+        "median_location_error_m": 1503.1307455736219,
+        "mean_location_error_m": 2502.9004882880154,
+        "median_origin_time_error_s": 0.06851564347743988,
+        "mean_origin_time_error_s": 0.11094537749886513,
+        "events_below_500_m": 1
+      },
+      "hybrid": {
+        "median_location_error_m": 361.08670450740306,
+        "mean_location_error_m": 344.04044436060315,
+        "median_origin_time_error_s": 0.013885781168937683,
+        "mean_origin_time_error_s": 0.02674928680062294,
+        "events_below_500_m": 6
+      },
+      "fmm": {
+        "median_location_error_m": 230.11824731097158,
+        "mean_location_error_m": 244.1095502186028,
+        "median_origin_time_error_s": 0.03583903809717803,
+        "mean_origin_time_error_s": 0.03546897267691576,
+        "events_below_500_m": 7
+      },
+      "hybrid_improved_over_waveform_events": 8
+    },
+    "velocity_110pct": {
+      "trial_count": 8,
+      "velocity_factor": 1.1,
+      "waveform_only": {
+        "median_location_error_m": 1107.1102217268285,
+        "mean_location_error_m": 3717.1872048959594,
+        "median_origin_time_error_s": 0.08728620409965515,
+        "mean_origin_time_error_s": 0.11232662200927734,
+        "events_below_500_m": 1
+      },
+      "hybrid": {
+        "median_location_error_m": 289.9011227327512,
+        "mean_location_error_m": 438.71082461830065,
+        "median_origin_time_error_s": 0.04963245987892151,
+        "mean_origin_time_error_s": 0.05602910928428173,
+        "events_below_500_m": 7
+      },
+      "fmm": {
+        "median_location_error_m": 378.82674771010136,
+        "mean_location_error_m": 384.99465861717783,
+        "median_origin_time_error_s": 0.08167156656979829,
+        "mean_origin_time_error_s": 0.07779343704590475,
+        "events_below_500_m": 7
+      },
+      "hybrid_improved_over_waveform_events": 8
+    }
+  },
+  "records": [
+    {
+      "condition_id": "velocity_90pct",
+      "velocity_factor": 0.9,
+      "velocity_bias_percent": -9.999999999999998,
+      "event": "confirm_01_west_shallow.npz",
+      "observation_sha256": "629b01e405f011825ad94e3982170944956dde2df584075328314150679b5442",
+      "valid_pick_count": 12,
+      "source_truth_m_s_post_search": [
+        3100.0,
+        7200.0,
+        410.0,
+        0.18000000715255737
+      ],
+      "search_seconds": 10.981053300001804,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          3289.58984375,
+          4237.20849609375,
+          252.3658905029297,
+          0.42469173669815063
+        ],
+        "total_loss": 0.8679355978965759,
+        "waveform_normalized_mse": 0.8679355978965759,
+        "arrival_normalized_mse": 60.66669845581055,
+        "selected_spatial_move_m": 309.59661825287276,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          189.58984375,
+          -2962.79150390625,
+          -157.6341094970703,
+          0.24469172954559326
+        ],
+        "location_error_m": 2973.033184636381,
+        "origin_time_error_s": 0.24469172954559326
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          2991.970458984375,
+          7107.74658203125,
+          604.7587280273438,
+          0.09017281234264374
+        ],
+        "total_loss": 0.8861176371574402,
+        "waveform_normalized_mse": 0.8105815649032593,
+        "arrival_normalized_mse": 0.30214428901672363,
+        "selected_spatial_move_m": 385.9516029050734,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -108.029541015625,
+          -92.25341796875,
+          194.75872802734375,
+          -0.08982719480991364
+        ],
+        "location_error_m": 241.06438351982305,
+        "origin_time_error_s": 0.08982719480991364
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          3096.296296296296,
+          7170.37037037037,
+          588.8888888888888,
+          0.06981725245714171
+        ],
+        "arrival_rmse_s": 0.03516097537660379,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          -3.7037037037039227,
+          -29.629629629629562,
+          178.8888888888888,
+          -0.11018275469541566
+        ],
+        "location_error_m": 181.3639074926846,
+        "origin_time_error_s": 0.11018275469541566
+      }
+    },
+    {
+      "condition_id": "velocity_90pct",
+      "velocity_factor": 0.9,
+      "velocity_bias_percent": -9.999999999999998,
+      "event": "confirm_02_east_deep.npz",
+      "observation_sha256": "e94ce318a54afc211feb769a51ae6899ff950581844b30545d92ccdee6749c00",
+      "valid_pick_count": 10,
+      "source_truth_m_s_post_search": [
+        12800.0,
+        6600.0,
+        1330.0,
+        0.36000001430511475
+      ],
+      "search_seconds": 11.65629590000026,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          12744.0400390625,
+          6894.384765625,
+          854.4115600585938,
+          0.3799229562282562
+        ],
+        "total_loss": 0.624570369720459,
+        "waveform_normalized_mse": 0.624570369720459,
+        "arrival_normalized_mse": 2.7514286041259766,
+        "selected_spatial_move_m": 189.42790472879494,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -55.9599609375,
+          294.384765625,
+          -475.58843994140625,
+          0.01992294192314148
+        ],
+        "location_error_m": 562.1194460842938,
+        "origin_time_error_s": 0.01992294192314148
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          12784.8857421875,
+          6577.33447265625,
+          1187.557373046875,
+          0.28302496671676636
+        ],
+        "total_loss": 0.45557695627212524,
+        "waveform_normalized_mse": 0.43656694889068604,
+        "arrival_normalized_mse": 0.07604007422924042,
+        "selected_spatial_move_m": 249.90342577206226,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -15.1142578125,
+          -22.66552734375,
+          -142.442626953125,
+          -0.07697504758834839
+        ],
+        "location_error_m": 145.02437344219118,
+        "origin_time_error_s": 0.07697504758834839
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          12844.444444444445,
+          6637.037037037037,
+          1500.0,
+          0.24107601625438557
+        ],
+        "arrival_rmse_s": 0.011210660140974821,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          44.44444444444525,
+          37.03703703703741,
+          170.0,
+          -0.11892399805072917
+        ],
+        "location_error_m": 179.5746383943408,
+        "origin_time_error_s": 0.11892399805072917
+      }
+    },
+    {
+      "condition_id": "velocity_90pct",
+      "velocity_factor": 0.9,
+      "velocity_bias_percent": -9.999999999999998,
+      "event": "confirm_03_north_mid.npz",
+      "observation_sha256": "f4f640ca19f0af30deda81c5d8237f91e83200413b034d562bf3f2c435b37ceb",
+      "valid_pick_count": 12,
+      "source_truth_m_s_post_search": [
+        5800.0,
+        12100.0,
+        690.0,
+        0.23999999463558197
+      ],
+      "search_seconds": 9.764244599999074,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          5870.8974609375,
+          10468.7685546875,
+          960.0014038085938,
+          0.22476646304130554
+        ],
+        "total_loss": 0.6245651841163635,
+        "waveform_normalized_mse": 0.6245651841163635,
+        "arrival_normalized_mse": 8.214987754821777,
+        "selected_spatial_move_m": 312.59263489685173,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          70.8974609375,
+          -1631.2314453125,
+          270.00140380859375,
+          -0.015233531594276428
+        ],
+        "location_error_m": 1654.9450855548964,
+        "origin_time_error_s": 0.015233531594276428
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          5684.26708984375,
+          12432.046875,
+          1124.53759765625,
+          0.0881352350115776
+        ],
+        "total_loss": 0.8095088601112366,
+        "waveform_normalized_mse": 0.6941999793052673,
+        "arrival_normalized_mse": 0.4612354636192322,
+        "selected_spatial_move_m": 378.27574377263505,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -115.73291015625,
+          332.046875,
+          434.53759765625,
+          -0.15186475962400436
+        ],
+        "location_error_m": 558.9920907019751,
+        "origin_time_error_s": 0.15186475962400436
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          5866.666666666667,
+          12059.259259259261,
+          1003.7037037037037,
+          0.11257212226473734
+        ],
+        "arrival_rmse_s": 0.019047730058267123,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          66.66666666666697,
+          -40.74074074073906,
+          313.7037037037037,
+          -0.12742787237084463
+        ],
+        "location_error_m": 323.28666244986005,
+        "origin_time_error_s": 0.12742787237084463
+      }
+    },
+    {
+      "condition_id": "velocity_90pct",
+      "velocity_factor": 0.9,
+      "velocity_bias_percent": -9.999999999999998,
+      "event": "confirm_04_south_deep.npz",
+      "observation_sha256": "184552204773fcc4866300760449d1099f634b1ea0a436aceb337858871c8aae",
+      "valid_pick_count": 7,
+      "source_truth_m_s_post_search": [
+        11200.0,
+        2600.0,
+        1010.0,
+        0.41999998688697815
+      ],
+      "search_seconds": 11.169791399999667,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          10424.3486328125,
+          3098.84716796875,
+          752.4727783203125,
+          0.47535672783851624
+        ],
+        "total_loss": 0.8775030970573425,
+        "waveform_normalized_mse": 0.8775030970573425,
+        "arrival_normalized_mse": 5.322668552398682,
+        "selected_spatial_move_m": 116.52529258677227,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -775.6513671875,
+          498.84716796875,
+          -257.5272216796875,
+          0.055356740951538086
+        ],
+        "location_error_m": 957.4987260129066,
+        "origin_time_error_s": 0.055356740951538086
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          11345.1806640625,
+          2993.820556640625,
+          880.001953125,
+          0.31913140416145325
+        ],
+        "total_loss": 0.6069068312644958,
+        "waveform_normalized_mse": 0.4911661148071289,
+        "arrival_normalized_mse": 0.46296292543411255,
+        "selected_spatial_move_m": 328.3942428095001,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          145.1806640625,
+          393.820556640625,
+          -129.998046875,
+          -0.1008685827255249
+        ],
+        "location_error_m": 439.3990762867793,
+        "origin_time_error_s": 0.1008685827255249
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          11214.814814814816,
+          2540.740740740741,
+          1248.1481481481483,
+          0.32179916015339904
+        ],
+        "arrival_rmse_s": 0.009396834041532917,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          14.81481481481569,
+          -59.259259259259125,
+          238.14814814814827,
+          -0.0982008267335791
+        ],
+        "location_error_m": 245.85702961751113,
+        "origin_time_error_s": 0.0982008267335791
+      }
+    },
+    {
+      "condition_id": "velocity_90pct",
+      "velocity_factor": 0.9,
+      "velocity_bias_percent": -9.999999999999998,
+      "event": "confirm_05_center_shallow.npz",
+      "observation_sha256": "c5bcb52a630e8e738c7951c9c44fb08eb3a2b89f4edde9cc1a072c792dc04da4",
+      "valid_pick_count": 12,
+      "source_truth_m_s_post_search": [
+        8200.0,
+        8400.0,
+        300.0,
+        0.14000000059604645
+      ],
+      "search_seconds": 9.773532700000942,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          8056.41162109375,
+          8169.552734375,
+          778.710693359375,
+          0.05000000074505806
+        ],
+        "total_loss": 0.3131895065307617,
+        "waveform_normalized_mse": 0.3131895065307617,
+        "arrival_normalized_mse": 0.6108516454696655,
+        "selected_spatial_move_m": 215.96642478364012,
+        "selected_on_boundary": true,
+        "component_error_m_s": [
+          -143.58837890625,
+          -230.447265625,
+          478.710693359375,
+          -0.08999999985098839
+        ],
+        "location_error_m": 550.3521533777965,
+        "origin_time_error_s": 0.08999999985098839
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          8288.642578125,
+          8415.2470703125,
+          573.8856811523438,
+          0.05000000074505806
+        ],
+        "total_loss": 0.36286982893943787,
+        "waveform_normalized_mse": 0.3175317049026489,
+        "arrival_normalized_mse": 0.18135252594947815,
+        "selected_spatial_move_m": 511.0809732215697,
+        "selected_on_boundary": true,
+        "component_error_m_s": [
+          88.642578125,
+          15.2470703125,
+          273.88568115234375,
+          -0.08999999985098839
+        ],
+        "location_error_m": 288.276509882516,
+        "origin_time_error_s": 0.08999999985098839
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          8251.85185185185,
+          8355.555555555555,
+          959.2592592592592,
+          0.05
+        ],
+        "arrival_rmse_s": 0.050707217465444564,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          51.85185185185037,
+          -44.44444444444525,
+          659.2592592592592,
+          -0.09000000059604644
+        ],
+        "location_error_m": 662.7870654301491,
+        "origin_time_error_s": 0.09000000059604644
+      }
+    },
+    {
+      "condition_id": "velocity_90pct",
+      "velocity_factor": 0.9,
+      "velocity_bias_percent": -9.999999999999998,
+      "event": "confirm_06_southwest_deep.npz",
+      "observation_sha256": "0891c18cc01dacf81771cead552775eaadea903cef55cd0bf22efe0a05568d16",
+      "valid_pick_count": 9,
+      "source_truth_m_s_post_search": [
+        4200.0,
+        3600.0,
+        1420.0,
+        0.3100000023841858
+      ],
+      "search_seconds": 9.744631400000799,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          4302.96533203125,
+          6187.24609375,
+          394.91546630859375,
+          0.3759627640247345
+        ],
+        "total_loss": 0.8669557571411133,
+        "waveform_normalized_mse": 0.8669557571411133,
+        "arrival_normalized_mse": 20.12481117248535,
+        "selected_spatial_move_m": 691.3462584769966,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          102.96533203125,
+          2587.24609375,
+          -1025.0845336914062,
+          0.0659627616405487
+        ],
+        "location_error_m": 2784.8236049053926,
+        "origin_time_error_s": 0.0659627616405487
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          4022.389404296875,
+          3630.639404296875,
+          100.0,
+          0.1598593294620514
+        ],
+        "total_loss": 1.2054282426834106,
+        "waveform_normalized_mse": 0.9456100463867188,
+        "arrival_normalized_mse": 1.0392729043960571,
+        "selected_spatial_move_m": 572.7478140686669,
+        "selected_on_boundary": true,
+        "component_error_m_s": [
+          -177.610595703125,
+          30.639404296875,
+          -1320.0,
+          -0.1501406729221344
+        ],
+        "location_error_m": 1332.2478361032104,
+        "origin_time_error_s": 0.1501406729221344
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          4177.777777777777,
+          3614.814814814815,
+          1500.0,
+          0.19633590899131936
+        ],
+        "arrival_rmse_s": 0.019765124892461454,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          -22.222222222222626,
+          14.814814814814781,
+          80.0,
+          -0.11366409339286643
+        ],
+        "location_error_m": 84.34041675549807,
+        "origin_time_error_s": 0.11366409339286643
+      }
+    },
+    {
+      "condition_id": "velocity_90pct",
+      "velocity_factor": 0.9,
+      "velocity_bias_percent": -9.999999999999998,
+      "event": "confirm_07_northeast_mid.npz",
+      "observation_sha256": "832f563e4e39c3fda64ea2b5cc9550e95dff1530eba72b68e3c4daae3f5aca1f",
+      "valid_pick_count": 8,
+      "source_truth_m_s_post_search": [
+        13700.0,
+        11800.0,
+        600.0,
+        0.27000001072883606
+      ],
+      "search_seconds": 11.780439699999988,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          9658.1181640625,
+          9467.060546875,
+          700.9640502929688,
+          0.5
+        ],
+        "total_loss": 1.0741597414016724,
+        "waveform_normalized_mse": 1.0741597414016724,
+        "arrival_normalized_mse": 81.64105224609375,
+        "selected_spatial_move_m": 813.2190993003974,
+        "selected_on_boundary": true,
+        "component_error_m_s": [
+          -4041.8818359375,
+          -2332.939453125,
+          100.96405029296875,
+          0.22999998927116394
+        ],
+        "location_error_m": 4667.934126257593,
+        "origin_time_error_s": 0.22999998927116394
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          13621.783203125,
+          11670.9931640625,
+          1114.8564453125,
+          0.1367618888616562
+        ],
+        "total_loss": 0.38873550295829773,
+        "waveform_normalized_mse": 0.3568136692047119,
+        "arrival_normalized_mse": 0.12768736481666565,
+        "selected_spatial_move_m": 385.1086713504558,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -78.216796875,
+          -129.0068359375,
+          514.8564453125,
+          -0.13323812186717987
+        ],
+        "location_error_m": 536.5051633598817,
+        "origin_time_error_s": 0.13323812186717987
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          13759.259259259261,
+          11792.592592592595,
+          1018.5185185185185,
+          0.1097915908597582
+        ],
+        "arrival_rmse_s": 0.014709272144961079,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          59.25925925926094,
+          -7.407407407405117,
+          418.5185185185185,
+          -0.16020841986907786
+        ],
+        "location_error_m": 422.75794473361594,
+        "origin_time_error_s": 0.16020841986907786
+      }
+    },
+    {
+      "condition_id": "velocity_90pct",
+      "velocity_factor": 0.9,
+      "velocity_bias_percent": -9.999999999999998,
+      "event": "confirm_08_north_deep.npz",
+      "observation_sha256": "ae78e9ce5b7d4bade471be3b7f057bf42f104e1e45d3744b810369286f55f0ea",
+      "valid_pick_count": 10,
+      "source_truth_m_s_post_search": [
+        9500.0,
+        13200.0,
+        1240.0,
+        0.38999998569488525
+      ],
+      "search_seconds": 11.656254100002116,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          8071.34130859375,
+          13001.275390625,
+          1496.975341796875,
+          0.4380159080028534
+        ],
+        "total_loss": 0.6765604019165039,
+        "waveform_normalized_mse": 0.6765604019165039,
+        "arrival_normalized_mse": 12.294607162475586,
+        "selected_spatial_move_m": 213.56618117192792,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -1428.65869140625,
+          -198.724609375,
+          256.975341796875,
+          0.04801592230796814
+        ],
+        "location_error_m": 1465.125746546516,
+        "origin_time_error_s": 0.04801592230796814
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          9245.21875,
+          13134.8359375,
+          879.9983520507812,
+          0.2511823773384094
+        ],
+        "total_loss": 0.9573724865913391,
+        "waveform_normalized_mse": 0.8237870335578918,
+        "arrival_normalized_mse": 0.5343417525291443,
+        "selected_spatial_move_m": 382.8305723607552,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -254.78125,
+          -65.1640625,
+          -360.00164794921875,
+          -0.13881760835647583
+        ],
+        "location_error_m": 445.8262295101306,
+        "origin_time_error_s": 0.13881760835647583
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          9511.111111111111,
+          13155.555555555555,
+          1500.0,
+          0.22602020516807664
+        ],
+        "arrival_rmse_s": 0.02478980453359087,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          11.111111111111313,
+          -44.44444444444525,
+          260.0,
+          -0.16397978052680862
+        ],
+        "location_error_m": 264.0052375088396,
+        "origin_time_error_s": 0.16397978052680862
+      }
+    },
+    {
+      "condition_id": "velocity_95pct",
+      "velocity_factor": 0.95,
+      "velocity_bias_percent": -5.000000000000004,
+      "event": "confirm_01_west_shallow.npz",
+      "observation_sha256": "629b01e405f011825ad94e3982170944956dde2df584075328314150679b5442",
+      "valid_pick_count": 12,
+      "source_truth_m_s_post_search": [
+        3100.0,
+        7200.0,
+        410.0,
+        0.18000000715255737
+      ],
+      "search_seconds": 9.71149620000142,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          3323.395751953125,
+          5624.08154296875,
+          425.91943359375,
+          0.437426894903183
+        ],
+        "total_loss": 0.8641535639762878,
+        "waveform_normalized_mse": 0.8641535639762878,
+        "arrival_normalized_mse": 22.149534225463867,
+        "selected_spatial_move_m": 145.92588060691537,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          223.395751953125,
+          -1575.91845703125,
+          15.91943359375,
+          0.2574268877506256
+        ],
+        "location_error_m": 1591.7531446704932,
+        "origin_time_error_s": 0.2574268877506256
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          3048.277099609375,
+          7129.61572265625,
+          459.4141540527344,
+          0.12995126843452454
+        ],
+        "total_loss": 0.8156014680862427,
+        "waveform_normalized_mse": 0.7897614240646362,
+        "arrival_normalized_mse": 0.103360116481781,
+        "selected_spatial_move_m": 510.7297693091603,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -51.722900390625,
+          -70.38427734375,
+          49.414154052734375,
+          -0.05004873871803284
+        ],
+        "location_error_m": 100.35419045943124,
+        "origin_time_error_s": 0.05004873871803284
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          3125.9259259259256,
+          7170.37037037037,
+          458.0246913580247,
+          0.12947361402059754
+        ],
+        "arrival_rmse_s": 0.023826512011920774,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          25.92592592592564,
+          -29.629629629629562,
+          48.02469135802471,
+          -0.050526393131959835
+        ],
+        "location_error_m": 62.100238060245296,
+        "origin_time_error_s": 0.050526393131959835
+      }
+    },
+    {
+      "condition_id": "velocity_95pct",
+      "velocity_factor": 0.95,
+      "velocity_bias_percent": -5.000000000000004,
+      "event": "confirm_02_east_deep.npz",
+      "observation_sha256": "e94ce318a54afc211feb769a51ae6899ff950581844b30545d92ccdee6749c00",
+      "valid_pick_count": 10,
+      "source_truth_m_s_post_search": [
+        12800.0,
+        6600.0,
+        1330.0,
+        0.36000001430511475
+      ],
+      "search_seconds": 10.159043200001179,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          12749.2626953125,
+          6950.0712890625,
+          1020.2976684570312,
+          0.4055337905883789
+        ],
+        "total_loss": 0.6078175902366638,
+        "waveform_normalized_mse": 0.6078175902366638,
+        "arrival_normalized_mse": 1.365039348602295,
+        "selected_spatial_move_m": 198.9150444889236,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -50.7373046875,
+          350.0712890625,
+          -309.70233154296875,
+          0.04553377628326416
+        ],
+        "location_error_m": 470.148610203182,
+        "origin_time_error_s": 0.04553377628326416
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          12776.1669921875,
+          6569.96484375,
+          1088.4002685546875,
+          0.32725396752357483
+        ],
+        "total_loss": 0.43076086044311523,
+        "waveform_normalized_mse": 0.4157980680465698,
+        "arrival_normalized_mse": 0.05985111743211746,
+        "selected_spatial_move_m": 472.1213025253213,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -23.8330078125,
+          -30.03515625,
+          -241.5997314453125,
+          -0.03274604678153992
+        ],
+        "location_error_m": 244.6232881530287,
+        "origin_time_error_s": 0.03274604678153992
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          12888.888888888889,
+          6622.222222222223,
+          1500.0,
+          0.3047873872665714
+        ],
+        "arrival_rmse_s": 0.020654472642745083,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          88.88888888888869,
+          22.222222222222626,
+          170.0,
+          -0.05521262703854335
+        ],
+        "location_error_m": 193.11929403452945,
+        "origin_time_error_s": 0.05521262703854335
+      }
+    },
+    {
+      "condition_id": "velocity_95pct",
+      "velocity_factor": 0.95,
+      "velocity_bias_percent": -5.000000000000004,
+      "event": "confirm_03_north_mid.npz",
+      "observation_sha256": "f4f640ca19f0af30deda81c5d8237f91e83200413b034d562bf3f2c435b37ceb",
+      "valid_pick_count": 12,
+      "source_truth_m_s_post_search": [
+        5800.0,
+        12100.0,
+        690.0,
+        0.23999999463558197
+      ],
+      "search_seconds": 9.756280000001425,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          5788.2158203125,
+          11507.240234375,
+          1021.3226318359375,
+          0.2645859122276306
+        ],
+        "total_loss": 0.6369137763977051,
+        "waveform_normalized_mse": 0.6369137763977051,
+        "arrival_normalized_mse": 1.3816732168197632,
+        "selected_spatial_move_m": 348.8418619683719,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -11.7841796875,
+          -592.759765625,
+          331.3226318359375,
+          0.024585917592048645
+        ],
+        "location_error_m": 679.1742729236763,
+        "origin_time_error_s": 0.024585917592048645
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          5679.6875,
+          12057.0078125,
+          957.3591918945312,
+          0.21758602559566498
+        ],
+        "total_loss": 0.577059268951416,
+        "waveform_normalized_mse": 0.5142738819122314,
+        "arrival_normalized_mse": 0.25114142894744873,
+        "selected_spatial_move_m": 467.4358942540451,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -120.3125,
+          -42.9921875,
+          267.35919189453125,
+          -0.022413969039916992
+        ],
+        "location_error_m": 296.31801047655193,
+        "origin_time_error_s": 0.022413969039916992
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          5837.037037037037,
+          12103.703703703704,
+          1003.7037037037037,
+          0.17469716055540807
+        ],
+        "arrival_rmse_s": 0.020511231929375286,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          37.03703703703741,
+          3.7037037037043774,
+          313.7037037037037,
+          -0.0653028340801739
+        ],
+        "location_error_m": 315.9042153106363,
+        "origin_time_error_s": 0.0653028340801739
+      }
+    },
+    {
+      "condition_id": "velocity_95pct",
+      "velocity_factor": 0.95,
+      "velocity_bias_percent": -5.000000000000004,
+      "event": "confirm_04_south_deep.npz",
+      "observation_sha256": "184552204773fcc4866300760449d1099f634b1ea0a436aceb337858871c8aae",
+      "valid_pick_count": 7,
+      "source_truth_m_s_post_search": [
+        11200.0,
+        2600.0,
+        1010.0,
+        0.41999998688697815
+      ],
+      "search_seconds": 13.477499299999181,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          10596.615234375,
+          3043.521240234375,
+          1061.8809814453125,
+          0.4858396351337433
+        ],
+        "total_loss": 0.8979314565658569,
+        "waveform_normalized_mse": 0.8979314565658569,
+        "arrival_normalized_mse": 2.5966718196868896,
+        "selected_spatial_move_m": 254.15784902634223,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -603.384765625,
+          443.521240234375,
+          51.8809814453125,
+          0.06583964824676514
+        ],
+        "location_error_m": 750.6503194984355,
+        "origin_time_error_s": 0.06583964824676514
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          11665.6689453125,
+          2468.791748046875,
+          1280.0001220703125,
+          0.32443130016326904
+        ],
+        "total_loss": 0.7011899948120117,
+        "waveform_normalized_mse": 0.5183948278427124,
+        "arrival_normalized_mse": 0.7311805486679077,
+        "selected_spatial_move_m": 473.7912077408183,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          465.6689453125,
+          -131.208251953125,
+          270.0001220703125,
+          -0.0955686867237091
+        ],
+        "location_error_m": 554.0426318678325,
+        "origin_time_error_s": 0.0955686867237091
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          11214.814814814816,
+          2474.074074074074,
+          1203.7037037037037,
+          0.3714847857723911
+        ],
+        "arrival_rmse_s": 0.02061671936216342,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          14.81481481481569,
+          -125.9259259259261,
+          193.7037037037037,
+          -0.04851520111458707
+        ],
+        "location_error_m": 231.51229424553537,
+        "origin_time_error_s": 0.04851520111458707
+      }
+    },
+    {
+      "condition_id": "velocity_95pct",
+      "velocity_factor": 0.95,
+      "velocity_bias_percent": -5.000000000000004,
+      "event": "confirm_05_center_shallow.npz",
+      "observation_sha256": "c5bcb52a630e8e738c7951c9c44fb08eb3a2b89f4edde9cc1a072c792dc04da4",
+      "valid_pick_count": 12,
+      "source_truth_m_s_post_search": [
+        8200.0,
+        8400.0,
+        300.0,
+        0.14000000059604645
+      ],
+      "search_seconds": 9.761844599997858,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          7989.521484375,
+          7971.55029296875,
+          840.207275390625,
+          0.05670737475156784
+        ],
+        "total_loss": 0.316384881734848,
+        "waveform_normalized_mse": 0.316384881734848,
+        "arrival_normalized_mse": 1.1643471717834473,
+        "selected_spatial_move_m": 67.03995104473066,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -210.478515625,
+          -428.44970703125,
+          540.207275390625,
+          -0.08329262584447861
+        ],
+        "location_error_m": 720.8982295579799,
+        "origin_time_error_s": 0.08329262584447861
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          8281.6015625,
+          8342.7353515625,
+          647.27978515625,
+          0.058580394834280014
+        ],
+        "total_loss": 0.3568139970302582,
+        "waveform_normalized_mse": 0.32559192180633545,
+        "arrival_normalized_mse": 0.1248883455991745,
+        "selected_spatial_move_m": 510.52371953101556,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          81.6015625,
+          -57.2646484375,
+          347.27978515625,
+          -0.08141960576176643
+        ],
+        "location_error_m": 361.30500154479324,
+        "origin_time_error_s": 0.08141960576176643
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          8237.037037037038,
+          8429.62962962963,
+          603.7037037037038,
+          0.09181204728616743
+        ],
+        "arrival_rmse_s": 0.012705697528904311,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          37.03703703703832,
+          29.629629629629562,
+          303.7037037037038,
+          -0.04818795330987902
+        ],
+        "location_error_m": 307.385095129577,
+        "origin_time_error_s": 0.04818795330987902
+      }
+    },
+    {
+      "condition_id": "velocity_95pct",
+      "velocity_factor": 0.95,
+      "velocity_bias_percent": -5.000000000000004,
+      "event": "confirm_06_southwest_deep.npz",
+      "observation_sha256": "0891c18cc01dacf81771cead552775eaadea903cef55cd0bf22efe0a05568d16",
+      "valid_pick_count": 9,
+      "source_truth_m_s_post_search": [
+        4200.0,
+        3600.0,
+        1420.0,
+        0.3100000023841858
+      ],
+      "search_seconds": 9.788466499998322,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          3289.607421875,
+          4498.35595703125,
+          350.38629150390625,
+          0.2515154480934143
+        ],
+        "total_loss": 0.9106730818748474,
+        "waveform_normalized_mse": 0.9106730818748474,
+        "arrival_normalized_mse": 6.220430850982666,
+        "selected_spatial_move_m": 200.21899537399403,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -910.392578125,
+          898.35595703125,
+          -1069.6137084960938,
+          -0.058484554290771484
+        ],
+        "location_error_m": 1667.3126753075992,
+        "origin_time_error_s": 0.058484554290771484
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          4013.916015625,
+          3241.53955078125,
+          295.0224609375,
+          0.28308144211769104
+        ],
+        "total_loss": 1.231580138206482,
+        "waveform_normalized_mse": 0.8794625997543335,
+        "arrival_normalized_mse": 1.4084701538085938,
+        "selected_spatial_move_m": 439.09243763711305,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -186.083984375,
+          -358.46044921875,
+          -1124.9775390625,
+          -0.02691856026649475
+        ],
+        "location_error_m": 1195.2805554722715,
+        "origin_time_error_s": 0.02691856026649475
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          4177.777777777777,
+          3570.3703703703704,
+          1492.5925925925926,
+          0.2523497199616116
+        ],
+        "arrival_rmse_s": 0.01026011353846986,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          -22.222222222222626,
+          -29.629629629629562,
+          72.59259259259261,
+          -0.057650282422574195
+        ],
+        "location_error_m": 81.49494838207457,
+        "origin_time_error_s": 0.057650282422574195
+      }
+    },
+    {
+      "condition_id": "velocity_95pct",
+      "velocity_factor": 0.95,
+      "velocity_bias_percent": -5.000000000000004,
+      "event": "confirm_07_northeast_mid.npz",
+      "observation_sha256": "832f563e4e39c3fda64ea2b5cc9550e95dff1530eba72b68e3c4daae3f5aca1f",
+      "valid_pick_count": 8,
+      "source_truth_m_s_post_search": [
+        13700.0,
+        11800.0,
+        600.0,
+        0.27000001072883606
+      ],
+      "search_seconds": 11.564412800002174,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          3022.41162109375,
+          12462.8447265625,
+          399.9947509765625,
+          0.5
+        ],
+        "total_loss": 1.0557620525360107,
+        "waveform_normalized_mse": 1.0557620525360107,
+        "arrival_normalized_mse": 340.4550476074219,
+        "selected_spatial_move_m": 1341.57653338768,
+        "selected_on_boundary": true,
+        "component_error_m_s": [
+          -10677.58837890625,
+          662.8447265625,
+          -200.0052490234375,
+          0.22999998927116394
+        ],
+        "location_error_m": 10700.012094410102,
+        "origin_time_error_s": 0.22999998927116394
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          13708.48828125,
+          11683.6767578125,
+          1059.4088134765625,
+          0.17871759831905365
+        ],
+        "total_loss": 0.43436986207962036,
+        "waveform_normalized_mse": 0.3879821300506592,
+        "arrival_normalized_mse": 0.1855509877204895,
+        "selected_spatial_move_m": 305.9877879752252,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          8.48828125,
+          -116.3232421875,
+          459.4088134765625,
+          -0.09128241240978241
+        ],
+        "location_error_m": 473.9827058992067,
+        "origin_time_error_s": 0.09128241240978241
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          13714.814814814816,
+          11807.407407407409,
+          737.0370370370372,
+          0.1737423642923025
+        ],
+        "arrival_rmse_s": 0.015297784198461051,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          14.81481481481569,
+          7.407407407408755,
+          137.03703703703718,
+          -0.09625764643653356
+        ],
+        "location_error_m": 138.03440854506863,
+        "origin_time_error_s": 0.09625764643653356
+      }
+    },
+    {
+      "condition_id": "velocity_95pct",
+      "velocity_factor": 0.95,
+      "velocity_bias_percent": -5.000000000000004,
+      "event": "confirm_08_north_deep.npz",
+      "observation_sha256": "ae78e9ce5b7d4bade471be3b7f057bf42f104e1e45d3744b810369286f55f0ea",
+      "valid_pick_count": 10,
+      "source_truth_m_s_post_search": [
+        9500.0,
+        13200.0,
+        1240.0,
+        0.38999998569488525
+      ],
+      "search_seconds": 10.945775199998025,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          7369.42578125,
+          12986.587890625,
+          974.927001953125,
+          0.5
+        ],
+        "total_loss": 0.7502601146697998,
+        "waveform_normalized_mse": 0.7502601146697998,
+        "arrival_normalized_mse": 21.755643844604492,
+        "selected_spatial_move_m": 669.389379300638,
+        "selected_on_boundary": true,
+        "component_error_m_s": [
+          -2130.57421875,
+          -213.412109375,
+          -265.072998046875,
+          0.11000001430511475
+        ],
+        "location_error_m": 2157.5808036603444,
+        "origin_time_error_s": 0.11000001430511475
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          9553.4052734375,
+          13150.8916015625,
+          1221.8111572265625,
+          0.3413410782814026
+        ],
+        "total_loss": 0.47509855031967163,
+        "waveform_normalized_mse": 0.45618385076522827,
+        "arrival_normalized_mse": 0.07565881311893463,
+        "selected_spatial_move_m": 721.3231502916392,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          53.4052734375,
+          -49.1083984375,
+          -18.1888427734375,
+          -0.048658907413482666
+        ],
+        "location_error_m": 74.79700548462635,
+        "origin_time_error_s": 0.048658907413482666
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          9496.296296296296,
+          13259.259259259261,
+          1500.0,
+          0.2907976863397327
+        ],
+        "arrival_rmse_s": 0.008194732149713467,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          -3.7037037037043774,
+          59.25925925926094,
+          260.0,
+          -0.09920229935515257
+        ],
+        "location_error_m": 266.6934142964185,
+        "origin_time_error_s": 0.09920229935515257
+      }
+    },
+    {
+      "condition_id": "velocity_105pct",
+      "velocity_factor": 1.05,
+      "velocity_bias_percent": 5.000000000000004,
+      "event": "confirm_01_west_shallow.npz",
+      "observation_sha256": "629b01e405f011825ad94e3982170944956dde2df584075328314150679b5442",
+      "valid_pick_count": 12,
+      "source_truth_m_s_post_search": [
+        3100.0,
+        7200.0,
+        410.0,
+        0.18000000715255737
+      ],
+      "search_seconds": 9.806077000001096,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          3260.893798828125,
+          4278.4990234375,
+          153.10882568359375,
+          0.5
+        ],
+        "total_loss": 0.8544065952301025,
+        "waveform_normalized_mse": 0.8544065952301025,
+        "arrival_normalized_mse": 43.5606689453125,
+        "selected_spatial_move_m": 145.9146648108122,
+        "selected_on_boundary": true,
+        "component_error_m_s": [
+          160.893798828125,
+          -2921.5009765625,
+          -256.89117431640625,
+          0.3199999928474426
+        ],
+        "location_error_m": 2937.183658881182,
+        "origin_time_error_s": 0.3199999928474426
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          3046.4189453125,
+          7221.06982421875,
+          368.1060791015625,
+          0.19774079322814941
+        ],
+        "total_loss": 0.8458452820777893,
+        "waveform_normalized_mse": 0.8038250207901001,
+        "arrival_normalized_mse": 0.16808098554611206,
+        "selected_spatial_move_m": 796.8423916384734,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -53.5810546875,
+          21.06982421875,
+          -41.8939208984375,
+          0.01774078607559204
+        ],
+        "location_error_m": 71.20370441401506,
+        "origin_time_error_s": 0.01774078607559204
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          3081.4814814814813,
+          7200.0,
+          151.85185185185182,
+          0.20793589581677951
+        ],
+        "arrival_rmse_s": 0.027996456121308907,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          -18.518518518518704,
+          0.0,
+          -258.14814814814815,
+          0.02793588866422214
+        ],
+        "location_error_m": 258.8115181371165,
+        "origin_time_error_s": 0.02793588866422214
+      }
+    },
+    {
+      "condition_id": "velocity_105pct",
+      "velocity_factor": 1.05,
+      "velocity_bias_percent": 5.000000000000004,
+      "event": "confirm_02_east_deep.npz",
+      "observation_sha256": "e94ce318a54afc211feb769a51ae6899ff950581844b30545d92ccdee6749c00",
+      "valid_pick_count": 10,
+      "source_truth_m_s_post_search": [
+        12800.0,
+        6600.0,
+        1330.0,
+        0.36000001430511475
+      ],
+      "search_seconds": 9.941364899998007,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          12774.44921875,
+          6977.1201171875,
+          849.8497924804688,
+          0.4925505220890045
+        ],
+        "total_loss": 0.6813156604766846,
+        "waveform_normalized_mse": 0.6813156604766846,
+        "arrival_normalized_mse": 1.2216297388076782,
+        "selected_spatial_move_m": 233.40809463563733,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -25.55078125,
+          377.1201171875,
+          -480.15020751953125,
+          0.13255050778388977
+        ],
+        "location_error_m": 611.0782658473855,
+        "origin_time_error_s": 0.13255050778388977
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          12808.611328125,
+          6567.35400390625,
+          852.2998046875,
+          0.42289769649505615
+        ],
+        "total_loss": 0.4108041226863861,
+        "waveform_normalized_mse": 0.3942244350910187,
+        "arrival_normalized_mse": 0.06631872802972794,
+        "selected_spatial_move_m": 422.27179263287314,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          8.611328125,
+          -32.64599609375,
+          -477.7001953125,
+          0.0628976821899414
+        ],
+        "location_error_m": 478.89183813741306,
+        "origin_time_error_s": 0.0628976821899414
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          12844.444444444445,
+          6622.222222222223,
+          793.8271604938273,
+          0.39975506717058373
+        ],
+        "arrival_rmse_s": 0.013122682831710124,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          44.44444444444525,
+          22.222222222222626,
+          -536.1728395061727,
+          0.03975505286546899
+        ],
+        "location_error_m": 538.470472381338,
+        "origin_time_error_s": 0.03975505286546899
+      }
+    },
+    {
+      "condition_id": "velocity_105pct",
+      "velocity_factor": 1.05,
+      "velocity_bias_percent": 5.000000000000004,
+      "event": "confirm_03_north_mid.npz",
+      "observation_sha256": "f4f640ca19f0af30deda81c5d8237f91e83200413b034d562bf3f2c435b37ceb",
+      "valid_pick_count": 12,
+      "source_truth_m_s_post_search": [
+        5800.0,
+        12100.0,
+        690.0,
+        0.23999999463558197
+      ],
+      "search_seconds": 9.798216200000752,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          4054.329833984375,
+          11972.6083984375,
+          879.8305053710938,
+          0.25722798705101013
+        ],
+        "total_loss": 0.6166343092918396,
+        "waveform_normalized_mse": 0.6166343092918396,
+        "arrival_normalized_mse": 7.068509578704834,
+        "selected_spatial_move_m": 932.2678222139355,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -1745.670166015625,
+          -127.3916015625,
+          189.83050537109375,
+          0.01722799241542816
+        ],
+        "location_error_m": 1760.5762038137184,
+        "origin_time_error_s": 0.01722799241542816
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          5600.64794921875,
+          11979.763671875,
+          1164.022705078125,
+          0.24962833523750305
+        ],
+        "total_loss": 0.7156646251678467,
+        "waveform_normalized_mse": 0.550216555595398,
+        "arrival_normalized_mse": 0.6617922782897949,
+        "selected_spatial_move_m": 507.0518800055802,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -199.35205078125,
+          -120.236328125,
+          474.022705078125,
+          0.009628340601921082
+        ],
+        "location_error_m": 528.1056141353316,
+        "origin_time_error_s": 0.009628340601921082
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          5822.222222222223,
+          12237.037037037036,
+          403.70370370370375,
+          0.2783343079245102
+        ],
+        "arrival_rmse_s": 0.037878528608364215,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          22.222222222222626,
+          137.0370370370365,
+          -286.29629629629625,
+          0.03833431328892822
+        ],
+        "location_error_m": 318.18005272700645,
+        "origin_time_error_s": 0.03833431328892822
+      }
+    },
+    {
+      "condition_id": "velocity_105pct",
+      "velocity_factor": 1.05,
+      "velocity_bias_percent": 5.000000000000004,
+      "event": "confirm_04_south_deep.npz",
+      "observation_sha256": "184552204773fcc4866300760449d1099f634b1ea0a436aceb337858871c8aae",
+      "valid_pick_count": 7,
+      "source_truth_m_s_post_search": [
+        11200.0,
+        2600.0,
+        1010.0,
+        0.41999998688697815
+      ],
+      "search_seconds": 13.484870200001751,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          9946.0302734375,
+          2315.044921875,
+          1009.4404907226562,
+          0.34250420331954956
+        ],
+        "total_loss": 0.5239816308021545,
+        "waveform_normalized_mse": 0.5239816308021545,
+        "arrival_normalized_mse": 4.402417182922363,
+        "selected_spatial_move_m": 624.3129374487979,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -1253.9697265625,
+          -284.955078125,
+          -0.55950927734375,
+          -0.07749578356742859
+        ],
+        "location_error_m": 1285.9392616819378,
+        "origin_time_error_s": 0.07749578356742859
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          11700.8779296875,
+          2521.1474609375,
+          942.2433471679688,
+          0.4131792485713959
+        ],
+        "total_loss": 0.6954507827758789,
+        "waveform_normalized_mse": 0.5081456303596497,
+        "arrival_normalized_mse": 0.7492206692695618,
+        "selected_spatial_move_m": 532.4993268724317,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          500.8779296875,
+          -78.8525390625,
+          -67.75665283203125,
+          -0.006820738315582275
+        ],
+        "location_error_m": 511.55389488072484,
+        "origin_time_error_s": 0.006820738315582275
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          11244.444444444445,
+          2488.888888888889,
+          838.2716049382716,
+          0.4417922498658018
+        ],
+        "arrival_rmse_s": 0.026231560052850416,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          44.44444444444525,
+          -111.11111111111086,
+          -171.7283950617284,
+          0.02179226297882364
+        ],
+        "location_error_m": 209.3122770522505,
+        "origin_time_error_s": 0.02179226297882364
+      }
+    },
+    {
+      "condition_id": "velocity_105pct",
+      "velocity_factor": 1.05,
+      "velocity_bias_percent": 5.000000000000004,
+      "event": "confirm_05_center_shallow.npz",
+      "observation_sha256": "c5bcb52a630e8e738c7951c9c44fb08eb3a2b89f4edde9cc1a072c792dc04da4",
+      "valid_pick_count": 12,
+      "source_truth_m_s_post_search": [
+        8200.0,
+        8400.0,
+        300.0,
+        0.14000000059604645
+      ],
+      "search_seconds": 9.831260400002066,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          8132.0458984375,
+          8266.8642578125,
+          674.6500854492188,
+          0.10068705677986145
+        ],
+        "total_loss": 0.3313865661621094,
+        "waveform_normalized_mse": 0.3313865661621094,
+        "arrival_normalized_mse": 1.4998481273651123,
+        "selected_spatial_move_m": 298.82314093743634,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -67.9541015625,
+          -133.1357421875,
+          374.65008544921875,
+          -0.039312943816185
+        ],
+        "location_error_m": 403.36778787365995,
+        "origin_time_error_s": 0.039312943816185
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          8130.443359375,
+          8246.5361328125,
+          524.6901245117188,
+          0.14482441544532776
+        ],
+        "total_loss": 0.5900984406471252,
+        "waveform_normalized_mse": 0.4016229212284088,
+        "arrival_normalized_mse": 0.7539021372795105,
+        "selected_spatial_move_m": 329.437531606365,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -69.556640625,
+          -153.4638671875,
+          224.69012451171875,
+          0.004824414849281311
+        ],
+        "location_error_m": 280.8468209545369,
+        "origin_time_error_s": 0.004824414849281311
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          8207.407407407409,
+          8414.814814814816,
+          240.74074074074073,
+          0.1957582419028714
+        ],
+        "arrival_rmse_s": 0.022089886724220156,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          7.407407407408755,
+          14.81481481481569,
+          -59.25925925925927,
+          0.05575824130682494
+        ],
+        "location_error_m": 61.53054713272686,
+        "origin_time_error_s": 0.05575824130682494
+      }
+    },
+    {
+      "condition_id": "velocity_105pct",
+      "velocity_factor": 1.05,
+      "velocity_bias_percent": 5.000000000000004,
+      "event": "confirm_06_southwest_deep.npz",
+      "observation_sha256": "0891c18cc01dacf81771cead552775eaadea903cef55cd0bf22efe0a05568d16",
+      "valid_pick_count": 9,
+      "source_truth_m_s_post_search": [
+        4200.0,
+        3600.0,
+        1420.0,
+        0.3100000023841858
+      ],
+      "search_seconds": 9.734836799998448,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          3412.98388671875,
+          4508.30078125,
+          189.10443115234375,
+          0.3363925814628601
+        ],
+        "total_loss": 0.8860517144203186,
+        "waveform_normalized_mse": 0.8860517144203186,
+        "arrival_normalized_mse": 4.521613121032715,
+        "selected_spatial_move_m": 564.0084019669883,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -787.01611328125,
+          908.30078125,
+          -1230.8955688476562,
+          0.026392579078674316
+        ],
+        "location_error_m": 1720.322229465306,
+        "origin_time_error_s": 0.026392579078674316
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          4183.93798828125,
+          3548.092041015625,
+          982.0311279296875,
+          0.37170180678367615
+        ],
+        "total_loss": 0.7094915509223938,
+        "waveform_normalized_mse": 0.7013955116271973,
+        "arrival_normalized_mse": 0.032384052872657776,
+        "selected_spatial_move_m": 518.6087788806159,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -16.06201171875,
+          -51.907958984375,
+          -437.9688720703125,
+          0.061701804399490356
+        ],
+        "location_error_m": 441.3265880602692,
+        "origin_time_error_s": 0.061701804399490356
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          4192.592592592592,
+          3511.111111111111,
+          1292.5925925925926,
+          0.3495142025280573
+        ],
+        "arrival_rmse_s": 0.022094799525450206,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          -7.407407407407845,
+          -88.88888888888914,
+          -127.40740740740739,
+          0.039514200143871525
+        ],
+        "location_error_m": 155.52733430068713,
+        "origin_time_error_s": 0.039514200143871525
+      }
+    },
+    {
+      "condition_id": "velocity_105pct",
+      "velocity_factor": 1.05,
+      "velocity_bias_percent": 5.000000000000004,
+      "event": "confirm_07_northeast_mid.npz",
+      "observation_sha256": "832f563e4e39c3fda64ea2b5cc9550e95dff1530eba72b68e3c4daae3f5aca1f",
+      "valid_pick_count": 8,
+      "source_truth_m_s_post_search": [
+        13700.0,
+        11800.0,
+        600.0,
+        0.27000001072883606
+      ],
+      "search_seconds": 13.626162700002169,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          3439.95654296875,
+          14000.0,
+          320.0029602050781,
+          0.48504772782325745
+        ],
+        "total_loss": 1.0768613815307617,
+        "waveform_normalized_mse": 1.0768613815307617,
+        "arrival_normalized_mse": 264.4183654785156,
+        "selected_spatial_move_m": 976.7714030024877,
+        "selected_on_boundary": true,
+        "component_error_m_s": [
+          -10260.04345703125,
+          2200.0,
+          -279.9970397949219,
+          0.2150477170944214
+        ],
+        "location_error_m": 10496.994335640258,
+        "origin_time_error_s": 0.2150477170944214
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          13767.40234375,
+          11699.4423828125,
+          774.6828002929688,
+          0.2800307869911194
+        ],
+        "total_loss": 0.5513125061988831,
+        "waveform_normalized_mse": 0.49169060587882996,
+        "arrival_normalized_mse": 0.2384875863790512,
+        "selected_spatial_move_m": 373.4181275316022,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          67.40234375,
+          -100.5576171875,
+          174.68280029296875,
+          0.010030776262283325
+        ],
+        "location_error_m": 212.5299767929554,
+        "origin_time_error_s": 0.010030776262283325
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          13851.85185185185,
+          11837.037037037036,
+          403.70370370370375,
+          0.29731806999059485
+        ],
+        "arrival_rmse_s": 0.017495950481240603,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          151.85185185185037,
+          37.0370370370365,
+          -196.29629629629625,
+          0.027318059261758787
+        ],
+        "location_error_m": 250.92421756969264,
+        "origin_time_error_s": 0.027318059261758787
+      }
+    },
+    {
+      "condition_id": "velocity_105pct",
+      "velocity_factor": 1.05,
+      "velocity_bias_percent": 5.000000000000004,
+      "event": "confirm_08_north_deep.npz",
+      "observation_sha256": "ae78e9ce5b7d4bade471be3b7f057bf42f104e1e45d3744b810369286f55f0ea",
+      "valid_pick_count": 10,
+      "source_truth_m_s_post_search": [
+        9500.0,
+        13200.0,
+        1240.0,
+        0.38999998569488525
+      ],
+      "search_seconds": 11.619251399999484,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          9014.4423828125,
+          12656.1083984375,
+          892.3462524414062,
+          0.4495354890823364
+        ],
+        "total_loss": 0.8070980906486511,
+        "waveform_normalized_mse": 0.8070980906486511,
+        "arrival_normalized_mse": 1.6267296075820923,
+        "selected_spatial_move_m": 470.44447089437637,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -485.5576171875,
+          -543.8916015625,
+          -347.65374755859375,
+          0.05953550338745117
+        ],
+        "location_error_m": 807.7421631006756,
+        "origin_time_error_s": 0.05953550338745117
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          9552.1875,
+          13235.8642578125,
+          1021.1102294921875,
+          0.430349737405777
+        ],
+        "total_loss": 0.49948039650917053,
+        "waveform_normalized_mse": 0.4884403645992279,
+        "arrival_normalized_mse": 0.044160183519124985,
+        "selected_spatial_move_m": 913.2434776514787,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          52.1875,
+          35.8642578125,
+          -218.8897705078125,
+          0.040349751710891724
+        ],
+        "location_error_m": 227.8651175095791,
+        "origin_time_error_s": 0.040349751710891724
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          9511.111111111111,
+          13355.555555555555,
+          1203.7037037037037,
+          0.4233437486003131
+        ],
+        "arrival_rmse_s": 0.020877465457507807,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          11.111111111111313,
+          155.55555555555475,
+          -36.296296296296305,
+          0.03334376290542784
+        ],
+        "location_error_m": 160.11998244800452,
+        "origin_time_error_s": 0.03334376290542784
+      }
+    },
+    {
+      "condition_id": "velocity_110pct",
+      "velocity_factor": 1.1,
+      "velocity_bias_percent": 10.000000000000009,
+      "event": "confirm_01_west_shallow.npz",
+      "observation_sha256": "629b01e405f011825ad94e3982170944956dde2df584075328314150679b5442",
+      "valid_pick_count": 12,
+      "source_truth_m_s_post_search": [
+        3100.0,
+        7200.0,
+        410.0,
+        0.18000000715255737
+      ],
+      "search_seconds": 9.847025200000644,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          3231.253173828125,
+          5890.08837890625,
+          171.81036376953125,
+          0.48224830627441406
+        ],
+        "total_loss": 0.8464543223381042,
+        "waveform_normalized_mse": 0.8464543223381042,
+        "arrival_normalized_mse": 11.53594970703125,
+        "selected_spatial_move_m": 318.68575633009857,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          131.253173828125,
+          -1309.91162109375,
+          -238.18963623046875,
+          0.3022482991218567
+        ],
+        "location_error_m": 1337.8453399119105,
+        "origin_time_error_s": 0.3022482991218567
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          3052.0791015625,
+          7270.7353515625,
+          300.4580078125,
+          0.22564464807510376
+        ],
+        "total_loss": 0.9093279242515564,
+        "waveform_normalized_mse": 0.8113738894462585,
+        "arrival_normalized_mse": 0.39181622862815857,
+        "selected_spatial_move_m": 770.6431940602499,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -47.9208984375,
+          70.7353515625,
+          -109.5419921875,
+          0.04564464092254639
+        ],
+        "location_error_m": 138.92210234564538,
+        "origin_time_error_s": 0.04564464092254639
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          3022.222222222222,
+          7229.62962962963,
+          100.0,
+          0.2462078421817393
+        ],
+        "arrival_rmse_s": 0.04097974957920296,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          -77.77777777777783,
+          29.629629629629562,
+          -310.0,
+          0.06620783502918193
+        ],
+        "location_error_m": 320.97865609419955,
+        "origin_time_error_s": 0.06620783502918193
+      }
+    },
+    {
+      "condition_id": "velocity_110pct",
+      "velocity_factor": 1.1,
+      "velocity_bias_percent": 10.000000000000009,
+      "event": "confirm_02_east_deep.npz",
+      "observation_sha256": "e94ce318a54afc211feb769a51ae6899ff950581844b30545d92ccdee6749c00",
+      "valid_pick_count": 10,
+      "source_truth_m_s_post_search": [
+        12800.0,
+        6600.0,
+        1330.0,
+        0.36000001430511475
+      ],
+      "search_seconds": 11.612261599999329,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          13255.7177734375,
+          6175.314453125,
+          801.8189086914062,
+          0.43562573194503784
+        ],
+        "total_loss": 0.9696975350379944,
+        "waveform_normalized_mse": 0.9696975350379944,
+        "arrival_normalized_mse": 0.8818055987358093,
+        "selected_spatial_move_m": 945.8235984801272,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          455.7177734375,
+          -424.685546875,
+          -528.1810913085938,
+          0.0756257176399231
+        ],
+        "location_error_m": 816.7078841099108,
+        "origin_time_error_s": 0.0756257176399231
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          12822.244140625,
+          6567.35595703125,
+          857.7708740234375,
+          0.45207110047340393
+        ],
+        "total_loss": 0.42172563076019287,
+        "waveform_normalized_mse": 0.39926132559776306,
+        "arrival_normalized_mse": 0.08985722810029984,
+        "selected_spatial_move_m": 683.4298082273042,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          22.244140625,
+          -32.64404296875,
+          -472.2291259765625,
+          0.09207108616828918
+        ],
+        "location_error_m": 473.8784472352362,
+        "origin_time_error_s": 0.09207108616828918
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          12859.259259259261,
+          6592.592592592592,
+          662.9629629629628,
+          0.44613018160969664
+        ],
+        "arrival_rmse_s": 0.010349731640799309,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          59.25925925926094,
+          -7.407407407407845,
+          -667.0370370370372,
+          0.0861301673045819
+        ],
+        "location_error_m": 669.7051129203102,
+        "origin_time_error_s": 0.0861301673045819
+      }
+    },
+    {
+      "condition_id": "velocity_110pct",
+      "velocity_factor": 1.1,
+      "velocity_bias_percent": 10.000000000000009,
+      "event": "confirm_03_north_mid.npz",
+      "observation_sha256": "f4f640ca19f0af30deda81c5d8237f91e83200413b034d562bf3f2c435b37ceb",
+      "valid_pick_count": 12,
+      "source_truth_m_s_post_search": [
+        5800.0,
+        12100.0,
+        690.0,
+        0.23999999463558197
+      ],
+      "search_seconds": 9.800001600000542,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          5645.64892578125,
+          11450.1630859375,
+          712.9361572265625,
+          0.39893224835395813
+        ],
+        "total_loss": 0.6758966445922852,
+        "waveform_normalized_mse": 0.6758966445922852,
+        "arrival_normalized_mse": 1.668558955192566,
+        "selected_spatial_move_m": 417.55639573989936,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -154.35107421875,
+          -649.8369140625,
+          22.9361572265625,
+          0.15893225371837616
+        ],
+        "location_error_m": 668.3100600014013,
+        "origin_time_error_s": 0.15893225371837616
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          5522.27587890625,
+          11996.904296875,
+          799.988525390625,
+          0.32637086510658264
+        ],
+        "total_loss": 0.7408584356307983,
+        "waveform_normalized_mse": 0.5618686079978943,
+        "arrival_normalized_mse": 0.7159592509269714,
+        "selected_spatial_move_m": 503.5545404856119,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -277.72412109375,
+          -103.095703125,
+          109.988525390625,
+          0.08637087047100067
+        ],
+        "location_error_m": 316.00140372748064,
+        "origin_time_error_s": 0.08637087047100067
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          5792.592592592592,
+          12281.481481481482,
+          403.70370370370375,
+          0.3280096522184676
+        ],
+        "arrival_rmse_s": 0.05222712062747137,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          -7.407407407407845,
+          181.48148148148175,
+          -286.29629629629625,
+          0.08800965758288565
+        ],
+        "location_error_m": 339.0515699391309,
+        "origin_time_error_s": 0.08800965758288565
+      }
+    },
+    {
+      "condition_id": "velocity_110pct",
+      "velocity_factor": 1.1,
+      "velocity_bias_percent": 10.000000000000009,
+      "event": "confirm_04_south_deep.npz",
+      "observation_sha256": "184552204773fcc4866300760449d1099f634b1ea0a436aceb337858871c8aae",
+      "valid_pick_count": 7,
+      "source_truth_m_s_post_search": [
+        11200.0,
+        2600.0,
+        1010.0,
+        0.41999998688697815
+      ],
+      "search_seconds": 11.70119639999757,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          2980.20556640625,
+          12512.244140625,
+          303.3061218261719,
+          0.5
+        ],
+        "total_loss": 1.089482069015503,
+        "waveform_normalized_mse": 1.089482069015503,
+        "arrival_normalized_mse": 358.8648986816406,
+        "selected_spatial_move_m": 1339.0307147186622,
+        "selected_on_boundary": true,
+        "component_error_m_s": [
+          -8219.79443359375,
+          9912.244140625,
+          -706.6938781738281,
+          0.08000001311302185
+        ],
+        "location_error_m": 12896.395646510764,
+        "origin_time_error_s": 0.08000001311302185
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          11670.951171875,
+          2473.84521484375,
+          919.3848266601562,
+          0.44225504994392395
+        ],
+        "total_loss": 0.700081467628479,
+        "waveform_normalized_mse": 0.5071250200271606,
+        "arrival_normalized_mse": 0.7718256711959839,
+        "selected_spatial_move_m": 479.5196846067945,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          470.951171875,
+          -126.15478515625,
+          -90.61517333984375,
+          0.0222550630569458
+        ],
+        "location_error_m": 495.90437157547353,
+        "origin_time_error_s": 0.0222550630569458
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          11229.62962962963,
+          2503.703703703704,
+          603.7037037037038,
+          0.48477622246676255
+        ],
+        "arrival_rmse_s": 0.022347129800155473,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          29.629629629629562,
+          -96.29629629629608,
+          -406.2962962962962,
+          0.0647762355797844
+        ],
+        "location_error_m": 418.60192548107176,
+        "origin_time_error_s": 0.0647762355797844
+      }
+    },
+    {
+      "condition_id": "velocity_110pct",
+      "velocity_factor": 1.1,
+      "velocity_bias_percent": 10.000000000000009,
+      "event": "confirm_05_center_shallow.npz",
+      "observation_sha256": "c5bcb52a630e8e738c7951c9c44fb08eb3a2b89f4edde9cc1a072c792dc04da4",
+      "valid_pick_count": 12,
+      "source_truth_m_s_post_search": [
+        8200.0,
+        8400.0,
+        300.0,
+        0.14000000059604645
+      ],
+      "search_seconds": 9.80691040000238,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          8084.36767578125,
+          8204.92578125,
+          604.9507446289062,
+          0.14122694730758667
+        ],
+        "total_loss": 0.3749600052833557,
+        "waveform_normalized_mse": 0.3749600052833557,
+        "arrival_normalized_mse": 2.0205495357513428,
+        "selected_spatial_move_m": 241.1365618985482,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -115.63232421875,
+          -195.07421875,
+          304.95074462890625,
+          0.0012269467115402222
+        ],
+        "location_error_m": 380.02597526337246,
+        "origin_time_error_s": 0.0012269467115402222
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          8095.31982421875,
+          8201.49609375,
+          438.669189453125,
+          0.18070058524608612
+        ],
+        "total_loss": 0.7314543724060059,
+        "waveform_normalized_mse": 0.4623774290084839,
+        "arrival_normalized_mse": 1.076307773590088,
+        "selected_spatial_move_m": 343.4826592809146,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -104.68017578125,
+          -198.50390625,
+          138.669189453125,
+          0.04070058465003967
+        ],
+        "location_error_m": 263.80084173802186,
+        "origin_time_error_s": 0.04070058465003967
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          8192.592592592593,
+          8370.37037037037,
+          162.96296296296293,
+          0.23633678226312435
+        ],
+        "arrival_rmse_s": 0.03424270858140651,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          -7.407407407406936,
+          -29.629629629629562,
+          -137.03703703703707,
+          0.0963367816670779
+        ],
+        "location_error_m": 140.3991957112953,
+        "origin_time_error_s": 0.0963367816670779
+      }
+    },
+    {
+      "condition_id": "velocity_110pct",
+      "velocity_factor": 1.1,
+      "velocity_bias_percent": 10.000000000000009,
+      "event": "confirm_06_southwest_deep.npz",
+      "observation_sha256": "0891c18cc01dacf81771cead552775eaadea903cef55cd0bf22efe0a05568d16",
+      "valid_pick_count": 9,
+      "source_truth_m_s_post_search": [
+        4200.0,
+        3600.0,
+        1420.0,
+        0.3100000023841858
+      ],
+      "search_seconds": 9.735645299999305,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          3492.4921875,
+          5481.85693359375,
+          262.57281494140625,
+          0.36259445548057556
+        ],
+        "total_loss": 0.8789018988609314,
+        "waveform_normalized_mse": 0.8789018988609314,
+        "arrival_normalized_mse": 10.25199031829834,
+        "selected_spatial_move_m": 711.2122609602069,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -707.5078125,
+          1881.85693359375,
+          -1157.4271850585938,
+          0.05259445309638977
+        ],
+        "location_error_m": 2319.825534814217,
+        "origin_time_error_s": 0.05259445309638977
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          4147.52001953125,
+          3212.12060546875,
+          176.85992431640625,
+          0.3636202812194824
+        ],
+        "total_loss": 1.0307995080947876,
+        "waveform_normalized_mse": 0.9245385527610779,
+        "arrival_normalized_mse": 0.4250439405441284,
+        "selected_spatial_move_m": 264.19783795548585,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -52.47998046875,
+          -387.87939453125,
+          -1243.1400756835938,
+          0.05362027883529663
+        ],
+        "location_error_m": 1303.3041935106864,
+        "origin_time_error_s": 0.05362027883529663
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          4222.222222222223,
+          3496.296296296296,
+          1003.7037037037037,
+          0.4012213660061422
+        ],
+        "arrival_rmse_s": 0.019337625562115917,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          22.222222222222626,
+          -103.70370370370392,
+          -416.2962962962963,
+          0.09122136362195643
+        ],
+        "location_error_m": 429.5938682434529,
+        "origin_time_error_s": 0.09122136362195643
+      }
+    },
+    {
+      "condition_id": "velocity_110pct",
+      "velocity_factor": 1.1,
+      "velocity_bias_percent": 10.000000000000009,
+      "event": "confirm_07_northeast_mid.npz",
+      "observation_sha256": "832f563e4e39c3fda64ea2b5cc9550e95dff1530eba72b68e3c4daae3f5aca1f",
+      "valid_pick_count": 8,
+      "source_truth_m_s_post_search": [
+        13700.0,
+        11800.0,
+        600.0,
+        0.27000001072883606
+      ],
+      "search_seconds": 13.542700499998318,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          3496.21630859375,
+          14000.0,
+          319.9732666015625,
+          0.40341290831565857
+        ],
+        "total_loss": 1.087328553199768,
+        "waveform_normalized_mse": 1.087328553199768,
+        "arrival_normalized_mse": 214.10398864746094,
+        "selected_spatial_move_m": 921.5392479921948,
+        "selected_on_boundary": true,
+        "component_error_m_s": [
+          -10203.78369140625,
+          2200.0,
+          -280.0267333984375,
+          0.1334128975868225
+        ],
+        "location_error_m": 10442.01209501435,
+        "origin_time_error_s": 0.1334128975868225
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          13865.97265625,
+          11679.9833984375,
+          761.59130859375,
+          0.30688774585723877
+        ],
+        "total_loss": 0.6503568887710571,
+        "waveform_normalized_mse": 0.5541834831237793,
+        "arrival_normalized_mse": 0.3846937417984009,
+        "selected_spatial_move_m": 167.79202064634387,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          165.97265625,
+          -120.0166015625,
+          161.59130859375,
+          0.03688773512840271
+        ],
+        "location_error_m": 260.88821032452404,
+        "origin_time_error_s": 0.03688773512840271
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          13948.148148148148,
+          11851.85185185185,
+          203.7037037037037,
+          0.32245250047559115
+        ],
+        "arrival_rmse_s": 0.02667405316707223,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          248.1481481481478,
+          51.85185185185037,
+          -396.2962962962963,
+          0.05245248974675509
+        ],
+        "location_error_m": 470.4432722741215,
+        "origin_time_error_s": 0.05245248974675509
+      }
+    },
+    {
+      "condition_id": "velocity_110pct",
+      "velocity_factor": 1.1,
+      "velocity_bias_percent": 10.000000000000009,
+      "event": "confirm_08_north_deep.npz",
+      "observation_sha256": "ae78e9ce5b7d4bade471be3b7f057bf42f104e1e45d3744b810369286f55f0ea",
+      "valid_pick_count": 10,
+      "source_truth_m_s_post_search": [
+        9500.0,
+        13200.0,
+        1240.0,
+        0.38999998569488525
+      ],
+      "search_seconds": 10.45577929999854,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          8979.00390625,
+          12649.541015625,
+          800.0098876953125,
+          0.4845723807811737
+        ],
+        "total_loss": 0.8120455145835876,
+        "waveform_normalized_mse": 0.8120455145835876,
+        "arrival_normalized_mse": 1.8278623819351196,
+        "selected_spatial_move_m": 285.4455413362491,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          -520.99609375,
+          -550.458984375,
+          -439.9901123046875,
+          0.09457239508628845
+        ],
+        "location_error_m": 876.3751035417464,
+        "origin_time_error_s": 0.09457239508628845
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          9553.3232421875,
+          13275.953125,
+          1000.354248046875,
+          0.46068260073661804
+        ],
+        "total_loss": 0.5383950471878052,
+        "waveform_normalized_mse": 0.5004487633705139,
+        "arrival_normalized_mse": 0.15178512036800385,
+        "selected_spatial_move_m": 775.7081050277263,
+        "selected_on_boundary": false,
+        "component_error_m_s": [
+          53.3232421875,
+          75.953125,
+          -239.645751953125,
+          0.07068261504173279
+        ],
+        "location_error_m": 256.98702648933687,
+        "origin_time_error_s": 0.07068261504173279
+      },
+      "fmm": {
+        "estimated_source_m_s": [
+          9496.296296296296,
+          13488.888888888889,
+          1203.7037037037037,
+          0.46721295152989994
+        ],
+        "arrival_rmse_s": 0.03512949973228979,
+        "candidate_count": 2340,
+        "component_error_m_s": [
+          -3.7037037037043774,
+          288.8888888888887,
+          -36.296296296296305,
+          0.07721296583501469
+        ],
+        "location_error_m": 291.18366827384057,
+        "origin_time_error_s": 0.07721296583501469
+      }
+    }
+  ],
+  "limitations": "The experiment applies a spatially uniform multiplicative velocity bias to the same Overthrust model and eight clean prospective events. It measures bulk calibration sensitivity, not transfer to independent geology, local structural error, anisotropy, attenuation, or field data."
+}

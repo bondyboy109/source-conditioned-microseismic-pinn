@@ -1,0 +1,27 @@
+{
+  "purpose": "development-only paired 25-vs-29 source coverage pilot after failed cross-region confirmation",
+  "control_checkpoint": "outputs/depth_gap_25_hybrid_1000/conditioned_5Hz.pth",
+  "control_sha256": "3a8b5251f12c308f9899ef5557347984e09b7a3d948ffd7a3146d6242b20041a",
+  "training_sources": [
+    {"file": "train_r04.npz", "source_m_s": [11600, 12200, 600, 0.20]},
+    {"file": "train_r07.npz", "source_m_s": [9100, 12000, 950, 0.12]},
+    {"file": "train_r08.npz", "source_m_s": [12600, 7800, 780, 0.35]},
+    {"file": "train_center.npz", "source_m_s": [7900, 8400, 900, 0.25]}
+  ],
+  "development_sources": [
+    {"file": "dev_r04.npz", "source_m_s": [11750, 12320, 540, 0.21]},
+    {"file": "dev_r07.npz", "source_m_s": [9250, 12180, 1010, 0.14]},
+    {"file": "dev_r08.npz", "source_m_s": [12720, 7900, 720, 0.38]},
+    {"file": "dev_center.npz", "source_m_s": [8050, 8570, 820, 0.27]}
+  ],
+  "fd": "original 401x401x94 Overthrust, 5 Hz, 0--2 s, dt=0.002 s, 25 existing receivers, six zero-Dirichlet faces",
+  "model": "same travel-time carrier, seed 42, 5 Hz, reference velocity 3500 m/s, distance core 20 m, output scale 1e-5",
+  "receiver_training": {"updates": 5000, "learning_rate": 0.0001, "weight": 0.1, "samples_per_event": 128},
+  "hybrid_training": {"updates": 1000, "learning_rate": 0.00001, "weight": 0.03, "samples_per_event": 64, "n_phys": 256, "n_ic": 128, "n_bc_per_face": 16},
+  "development_gates": {
+    "new_event_mean_raw_l2_fraction_of_control_below": 0.85,
+    "new_event_improvement_count_at_least": 3,
+    "new_event_all_raw_l2_below": 0.75
+  },
+  "limits": "Source selection reacts to prior inspected cross-region failures. All four new evaluations are development data, not independent proof of generalization. The previously inspected eight events may only be used for additional diagnostics. Do not adjust registered sources or gates after observing results; evaluate any revised method on new untouched events."
+}

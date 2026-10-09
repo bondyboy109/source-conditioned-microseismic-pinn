@@ -1,0 +1,62 @@
+{
+  "purpose": "frozen-model development audit of finite spatial source response",
+  "checkpoint": "E:\\source-conditioned-microseismic-pinn\\outputs\\depth_gap_25_hybrid_1000\\conditioned_5Hz.pth",
+  "reference": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\depth_coverage\\train_09_z860.npz",
+  "source": [
+    6500.0,
+    3500.0,
+    860.0,
+    0.20000000298023224
+  ],
+  "reference_training_sha256": "6abca19e7c69005c9714cb0d1af15eaa5431f0e838b8f3cc2ab195f0914c2c3d",
+  "results": [
+    {
+      "reference_change_relative_to_original": 0.17162984791068941,
+      "model_change_relative_to_original": 0.14687553991190194,
+      "model_to_fd_change_norm_ratio": 0.8486379331610399,
+      "change_cosine": 0.9401165242473492,
+      "change_relative_l2": 0.3529153630322996,
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\depth_gap_900\\dev_train_09_z820.npz",
+      "displacement_m": 40.0,
+      "displacement_xyz_m": [
+        0.0,
+        0.0,
+        -40.0
+      ],
+      "raw_waveform_relative_l2": 0.10784449080184365,
+      "prediction_to_fd_peak_ratio": 0.9775818606273076
+    },
+    {
+      "reference_change_relative_to_original": 0.34483974541878337,
+      "model_change_relative_to_original": 0.26952042708503,
+      "model_to_fd_change_norm_ratio": 0.775068616756625,
+      "change_cosine": 0.8859762686552227,
+      "change_relative_l2": 0.4768087233151565,
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\depth_coverage\\dev_train_09_z940.npz",
+      "displacement_m": 80.0,
+      "displacement_xyz_m": [
+        0.0,
+        0.0,
+        80.0
+      ],
+      "raw_waveform_relative_l2": 0.17840101112551127,
+      "prediction_to_fd_peak_ratio": 0.9341549234918128
+    },
+    {
+      "reference_change_relative_to_original": 0.5131020958858649,
+      "model_change_relative_to_original": 0.3865023935631445,
+      "model_to_fd_change_norm_ratio": 0.7469889561797247,
+      "change_cosine": 0.8272219630514925,
+      "change_relative_l2": 0.5675748049701648,
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\depth_gap_900\\dev_train_09_z980.npz",
+      "displacement_m": 120.0,
+      "displacement_xyz_m": [
+        0.0,
+        0.0,
+        120.0
+      ],
+      "raw_waveform_relative_l2": 0.30286842810530445,
+      "prediction_to_fd_peak_ratio": 0.8518167045340014
+    }
+  ]
+}

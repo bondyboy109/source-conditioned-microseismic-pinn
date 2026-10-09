@@ -1,0 +1,40 @@
+{
+  "protocol_sha256": "5e9b923cffb8e2e0b766d42fc7b3505511bcede85f6de98d53a93d5fcd6c3b8e",
+  "development_only": true,
+  "paired_checkpoint_comparisons": [
+    {
+      "seed": 4101,
+      "arm": "source_to_target",
+      "max_parameter_absolute_difference": 0.0
+    },
+    {
+      "seed": 4101,
+      "arm": "target_to_target",
+      "max_parameter_absolute_difference": 0.0
+    },
+    {
+      "seed": 4102,
+      "arm": "source_to_target",
+      "max_parameter_absolute_difference": 0.0
+    },
+    {
+      "seed": 4102,
+      "arm": "target_to_target",
+      "max_parameter_absolute_difference": 0.0
+    },
+    {
+      "seed": 4103,
+      "arm": "source_to_target",
+      "max_parameter_absolute_difference": 0.0
+    },
+    {
+      "seed": 4103,
+      "arm": "target_to_target",
+      "max_parameter_absolute_difference": 0.0
+    }
+  ],
+  "all_branch_parameters_identical": true,
+  "localization_skipped": true,
+  "reason": "The local-ranking branch is exactly the same model as the paired control in all six comparisons; repeating identical localization would add no information.",
+  "restriction": "Only target training events provide gradient updates. Four previously inspected development events provide diagnostics; the four source_transfer_moe_test events are not used. This discriminative auxiliary loss does not supply physical waveforms at negative sources and cannot by itself validate the forward operator."
+}

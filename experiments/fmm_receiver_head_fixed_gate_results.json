@@ -1,0 +1,740 @@
+{
+  "role": "post-hoc development diagnostic of an already fixed onset taper; no retraining, tuning, independent test or localization",
+  "protocol_sha256": "81d385070e1fe3aae4d2363ea2b0fa86db45fe2293a226376f6d22551254240f",
+  "depth_audit_results_sha256": "0c5bee45e9131329a77ef42e9cf556143a054aa0b66988a1d2a31b0e8e26db22",
+  "gate_source_protocol_sha256": "86d05860922d34d21af7bd82979ffdd13cbe67136a96e7ef6c6e6b50eeea6837",
+  "gate_parameters": {
+    "maximum_speed_m_s": 6166.212890625,
+    "source_support_radius_m": 200.0,
+    "source_lead_s": 0.2,
+    "gate_rise_s": 0.1
+  },
+  "fmm_setup": {
+    "setup_seconds": 37.18934589999844,
+    "field_cache_mib": 181.08816146850586,
+    "training_fmm_reference_sha256": "7b054f4705cb7ca865222d052e986f9bf76aae9b48b5d38bc52efb1aec41038a"
+  },
+  "events": [
+    {
+      "event": "a10_zm80.npz",
+      "sha256": "4889354580ac4f728ba6c2aa1534f191ea304f205ae1b698bd26d0b5c11e683f",
+      "offset_m": -80,
+      "fd_energy_removed_fraction": 7.714078397850729e-41,
+      "models": {
+        "learned": {
+          "before": {
+            "raw_l2": 0.44834425310766657,
+            "active_l2": 0.3958356382118492
+          },
+          "after": {
+            "raw_l2": 0.4420845880422699,
+            "active_l2": 0.3958356382118492
+          },
+          "response_l2_after": 1.089355140047324,
+          "pick_after": {
+            "valid_fd_station_count": 13,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.34153847510998064,
+              "rmse_s": 0.43701788609105785,
+              "demeaned_rmse_s": 0.27264647949872
+            }
+          }
+        },
+        "fmm": {
+          "before": {
+            "raw_l2": 0.5081797241824575,
+            "active_l2": 0.4610538427263329
+          },
+          "after": {
+            "raw_l2": 0.5035566175000796,
+            "active_l2": 0.4610538427263329
+          },
+          "response_l2_after": 1.2718374255174754,
+          "pick_after": {
+            "valid_fd_station_count": 13,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.30200000451161313,
+              "rmse_s": 0.4236453797780403,
+              "demeaned_rmse_s": 0.2971050404861311
+            }
+          }
+        }
+      }
+    },
+    {
+      "event": "a10_zp80.npz",
+      "sha256": "d342e544ff168b7dc2c27f4b9118f85c379df716d44672f8cd5adaf18385071f",
+      "offset_m": 80,
+      "fd_energy_removed_fraction": 5.8345002245295e-43,
+      "models": {
+        "learned": {
+          "before": {
+            "raw_l2": 0.35552146813260105,
+            "active_l2": 0.29762746951123625
+          },
+          "after": {
+            "raw_l2": 0.3480585191559333,
+            "active_l2": 0.29762746951123625
+          },
+          "response_l2_after": 1.0927417041735352,
+          "pick_after": {
+            "valid_fd_station_count": 13,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.23215385125233576,
+              "rmse_s": 0.36685819231639083,
+              "demeaned_rmse_s": 0.2840590125631615
+            }
+          }
+        },
+        "fmm": {
+          "before": {
+            "raw_l2": 0.4009322631739418,
+            "active_l2": 0.3330626283593627
+          },
+          "after": {
+            "raw_l2": 0.39408694505539016,
+            "active_l2": 0.3330626283593627
+          },
+          "response_l2_after": 1.1810413878509698,
+          "pick_after": {
+            "valid_fd_station_count": 13,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.26246153391324556,
+              "rmse_s": 0.39564709406642745,
+              "demeaned_rmse_s": 0.29605838319344163
+            }
+          }
+        }
+      }
+    },
+    {
+      "event": "a10_zm160.npz",
+      "sha256": "b341a7258b4448dd14f0fdc7405adfd74c5f263300ddb4750f71ead12dd9da0e",
+      "offset_m": -160,
+      "fd_energy_removed_fraction": 1.1072437172546866e-38,
+      "models": {
+        "learned": {
+          "before": {
+            "raw_l2": 0.8030055866587027,
+            "active_l2": 0.7594230318125151
+          },
+          "after": {
+            "raw_l2": 0.7978666311731182,
+            "active_l2": 0.7594230318125151
+          },
+          "response_l2_after": 1.0245171704442326,
+          "pick_after": {
+            "valid_fd_station_count": 13,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.45569233710949236,
+              "rmse_s": 0.5106430700041563,
+              "demeaned_rmse_s": 0.23043619256305733
+            }
+          }
+        },
+        "fmm": {
+          "before": {
+            "raw_l2": 0.9152950129515841,
+            "active_l2": 0.8779378595172292
+          },
+          "after": {
+            "raw_l2": 0.9105599638723278,
+            "active_l2": 0.8779378595172292
+          },
+          "response_l2_after": 1.165394716098262,
+          "pick_after": {
+            "valid_fd_station_count": 13,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.41907695623544544,
+              "rmse_s": 0.4963721063711838,
+              "demeaned_rmse_s": 0.2660070915141179
+            }
+          }
+        }
+      }
+    },
+    {
+      "event": "a10_zp160.npz",
+      "sha256": "a7344797db173fa990430974f66560edcbf96981602a41f2af8e6aadfc385b1f",
+      "offset_m": 160,
+      "fd_energy_removed_fraction": 2.026309927968839e-43,
+      "models": {
+        "learned": {
+          "before": {
+            "raw_l2": 0.606672275287185,
+            "active_l2": 0.5171298889554063
+          },
+          "after": {
+            "raw_l2": 0.5982115424122372,
+            "active_l2": 0.5171298889554063
+          },
+          "response_l2_after": 0.9787887809696051,
+          "pick_after": {
+            "valid_fd_station_count": 13,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.35769232419820934,
+              "rmse_s": 0.43878681752450466,
+              "demeaned_rmse_s": 0.25414577006703476
+            }
+          }
+        },
+        "fmm": {
+          "before": {
+            "raw_l2": 0.7199333158661526,
+            "active_l2": 0.6353451754862867
+          },
+          "after": {
+            "raw_l2": 0.7122612933812797,
+            "active_l2": 0.6353451754862867
+          },
+          "response_l2_after": 1.10283964465327,
+          "pick_after": {
+            "valid_fd_station_count": 13,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.4747692392422603,
+              "rmse_s": 0.5188134533341549,
+              "demeaned_rmse_s": 0.20919265959836342
+            }
+          }
+        }
+      }
+    },
+    {
+      "event": "a10_zm280.npz",
+      "sha256": "316e60fe941500fe135894171960f63434d798aab856c709a743796f104ce917",
+      "offset_m": -280,
+      "fd_energy_removed_fraction": 4.4604170882011064e-35,
+      "models": {
+        "learned": {
+          "before": {
+            "raw_l2": 1.3050159053313595,
+            "active_l2": 1.2556330657352346
+          },
+          "after": {
+            "raw_l2": 1.297292687319634,
+            "active_l2": 1.2556330657352346
+          },
+          "response_l2_after": 0.8373764281032704,
+          "pick_after": {
+            "valid_fd_station_count": 13,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.5669230933372791,
+              "rmse_s": 0.5969772802612459,
+              "demeaned_rmse_s": 0.18702962168866405
+            }
+          }
+        },
+        "fmm": {
+          "before": {
+            "raw_l2": 1.3125777816678497,
+            "active_l2": 1.2490718946300026
+          },
+          "after": {
+            "raw_l2": 1.3023375105217525,
+            "active_l2": 1.2490718946300026
+          },
+          "response_l2_after": 0.8218458291962462,
+          "pick_after": {
+            "valid_fd_station_count": 13,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.5630769431591034,
+              "rmse_s": 0.6104883507087175,
+              "demeaned_rmse_s": 0.23588213674131825
+            }
+          }
+        }
+      }
+    },
+    {
+      "event": "a10_zp280.npz",
+      "sha256": "d235b98753584de0dbd2b9e41e4e60efa7baafd80bf2e746c70c04f3aa839203",
+      "offset_m": 280,
+      "fd_energy_removed_fraction": 2.235107588790046e-42,
+      "models": {
+        "learned": {
+          "before": {
+            "raw_l2": 1.0773179912874782,
+            "active_l2": 0.9253665585052352
+          },
+          "after": {
+            "raw_l2": 1.0539133408777155,
+            "active_l2": 0.9253665585052352
+          },
+          "response_l2_after": 0.7538811515352309,
+          "pick_after": {
+            "valid_fd_station_count": 14,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 14,
+              "paired_pick_count": 14,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.516285736645971,
+              "rmse_s": 0.540527804979366,
+              "demeaned_rmse_s": 0.1600604451191441
+            }
+          }
+        },
+        "fmm": {
+          "before": {
+            "raw_l2": 1.2967244547702452,
+            "active_l2": 1.1237153845900525
+          },
+          "after": {
+            "raw_l2": 1.2763393705508106,
+            "active_l2": 1.1237153845900525
+          },
+          "response_l2_after": 0.8700888969216763,
+          "pick_after": {
+            "valid_fd_station_count": 14,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 14,
+              "paired_pick_count": 14,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.5130000199590411,
+              "rmse_s": 0.5417155490664213,
+              "demeaned_rmse_s": 0.1740307892941871
+            }
+          }
+        }
+      }
+    },
+    {
+      "event": "a14_zm80.npz",
+      "sha256": "ffce923aa8a413e382f5aea4b3d41094e843a4b3e4b484d6f213bb3304ede2cb",
+      "offset_m": -80,
+      "fd_energy_removed_fraction": 1.1022133056000623e-24,
+      "models": {
+        "learned": {
+          "before": {
+            "raw_l2": 0.33369052083489587,
+            "active_l2": 0.28945958311659126
+          },
+          "after": {
+            "raw_l2": 0.32807833416133575,
+            "active_l2": 0.28945958311659126
+          },
+          "response_l2_after": 0.9476683393381785,
+          "pick_after": {
+            "valid_fd_station_count": 10,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.3796000123023987,
+              "rmse_s": 0.4477830052379949,
+              "demeaned_rmse_s": 0.23751515833729214
+            }
+          }
+        },
+        "fmm": {
+          "before": {
+            "raw_l2": 0.4204027811971734,
+            "active_l2": 0.3746481184882696
+          },
+          "after": {
+            "raw_l2": 0.4172504378673521,
+            "active_l2": 0.3746481184882696
+          },
+          "response_l2_after": 1.1046511519968316,
+          "pick_after": {
+            "valid_fd_station_count": 10,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.32680001854896545,
+              "rmse_s": 0.3915967531461232,
+              "demeaned_rmse_s": 0.21575394538914364
+            }
+          }
+        }
+      }
+    },
+    {
+      "event": "a14_zp80.npz",
+      "sha256": "f3b25cf64e94d8b501f80a9b43d79ddb51a5cb7c9fe7acb1aeb18655a2f6cfb8",
+      "offset_m": 80,
+      "fd_energy_removed_fraction": 1.6684056782661177e-25,
+      "models": {
+        "learned": {
+          "before": {
+            "raw_l2": 0.5344967901490043,
+            "active_l2": 0.46244595922023457
+          },
+          "after": {
+            "raw_l2": 0.520985964858332,
+            "active_l2": 0.46244595922023457
+          },
+          "response_l2_after": 0.7146641851092391,
+          "pick_after": {
+            "valid_fd_station_count": 11,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.4176363782449202,
+              "rmse_s": 0.4761943924508663,
+              "demeaned_rmse_s": 0.22878145678379533
+            }
+          }
+        },
+        "fmm": {
+          "before": {
+            "raw_l2": 0.5408583107879803,
+            "active_l2": 0.4605856560298305
+          },
+          "after": {
+            "raw_l2": 0.5295939976811654,
+            "active_l2": 0.4605856560298305
+          },
+          "response_l2_after": 0.8494160908800638,
+          "pick_after": {
+            "valid_fd_station_count": 11,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.4420000206340443,
+              "rmse_s": 0.49052886207813956,
+              "demeaned_rmse_s": 0.2127311596620929
+            }
+          }
+        }
+      }
+    },
+    {
+      "event": "a14_zm160.npz",
+      "sha256": "3ea5d4ebc9d919061907e18e00e3c889328e652eddae3c05533f014835fef521",
+      "offset_m": -160,
+      "fd_energy_removed_fraction": 5.757564183186217e-24,
+      "models": {
+        "learned": {
+          "before": {
+            "raw_l2": 0.539254437539435,
+            "active_l2": 0.4899840462318212
+          },
+          "after": {
+            "raw_l2": 0.5342743243257452,
+            "active_l2": 0.4899840462318212
+          },
+          "response_l2_after": 0.8121698167415604,
+          "pick_after": {
+            "valid_fd_station_count": 10,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.4658000409603119,
+              "rmse_s": 0.5011934184202472,
+              "demeaned_rmse_s": 0.18500044461877585
+            }
+          }
+        },
+        "fmm": {
+          "before": {
+            "raw_l2": 0.6363612355293338,
+            "active_l2": 0.5812973120117402
+          },
+          "after": {
+            "raw_l2": 0.6326866394064599,
+            "active_l2": 0.5812973120117402
+          },
+          "response_l2_after": 0.906435685999556,
+          "pick_after": {
+            "valid_fd_station_count": 10,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.43400002717971803,
+              "rmse_s": 0.4576295748278013,
+              "demeaned_rmse_s": 0.1451509702519353
+            }
+          }
+        }
+      }
+    },
+    {
+      "event": "a14_zp160.npz",
+      "sha256": "04a8a1d172a7a46a023b78cdd13d41fe08be810188b23438055003a81c250c06",
+      "offset_m": 160,
+      "fd_energy_removed_fraction": 7.045253511938221e-26,
+      "models": {
+        "learned": {
+          "before": {
+            "raw_l2": 0.6872744057345983,
+            "active_l2": 0.5964006322245717
+          },
+          "after": {
+            "raw_l2": 0.6715459341145389,
+            "active_l2": 0.5964006322245717
+          },
+          "response_l2_after": 0.5839323706238058,
+          "pick_after": {
+            "valid_fd_station_count": 11,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.483818230303851,
+              "rmse_s": 0.5164153156006197,
+              "demeaned_rmse_s": 0.18056771088026063
+            }
+          }
+        },
+        "fmm": {
+          "before": {
+            "raw_l2": 0.7124584975134937,
+            "active_l2": 0.6181166856125571
+          },
+          "after": {
+            "raw_l2": 0.6946189118784434,
+            "active_l2": 0.6181166856125571
+          },
+          "response_l2_after": 0.6406839429521389,
+          "pick_after": {
+            "valid_fd_station_count": 11,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.49254550717093726,
+              "rmse_s": 0.5366560281935158,
+              "demeaned_rmse_s": 0.21306950969616398
+            }
+          }
+        }
+      }
+    },
+    {
+      "event": "a14_zm280.npz",
+      "sha256": "f3e3065d6444d2d0c384486579b6016d6dbcf9032bbfd97696c67ab53baa007c",
+      "offset_m": -280,
+      "fd_energy_removed_fraction": 1.2956283343767373e-22,
+      "models": {
+        "learned": {
+          "before": {
+            "raw_l2": 0.6517243586246235,
+            "active_l2": 0.6089494761824508
+          },
+          "after": {
+            "raw_l2": 0.6458444515266031,
+            "active_l2": 0.6089494761824508
+          },
+          "response_l2_after": 0.5423021917728748,
+          "pick_after": {
+            "valid_fd_station_count": 10,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.44240003228187563,
+              "rmse_s": 0.501335847992102,
+              "demeaned_rmse_s": 0.2358385971781451
+            }
+          }
+        },
+        "fmm": {
+          "before": {
+            "raw_l2": 0.6671844927763646,
+            "active_l2": 0.6160840582870596
+          },
+          "after": {
+            "raw_l2": 0.661992855560402,
+            "active_l2": 0.6160840582870596
+          },
+          "response_l2_after": 0.5590508621323199,
+          "pick_after": {
+            "valid_fd_station_count": 10,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.49360001683235166,
+              "rmse_s": 0.5297123906319892,
+              "demeaned_rmse_s": 0.1922348568084341
+            }
+          }
+        }
+      }
+    },
+    {
+      "event": "a14_zp280.npz",
+      "sha256": "00db2de41a64734355a43cba371833177fe9119b570df8c9e3d625f395977f97",
+      "offset_m": 280,
+      "fd_energy_removed_fraction": 1.7688948769709352e-26,
+      "models": {
+        "learned": {
+          "before": {
+            "raw_l2": 0.8226519015250215,
+            "active_l2": 0.7232411555571265
+          },
+          "after": {
+            "raw_l2": 0.797968680454008,
+            "active_l2": 0.7232411555571265
+          },
+          "response_l2_after": 0.5643989044235531,
+          "pick_after": {
+            "valid_fd_station_count": 11,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.524909108877182,
+              "rmse_s": 0.5460892578310957,
+              "demeaned_rmse_s": 0.15061176891690647
+            }
+          }
+        },
+        "fmm": {
+          "before": {
+            "raw_l2": 0.792833198478362,
+            "active_l2": 0.6742384123708554
+          },
+          "after": {
+            "raw_l2": 0.763187644779426,
+            "active_l2": 0.6742384123708554
+          },
+          "response_l2_after": 0.52687609101897,
+          "pick_after": {
+            "valid_fd_station_count": 11,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "model_picks_at_t0": 0,
+            "model_early_rms_over_fd_full_rms": 0.0,
+            "raw_threshold_pick": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.5112727176059376,
+              "rmse_s": 0.5498806385885696,
+              "demeaned_rmse_s": 0.20240781834309735
+            }
+          }
+        }
+      }
+    }
+  ],
+  "limits": "same spent 12-event depth development set; gate is approximate because the Ricker/Gaussian source has nonzero tails; results do not validate physical first arrivals, wavefield physics or source localization"
+}

@@ -1,0 +1,36 @@
+{
+  "role": "development-only FMM-initialized FD full-waveform refinement pilot",
+  "fmm_results": "experiments/arrival_spatial_refinement_results.json",
+  "fmm_results_sha256": "a78254d41a46346355dfd48cf00173dbdb2b46dc01b772a517bd10c636fb0249",
+  "fd_config": "data/observations/experiment_draft.json",
+  "fd_config_sha256": "8af2cdceeeb4f737a8582fb11a787f05306bf0c8b1560665fbca1b1a5628d02a",
+  "reference_fd_implementation": "examples/generate_fd_observation.py",
+  "reference_fd_implementation_sha256": "a09d9d7592ee699b0898f00ea7ec367ff746718c6c9926ca6beae3926adfa120",
+  "implementation": "examples/run_fd_waveform_refinement_development.py",
+  "implementation_sha256": "8fb9e78133661d0f6f4701e860a7b40157cf5bc9dd6e30d5842a37d0505097b4",
+  "events": [
+    {
+      "id": "spatial_01",
+      "observation": "data/observations/arrival_spatial_unseen_20260927/spatial_01.npz",
+      "observation_sha256": "0ce401b9b38dfd2e866b60c42d8e9b5f32f4de10b2d209514cb3556113b142dc"
+    },
+    {
+      "id": "spatial_02",
+      "observation": "data/observations/arrival_spatial_unseen_20260927/spatial_02.npz",
+      "observation_sha256": "d9b7875ce781708e8a729006d4d42ce891ac44dd4eb23f83c75808cf62e1687d"
+    }
+  ],
+  "waveform_window_s": [0.0, 2.0],
+  "reference_origin_time_s": 0.5,
+  "origin_time_bounds_s": [0.05, 0.5],
+  "candidate_offsets_m": {
+    "x": [-200.0, 0.0, 200.0],
+    "y": [-200.0, 0.0, 200.0],
+    "z": [-120.0, 0.0, 120.0]
+  },
+  "batch_size": 6,
+  "objective": "full-record waveform MSE normalized by observation RMS; no fitted gain",
+  "result": "experiments/fd_waveform_refinement_development_results.json",
+  "report": "experiments/fd_waveform_refinement_development.md",
+  "interpretation": "Already-inspected events; development cost and feasibility pilot only. FMM supplies the local center. This is not global FD inversion, an independent test, or evidence of superiority."
+}

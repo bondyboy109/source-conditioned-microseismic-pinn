@@ -1,0 +1,26 @@
+{
+  "purpose": "development-only test of adding local depth coverage to a source-conditioned 5 Hz PINN",
+  "frequency_hz": 5.0,
+  "seed": 42,
+  "reference_velocity_m_s": 3500.0,
+  "distance_core_m": 20.0,
+  "wavefield_scale": 1e-5,
+  "record_window_s": [0.0, 2.0],
+  "base_training_sources": "the exact 20 receiver observations registered in the existing local_density_aug20_scratch checkpoints",
+  "added_training_sources": [
+    {"file": "train_01_z340.npz", "source_m_s": [3500.0, 4000.0, 340.0, 0.12], "anchor": "train_01", "role": "train"},
+    {"file": "train_01_z660.npz", "source_m_s": [3500.0, 4000.0, 660.0, 0.12], "anchor": "train_01", "role": "train"},
+    {"file": "train_09_z540.npz", "source_m_s": [6500.0, 3500.0, 540.0, 0.20], "anchor": "train_09", "role": "train"},
+    {"file": "train_09_z860.npz", "source_m_s": [6500.0, 3500.0, 860.0, 0.20], "anchor": "train_09", "role": "train"}
+  ],
+  "development_sources": [
+    {"file": "dev_train_01_z260.npz", "source_m_s": [3500.0, 4000.0, 260.0, 0.12], "anchor": "train_01", "role": "development"},
+    {"file": "dev_train_01_z740.npz", "source_m_s": [3500.0, 4000.0, 740.0, 0.12], "anchor": "train_01", "role": "development"},
+    {"file": "dev_train_09_z460.npz", "source_m_s": [6500.0, 3500.0, 460.0, 0.20], "anchor": "train_09", "role": "development"},
+    {"file": "dev_train_09_z940.npz", "source_m_s": [6500.0, 3500.0, 940.0, 0.20], "anchor": "train_09", "role": "development"}
+  ],
+  "receiver_pretraining": {"updates": 5000, "learning_rate": 0.0001, "receiver_loss_weight": 0.1, "samples_per_event_per_update": 128, "batch_size_20": 2560, "batch_size_24": 3072},
+  "hybrid_training": {"updates": 1000, "learning_rate": 0.00001, "receiver_loss_weight": 0.03, "samples_per_event_per_update": 64, "batch_size_20": 1280, "batch_size_24": 1536, "n_phys": 256, "n_ic": 128, "n_bc_per_face": 16},
+  "development_gate": {"all_four_waveform_raw_relative_l2_below": 0.5, "all_four_finite_depth_response_relative_l2_below": 0.5, "all_four_finite_depth_response_cosine_above": 0.8},
+  "interpretation_limit": "Development data guide whether a later independent confirmation should be attempted; they do not establish localization accuracy or all-volume generalization. Previously inspected z +/- 80 m records are excluded."
+}

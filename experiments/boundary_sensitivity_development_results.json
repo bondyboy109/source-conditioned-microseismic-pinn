@@ -1,0 +1,225 @@
+{
+  "purpose": "development-only lateral/bottom boundary sensitivity, not PML",
+  "configuration": {
+    "purpose": "Isolate lateral/bottom boundary sensitivity in the nine-second 5 Hz FD records",
+    "unchanged_boundary": "zero Dirichlet on all six faces",
+    "modified_boundary": "zero top; lateral and bottom damped sponge ending at zero faces",
+    "sponge_width_m": 800,
+    "sponge_max_damping_s": 60,
+    "time_windows_s": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        4,
+        9
+      ]
+    ],
+    "events": [
+      {
+        "source_m_s": [
+          3500,
+          4000,
+          500,
+          0.12
+        ],
+        "original": "train_01.npz",
+        "sponge": "sponge_train_01.npz"
+      },
+      {
+        "source_m_s": [
+          3750,
+          4000,
+          500,
+          0.12
+        ],
+        "original": "dev_distance_0250.npz",
+        "sponge": "sponge_dev_distance_0250.npz"
+      }
+    ],
+    "caveat": "Sponge is a sensitivity test, not a PML or a new PINN-compatible reference"
+  },
+  "events": [
+    {
+      "event": "train_01.npz",
+      "full_sponge_vs_original": {
+        "relative_l2": 0.921146766825979,
+        "cosine": 0.3902613823519243,
+        "predicted_to_fd_peak": 1.0
+      },
+      "time_windows": {
+        "0_to_2_s": {
+          "original_energy_fraction": 0.10945527596016426,
+          "sponge_vs_original": {
+            "relative_l2": 0.3442273766744766,
+            "cosine": 0.9390516465239435,
+            "predicted_to_fd_peak": 1.0
+          },
+          "sponge_to_original_energy": 0.9152215780869873
+        },
+        "2_to_4_s": {
+          "original_energy_fraction": 0.23001924124854387,
+          "sponge_vs_original": {
+            "relative_l2": 0.8829648348343784,
+            "cosine": 0.47447331221452366,
+            "predicted_to_fd_peak": 1.0067839995066914
+          },
+          "sponge_to_original_energy": 0.2952909330984208
+        },
+        "4_to_9_s": {
+          "original_energy_fraction": 0.6610080161077866,
+          "sponge_vs_original": {
+            "relative_l2": 0.9966817018858075,
+            "cosine": 0.08418839647843536,
+            "predicted_to_fd_peak": 0.2906074270349036
+          },
+          "sponge_to_original_energy": 0.01116930453803123
+        },
+        "0_to_1_s": {
+          "original_energy_fraction": 0.053600714416025846,
+          "sponge_vs_original": {
+            "relative_l2": 0.0,
+            "cosine": 1.0,
+            "predicted_to_fd_peak": 1.0
+          },
+          "sponge_to_original_energy": 1.0
+        },
+        "1_to_2_s": {
+          "original_energy_fraction": 0.05590384827997458,
+          "sponge_vs_original": {
+            "relative_l2": 0.4816625770432764,
+            "cosine": 0.8771016329952105,
+            "predicted_to_fd_peak": 0.99984318977615
+          },
+          "sponge_to_original_energy": 0.8340106119442221
+        }
+      }
+    },
+    {
+      "event": "dev_distance_0250.npz",
+      "full_sponge_vs_original": {
+        "relative_l2": 0.9077086512343928,
+        "cosine": 0.4203998121981415,
+        "predicted_to_fd_peak": 1.0
+      },
+      "time_windows": {
+        "0_to_2_s": {
+          "original_energy_fraction": 0.14560116761704983,
+          "sponge_vs_original": {
+            "relative_l2": 0.34395196806277134,
+            "cosine": 0.9393560092470047,
+            "predicted_to_fd_peak": 1.0
+          },
+          "sponge_to_original_energy": 0.9325274412853602
+        },
+        "2_to_4_s": {
+          "original_energy_fraction": 0.21223374685769691,
+          "sponge_vs_original": {
+            "relative_l2": 0.8897154974024595,
+            "cosine": 0.4594828412744475,
+            "predicted_to_fd_peak": 0.6165834382195988
+          },
+          "sponge_to_original_energy": 0.2617536939806122
+        },
+        "4_to_9_s": {
+          "original_energy_fraction": 0.6426322658290733,
+          "sponge_vs_original": {
+            "relative_l2": 0.9972452828965573,
+            "cosine": 0.08028971975288254,
+            "predicted_to_fd_peak": 0.20669097752517623
+          },
+          "sponge_to_original_energy": 0.012326319093931093
+        },
+        "0_to_1_s": {
+          "original_energy_fraction": 0.07014208635166326,
+          "sponge_vs_original": {
+            "relative_l2": 6.9672046369276325e-09,
+            "cosine": 1.0,
+            "predicted_to_fd_peak": 1.0
+          },
+          "sponge_to_original_energy": 1.0000000004435692
+        },
+        "1_to_2_s": {
+          "original_energy_fraction": 0.0755298790435375,
+          "sponge_vs_original": {
+            "relative_l2": 0.4775521812214898,
+            "cosine": 0.8801722471476904,
+            "predicted_to_fd_peak": 1.02114882647782
+          },
+          "sponge_to_original_energy": 0.8699311653833995
+        }
+      }
+    }
+  ],
+  "train01_template_to_250m": {
+    "zero_boundary": {
+      "fixed_speed": {
+        "relative_l2": 1.342606399333104,
+        "cosine": 0.29794518612109505,
+        "predicted_to_fd_peak": 1.061405940686093,
+        "first_2_s": {
+          "relative_l2": 0.7662529908095334,
+          "cosine": 0.7321643687454586,
+          "predicted_to_fd_peak": 1.061405940686093
+        },
+        "first_4_s": {
+          "relative_l2": 1.2115356686658478,
+          "cosine": 0.42169850637824413,
+          "predicted_to_fd_peak": 1.061405940686093
+        }
+      },
+      "integrated_slowness": {
+        "relative_l2": 1.5459820561479103,
+        "cosine": 0.06133932740054541,
+        "predicted_to_fd_peak": 1.0614726470814058,
+        "first_2_s": {
+          "relative_l2": 0.8763475990420235,
+          "cosine": 0.6490138110750018,
+          "predicted_to_fd_peak": 1.0614726470814058
+        },
+        "first_4_s": {
+          "relative_l2": 1.3119166906903312,
+          "cosine": 0.32049109469591186,
+          "predicted_to_fd_peak": 1.0614726470814058
+        }
+      }
+    },
+    "lateral_bottom_sponge": {
+      "fixed_speed": {
+        "relative_l2": 0.8046181455976306,
+        "cosine": 0.7348718568611532,
+        "predicted_to_fd_peak": 1.061405940686093,
+        "first_2_s": {
+          "relative_l2": 0.6910921181483392,
+          "cosine": 0.7803769335028434,
+          "predicted_to_fd_peak": 1.061405940686093
+        },
+        "first_4_s": {
+          "relative_l2": 0.8021812264223714,
+          "cosine": 0.7371517937385327,
+          "predicted_to_fd_peak": 1.061405940686093
+        }
+      },
+      "integrated_slowness": {
+        "relative_l2": 1.0562969817541514,
+        "cosine": 0.5343350854158967,
+        "predicted_to_fd_peak": 1.0614726470814058,
+        "first_2_s": {
+          "relative_l2": 0.7890692330644121,
+          "cosine": 0.7132584530103064,
+          "predicted_to_fd_peak": 1.0614726470814058
+        },
+        "first_4_s": {
+          "relative_l2": 1.0447032740291153,
+          "cosine": 0.5457567163422156,
+          "predicted_to_fd_peak": 1.0614726470814058
+        }
+      }
+    }
+  }
+}

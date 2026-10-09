@@ -1,0 +1,402 @@
+{
+  "date": "2026-10-09",
+  "scope": "current package versus main-paper recorded paths; original JSON and scripts are copied byte-for-byte",
+  "references": [
+    {
+      "document": "experiments/cross_model_geology_results.json",
+      "path": "outputs/traveltime_aligned_moe_development/traveltime_aligned_moe.pth",
+      "expected": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+      "actual": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_conditioned_ensemble_confirmation_results.json",
+      "path": "experiments/source_conditioned_ensemble_confirmation_protocol.json",
+      "expected": "e727f50ff17fb6b60004d5686d78adde23822a8e2a5fac3e9b63a8cd31bd173c",
+      "actual": "e727f50ff17fb6b60004d5686d78adde23822a8e2a5fac3e9b63a8cd31bd173c",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "examples/run_source_transfer_final_blind_test.py",
+      "expected": "7e03e237432a9572ef710a087c82653d5bba826b3c6bfc4bcbcbb407c271aa62",
+      "actual": "7e03e237432a9572ef710a087c82653d5bba826b3c6bfc4bcbcbb407c271aa62",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "experiments/source_transfer_moe_protocol.json",
+      "expected": "dc56eb29ed2711dd56ed56da45aa0108467680bdc7bd4201b7fd35495a8071e2",
+      "actual": "dc56eb29ed2711dd56ed56da45aa0108467680bdc7bd4201b7fd35495a8071e2",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "experiments/traveltime_aligned_moe_localization_protocol.json",
+      "expected": "62c69be47a4037d919e9704f407bae352b7c36c67d717e02e8877d4df6c9c167",
+      "actual": "62c69be47a4037d919e9704f407bae352b7c36c67d717e02e8877d4df6c9c167",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "experiments/source_transfer_moe_protocol.json",
+      "expected": "dc56eb29ed2711dd56ed56da45aa0108467680bdc7bd4201b7fd35495a8071e2",
+      "actual": "dc56eb29ed2711dd56ed56da45aa0108467680bdc7bd4201b7fd35495a8071e2",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "experiments/traveltime_aligned_moe_development_protocol.json",
+      "expected": "8cd6bf5e1c2fca0774e153ea65cdcb7ceeca7b2d016a4eabf38fa5d7cd2140b5",
+      "actual": "8cd6bf5e1c2fca0774e153ea65cdcb7ceeca7b2d016a4eabf38fa5d7cd2140b5",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "experiments/traveltime_aligned_moe_localization_protocol.json",
+      "expected": "62c69be47a4037d919e9704f407bae352b7c36c67d717e02e8877d4df6c9c167",
+      "actual": "62c69be47a4037d919e9704f407bae352b7c36c67d717e02e8877d4df6c9c167",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "examples/run_source_transfer_moe.py",
+      "expected": "aaca8d6861a2579b2c1bf2864d0e082aa601b0261fee97ba439246432107fb01",
+      "actual": "aaca8d6861a2579b2c1bf2864d0e082aa601b0261fee97ba439246432107fb01",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "examples/run_traveltime_aligned_moe_localization.py",
+      "expected": "174a5d727b88ab957dcd659d043a3210cfc6efb8d73e97caeb15887afaaa7ce9",
+      "actual": "174a5d727b88ab957dcd659d043a3210cfc6efb8d73e97caeb15887afaaa7ce9",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "examples/run_adaptive_fusion_independent.py",
+      "expected": "fba979271eb126094209d229ddff098606ff147d1ac4c730b14bf435f7275ea5",
+      "actual": "fba979271eb126094209d229ddff098606ff147d1ac4c730b14bf435f7275ea5",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "examples/run_holdout_noise_picker_comparison.py",
+      "expected": "ac3c306c85360fbfbc60cc519a17e83e39fd82d2ddab2764e34caedb1ceb7d33",
+      "actual": "ac3c306c85360fbfbc60cc519a17e83e39fd82d2ddab2764e34caedb1ceb7d33",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "examples/invert_fmm_receiver_fields.py",
+      "expected": "9ae88a741a88ce52e1278484f24e9d8c3a846546191eb6b3a15288cc955a924f",
+      "actual": "9ae88a741a88ce52e1278484f24e9d8c3a846546191eb6b3a15288cc955a924f",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "examples/generate_fd_observation.py",
+      "expected": "a09d9d7592ee699b0898f00ea7ec367ff746718c6c9926ca6beae3926adfa120",
+      "actual": "a09d9d7592ee699b0898f00ea7ec367ff746718c6c9926ca6beae3926adfa120",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "examples/confirm_fmm_quality_gate.py",
+      "expected": "5d05c4eea94b00374827e4795a69089d1a0db193f82d050966a653404c30dad0",
+      "actual": "5d05c4eea94b00374827e4795a69089d1a0db193f82d050966a653404c30dad0",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "data/velocity/vp_model.npy",
+      "expected": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+      "actual": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "data/velocity/independent_layered_undulating.npy",
+      "expected": "b806f82c0150b40b9b439623ce023c477ace525d0454169cb3ffc98feb140310",
+      "actual": "b806f82c0150b40b9b439623ce023c477ace525d0454169cb3ffc98feb140310",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "data/observations/receiver_coords.npy",
+      "expected": "5b50f714c585b338f40fc691645221cfc60198b6a27df3feb9e602c259f8aa12",
+      "actual": "5b50f714c585b338f40fc691645221cfc60198b6a27df3feb9e602c259f8aa12",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "data/observations/adaptive_fusion_transition_confirmation/fd_config.json",
+      "expected": "b035c75f2cc659337b483b4f86c0269cbf1636e45e5c759e216a8d62ffdd59d1",
+      "actual": "b035c75f2cc659337b483b4f86c0269cbf1636e45e5c759e216a8d62ffdd59d1",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "data/observations/independent_layered_undulating/fd_config.json",
+      "expected": "0d23bae06b36ce4327d2f613eab2d414160dbd462ee5084a911c1e89212646fa",
+      "actual": "0d23bae06b36ce4327d2f613eab2d414160dbd462ee5084a911c1e89212646fa",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "outputs/depth_midpoint_teacher_low_weight/teacher_0.002_loadable.pth",
+      "expected": "dab17cae1d3aae79c0b9efeac28aa5bae2f88748ad822d49d4b5bf87a73407b4",
+      "actual": "dab17cae1d3aae79c0b9efeac28aa5bae2f88748ad822d49d4b5bf87a73407b4",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "outputs/traveltime_aligned_moe_development/receiver_fmm_fields_stride2.npy",
+      "expected": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",
+      "actual": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_protocol.json",
+      "path": "examples/generate_fd_observation.py",
+      "expected": "a09d9d7592ee699b0898f00ea7ec367ff746718c6c9926ca6beae3926adfa120",
+      "actual": "a09d9d7592ee699b0898f00ea7ec367ff746718c6c9926ca6beae3926adfa120",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_final_blind_results.json",
+      "path": "experiments/source_transfer_final_blind_protocol.json",
+      "expected": "3696b99ef9849df9baaafa91811ab4fe7d5ee065ae1f453ebd8bd726f4d25352",
+      "actual": "3696b99ef9849df9baaafa91811ab4fe7d5ee065ae1f453ebd8bd726f4d25352",
+      "status": "match"
+    },
+    {
+      "document": "experiments/source_transfer_moe_protocol.json",
+      "path": "data/velocity/independent_layered_undulating.npy",
+      "expected": "b806f82c0150b40b9b439623ce023c477ace525d0454169cb3ffc98feb140310",
+      "actual": "b806f82c0150b40b9b439623ce023c477ace525d0454169cb3ffc98feb140310",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_confirmation_protocol.json",
+      "path": "outputs/traveltime_aligned_moe_development/traveltime_aligned_moe.pth",
+      "expected": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+      "actual": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_confirmation_protocol.json",
+      "path": "outputs/traveltime_aligned_moe_development/receiver_fmm_fields_stride2.npy",
+      "expected": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",
+      "actual": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_confirmation_protocol.json",
+      "path": "experiments/traveltime_aligned_moe_localization_protocol.json",
+      "expected": "62c69be47a4037d919e9704f407bae352b7c36c67d717e02e8877d4df6c9c167",
+      "actual": "62c69be47a4037d919e9704f407bae352b7c36c67d717e02e8877d4df6c9c167",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_confirmation_protocol.json",
+      "path": "experiments/traveltime_aligned_moe_localization_results.json",
+      "expected": "cdd8d08aab3feda97103883eb277739fb5b0de4ec333381328343770d7f3fe42",
+      "actual": "cdd8d08aab3feda97103883eb277739fb5b0de4ec333381328343770d7f3fe42",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_confirmation_protocol.json",
+      "path": "examples/run_traveltime_aligned_moe_localization.py",
+      "expected": "add81f105956c073f8b2331f15da37dbddc3906dc996bc5b6d33eb2429694c0e",
+      "actual": "174a5d727b88ab957dcd659d043a3210cfc6efb8d73e97caeb15887afaaa7ce9",
+      "status": "historical_mismatch"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_confirmation_results.json",
+      "path": "experiments/traveltime_aligned_moe_confirmation_protocol.json",
+      "expected": "6fc5136f12fdf7eca84df7abfa153ace7adcce0689cc3d434192bedd1f30d861",
+      "actual": "6fc5136f12fdf7eca84df7abfa153ace7adcce0689cc3d434192bedd1f30d861",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_development_protocol.json",
+      "path": "outputs/depth_midpoint_teacher_low_weight/teacher_0.002_loadable.pth",
+      "expected": "dab17cae1d3aae79c0b9efeac28aa5bae2f88748ad822d49d4b5bf87a73407b4",
+      "actual": "dab17cae1d3aae79c0b9efeac28aa5bae2f88748ad822d49d4b5bf87a73407b4",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_development_results.json",
+      "path": "experiments/traveltime_aligned_moe_development_protocol.json",
+      "expected": "8cd6bf5e1c2fca0774e153ea65cdcb7ceeca7b2d016a4eabf38fa5d7cd2140b5",
+      "actual": "8cd6bf5e1c2fca0774e153ea65cdcb7ceeca7b2d016a4eabf38fa5d7cd2140b5",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_development_results.json",
+      "path": "outputs/traveltime_aligned_moe_development/receiver_fmm_fields_stride2.npy",
+      "expected": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",
+      "actual": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_development_results.json",
+      "path": "outputs/traveltime_aligned_moe_development/traveltime_aligned_moe.pth",
+      "expected": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+      "actual": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_localization_protocol.json",
+      "path": "outputs/traveltime_aligned_moe_development/traveltime_aligned_moe.pth",
+      "expected": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+      "actual": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_localization_protocol.json",
+      "path": "experiments/traveltime_aligned_moe_development_results.json",
+      "expected": "fa732151931737d98b11b047f68bbe2e43405bd0506f17dea0b30344ae1d6515",
+      "actual": "fa732151931737d98b11b047f68bbe2e43405bd0506f17dea0b30344ae1d6515",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_localization_protocol.json",
+      "path": "outputs/traveltime_aligned_moe_development/receiver_fmm_fields_stride2.npy",
+      "expected": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",
+      "actual": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_localization_protocol.json",
+      "path": "experiments/arrival_bias_development_results.json",
+      "expected": "b41f0fee568bf8fc9379181a86345fab3ab733d28a250eb8f3d6fee762583a50",
+      "actual": "b41f0fee568bf8fc9379181a86345fab3ab733d28a250eb8f3d6fee762583a50",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_localization_results.json",
+      "path": "experiments/traveltime_aligned_moe_localization_protocol.json",
+      "expected": "62c69be47a4037d919e9704f407bae352b7c36c67d717e02e8877d4df6c9c167",
+      "actual": "62c69be47a4037d919e9704f407bae352b7c36c67d717e02e8877d4df6c9c167",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_stress_protocol.json",
+      "path": "examples/stress_test_traveltime_aligned_moe.py",
+      "expected": "a9adc7ed8eef81be7c6f1e0030841472c605dc11a553125e536bef43aa417e13",
+      "actual": "a9adc7ed8eef81be7c6f1e0030841472c605dc11a553125e536bef43aa417e13",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_stress_protocol.json",
+      "path": "outputs/traveltime_aligned_moe_development/traveltime_aligned_moe.pth",
+      "expected": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+      "actual": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_stress_protocol.json",
+      "path": "outputs/traveltime_aligned_moe_development/receiver_fmm_fields_stride2.npy",
+      "expected": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",
+      "actual": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_stress_protocol.json",
+      "path": "experiments/traveltime_aligned_moe_localization_protocol.json",
+      "expected": "62c69be47a4037d919e9704f407bae352b7c36c67d717e02e8877d4df6c9c167",
+      "actual": "62c69be47a4037d919e9704f407bae352b7c36c67d717e02e8877d4df6c9c167",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_stress_protocol.json",
+      "path": "experiments/traveltime_aligned_moe_localization_results.json",
+      "expected": "cdd8d08aab3feda97103883eb277739fb5b0de4ec333381328343770d7f3fe42",
+      "actual": "cdd8d08aab3feda97103883eb277739fb5b0de4ec333381328343770d7f3fe42",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_stress_protocol.json",
+      "path": "examples/run_traveltime_aligned_moe_localization.py",
+      "expected": "add81f105956c073f8b2331f15da37dbddc3906dc996bc5b6d33eb2429694c0e",
+      "actual": "174a5d727b88ab957dcd659d043a3210cfc6efb8d73e97caeb15887afaaa7ce9",
+      "status": "historical_mismatch"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_stress_protocol.json",
+      "path": "experiments/traveltime_aligned_moe_confirmation_results.json",
+      "expected": "fdc1f68704bd60687f782b4fe88ab3b9c0ab34e4541613b0746ed3b816c36ad5",
+      "actual": "a8fcdfbe2413f0332a819ae5de6853ebaba12e4ed4822b1940f2ad442d807e2d",
+      "status": "historical_mismatch"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_stress_results.json",
+      "path": "experiments/traveltime_aligned_moe_stress_protocol.json",
+      "expected": "815e5232261fc3b48c9a67f1cb776a0fe88b4f95916a59024923393daa1cb9df",
+      "actual": "815e5232261fc3b48c9a67f1cb776a0fe88b4f95916a59024923393daa1cb9df",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_velocity_bias_protocol.json",
+      "path": "examples/stress_test_velocity_bias.py",
+      "expected": "7acc79c3a44b609ed7bb66450bbb01cb800c9b2b217c02a0c29da3eba41f68d9",
+      "actual": "7acc79c3a44b609ed7bb66450bbb01cb800c9b2b217c02a0c29da3eba41f68d9",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_velocity_bias_protocol.json",
+      "path": "outputs/traveltime_aligned_moe_development/traveltime_aligned_moe.pth",
+      "expected": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+      "actual": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_velocity_bias_protocol.json",
+      "path": "outputs/traveltime_aligned_moe_development/receiver_fmm_fields_stride2.npy",
+      "expected": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",
+      "actual": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_velocity_bias_protocol.json",
+      "path": "experiments/traveltime_aligned_moe_localization_protocol.json",
+      "expected": "62c69be47a4037d919e9704f407bae352b7c36c67d717e02e8877d4df6c9c167",
+      "actual": "62c69be47a4037d919e9704f407bae352b7c36c67d717e02e8877d4df6c9c167",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_velocity_bias_protocol.json",
+      "path": "experiments/traveltime_aligned_moe_localization_results.json",
+      "expected": "cdd8d08aab3feda97103883eb277739fb5b0de4ec333381328343770d7f3fe42",
+      "actual": "cdd8d08aab3feda97103883eb277739fb5b0de4ec333381328343770d7f3fe42",
+      "status": "match"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_velocity_bias_protocol.json",
+      "path": "examples/run_traveltime_aligned_moe_localization.py",
+      "expected": "add81f105956c073f8b2331f15da37dbddc3906dc996bc5b6d33eb2429694c0e",
+      "actual": "174a5d727b88ab957dcd659d043a3210cfc6efb8d73e97caeb15887afaaa7ce9",
+      "status": "historical_mismatch"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_velocity_bias_protocol.json",
+      "path": "experiments/traveltime_aligned_moe_confirmation_results.json",
+      "expected": "fdc1f68704bd60687f782b4fe88ab3b9c0ab34e4541613b0746ed3b816c36ad5",
+      "actual": "a8fcdfbe2413f0332a819ae5de6853ebaba12e4ed4822b1940f2ad442d807e2d",
+      "status": "historical_mismatch"
+    },
+    {
+      "document": "experiments/traveltime_aligned_moe_velocity_bias_results.json",
+      "path": "experiments/traveltime_aligned_moe_velocity_bias_protocol.json",
+      "expected": "18c5e3023c69c022bac2a18a923a25ee12bc04803d37408e6e10d0b50e5835b4",
+      "actual": "18c5e3023c69c022bac2a18a923a25ee12bc04803d37408e6e10d0b50e5835b4",
+      "status": "match"
+    }
+  ],
+  "missing_referenced_local_files": [
+    "experiments/source_transfer_final_blind_results.partial.json"
+  ],
+  "note": "Historical add81f runner was not recovered. Current 174a5 runner is included and must not be labelled as the historical frozen implementation."
+}

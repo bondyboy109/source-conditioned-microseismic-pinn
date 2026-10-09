@@ -1,0 +1,446 @@
+{
+  "protocol_sha256": "448b12cab2aad0ee48e27a65a4f3b0a373f848e2b94abbdd6f3304f6e7ec2591",
+  "manifest_sha256": "f3150317650d0cdcb4bf54686195815105fc35c52f7cbb7c8da404a39430f83d",
+  "fmm_setup_seconds": 3.837133899996843,
+  "coarse": {
+    "event_count": 8,
+    "failure_count": 0,
+    "mean_location_error_m": 1103.133100322896,
+    "mean_origin_time_error_s": 0.04948545930286247,
+    "mean_signed_origin_error_s": 0.0007060282999494238
+  },
+  "refined": {
+    "event_count": 8,
+    "failure_count": 0,
+    "mean_location_error_m": 176.62023167084448,
+    "mean_origin_time_error_s": 0.014206462374810769,
+    "mean_signed_origin_error_s": -0.0005751201339687095
+  },
+  "relative_location_error_reduction": 0.8398921837998096,
+  "absolute_origin_error_increase_s": -0.0352789969280517,
+  "acceptance_rule": {
+    "min_mean_location_error_reduction_fraction": 0.25,
+    "max_mean_origin_error_increase_s": 0.025,
+    "max_new_failures": 0
+  },
+  "accepted": true,
+  "events": [
+    {
+      "id": "spatial_01",
+      "observation_sha256": "0ce401b9b38dfd2e866b60c42d8e9b5f32f4de10b2d209514cb3556113b142dc",
+      "valid_picks": 25,
+      "source_truth_m_s_post_search": [
+        3700.0,
+        8200.0,
+        890.0,
+        0.27000001072883606
+      ],
+      "coarse": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          4400.0,
+          9200.0,
+          100.0,
+          0.24722713118535466
+        ],
+        "component_error_m_s": [
+          700.0,
+          1000.0,
+          -790.0,
+          -0.022772879543481395
+        ],
+        "location_error_m": 1453.9944979263162,
+        "origin_time_error_s": 0.022772879543481395,
+        "origin_time_signed_error_s": -0.022772879543481395,
+        "arrival_rmse_s": 0.18354019866951166
+      },
+      "refined": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          3500.0,
+          8300.0,
+          916.6666666666667,
+          0.27039806873654015
+        ],
+        "component_error_m_s": [
+          -200.0,
+          100.0,
+          26.666666666666742,
+          0.00039805800770409405
+        ],
+        "location_error_m": 225.19127672072716,
+        "origin_time_error_s": 0.00039805800770409405,
+        "origin_time_signed_error_s": 0.00039805800770409405,
+        "arrival_rmse_s": 0.037864504058935884
+      },
+      "coarse_search_seconds": 0.012695800000074087,
+      "refined_search_seconds": 0.032059400000434835,
+      "refined_candidate_evaluations": 360
+    },
+    {
+      "id": "spatial_02",
+      "observation_sha256": "d9b7875ce781708e8a729006d4d42ce891ac44dd4eb23f83c75808cf62e1687d",
+      "valid_picks": 25,
+      "source_truth_m_s_post_search": [
+        12300.0,
+        6300.0,
+        380.0,
+        0.36000001430511475
+      ],
+      "coarse": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          11600.0,
+          6800.0,
+          100.0,
+          0.456365733203711
+        ],
+        "component_error_m_s": [
+          -700.0,
+          500.0,
+          -280.0,
+          0.09636571889859624
+        ],
+        "location_error_m": 904.6546302318914,
+        "origin_time_error_s": 0.09636571889859624,
+        "origin_time_signed_error_s": 0.09636571889859624,
+        "arrival_rmse_s": 0.14842596618320666
+      },
+      "refined": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          12500.0,
+          6200.0,
+          275.0,
+          0.3344406162214
+        ],
+        "component_error_m_s": [
+          200.0,
+          -100.0,
+          -105.0,
+          -0.02555939808371477
+        ],
+        "location_error_m": 247.0323865407125,
+        "origin_time_error_s": 0.02555939808371477,
+        "origin_time_signed_error_s": -0.02555939808371477,
+        "arrival_rmse_s": 0.03121742014601145
+      },
+      "coarse_search_seconds": 0.012550399998872308,
+      "refined_search_seconds": 0.03113350000057835,
+      "refined_candidate_evaluations": 312
+    },
+    {
+      "id": "spatial_03",
+      "observation_sha256": "8a12d9f27e1353cac1ced729a9416d3ad346c4c8deac73c22bcc8669be02229a",
+      "valid_picks": 25,
+      "source_truth_m_s_post_search": [
+        5900.0,
+        10800.0,
+        1260.0,
+        0.18000000715255737
+      ],
+      "coarse": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          6800.0,
+          11600.0,
+          1500.0,
+          0.21042592710000463
+        ],
+        "component_error_m_s": [
+          900.0,
+          800.0,
+          240.0,
+          0.030425919947447255
+        ],
+        "location_error_m": 1227.8436382536663,
+        "origin_time_error_s": 0.030425919947447255,
+        "origin_time_signed_error_s": 0.030425919947447255,
+        "arrival_rmse_s": 0.17947255529189943
+      },
+      "refined": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          5900.0,
+          10700.0,
+          1208.3333333333335,
+          0.20946555424598046
+        ],
+        "component_error_m_s": [
+          0.0,
+          -100.0,
+          -51.666666666666515,
+          0.029465547093423083
+        ],
+        "location_error_m": 112.55862669935357,
+        "origin_time_error_s": 0.029465547093423083,
+        "origin_time_signed_error_s": 0.029465547093423083,
+        "arrival_rmse_s": 0.025219437089672628
+      },
+      "coarse_search_seconds": 0.012495299997681286,
+      "refined_search_seconds": 0.03152390000104788,
+      "refined_candidate_evaluations": 342
+    },
+    {
+      "id": "spatial_04",
+      "observation_sha256": "95c6740ce22eeff67733a7711cbe2ead8b0b00c7ac804e286db51ae6440e5cc3",
+      "valid_picks": 25,
+      "source_truth_m_s_post_search": [
+        10500.0,
+        12100.0,
+        570.0,
+        0.4099999964237213
+      ],
+      "coarse": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          11600.0,
+          11600.0,
+          1033.3333333333335,
+          0.47256527479233545
+        ],
+        "component_error_m_s": [
+          1100.0,
+          -500.0,
+          463.3333333333335,
+          0.06256527836861414
+        ],
+        "location_error_m": 1294.0934192622178,
+        "origin_time_error_s": 0.06256527836861414,
+        "origin_time_signed_error_s": 0.06256527836861414,
+        "arrival_rmse_s": 0.19657368981368994
+      },
+      "refined": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          10400.0,
+          12200.0,
+          450.00000000000006,
+          0.3909924614999909
+        ],
+        "component_error_m_s": [
+          -100.0,
+          100.0,
+          -119.99999999999994,
+          -0.019007534923730418
+        ],
+        "location_error_m": 185.47236990991402,
+        "origin_time_error_s": 0.019007534923730418,
+        "origin_time_signed_error_s": -0.019007534923730418,
+        "arrival_rmse_s": 0.02835036289297248
+      },
+      "coarse_search_seconds": 0.012497100000473438,
+      "refined_search_seconds": 0.03324410000277567,
+      "refined_candidate_evaluations": 342
+    },
+    {
+      "id": "spatial_05",
+      "observation_sha256": "8f3335f1aca37042f8d65be6b1f091d5d54452d43178431e2abf2ed86b6ee10d",
+      "valid_picks": 25,
+      "source_truth_m_s_post_search": [
+        2400.0,
+        5100.0,
+        1400.0,
+        0.3100000023841858
+      ],
+      "coarse": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          2000.0,
+          4400.0,
+          1500.0,
+          0.23602971321088262
+        ],
+        "component_error_m_s": [
+          -400.0,
+          -700.0,
+          100.0,
+          -0.07397028917330317
+        ],
+        "location_error_m": 812.403840463596,
+        "origin_time_error_s": 0.07397028917330317,
+        "origin_time_signed_error_s": -0.07397028917330317,
+        "arrival_rmse_s": 0.06902924930678805
+      },
+      "refined": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          2300.0,
+          5000.0,
+          1325.0,
+          0.3193712230131496
+        ],
+        "component_error_m_s": [
+          -100.0,
+          -100.0,
+          -75.0,
+          0.009371220628963783
+        ],
+        "location_error_m": 160.0781059358212,
+        "origin_time_error_s": 0.009371220628963783,
+        "origin_time_signed_error_s": 0.009371220628963783,
+        "arrival_rmse_s": 0.02054396112176422
+      },
+      "coarse_search_seconds": 0.013637299998663366,
+      "refined_search_seconds": 0.03183120000176132,
+      "refined_candidate_evaluations": 303
+    },
+    {
+      "id": "spatial_06",
+      "observation_sha256": "e35990d4d14519f92f6ce68a4ea9595fd54c7c25d3b7d2a054a62f7a0aea2ad5",
+      "valid_picks": 25,
+      "source_truth_m_s_post_search": [
+        13300.0,
+        11300.0,
+        980.0,
+        0.2199999988079071
+      ],
+      "coarse": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          14000.0,
+          11600.0,
+          1033.3333333333335,
+          0.14986598378163762
+        ],
+        "component_error_m_s": [
+          700.0,
+          300.0,
+          53.333333333333485,
+          -0.07013401502626948
+        ],
+        "location_error_m": 763.4424958334744,
+        "origin_time_error_s": 0.07013401502626948,
+        "origin_time_signed_error_s": -0.07013401502626948,
+        "arrival_rmse_s": 0.058218068371476
+      },
+      "refined": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          13400.0,
+          11300.0,
+          916.6666666666669,
+          0.21737194685071382
+        ],
+        "component_error_m_s": [
+          100.0,
+          0.0,
+          -63.333333333333144,
+          -0.002628051957193289
+        ],
+        "location_error_m": 118.3685393637646,
+        "origin_time_error_s": 0.002628051957193289,
+        "origin_time_signed_error_s": -0.002628051957193289,
+        "arrival_rmse_s": 0.026100720157621687
+      },
+      "coarse_search_seconds": 0.012447400000382913,
+      "refined_search_seconds": 0.0327378999973007,
+      "refined_candidate_evaluations": 300
+    },
+    {
+      "id": "spatial_07",
+      "observation_sha256": "39aebf2c60c4bae25855caf0cf79fc51c30bc91cc57dab77db8a09814742bf52",
+      "valid_picks": 25,
+      "source_truth_m_s_post_search": [
+        8100.0,
+        2900.0,
+        720.0,
+        0.44999998807907104
+      ],
+      "coarse": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          6800.0,
+          2000.0,
+          1500.0,
+          0.4217594478104729
+        ],
+        "component_error_m_s": [
+          -1300.0,
+          -900.0,
+          780.0,
+          -0.028240540268598124
+        ],
+        "location_error_m": 1763.0655121123548,
+        "origin_time_error_s": 0.028240540268598124,
+        "origin_time_signed_error_s": -0.028240540268598124,
+        "arrival_rmse_s": 0.1670665921951528
+      },
+      "refined": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          8000.0,
+          2900.0,
+          625.0000000000001,
+          0.4652905313123483
+        ],
+        "component_error_m_s": [
+          -100.0,
+          0.0,
+          -94.99999999999989,
+          0.015290543233277276
+        ],
+        "location_error_m": 137.93114224133714,
+        "origin_time_error_s": 0.015290543233277276,
+        "origin_time_signed_error_s": 0.015290543233277276,
+        "arrival_rmse_s": 0.030827315229875925
+      },
+      "coarse_search_seconds": 0.012234800000442192,
+      "refined_search_seconds": 0.03183970000100089,
+      "refined_candidate_evaluations": 320
+    },
+    {
+      "id": "spatial_08",
+      "observation_sha256": "3f1e6e927d8c495ca9f3a6d1538cd6547c8377fbc9563486ee84e53ce1c43b08",
+      "valid_picks": 25,
+      "source_truth_m_s_post_search": [
+        4500.0,
+        13500.0,
+        240.0,
+        0.33000001311302185
+      ],
+      "coarse": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          4400.0,
+          14000.0,
+          566.6666666666667,
+          0.3414090463096118
+        ],
+        "component_error_m_s": [
+          -100.0,
+          500.0,
+          326.66666666666674,
+          0.011409033196589924
+        ],
+        "location_error_m": 605.5667684996521,
+        "origin_time_error_s": 0.011409033196589924,
+        "origin_time_signed_error_s": 0.011409033196589924,
+        "arrival_rmse_s": 0.0269012873537158
+      },
+      "refined": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          4400.0,
+          13700.0,
+          275.00000000000006,
+          0.3180686680425424
+        ],
+        "component_error_m_s": [
+          -100.0,
+          200.0,
+          35.00000000000006,
+          -0.011931345070479438
+        ],
+        "location_error_m": 226.3294059551255,
+        "origin_time_error_s": 0.011931345070479438,
+        "origin_time_signed_error_s": -0.011931345070479438,
+        "arrival_rmse_s": 0.017991559173507227
+      },
+      "coarse_search_seconds": 0.01341099999990547,
+      "refined_search_seconds": 0.032766000000265194,
+      "refined_candidate_evaluations": 282
+    }
+  ],
+  "scope": "Fixed 5 Hz FD waveforms, 25 surface receivers and one Overthrust velocity volume. Same FMM field, picker and development-only bias for both searches. Truth is read only after both searches. This tests FMM spatial discretization, not MoE superiority."
+}

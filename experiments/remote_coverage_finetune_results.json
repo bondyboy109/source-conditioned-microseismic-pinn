@@ -1,0 +1,751 @@
+{
+  "role": "development-only remote-source coverage fine-tuning; no independent validation or localization claim",
+  "base_checkpoint_sha256": "dab17cae1d3aae79c0b9efeac28aa5bae2f88748ad822d49d4b5bf87a73407b4",
+  "remote_record_sha256": [
+    "b72ffa84090273e0a3dbcb1c46ec48271a62aabce440546323ee18fc16cca60c",
+    "070c5ec871963b0698a71c4e4bceb7909ffcd87bef90cdc4e822ce36c8340d57",
+    "ecb432c750513b152818fe962b1a705ee8aebcb99a7f81bd833e4d7e4a8dce7e",
+    "54f0fa7244920a30e4374a6e7f3e66459a3e76583204b66e90cf8fa363da0b73"
+  ],
+  "elapsed_seconds": 3.5522695000008753,
+  "history_tail": {
+    "receiver": 0.016357779502868652,
+    "total": 0.0004907333641313016
+  },
+  "summary": {
+    "remote_control_mean_full_l2": 1.0260370497887206,
+    "remote_candidate_mean_full_l2": 0.1737843651492677,
+    "local_control_mean_full_l2": 0.23846813178269297,
+    "local_candidate_mean_full_l2": 0.25465012623888744,
+    "depth_control_mean_full_l2": 0.29232243215433706,
+    "depth_candidate_mean_full_l2": 0.30040523834068433
+  },
+  "remote_events": [
+    {
+      "event": "remote_01.npz",
+      "sha256": "b72ffa84090273e0a3dbcb1c46ec48271a62aabce440546323ee18fc16cca60c",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\remote_01.npz",
+        "sha256": "b72ffa84090273e0a3dbcb1c46ec48271a62aabce440546323ee18fc16cca60c",
+        "source_m_s_post_hoc": [
+          2800.0,
+          5200.0,
+          450.0,
+          0.14000000059604645
+        ],
+        "full_record_relative_l2": 1.0711932905152228,
+        "active_sample_relative_l2": 0.990042238057395,
+        "active_sample_count": 2543,
+        "active_observed_energy_fraction": 0.9883366068964353,
+        "predicted_to_observed_peak_ratio": 0.49112868350384836,
+        "zero_lag_correlation": 0.2210646735436444
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\remote_01.npz",
+        "sha256": "b72ffa84090273e0a3dbcb1c46ec48271a62aabce440546323ee18fc16cca60c",
+        "source_m_s_post_hoc": [
+          2800.0,
+          5200.0,
+          450.0,
+          0.14000000059604645
+        ],
+        "full_record_relative_l2": 0.1898435727776606,
+        "active_sample_relative_l2": 0.11494472414115453,
+        "active_sample_count": 2543,
+        "active_observed_energy_fraction": 0.9883366068964353,
+        "predicted_to_observed_peak_ratio": 0.9634182831228231,
+        "zero_lag_correlation": 0.9818173807887434
+      }
+    },
+    {
+      "event": "remote_02.npz",
+      "sha256": "070c5ec871963b0698a71c4e4bceb7909ffcd87bef90cdc4e822ce36c8340d57",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\remote_02.npz",
+        "sha256": "070c5ec871963b0698a71c4e4bceb7909ffcd87bef90cdc4e822ce36c8340d57",
+        "source_m_s_post_hoc": [
+          5200.0,
+          9800.0,
+          1050.0,
+          0.25999999046325684
+        ],
+        "full_record_relative_l2": 1.000692767505447,
+        "active_sample_relative_l2": 0.9116002152158948,
+        "active_sample_count": 2480,
+        "active_observed_energy_fraction": 0.9812054348899925,
+        "predicted_to_observed_peak_ratio": 0.60500161500765,
+        "zero_lag_correlation": 0.35383822223234296
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\remote_02.npz",
+        "sha256": "070c5ec871963b0698a71c4e4bceb7909ffcd87bef90cdc4e822ce36c8340d57",
+        "source_m_s_post_hoc": [
+          5200.0,
+          9800.0,
+          1050.0,
+          0.25999999046325684
+        ],
+        "full_record_relative_l2": 0.18935676925702646,
+        "active_sample_relative_l2": 0.07137178994654987,
+        "active_sample_count": 2480,
+        "active_observed_energy_fraction": 0.9812054348899925,
+        "predicted_to_observed_peak_ratio": 0.9914657901022428,
+        "zero_lag_correlation": 0.9822516902559004
+      }
+    },
+    {
+      "event": "remote_03.npz",
+      "sha256": "ecb432c750513b152818fe962b1a705ee8aebcb99a7f81bd833e4d7e4a8dce7e",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\remote_03.npz",
+        "sha256": "ecb432c750513b152818fe962b1a705ee8aebcb99a7f81bd833e4d7e4a8dce7e",
+        "source_m_s_post_hoc": [
+          12200.0,
+          13200.0,
+          1150.0,
+          0.2199999988079071
+        ],
+        "full_record_relative_l2": 1.1419438538440172,
+        "active_sample_relative_l2": 1.0641282253009496,
+        "active_sample_count": 2156,
+        "active_observed_energy_fraction": 0.9904582186919552,
+        "predicted_to_observed_peak_ratio": 0.34520977093928146,
+        "zero_lag_correlation": 0.03833292506429712
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\remote_03.npz",
+        "sha256": "ecb432c750513b152818fe962b1a705ee8aebcb99a7f81bd833e4d7e4a8dce7e",
+        "source_m_s_post_hoc": [
+          12200.0,
+          13200.0,
+          1150.0,
+          0.2199999988079071
+        ],
+        "full_record_relative_l2": 0.17716869890424683,
+        "active_sample_relative_l2": 0.09435373927267611,
+        "active_sample_count": 2156,
+        "active_observed_energy_fraction": 0.9904582186919552,
+        "predicted_to_observed_peak_ratio": 0.9764540614940466,
+        "zero_lag_correlation": 0.9841890914969835
+      }
+    },
+    {
+      "event": "remote_04.npz",
+      "sha256": "54f0fa7244920a30e4374a6e7f3e66459a3e76583204b66e90cf8fa363da0b73",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\remote_04.npz",
+        "sha256": "54f0fa7244920a30e4374a6e7f3e66459a3e76583204b66e90cf8fa363da0b73",
+        "source_m_s_post_hoc": [
+          13800.0,
+          5200.0,
+          850.0,
+          0.4300000071525574
+        ],
+        "full_record_relative_l2": 0.8903182872901952,
+        "active_sample_relative_l2": 0.8633171590104755,
+        "active_sample_count": 1152,
+        "active_observed_energy_fraction": 0.9872853024863801,
+        "predicted_to_observed_peak_ratio": 0.19224726256831032,
+        "zero_lag_correlation": 0.48297142903436824
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\remote_04.npz",
+        "sha256": "54f0fa7244920a30e4374a6e7f3e66459a3e76583204b66e90cf8fa363da0b73",
+        "source_m_s_post_hoc": [
+          13800.0,
+          5200.0,
+          850.0,
+          0.4300000071525574
+        ],
+        "full_record_relative_l2": 0.13876841965813688,
+        "active_sample_relative_l2": 0.03328425110522777,
+        "active_sample_count": 1152,
+        "active_observed_energy_fraction": 0.9872853024863801,
+        "predicted_to_observed_peak_ratio": 1.0022692433991187,
+        "zero_lag_correlation": 0.9904242621168715
+      }
+    }
+  ],
+  "local_events": [
+    {
+      "event": "local_01.npz",
+      "sha256": "e979fb550b188a075dcc6e8c9b89a63221ecc233507aff42d2f32c2b6194fac9",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\local_01.npz",
+        "sha256": "e979fb550b188a075dcc6e8c9b89a63221ecc233507aff42d2f32c2b6194fac9",
+        "source_m_s_post_hoc": [
+          10080.0,
+          6580.0,
+          920.0,
+          0.2549999952316284
+        ],
+        "full_record_relative_l2": 0.2243849753780374,
+        "active_sample_relative_l2": 0.2027522380256415,
+        "active_sample_count": 3014,
+        "active_observed_energy_fraction": 0.9955577686023096,
+        "predicted_to_observed_peak_ratio": 1.0183800688831008,
+        "zero_lag_correlation": 0.9751474336643279
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\local_01.npz",
+        "sha256": "e979fb550b188a075dcc6e8c9b89a63221ecc233507aff42d2f32c2b6194fac9",
+        "source_m_s_post_hoc": [
+          10080.0,
+          6580.0,
+          920.0,
+          0.2549999952316284
+        ],
+        "full_record_relative_l2": 0.2403851138010741,
+        "active_sample_relative_l2": 0.20986293873604847,
+        "active_sample_count": 3014,
+        "active_observed_energy_fraction": 0.9955577686023096,
+        "predicted_to_observed_peak_ratio": 1.119102128604993,
+        "zero_lag_correlation": 0.9707444725490968
+      }
+    },
+    {
+      "event": "local_02.npz",
+      "sha256": "3eb1e0684baad88759881857e600510d9eae27c010b3c9215975f9e3737a8619",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\local_02.npz",
+        "sha256": "3eb1e0684baad88759881857e600510d9eae27c010b3c9215975f9e3737a8619",
+        "source_m_s_post_hoc": [
+          10920.0,
+          10080.0,
+          1280.0,
+          0.33500000834465027
+        ],
+        "full_record_relative_l2": 0.21472496733042296,
+        "active_sample_relative_l2": 0.1703009141343162,
+        "active_sample_count": 2046,
+        "active_observed_energy_fraction": 0.9841724770709505,
+        "predicted_to_observed_peak_ratio": 1.0377357743382705,
+        "zero_lag_correlation": 0.9830070935219887
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\local_02.npz",
+        "sha256": "3eb1e0684baad88759881857e600510d9eae27c010b3c9215975f9e3737a8619",
+        "source_m_s_post_hoc": [
+          10920.0,
+          10080.0,
+          1280.0,
+          0.33500000834465027
+        ],
+        "full_record_relative_l2": 0.24762097407736106,
+        "active_sample_relative_l2": 0.19327498257859468,
+        "active_sample_count": 2046,
+        "active_observed_energy_fraction": 0.9841724770709505,
+        "predicted_to_observed_peak_ratio": 1.0967834600755317,
+        "zero_lag_correlation": 0.9797564108867358
+      }
+    },
+    {
+      "event": "local_03.npz",
+      "sha256": "03f2e65a7e33f62f6154eb35fd72acba5afb17ecda85f53903f926907a3b62e1",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\local_03.npz",
+        "sha256": "03f2e65a7e33f62f6154eb35fd72acba5afb17ecda85f53903f926907a3b62e1",
+        "source_m_s_post_hoc": [
+          3580.0,
+          4080.0,
+          580.0,
+          0.12999999523162842
+        ],
+        "full_record_relative_l2": 0.3270105535600643,
+        "active_sample_relative_l2": 0.2943772861114967,
+        "active_sample_count": 3422,
+        "active_observed_energy_fraction": 0.9949434774686474,
+        "predicted_to_observed_peak_ratio": 1.0541077602680207,
+        "zero_lag_correlation": 0.9487690748452905
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\local_03.npz",
+        "sha256": "03f2e65a7e33f62f6154eb35fd72acba5afb17ecda85f53903f926907a3b62e1",
+        "source_m_s_post_hoc": [
+          3580.0,
+          4080.0,
+          580.0,
+          0.12999999523162842
+        ],
+        "full_record_relative_l2": 0.34111166127554593,
+        "active_sample_relative_l2": 0.3022046352519143,
+        "active_sample_count": 3422,
+        "active_observed_energy_fraction": 0.9949434774686474,
+        "predicted_to_observed_peak_ratio": 1.039409202093741,
+        "zero_lag_correlation": 0.9442883156016615
+      }
+    },
+    {
+      "event": "local_04.npz",
+      "sha256": "4f909e9adcc3f16511de133b2c6d397eb1a889a09c18ad8892d6a47e18ee0818",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\local_04.npz",
+        "sha256": "4f909e9adcc3f16511de133b2c6d397eb1a889a09c18ad8892d6a47e18ee0818",
+        "source_m_s_post_hoc": [
+          6420.0,
+          3580.0,
+          780.0,
+          0.20999999344348907
+        ],
+        "full_record_relative_l2": 0.1877520308622472,
+        "active_sample_relative_l2": 0.16566466027741983,
+        "active_sample_count": 3431,
+        "active_observed_energy_fraction": 0.9951036380808392,
+        "predicted_to_observed_peak_ratio": 0.916773574802869,
+        "zero_lag_correlation": 0.9833805257992618
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\local_04.npz",
+        "sha256": "4f909e9adcc3f16511de133b2c6d397eb1a889a09c18ad8892d6a47e18ee0818",
+        "source_m_s_post_hoc": [
+          6420.0,
+          3580.0,
+          780.0,
+          0.20999999344348907
+        ],
+        "full_record_relative_l2": 0.18948275580156873,
+        "active_sample_relative_l2": 0.16544343228571548,
+        "active_sample_count": 3431,
+        "active_observed_energy_fraction": 0.9951036380808392,
+        "predicted_to_observed_peak_ratio": 0.9231232351744758,
+        "zero_lag_correlation": 0.9825912775685006
+      }
+    }
+  ],
+  "depth_events": [
+    {
+      "event": "a10_zm80.npz",
+      "sha256": "4889354580ac4f728ba6c2aa1534f191ea304f205ae1b698bd26d0b5c11e683f",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a10_zm80.npz",
+        "sha256": "4889354580ac4f728ba6c2aa1534f191ea304f205ae1b698bd26d0b5c11e683f",
+        "source_m_s_post_hoc": [
+          10000.0,
+          6500.0,
+          920.0,
+          0.25
+        ],
+        "full_record_relative_l2": 0.1473620869499717,
+        "active_sample_relative_l2": 0.12413745484932573,
+        "active_sample_count": 3010,
+        "active_observed_energy_fraction": 0.9954119919258714,
+        "predicted_to_observed_peak_ratio": 1.0292438986885915,
+        "zero_lag_correlation": 0.9892400729617125
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a10_zm80.npz",
+        "sha256": "4889354580ac4f728ba6c2aa1534f191ea304f205ae1b698bd26d0b5c11e683f",
+        "source_m_s_post_hoc": [
+          10000.0,
+          6500.0,
+          920.0,
+          0.25
+        ],
+        "full_record_relative_l2": 0.1735018353823386,
+        "active_sample_relative_l2": 0.14097130009102293,
+        "active_sample_count": 3010,
+        "active_observed_energy_fraction": 0.9954119919258714,
+        "predicted_to_observed_peak_ratio": 1.057658286311681,
+        "zero_lag_correlation": 0.9860931212111266
+      }
+    },
+    {
+      "event": "a10_zp80.npz",
+      "sha256": "d342e544ff168b7dc2c27f4b9118f85c379df716d44672f8cd5adaf18385071f",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a10_zp80.npz",
+        "sha256": "d342e544ff168b7dc2c27f4b9118f85c379df716d44672f8cd5adaf18385071f",
+        "source_m_s_post_hoc": [
+          10000.0,
+          6500.0,
+          1080.0,
+          0.25
+        ],
+        "full_record_relative_l2": 0.1333381027841693,
+        "active_sample_relative_l2": 0.11453568534372306,
+        "active_sample_count": 2769,
+        "active_observed_energy_fraction": 0.992007838540293,
+        "predicted_to_observed_peak_ratio": 0.9348341090890739,
+        "zero_lag_correlation": 0.9932733297800769
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a10_zp80.npz",
+        "sha256": "d342e544ff168b7dc2c27f4b9118f85c379df716d44672f8cd5adaf18385071f",
+        "source_m_s_post_hoc": [
+          10000.0,
+          6500.0,
+          1080.0,
+          0.25
+        ],
+        "full_record_relative_l2": 0.14105163735083187,
+        "active_sample_relative_l2": 0.11211899387269256,
+        "active_sample_count": 2769,
+        "active_observed_energy_fraction": 0.992007838540293,
+        "predicted_to_observed_peak_ratio": 0.938276377033348,
+        "zero_lag_correlation": 0.9908368851319156
+      }
+    },
+    {
+      "event": "a10_zm160.npz",
+      "sha256": "b341a7258b4448dd14f0fdc7405adfd74c5f263300ddb4750f71ead12dd9da0e",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a10_zm160.npz",
+        "sha256": "b341a7258b4448dd14f0fdc7405adfd74c5f263300ddb4750f71ead12dd9da0e",
+        "source_m_s_post_hoc": [
+          10000.0,
+          6500.0,
+          840.0,
+          0.25
+        ],
+        "full_record_relative_l2": 0.08402849537094126,
+        "active_sample_relative_l2": 0.03949161040435986,
+        "active_sample_count": 2873,
+        "active_observed_energy_fraction": 0.9933206822784011,
+        "predicted_to_observed_peak_ratio": 1.0110671794129011,
+        "zero_lag_correlation": 0.996463705492067
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a10_zm160.npz",
+        "sha256": "b341a7258b4448dd14f0fdc7405adfd74c5f263300ddb4750f71ead12dd9da0e",
+        "source_m_s_post_hoc": [
+          10000.0,
+          6500.0,
+          840.0,
+          0.25
+        ],
+        "full_record_relative_l2": 0.09160754110199051,
+        "active_sample_relative_l2": 0.03141883225339275,
+        "active_sample_count": 2873,
+        "active_observed_energy_fraction": 0.9933206822784011,
+        "predicted_to_observed_peak_ratio": 1.002920220281075,
+        "zero_lag_correlation": 0.9958062006473438
+      }
+    },
+    {
+      "event": "a10_zp160.npz",
+      "sha256": "a7344797db173fa990430974f66560edcbf96981602a41f2af8e6aadfc385b1f",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a10_zp160.npz",
+        "sha256": "a7344797db173fa990430974f66560edcbf96981602a41f2af8e6aadfc385b1f",
+        "source_m_s_post_hoc": [
+          10000.0,
+          6500.0,
+          1160.0,
+          0.25
+        ],
+        "full_record_relative_l2": 0.08734944343330935,
+        "active_sample_relative_l2": 0.04375967800981204,
+        "active_sample_count": 2774,
+        "active_observed_energy_fraction": 0.9912457572364607,
+        "predicted_to_observed_peak_ratio": 0.9829734553553034,
+        "zero_lag_correlation": 0.9962479028673689
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a10_zp160.npz",
+        "sha256": "a7344797db173fa990430974f66560edcbf96981602a41f2af8e6aadfc385b1f",
+        "source_m_s_post_hoc": [
+          10000.0,
+          6500.0,
+          1160.0,
+          0.25
+        ],
+        "full_record_relative_l2": 0.08178253528694986,
+        "active_sample_relative_l2": 0.028640433095007804,
+        "active_sample_count": 2774,
+        "active_observed_energy_fraction": 0.9912457572364607,
+        "predicted_to_observed_peak_ratio": 0.9955520273857474,
+        "zero_lag_correlation": 0.9966509005657468
+      }
+    },
+    {
+      "event": "a10_zm280.npz",
+      "sha256": "316e60fe941500fe135894171960f63434d798aab856c709a743796f104ce917",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a10_zm280.npz",
+        "sha256": "316e60fe941500fe135894171960f63434d798aab856c709a743796f104ce917",
+        "source_m_s_post_hoc": [
+          10000.0,
+          6500.0,
+          720.0,
+          0.25
+        ],
+        "full_record_relative_l2": 0.9811256011152031,
+        "active_sample_relative_l2": 0.871790074163191,
+        "active_sample_count": 2476,
+        "active_observed_energy_fraction": 0.9839851631439653,
+        "predicted_to_observed_peak_ratio": 0.7345754116411471,
+        "zero_lag_correlation": 0.5267143199619704
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a10_zm280.npz",
+        "sha256": "316e60fe941500fe135894171960f63434d798aab856c709a743796f104ce917",
+        "source_m_s_post_hoc": [
+          10000.0,
+          6500.0,
+          720.0,
+          0.25
+        ],
+        "full_record_relative_l2": 0.9833340000804798,
+        "active_sample_relative_l2": 0.8722762600596979,
+        "active_sample_count": 2476,
+        "active_observed_energy_fraction": 0.9839851631439653,
+        "predicted_to_observed_peak_ratio": 0.7084664399274799,
+        "zero_lag_correlation": 0.5119408173836182
+      }
+    },
+    {
+      "event": "a10_zp280.npz",
+      "sha256": "d235b98753584de0dbd2b9e41e4e60efa7baafd80bf2e746c70c04f3aa839203",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a10_zp280.npz",
+        "sha256": "d235b98753584de0dbd2b9e41e4e60efa7baafd80bf2e746c70c04f3aa839203",
+        "source_m_s_post_hoc": [
+          10000.0,
+          6500.0,
+          1280.0,
+          0.25
+        ],
+        "full_record_relative_l2": 0.6723448830065268,
+        "active_sample_relative_l2": 0.5734978672397918,
+        "active_sample_count": 3005,
+        "active_observed_energy_fraction": 0.9923429537164421,
+        "predicted_to_observed_peak_ratio": 1.4358602225592365,
+        "zero_lag_correlation": 0.882654972015201
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a10_zp280.npz",
+        "sha256": "d235b98753584de0dbd2b9e41e4e60efa7baafd80bf2e746c70c04f3aa839203",
+        "source_m_s_post_hoc": [
+          10000.0,
+          6500.0,
+          1280.0,
+          0.25
+        ],
+        "full_record_relative_l2": 0.6690135954827703,
+        "active_sample_relative_l2": 0.5689840071098582,
+        "active_sample_count": 3005,
+        "active_observed_energy_fraction": 0.9923429537164421,
+        "predicted_to_observed_peak_ratio": 1.3725129028102214,
+        "zero_lag_correlation": 0.8831853001254097
+      }
+    },
+    {
+      "event": "a14_zm80.npz",
+      "sha256": "ffce923aa8a413e382f5aea4b3d41094e843a4b3e4b484d6f213bb3304ede2cb",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a14_zm80.npz",
+        "sha256": "ffce923aa8a413e382f5aea4b3d41094e843a4b3e4b484d6f213bb3304ede2cb",
+        "source_m_s_post_hoc": [
+          11000.0,
+          10000.0,
+          1120.0,
+          0.3400000035762787
+        ],
+        "full_record_relative_l2": 0.1778145742544495,
+        "active_sample_relative_l2": 0.15599758177058684,
+        "active_sample_count": 1705,
+        "active_observed_energy_fraction": 0.9834957633135762,
+        "predicted_to_observed_peak_ratio": 0.8499447168443447,
+        "zero_lag_correlation": 0.9900205712489208
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a14_zm80.npz",
+        "sha256": "ffce923aa8a413e382f5aea4b3d41094e843a4b3e4b484d6f213bb3304ede2cb",
+        "source_m_s_post_hoc": [
+          11000.0,
+          10000.0,
+          1120.0,
+          0.3400000035762787
+        ],
+        "full_record_relative_l2": 0.17645867158836595,
+        "active_sample_relative_l2": 0.1424912460511251,
+        "active_sample_count": 1705,
+        "active_observed_energy_fraction": 0.9834957633135762,
+        "predicted_to_observed_peak_ratio": 0.8688705301578338,
+        "zero_lag_correlation": 0.9883858202393203
+      }
+    },
+    {
+      "event": "a14_zp80.npz",
+      "sha256": "f3b25cf64e94d8b501f80a9b43d79ddb51a5cb7c9fe7acb1aeb18655a2f6cfb8",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a14_zp80.npz",
+        "sha256": "f3b25cf64e94d8b501f80a9b43d79ddb51a5cb7c9fe7acb1aeb18655a2f6cfb8",
+        "source_m_s_post_hoc": [
+          11000.0,
+          10000.0,
+          1280.0,
+          0.3400000035762787
+        ],
+        "full_record_relative_l2": 0.18146585503566587,
+        "active_sample_relative_l2": 0.15164745159634627,
+        "active_sample_count": 2093,
+        "active_observed_energy_fraction": 0.9854930903564647,
+        "predicted_to_observed_peak_ratio": 1.0782769194016555,
+        "zero_lag_correlation": 0.9911718894458229
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a14_zp80.npz",
+        "sha256": "f3b25cf64e94d8b501f80a9b43d79ddb51a5cb7c9fe7acb1aeb18655a2f6cfb8",
+        "source_m_s_post_hoc": [
+          11000.0,
+          10000.0,
+          1280.0,
+          0.3400000035762787
+        ],
+        "full_record_relative_l2": 0.2230951743435652,
+        "active_sample_relative_l2": 0.1837033554028621,
+        "active_sample_count": 2093,
+        "active_observed_energy_fraction": 0.9854930903564647,
+        "predicted_to_observed_peak_ratio": 1.1396780781342766,
+        "zero_lag_correlation": 0.9879480976778338
+      }
+    },
+    {
+      "event": "a14_zm160.npz",
+      "sha256": "3ea5d4ebc9d919061907e18e00e3c889328e652eddae3c05533f014835fef521",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a14_zm160.npz",
+        "sha256": "3ea5d4ebc9d919061907e18e00e3c889328e652eddae3c05533f014835fef521",
+        "source_m_s_post_hoc": [
+          11000.0,
+          10000.0,
+          1040.0,
+          0.3400000035762787
+        ],
+        "full_record_relative_l2": 0.07097133028441124,
+        "active_sample_relative_l2": 0.030775335022545116,
+        "active_sample_count": 1887,
+        "active_observed_energy_fraction": 0.9891010887501918,
+        "predicted_to_observed_peak_ratio": 0.9889767621849838,
+        "zero_lag_correlation": 0.997478890868402
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a14_zm160.npz",
+        "sha256": "3ea5d4ebc9d919061907e18e00e3c889328e652eddae3c05533f014835fef521",
+        "source_m_s_post_hoc": [
+          11000.0,
+          10000.0,
+          1040.0,
+          0.3400000035762787
+        ],
+        "full_record_relative_l2": 0.0859433010873717,
+        "active_sample_relative_l2": 0.02237156978414704,
+        "active_sample_count": 1887,
+        "active_observed_energy_fraction": 0.9891010887501918,
+        "predicted_to_observed_peak_ratio": 0.9970318780120596,
+        "zero_lag_correlation": 0.9963385443442062
+      }
+    },
+    {
+      "event": "a14_zp160.npz",
+      "sha256": "04a8a1d172a7a46a023b78cdd13d41fe08be810188b23438055003a81c250c06",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a14_zp160.npz",
+        "sha256": "04a8a1d172a7a46a023b78cdd13d41fe08be810188b23438055003a81c250c06",
+        "source_m_s_post_hoc": [
+          11000.0,
+          10000.0,
+          1360.0,
+          0.3400000035762787
+        ],
+        "full_record_relative_l2": 0.09572644916538688,
+        "active_sample_relative_l2": 0.0541674418826164,
+        "active_sample_count": 2207,
+        "active_observed_energy_fraction": 0.9881877368119105,
+        "predicted_to_observed_peak_ratio": 0.9583480686620981,
+        "zero_lag_correlation": 0.9954888352937853
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a14_zp160.npz",
+        "sha256": "04a8a1d172a7a46a023b78cdd13d41fe08be810188b23438055003a81c250c06",
+        "source_m_s_post_hoc": [
+          11000.0,
+          10000.0,
+          1360.0,
+          0.3400000035762787
+        ],
+        "full_record_relative_l2": 0.09104996898356765,
+        "active_sample_relative_l2": 0.02874182681348727,
+        "active_sample_count": 2207,
+        "active_observed_energy_fraction": 0.9881877368119105,
+        "predicted_to_observed_peak_ratio": 0.9952089916143958,
+        "zero_lag_correlation": 0.9958547037196325
+      }
+    },
+    {
+      "event": "a14_zm280.npz",
+      "sha256": "f3e3065d6444d2d0c384486579b6016d6dbcf9032bbfd97696c67ab53baa007c",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a14_zm280.npz",
+        "sha256": "f3e3065d6444d2d0c384486579b6016d6dbcf9032bbfd97696c67ab53baa007c",
+        "source_m_s_post_hoc": [
+          11000.0,
+          10000.0,
+          920.0,
+          0.3400000035762787
+        ],
+        "full_record_relative_l2": 0.4391652936763402,
+        "active_sample_relative_l2": 0.3681993143564127,
+        "active_sample_count": 1868,
+        "active_observed_energy_fraction": 0.9868821286646446,
+        "predicted_to_observed_peak_ratio": 0.9023515912457497,
+        "zero_lag_correlation": 0.9026610820465438
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a14_zm280.npz",
+        "sha256": "f3e3065d6444d2d0c384486579b6016d6dbcf9032bbfd97696c67ab53baa007c",
+        "source_m_s_post_hoc": [
+          11000.0,
+          10000.0,
+          920.0,
+          0.3400000035762787
+        ],
+        "full_record_relative_l2": 0.43583817376753264,
+        "active_sample_relative_l2": 0.3602078808526928,
+        "active_sample_count": 1868,
+        "active_observed_energy_fraction": 0.9868821286646446,
+        "predicted_to_observed_peak_ratio": 0.9013601584420387,
+        "zero_lag_correlation": 0.9034141859410388
+      }
+    },
+    {
+      "event": "a14_zp280.npz",
+      "sha256": "00db2de41a64734355a43cba371833177fe9119b570df8c9e3d625f395977f97",
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a14_zp280.npz",
+        "sha256": "00db2de41a64734355a43cba371833177fe9119b570df8c9e3d625f395977f97",
+        "source_m_s_post_hoc": [
+          11000.0,
+          10000.0,
+          1480.0,
+          0.3400000035762787
+        ],
+        "full_record_relative_l2": 0.4371770707756693,
+        "active_sample_relative_l2": 0.36282222000543407,
+        "active_sample_count": 2055,
+        "active_observed_energy_fraction": 0.9846441368392551,
+        "predicted_to_observed_peak_ratio": 0.7193774922096903,
+        "zero_lag_correlation": 0.9010188252341623
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_depth_sweep\\a14_zp280.npz",
+        "sha256": "00db2de41a64734355a43cba371833177fe9119b570df8c9e3d625f395977f97",
+        "source_m_s_post_hoc": [
+          11000.0,
+          10000.0,
+          1480.0,
+          0.3400000035762787
+        ],
+        "full_record_relative_l2": 0.4521864256324477,
+        "active_sample_relative_l2": 0.36383301186966843,
+        "active_sample_count": 2055,
+        "active_observed_energy_fraction": 0.9846441368392551,
+        "predicted_to_observed_peak_ratio": 0.7538539006701045,
+        "zero_lag_correlation": 0.8919677969672477
+      }
+    }
+  ],
+  "candidate_checkpoint": "E:\\source-conditioned-microseismic-pinn\\outputs\\remote_coverage_finetune_500\\candidate_loadable.pth",
+  "limits": "The four remote records were already opened in the preceding confirmation and are reused here as development training data. Their post-fine-tuning errors measure fitting only. Local confirmation and depth records are also spent development data. One seed, one velocity model, 5 Hz, no independent validation and no localization test."
+}

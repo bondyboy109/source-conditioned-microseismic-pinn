@@ -1,0 +1,18 @@
+{
+  "purpose": "paired FD source-difference supervision after 500 target-domain updates",
+  "parent_protocol": "experiments/source_transfer_moe_protocol.json",
+  "trajectory_protocol": "experiments/source_transfer_trajectory_protocol.json",
+  "control_protocol": "experiments/source_transfer_local_rank_protocol.json",
+  "pair_audit_protocol": "experiments/source_transfer_neighbor_response_protocol.json",
+  "initial_target_updates": 500,
+  "additional_target_updates": 1000,
+  "seeds": [4101, 4102, 4103],
+  "arms": ["source_to_target", "target_to_target"],
+  "pair_samples_per_update": 512,
+  "pair_loss_weight": 0.25,
+  "pair_sample_active_fraction": 0.75,
+  "checkpoint_directory": "outputs/source_transfer_fd_pair",
+  "result_json": "experiments/source_transfer_fd_pair_results.json",
+  "report_file": "experiments/source_transfer_fd_pair_results.md",
+  "restriction": "All 31 pairs use the 33 target training events. This is a development-only pilot with previously inspected development waveforms; do not call these independent tests or claim improved localization without a fresh locked evaluation."
+}

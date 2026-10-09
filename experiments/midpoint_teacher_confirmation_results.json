@@ -1,0 +1,395 @@
+{
+  "purpose": "one-time forward-only confirmation of the frozen low-weight midpoint-teacher checkpoint",
+  "role": "preregistered before FD generation; do not tune with these events after results are opened",
+  "protocol_sha256": "782483f96bb75775ef30e5241bc9bfc274754403705d73792958cc82226f1b09",
+  "selected_sha256": "dab17cae1d3aae79c0b9efeac28aa5bae2f88748ad822d49d4b5bf87a73407b4",
+  "control_sha256": "3aa5ade41968a0d9e1a214c625ac4a62c075eac23bea17b7c60cc8b7d3751ab9",
+  "generation_seconds": 85.0295389999992,
+  "summary": {
+    "selected_mean_full_l2": 0.6322525907857067,
+    "selected_median_full_l2": 0.6086644204251298,
+    "control_mean_full_l2": 0.64506881986232,
+    "local_selected_mean_full_l2": 0.23846813178269297,
+    "remote_selected_mean_full_l2": 1.0260370497887206,
+    "selected_improves_event_count": 4
+  },
+  "checks": {
+    "all_selected_full_l2": false,
+    "selected_median_full_l2": true,
+    "selected_local_mean_full_l2": true,
+    "selected_remote_mean_full_l2": false,
+    "selected_beats_control": false
+  },
+  "all_gates_passed": false,
+  "events": [
+    {
+      "event": "local_01.npz",
+      "stratum": "local",
+      "source_m_s": [
+        10080,
+        6580,
+        920,
+        0.255
+      ],
+      "sha256": "e979fb550b188a075dcc6e8c9b89a63221ecc233507aff42d2f32c2b6194fac9",
+      "nearest_training_distance_m": 138.5640646055102,
+      "fd_runtime_seconds": 8.522161699999742,
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\local_01.npz",
+        "sha256": "e979fb550b188a075dcc6e8c9b89a63221ecc233507aff42d2f32c2b6194fac9",
+        "source_m_s_post_hoc": [
+          10080.0,
+          6580.0,
+          920.0,
+          0.2549999952316284
+        ],
+        "full_record_relative_l2": 0.2702594301452973,
+        "active_sample_relative_l2": 0.23335677140195174,
+        "active_sample_count": 3014,
+        "active_observed_energy_fraction": 0.9955577686023096,
+        "predicted_to_observed_peak_ratio": 1.0428687153070362,
+        "zero_lag_correlation": 0.9627881243295022
+      },
+      "selected": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\local_01.npz",
+        "sha256": "e979fb550b188a075dcc6e8c9b89a63221ecc233507aff42d2f32c2b6194fac9",
+        "source_m_s_post_hoc": [
+          10080.0,
+          6580.0,
+          920.0,
+          0.2549999952316284
+        ],
+        "full_record_relative_l2": 0.2243849753780374,
+        "active_sample_relative_l2": 0.2027522380256415,
+        "active_sample_count": 3014,
+        "active_observed_energy_fraction": 0.9955577686023096,
+        "predicted_to_observed_peak_ratio": 1.0183800688831008,
+        "zero_lag_correlation": 0.9751474336643279
+      },
+      "selected_improves_full_l2": true
+    },
+    {
+      "event": "local_02.npz",
+      "stratum": "local",
+      "source_m_s": [
+        10920,
+        10080,
+        1280,
+        0.335
+      ],
+      "sha256": "3eb1e0684baad88759881857e600510d9eae27c010b3c9215975f9e3737a8619",
+      "nearest_training_distance_m": 138.5640646055102,
+      "fd_runtime_seconds": 8.508124199999656,
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\local_02.npz",
+        "sha256": "3eb1e0684baad88759881857e600510d9eae27c010b3c9215975f9e3737a8619",
+        "source_m_s_post_hoc": [
+          10920.0,
+          10080.0,
+          1280.0,
+          0.33500000834465027
+        ],
+        "full_record_relative_l2": 0.3184830049931902,
+        "active_sample_relative_l2": 0.2592269564838833,
+        "active_sample_count": 2046,
+        "active_observed_energy_fraction": 0.9841724770709505,
+        "predicted_to_observed_peak_ratio": 1.1814550723897959,
+        "zero_lag_correlation": 0.9665522219413577
+      },
+      "selected": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\local_02.npz",
+        "sha256": "3eb1e0684baad88759881857e600510d9eae27c010b3c9215975f9e3737a8619",
+        "source_m_s_post_hoc": [
+          10920.0,
+          10080.0,
+          1280.0,
+          0.33500000834465027
+        ],
+        "full_record_relative_l2": 0.21472496733042296,
+        "active_sample_relative_l2": 0.1703009141343162,
+        "active_sample_count": 2046,
+        "active_observed_energy_fraction": 0.9841724770709505,
+        "predicted_to_observed_peak_ratio": 1.0377357743382705,
+        "zero_lag_correlation": 0.9830070935219887
+      },
+      "selected_improves_full_l2": true
+    },
+    {
+      "event": "local_03.npz",
+      "stratum": "local",
+      "source_m_s": [
+        3580,
+        4080,
+        580,
+        0.13
+      ],
+      "sha256": "03f2e65a7e33f62f6154eb35fd72acba5afb17ecda85f53903f926907a3b62e1",
+      "nearest_training_distance_m": 138.5640646055102,
+      "fd_runtime_seconds": 8.513639400000102,
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\local_03.npz",
+        "sha256": "03f2e65a7e33f62f6154eb35fd72acba5afb17ecda85f53903f926907a3b62e1",
+        "source_m_s_post_hoc": [
+          3580.0,
+          4080.0,
+          580.0,
+          0.12999999523162842
+        ],
+        "full_record_relative_l2": 0.35421980667787184,
+        "active_sample_relative_l2": 0.30821256279459286,
+        "active_sample_count": 3422,
+        "active_observed_energy_fraction": 0.9949434774686474,
+        "predicted_to_observed_peak_ratio": 1.010391743212348,
+        "zero_lag_correlation": 0.9375101607851879
+      },
+      "selected": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\local_03.npz",
+        "sha256": "03f2e65a7e33f62f6154eb35fd72acba5afb17ecda85f53903f926907a3b62e1",
+        "source_m_s_post_hoc": [
+          3580.0,
+          4080.0,
+          580.0,
+          0.12999999523162842
+        ],
+        "full_record_relative_l2": 0.3270105535600643,
+        "active_sample_relative_l2": 0.2943772861114967,
+        "active_sample_count": 3422,
+        "active_observed_energy_fraction": 0.9949434774686474,
+        "predicted_to_observed_peak_ratio": 1.0541077602680207,
+        "zero_lag_correlation": 0.9487690748452905
+      },
+      "selected_improves_full_l2": true
+    },
+    {
+      "event": "local_04.npz",
+      "stratum": "local",
+      "source_m_s": [
+        6420,
+        3580,
+        780,
+        0.21
+      ],
+      "sha256": "4f909e9adcc3f16511de133b2c6d397eb1a889a09c18ad8892d6a47e18ee0818",
+      "nearest_training_distance_m": 138.5640646055102,
+      "fd_runtime_seconds": 8.503961600000366,
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\local_04.npz",
+        "sha256": "4f909e9adcc3f16511de133b2c6d397eb1a889a09c18ad8892d6a47e18ee0818",
+        "source_m_s_post_hoc": [
+          6420.0,
+          3580.0,
+          780.0,
+          0.20999999344348907
+        ],
+        "full_record_relative_l2": 0.20973969615299687,
+        "active_sample_relative_l2": 0.17352063863409667,
+        "active_sample_count": 3431,
+        "active_observed_energy_fraction": 0.9951036380808392,
+        "predicted_to_observed_peak_ratio": 0.9200274355210819,
+        "zero_lag_correlation": 0.9789239886556562
+      },
+      "selected": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\local_04.npz",
+        "sha256": "4f909e9adcc3f16511de133b2c6d397eb1a889a09c18ad8892d6a47e18ee0818",
+        "source_m_s_post_hoc": [
+          6420.0,
+          3580.0,
+          780.0,
+          0.20999999344348907
+        ],
+        "full_record_relative_l2": 0.1877520308622472,
+        "active_sample_relative_l2": 0.16566466027741983,
+        "active_sample_count": 3431,
+        "active_observed_energy_fraction": 0.9951036380808392,
+        "predicted_to_observed_peak_ratio": 0.916773574802869,
+        "zero_lag_correlation": 0.9833805257992618
+      },
+      "selected_improves_full_l2": true
+    },
+    {
+      "event": "remote_01.npz",
+      "stratum": "remote",
+      "source_m_s": [
+        2800,
+        5200,
+        450,
+        0.14
+      ],
+      "sha256": "b72ffa84090273e0a3dbcb1c46ec48271a62aabce440546323ee18fc16cca60c",
+      "nearest_training_distance_m": 1300.9611831257687,
+      "fd_runtime_seconds": 8.508051599999817,
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\remote_01.npz",
+        "sha256": "b72ffa84090273e0a3dbcb1c46ec48271a62aabce440546323ee18fc16cca60c",
+        "source_m_s_post_hoc": [
+          2800.0,
+          5200.0,
+          450.0,
+          0.14000000059604645
+        ],
+        "full_record_relative_l2": 1.0484273469748941,
+        "active_sample_relative_l2": 0.9913820095634008,
+        "active_sample_count": 2543,
+        "active_observed_energy_fraction": 0.9883366068964353,
+        "predicted_to_observed_peak_ratio": 0.3936612923353339,
+        "zero_lag_correlation": 0.1874760541519496
+      },
+      "selected": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\remote_01.npz",
+        "sha256": "b72ffa84090273e0a3dbcb1c46ec48271a62aabce440546323ee18fc16cca60c",
+        "source_m_s_post_hoc": [
+          2800.0,
+          5200.0,
+          450.0,
+          0.14000000059604645
+        ],
+        "full_record_relative_l2": 1.0711932905152228,
+        "active_sample_relative_l2": 0.990042238057395,
+        "active_sample_count": 2543,
+        "active_observed_energy_fraction": 0.9883366068964353,
+        "predicted_to_observed_peak_ratio": 0.49112868350384836,
+        "zero_lag_correlation": 0.2210646735436444
+      },
+      "selected_improves_full_l2": false
+    },
+    {
+      "event": "remote_02.npz",
+      "stratum": "remote",
+      "source_m_s": [
+        5200,
+        9800,
+        1050,
+        0.26
+      ],
+      "sha256": "070c5ec871963b0698a71c4e4bceb7909ffcd87bef90cdc4e822ce36c8340d57",
+      "nearest_training_distance_m": 1342.5721582097551,
+      "fd_runtime_seconds": 8.500186499999472,
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\remote_02.npz",
+        "sha256": "070c5ec871963b0698a71c4e4bceb7909ffcd87bef90cdc4e822ce36c8340d57",
+        "source_m_s_post_hoc": [
+          5200.0,
+          9800.0,
+          1050.0,
+          0.25999999046325684
+        ],
+        "full_record_relative_l2": 0.9608607623035839,
+        "active_sample_relative_l2": 0.8942098547398722,
+        "active_sample_count": 2480,
+        "active_observed_energy_fraction": 0.9812054348899925,
+        "predicted_to_observed_peak_ratio": 0.58910627609003,
+        "zero_lag_correlation": 0.3911754151738178
+      },
+      "selected": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\remote_02.npz",
+        "sha256": "070c5ec871963b0698a71c4e4bceb7909ffcd87bef90cdc4e822ce36c8340d57",
+        "source_m_s_post_hoc": [
+          5200.0,
+          9800.0,
+          1050.0,
+          0.25999999046325684
+        ],
+        "full_record_relative_l2": 1.000692767505447,
+        "active_sample_relative_l2": 0.9116002152158948,
+        "active_sample_count": 2480,
+        "active_observed_energy_fraction": 0.9812054348899925,
+        "predicted_to_observed_peak_ratio": 0.60500161500765,
+        "zero_lag_correlation": 0.35383822223234296
+      },
+      "selected_improves_full_l2": false
+    },
+    {
+      "event": "remote_03.npz",
+      "stratum": "remote",
+      "source_m_s": [
+        12200,
+        13200,
+        1150,
+        0.22
+      ],
+      "sha256": "ecb432c750513b152818fe962b1a705ee8aebcb99a7f81bd833e4d7e4a8dce7e",
+      "nearest_training_distance_m": 1289.3796958227626,
+      "fd_runtime_seconds": 8.599390000000312,
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\remote_03.npz",
+        "sha256": "ecb432c750513b152818fe962b1a705ee8aebcb99a7f81bd833e4d7e4a8dce7e",
+        "source_m_s_post_hoc": [
+          12200.0,
+          13200.0,
+          1150.0,
+          0.2199999988079071
+        ],
+        "full_record_relative_l2": 1.1381585221630577,
+        "active_sample_relative_l2": 1.0759710216461988,
+        "active_sample_count": 2156,
+        "active_observed_energy_fraction": 0.9904582186919552,
+        "predicted_to_observed_peak_ratio": 0.3382409414143289,
+        "zero_lag_correlation": -0.014150712816968674
+      },
+      "selected": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\remote_03.npz",
+        "sha256": "ecb432c750513b152818fe962b1a705ee8aebcb99a7f81bd833e4d7e4a8dce7e",
+        "source_m_s_post_hoc": [
+          12200.0,
+          13200.0,
+          1150.0,
+          0.2199999988079071
+        ],
+        "full_record_relative_l2": 1.1419438538440172,
+        "active_sample_relative_l2": 1.0641282253009496,
+        "active_sample_count": 2156,
+        "active_observed_energy_fraction": 0.9904582186919552,
+        "predicted_to_observed_peak_ratio": 0.34520977093928146,
+        "zero_lag_correlation": 0.03833292506429712
+      },
+      "selected_improves_full_l2": false
+    },
+    {
+      "event": "remote_04.npz",
+      "stratum": "remote",
+      "source_m_s": [
+        13800,
+        5200,
+        850,
+        0.43
+      ],
+      "sha256": "54f0fa7244920a30e4374a6e7f3e66459a3e76583204b66e90cf8fa363da0b73",
+      "nearest_training_distance_m": 1566.0459763365825,
+      "fd_runtime_seconds": 8.498013500000525,
+      "control": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\remote_04.npz",
+        "sha256": "54f0fa7244920a30e4374a6e7f3e66459a3e76583204b66e90cf8fa363da0b73",
+        "source_m_s_post_hoc": [
+          13800.0,
+          5200.0,
+          850.0,
+          0.4300000071525574
+        ],
+        "full_record_relative_l2": 0.8604019894876673,
+        "active_sample_relative_l2": 0.8394921122531573,
+        "active_sample_count": 1152,
+        "active_observed_energy_fraction": 0.9872853024863801,
+        "predicted_to_observed_peak_ratio": 0.20198199859041627,
+        "zero_lag_correlation": 0.5824744033053184
+      },
+      "selected": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\midpoint_teacher_confirmation\\remote_04.npz",
+        "sha256": "54f0fa7244920a30e4374a6e7f3e66459a3e76583204b66e90cf8fa363da0b73",
+        "source_m_s_post_hoc": [
+          13800.0,
+          5200.0,
+          850.0,
+          0.4300000071525574
+        ],
+        "full_record_relative_l2": 0.8903182872901952,
+        "active_sample_relative_l2": 0.8633171590104755,
+        "active_sample_count": 1152,
+        "active_observed_energy_fraction": 0.9872853024863801,
+        "predicted_to_observed_peak_ratio": 0.19224726256831032,
+        "zero_lag_correlation": 0.48297142903436824
+      },
+      "selected_improves_full_l2": false
+    }
+  ],
+  "limitations": "One synthetic velocity model, one model seed, 5 Hz, noise-free FD data, 25 receivers and six zero-Dirichlet faces. Passing this forward gate would permit a later frozen localization test; failure spends these events and requires new confirmation data after further development."
+}

@@ -1,0 +1,37 @@
+{
+  "purpose": "one-time independent same-model synthetic test of the frozen 29-source eikonal carrier",
+  "eikonal_checkpoint": "outputs/eikonal_coverage_29_hybrid_1000/conditioned_5Hz.pth",
+  "eikonal_sha256": "ce744ba5e7249850fe99644449855c886fc255aebacfacab86f76d59990f2ec7",
+  "straight_checkpoint": "outputs/cross_region_coverage_29_hybrid_1000/conditioned_5Hz.pth",
+  "straight_sha256": "5f3a27f85d32e8385b2d9ae7e3eff056cc373e037fd4dcd074dc75b88b503184",
+  "velocity_file": "data/velocity/vp_model.npy",
+  "velocity_sha256": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+  "prior_search_settings": "experiments/cross_region_fmm_protocol.json",
+  "prior_fmm_seeded_settings": "experiments/fmm_seeded_waveform_development_protocol.json",
+  "data": "eight new 5 Hz 3-D FD events, dt=0.002 s, duration=2 s, 25 receivers, six zero-Dirichlet faces, same fixed Overthrust velocity; all older observation source coordinates checked for duplicates before FD generation",
+  "events": [
+    {"file": "test_01.npz", "source_m_s": [4700, 4300, 620, 0.17]},
+    {"file": "test_02.npz", "source_m_s": [5400, 10800, 760, 0.29]},
+    {"file": "test_03.npz", "source_m_s": [7200, 13200, 1180, 0.23]},
+    {"file": "test_04.npz", "source_m_s": [8600, 6200, 520, 0.41]},
+    {"file": "test_05.npz", "source_m_s": [9800, 3600, 1150, 0.16]},
+    {"file": "test_06.npz", "source_m_s": [11800, 8800, 930, 0.30]},
+    {"file": "test_07.npz", "source_m_s": [13200, 11200, 380, 0.27]},
+    {"file": "test_08.npz", "source_m_s": [3800, 12800, 1320, 0.38]}
+  ],
+  "methods": {
+    "eikonal_hybrid": "fixed FMM first-arrival estimate followed by 27 spatial offsets x 46 origin times (deduplicated at bounds), 12 diverse waveform starts and 250 Adam steps, using the eikonal checkpoint",
+    "straight_global": "independent 11x11x8x6 global waveform search, 5 starts and 250 Adam steps using the straight checkpoint",
+    "fmm": "fixed 80 m reciprocal receiver fields, 11x11x8 coarse grid and four 7x7x7 refinements, with the existing first-arrival picker"
+  },
+  "predeclared_gates": {
+    "all_eight_fmm_valid_picks_at_least": 6,
+    "eikonal_location_below_500_m_at_least": 6,
+    "eikonal_origin_time_below_0_05_s_at_least": 6,
+    "eikonal_median_location_below_m": 200,
+    "eikonal_location_better_than_fmm_at_least": 6,
+    "eikonal_forward_l2_below_0_85_at_least": 6
+  },
+  "reporting": "per-event eloc, et, source estimate, raw full-record relative L2 for both neural operators, FD/FMM setup and per-event inversion timings, explicit failure status and every predeclared gate",
+  "limitations": "one model seed, one known synthetic velocity model, no field data or noise stress test; FMM supplies the eikonal hybrid's search initialization, so report FMM setup in its cost. Never tune or reuse these eight events as untouched tests after opening results."
+}

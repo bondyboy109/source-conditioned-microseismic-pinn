@@ -1,0 +1,41 @@
+{
+  "status": "registered_adaptive_fusion_independent_fd_configuration",
+  "velocity_file": "E:\\source-conditioned-microseismic-pinn\\data\\velocity\\vp_model.npy",
+  "velocity_shape": [
+    401,
+    401,
+    94
+  ],
+  "grid_spacing_m": [
+    40.0,
+    40.0,
+    40.0
+  ],
+  "domain_extent_m": [
+    16000.0,
+    16000.0,
+    3720.0
+  ],
+  "receivers_file": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\receiver_coords.npy",
+  "receiver_count": 25,
+  "source_location_bounds_m": [
+    [
+      2000.0,
+      2000.0,
+      100.0
+    ],
+    [
+      14000.0,
+      14000.0,
+      1500.0
+    ]
+  ],
+  "origin_time_bounds_s": [
+    0.05,
+    0.5
+  ],
+  "time_step_s": 0.002,
+  "record_length_s": 2.0,
+  "boundary_condition": "zero Dirichlet on all six faces",
+  "frequency_validity": "5 Hz; minimum wavelength exceeds ten grid cells"
+}

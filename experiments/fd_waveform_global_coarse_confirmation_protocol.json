@@ -1,0 +1,24 @@
+{
+  "role": "low-resolution global FD waveform cost pilot on the locked eight-event confirmation set",
+  "fd_config": "data/observations/experiment_draft.json",
+  "spatial_grid_counts": {"x": 3, "y": 3, "z": 2},
+  "waveform_window_s": [0.0, 2.0],
+  "template_duration_s": 2.5,
+  "reference_origin_time_s": 0.5,
+  "origin_time_bounds_s": [0.05, 0.5],
+  "batch_size": 12,
+  "events": [
+    {"id": "confirm_01_west_shallow", "observation": "data/observations/traveltime_aligned_moe_confirmation/confirm_01_west_shallow.npz", "observation_sha256": "629b01e405f011825ad94e3982170944956dde2df584075328314150679b5442"},
+    {"id": "confirm_02_east_deep", "observation": "data/observations/traveltime_aligned_moe_confirmation/confirm_02_east_deep.npz", "observation_sha256": "e94ce318a54afc211feb769a51ae6899ff950581844b30545d92ccdee6749c00"},
+    {"id": "confirm_03_north_mid", "observation": "data/observations/traveltime_aligned_moe_confirmation/confirm_03_north_mid.npz", "observation_sha256": "f4f640ca19f0af30deda81c5d8237f91e83200413b034d562bf3f2c435b37ceb"},
+    {"id": "confirm_04_south_deep", "observation": "data/observations/traveltime_aligned_moe_confirmation/confirm_04_south_deep.npz", "observation_sha256": "184552204773fcc4866300760449d1099f634b1ea0a436aceb337858871c8aae"},
+    {"id": "confirm_05_center_shallow", "observation": "data/observations/traveltime_aligned_moe_confirmation/confirm_05_center_shallow.npz", "observation_sha256": "c5bcb52a630e8e738c7951c9c44fb08eb3a2b89f4edde9cc1a072c792dc04da4"},
+    {"id": "confirm_06_southwest_deep", "observation": "data/observations/traveltime_aligned_moe_confirmation/confirm_06_southwest_deep.npz", "observation_sha256": "0891c18cc01dacf81771cead552775eaadea903cef55cd0bf22efe0a05568d16"},
+    {"id": "confirm_07_northeast_mid", "observation": "data/observations/traveltime_aligned_moe_confirmation/confirm_07_northeast_mid.npz", "observation_sha256": "832f563e4e39c3fda64ea2b5cc9550e95dff1530eba72b68e3c4daae3f5aca1f"},
+    {"id": "confirm_08_north_deep", "observation": "data/observations/traveltime_aligned_moe_confirmation/confirm_08_north_deep.npz", "observation_sha256": "ae78e9ce5b7d4bade471be3b7f057bf42f104e1e45d3744b810369286f55f0ea"}
+  ],
+  "result": "experiments/fd_waveform_global_coarse_confirmation_results.json",
+  "report": "experiments/fd_waveform_global_coarse_confirmation.md",
+  "checkpoint": "experiments/fd_waveform_global_coarse_confirmation_checkpoint.json",
+  "limitations": "This is an accuracy-matched-domain but low-resolution FD cost pilot. It searches the full source bounds without FMM initialization, but its 18-point spatial grid is much coarser than the neural and FMM refinements. The result is not a high-resolution global FD optimum; the reported runtime includes only the FD candidate simulations and excludes one-time data loading."
+}

@@ -1,0 +1,594 @@
+{
+  "role": "post-hoc diagnosis on already inspected region_08; truth is used to define diagnostic fixed x/y, never to select a new model",
+  "protocol_sha256": "5182f0f005dad592af61e49d9a937d18152cb5f330f64cee714ada61fcc079fb",
+  "truth_source_m_s": [
+    12650.0,
+    7790.0,
+    700.0,
+    0.3700000047683716
+  ],
+  "scoring": {
+    "receiver_stride": 1,
+    "time_stride": 4,
+    "normalization": "full-record observation RMS fixed for all candidates"
+  },
+  "models": {
+    "old": {
+      "best_depth_m_at_true_xy": 700.0,
+      "best_time_s_at_true_xy": 0.3700000047683716,
+      "minimum_mse_at_true_xy": 0.6937235593795776,
+      "mse_at_true_depth_profiled_time": 0.6937235593795776,
+      "mse_at_100m_profiled_time": 1.0472551584243774,
+      "mse_at_exact_truth": 0.6937235593795776,
+      "mse_at_reported_winner": 0.9095893502235413,
+      "reported_winner_depth_m": 412.6995544433594,
+      "profile": [
+        {
+          "depth_m": 100.0,
+          "best_origin_s": 0.36000001430511475,
+          "best_normalized_mse": 1.0472551584243774
+        },
+        {
+          "depth_m": 140.0,
+          "best_origin_s": 0.36000001430511475,
+          "best_normalized_mse": 1.0286238193511963
+        },
+        {
+          "depth_m": 180.0,
+          "best_origin_s": 0.3700000047683716,
+          "best_normalized_mse": 1.0105915069580078
+        },
+        {
+          "depth_m": 220.0,
+          "best_origin_s": 0.3700000047683716,
+          "best_normalized_mse": 0.9861987233161926
+        },
+        {
+          "depth_m": 260.0,
+          "best_origin_s": 0.3799999952316284,
+          "best_normalized_mse": 0.9664561748504639
+        },
+        {
+          "depth_m": 300.0,
+          "best_origin_s": 0.38999998569488525,
+          "best_normalized_mse": 0.9588164687156677
+        },
+        {
+          "depth_m": 340.0,
+          "best_origin_s": 0.38999998569488525,
+          "best_normalized_mse": 0.9687936305999756
+        },
+        {
+          "depth_m": 380.0,
+          "best_origin_s": 0.4000000059604645,
+          "best_normalized_mse": 1.0135915279388428
+        },
+        {
+          "depth_m": 420.0,
+          "best_origin_s": 0.4000000059604645,
+          "best_normalized_mse": 1.0927972793579102
+        },
+        {
+          "depth_m": 460.0,
+          "best_origin_s": 0.4000000059604645,
+          "best_normalized_mse": 1.213120937347412
+        },
+        {
+          "depth_m": 500.0,
+          "best_origin_s": 0.4000000059604645,
+          "best_normalized_mse": 1.3702536821365356
+        },
+        {
+          "depth_m": 540.0,
+          "best_origin_s": 0.38999998569488525,
+          "best_normalized_mse": 1.5088237524032593
+        },
+        {
+          "depth_m": 580.0,
+          "best_origin_s": 0.38999998569488525,
+          "best_normalized_mse": 1.4531636238098145
+        },
+        {
+          "depth_m": 620.0,
+          "best_origin_s": 0.38999998569488525,
+          "best_normalized_mse": 1.1732615232467651
+        },
+        {
+          "depth_m": 660.0,
+          "best_origin_s": 0.3799999952316284,
+          "best_normalized_mse": 0.7737958431243896
+        },
+        {
+          "depth_m": 700.0,
+          "best_origin_s": 0.3700000047683716,
+          "best_normalized_mse": 0.6937235593795776
+        },
+        {
+          "depth_m": 740.0,
+          "best_origin_s": 0.3700000047683716,
+          "best_normalized_mse": 0.972603976726532
+        },
+        {
+          "depth_m": 780.0,
+          "best_origin_s": 0.36000001430511475,
+          "best_normalized_mse": 1.3872413635253906
+        },
+        {
+          "depth_m": 820.0,
+          "best_origin_s": 0.3499999940395355,
+          "best_normalized_mse": 1.6682432889938354
+        },
+        {
+          "depth_m": 860.0,
+          "best_origin_s": 0.3400000035762787,
+          "best_normalized_mse": 1.7567040920257568
+        },
+        {
+          "depth_m": 900.0,
+          "best_origin_s": 0.3400000035762787,
+          "best_normalized_mse": 1.7097734212875366
+        },
+        {
+          "depth_m": 940.0,
+          "best_origin_s": 0.33000001311302185,
+          "best_normalized_mse": 1.6268903017044067
+        },
+        {
+          "depth_m": 980.0,
+          "best_origin_s": 0.3199999928474426,
+          "best_normalized_mse": 1.5624053478240967
+        },
+        {
+          "depth_m": 1020.0,
+          "best_origin_s": 0.3100000023841858,
+          "best_normalized_mse": 1.5216764211654663
+        },
+        {
+          "depth_m": 1060.0,
+          "best_origin_s": 0.3100000023841858,
+          "best_normalized_mse": 1.4742146730422974
+        },
+        {
+          "depth_m": 1100.0,
+          "best_origin_s": 0.30000001192092896,
+          "best_normalized_mse": 1.4258296489715576
+        },
+        {
+          "depth_m": 1140.0,
+          "best_origin_s": 0.28999999165534973,
+          "best_normalized_mse": 1.3759444952011108
+        },
+        {
+          "depth_m": 1180.0,
+          "best_origin_s": 0.28999999165534973,
+          "best_normalized_mse": 1.3092520236968994
+        },
+        {
+          "depth_m": 1220.0,
+          "best_origin_s": 0.2800000011920929,
+          "best_normalized_mse": 1.2281492948532104
+        },
+        {
+          "depth_m": 1260.0,
+          "best_origin_s": 0.2800000011920929,
+          "best_normalized_mse": 1.1520532369613647
+        },
+        {
+          "depth_m": 1300.0,
+          "best_origin_s": 0.27000001072883606,
+          "best_normalized_mse": 1.0712074041366577
+        },
+        {
+          "depth_m": 1340.0,
+          "best_origin_s": 0.27000001072883606,
+          "best_normalized_mse": 1.0149321556091309
+        },
+        {
+          "depth_m": 1380.0,
+          "best_origin_s": 0.25999999046325684,
+          "best_normalized_mse": 0.9793235063552856
+        },
+        {
+          "depth_m": 1420.0,
+          "best_origin_s": 0.25999999046325684,
+          "best_normalized_mse": 0.9683454632759094
+        },
+        {
+          "depth_m": 1460.0,
+          "best_origin_s": 0.25999999046325684,
+          "best_normalized_mse": 0.9928937554359436
+        },
+        {
+          "depth_m": 1500.0,
+          "best_origin_s": 0.25,
+          "best_normalized_mse": 1.0398683547973633
+        }
+      ]
+    },
+    "new": {
+      "best_depth_m_at_true_xy": 700.0,
+      "best_time_s_at_true_xy": 0.3700000047683716,
+      "minimum_mse_at_true_xy": 0.7091858983039856,
+      "mse_at_true_depth_profiled_time": 0.7091858983039856,
+      "mse_at_100m_profiled_time": 0.9532933831214905,
+      "mse_at_exact_truth": 0.7091858983039856,
+      "mse_at_reported_winner": 0.9098888635635376,
+      "reported_winner_depth_m": 100.0,
+      "profile": [
+        {
+          "depth_m": 100.0,
+          "best_origin_s": 0.11999999731779099,
+          "best_normalized_mse": 0.9532933831214905
+        },
+        {
+          "depth_m": 140.0,
+          "best_origin_s": 0.11999999731779099,
+          "best_normalized_mse": 0.9807068705558777
+        },
+        {
+          "depth_m": 180.0,
+          "best_origin_s": 0.11999999731779099,
+          "best_normalized_mse": 1.0482546091079712
+        },
+        {
+          "depth_m": 220.0,
+          "best_origin_s": 0.10999999940395355,
+          "best_normalized_mse": 1.1502517461776733
+        },
+        {
+          "depth_m": 260.0,
+          "best_origin_s": 0.10999999940395355,
+          "best_normalized_mse": 1.2734402418136597
+        },
+        {
+          "depth_m": 300.0,
+          "best_origin_s": 0.4099999964237213,
+          "best_normalized_mse": 1.286173939704895
+        },
+        {
+          "depth_m": 340.0,
+          "best_origin_s": 0.4099999964237213,
+          "best_normalized_mse": 1.2433950901031494
+        },
+        {
+          "depth_m": 380.0,
+          "best_origin_s": 0.4099999964237213,
+          "best_normalized_mse": 1.2522342205047607
+        },
+        {
+          "depth_m": 420.0,
+          "best_origin_s": 0.4099999964237213,
+          "best_normalized_mse": 1.3462491035461426
+        },
+        {
+          "depth_m": 460.0,
+          "best_origin_s": 0.4099999964237213,
+          "best_normalized_mse": 1.5199847221374512
+        },
+        {
+          "depth_m": 500.0,
+          "best_origin_s": 0.4000000059604645,
+          "best_normalized_mse": 1.6708989143371582
+        },
+        {
+          "depth_m": 540.0,
+          "best_origin_s": 0.4000000059604645,
+          "best_normalized_mse": 1.718772053718567
+        },
+        {
+          "depth_m": 580.0,
+          "best_origin_s": 0.38999998569488525,
+          "best_normalized_mse": 1.553594946861267
+        },
+        {
+          "depth_m": 620.0,
+          "best_origin_s": 0.38999998569488525,
+          "best_normalized_mse": 1.2071139812469482
+        },
+        {
+          "depth_m": 660.0,
+          "best_origin_s": 0.3799999952316284,
+          "best_normalized_mse": 0.8085763454437256
+        },
+        {
+          "depth_m": 700.0,
+          "best_origin_s": 0.3700000047683716,
+          "best_normalized_mse": 0.7091858983039856
+        },
+        {
+          "depth_m": 740.0,
+          "best_origin_s": 0.3700000047683716,
+          "best_normalized_mse": 0.9872201681137085
+        },
+        {
+          "depth_m": 780.0,
+          "best_origin_s": 0.36000001430511475,
+          "best_normalized_mse": 1.422861099243164
+        },
+        {
+          "depth_m": 820.0,
+          "best_origin_s": 0.3499999940395355,
+          "best_normalized_mse": 1.7644180059432983
+        },
+        {
+          "depth_m": 860.0,
+          "best_origin_s": 0.3400000035762787,
+          "best_normalized_mse": 1.8846596479415894
+        },
+        {
+          "depth_m": 900.0,
+          "best_origin_s": 0.3400000035762787,
+          "best_normalized_mse": 1.8264678716659546
+        },
+        {
+          "depth_m": 940.0,
+          "best_origin_s": 0.33000001311302185,
+          "best_normalized_mse": 1.7101062536239624
+        },
+        {
+          "depth_m": 980.0,
+          "best_origin_s": 0.3199999928474426,
+          "best_normalized_mse": 1.5842305421829224
+        },
+        {
+          "depth_m": 1020.0,
+          "best_origin_s": 0.3100000023841858,
+          "best_normalized_mse": 1.4584845304489136
+        },
+        {
+          "depth_m": 1060.0,
+          "best_origin_s": 0.3100000023841858,
+          "best_normalized_mse": 1.3349498510360718
+        },
+        {
+          "depth_m": 1100.0,
+          "best_origin_s": 0.30000001192092896,
+          "best_normalized_mse": 1.2468127012252808
+        },
+        {
+          "depth_m": 1140.0,
+          "best_origin_s": 0.30000001192092896,
+          "best_normalized_mse": 1.2196435928344727
+        },
+        {
+          "depth_m": 1180.0,
+          "best_origin_s": 0.28999999165534973,
+          "best_normalized_mse": 1.2283990383148193
+        },
+        {
+          "depth_m": 1220.0,
+          "best_origin_s": 0.28999999165534973,
+          "best_normalized_mse": 1.2554453611373901
+        },
+        {
+          "depth_m": 1260.0,
+          "best_origin_s": 0.2800000011920929,
+          "best_normalized_mse": 1.2740765810012817
+        },
+        {
+          "depth_m": 1300.0,
+          "best_origin_s": 0.27000001072883606,
+          "best_normalized_mse": 1.293675184249878
+        },
+        {
+          "depth_m": 1340.0,
+          "best_origin_s": 0.27000001072883606,
+          "best_normalized_mse": 1.2945520877838135
+        },
+        {
+          "depth_m": 1380.0,
+          "best_origin_s": 0.25999999046325684,
+          "best_normalized_mse": 1.3074151277542114
+        },
+        {
+          "depth_m": 1420.0,
+          "best_origin_s": 0.46000000834465027,
+          "best_normalized_mse": 1.3136242628097534
+        },
+        {
+          "depth_m": 1460.0,
+          "best_origin_s": 0.46000000834465027,
+          "best_normalized_mse": 1.2846612930297852
+        },
+        {
+          "depth_m": 1500.0,
+          "best_origin_s": 0.44999998807907104,
+          "best_normalized_mse": 1.2696508169174194
+        }
+      ]
+    },
+    "gated": {
+      "best_depth_m_at_true_xy": 700.0,
+      "best_time_s_at_true_xy": 0.3700000047683716,
+      "minimum_mse_at_true_xy": 0.6982605457305908,
+      "mse_at_true_depth_profiled_time": 0.6982605457305908,
+      "mse_at_100m_profiled_time": 0.9303797483444214,
+      "mse_at_exact_truth": 0.6982605457305908,
+      "mse_at_reported_winner": 0.8769587278366089,
+      "reported_winner_depth_m": 100.0,
+      "profile": [
+        {
+          "depth_m": 100.0,
+          "best_origin_s": 0.11999999731779099,
+          "best_normalized_mse": 0.9303797483444214
+        },
+        {
+          "depth_m": 140.0,
+          "best_origin_s": 0.11999999731779099,
+          "best_normalized_mse": 0.9582470059394836
+        },
+        {
+          "depth_m": 180.0,
+          "best_origin_s": 0.11999999731779099,
+          "best_normalized_mse": 1.0263975858688354
+        },
+        {
+          "depth_m": 220.0,
+          "best_origin_s": 0.10999999940395355,
+          "best_normalized_mse": 1.1296167373657227
+        },
+        {
+          "depth_m": 260.0,
+          "best_origin_s": 0.10999999940395355,
+          "best_normalized_mse": 1.2541314363479614
+        },
+        {
+          "depth_m": 300.0,
+          "best_origin_s": 0.4099999964237213,
+          "best_normalized_mse": 1.2623052597045898
+        },
+        {
+          "depth_m": 340.0,
+          "best_origin_s": 0.4099999964237213,
+          "best_normalized_mse": 1.221867322921753
+        },
+        {
+          "depth_m": 380.0,
+          "best_origin_s": 0.4099999964237213,
+          "best_normalized_mse": 1.2333389520645142
+        },
+        {
+          "depth_m": 420.0,
+          "best_origin_s": 0.4099999964237213,
+          "best_normalized_mse": 1.3298885822296143
+        },
+        {
+          "depth_m": 460.0,
+          "best_origin_s": 0.4099999964237213,
+          "best_normalized_mse": 1.5055757761001587
+        },
+        {
+          "depth_m": 500.0,
+          "best_origin_s": 0.4000000059604645,
+          "best_normalized_mse": 1.6577166318893433
+        },
+        {
+          "depth_m": 540.0,
+          "best_origin_s": 0.4000000059604645,
+          "best_normalized_mse": 1.7061692476272583
+        },
+        {
+          "depth_m": 580.0,
+          "best_origin_s": 0.38999998569488525,
+          "best_normalized_mse": 1.5415114164352417
+        },
+        {
+          "depth_m": 620.0,
+          "best_origin_s": 0.38999998569488525,
+          "best_normalized_mse": 1.1954805850982666
+        },
+        {
+          "depth_m": 660.0,
+          "best_origin_s": 0.3799999952316284,
+          "best_normalized_mse": 0.7974374294281006
+        },
+        {
+          "depth_m": 700.0,
+          "best_origin_s": 0.3700000047683716,
+          "best_normalized_mse": 0.6982605457305908
+        },
+        {
+          "depth_m": 740.0,
+          "best_origin_s": 0.3700000047683716,
+          "best_normalized_mse": 0.9759204387664795
+        },
+        {
+          "depth_m": 780.0,
+          "best_origin_s": 0.36000001430511475,
+          "best_normalized_mse": 1.4107736349105835
+        },
+        {
+          "depth_m": 820.0,
+          "best_origin_s": 0.3499999940395355,
+          "best_normalized_mse": 1.7510936260223389
+        },
+        {
+          "depth_m": 860.0,
+          "best_origin_s": 0.3400000035762787,
+          "best_normalized_mse": 1.869930386543274
+        },
+        {
+          "depth_m": 900.0,
+          "best_origin_s": 0.3400000035762787,
+          "best_normalized_mse": 1.8102765083312988
+        },
+        {
+          "depth_m": 940.0,
+          "best_origin_s": 0.33000001311302185,
+          "best_normalized_mse": 1.692879557609558
+        },
+        {
+          "depth_m": 980.0,
+          "best_origin_s": 0.3199999928474426,
+          "best_normalized_mse": 1.5661909580230713
+        },
+        {
+          "depth_m": 1020.0,
+          "best_origin_s": 0.3100000023841858,
+          "best_normalized_mse": 1.439785122871399
+        },
+        {
+          "depth_m": 1060.0,
+          "best_origin_s": 0.3100000023841858,
+          "best_normalized_mse": 1.3155900239944458
+        },
+        {
+          "depth_m": 1100.0,
+          "best_origin_s": 0.30000001192092896,
+          "best_normalized_mse": 1.2271873950958252
+        },
+        {
+          "depth_m": 1140.0,
+          "best_origin_s": 0.30000001192092896,
+          "best_normalized_mse": 1.1998754739761353
+        },
+        {
+          "depth_m": 1180.0,
+          "best_origin_s": 0.28999999165534973,
+          "best_normalized_mse": 1.2089685201644897
+        },
+        {
+          "depth_m": 1220.0,
+          "best_origin_s": 0.28999999165534973,
+          "best_normalized_mse": 1.2363468408584595
+        },
+        {
+          "depth_m": 1260.0,
+          "best_origin_s": 0.2800000011920929,
+          "best_normalized_mse": 1.2554681301116943
+        },
+        {
+          "depth_m": 1300.0,
+          "best_origin_s": 0.27000001072883606,
+          "best_normalized_mse": 1.275392770767212
+        },
+        {
+          "depth_m": 1340.0,
+          "best_origin_s": 0.27000001072883606,
+          "best_normalized_mse": 1.2762049436569214
+        },
+        {
+          "depth_m": 1380.0,
+          "best_origin_s": 0.25999999046325684,
+          "best_normalized_mse": 1.2886741161346436
+        },
+        {
+          "depth_m": 1420.0,
+          "best_origin_s": 0.46000000834465027,
+          "best_normalized_mse": 1.2899082899093628
+        },
+        {
+          "depth_m": 1460.0,
+          "best_origin_s": 0.46000000834465027,
+          "best_normalized_mse": 1.2583574056625366
+        },
+        {
+          "depth_m": 1500.0,
+          "best_origin_s": 0.44999998807907104,
+          "best_normalized_mse": 1.2396572828292847
+        }
+      ]
+    }
+  },
+  "interpretation": "at true x/y only, profile origin time per depth; compare best depth, 100 m and true 700 m objective, exact-truth and reported winner objective; not a localization evaluation or independent evidence"
+}

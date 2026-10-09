@@ -1,0 +1,9 @@
+{
+  "purpose": "Development-only constant-velocity time-shift control matched to the FMM-aligned MoE",
+  "velocity_file": "data/velocity/vp_model.npy",
+  "vavg_m_s": 4200.0,
+  "training_observation_count": 33,
+  "development_event_count": 16,
+  "model": {"expert_count": 3, "hidden_dim": 128, "hidden_layers": 4, "frequency_hz": 5.0, "time_length_s": 2.0, "spatial_lengths_m": [16000.0, 16000.0, 3720.0], "prototype_scales": [0.30, 0.30, 0.20], "prototype_temperature": 1.0, "prototype_centers": [[0.25, 0.25, 0.20], [0.75, 0.25, 0.30], [0.50, 0.75, 0.25]]},
+  "training": {"seed": 3101, "updates": 3000, "batch_size": 4096, "events_per_batch": 8, "learning_rate": 0.0003}
+}

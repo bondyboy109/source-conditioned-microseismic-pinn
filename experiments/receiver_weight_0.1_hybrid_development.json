@@ -1,0 +1,254 @@
+{
+  "purpose": "development-only frozen waveform error decomposition; no fitting or tuning",
+  "checkpoint": "outputs\\receiver_weight_0.1_hybrid_1000\\conditioned_5Hz.pth",
+  "checkpoint_epoch": 1000,
+  "checkpoint_training_events": [
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_01_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_02_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_03_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_04_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_05_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_06_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_07_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_08_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_09_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_10_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_11_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_12_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_13_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_14_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_15_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_16_0to2s.npz"
+  ],
+  "time_windows_s": [
+    [
+      0.0,
+      0.25
+    ],
+    [
+      0.25,
+      0.5
+    ],
+    [
+      0.5,
+      1.0
+    ],
+    [
+      1.0,
+      2.0
+    ]
+  ],
+  "best_shift_limit_s": 0.5,
+  "events": [
+    {
+      "observation": "data\\observations\\window_0to2s\\dev_distance_0250_0to2s.npz",
+      "sha256": "6297910186abb0595255c034202caad2a785a5d85681b6af87a60b1db8b62238",
+      "file_in_receiver_training_set": false,
+      "source_truth": [
+        3750.0,
+        4000.0,
+        500.0,
+        0.11999999731779099
+      ],
+      "source_in_receiver_training_set": false,
+      "receiver_count": 25,
+      "sample_count": 1001,
+      "original_amplitude_relative_l2": 0.7555143166730008,
+      "prediction_to_observation_peak_ratio": 0.9348514909761547,
+      "active_receiver_count": 12,
+      "active_receiver_energy_ratio_median": 1.0490118546184994,
+      "active_receiver_energy_ratio_p10_p90": [
+        0.8000928548289138,
+        3.266500842452119
+      ],
+      "common_time_shift_and_gain_diagnostic_only": {
+        "lag_samples": -4,
+        "gain": 0.7458233080058471,
+        "relative_l2": 0.6599845687504845,
+        "lag_s": -0.007999897003173828
+      },
+      "time_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.25
+          ],
+          "observed_energy_fraction": 3.847161928446271e-40,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.00022151273321309702
+        },
+        {
+          "window_s": [
+            0.25,
+            0.5
+          ],
+          "observed_energy_fraction": 0.006046930127099797,
+          "relative_l2_normalized_by_window_energy": 0.23406430711814233,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.00033128771783022255
+        },
+        {
+          "window_s": [
+            0.5,
+            1.0
+          ],
+          "observed_energy_fraction": 0.47520806061451965,
+          "relative_l2_normalized_by_window_energy": 0.4696070934491689,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.10479802433183497
+        },
+        {
+          "window_s": [
+            1.0,
+            2.0
+          ],
+          "observed_energy_fraction": 0.5173273851106165,
+          "relative_l2_normalized_by_window_energy": 0.9466137124472701,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.4635654405848863
+        }
+      ]
+    },
+    {
+      "observation": "data\\observations\\window_0to2s\\dev_distance_0800_0to2s.npz",
+      "sha256": "e118010426668bae590c8e98964549b49f616a349e1d1f371bd9304b670c26ca",
+      "file_in_receiver_training_set": false,
+      "source_truth": [
+        4300.0,
+        4000.0,
+        500.0,
+        0.11999999731779099
+      ],
+      "source_in_receiver_training_set": false,
+      "receiver_count": 25,
+      "sample_count": 1001,
+      "original_amplitude_relative_l2": 0.9924257331335352,
+      "prediction_to_observation_peak_ratio": 0.7772002084171655,
+      "active_receiver_count": 13,
+      "active_receiver_energy_ratio_median": 0.9171170904513728,
+      "active_receiver_energy_ratio_p10_p90": [
+        0.6011801472678366,
+        1.5321093298945894
+      ],
+      "common_time_shift_and_gain_diagnostic_only": {
+        "lag_samples": -8,
+        "gain": 0.6188029520165611,
+        "relative_l2": 0.843926484666143,
+        "lag_s": -0.015999794006347656
+      },
+      "time_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.25
+          ],
+          "observed_energy_fraction": 1.3015420665810442e-14,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.0004135370048882544
+        },
+        {
+          "window_s": [
+            0.25,
+            0.5
+          ],
+          "observed_energy_fraction": 0.18509594086730113,
+          "relative_l2_normalized_by_window_energy": 0.5447974868544802,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.054937271473469315
+        },
+        {
+          "window_s": [
+            0.5,
+            1.0
+          ],
+          "observed_energy_fraction": 0.27257586803449085,
+          "relative_l2_normalized_by_window_energy": 0.6510083828444768,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.11552090048740479
+        },
+        {
+          "window_s": [
+            1.0,
+            2.0
+          ],
+          "observed_energy_fraction": 0.5417112885668002,
+          "relative_l2_normalized_by_window_energy": 1.2247754521126901,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.8126075114124078
+        }
+      ]
+    },
+    {
+      "observation": "data\\observations\\window_0to2s\\dev_distance_2000_0to2s.npz",
+      "sha256": "d81485720d4362ac25433583e667fe15e6ebdfc12576cd321b37dd705fa420ad",
+      "file_in_receiver_training_set": false,
+      "source_truth": [
+        5500.0,
+        4000.0,
+        500.0,
+        0.11999999731779099
+      ],
+      "source_in_receiver_training_set": false,
+      "receiver_count": 25,
+      "sample_count": 1001,
+      "original_amplitude_relative_l2": 0.9354633349610577,
+      "prediction_to_observation_peak_ratio": 0.78211914332339,
+      "active_receiver_count": 13,
+      "active_receiver_energy_ratio_median": 0.7609835672286842,
+      "active_receiver_energy_ratio_p10_p90": [
+        0.3726127145308089,
+        1.3885584142291367
+      ],
+      "common_time_shift_and_gain_diagnostic_only": {
+        "lag_samples": -3,
+        "gain": 0.6468202237705847,
+        "relative_l2": 0.890857802640604,
+        "lag_s": -0.005999922752380371
+      },
+      "time_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.25
+          ],
+          "observed_energy_fraction": 2.84016023485135e-09,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.0007775788625249405
+        },
+        {
+          "window_s": [
+            0.25,
+            0.5
+          ],
+          "observed_energy_fraction": 0.2575231217565932,
+          "relative_l2_normalized_by_window_energy": 0.8303065109867577,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.1775387326579827
+        },
+        {
+          "window_s": [
+            0.5,
+            1.0
+          ],
+          "observed_energy_fraction": 0.2603045431372084,
+          "relative_l2_normalized_by_window_energy": 0.7650456131787694,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.15235489297507326
+        },
+        {
+          "window_s": [
+            1.0,
+            2.0
+          ],
+          "observed_energy_fraction": 0.48075360726198046,
+          "relative_l2_normalized_by_window_energy": 1.0620951495254425,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.5423122349276434
+        }
+      ]
+    }
+  ]
+}

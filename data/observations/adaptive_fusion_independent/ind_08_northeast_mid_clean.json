@@ -1,0 +1,15 @@
+{
+  "method": "second_order_3d_acoustic_FD",
+  "frequency_hz": 5.0,
+  "boundary": "zero Dirichlet on all six faces",
+  "sponge_width_m": 0.0,
+  "sponge_max_damping_s": null,
+  "source": "unit Ricker times Gaussian, sigma=50 m",
+  "receiver_sampling": "trilinear",
+  "device": "cuda",
+  "cfl": 0.5340097133962067,
+  "duration_s": 2.0,
+  "runtime_seconds": 8.992979999999989,
+  "waveform_peak_abs": 5.492043328558793e-06,
+  "peak_cuda_memory_bytes": 536986112
+}

@@ -1,0 +1,11 @@
+{
+  "purpose": "development-only paired sweep of FD source-difference loss weight",
+  "base_pair_protocol": "experiments/source_transfer_fd_pair_protocol.json",
+  "weights": [0.025, 0.05, 0.1],
+  "seeds": [4101, 4102, 4103],
+  "arms": ["source_to_target", "target_to_target"],
+  "checkpoint_directory": "outputs/source_transfer_fd_pair_weight",
+  "result_json": "experiments/source_transfer_fd_pair_weight_results.json",
+  "report_file": "experiments/source_transfer_fd_pair_weight_results.md",
+  "restriction": "This sweep uses target training pairs and 16 previously inspected development events. It is suitable for choosing a future protocol only; it is not an independent test and does not support a localization claim."
+}

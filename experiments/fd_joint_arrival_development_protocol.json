@@ -1,0 +1,15 @@
+{
+  "role": "development-only FMM-arrival regularization of local FD joint origin-time/amplitude inversion",
+  "base_protocol": "experiments/fd_waveform_refinement_development_protocol.json",
+  "base_result": "experiments/fd_waveform_refinement_development_results.json",
+  "fmm_fields": "outputs/traveltime_aligned_moe_development/receiver_fmm_fields_stride2.npy",
+  "fmm_grid_spacing_m": 80.0,
+  "picker_protocol": "experiments/traveltime_aligned_moe_localization_protocol.json",
+  "arrival_scale_s": 0.10,
+  "arrival_weights": [0.0, 0.1, 0.25, 1.0],
+  "minimum_valid_picks": 6,
+  "objective": "min over discrete origin times of normalized full-window waveform MSE with analytical nonnegative scalar gain, plus alpha times mean squared (origin + receiver FMM travel - corrected pick)/0.10 s",
+  "result": "experiments/fd_joint_arrival_development_results.json",
+  "report": "experiments/fd_joint_arrival_development_results.md",
+  "interpretation": "The two events, local grids, picker bias, and FMM fields have already been inspected or developed. This is an in-sample diagnostic, not an independent localization result. The amplitude is a free scalar, and the FMM and FD discretizations differ."
+}

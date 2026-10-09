@@ -1,0 +1,24 @@
+{
+  "purpose": "Development test of source-coverage expansion for 0-2 s source-conditioned training",
+  "frequency_hz": 5,
+  "sources": [
+    {"file": "train_09.npz", "source_m_s": [6500, 3500, 700, 0.20]},
+    {"file": "train_10.npz", "source_m_s": [10000, 6500, 1000, 0.25]},
+    {"file": "train_11.npz", "source_m_s": [6500, 9500, 900, 0.27]},
+    {"file": "train_12.npz", "source_m_s": [10000, 10500, 800, 0.22]},
+    {"file": "train_13.npz", "source_m_s": [5000, 6000, 400, 0.15]},
+    {"file": "train_14.npz", "source_m_s": [11000, 10000, 1200, 0.34]},
+    {"file": "train_15.npz", "source_m_s": [6000, 11000, 1400, 0.30]},
+    {"file": "train_16.npz", "source_m_s": [12500, 6000, 500, 0.35]}
+  ],
+  "training_window_s": [0, 2],
+  "model": "travel_time_carrier_receiver_only",
+  "seed": 42,
+  "epochs": 5000,
+  "reference_velocity_m_s": 3500,
+  "hard_initial": false,
+  "wavefield_scale": 0.00001,
+  "receiver_batch_size": 1024,
+  "receiver_loss_weight": 0.1,
+  "development_evaluation": ["dev_distance_0250", "dev_distance_0800", "dev_distance_2000", "heldout_01"]
+}

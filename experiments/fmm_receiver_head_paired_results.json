@@ -1,0 +1,328 @@
+{
+  "role": "development-only paired receiver-supervised carrier training; not a physics PINN or independent validation",
+  "protocol_sha256": "0cc5e66b793c01fb903625d6d0d1e8316747c32cce3ca7a64166803446ad24d8",
+  "training_records_sha256": [
+    "cd8890778ae2b06b210ed17ceaef9de32914d05b93ab000a24203475b29d5beb",
+    "ebc96342f62dd24d9b22b3566f29e5639dac703f18c3ef39205c0ef2591db7c1",
+    "6da2ee0494f0a519ac1ab81d84bd4933ff9c80995c1f72f810d15916d7dfedea",
+    "51a67d4622385dd1c6e22a4ec663e7ebed5cb0f609d62168ec15bd551816a450",
+    "d3722f475dae33248f9a551fa47db1705421f4aa735011e100a0194fc17ddecb",
+    "11060fdb6e7805fdd29a579fbbfc71894df9c20805255fd7dcc5230cf6c81ea7",
+    "c97478a6b6206237317579b7c1442d6fc4457a7591539021895b19432448c874",
+    "89120e0d29458b2a1e515a4c69e7ff4674af76b9cd7d0dafbf3c41ef41fb7030",
+    "8597e4f364af973e6d2ac035bd131593bab97ed0529c2b0836cd8e2e0219ed60",
+    "fca6dd43807f42e321e8a34013c30f5130594f5509278742f46fdc8c9271eb14",
+    "169b1b62e39d10bf8a8b1c2010e8f88304b94cdc97e937093575f7fc001ce59b",
+    "197cb84bd453b8ef63b58e7e05e78fadb905990dc6327492cba2d151ea957d05",
+    "28a314abada948ac442acbab117e95432b2fe841e391bf7526fc3c602f15de50",
+    "524568b6921dee91952c558ac696b87c6c679ef59a9606a9d9f894c5cb967b6f",
+    "a898a2eaff7bebbb22f670cd4ebde4fd35ceeb461a4b3314847f1ebea54acc74",
+    "b1b60f25da2d6555876bf4b94f7e7bc7e7805fc79047205ee73708dcb1ca5494",
+    "1a1f219b1d3618671facd96dd9c4c6bb0b293a31ff914e6c23e828ade2e90f26",
+    "1fc5363cd16d7661b17f9b5d62731ca27efcfeadbfa2fdf2476d3cc2068aafa9",
+    "a5d59c8f41b6944612d8a1015234a0e709eafe43a26b0b7df694e1d613f732a9",
+    "8f7618c5bf78d0c07a73668e1a2051bed50916f103f03d590ad6b882520ba99f",
+    "30115df7d994081e62c9d96540fb4af7d688817b6a19ce9f8eda33c833f5daaf",
+    "233d79ccff8c22d3125555a7b36bfd22676ac244f6905738c1936fac9980ff80",
+    "88b9b42267fc1906e0f5bdfde8b70ec7ebc84796b39437d96dad5a10c2e5e210",
+    "6abca19e7c69005c9714cb0d1af15eaa5431f0e838b8f3cc2ab195f0914c2c3d",
+    "f007bc660972fd2f4196a33e9284a93c887a0db8caf5bac5e5a63e32689e6383",
+    "089b928894ff76123dd3e750c728d7f82463bac51ea77630f236c352097563b7",
+    "496fe0f01a863e0faa1210781ec810c275c3a620cef96b63551837c74af0e6b8",
+    "d68ae6f3a1f3edd70c3d8526f46aa34ad568e8cbc91499c4c31f6d2596b5b2a1",
+    "b5c04685376a7e46c7a91230935710f77bf52997bca50d088bfd8ffea46ae17a"
+  ],
+  "development_records_sha256": [
+    "d5cc17d5f289b227abfc6743ba5a933ff6c3b4c717ba332f45d7f32445244d2c",
+    "c43653f192bfd5a340e3426b0e539a83162754f322b7d47d9ac2f65150ebe0d2",
+    "2702516fa211f4cd9bbbe2793938635e6ed682d120991b69dd6484e5c1feca35",
+    "91ed223f9832b08e170296d57c885bc242550a0bc92aa9f0191ba0908df5e21e",
+    "f966d133c31e6eca464c0176cc296b0bdf40122ca76f6c285c2751a47440d5a6",
+    "dae9f9adc29e34d39c11adb036379f896fb9aa869b0c769b17c767c9cd667a4b",
+    "2cc2c48be7ef42b060b1eb927d436bca57d1a937e3c1db59636883ce4e2062e5",
+    "2fad7656b07756b0c56116a550b14fa77209311916a189d6ebb5c8d4b28ca085",
+    "2b9cb003aae311fd7f9f6458d5d012ca75671d72eb354500d6da530ba4d49eba",
+    "cb3cce0019230403c8f7c24fe03ed39c9fa68563aa35cf69f041b92a1f4dce6d",
+    "cf1902c0c4ef993a7e61a86fe4382c664c55ef3719c9060c94a907e9ee43ce44",
+    "1ccc6d13ee97a221adeeddae86f022f73f67a161e25c2a5e48e68b510b39d658"
+  ],
+  "fmm": {
+    "setup_seconds": 37.23617440000089,
+    "field_cache_mib": 181.08816146850586,
+    "training_fmm_reference_sha256": "7b054f4705cb7ca865222d052e986f9bf76aae9b48b5d38bc52efb1aec41038a"
+  },
+  "training_seconds_total_pair": 50.12864069999705,
+  "training_final_receiver_loss": {
+    "learned": 0.09650948643684387,
+    "fmm": 0.057786863297224045
+  },
+  "training": {
+    "learned": {
+      "median_raw_l2": 0.1936026675355632,
+      "mean_raw_l2": 0.19116926420375424
+    },
+    "fmm": {
+      "median_raw_l2": 0.13460105478538245,
+      "mean_raw_l2": 0.13467784832550797
+    }
+  },
+  "development": [
+    {
+      "event": "a10_xm240.npz",
+      "sha256": "d5cc17d5f289b227abfc6743ba5a933ff6c3b4c717ba332f45d7f32445244d2c",
+      "anchor": "a10",
+      "axis": "x",
+      "sign": -1,
+      "models": {
+        "learned": {
+          "raw_l2": 0.3643236986284761,
+          "active_l2": 0.30328401904327584,
+          "change_relative_l2": 0.26427696587010263,
+          "change_cosine": 0.9658270888240454
+        },
+        "fmm": {
+          "raw_l2": 0.42290244867449384,
+          "active_l2": 0.3670637015215437,
+          "change_relative_l2": 0.3174313207532289,
+          "change_cosine": 0.9543088913488227
+        }
+      }
+    },
+    {
+      "event": "a10_xp240.npz",
+      "sha256": "c43653f192bfd5a340e3426b0e539a83162754f322b7d47d9ac2f65150ebe0d2",
+      "anchor": "a10",
+      "axis": "x",
+      "sign": 1,
+      "models": {
+        "learned": {
+          "raw_l2": 0.3512767324165841,
+          "active_l2": 0.29010390922460016,
+          "change_relative_l2": 0.27065954531231873,
+          "change_cosine": 0.9653222090446506
+        },
+        "fmm": {
+          "raw_l2": 0.3824450906845169,
+          "active_l2": 0.3196373100835797,
+          "change_relative_l2": 0.305971726696956,
+          "change_cosine": 0.9562574060004682
+        }
+      }
+    },
+    {
+      "event": "a10_ym240.npz",
+      "sha256": "2702516fa211f4cd9bbbe2793938635e6ed682d120991b69dd6484e5c1feca35",
+      "anchor": "a10",
+      "axis": "y",
+      "sign": -1,
+      "models": {
+        "learned": {
+          "raw_l2": 0.3705839987513247,
+          "active_l2": 0.3146252558838872,
+          "change_relative_l2": 0.28352591629988644,
+          "change_cosine": 0.9602951781370304
+        },
+        "fmm": {
+          "raw_l2": 0.36021144403928,
+          "active_l2": 0.3061748860351773,
+          "change_relative_l2": 0.28987021836303484,
+          "change_cosine": 0.9578361498192086
+        }
+      }
+    },
+    {
+      "event": "a10_yp240.npz",
+      "sha256": "91ed223f9832b08e170296d57c885bc242550a0bc92aa9f0191ba0908df5e21e",
+      "anchor": "a10",
+      "axis": "y",
+      "sign": 1,
+      "models": {
+        "learned": {
+          "raw_l2": 0.3759868273878575,
+          "active_l2": 0.31427852324000466,
+          "change_relative_l2": 0.28728495767372036,
+          "change_cosine": 0.961426877970011
+        },
+        "fmm": {
+          "raw_l2": 0.4096388568669414,
+          "active_l2": 0.34939981198299397,
+          "change_relative_l2": 0.31778202762711316,
+          "change_cosine": 0.9515452660677258
+        }
+      }
+    },
+    {
+      "event": "a10_zm240.npz",
+      "sha256": "f966d133c31e6eca464c0176cc296b0bdf40122ca76f6c285c2751a47440d5a6",
+      "anchor": "a10",
+      "axis": "z",
+      "sign": -1,
+      "models": {
+        "learned": {
+          "raw_l2": 1.176593659986352,
+          "active_l2": 1.1166447515111704,
+          "change_relative_l2": 0.9191192573243281,
+          "change_cosine": 0.4551608736365993
+        },
+        "fmm": {
+          "raw_l2": 1.2388596720922422,
+          "active_l2": 1.1758024258893995,
+          "change_relative_l2": 0.9496905243061221,
+          "change_cosine": 0.4897078577410081
+        }
+      }
+    },
+    {
+      "event": "a10_zp240.npz",
+      "sha256": "dae9f9adc29e34d39c11adb036379f896fb9aa869b0c769b17c767c9cd667a4b",
+      "anchor": "a10",
+      "axis": "z",
+      "sign": 1,
+      "models": {
+        "learned": {
+          "raw_l2": 0.8967634241292288,
+          "active_l2": 0.7533685885498972,
+          "change_relative_l2": 0.8398235377791791,
+          "change_cosine": 0.5901192028818733
+        },
+        "fmm": {
+          "raw_l2": 1.0762901779588727,
+          "active_l2": 0.92801616779996,
+          "change_relative_l2": 0.9517881448045821,
+          "change_cosine": 0.642146058751088
+        }
+      }
+    },
+    {
+      "event": "a14_xm240.npz",
+      "sha256": "2cc2c48be7ef42b060b1eb927d436bca57d1a937e3c1db59636883ce4e2062e5",
+      "anchor": "a14",
+      "axis": "x",
+      "sign": -1,
+      "models": {
+        "learned": {
+          "raw_l2": 0.2651869647865573,
+          "active_l2": 0.1933965348423161,
+          "change_relative_l2": 0.30663720652599424,
+          "change_cosine": 0.9567488220311242
+        },
+        "fmm": {
+          "raw_l2": 0.24831122773324643,
+          "active_l2": 0.17999389817009123,
+          "change_relative_l2": 0.34282417124994147,
+          "change_cosine": 0.9419021930950847
+        }
+      }
+    },
+    {
+      "event": "a14_xp240.npz",
+      "sha256": "2fad7656b07756b0c56116a550b14fa77209311916a189d6ebb5c8d4b28ca085",
+      "anchor": "a14",
+      "axis": "x",
+      "sign": 1,
+      "models": {
+        "learned": {
+          "raw_l2": 0.2420269507176499,
+          "active_l2": 0.1752816739653499,
+          "change_relative_l2": 0.29201013270116216,
+          "change_cosine": 0.9599680635748784
+        },
+        "fmm": {
+          "raw_l2": 0.22986509518210885,
+          "active_l2": 0.16706350802376685,
+          "change_relative_l2": 0.2896249025692759,
+          "change_cosine": 0.9581438751857454
+        }
+      }
+    },
+    {
+      "event": "a14_ym240.npz",
+      "sha256": "2b9cb003aae311fd7f9f6458d5d012ca75671d72eb354500d6da530ba4d49eba",
+      "anchor": "a14",
+      "axis": "y",
+      "sign": -1,
+      "models": {
+        "learned": {
+          "raw_l2": 0.3416508135889763,
+          "active_l2": 0.26758795320259865,
+          "change_relative_l2": 0.23696096747272835,
+          "change_cosine": 0.9757297310322879
+        },
+        "fmm": {
+          "raw_l2": 0.3391080183494599,
+          "active_l2": 0.2563398369707125,
+          "change_relative_l2": 0.23833247090091395,
+          "change_cosine": 0.9778657113974966
+        }
+      }
+    },
+    {
+      "event": "a14_yp240.npz",
+      "sha256": "cb3cce0019230403c8f7c24fe03ed39c9fa68563aa35cf69f041b92a1f4dce6d",
+      "anchor": "a14",
+      "axis": "y",
+      "sign": 1,
+      "models": {
+        "learned": {
+          "raw_l2": 0.3104745835014538,
+          "active_l2": 0.23120143504832505,
+          "change_relative_l2": 0.24650382689603512,
+          "change_cosine": 0.9692129312141746
+        },
+        "fmm": {
+          "raw_l2": 0.3556017193619412,
+          "active_l2": 0.29111592766551747,
+          "change_relative_l2": 0.2894068639698479,
+          "change_cosine": 0.9604961602238447
+        }
+      }
+    },
+    {
+      "event": "a14_zm240.npz",
+      "sha256": "cf1902c0c4ef993a7e61a86fe4382c664c55ef3719c9060c94a907e9ee43ce44",
+      "anchor": "a14",
+      "axis": "z",
+      "sign": -1,
+      "models": {
+        "learned": {
+          "raw_l2": 0.6385040846046546,
+          "active_l2": 0.5914040286470499,
+          "change_relative_l2": 0.6117328808811129,
+          "change_cosine": 0.8077663998249395
+        },
+        "fmm": {
+          "raw_l2": 0.675287146573765,
+          "active_l2": 0.6161334827465279,
+          "change_relative_l2": 0.6349045815715945,
+          "change_cosine": 0.79699087258038
+        }
+      }
+    },
+    {
+      "event": "a14_zp240.npz",
+      "sha256": "1ccc6d13ee97a221adeeddae86f022f73f67a161e25c2a5e48e68b510b39d658",
+      "anchor": "a14",
+      "axis": "z",
+      "sign": 1,
+      "models": {
+        "learned": {
+          "raw_l2": 0.7628005881147952,
+          "active_l2": 0.6805168349904333,
+          "change_relative_l2": 0.6040317781406487,
+          "change_cosine": 0.7970888881226134
+        },
+        "fmm": {
+          "raw_l2": 0.7380964924756541,
+          "active_l2": 0.647889788892006,
+          "change_relative_l2": 0.5743679610974156,
+          "change_cosine": 0.8186561982357532
+        }
+      }
+    }
+  ],
+  "model_paths": {
+    "learned": "E:\\source-conditioned-microseismic-pinn\\outputs\\fmm_receiver_head_paired_5000\\learned_receiver_head.pth",
+    "fmm": "E:\\source-conditioned-microseismic-pinn\\outputs\\fmm_receiver_head_paired_5000\\fmm_receiver_head.pth"
+  },
+  "limits": "FMM 80 m reciprocal fields snap receivers by up to 60 m; no PDE/IC/BC loss, no gradients through continuous FMM source coordinates, no new held-out test, no localization or geoscientific performance claim."
+}

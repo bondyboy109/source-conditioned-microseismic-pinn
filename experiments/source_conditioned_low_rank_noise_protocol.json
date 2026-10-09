@@ -1,0 +1,14 @@
+{
+  "purpose": "noise sensitivity of the frozen source-conditioned low-rank operator",
+  "model_checkpoint": "outputs/source_conditioned_low_rank_development/source_conditioned_low_rank.pth",
+  "localization_protocol": "experiments/source_conditioned_low_rank_localization_protocol.json",
+  "confirmation_directory": "data/observations/source_conditioned_ensemble_confirmation",
+  "event_count": 8,
+  "snr_db": [20.0, 10.0, 5.0],
+  "seeds": [20260930, 20260931, 20260932],
+  "noise_definition": "zero-mean Gaussian noise with standard deviation equal to clean record RMS divided by 10^(SNR_dB/20)",
+  "output_result": "experiments/source_conditioned_low_rank_noise_results.json",
+  "output_report": "experiments/source_conditioned_low_rank_noise_results.md",
+  "decision_rule": "No model, picker, weight, or search setting may be changed after this protocol is read.",
+  "limitations": "Synthetic confirmation records, one frozen operator and one receiver geometry; this is a noise-sensitivity test rather than field-data validation."
+}

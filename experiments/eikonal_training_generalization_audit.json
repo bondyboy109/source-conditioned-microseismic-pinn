@@ -1,0 +1,1254 @@
+{
+  "purpose": "post-hoc training-versus-spent-development comparison; no new independent validation",
+  "checkpoint_sha256": "ce744ba5e7249850fe99644449855c886fc255aebacfacab86f76d59990f2ec7",
+  "definitions": "Relative L2 = norm(predicted - FD) / norm(FD); active subset uses FD samples at least 5% of that event's global peak; source truth used only to measure forward prediction",
+  "groups": {
+    "training_29": {
+      "count": 29,
+      "mean_full_l2": 0.14761074883586395,
+      "median_full_l2": 0.1454938236186988,
+      "mean_active_l2": 0.08301665118652639,
+      "mean_peak_ratio": 0.9796241673100233,
+      "mean_zero_lag_correlation": 0.9890013740738809,
+      "mean_nearest_training_source_distance_m": 0.0,
+      "events": [
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_01_0to2s.npz",
+          "sha256": "cd8890778ae2b06b210ed17ceaef9de32914d05b93ab000a24203475b29d5beb",
+          "source_m_s_post_hoc": [
+            3500.0,
+            4000.0,
+            500.0,
+            0.11999999731779099
+          ],
+          "full_record_relative_l2": 0.15444947989389837,
+          "active_sample_relative_l2": 0.1081247086518815,
+          "active_sample_count": 3288,
+          "active_observed_energy_fraction": 0.9935313216144948,
+          "predicted_to_observed_peak_ratio": 0.9737726509089203,
+          "zero_lag_correlation": 0.9881517078249896,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_02_0to2s.npz",
+          "sha256": "ebc96342f62dd24d9b22b3566f29e5639dac703f18c3ef39205c0ef2591db7c1",
+          "source_m_s_post_hoc": [
+            11500.0,
+            4000.0,
+            900.0,
+            0.2800000011920929
+          ],
+          "full_record_relative_l2": 0.12622582701855323,
+          "active_sample_relative_l2": 0.07294535098007451,
+          "active_sample_count": 2271,
+          "active_observed_energy_fraction": 0.9901203548298613,
+          "predicted_to_observed_peak_ratio": 0.9571552823379654,
+          "zero_lag_correlation": 0.9921121026201679,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_03_0to2s.npz",
+          "sha256": "6da2ee0494f0a519ac1ab81d84bd4933ff9c80995c1f72f810d15916d7dfedea",
+          "source_m_s_post_hoc": [
+            4000.0,
+            12000.0,
+            1200.0,
+            0.36000001430511475
+          ],
+          "full_record_relative_l2": 0.16015006679251675,
+          "active_sample_relative_l2": 0.08341763763731469,
+          "active_sample_count": 2352,
+          "active_observed_energy_fraction": 0.9916605706077743,
+          "predicted_to_observed_peak_ratio": 0.9763819276545104,
+          "zero_lag_correlation": 0.9871172990212665,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_04_0to2s.npz",
+          "sha256": "51a67d4622385dd1c6e22a4ec663e7ebed5cb0f609d62168ec15bd551816a450",
+          "source_m_s_post_hoc": [
+            12000.0,
+            12000.0,
+            400.0,
+            0.18000000715255737
+          ],
+          "full_record_relative_l2": 0.14325247935841814,
+          "active_sample_relative_l2": 0.10653216551347425,
+          "active_sample_count": 2887,
+          "active_observed_energy_fraction": 0.9948833701407681,
+          "predicted_to_observed_peak_ratio": 0.935335807896293,
+          "zero_lag_correlation": 0.9905537393757958,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_05_0to2s.npz",
+          "sha256": "d3722f475dae33248f9a551fa47db1705421f4aa735011e100a0194fc17ddecb",
+          "source_m_s_post_hoc": [
+            8000.0,
+            3000.0,
+            1300.0,
+            0.41999998688697815
+          ],
+          "full_record_relative_l2": 0.17433312676527327,
+          "active_sample_relative_l2": 0.0648270033578698,
+          "active_sample_count": 1780,
+          "active_observed_energy_fraction": 0.9876075593556479,
+          "predicted_to_observed_peak_ratio": 1.0036793165544007,
+          "zero_lag_correlation": 0.9850898890075752,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_06_0to2s.npz",
+          "sha256": "11060fdb6e7805fdd29a579fbbfc71894df9c20805255fd7dcc5230cf6c81ea7",
+          "source_m_s_post_hoc": [
+            3000.0,
+            8000.0,
+            800.0,
+            0.3100000023841858
+          ],
+          "full_record_relative_l2": 0.16492905824518564,
+          "active_sample_relative_l2": 0.07296249242408893,
+          "active_sample_count": 1783,
+          "active_observed_energy_fraction": 0.9799062844319206,
+          "predicted_to_observed_peak_ratio": 0.9776117540019352,
+          "zero_lag_correlation": 0.9863172847591825,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_07_0to2s.npz",
+          "sha256": "c97478a6b6206237317579b7c1442d6fc4457a7591539021895b19432448c874",
+          "source_m_s_post_hoc": [
+            9000.0,
+            12500.0,
+            1100.0,
+            0.09000000357627869
+          ],
+          "full_record_relative_l2": 0.17737751411184322,
+          "active_sample_relative_l2": 0.1178933783400884,
+          "active_sample_count": 3251,
+          "active_observed_energy_fraction": 0.9939209305622547,
+          "predicted_to_observed_peak_ratio": 1.0212748805483398,
+          "zero_lag_correlation": 0.9841488774968847,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_08_0to2s.npz",
+          "sha256": "89120e0d29458b2a1e515a4c69e7ff4674af76b9cd7d0dafbf3c41ef41fb7030",
+          "source_m_s_post_hoc": [
+            13000.0,
+            8000.0,
+            600.0,
+            0.38999998569488525
+          ],
+          "full_record_relative_l2": 0.1186139142335564,
+          "active_sample_relative_l2": 0.04598412210641856,
+          "active_sample_count": 1525,
+          "active_observed_energy_fraction": 0.9915972663121947,
+          "predicted_to_observed_peak_ratio": 0.9809252801709913,
+          "zero_lag_correlation": 0.9929438784112532,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_09_0to2s.npz",
+          "sha256": "8597e4f364af973e6d2ac035bd131593bab97ed0529c2b0836cd8e2e0219ed60",
+          "source_m_s_post_hoc": [
+            6500.0,
+            3500.0,
+            700.0,
+            0.20000000298023224
+          ],
+          "full_record_relative_l2": 0.13097985697795242,
+          "active_sample_relative_l2": 0.08633370255212397,
+          "active_sample_count": 3167,
+          "active_observed_energy_fraction": 0.9932509928113653,
+          "predicted_to_observed_peak_ratio": 0.9920799971435106,
+          "zero_lag_correlation": 0.9913888105785148,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_10_0to2s.npz",
+          "sha256": "fca6dd43807f42e321e8a34013c30f5130594f5509278742f46fdc8c9271eb14",
+          "source_m_s_post_hoc": [
+            10000.0,
+            6500.0,
+            1000.0,
+            0.25
+          ],
+          "full_record_relative_l2": 0.1454938236186988,
+          "active_sample_relative_l2": 0.0880317424986887,
+          "active_sample_count": 2939,
+          "active_observed_energy_fraction": 0.9940653197696255,
+          "predicted_to_observed_peak_ratio": 0.9826674558453566,
+          "zero_lag_correlation": 0.9894655099865084,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_11_0to2s.npz",
+          "sha256": "169b1b62e39d10bf8a8b1c2010e8f88304b94cdc97e937093575f7fc001ce59b",
+          "source_m_s_post_hoc": [
+            6500.0,
+            9500.0,
+            900.0,
+            0.27000001072883606
+          ],
+          "full_record_relative_l2": 0.1624700408197838,
+          "active_sample_relative_l2": 0.08677650562805217,
+          "active_sample_count": 3189,
+          "active_observed_energy_fraction": 0.9934424911294369,
+          "predicted_to_observed_peak_ratio": 0.9676559134141025,
+          "zero_lag_correlation": 0.9867305831994443,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_12_0to2s.npz",
+          "sha256": "197cb84bd453b8ef63b58e7e05e78fadb905990dc6327492cba2d151ea957d05",
+          "source_m_s_post_hoc": [
+            10000.0,
+            10500.0,
+            800.0,
+            0.2199999988079071
+          ],
+          "full_record_relative_l2": 0.1473664340466625,
+          "active_sample_relative_l2": 0.07086424534215922,
+          "active_sample_count": 2004,
+          "active_observed_energy_fraction": 0.9791501593161994,
+          "predicted_to_observed_peak_ratio": 0.9933206675822168,
+          "zero_lag_correlation": 0.9890898256103221,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_13_0to2s.npz",
+          "sha256": "28a314abada948ac442acbab117e95432b2fe841e391bf7526fc3c602f15de50",
+          "source_m_s_post_hoc": [
+            5000.0,
+            6000.0,
+            400.0,
+            0.15000000596046448
+          ],
+          "full_record_relative_l2": 0.17694021665974216,
+          "active_sample_relative_l2": 0.07360180228497057,
+          "active_sample_count": 2250,
+          "active_observed_energy_fraction": 0.9687321987814634,
+          "predicted_to_observed_peak_ratio": 0.9875174220534751,
+          "zero_lag_correlation": 0.9842256585799151,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_14_0to2s.npz",
+          "sha256": "524568b6921dee91952c558ac696b87c6c679ef59a9606a9d9f894c5cb967b6f",
+          "source_m_s_post_hoc": [
+            11000.0,
+            10000.0,
+            1200.0,
+            0.3400000035762787
+          ],
+          "full_record_relative_l2": 0.14058926516363893,
+          "active_sample_relative_l2": 0.053262180845478686,
+          "active_sample_count": 1809,
+          "active_observed_energy_fraction": 0.9815238185714951,
+          "predicted_to_observed_peak_ratio": 0.9859518896889239,
+          "zero_lag_correlation": 0.9900903590727627,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_15_0to2s.npz",
+          "sha256": "a898a2eaff7bebbb22f670cd4ebde4fd35ceeb461a4b3314847f1ebea54acc74",
+          "source_m_s_post_hoc": [
+            6000.0,
+            11000.0,
+            1400.0,
+            0.30000001192092896
+          ],
+          "full_record_relative_l2": 0.18376271932578045,
+          "active_sample_relative_l2": 0.07977111646058245,
+          "active_sample_count": 2371,
+          "active_observed_energy_fraction": 0.9833956658807549,
+          "predicted_to_observed_peak_ratio": 0.9863509664074653,
+          "zero_lag_correlation": 0.9829935922383826,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_16_0to2s.npz",
+          "sha256": "b1b60f25da2d6555876bf4b94f7e7bc7e7805fc79047205ee73708dcb1ca5494",
+          "source_m_s_post_hoc": [
+            12500.0,
+            6000.0,
+            500.0,
+            0.3499999940395355
+          ],
+          "full_record_relative_l2": 0.1439740613268224,
+          "active_sample_relative_l2": 0.07330204702941003,
+          "active_sample_count": 2428,
+          "active_observed_energy_fraction": 0.9968996498830816,
+          "predicted_to_observed_peak_ratio": 0.9927750459255704,
+          "zero_lag_correlation": 0.9895829757071792,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\local_density\\train_01_x3300.npz",
+          "sha256": "1a1f219b1d3618671facd96dd9c4c6bb0b293a31ff914e6c23e828ade2e90f26",
+          "source_m_s_post_hoc": [
+            3300.0,
+            4000.0,
+            500.0,
+            0.11999999731779099
+          ],
+          "full_record_relative_l2": 0.1655551371257273,
+          "active_sample_relative_l2": 0.13158141918507138,
+          "active_sample_count": 3450,
+          "active_observed_energy_fraction": 0.996432763674576,
+          "predicted_to_observed_peak_ratio": 0.9773373417207093,
+          "zero_lag_correlation": 0.9865702554387323,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\local_density\\train_01_x3700.npz",
+          "sha256": "1fc5363cd16d7661b17f9b5d62731ca27efcfeadbfa2fdf2476d3cc2068aafa9",
+          "source_m_s_post_hoc": [
+            3700.0,
+            4000.0,
+            500.0,
+            0.11999999731779099
+          ],
+          "full_record_relative_l2": 0.14933370738065946,
+          "active_sample_relative_l2": 0.08994689167392617,
+          "active_sample_count": 2903,
+          "active_observed_energy_fraction": 0.9892018611891906,
+          "predicted_to_observed_peak_ratio": 0.9985348257695902,
+          "zero_lag_correlation": 0.988818323907366,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\local_density\\train_09_x6300.npz",
+          "sha256": "a5d59c8f41b6944612d8a1015234a0e709eafe43a26b0b7df694e1d613f732a9",
+          "source_m_s_post_hoc": [
+            6300.0,
+            3500.0,
+            700.0,
+            0.20000000298023224
+          ],
+          "full_record_relative_l2": 0.13606199011221007,
+          "active_sample_relative_l2": 0.08509871117263659,
+          "active_sample_count": 3127,
+          "active_observed_energy_fraction": 0.9939770419364192,
+          "predicted_to_observed_peak_ratio": 1.0032868469266198,
+          "zero_lag_correlation": 0.9907031210900394,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\local_density\\train_09_x6700.npz",
+          "sha256": "8f7618c5bf78d0c07a73668e1a2051bed50916f103f03d590ad6b882520ba99f",
+          "source_m_s_post_hoc": [
+            6700.0,
+            3500.0,
+            700.0,
+            0.20000000298023224
+          ],
+          "full_record_relative_l2": 0.13899470949798035,
+          "active_sample_relative_l2": 0.08898236603152852,
+          "active_sample_count": 3159,
+          "active_observed_energy_fraction": 0.9916306664986619,
+          "predicted_to_observed_peak_ratio": 0.9567297437879263,
+          "zero_lag_correlation": 0.9902951945670257,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\depth_coverage\\train_01_z340.npz",
+          "sha256": "30115df7d994081e62c9d96540fb4af7d688817b6a19ce9f8eda33c833f5daaf",
+          "source_m_s_post_hoc": [
+            3500.0,
+            4000.0,
+            340.0,
+            0.11999999731779099
+          ],
+          "full_record_relative_l2": 0.15762005087519287,
+          "active_sample_relative_l2": 0.10811441371356437,
+          "active_sample_count": 2531,
+          "active_observed_energy_fraction": 0.9849527922688175,
+          "predicted_to_observed_peak_ratio": 0.980340686321439,
+          "zero_lag_correlation": 0.9881590638226253,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\depth_coverage\\train_01_z660.npz",
+          "sha256": "233d79ccff8c22d3125555a7b36bfd22676ac244f6905738c1936fac9980ff80",
+          "source_m_s_post_hoc": [
+            3500.0,
+            4000.0,
+            660.0,
+            0.11999999731779099
+          ],
+          "full_record_relative_l2": 0.15854966182059158,
+          "active_sample_relative_l2": 0.1042136830614442,
+          "active_sample_count": 3383,
+          "active_observed_energy_fraction": 0.9960091065741628,
+          "predicted_to_observed_peak_ratio": 0.944581774679947,
+          "zero_lag_correlation": 0.987429047625879,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\depth_coverage\\train_09_z540.npz",
+          "sha256": "88b9b42267fc1906e0f5bdfde8b70ec7ebc84796b39437d96dad5a10c2e5e210",
+          "source_m_s_post_hoc": [
+            6500.0,
+            3500.0,
+            540.0,
+            0.20000000298023224
+          ],
+          "full_record_relative_l2": 0.13155814966003304,
+          "active_sample_relative_l2": 0.08352449913758386,
+          "active_sample_count": 2982,
+          "active_observed_energy_fraction": 0.9903512738104525,
+          "predicted_to_observed_peak_ratio": 0.95734158336658,
+          "zero_lag_correlation": 0.9914141169319803,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\depth_coverage\\train_09_z860.npz",
+          "sha256": "6abca19e7c69005c9714cb0d1af15eaa5431f0e838b8f3cc2ab195f0914c2c3d",
+          "source_m_s_post_hoc": [
+            6500.0,
+            3500.0,
+            860.0,
+            0.20000000298023224
+          ],
+          "full_record_relative_l2": 0.11621666585660474,
+          "active_sample_relative_l2": 0.070037412515023,
+          "active_sample_count": 3531,
+          "active_observed_energy_fraction": 0.9951921308109439,
+          "predicted_to_observed_peak_ratio": 0.985620013187983,
+          "zero_lag_correlation": 0.9932373688917884,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\depth_gap_900\\train_09_z900.npz",
+          "sha256": "f007bc660972fd2f4196a33e9284a93c887a0db8caf5bac5e5a63e32689e6383",
+          "source_m_s_post_hoc": [
+            6500.0,
+            3500.0,
+            900.0,
+            0.20000000298023224
+          ],
+          "full_record_relative_l2": 0.12700296354704932,
+          "active_sample_relative_l2": 0.07694640713436386,
+          "active_sample_count": 3559,
+          "active_observed_energy_fraction": 0.9953062915728069,
+          "predicted_to_observed_peak_ratio": 0.9770412606532698,
+          "zero_lag_correlation": 0.9919248652088096,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\cross_region_coverage\\train_r04.npz",
+          "sha256": "089b928894ff76123dd3e750c728d7f82463bac51ea77630f236c352097563b7",
+          "source_m_s_post_hoc": [
+            11600.0,
+            12200.0,
+            600.0,
+            0.20000000298023224
+          ],
+          "full_record_relative_l2": 0.14354220198690923,
+          "active_sample_relative_l2": 0.08983259477244139,
+          "active_sample_count": 2632,
+          "active_observed_energy_fraction": 0.9941619533890441,
+          "predicted_to_observed_peak_ratio": 0.9733982111700901,
+          "zero_lag_correlation": 0.9898032880538141,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\cross_region_coverage\\train_r07.npz",
+          "sha256": "496fe0f01a863e0faa1210781ec810c275c3a620cef96b63551837c74af0e6b8",
+          "source_m_s_post_hoc": [
+            9100.0,
+            12000.0,
+            950.0,
+            0.11999999731779099
+          ],
+          "full_record_relative_l2": 0.1486172936227377,
+          "active_sample_relative_l2": 0.09187468566271412,
+          "active_sample_count": 3133,
+          "active_observed_energy_fraction": 0.9929874762046437,
+          "predicted_to_observed_peak_ratio": 0.975821877491859,
+          "zero_lag_correlation": 0.9891201608557711,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\cross_region_coverage\\train_r08.npz",
+          "sha256": "d68ae6f3a1f3edd70c3d8526f46aa34ad568e8cbc91499c4c31f6d2596b5b2a1",
+          "source_m_s_post_hoc": [
+            12600.0,
+            7800.0,
+            780.0,
+            0.3499999940395355
+          ],
+          "full_record_relative_l2": 0.12188522016639215,
+          "active_sample_relative_l2": 0.05079956820210495,
+          "active_sample_count": 1753,
+          "active_observed_energy_fraction": 0.990155444056652,
+          "predicted_to_observed_peak_ratio": 0.9887681791574224,
+          "zero_lag_correlation": 0.992574954273437,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\cross_region_coverage\\train_center.npz",
+          "sha256": "b5c04685376a7e46c7a91230935710f77bf52997bca50d088bfd8ffea46ae17a",
+          "source_m_s_post_hoc": [
+            7900.0,
+            8400.0,
+            900.0,
+            0.25
+          ],
+          "full_record_relative_l2": 0.13486608022963992,
+          "active_sample_relative_l2": 0.051900030494186476,
+          "active_sample_count": 1649,
+          "active_observed_energy_fraction": 0.9704525694274792,
+          "predicted_to_observed_peak_ratio": 0.9758422496232643,
+          "zero_lag_correlation": 0.9909879939851368,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        }
+      ]
+    },
+    "near_source_development_4": {
+      "count": 4,
+      "mean_full_l2": 0.5565945227318467,
+      "median_full_l2": 0.5488105878563121,
+      "mean_active_l2": 0.49930029714903496,
+      "mean_peak_ratio": 1.1732013354612179,
+      "mean_zero_lag_correlation": 0.8591169132279459,
+      "mean_nearest_training_source_distance_m": 212.71554033354474,
+      "events": [
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\cross_region_coverage\\dev_r04.npz",
+          "sha256": "fa0b0fe354776ec0e28820e4ed5a69a34312cddd3c5b529b05c443d9d203c488",
+          "source_m_s_post_hoc": [
+            11750.0,
+            12320.0,
+            540.0,
+            0.20999999344348907
+          ],
+          "full_record_relative_l2": 0.6137676056830137,
+          "active_sample_relative_l2": 0.5583715789663133,
+          "active_sample_count": 2750,
+          "active_observed_energy_fraction": 0.9962202515695116,
+          "predicted_to_observed_peak_ratio": 1.3327809793498102,
+          "zero_lag_correlation": 0.8423248477111924,
+          "nearest_training_source_distance_m": 201.24611797498108,
+          "nearest_spatial_training_origin_time_difference_s": 0.009999990463256836
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\cross_region_coverage\\dev_r07.npz",
+          "sha256": "7c0639c20b7d8e5eb02f4580c25b36e2ab7173b2f9e22e84a78ab45d0788486f",
+          "source_m_s_post_hoc": [
+            9250.0,
+            12180.0,
+            1010.0,
+            0.14000000059604645
+          ],
+          "full_record_relative_l2": 0.4838535700296104,
+          "active_sample_relative_l2": 0.43910273848825776,
+          "active_sample_count": 3306,
+          "active_observed_energy_fraction": 0.9939315898248854,
+          "predicted_to_observed_peak_ratio": 1.1065868014349312,
+          "zero_lag_correlation": 0.8889237217778237,
+          "nearest_training_source_distance_m": 241.8677324489565,
+          "nearest_spatial_training_origin_time_difference_s": 0.020000003278255463
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\cross_region_coverage\\dev_r08.npz",
+          "sha256": "886d85dd148f2784c7d96c4ddbd99044f469942656d2eae348055d254b6c3ebc",
+          "source_m_s_post_hoc": [
+            12720.0,
+            7900.0,
+            720.0,
+            0.3799999952316284
+          ],
+          "full_record_relative_l2": 0.7016446877073811,
+          "active_sample_relative_l2": 0.6380555271535618,
+          "active_sample_count": 1926,
+          "active_observed_energy_fraction": 0.9919686393890823,
+          "predicted_to_observed_peak_ratio": 1.3392188292600142,
+          "zero_lag_correlation": 0.8008727785697474,
+          "nearest_training_source_distance_m": 167.33200530681512,
+          "nearest_spatial_training_origin_time_difference_s": 0.030000001192092896
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\cross_region_coverage\\dev_center.npz",
+          "sha256": "1153cc5f39dbd4721655829794a074b763307287ea10f0d631563fd6ee48727c",
+          "source_m_s_post_hoc": [
+            8050.0,
+            8570.0,
+            820.0,
+            0.27000001072883606
+          ],
+          "full_record_relative_l2": 0.42711222750738165,
+          "active_sample_relative_l2": 0.3616713439880071,
+          "active_sample_count": 1518,
+          "active_observed_energy_fraction": 0.9734085653417291,
+          "predicted_to_observed_peak_ratio": 0.9142187318001154,
+          "zero_lag_correlation": 0.90434630485302,
+          "nearest_training_source_distance_m": 240.41630560342617,
+          "nearest_spatial_training_origin_time_difference_s": 0.02000001072883606
+        }
+      ]
+    },
+    "same_location_time_shift_3": {
+      "count": 3,
+      "mean_full_l2": 0.15549986346399872,
+      "median_full_l2": 0.15555367493946176,
+      "mean_active_l2": 0.11221336398683805,
+      "mean_peak_ratio": 0.9881701200523141,
+      "mean_zero_lag_correlation": 0.9878256937505286,
+      "mean_nearest_training_source_distance_m": 0.0,
+      "events": [
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\development_time_shift\\train01_t016_0to2s.npz",
+          "sha256": "5543126c6b59803329f0084818fde650f7cf50071e622d658517b59591b49976",
+          "source_m_s_post_hoc": [
+            3500.0,
+            4000.0,
+            500.0,
+            0.1599999964237213
+          ],
+          "full_record_relative_l2": 0.16095233123343877,
+          "active_sample_relative_l2": 0.1155023493678909,
+          "active_sample_count": 3185,
+          "active_observed_energy_fraction": 0.9935315924450681,
+          "predicted_to_observed_peak_ratio": 0.9889275434892968,
+          "zero_lag_correlation": 0.9869621900093124,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.03999999910593033
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\development_time_shift\\train01_t020_0to2s.npz",
+          "sha256": "d79b677b78a068ac5607865f53d7d954ba9205734a586a62263d04bdc5de9bfd",
+          "source_m_s_post_hoc": [
+            3500.0,
+            4000.0,
+            500.0,
+            0.20000000298023224
+          ],
+          "full_record_relative_l2": 0.15555367493946176,
+          "active_sample_relative_l2": 0.11330165708764739,
+          "active_sample_count": 3062,
+          "active_observed_energy_fraction": 0.9937152675269443,
+          "predicted_to_observed_peak_ratio": 0.9877824225953645,
+          "zero_lag_correlation": 0.9878277042000996,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.08000000566244125
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\development_time_shift\\train01_t028_0to2s.npz",
+          "sha256": "9dc931a1488fa02cb0a8450007b2e0e8adf966d0639ebb19646e203a9c452f1a",
+          "source_m_s_post_hoc": [
+            3500.0,
+            4000.0,
+            500.0,
+            0.2800000011920929
+          ],
+          "full_record_relative_l2": 0.14999358421909567,
+          "active_sample_relative_l2": 0.10783608550497586,
+          "active_sample_count": 2827,
+          "active_observed_energy_fraction": 0.9943954446219689,
+          "predicted_to_observed_peak_ratio": 0.987800394072281,
+          "zero_lag_correlation": 0.9886871870421743,
+          "nearest_training_source_distance_m": 0.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.1600000038743019
+        }
+      ]
+    },
+    "spatial_shift_x_3": {
+      "count": 3,
+      "mean_full_l2": 0.15648753573660648,
+      "median_full_l2": 0.156603486934121,
+      "mean_active_l2": 0.11136808164034756,
+      "mean_peak_ratio": 0.9721518900675111,
+      "mean_zero_lag_correlation": 0.9877979978198587,
+      "mean_nearest_training_source_distance_m": 53.333333333333336,
+      "events": [
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\development_spatial_radius\\train01_dx0040_0to2s.npz",
+          "sha256": "efb818a6c104f7068e2e8c36f741d35d743461986a97ea5884ef4b28ade84c0d",
+          "source_m_s_post_hoc": [
+            3540.0,
+            4000.0,
+            500.0,
+            0.11999999731779099
+          ],
+          "full_record_relative_l2": 0.156603486934121,
+          "active_sample_relative_l2": 0.1149493657586875,
+          "active_sample_count": 3239,
+          "active_observed_energy_fraction": 0.992293177981293,
+          "predicted_to_observed_peak_ratio": 0.9626288752385537,
+          "zero_lag_correlation": 0.9878843244532517,
+          "nearest_training_source_distance_m": 40.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\development_spatial_radius\\train01_dx0080_0to2s.npz",
+          "sha256": "7e70126ce7d51404b6eb95d09d13a9f29ec71e9acefde43621667907897c5051",
+          "source_m_s_post_hoc": [
+            3580.0,
+            4000.0,
+            500.0,
+            0.11999999731779099
+          ],
+          "full_record_relative_l2": 0.15986475373422906,
+          "active_sample_relative_l2": 0.11936538983939357,
+          "active_sample_count": 3170,
+          "active_observed_energy_fraction": 0.9912969191355293,
+          "predicted_to_observed_peak_ratio": 0.96424246616141,
+          "zero_lag_correlation": 0.9872592535087359,
+          "nearest_training_source_distance_m": 80.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\development_spatial_radius\\train01_dx0160_0to2s.npz",
+          "sha256": "34afd40482eaf3a5aca8a5146dc3ba028fe012fbde9493659a257746f27009c0",
+          "source_m_s_post_hoc": [
+            3660.0,
+            4000.0,
+            500.0,
+            0.11999999731779099
+          ],
+          "full_record_relative_l2": 0.15299436654146945,
+          "active_sample_relative_l2": 0.09978948932296162,
+          "active_sample_count": 2983,
+          "active_observed_energy_fraction": 0.9895927117524632,
+          "predicted_to_observed_peak_ratio": 0.98958432880257,
+          "zero_lag_correlation": 0.9882504154975881,
+          "nearest_training_source_distance_m": 40.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        }
+      ]
+    },
+    "orthogonal_source_development_10": {
+      "count": 10,
+      "mean_full_l2": 0.2739351394476381,
+      "median_full_l2": 0.25477078135845477,
+      "mean_active_l2": 0.22968334048695152,
+      "mean_peak_ratio": 0.996966293534568,
+      "mean_zero_lag_correlation": 0.9582227054027058,
+      "mean_nearest_training_source_distance_m": 120.0,
+      "events": [
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a01_xp400.npz",
+          "sha256": "3ce728d5c2d5790b731a10d674471d23e3cb1aec9e5184308a07d4f31c6e4d1e",
+          "source_m_s_post_hoc": [
+            3900.0,
+            4000.0,
+            500.0,
+            0.11999999731779099
+          ],
+          "full_record_relative_l2": 0.4317794932846865,
+          "active_sample_relative_l2": 0.36927267181861684,
+          "active_sample_count": 2785,
+          "active_observed_energy_fraction": 0.9893197595165356,
+          "predicted_to_observed_peak_ratio": 1.0351981769425467,
+          "zero_lag_correlation": 0.9029154040292575,
+          "nearest_training_source_distance_m": 200.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a01_ym120.npz",
+          "sha256": "8e53c3966fba69e8431382519d5c7f46fa1580d6190d0fed61892c05a5aecb4f",
+          "source_m_s_post_hoc": [
+            3500.0,
+            3880.0,
+            500.0,
+            0.11999999731779099
+          ],
+          "full_record_relative_l2": 0.3838945353268473,
+          "active_sample_relative_l2": 0.3345339539973299,
+          "active_sample_count": 3242,
+          "active_observed_energy_fraction": 0.9938673510261602,
+          "predicted_to_observed_peak_ratio": 1.0348517557396695,
+          "zero_lag_correlation": 0.9272658203683612,
+          "nearest_training_source_distance_m": 120.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a01_yp120.npz",
+          "sha256": "18856dcc0b7ecd0513af04d3e37f46537eb5c5f5f93f6616eff4f0165bf9e5c2",
+          "source_m_s_post_hoc": [
+            3500.0,
+            4120.0,
+            500.0,
+            0.11999999731779099
+          ],
+          "full_record_relative_l2": 0.3750015437010648,
+          "active_sample_relative_l2": 0.32280055056260953,
+          "active_sample_count": 3324,
+          "active_observed_energy_fraction": 0.993296751768551,
+          "predicted_to_observed_peak_ratio": 0.982999082283355,
+          "zero_lag_correlation": 0.9287433715408975,
+          "nearest_training_source_distance_m": 120.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a01_zm080.npz",
+          "sha256": "de38fa1cc82089b796dc0d07b573f478b53c062b0cf40874c59d23ab653cc97f",
+          "source_m_s_post_hoc": [
+            3500.0,
+            4000.0,
+            420.0,
+            0.11999999731779099
+          ],
+          "full_record_relative_l2": 0.20441060696582722,
+          "active_sample_relative_l2": 0.16997123484857235,
+          "active_sample_count": 2847,
+          "active_observed_energy_fraction": 0.9878187577509175,
+          "predicted_to_observed_peak_ratio": 0.9949423606277152,
+          "zero_lag_correlation": 0.9793614746905202,
+          "nearest_training_source_distance_m": 80.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a01_zp080.npz",
+          "sha256": "c4c10f25c0b821aabc779748dd0c328b5137966503aca22db6f716d4f0842bd2",
+          "source_m_s_post_hoc": [
+            3500.0,
+            4000.0,
+            580.0,
+            0.11999999731779099
+          ],
+          "full_record_relative_l2": 0.21971027415640143,
+          "active_sample_relative_l2": 0.18739112321406454,
+          "active_sample_count": 3488,
+          "active_observed_energy_fraction": 0.9963998287752969,
+          "predicted_to_observed_peak_ratio": 1.0190205050574555,
+          "zero_lag_correlation": 0.9755893581505019,
+          "nearest_training_source_distance_m": 80.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a09_xp400.npz",
+          "sha256": "468121f669f09e2d690979e1b7e83a5df9f01aea03ccfca7e0ac82d48d382223",
+          "source_m_s_post_hoc": [
+            6900.0,
+            3500.0,
+            700.0,
+            0.20000000298023224
+          ],
+          "full_record_relative_l2": 0.293514460176881,
+          "active_sample_relative_l2": 0.24114383061072545,
+          "active_sample_count": 3179,
+          "active_observed_energy_fraction": 0.9914153853614195,
+          "predicted_to_observed_peak_ratio": 0.9040353269839695,
+          "zero_lag_correlation": 0.956189844603779,
+          "nearest_training_source_distance_m": 200.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a09_ym120.npz",
+          "sha256": "a31540617d3697e6ad22d9cb76b823448028e17876f3b9473279fb039aff56ed",
+          "source_m_s_post_hoc": [
+            6500.0,
+            3380.0,
+            700.0,
+            0.20000000298023224
+          ],
+          "full_record_relative_l2": 0.2558693046824925,
+          "active_sample_relative_l2": 0.21181446335495188,
+          "active_sample_count": 3284,
+          "active_observed_energy_fraction": 0.9943384597426322,
+          "predicted_to_observed_peak_ratio": 1.0392295517585721,
+          "zero_lag_correlation": 0.9670274185897805,
+          "nearest_training_source_distance_m": 120.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a09_yp120.npz",
+          "sha256": "96041a52694bdb48bdb3e14034ad60a055b5c892f672b53958ed4ed498d1e657",
+          "source_m_s_post_hoc": [
+            6500.0,
+            3620.0,
+            700.0,
+            0.20000000298023224
+          ],
+          "full_record_relative_l2": 0.253672258034417,
+          "active_sample_relative_l2": 0.21613974470107014,
+          "active_sample_count": 3230,
+          "active_observed_energy_fraction": 0.9930484343423719,
+          "predicted_to_observed_peak_ratio": 0.9332935941962714,
+          "zero_lag_correlation": 0.9673122395267565,
+          "nearest_training_source_distance_m": 120.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a09_zm080.npz",
+          "sha256": "408997ca51d78f0258fb3e5fb585d0bc84d898e118321f4b4ebfc02e5b2752ab",
+          "source_m_s_post_hoc": [
+            6500.0,
+            3500.0,
+            620.0,
+            0.20000000298023224
+          ],
+          "full_record_relative_l2": 0.18137247032199358,
+          "active_sample_relative_l2": 0.13513170000243266,
+          "active_sample_count": 2768,
+          "active_observed_energy_fraction": 0.9901895560391264,
+          "predicted_to_observed_peak_ratio": 1.0918704433836472,
+          "zero_lag_correlation": 0.9864862624151318,
+          "nearest_training_source_distance_m": 80.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a09_zp080.npz",
+          "sha256": "d23cc17c5078f1e1cd0fcbb72a489634d886103cba54081509a477710bf42707",
+          "source_m_s_post_hoc": [
+            6500.0,
+            3500.0,
+            780.0,
+            0.20000000298023224
+          ],
+          "full_record_relative_l2": 0.14012644782576977,
+          "active_sample_relative_l2": 0.10863413175914192,
+          "active_sample_count": 3486,
+          "active_observed_energy_fraction": 0.9953642399372508,
+          "predicted_to_observed_peak_ratio": 0.9342221383724778,
+          "zero_lag_correlation": 0.991335860112071,
+          "nearest_training_source_distance_m": 80.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.0
+        }
+      ]
+    },
+    "previously_inspected_development_8": {
+      "count": 8,
+      "mean_full_l2": 0.808309403975858,
+      "median_full_l2": 0.7822673743244163,
+      "mean_active_l2": 0.7455369039248103,
+      "mean_peak_ratio": 0.7331080169429547,
+      "mean_zero_lag_correlation": 0.5698100307671548,
+      "mean_nearest_training_source_distance_m": 673.5285513143938,
+      "events": [
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\fmm_seeded_independent\\test_r04.npz",
+          "sha256": "230c50ea89326bcb1dfc71edbdc1f22c6ba3114a4adca20100cb9d65b9ac4d53",
+          "source_m_s_post_hoc": [
+            11350.0,
+            11900.0,
+            720.0,
+            0.2199999988079071
+          ],
+          "full_record_relative_l2": 0.8735221724524095,
+          "active_sample_relative_l2": 0.799049240610478,
+          "active_sample_count": 1990,
+          "active_observed_energy_fraction": 0.9809662605080255,
+          "predicted_to_observed_peak_ratio": 0.5295213363913986,
+          "zero_lag_correlation": 0.53121443436203,
+          "nearest_training_source_distance_m": 408.53396431630995,
+          "nearest_spatial_training_origin_time_difference_s": 0.019999995827674866
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\fmm_seeded_independent\\test_r07.npz",
+          "sha256": "4441b4ca22bd8f537634ace4ce601e39dda44628cc6c7db91a1527afdb5a8c30",
+          "source_m_s_post_hoc": [
+            8900.0,
+            11800.0,
+            1080.0,
+            0.18000000715255737
+          ],
+          "full_record_relative_l2": 0.650674178594609,
+          "active_sample_relative_l2": 0.591050054470683,
+          "active_sample_count": 2597,
+          "active_observed_energy_fraction": 0.9873056962956724,
+          "predicted_to_observed_peak_ratio": 0.8723594010278942,
+          "zero_lag_correlation": 0.7788701127965845,
+          "nearest_training_source_distance_m": 311.2876483254676,
+          "nearest_spatial_training_origin_time_difference_s": 0.06000000983476639
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\fmm_seeded_independent\\test_r08.npz",
+          "sha256": "f6c627cbc773e3761fcd04ed772a678d3fc596bd0b43706347c93758639e1c60",
+          "source_m_s_post_hoc": [
+            12400.0,
+            8150.0,
+            640.0,
+            0.33000001311302185
+          ],
+          "full_record_relative_l2": 1.0122105349733541,
+          "active_sample_relative_l2": 0.9656074191353485,
+          "active_sample_count": 2181,
+          "active_observed_energy_fraction": 0.9963208539966901,
+          "predicted_to_observed_peak_ratio": 1.7801971525219615,
+          "zero_lag_correlation": 0.5152837982250663,
+          "nearest_training_source_distance_m": 426.7317658670374,
+          "nearest_spatial_training_origin_time_difference_s": 0.019999980926513672
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\fmm_seeded_independent\\test_center.npz",
+          "sha256": "571586174791d8c64b332a1d383422197f7231999e97da76708315ff00d1cfee",
+          "source_m_s_post_hoc": [
+            8250.0,
+            8650.0,
+            750.0,
+            0.3100000023841858
+          ],
+          "full_record_relative_l2": 0.6661688970462355,
+          "active_sample_relative_l2": 0.5895229756106434,
+          "active_sample_count": 1352,
+          "active_observed_energy_fraction": 0.973010118014686,
+          "predicted_to_observed_peak_ratio": 0.7446549240324741,
+          "zero_lag_correlation": 0.7458779568253352,
+          "nearest_training_source_distance_m": 455.52167895721493,
+          "nearest_spatial_training_origin_time_difference_s": 0.06000000238418579
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\fmm_seeded_independent\\test_west.npz",
+          "sha256": "c6b815399db843ea270e19f77b025732830645625b9c520d3c3e3dbd3534db79",
+          "source_m_s_post_hoc": [
+            4500.0,
+            3700.0,
+            980.0,
+            0.3100000023841858
+          ],
+          "full_record_relative_l2": 0.92287449601384,
+          "active_sample_relative_l2": 0.8693437307979837,
+          "active_sample_count": 2382,
+          "active_observed_energy_fraction": 0.9915855633571868,
+          "predicted_to_observed_peak_ratio": 0.44295047963499024,
+          "zero_lag_correlation": 0.40749701623576706,
+          "nearest_training_source_distance_m": 980.0,
+          "nearest_spatial_training_origin_time_difference_s": 0.1900000050663948
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\fmm_seeded_independent\\test_south.npz",
+          "sha256": "24b42b470504e74061cb3c8df8e8ac8a4d3b623c217c3b342d37a53aecc0c24e",
+          "source_m_s_post_hoc": [
+            3100.0,
+            8200.0,
+            650.0,
+            0.23999999463558197
+          ],
+          "full_record_relative_l2": 0.6141775034841077,
+          "active_sample_relative_l2": 0.5541739770443239,
+          "active_sample_count": 2309,
+          "active_observed_energy_fraction": 0.9830137830822473,
+          "predicted_to_observed_peak_ratio": 0.8227822998300204,
+          "zero_lag_correlation": 0.7895294361152893,
+          "nearest_training_source_distance_m": 269.2582403567252,
+          "nearest_spatial_training_origin_time_difference_s": 0.07000000774860382
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\fmm_seeded_independent\\test_east.npz",
+          "sha256": "6d59885e9aecb8c23a2d48ad6c41b9f5e5baef968651501723e0f89c9e846809",
+          "source_m_s_post_hoc": [
+            11000.0,
+            5000.0,
+            1200.0,
+            0.36000001430511475
+          ],
+          "full_record_relative_l2": 0.6910125761964231,
+          "active_sample_relative_l2": 0.5896924603371858,
+          "active_sample_count": 1513,
+          "active_observed_energy_fraction": 0.9766692099019417,
+          "predicted_to_observed_peak_ratio": 0.5424561990949954,
+          "zero_lag_correlation": 0.72302116956979,
+          "nearest_training_source_distance_m": 1157.5836902790224,
+          "nearest_spatial_training_origin_time_difference_s": 0.08000001311302185
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\fmm_seeded_independent\\test_north.npz",
+          "sha256": "fa685cbb145ac4ab487d1b9353f9be05a95ae90e587251f9b0dd7e0e0b47605d",
+          "source_m_s_post_hoc": [
+            6000.0,
+            12000.0,
+            450.0,
+            0.25
+          ],
+          "full_record_relative_l2": 1.0358348730458857,
+          "active_sample_relative_l2": 1.0058553733918356,
+          "active_sample_count": 2090,
+          "active_observed_energy_fraction": 0.9795541778124478,
+          "predicted_to_observed_peak_ratio": 0.1299423430099029,
+          "zero_lag_correlation": 0.067186322007376,
+          "nearest_training_source_distance_m": 1379.3114224133722,
+          "nearest_spatial_training_origin_time_difference_s": 0.050000011920928955
+        }
+      ]
+    },
+    "spent_independent_8": {
+      "count": 8,
+      "mean_full_l2": 0.9099823092225058,
+      "median_full_l2": 0.9349320422946603,
+      "mean_active_l2": 0.8530622260932161,
+      "mean_peak_ratio": 0.5095118423961813,
+      "mean_zero_lag_correlation": 0.41694713000024897,
+      "mean_nearest_training_source_distance_m": 1340.3789816214762,
+      "events": [
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_01.npz",
+          "sha256": "063ddda11c1a73da3e870602f25968d41f5ecc74aadae580740947f1e54e4d41",
+          "source_m_s_post_hoc": [
+            4700.0,
+            4300.0,
+            620.0,
+            0.17000000178813934
+          ],
+          "full_record_relative_l2": 0.943163586525474,
+          "active_sample_relative_l2": 0.8707363348768318,
+          "active_sample_count": 1849,
+          "active_observed_energy_fraction": 0.9682763692573115,
+          "predicted_to_observed_peak_ratio": 0.3153492101449871,
+          "zero_lag_correlation": 0.37225199856920843,
+          "nearest_training_source_distance_m": 1050.904372433572,
+          "nearest_spatial_training_origin_time_difference_s": 0.05000000447034836
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_02.npz",
+          "sha256": "c39165b10f1e23a90f628727740d7edb2d07f90aef072a7438b2fe9173b1af75",
+          "source_m_s_post_hoc": [
+            5400.0,
+            10800.0,
+            760.0,
+            0.28999999165534973
+          ],
+          "full_record_relative_l2": 0.9267004980638465,
+          "active_sample_relative_l2": 0.8926455984981325,
+          "active_sample_count": 1261,
+          "active_observed_energy_fraction": 0.966275181272873,
+          "predicted_to_observed_peak_ratio": 0.14537571827450368,
+          "zero_lag_correlation": 0.3837783640102126,
+          "nearest_training_source_distance_m": 899.7777503361594,
+          "nearest_spatial_training_origin_time_difference_s": 0.010000020265579224
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_03.npz",
+          "sha256": "d94aaae8c6ecc1801d6798f9798424143b03ea6039fa33af8f55c94ca828b97e",
+          "source_m_s_post_hoc": [
+            7200.0,
+            13200.0,
+            1180.0,
+            0.23000000417232513
+          ],
+          "full_record_relative_l2": 1.0858136200147077,
+          "active_sample_relative_l2": 1.0058554431792053,
+          "active_sample_count": 1999,
+          "active_observed_energy_fraction": 0.9826442464855494,
+          "predicted_to_observed_peak_ratio": 0.3242744690814104,
+          "zero_lag_correlation": 0.186258236230609,
+          "nearest_training_source_distance_m": 1932.9769786523584,
+          "nearest_spatial_training_origin_time_difference_s": 0.14000000059604645
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_04.npz",
+          "sha256": "1b36b142d4fdd38d5dd8d9618dcdc3b5ddd285c036dbfcf73058b01c79069797",
+          "source_m_s_post_hoc": [
+            8600.0,
+            6200.0,
+            520.0,
+            0.4099999964237213
+          ],
+          "full_record_relative_l2": 1.1042055537543987,
+          "active_sample_relative_l2": 1.0396609926454274,
+          "active_sample_count": 2459,
+          "active_observed_energy_fraction": 0.9942601506446921,
+          "predicted_to_observed_peak_ratio": 0.49460977839845277,
+          "zero_lag_correlation": 0.18554666358174005,
+          "nearest_training_source_distance_m": 1510.0993344810136,
+          "nearest_spatial_training_origin_time_difference_s": 0.1599999964237213
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_05.npz",
+          "sha256": "c6747ace6bd0cab4a79218f7b6a58e211dcda01f5d3425b7f8b86197a7cb306e",
+          "source_m_s_post_hoc": [
+            9800.0,
+            3600.0,
+            1150.0,
+            0.1599999964237213
+          ],
+          "full_record_relative_l2": 0.8366596846707828,
+          "active_sample_relative_l2": 0.764459639396674,
+          "active_sample_count": 3156,
+          "active_observed_energy_fraction": 0.9924349075604565,
+          "predicted_to_observed_peak_ratio": 0.9911812470530889,
+          "zero_lag_correlation": 0.6025215999142354,
+          "nearest_training_source_distance_m": 1764.227876437735,
+          "nearest_spatial_training_origin_time_difference_s": 0.12000000476837158
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_06.npz",
+          "sha256": "b5dc551f9d625f08f38d34dcbc2e05895bf2cc1a057783e1cde834224bc9c2bb",
+          "source_m_s_post_hoc": [
+            11800.0,
+            8800.0,
+            930.0,
+            0.30000001192092896
+          ],
+          "full_record_relative_l2": 0.6091321508249965,
+          "active_sample_relative_l2": 0.5579887565698459,
+          "active_sample_count": 2164,
+          "active_observed_energy_fraction": 0.9891990461520299,
+          "predicted_to_observed_peak_ratio": 0.8737125632671607,
+          "zero_lag_correlation": 0.7967485019416896,
+          "nearest_training_source_distance_m": 1289.3796958227626,
+          "nearest_spatial_training_origin_time_difference_s": 0.04999998211860657
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_07.npz",
+          "sha256": "837736d30fd7bbb48ce9cf4452b841baf229e0481c6bbd6fd1ee23be6b675109",
+          "source_m_s_post_hoc": [
+            13200.0,
+            11200.0,
+            380.0,
+            0.27000001072883606
+          ],
+          "full_record_relative_l2": 1.0155024941449262,
+          "active_sample_relative_l2": 0.9883325044424095,
+          "active_sample_count": 1424,
+          "active_observed_energy_fraction": 0.9792082325551689,
+          "predicted_to_observed_peak_ratio": 0.20619177245525577,
+          "zero_lag_correlation": 0.14858224244406862,
+          "nearest_training_source_distance_m": 1442.3591785682233,
+          "nearest_spatial_training_origin_time_difference_s": 0.09000000357627869
+        },
+        {
+          "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_08.npz",
+          "sha256": "df432f3c2dfebc6cb0ae3c0f8bf400bd5d608feb5543868a511578076cc149c1",
+          "source_m_s_post_hoc": [
+            3800.0,
+            12800.0,
+            1320.0,
+            0.3799999952316284
+          ],
+          "full_record_relative_l2": 0.7586808857809134,
+          "active_sample_relative_l2": 0.7048185391372025,
+          "active_sample_count": 1972,
+          "active_observed_energy_fraction": 0.9935079710269086,
+          "predicted_to_observed_peak_ratio": 0.725399980494591,
+          "zero_lag_correlation": 0.6598894333102284,
+          "nearest_training_source_distance_m": 833.3066662399864,
+          "nearest_spatial_training_origin_time_difference_s": 0.019999980926513672
+        }
+      ]
+    }
+  }
+}

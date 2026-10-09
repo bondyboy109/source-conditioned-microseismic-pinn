@@ -1,0 +1,36 @@
+{
+  "role": "post-hoc reproducibility control on an in-training source; not an independent test",
+  "checkpoint_sha256": "ce744ba5e7249850fe99644449855c886fc255aebacfacab86f76d59990f2ec7",
+  "velocity_sha256": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+  "fd_generator_sha256": "a09d9d7592ee699b0898f00ea7ec367ff746718c6c9926ca6beae3926adfa120",
+  "training_record_sha256": "51a67d4622385dd1c6e22a4ec663e7ebed5cb0f609d62168ec15bd551816a450",
+  "parent_record_sha256": "656dc5faec7875b8596cecfd98c6494389642e15cee077bf92cd4b55f966c7f3",
+  "regenerated_record_sha256": "3fa5935218aa58c7f5d40e960a9d8913fff19a4d246257c3736c7b9f69012c32",
+  "training_manifest_source_m_s": [
+    12000.0,
+    12000.0,
+    400.0,
+    0.18000000715255737
+  ],
+  "provenance_fields_equal": [
+    "method",
+    "frequency_hz",
+    "boundary",
+    "source",
+    "receiver_sampling",
+    "cfl"
+  ],
+  "regenerated_source_time_receivers_exact": {
+    "source_truth": true,
+    "times": true,
+    "receiver_coords": true
+  },
+  "training_is_exact_first_two_seconds_of_nine_second_parent": true,
+  "sample_count": 25025,
+  "bitwise_equal_waveform_arrays": true,
+  "nonidentical_waveform_samples": 0,
+  "relative_waveform_l2": 0.0,
+  "maximum_absolute_sample_difference": 0.0,
+  "reference_waveform_peak_absolute": 6.349087925627828e-06,
+  "limitations": "Exact replay at one training source establishes this generator and crop path, not equivalence for every historical training event or accuracy at any unseen source. Do not retune on spent tests."
+}

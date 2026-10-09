@@ -1,0 +1,1594 @@
+{
+  "purpose": "development-only fixed approximate earliest-signal gate on frozen 5 Hz receiver predictions",
+  "role": "same twelve already-inspected +/-80/160/280 m depth development observations; two trained anchors for finite responses; no new confirmation or retraining",
+  "protocol_sha256": "86d05860922d34d21af7bd82979ffdd13cbe67136a96e7ef6c6e6b50eeea6837",
+  "depth_result_sha256": "4d8fa26c028b562eed6272dd02244f63d14cf7982ff3b23200067f9882a11717",
+  "checkpoint_sha256": {
+    "eikonal": "ce744ba5e7249850fe99644449855c886fc255aebacfacab86f76d59990f2ec7",
+    "straight": "5f3a27f85d32e8385b2d9ae7e3eff056cc373e037fd4dcd074dc75b88b503184"
+  },
+  "velocity_sha256": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+  "maximum_speed_m_s": 6166.212890625,
+  "gate_parameters": {
+    "source_support_radius_m": 200.0,
+    "source_lead_s": 0.2,
+    "gate_rise_s": 0.1
+  },
+  "anchor_metrics": {
+    "a10": {
+      "eikonal": {
+        "before": {
+          "raw_relative_l2": 0.1454938236186988,
+          "active_relative_l2": 0.0880317424986887
+        },
+        "after": {
+          "raw_relative_l2": 0.13253844603039242,
+          "active_relative_l2": 0.0880317424986887
+        }
+      },
+      "straight": {
+        "before": {
+          "raw_relative_l2": 0.13367153474748517,
+          "active_relative_l2": 0.08360093065004928
+        },
+        "after": {
+          "raw_relative_l2": 0.12172491354712194,
+          "active_relative_l2": 0.08360093065004928
+        }
+      }
+    },
+    "a14": {
+      "eikonal": {
+        "before": {
+          "raw_relative_l2": 0.14058926516363893,
+          "active_relative_l2": 0.053262180845478686
+        },
+        "after": {
+          "raw_relative_l2": 0.1187075614332083,
+          "active_relative_l2": 0.053262180845478686
+        }
+      },
+      "straight": {
+        "before": {
+          "raw_relative_l2": 0.14500238379802438,
+          "active_relative_l2": 0.06101276712722356
+        },
+        "after": {
+          "raw_relative_l2": 0.1213549710313984,
+          "active_relative_l2": 0.06101276712722356
+        }
+      }
+    }
+  },
+  "mean_fd_energy_removed_fraction": 1.1389799414851693e-23,
+  "max_fd_energy_removed_fraction": 1.2956283343767373e-22,
+  "summary": {
+    "eikonal": {
+      "mean_raw_l2_before": 0.6473734520460381,
+      "mean_raw_l2_after": 0.6400937935978354,
+      "mean_change_l2_before": 0.8015426840820918,
+      "mean_change_l2_after": 0.7944244360142707,
+      "early_pick_count_before": 65,
+      "early_pick_count_after": 0,
+      "start_pick_count_before": 39,
+      "start_pick_count_after": 0,
+      "paired_pick_count_before": 142,
+      "paired_pick_count_after": 142
+    },
+    "straight": {
+      "mean_raw_l2_before": 0.678453478266107,
+      "mean_raw_l2_after": 0.6720740297168842,
+      "mean_change_l2_before": 0.8550854110055329,
+      "mean_change_l2_after": 0.8508173913135159,
+      "early_pick_count_before": 71,
+      "early_pick_count_after": 0,
+      "start_pick_count_before": 41,
+      "start_pick_count_after": 0,
+      "paired_pick_count_before": 142,
+      "paired_pick_count_after": 142
+    }
+  },
+  "events": [
+    {
+      "file": "a10_zm80.npz",
+      "anchor": "a10",
+      "offset_m": -80,
+      "sha256": "4889354580ac4f728ba6c2aa1534f191ea304f205ae1b698bd26d0b5c11e683f",
+      "fd_energy_removed_fraction": 7.714078397850729e-41,
+      "models": {
+        "eikonal": {
+          "before": {
+            "raw_relative_l2": 0.4217016796392525,
+            "active_relative_l2": 0.37334123173318023
+          },
+          "after": {
+            "raw_relative_l2": 0.4172996031855825,
+            "active_relative_l2": 0.37334123173318023
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.37605347100033437,
+            "model_to_fd_change_norm_ratio": 0.7618341041598758,
+            "change_relative_l2": 1.0373106460280201,
+            "change_cosine": 0.331028647276314
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.37605347100033437,
+            "model_to_fd_change_norm_ratio": 0.7565391491802963,
+            "change_relative_l2": 1.0334281099062643,
+            "change_cosine": 0.3333454894201453
+          },
+          "early_before": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.0849183016690618,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 1,
+            "model_picks_before_origin_minus_0_10_s": 1,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.5866154065498939,
+              "rmse_s": 0.8608391789020845,
+              "demeaned_rmse_s": 0.6300209970557471
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.3312307825455299,
+              "rmse_s": 0.455366333636594,
+              "demeaned_rmse_s": 0.31248146585663245
+            }
+          }
+        },
+        "straight": {
+          "before": {
+            "raw_relative_l2": 0.44995352862850213,
+            "active_relative_l2": 0.40349398139408343
+          },
+          "after": {
+            "raw_relative_l2": 0.44610225219665944,
+            "active_relative_l2": 0.40349398139408343
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.37605347100033437,
+            "model_to_fd_change_norm_ratio": 0.879647630005322,
+            "change_relative_l2": 1.1122874092229635,
+            "change_cosine": 0.30500660375496064
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.37605347100033437,
+            "model_to_fd_change_norm_ratio": 0.8746187989326764,
+            "change_relative_l2": 1.1083146535115336,
+            "change_cosine": 0.3067603125572375
+          },
+          "early_before": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.09062554010246189,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 3,
+            "model_picks_before_origin_minus_0_10_s": 5,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.7435384925741416,
+              "rmse_s": 1.0246478371587022,
+              "demeaned_rmse_s": 0.7050203544966485
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.3466153878432054,
+              "rmse_s": 0.4436689818621585,
+              "demeaned_rmse_s": 0.2769475372284589
+            }
+          }
+        }
+      }
+    },
+    {
+      "file": "a10_zp80.npz",
+      "anchor": "a10",
+      "offset_m": 80,
+      "sha256": "d342e544ff168b7dc2c27f4b9118f85c379df716d44672f8cd5adaf18385071f",
+      "fd_energy_removed_fraction": 5.8345002245295e-43,
+      "models": {
+        "eikonal": {
+          "before": {
+            "raw_relative_l2": 0.3680129131168984,
+            "active_relative_l2": 0.31143446043294476
+          },
+          "after": {
+            "raw_relative_l2": 0.3623778639087373,
+            "active_relative_l2": 0.31143446043294476
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.31722868774366414,
+            "model_to_fd_change_norm_ratio": 0.8179510345866511,
+            "change_relative_l2": 1.1246884038751366,
+            "change_cosine": 0.24703183447551438
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.31722868774366414,
+            "model_to_fd_change_norm_ratio": 0.8104359357236602,
+            "change_relative_l2": 1.1192347907128846,
+            "change_cosine": 0.2493225382517873
+          },
+          "early_before": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.1050001665269077,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 2,
+            "model_picks_before_origin_minus_0_10_s": 5,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.8470769442904454,
+              "rmse_s": 1.0795264281446155,
+              "demeaned_rmse_s": 0.6692069631393813
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.34830768750264096,
+              "rmse_s": 0.44438307018915413,
+              "demeaned_rmse_s": 0.2759675123946681
+            }
+          }
+        },
+        "straight": {
+          "before": {
+            "raw_relative_l2": 0.4085909951999869,
+            "active_relative_l2": 0.35556105157722545
+          },
+          "after": {
+            "raw_relative_l2": 0.4037452572767971,
+            "active_relative_l2": 0.35556105157722545
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.31722868774366414,
+            "model_to_fd_change_norm_ratio": 0.9948564590611261,
+            "change_relative_l2": 1.2554844590136698,
+            "change_cosine": 0.20781799401545067
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.31722868774366414,
+            "model_to_fd_change_norm_ratio": 0.9883080252682167,
+            "change_relative_l2": 1.250301805764819,
+            "change_cosine": 0.20919497602914633
+          },
+          "early_before": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.09240390404109212,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 5,
+            "model_picks_before_origin_minus_0_10_s": 6,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.8050769389821932,
+              "rmse_s": 1.0847194943835812,
+              "demeaned_rmse_s": 0.7269577042819162
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.36753846131838286,
+              "rmse_s": 0.4669669811671333,
+              "demeaned_rmse_s": 0.2880514553895908
+            }
+          }
+        }
+      }
+    },
+    {
+      "file": "a10_zm160.npz",
+      "anchor": "a10",
+      "offset_m": -160,
+      "sha256": "b341a7258b4448dd14f0fdc7405adfd74c5f263300ddb4750f71ead12dd9da0e",
+      "fd_energy_removed_fraction": 1.1072437172546866e-38,
+      "models": {
+        "eikonal": {
+          "before": {
+            "raw_relative_l2": 0.7397804815887394,
+            "active_relative_l2": 0.7086577547857089
+          },
+          "after": {
+            "raw_relative_l2": 0.7374344771815512,
+            "active_relative_l2": 0.7086577547857089
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.8094236563749752,
+            "model_to_fd_change_norm_ratio": 0.7047860620236722,
+            "change_relative_l2": 0.9502735240443279,
+            "change_cosine": 0.4211942138998119
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.8094236563749752,
+            "model_to_fd_change_norm_ratio": 0.700645552878678,
+            "change_relative_l2": 0.9472067187501674,
+            "change_cosine": 0.4236832877079673
+          },
+          "early_before": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.08275856343283945,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 3,
+            "model_picks_before_origin_minus_0_10_s": 3,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.7404615844671543,
+              "rmse_s": 0.9952956126144769,
+              "demeaned_rmse_s": 0.6650789414934276
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.407538496530973,
+              "rmse_s": 0.5110276696964156,
+              "demeaned_rmse_s": 0.3083206983655538
+            }
+          }
+        },
+        "straight": {
+          "before": {
+            "raw_relative_l2": 0.7660990228460581,
+            "active_relative_l2": 0.7281812139920933
+          },
+          "after": {
+            "raw_relative_l2": 0.7635616842041734,
+            "active_relative_l2": 0.7281812139920933
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.8094236563749752,
+            "model_to_fd_change_norm_ratio": 0.7782155259101816,
+            "change_relative_l2": 0.9832818673146224,
+            "change_cosine": 0.4104108392278816
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.8094236563749752,
+            "model_to_fd_change_norm_ratio": 0.7744971521015215,
+            "change_relative_l2": 0.9803416059901964,
+            "change_cosine": 0.41238122854594994
+          },
+          "early_before": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.10333942619056459,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 3,
+            "model_picks_before_origin_minus_0_10_s": 4,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.8290769824614892,
+              "rmse_s": 1.061175754970475,
+              "demeaned_rmse_s": 0.6623634501462993
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.38584619760513306,
+              "rmse_s": 0.48788401935530135,
+              "demeaned_rmse_s": 0.298585880670779
+            }
+          }
+        }
+      }
+    },
+    {
+      "file": "a10_zp160.npz",
+      "anchor": "a10",
+      "offset_m": 160,
+      "sha256": "a7344797db173fa990430974f66560edcbf96981602a41f2af8e6aadfc385b1f",
+      "fd_energy_removed_fraction": 2.026309927968839e-43,
+      "models": {
+        "eikonal": {
+          "before": {
+            "raw_relative_l2": 0.6186178708482644,
+            "active_relative_l2": 0.5437195334170674
+          },
+          "after": {
+            "raw_relative_l2": 0.6132477253763369,
+            "active_relative_l2": 0.5437195334170674
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.5812847089744992,
+            "model_to_fd_change_norm_ratio": 0.8375268853756188,
+            "change_relative_l2": 1.0024385657514516,
+            "change_cosine": 0.4158482657597055
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.5812847089744992,
+            "model_to_fd_change_norm_ratio": 0.8292523325918729,
+            "change_relative_l2": 0.9955356475224303,
+            "change_cosine": 0.4199977366623715
+          },
+          "early_before": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.12283709208882765,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 4,
+            "model_picks_before_origin_minus_0_10_s": 5,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.984153885824176,
+              "rmse_s": 1.1514698776861265,
+              "demeaned_rmse_s": 0.5977658473312758
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.39892308987103975,
+              "rmse_s": 0.46457956909047987,
+              "demeaned_rmse_s": 0.2381061620035028
+            }
+          }
+        },
+        "straight": {
+          "before": {
+            "raw_relative_l2": 0.6994638186123299,
+            "active_relative_l2": 0.633336266953395
+          },
+          "after": {
+            "raw_relative_l2": 0.6952591424595094,
+            "active_relative_l2": 0.633336266953395
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.5812847089744992,
+            "model_to_fd_change_norm_ratio": 1.0073114646534531,
+            "change_relative_l2": 1.1079552696388937,
+            "change_cosine": 0.3906991704757786
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.5812847089744992,
+            "model_to_fd_change_norm_ratio": 1.0018284580025452,
+            "change_relative_l2": 1.1029726886745952,
+            "change_cosine": 0.392837466840901
+          },
+          "early_before": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.12165283253521175,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 7,
+            "model_picks_before_origin_minus_0_10_s": 7,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -1.011076958133624,
+              "rmse_s": 1.1877498309858106,
+              "demeaned_rmse_s": 0.6232760590124402
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.39384615421295166,
+              "rmse_s": 0.4701397590226571,
+              "demeaned_rmse_s": 0.2567422828938583
+            }
+          }
+        }
+      }
+    },
+    {
+      "file": "a10_zm280.npz",
+      "anchor": "a10",
+      "offset_m": -280,
+      "sha256": "316e60fe941500fe135894171960f63434d798aab856c709a743796f104ce917",
+      "fd_energy_removed_fraction": 4.4604170882011064e-35,
+      "models": {
+        "eikonal": {
+          "before": {
+            "raw_relative_l2": 1.2468698324987866,
+            "active_relative_l2": 1.1966039526996932
+          },
+          "after": {
+            "raw_relative_l2": 1.2445599266715865,
+            "active_relative_l2": 1.1966039526996932
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 1.386469399653649,
+            "model_to_fd_change_norm_ratio": 0.6478364330536494,
+            "change_relative_l2": 0.8003604689156998,
+            "change_cosine": 0.6013208921550388
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 1.386469399653649,
+            "model_to_fd_change_norm_ratio": 0.6445405421047273,
+            "change_relative_l2": 0.7976950210625231,
+            "change_cosine": 0.604395777218715
+          },
+          "early_before": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.11439513923928156,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 4,
+            "model_picks_before_origin_minus_0_10_s": 7,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -1.0867692803820739,
+              "rmse_s": 1.2197319342283126,
+              "demeaned_rmse_s": 0.5537856287356775
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.5283077175800617,
+              "rmse_s": 0.5656180077701912,
+              "demeaned_rmse_s": 0.20202644940518527
+            }
+          }
+        },
+        "straight": {
+          "before": {
+            "raw_relative_l2": 1.213690600058759,
+            "active_relative_l2": 1.1608641235314185
+          },
+          "after": {
+            "raw_relative_l2": 1.210746406329999,
+            "active_relative_l2": 1.1608641235314185
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 1.386469399653649,
+            "model_to_fd_change_norm_ratio": 0.6699174086295753,
+            "change_relative_l2": 0.7777074229565394,
+            "change_cosine": 0.6298989157407642
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 1.386469399653649,
+            "model_to_fd_change_norm_ratio": 0.6672744773008763,
+            "change_relative_l2": 0.7754319630979201,
+            "change_cosine": 0.6323938104729273
+          },
+          "early_before": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.1485855117395387,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 4,
+            "model_picks_before_origin_minus_0_10_s": 7,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -1.0786154353274748,
+              "rmse_s": 1.2550189015801558,
+              "demeaned_rmse_s": 0.6416082808044037
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 13,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 13,
+              "paired_pick_count": 13,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.4469231137862572,
+              "rmse_s": 0.544383108589355,
+              "demeaned_rmse_s": 0.310825834320453
+            }
+          }
+        }
+      }
+    },
+    {
+      "file": "a10_zp280.npz",
+      "anchor": "a10",
+      "offset_m": 280,
+      "sha256": "d235b98753584de0dbd2b9e41e4e60efa7baafd80bf2e746c70c04f3aa839203",
+      "fd_energy_removed_fraction": 2.235107588790046e-42,
+      "models": {
+        "eikonal": {
+          "before": {
+            "raw_relative_l2": 0.9897235849350631,
+            "active_relative_l2": 0.8406280515250109
+          },
+          "after": {
+            "raw_relative_l2": 0.9770154364783409,
+            "active_relative_l2": 0.8406280515250109
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.8749563545063561,
+            "model_to_fd_change_norm_ratio": 0.8487270670260383,
+            "change_relative_l2": 0.7068714773332916,
+            "change_cosine": 0.7191183103848283
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.8749563545063561,
+            "model_to_fd_change_norm_ratio": 0.8405549491977482,
+            "change_relative_l2": 0.6970382154412754,
+            "change_cosine": 0.7261097861599156
+          },
+          "early_before": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.21056996908810463,
+            "valid_fd_stations": 14,
+            "model_picks_at_start_count": 5,
+            "model_picks_before_origin_minus_0_10_s": 8,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 14,
+              "paired_pick_count": 14,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -1.1292857646476477,
+              "rmse_s": 1.2642553409230606,
+              "demeaned_rmse_s": 0.5683794760691677
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 14,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 14,
+              "paired_pick_count": 14,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.4695714371544974,
+              "rmse_s": 0.5189613371795806,
+              "demeaned_rmse_s": 0.22096048265669205
+            }
+          }
+        },
+        "straight": {
+          "before": {
+            "raw_relative_l2": 0.9920469037445885,
+            "active_relative_l2": 0.889515458969729
+          },
+          "after": {
+            "raw_relative_l2": 0.9826542437823604,
+            "active_relative_l2": 0.889515458969729
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.8749563545063561,
+            "model_to_fd_change_norm_ratio": 1.011234743138771,
+            "change_relative_l2": 0.6813599864927187,
+            "change_cosine": 0.7705155925026044
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.8749563545063561,
+            "model_to_fd_change_norm_ratio": 1.006499549868386,
+            "change_relative_l2": 0.6743122936352898,
+            "change_cosine": 0.7741405720158312
+          },
+          "early_before": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.2217972261926981,
+            "valid_fd_stations": 14,
+            "model_picks_at_start_count": 9,
+            "model_picks_before_origin_minus_0_10_s": 11,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 14,
+              "paired_pick_count": 14,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -1.1868571958371572,
+              "rmse_s": 1.3218418448864069,
+              "demeaned_rmse_s": 0.5819242730650267
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.15,
+            "fd_early_rms_over_full_fd_rms": 0.0,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 14,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 14,
+              "paired_pick_count": 14,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.47042858600616455,
+              "rmse_s": 0.5259590029525728,
+              "demeaned_rmse_s": 0.23522291184131083
+            }
+          }
+        }
+      }
+    },
+    {
+      "file": "a14_zm80.npz",
+      "anchor": "a14",
+      "offset_m": -80,
+      "sha256": "ffce923aa8a413e382f5aea4b3d41094e843a4b3e4b484d6f213bb3304ede2cb",
+      "fd_energy_removed_fraction": 1.1022133056000623e-24,
+      "models": {
+        "eikonal": {
+          "before": {
+            "raw_relative_l2": 0.3446702058588498,
+            "active_relative_l2": 0.295892626025657
+          },
+          "after": {
+            "raw_relative_l2": 0.33874120637415744,
+            "active_relative_l2": 0.295892626025657
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.4360500240838706,
+            "model_to_fd_change_norm_ratio": 1.0148996462078546,
+            "change_relative_l2": 0.9165020111842731,
+            "change_cosine": 0.5862872057422541
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.4360500240838706,
+            "model_to_fd_change_norm_ratio": 1.0088151025190875,
+            "change_relative_l2": 0.9097596142402362,
+            "change_cosine": 0.5898233246094454
+          },
+          "early_before": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 1.2717849204000445e-27,
+            "model_early_rms_over_full_fd_rms": 0.0864460973560889,
+            "valid_fd_stations": 10,
+            "model_picks_at_start_count": 2,
+            "model_picks_before_origin_minus_0_10_s": 6,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -1.039800043683499,
+              "rmse_s": 1.1870719136698056,
+              "demeaned_rmse_s": 0.5726740760497961
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 1.2717849204000445e-27,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 10,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.36280001401901246,
+              "rmse_s": 0.4249357804411892,
+              "demeaned_rmse_s": 0.2212387111853775
+            }
+          }
+        },
+        "straight": {
+          "before": {
+            "raw_relative_l2": 0.3837389087860365,
+            "active_relative_l2": 0.332706502321044
+          },
+          "after": {
+            "raw_relative_l2": 0.37881446028892507,
+            "active_relative_l2": 0.332706502321044
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.4360500240838706,
+            "model_to_fd_change_norm_ratio": 1.1484824098831923,
+            "change_relative_l2": 1.0269375205139364,
+            "change_cosine": 0.5504704137786453
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.4360500240838706,
+            "model_to_fd_change_norm_ratio": 1.1460257482755867,
+            "change_relative_l2": 1.0241893579504158,
+            "change_cosine": 0.5516504217615879
+          },
+          "early_before": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 1.2717849204000445e-27,
+            "model_early_rms_over_full_fd_rms": 0.0776433779436669,
+            "valid_fd_stations": 10,
+            "model_picks_at_start_count": 1,
+            "model_picks_before_origin_minus_0_10_s": 3,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.8522000329568982,
+              "rmse_s": 1.0426840808598483,
+              "demeaned_rmse_s": 0.6007871472550059
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 1.2717849204000445e-27,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 10,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.4022000074386597,
+              "rmse_s": 0.4602838421840498,
+              "demeaned_rmse_s": 0.2238221825290187
+            }
+          }
+        }
+      }
+    },
+    {
+      "file": "a14_zp80.npz",
+      "anchor": "a14",
+      "offset_m": 80,
+      "sha256": "f3b25cf64e94d8b501f80a9b43d79ddb51a5cb7c9fe7acb1aeb18655a2f6cfb8",
+      "fd_energy_removed_fraction": 1.6684056782661177e-25,
+      "models": {
+        "eikonal": {
+          "before": {
+            "raw_relative_l2": 0.43287862631419866,
+            "active_relative_l2": 0.3510821521743956
+          },
+          "after": {
+            "raw_relative_l2": 0.4178099347676103,
+            "active_relative_l2": 0.3510821521743956
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.46045745977638325,
+            "model_to_fd_change_norm_ratio": 0.8890138741314079,
+            "change_relative_l2": 0.6516748114813096,
+            "change_cosine": 0.7680789064249582
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.46045745977638325,
+            "model_to_fd_change_norm_ratio": 0.8820495927957166,
+            "change_relative_l2": 0.6421416320969843,
+            "change_cosine": 0.7741433246119075
+          },
+          "early_before": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 2.4984946064445317e-31,
+            "model_early_rms_over_full_fd_rms": 0.1543349577277941,
+            "valid_fd_stations": 11,
+            "model_picks_at_start_count": 6,
+            "model_picks_before_origin_minus_0_10_s": 7,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -1.083090957592834,
+              "rmse_s": 1.2590035529221082,
+              "demeaned_rmse_s": 0.6418753179949584
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 2.4984946064445317e-31,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 11,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.41381820223548194,
+              "rmse_s": 0.4839241326901481,
+              "demeaned_rmse_s": 0.2508726005336291
+            }
+          }
+        },
+        "straight": {
+          "before": {
+            "raw_relative_l2": 0.5195632756265687,
+            "active_relative_l2": 0.4248245267677272
+          },
+          "after": {
+            "raw_relative_l2": 0.5056807527098863,
+            "active_relative_l2": 0.4248245267677272
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.46045745977638325,
+            "model_to_fd_change_norm_ratio": 1.0910685132165312,
+            "change_relative_l2": 0.7859940084691691,
+            "change_cosine": 0.7206898100958194
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.46045745977638325,
+            "model_to_fd_change_norm_ratio": 1.0887038460366127,
+            "change_relative_l2": 0.7827082120380231,
+            "change_cosine": 0.7222551499695292
+          },
+          "early_before": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 2.4984946064445317e-31,
+            "model_early_rms_over_full_fd_rms": 0.15285226114543662,
+            "valid_fd_stations": 11,
+            "model_picks_at_start_count": 3,
+            "model_picks_before_origin_minus_0_10_s": 6,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -1.0503636809616266,
+              "rmse_s": 1.2228856125045828,
+              "demeaned_rmse_s": 0.6262470430967727
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 2.4984946064445317e-31,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 11,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.3525454672900113,
+              "rmse_s": 0.44456844498323467,
+              "demeaned_rmse_s": 0.2708372126722599
+            }
+          }
+        }
+      }
+    },
+    {
+      "file": "a14_zm160.npz",
+      "anchor": "a14",
+      "offset_m": -160,
+      "sha256": "3ea5d4ebc9d919061907e18e00e3c889328e652eddae3c05533f014835fef521",
+      "fd_energy_removed_fraction": 5.757564183186217e-24,
+      "models": {
+        "eikonal": {
+          "before": {
+            "raw_relative_l2": 0.5261206722796555,
+            "active_relative_l2": 0.4780570419376008
+          },
+          "after": {
+            "raw_relative_l2": 0.5214493104558099,
+            "active_relative_l2": 0.4780570419376008
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.8138255629084338,
+            "model_to_fd_change_norm_ratio": 1.0568526972490933,
+            "change_relative_l2": 0.7707804548562462,
+            "change_cosine": 0.7204575992747642
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.8138255629084338,
+            "model_to_fd_change_norm_ratio": 1.051156922580579,
+            "change_relative_l2": 0.7629520049090247,
+            "change_cosine": 0.7243614542136247
+          },
+          "early_before": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 9.061536458647329e-26,
+            "model_early_rms_over_full_fd_rms": 0.09134460162843344,
+            "valid_fd_stations": 10,
+            "model_picks_at_start_count": 1,
+            "model_picks_before_origin_minus_0_10_s": 3,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.9846000513993204,
+              "rmse_s": 1.1174007921344533,
+              "demeaned_rmse_s": 0.5283438927887399
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 9.061536458647329e-26,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 10,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.44000003337860105,
+              "rmse_s": 0.49563942217111223,
+              "demeaned_rmse_s": 0.22816311585561755
+            }
+          }
+        },
+        "straight": {
+          "before": {
+            "raw_relative_l2": 0.5583220804209604,
+            "active_relative_l2": 0.5149718954270095
+          },
+          "after": {
+            "raw_relative_l2": 0.554667401423855,
+            "active_relative_l2": 0.5149718954270095
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.8138255629084338,
+            "model_to_fd_change_norm_ratio": 1.1238893890221142,
+            "change_relative_l2": 0.8136304948665581,
+            "change_cosine": 0.7123177744265525
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.8138255629084338,
+            "model_to_fd_change_norm_ratio": 1.1214576318005345,
+            "change_relative_l2": 0.8102681305248576,
+            "change_cosine": 0.7138623569794376
+          },
+          "early_before": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 9.061536458647329e-26,
+            "model_early_rms_over_full_fd_rms": 0.08732389837814769,
+            "valid_fd_stations": 10,
+            "model_picks_at_start_count": 2,
+            "model_picks_before_origin_minus_0_10_s": 4,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -1.0046000557020307,
+              "rmse_s": 1.1507728447555907,
+              "demeaned_rmse_s": 0.5612992680472263
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 9.061536458647329e-26,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 10,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.4418000340461731,
+              "rmse_s": 0.4997435754430814,
+              "demeaned_rmse_s": 0.2335730530550026
+            }
+          }
+        }
+      }
+    },
+    {
+      "file": "a14_zp160.npz",
+      "anchor": "a14",
+      "offset_m": 160,
+      "sha256": "04a8a1d172a7a46a023b78cdd13d41fe08be810188b23438055003a81c250c06",
+      "fd_energy_removed_fraction": 7.045253511938221e-26,
+      "models": {
+        "eikonal": {
+          "before": {
+            "raw_relative_l2": 0.5953663414114102,
+            "active_relative_l2": 0.5098273593048639
+          },
+          "after": {
+            "raw_relative_l2": 0.5818460029985477,
+            "active_relative_l2": 0.5098273593048639
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.8635848973340425,
+            "model_to_fd_change_norm_ratio": 0.8185669985116641,
+            "change_relative_l2": 0.532391159848162,
+            "change_cosine": 0.8469750102857126
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.8635848973340425,
+            "model_to_fd_change_norm_ratio": 0.810800012062425,
+            "change_relative_l2": 0.5203701332634798,
+            "change_cosine": 0.8550885319060768
+          },
+          "early_before": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 2.6587722672072994e-33,
+            "model_early_rms_over_full_fd_rms": 0.17597591941582968,
+            "valid_fd_stations": 11,
+            "model_picks_at_start_count": 5,
+            "model_picks_before_origin_minus_0_10_s": 7,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -1.1403637172823602,
+              "rmse_s": 1.2837613218957706,
+              "demeaned_rmse_s": 0.5895877575912964
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 2.6587722672072994e-33,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 11,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.4929091280156916,
+              "rmse_s": 0.5306925525769288,
+              "demeaned_rmse_s": 0.1966600541020643
+            }
+          }
+        },
+        "straight": {
+          "before": {
+            "raw_relative_l2": 0.6709569024725369,
+            "active_relative_l2": 0.5875708469618718
+          },
+          "after": {
+            "raw_relative_l2": 0.6593804794645022,
+            "active_relative_l2": 0.5875708469618718
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 0.8635848973340425,
+            "model_to_fd_change_norm_ratio": 1.0191131676399623,
+            "change_relative_l2": 0.5977708410447964,
+            "change_cosine": 0.8248650510262661
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 0.8635848973340425,
+            "model_to_fd_change_norm_ratio": 1.0161581840006104,
+            "change_relative_l2": 0.5927189762927638,
+            "change_cosine": 0.8272637550557118
+          },
+          "early_before": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 2.6587722672072994e-33,
+            "model_early_rms_over_full_fd_rms": 0.15602596102840754,
+            "valid_fd_stations": 11,
+            "model_picks_at_start_count": 1,
+            "model_picks_before_origin_minus_0_10_s": 7,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -1.0932728013193065,
+              "rmse_s": 1.2249766685639343,
+              "demeaned_rmse_s": 0.5525598794894822
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 2.6587722672072994e-33,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 11,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.42018185420469806,
+              "rmse_s": 0.4943951691533063,
+              "demeaned_rmse_s": 0.2605259923294185
+            }
+          }
+        }
+      }
+    },
+    {
+      "file": "a14_zm280.npz",
+      "anchor": "a14",
+      "offset_m": -280,
+      "sha256": "f3e3065d6444d2d0c384486579b6016d6dbcf9032bbfd97696c67ab53baa007c",
+      "fd_energy_removed_fraction": 1.2956283343767373e-22,
+      "models": {
+        "eikonal": {
+          "before": {
+            "raw_relative_l2": 0.6221713239389873,
+            "active_relative_l2": 0.5839160625550466
+          },
+          "after": {
+            "raw_relative_l2": 0.6183137122010851,
+            "active_relative_l2": 0.5839160625550466
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 1.4708632470277803,
+            "model_to_fd_change_norm_ratio": 0.9067904784113441,
+            "change_relative_l2": 0.5261750779922909,
+            "change_cosine": 0.8521311128810962
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 1.4708632470277803,
+            "model_to_fd_change_norm_ratio": 0.9029717488081574,
+            "change_relative_l2": 0.5195663769989983,
+            "change_cosine": 0.8557348339400423
+          },
+          "early_before": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 9.024802268269294e-23,
+            "model_early_rms_over_full_fd_rms": 0.08526688009913783,
+            "valid_fd_stations": 10,
+            "model_picks_at_start_count": 2,
+            "model_picks_before_origin_minus_0_10_s": 3,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.8736000396776944,
+              "rmse_s": 1.0511651169776266,
+              "demeaned_rmse_s": 0.584611900174567
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 9.024802268269294e-23,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 10,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.4662000238895416,
+              "rmse_s": 0.519516340331761,
+              "demeaned_rmse_s": 0.22924826192819206
+            }
+          }
+        },
+        "straight": {
+          "before": {
+            "raw_relative_l2": 0.63996688178343,
+            "active_relative_l2": 0.5929854570263001
+          },
+          "after": {
+            "raw_relative_l2": 0.6370527745095077,
+            "active_relative_l2": 0.5929854570263001
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 1.4708632470277803,
+            "model_to_fd_change_norm_ratio": 0.8886715647177773,
+            "change_relative_l2": 0.539339004202859,
+            "change_cosine": 0.8433096365356381
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 1.4708632470277803,
+            "model_to_fd_change_norm_ratio": 0.8869654390122215,
+            "change_relative_l2": 0.5365231602839553,
+            "change_cosine": 0.8449317879568512
+          },
+          "early_before": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 9.024802268269294e-23,
+            "model_early_rms_over_full_fd_rms": 0.08803875766618735,
+            "valid_fd_stations": 10,
+            "model_picks_at_start_count": 1,
+            "model_picks_before_origin_minus_0_10_s": 3,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.8734000481665134,
+              "rmse_s": 1.0301714912622149,
+              "demeaned_rmse_s": 0.5462834953320002
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 9.024802268269294e-23,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 10,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 10,
+              "paired_pick_count": 10,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.4378000319004059,
+              "rmse_s": 0.49301565546786635,
+              "demeaned_rmse_s": 0.2267059077404325
+            }
+          }
+        }
+      }
+    },
+    {
+      "file": "a14_zp280.npz",
+      "anchor": "a14",
+      "offset_m": 280,
+      "sha256": "00db2de41a64734355a43cba371833177fe9119b570df8c9e3d625f395977f97",
+      "fd_energy_removed_fraction": 1.7688948769709352e-26,
+      "models": {
+        "eikonal": {
+          "before": {
+            "raw_relative_l2": 0.8625678921223505,
+            "active_relative_l2": 0.791950804885186
+          },
+          "after": {
+            "raw_relative_l2": 0.8510303235746779,
+            "active_relative_l2": 0.791950804885186
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 1.2493266890752446,
+            "model_to_fd_change_norm_ratio": 0.729241640486014,
+            "change_relative_l2": 0.5990456076748928,
+            "change_cosine": 0.804217467177566
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 1.2493266890752446,
+            "model_to_fd_change_norm_ratio": 0.7203303123314302,
+            "change_relative_l2": 0.5881649672669804,
+            "change_cosine": 0.8141665775156555
+          },
+          "early_before": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 4.4364416383985194e-36,
+            "model_early_rms_over_full_fd_rms": 0.19488042944074263,
+            "valid_fd_stations": 11,
+            "model_picks_at_start_count": 4,
+            "model_picks_before_origin_minus_0_10_s": 10,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -1.2818182249638168,
+              "rmse_s": 1.3409419145859351,
+              "demeaned_rmse_s": 0.3937858002061573
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 4.4364416383985194e-36,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 11,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.4878181950612502,
+              "rmse_s": 0.5027556975897919,
+              "demeaned_rmse_s": 0.1216416870410073
+            }
+          }
+        },
+        "straight": {
+          "before": {
+            "raw_relative_l2": 0.8390488210135291,
+            "active_relative_l2": 0.7760511817412323
+          },
+          "after": {
+            "raw_relative_l2": 0.8272235019564347,
+            "active_relative_l2": 0.7760511817412323
+          },
+          "response_before": {
+            "fd_change_over_anchor_norm": 1.2493266890752446,
+            "model_to_fd_change_norm_ratio": 0.8497357633524776,
+            "change_relative_l2": 0.5792766483296699,
+            "change_cosine": 0.8158356350390741
+          },
+          "response_after": {
+            "fd_change_over_anchor_norm": 1.2493266890752446,
+            "model_to_fd_change_norm_ratio": 0.8446063446892986,
+            "change_relative_l2": 0.5717258479978196,
+            "change_cosine": 0.8207903249475551
+          },
+          "early_before": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 4.4364416383985194e-36,
+            "model_early_rms_over_full_fd_rms": 0.16604079445045744,
+            "valid_fd_stations": 11,
+            "model_picks_at_start_count": 2,
+            "model_picks_before_origin_minus_0_10_s": 8,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -1.1294545767490158,
+              "rmse_s": 1.225856332784611,
+              "demeaned_rmse_s": 0.47650404792492196
+            }
+          },
+          "early_after": {
+            "early_window_end_s": 0.24000000357627868,
+            "fd_early_rms_over_full_fd_rms": 4.4364416383985194e-36,
+            "model_early_rms_over_full_fd_rms": 0.0,
+            "valid_fd_stations": 11,
+            "model_picks_at_start_count": 0,
+            "model_picks_before_origin_minus_0_10_s": 0,
+            "fd_picks_before_origin_minus_0_10_s": 0,
+            "original_threshold_arrival_metrics": {
+              "status": "ok",
+              "valid_fd_pick_count": 11,
+              "paired_pick_count": 11,
+              "missing_model_picks_on_valid_fd_stations": 0,
+              "signed_mean_error_s": -0.46763636849143286,
+              "rmse_s": 0.5082032692029707,
+              "demeaned_rmse_s": 0.19896429250680084
+            }
+          }
+        }
+      }
+    }
+  ],
+  "limitations": "The Ricker pulse and Gaussian source have tails, so this is an approximate earliest-signal taper, not exact causality or a physics-constrained trained operator. A postprocessing audit is not independent validation."
+}

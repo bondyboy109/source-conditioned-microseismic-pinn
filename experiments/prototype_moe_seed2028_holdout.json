@@ -1,0 +1,259 @@
+{
+  "role": "independent eight-event holdout forward evaluation of seeded joint MoE",
+  "base_checkpoint_sha256": "dab17cae1d3aae79c0b9efeac28aa5bae2f88748ad822d49d4b5bf87a73407b4",
+  "observation_directory": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\holdout_20260927",
+  "summary": {
+    "event_count": 8,
+    "base_mean_full_l2": 1.1326453966752184,
+    "seeds": {
+      "2028": {
+        "mean_full_l2": 1.1224268759679894,
+        "std_full_l2_across_events": 0.053947378579189395,
+        "relative_improvement_over_base": 0.00902181807053163,
+        "improves_count": 7,
+        "mean_gate": [
+          0.028937124221108945,
+          0.6432969523593783,
+          0.32799522881396115
+        ]
+      }
+    },
+    "seed_mean_full_l2": 1.1224268759679894,
+    "seed_std_full_l2": 0.0
+  },
+  "events": [
+    {
+      "event": "event_01.npz",
+      "sha256": "b6b12683374ca6f4c517df810a5a8bcc97245e2e75e8b6de72290189f13ef7da",
+      "source_m_s": [
+        4200.0,
+        7200.0,
+        380.0,
+        0.18000000715255737
+      ],
+      "base": {
+        "full_l2": 1.1626184947551605,
+        "active_l2": 1.0526956411727428,
+        "zero_lag_correlation": 0.04765191827266715
+      },
+      "seeds": {
+        "2028": {
+          "metrics": {
+            "full_l2": 1.1394233877190918,
+            "active_l2": 1.0431197161283712,
+            "zero_lag_correlation": 0.04942301519947847
+          },
+          "mean_gate": [
+            0.13552959263324738,
+            0.8618776202201843,
+            0.0019948119297623634
+          ]
+        }
+      }
+    },
+    {
+      "event": "event_02.npz",
+      "sha256": "3091553851978c09d3cf802c91f3a779123d80eea16a24ced6fef5bb2831fdbf",
+      "source_m_s": [
+        8800.0,
+        5200.0,
+        900.0,
+        0.2800000011920929
+      ],
+      "base": {
+        "full_l2": 1.0964985158158482,
+        "active_l2": 1.0333410371738103,
+        "zero_lag_correlation": 0.03699293954430707
+      },
+      "seeds": {
+        "2028": {
+          "metrics": {
+            "full_l2": 1.086965962163834,
+            "active_l2": 1.0292493384830474,
+            "zero_lag_correlation": 0.039611328668442546
+          },
+          "mean_gate": [
+            0.02512538619339466,
+            0.8959022164344788,
+            0.08016148209571838
+          ]
+        }
+      }
+    },
+    {
+      "event": "event_03.npz",
+      "sha256": "f5fb3fc6ca0aa856240a7a18b4cd17be40c5bdcec269fa2a8510ceedec143c05",
+      "source_m_s": [
+        11800.0,
+        13200.0,
+        1280.0,
+        0.36000001430511475
+      ],
+      "base": {
+        "full_l2": 1.2335564123769969,
+        "active_l2": 1.1134101425335559,
+        "zero_lag_correlation": 0.008904321892728688
+      },
+      "seeds": {
+        "2028": {
+          "metrics": {
+            "full_l2": 1.2327335786555242,
+            "active_l2": 1.1129823171885829,
+            "zero_lag_correlation": 0.009055543917821155
+          },
+          "mean_gate": [
+            6.84885435475735e-07,
+            0.08952581137418747,
+            0.9115942120552063
+          ]
+        }
+      }
+    },
+    {
+      "event": "event_04.npz",
+      "sha256": "a8833a2058a462b0379f573332373a582574faf2325e7ff19ea2553f411ae7eb",
+      "source_m_s": [
+        13200.0,
+        6200.0,
+        700.0,
+        0.4399999976158142
+      ],
+      "base": {
+        "full_l2": 1.0602736504157544,
+        "active_l2": 1.0374505330556376,
+        "zero_lag_correlation": 0.05598860622529999
+      },
+      "seeds": {
+        "2028": {
+          "metrics": {
+            "full_l2": 1.0546426398408395,
+            "active_l2": 1.0334191113217093,
+            "zero_lag_correlation": 0.060044493165159876
+          },
+          "mean_gate": [
+            0.00021600801846943796,
+            0.7990516424179077,
+            0.20059792697429657
+          ]
+        }
+      }
+    },
+    {
+      "event": "event_05.npz",
+      "sha256": "8a5eba9ed423d57b0eb8a88cf9dda9952aa66f4dabaa30a72429536e85b3eac1",
+      "source_m_s": [
+        3000.0,
+        11000.0,
+        600.0,
+        0.11999999731779099
+      ],
+      "base": {
+        "full_l2": 1.1053490737617762,
+        "active_l2": 1.0497672316827844,
+        "zero_lag_correlation": -0.011453576683212943
+      },
+      "seeds": {
+        "2028": {
+          "metrics": {
+            "full_l2": 1.0881949399331754,
+            "active_l2": 1.0415911924655805,
+            "zero_lag_correlation": -0.009244726456303202
+          },
+          "mean_gate": [
+            0.03032829985022545,
+            0.9609009623527527,
+            0.00915888138115406
+          ]
+        }
+      }
+    },
+    {
+      "event": "event_06.npz",
+      "sha256": "4c98a97561b9380aa8b9bc88f4273cb5eed67ddcc412a0a8dcb43cb5cac56dd0",
+      "source_m_s": [
+        7000.0,
+        14000.0,
+        1100.0,
+        0.23999999463558197
+      ],
+      "base": {
+        "full_l2": 1.1593559237010997,
+        "active_l2": 1.0644586239281602,
+        "zero_lag_correlation": 0.005355158219049216
+      },
+      "seeds": {
+        "2028": {
+          "metrics": {
+            "full_l2": 1.1451684730351754,
+            "active_l2": 1.0587243688228907,
+            "zero_lag_correlation": 0.005506269066266398
+          },
+          "mean_gate": [
+            8.870991587173194e-05,
+            0.5429562330245972,
+            0.4570324718952179
+          ]
+        }
+      }
+    },
+    {
+      "event": "event_07.npz",
+      "sha256": "03b0087dce1c1033d76ac1f7a930a70499df62ed72cdbbf62ced43d8b2948e8f",
+      "source_m_s": [
+        10000.0,
+        3000.0,
+        450.0,
+        0.3199999928474426
+      ],
+      "base": {
+        "full_l2": 1.1400765755231028,
+        "active_l2": 1.0677364253197144,
+        "zero_lag_correlation": 0.03196732331898246
+      },
+      "seeds": {
+        "2028": {
+          "metrics": {
+            "full_l2": 1.128300909805233,
+            "active_l2": 1.0609632558749882,
+            "zero_lag_correlation": 0.03261946628792023
+          },
+          "mean_gate": [
+            0.04020744562149048,
+            0.9476811289787292,
+            0.010865016840398312
+          ]
+        }
+      }
+    },
+    {
+      "event": "event_08.npz",
+      "sha256": "13088330b66a704b0aeb74d98a9f976dfd61be941eebaca737671e8366573532",
+      "source_m_s": [
+        14000.0,
+        10000.0,
+        1400.0,
+        0.4000000059604645
+      ],
+      "base": {
+        "full_l2": 1.103434527052008,
+        "active_l2": 1.0151556288992165,
+        "zero_lag_correlation": 0.1038179183665652
+      },
+      "seeds": {
+        "2028": {
+          "metrics": {
+            "full_l2": 1.103985116591042,
+            "active_l2": 1.0151818243097406,
+            "zero_lag_correlation": 0.10444369875507903
+          },
+          "mean_gate": [
+            8.666507369525789e-07,
+            0.04848000407218933,
+            0.9525570273399353
+          ]
+        }
+      }
+    }
+  ],
+  "limits": "Forward-only evaluation at the known source parameters; it does not establish source localization or calibrated uncertainty."
+}

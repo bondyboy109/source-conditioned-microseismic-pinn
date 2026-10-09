@@ -1,0 +1,14 @@
+{
+  "role": "post-hoc 75-node FD joint time/amplitude plus FMM arrival audit",
+  "base_protocol": "experiments/fd_joint_gain_fresh_source_protocol.json",
+  "base_result": "experiments/fd_joint_gain_fresh_source_results.json",
+  "local_protocol": "experiments/fd_joint_arrival_development_protocol.json",
+  "picker_protocol": "experiments/traveltime_aligned_moe_localization_protocol.json",
+  "fmm_fields": "outputs/traveltime_aligned_moe_development/receiver_fmm_fields_stride2.npy",
+  "arrival_weights": [0.0, 0.1, 0.25, 1.0],
+  "arrival_scale_s": 0.10,
+  "minimum_valid_picks": 6,
+  "result": "experiments/fd_joint_arrival_global_audit_results.json",
+  "report": "experiments/fd_joint_arrival_global_audit_results.md",
+  "limitations": "These three source records were previously inspected, including two boundary failures. The weight grid was fixed after the local development audit. This is a post-hoc diagnosis, not a second independent test; tuning or choosing a favorable weight from these events requires a genuinely new prospective evaluation. The 75-node grid is coarse, and FMM picks use a development-calibrated bias."
+}

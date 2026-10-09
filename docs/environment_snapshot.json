@@ -1,0 +1,15 @@
+{
+  "python": "3.10.21 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:35:39) [MSC v.1942 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.2.6",
+    "torch": "2.5.1+cu121",
+    "matplotlib": "3.10.9",
+    "scikit-fmm": "2025.6.23",
+    "pytest": "9.1.1"
+  },
+  "cuda_build": "12.1",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "precision": "float32",
+  "snapshot_date": "2026-10-09"
+}

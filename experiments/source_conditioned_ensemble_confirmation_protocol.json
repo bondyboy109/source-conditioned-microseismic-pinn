@@ -1,0 +1,65 @@
+{
+  "purpose": "one-time untouched-event confirmation of the frozen five-member source-conditioned ensemble",
+  "protocol_written_before_fd_generation": true,
+  "ensemble_manifest": "experiments/source_conditioned_ensemble_members.json",
+  "ensemble_size": 5,
+  "seeds": [42, 7, 123, 2028, 4096],
+  "members": [
+    {"seed": 42, "sha256": "3a8b5251f12c308f9899ef5557347984e09b7a3d948ffd7a3146d6242b20041a"},
+    {"seed": 7, "sha256": "bb0ebfe4a54619113b7f4379e8ed40aeb1f5344874803afecd8f057c7c78e565"},
+    {"seed": 123, "sha256": "18eb6d0979450fa8ead501e57438714e587bd7ee05bd7a52abd3619b30aad8d2"},
+    {"seed": 2028, "sha256": "92c89696684598fbbd76ad038380207db103f7850c4ee1b96f6019b35452e3c1"},
+    {"seed": 4096, "sha256": "cbb67563e152ee922efa017b18499676ce10f92659f520119b33f23ab9b175d3"}
+  ],
+  "velocity_file": "data/velocity/vp_model.npy",
+  "velocity_sha256": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+  "observations": "eight new 5-Hz, 0--2 s, dt 0.002 s, 25-receiver FD records with six zero-Dirichlet faces",
+  "events": [
+    {"file": "confirm_01_sw_shallow.npz", "source_m_s": [2500, 2500, 300, 0.09]},
+    {"file": "confirm_02_se_deep.npz", "source_m_s": [13500, 2500, 1300, 0.44]},
+    {"file": "confirm_03_nw_deep.npz", "source_m_s": [2500, 13500, 1100, 0.17]},
+    {"file": "confirm_04_ne_shallow.npz", "source_m_s": [13500, 13500, 350, 0.38]},
+    {"file": "confirm_05_west_deep.npz", "source_m_s": [5500, 6500, 1450, 0.27]},
+    {"file": "confirm_06_east_shallow.npz", "source_m_s": [10500, 5500, 250, 0.41]},
+    {"file": "confirm_07_north_mid.npz", "source_m_s": [6500, 10500, 800, 0.13]},
+    {"file": "confirm_08_center_deep.npz", "source_m_s": [10000, 10000, 1250, 0.32]}
+  ],
+  "shared_source_bounds_m_s": [[2000, 14000], [2000, 14000], [100, 1500], [0.05, 0.50]],
+  "pinn_inversion": {
+    "coarse_grid_xyzt": [11, 11, 8, 6],
+    "coarse_receiver_stride": 2,
+    "coarse_time_stride": 8,
+    "restarts": 5,
+    "refine_receiver_stride": 1,
+    "refine_time_stride": 4,
+    "refine_steps": 250,
+    "refine_adam_learning_rate_on_box_fractions": 0.0025,
+    "misfit_scale": "each event's full unstrided 2-s observation RMS, fixed across candidates"
+  },
+  "fmm_baseline": {
+    "velocity_grid_stride": 2,
+    "coarse_grid_xyz": [11, 11, 8],
+    "refinement_grid_xyz": 7,
+    "refinement_levels": 4,
+    "pick_threshold_fraction_per_trace": 0.05,
+    "minimum_station_peak_fraction_of_record": 0.01,
+    "last_record_s_excluded_for_pick": 0.15,
+    "minimum_valid_picks": 6,
+    "origin_time_bounds_s": [0.05, 0.50]
+  },
+  "interval": "component-wise member mean plus or minus 1.96 sample standard deviations; no clipping to source bounds",
+  "predeclared_gates": {
+    "ensemble_mean_location_error_below_500_m_at_least": 6,
+    "ensemble_mean_origin_time_error_below_0_05_s_at_least": 6,
+    "ensemble_mean_median_location_error_below_m": 500,
+    "ensemble_mean_median_location_below_fmm_median": true,
+    "component_coverage_at_least_events_each": 6,
+    "mean_interval_width_x_m_below": 2000,
+    "mean_interval_width_y_m_below": 2000,
+    "mean_interval_width_z_m_below": 1000,
+    "mean_interval_width_origin_time_s_below": 0.30,
+    "valid_fmm_picks_at_least_each_event": 6
+  },
+  "reporting": "all 40 member estimates, ensemble means, sample standard deviations, interval endpoints and widths, component coverage, PINN truth-source waveform errors, FMM estimates, timings, and every failed gate",
+  "limitations": "One synthetic Overthrust velocity model, one receiver geometry, noise-free 5-Hz FD data, M=5, and intervals that vary training randomness only. Passing does not establish field-data calibration or uncertainty from velocity, acquisition, source mechanism, or model form."
+}

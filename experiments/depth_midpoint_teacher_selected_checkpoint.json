@@ -1,0 +1,11 @@
+{
+  "role": "selected development checkpoint; not independently validated",
+  "selection_result": "experiments/depth_midpoint_teacher_low_weight_results.json",
+  "selection_label": "teacher_0.002",
+  "checkpoint": "outputs/depth_midpoint_teacher_low_weight/teacher_0.002_loadable.pth",
+  "checkpoint_sha256": "dab17cae1d3aae79c0b9efeac28aa5bae2f88748ad822d49d4b5bf87a73407b4",
+  "frequency_hz": 5.0,
+  "fine_tuning_updates": 500,
+  "teacher_loss_weight": 0.002,
+  "independent_validation": false
+}

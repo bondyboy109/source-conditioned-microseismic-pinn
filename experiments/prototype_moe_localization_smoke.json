@@ -1,0 +1,85 @@
+{
+  "role": "one-event localization smoke test after independent forward holdout",
+  "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\holdout_20260927\\event_01.npz",
+  "source_truth_m_s": [
+    4200.0,
+    7200.0,
+    380.0,
+    0.18000000715255737
+  ],
+  "estimated_source_m_s": [
+    4874.41162109375,
+    13709.517578125,
+    305.7370910644531,
+    0.3626100420951843
+  ],
+  "component_error": [
+    674.41162109375,
+    6509.517578125,
+    -74.26290893554688,
+    0.18261003494262695
+  ],
+  "location_error_m": 6544.78173828125,
+  "origin_time_error_s": 0.18261003494262695,
+  "selected_coarse_loss": 1.116474986076355,
+  "selected_final_loss": 1.0928856134414673,
+  "truth_loss": 1.26481294631958,
+  "coarse_source_gradient": [
+    2.207257032394409,
+    0.44542452692985535,
+    -0.006492437794804573,
+    0.06699366122484207
+  ],
+  "all_gradient_paths_finite": true,
+  "refinements": [
+    {
+      "coarse_source_m_s": [
+        4400.0,
+        14000.0,
+        100.0,
+        0.4999999701976776
+      ],
+      "coarse_loss": 1.116474986076355,
+      "estimated_source_m_s": [
+        4277.97216796875,
+        13965.7607421875,
+        105.9102554321289,
+        0.4999999701976776
+      ],
+      "final_loss": 1.1054632663726807
+    },
+    {
+      "coarse_source_m_s": [
+        4400.0,
+        11600.0,
+        100.0,
+        0.4999999701976776
+      ],
+      "coarse_loss": 1.1388946771621704,
+      "estimated_source_m_s": [
+        4332.42578125,
+        11762.1669921875,
+        100.0,
+        0.47774481773376465
+      ],
+      "final_loss": 1.1072267293930054
+    },
+    {
+      "coarse_source_m_s": [
+        4400.0,
+        14000.0,
+        566.6666870117188,
+        0.34999996423721313
+      ],
+      "coarse_loss": 1.1511355638504028,
+      "estimated_source_m_s": [
+        4874.41162109375,
+        13709.517578125,
+        305.7370910644531,
+        0.3626100420951843
+      ],
+      "final_loss": 1.0928856134414673
+    }
+  ],
+  "limits": "One holdout event, one checkpoint and one random seed; this is a smoke test, not evidence of publication-level localization accuracy or UQ calibration."
+}

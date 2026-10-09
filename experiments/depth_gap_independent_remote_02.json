@@ -1,0 +1,16 @@
+{
+  "event": "remote_02.npz",
+  "role": "out_of_neighborhood_forward_only",
+  "region": "remote",
+  "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\depth_gap_independent_confirmation\\remote_02.npz",
+  "sha256": "d822e29c8af391cd79b0dcc7e512eb9a82b4b36bbede0c6b28cffaed2a96952a",
+  "raw_waveform_relative_l2": 0.38413079410391987,
+  "fd_runtime_s": 8.598391199997423,
+  "source_truth_m_s": [
+    11450,
+    4070,
+    960,
+    0.28
+  ],
+  "inversion": null
+}

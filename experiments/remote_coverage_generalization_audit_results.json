@@ -1,0 +1,738 @@
+{
+  "role": "post-hoc development audit on 16 previously spent records; not independent confirmation",
+  "protocol_sha256": "871f7ebbe5ab02cfadfe4bb305d6dc7ff0b387a666412fa5524183eb5530639d",
+  "base_sha256": "dab17cae1d3aae79c0b9efeac28aa5bae2f88748ad822d49d4b5bf87a73407b4",
+  "candidate_sha256": "e658404d7b1a4871146856cd40362e9616ba6059adf3af628352660b7a15109e",
+  "summary": {
+    "base_mean_full_l2": 1.049325736602606,
+    "base_median_full_l2": 1.038306384913008,
+    "base_mean_active_l2": 0.9614246569381821,
+    "candidate_mean_full_l2": 1.0740235893225902,
+    "candidate_median_full_l2": 1.0738199353008828,
+    "candidate_mean_active_l2": 0.9657775140989522,
+    "candidate_improves_count": 1
+  },
+  "events": [
+    {
+      "group": "group_1",
+      "event": "test_01.npz",
+      "sha256": "063ddda11c1a73da3e870602f25968d41f5ecc74aadae580740947f1e54e4d41",
+      "source_m_s": [
+        4700.0,
+        4300.0,
+        620.0,
+        0.17000000178813934
+      ],
+      "nearest_added_remote_distance_m": 2109.2415698539608,
+      "base": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_01.npz",
+        "sha256": "063ddda11c1a73da3e870602f25968d41f5ecc74aadae580740947f1e54e4d41",
+        "source_m_s_post_hoc": [
+          4700.0,
+          4300.0,
+          620.0,
+          0.17000000178813934
+        ],
+        "full_record_relative_l2": 0.9246741808430198,
+        "active_sample_relative_l2": 0.8384416627787913,
+        "active_sample_count": 1849,
+        "active_observed_energy_fraction": 0.9682763692573115,
+        "predicted_to_observed_peak_ratio": 0.3323925616427556,
+        "zero_lag_correlation": 0.42418851703208676
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_01.npz",
+        "sha256": "063ddda11c1a73da3e870602f25968d41f5ecc74aadae580740947f1e54e4d41",
+        "source_m_s_post_hoc": [
+          4700.0,
+          4300.0,
+          620.0,
+          0.17000000178813934
+        ],
+        "full_record_relative_l2": 0.9697000683010417,
+        "active_sample_relative_l2": 0.8485433268364324,
+        "active_sample_count": 1849,
+        "active_observed_energy_fraction": 0.9682763692573115,
+        "predicted_to_observed_peak_ratio": 0.3668266812768562,
+        "zero_lag_correlation": 0.38562753795886073
+      },
+      "candidate_improves": false
+    },
+    {
+      "group": "group_1",
+      "event": "test_02.npz",
+      "sha256": "c39165b10f1e23a90f628727740d7edb2d07f90aef072a7438b2fe9173b1af75",
+      "source_m_s": [
+        5400.0,
+        10800.0,
+        760.0,
+        0.28999999165534973
+      ],
+      "nearest_added_remote_distance_m": 1060.2358228243374,
+      "base": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_02.npz",
+        "sha256": "c39165b10f1e23a90f628727740d7edb2d07f90aef072a7438b2fe9173b1af75",
+        "source_m_s_post_hoc": [
+          5400.0,
+          10800.0,
+          760.0,
+          0.28999999165534973
+        ],
+        "full_record_relative_l2": 0.9282557726423601,
+        "active_sample_relative_l2": 0.883007797644942,
+        "active_sample_count": 1261,
+        "active_observed_energy_fraction": 0.966275181272873,
+        "predicted_to_observed_peak_ratio": 0.21941621530278246,
+        "zero_lag_correlation": 0.3721039422670081
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_02.npz",
+        "sha256": "c39165b10f1e23a90f628727740d7edb2d07f90aef072a7438b2fe9173b1af75",
+        "source_m_s_post_hoc": [
+          5400.0,
+          10800.0,
+          760.0,
+          0.28999999165534973
+        ],
+        "full_record_relative_l2": 0.9596334052363231,
+        "active_sample_relative_l2": 0.8986538427813113,
+        "active_sample_count": 1261,
+        "active_observed_energy_fraction": 0.966275181272873,
+        "predicted_to_observed_peak_ratio": 0.3376298383510204,
+        "zero_lag_correlation": 0.3190081258400253
+      },
+      "candidate_improves": false
+    },
+    {
+      "group": "group_1",
+      "event": "test_03.npz",
+      "sha256": "d94aaae8c6ecc1801d6798f9798424143b03ea6039fa33af8f55c94ca828b97e",
+      "source_m_s": [
+        7200.0,
+        13200.0,
+        1180.0,
+        0.23000000417232513
+      ],
+      "nearest_added_remote_distance_m": 3946.7581633538175,
+      "base": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_03.npz",
+        "sha256": "d94aaae8c6ecc1801d6798f9798424143b03ea6039fa33af8f55c94ca828b97e",
+        "source_m_s_post_hoc": [
+          7200.0,
+          13200.0,
+          1180.0,
+          0.23000000417232513
+        ],
+        "full_record_relative_l2": 1.07691305396005,
+        "active_sample_relative_l2": 1.005721695248937,
+        "active_sample_count": 1999,
+        "active_observed_energy_fraction": 0.9826442464855494,
+        "predicted_to_observed_peak_ratio": 0.3980519325983025,
+        "zero_lag_correlation": 0.19593196263636364
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_03.npz",
+        "sha256": "d94aaae8c6ecc1801d6798f9798424143b03ea6039fa33af8f55c94ca828b97e",
+        "source_m_s_post_hoc": [
+          7200.0,
+          13200.0,
+          1180.0,
+          0.23000000417232513
+        ],
+        "full_record_relative_l2": 1.0914805310323321,
+        "active_sample_relative_l2": 1.0058376686766002,
+        "active_sample_count": 1999,
+        "active_observed_energy_fraction": 0.9826442464855494,
+        "predicted_to_observed_peak_ratio": 0.3799988402365515,
+        "zero_lag_correlation": 0.20593775723470553
+      },
+      "candidate_improves": false
+    },
+    {
+      "group": "group_1",
+      "event": "test_04.npz",
+      "sha256": "1b36b142d4fdd38d5dd8d9618dcdc3b5ddd285c036dbfcf73058b01c79069797",
+      "source_m_s": [
+        8600.0,
+        6200.0,
+        520.0,
+        0.4099999964237213
+      ],
+      "nearest_added_remote_distance_m": 4980.050200550191,
+      "base": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_04.npz",
+        "sha256": "1b36b142d4fdd38d5dd8d9618dcdc3b5ddd285c036dbfcf73058b01c79069797",
+        "source_m_s_post_hoc": [
+          8600.0,
+          6200.0,
+          520.0,
+          0.4099999964237213
+        ],
+        "full_record_relative_l2": 1.4259286135382812,
+        "active_sample_relative_l2": 1.3338333338532407,
+        "active_sample_count": 2459,
+        "active_observed_energy_fraction": 0.9942601506446921,
+        "predicted_to_observed_peak_ratio": 0.5258548088887565,
+        "zero_lag_correlation": -0.16304385903770824
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_04.npz",
+        "sha256": "1b36b142d4fdd38d5dd8d9618dcdc3b5ddd285c036dbfcf73058b01c79069797",
+        "source_m_s_post_hoc": [
+          8600.0,
+          6200.0,
+          520.0,
+          0.4099999964237213
+        ],
+        "full_record_relative_l2": 1.4674221120369266,
+        "active_sample_relative_l2": 1.3470376607296513,
+        "active_sample_count": 2459,
+        "active_observed_energy_fraction": 0.9942601506446921,
+        "predicted_to_observed_peak_ratio": 0.5142246394012,
+        "zero_lag_correlation": -0.13585482202879462
+      },
+      "candidate_improves": false
+    },
+    {
+      "group": "group_1",
+      "event": "test_05.npz",
+      "sha256": "c6747ace6bd0cab4a79218f7b6a58e211dcda01f5d3425b7f8b86197a7cb306e",
+      "source_m_s": [
+        9800.0,
+        3600.0,
+        1150.0,
+        0.1599999964237213
+      ],
+      "nearest_added_remote_distance_m": 4318.564576337837,
+      "base": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_05.npz",
+        "sha256": "c6747ace6bd0cab4a79218f7b6a58e211dcda01f5d3425b7f8b86197a7cb306e",
+        "source_m_s_post_hoc": [
+          9800.0,
+          3600.0,
+          1150.0,
+          0.1599999964237213
+        ],
+        "full_record_relative_l2": 0.8363299639709455,
+        "active_sample_relative_l2": 0.7723568234280224,
+        "active_sample_count": 3156,
+        "active_observed_energy_fraction": 0.9924349075604565,
+        "predicted_to_observed_peak_ratio": 0.672615386250905,
+        "zero_lag_correlation": 0.5650926589209532
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_05.npz",
+        "sha256": "c6747ace6bd0cab4a79218f7b6a58e211dcda01f5d3425b7f8b86197a7cb306e",
+        "source_m_s_post_hoc": [
+          9800.0,
+          3600.0,
+          1150.0,
+          0.1599999964237213
+        ],
+        "full_record_relative_l2": 0.8525972406103439,
+        "active_sample_relative_l2": 0.7848887769348877,
+        "active_sample_count": 3156,
+        "active_observed_energy_fraction": 0.9924349075604565,
+        "predicted_to_observed_peak_ratio": 0.5574380931890984,
+        "zero_lag_correlation": 0.5379859160212227
+      },
+      "candidate_improves": false
+    },
+    {
+      "group": "group_1",
+      "event": "test_06.npz",
+      "sha256": "b5dc551f9d625f08f38d34dcbc2e05895bf2cc1a057783e1cde834224bc9c2bb",
+      "source_m_s": [
+        11800.0,
+        8800.0,
+        930.0,
+        0.30000001192092896
+      ],
+      "nearest_added_remote_distance_m": 4119.02901179392,
+      "base": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_06.npz",
+        "sha256": "b5dc551f9d625f08f38d34dcbc2e05895bf2cc1a057783e1cde834224bc9c2bb",
+        "source_m_s_post_hoc": [
+          11800.0,
+          8800.0,
+          930.0,
+          0.30000001192092896
+        ],
+        "full_record_relative_l2": 0.6896380850220488,
+        "active_sample_relative_l2": 0.5974526500068039,
+        "active_sample_count": 2164,
+        "active_observed_energy_fraction": 0.9891990461520299,
+        "predicted_to_observed_peak_ratio": 0.9453692596822115,
+        "zero_lag_correlation": 0.7560878686605578
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_06.npz",
+        "sha256": "b5dc551f9d625f08f38d34dcbc2e05895bf2cc1a057783e1cde834224bc9c2bb",
+        "source_m_s_post_hoc": [
+          11800.0,
+          8800.0,
+          930.0,
+          0.30000001192092896
+        ],
+        "full_record_relative_l2": 0.7278753804292669,
+        "active_sample_relative_l2": 0.6230905700336862,
+        "active_sample_count": 2164,
+        "active_observed_energy_fraction": 0.9891990461520299,
+        "predicted_to_observed_peak_ratio": 0.9404574429391838,
+        "zero_lag_correlation": 0.7392827928477246
+      },
+      "candidate_improves": false
+    },
+    {
+      "group": "group_1",
+      "event": "test_07.npz",
+      "sha256": "837736d30fd7bbb48ce9cf4452b841baf229e0481c6bbd6fd1ee23be6b675109",
+      "source_m_s": [
+        13200.0,
+        11200.0,
+        380.0,
+        0.27000001072883606
+      ],
+      "nearest_added_remote_distance_m": 2364.931288642442,
+      "base": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_07.npz",
+        "sha256": "837736d30fd7bbb48ce9cf4452b841baf229e0481c6bbd6fd1ee23be6b675109",
+        "source_m_s_post_hoc": [
+          13200.0,
+          11200.0,
+          380.0,
+          0.27000001072883606
+        ],
+        "full_record_relative_l2": 0.9705164271046532,
+        "active_sample_relative_l2": 0.9283535652129581,
+        "active_sample_count": 1424,
+        "active_observed_energy_fraction": 0.9792082325551689,
+        "predicted_to_observed_peak_ratio": 0.28755650358364804,
+        "zero_lag_correlation": 0.28515509077971984
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_07.npz",
+        "sha256": "837736d30fd7bbb48ce9cf4452b841baf229e0481c6bbd6fd1ee23be6b675109",
+        "source_m_s_post_hoc": [
+          13200.0,
+          11200.0,
+          380.0,
+          0.27000001072883606
+        ],
+        "full_record_relative_l2": 0.9792099133628014,
+        "active_sample_relative_l2": 0.927528895963742,
+        "active_sample_count": 1424,
+        "active_observed_energy_fraction": 0.9792082325551689,
+        "predicted_to_observed_peak_ratio": 0.29654730490030723,
+        "zero_lag_correlation": 0.282931917032766
+      },
+      "candidate_improves": false
+    },
+    {
+      "group": "group_1",
+      "event": "test_08.npz",
+      "sha256": "df432f3c2dfebc6cb0ae3c0f8bf400bd5d608feb5543868a511578076cc149c1",
+      "source_m_s": [
+        3800.0,
+        12800.0,
+        1320.0,
+        0.3799999952316284
+      ],
+      "nearest_added_remote_distance_m": 3321.5809488856357,
+      "base": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_08.npz",
+        "sha256": "df432f3c2dfebc6cb0ae3c0f8bf400bd5d608feb5543868a511578076cc149c1",
+        "source_m_s_post_hoc": [
+          3800.0,
+          12800.0,
+          1320.0,
+          0.3799999952316284
+        ],
+        "full_record_relative_l2": 0.7914835836547596,
+        "active_sample_relative_l2": 0.710975678430906,
+        "active_sample_count": 1972,
+        "active_observed_energy_fraction": 0.9935079710269086,
+        "predicted_to_observed_peak_ratio": 0.8933807106225353,
+        "zero_lag_correlation": 0.6636925200187905
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_08.npz",
+        "sha256": "df432f3c2dfebc6cb0ae3c0f8bf400bd5d608feb5543868a511578076cc149c1",
+        "source_m_s_post_hoc": [
+          3800.0,
+          12800.0,
+          1320.0,
+          0.3799999952316284
+        ],
+        "full_record_relative_l2": 0.8083608232149477,
+        "active_sample_relative_l2": 0.7171549995456873,
+        "active_sample_count": 1972,
+        "active_observed_energy_fraction": 0.9935079710269086,
+        "predicted_to_observed_peak_ratio": 0.9053207443705733,
+        "zero_lag_correlation": 0.6456698094953424
+      },
+      "candidate_improves": false
+    },
+    {
+      "group": "group_2",
+      "event": "test_01.npz",
+      "sha256": "1d44a3788ce53a9f1435b142813d1011a9169b2b987e9f7bf56b06ee19718539",
+      "source_m_s": [
+        2600.0,
+        2800.0,
+        300.0,
+        0.20999999344348907
+      ],
+      "nearest_added_remote_distance_m": 2412.9857024027306,
+      "base": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_01.npz",
+        "sha256": "1d44a3788ce53a9f1435b142813d1011a9169b2b987e9f7bf56b06ee19718539",
+        "source_m_s_post_hoc": [
+          2600.0,
+          2800.0,
+          300.0,
+          0.20999999344348907
+        ],
+        "full_record_relative_l2": 1.2937447469794432,
+        "active_sample_relative_l2": 1.2466159757326511,
+        "active_sample_count": 2198,
+        "active_observed_energy_fraction": 0.9952389641699757,
+        "predicted_to_observed_peak_ratio": 0.7070142310393487,
+        "zero_lag_correlation": -0.11562500858995875
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_01.npz",
+        "sha256": "1d44a3788ce53a9f1435b142813d1011a9169b2b987e9f7bf56b06ee19718539",
+        "source_m_s_post_hoc": [
+          2600.0,
+          2800.0,
+          300.0,
+          0.20999999344348907
+        ],
+        "full_record_relative_l2": 1.394938965646646,
+        "active_sample_relative_l2": 1.3231989822447123,
+        "active_sample_count": 2198,
+        "active_observed_energy_fraction": 0.9952389641699757,
+        "predicted_to_observed_peak_ratio": 0.7672511454618266,
+        "zero_lag_correlation": -0.04393657297252431
+      },
+      "candidate_improves": false
+    },
+    {
+      "group": "group_2",
+      "event": "test_02.npz",
+      "sha256": "aa56b60ef6c1c9c633db435236060c5b883fc86b339b2839cd41a76fdbffe416",
+      "source_m_s": [
+        13600.0,
+        3600.0,
+        1230.0,
+        0.3199999928474426
+      ],
+      "nearest_added_remote_distance_m": 1656.6230711903056,
+      "base": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_02.npz",
+        "sha256": "aa56b60ef6c1c9c633db435236060c5b883fc86b339b2839cd41a76fdbffe416",
+        "source_m_s_post_hoc": [
+          13600.0,
+          3600.0,
+          1230.0,
+          0.3199999928474426
+        ],
+        "full_record_relative_l2": 0.9709181105378778,
+        "active_sample_relative_l2": 0.7798144351221015,
+        "active_sample_count": 1871,
+        "active_observed_energy_fraction": 0.9940601409140354,
+        "predicted_to_observed_peak_ratio": 0.8016453852893264,
+        "zero_lag_correlation": 0.5086413780675793
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_02.npz",
+        "sha256": "aa56b60ef6c1c9c633db435236060c5b883fc86b339b2839cd41a76fdbffe416",
+        "source_m_s_post_hoc": [
+          13600.0,
+          3600.0,
+          1230.0,
+          0.3199999928474426
+        ],
+        "full_record_relative_l2": 1.0768272861569783,
+        "active_sample_relative_l2": 0.8267667698464998,
+        "active_sample_count": 1871,
+        "active_observed_energy_fraction": 0.9940601409140354,
+        "predicted_to_observed_peak_ratio": 1.329428962066558,
+        "zero_lag_correlation": 0.664883330144864
+      },
+      "candidate_improves": false
+    },
+    {
+      "group": "group_2",
+      "event": "test_03.npz",
+      "sha256": "e2b30f94c909b7a750789632257f338d20942ef4a524b87dc00a344635a00f67",
+      "source_m_s": [
+        3400.0,
+        13900.0,
+        980.0,
+        0.14000000059604645
+      ],
+      "nearest_added_remote_distance_m": 4478.269755162143,
+      "base": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_03.npz",
+        "sha256": "e2b30f94c909b7a750789632257f338d20942ef4a524b87dc00a344635a00f67",
+        "source_m_s_post_hoc": [
+          3400.0,
+          13900.0,
+          980.0,
+          0.14000000059604645
+        ],
+        "full_record_relative_l2": 1.3056566124827882,
+        "active_sample_relative_l2": 1.0899948841122178,
+        "active_sample_count": 2433,
+        "active_observed_energy_fraction": 0.9933685380272806,
+        "predicted_to_observed_peak_ratio": 0.7729097322928423,
+        "zero_lag_correlation": 0.19910679736786563
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_03.npz",
+        "sha256": "e2b30f94c909b7a750789632257f338d20942ef4a524b87dc00a344635a00f67",
+        "source_m_s_post_hoc": [
+          3400.0,
+          13900.0,
+          980.0,
+          0.14000000059604645
+        ],
+        "full_record_relative_l2": 1.3560155527021296,
+        "active_sample_relative_l2": 1.124930353728429,
+        "active_sample_count": 2433,
+        "active_observed_energy_fraction": 0.9933685380272806,
+        "predicted_to_observed_peak_ratio": 0.8437229836248983,
+        "zero_lag_correlation": 0.18851798151594357
+      },
+      "candidate_improves": false
+    },
+    {
+      "group": "group_2",
+      "event": "test_04.npz",
+      "sha256": "28905a6d02cccff650b0144a39b1d188ca9a63495c8827b6f9882689211b42f1",
+      "source_m_s": [
+        12900.0,
+        13700.0,
+        420.0,
+        0.3700000047683716
+      ],
+      "nearest_added_remote_distance_m": 1128.228700219951,
+      "base": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_04.npz",
+        "sha256": "28905a6d02cccff650b0144a39b1d188ca9a63495c8827b6f9882689211b42f1",
+        "source_m_s_post_hoc": [
+          12900.0,
+          13700.0,
+          420.0,
+          0.3700000047683716
+        ],
+        "full_record_relative_l2": 1.1530183982019724,
+        "active_sample_relative_l2": 1.1054334027748813,
+        "active_sample_count": 1375,
+        "active_observed_energy_fraction": 0.9891210926069028,
+        "predicted_to_observed_peak_ratio": 0.39106127350816117,
+        "zero_lag_correlation": -0.056914336535849215
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_04.npz",
+        "sha256": "28905a6d02cccff650b0144a39b1d188ca9a63495c8827b6f9882689211b42f1",
+        "source_m_s_post_hoc": [
+          12900.0,
+          13700.0,
+          420.0,
+          0.3700000047683716
+        ],
+        "full_record_relative_l2": 1.1915432071356258,
+        "active_sample_relative_l2": 1.1433282473793345,
+        "active_sample_count": 1375,
+        "active_observed_energy_fraction": 0.9891210926069028,
+        "predicted_to_observed_peak_ratio": 0.3868349464441481,
+        "zero_lag_correlation": -0.11642764708574396
+      },
+      "candidate_improves": false
+    },
+    {
+      "group": "group_2",
+      "event": "test_05.npz",
+      "sha256": "7a2078e42bb79670e46fd63e98b990bfa1e945e9c98c72e26febca1d6087df17",
+      "source_m_s": [
+        6300.0,
+        6300.0,
+        1380.0,
+        0.25
+      ],
+      "nearest_added_remote_distance_m": 3683.598783798257,
+      "base": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_05.npz",
+        "sha256": "7a2078e42bb79670e46fd63e98b990bfa1e945e9c98c72e26febca1d6087df17",
+        "source_m_s_post_hoc": [
+          6300.0,
+          6300.0,
+          1380.0,
+          0.25
+        ],
+        "full_record_relative_l2": 1.1492967864663206,
+        "active_sample_relative_l2": 1.0560696166846357,
+        "active_sample_count": 2918,
+        "active_observed_energy_fraction": 0.9865684729128797,
+        "predicted_to_observed_peak_ratio": 0.33521502052899,
+        "zero_lag_correlation": 0.05497996401607235
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_05.npz",
+        "sha256": "7a2078e42bb79670e46fd63e98b990bfa1e945e9c98c72e26febca1d6087df17",
+        "source_m_s_post_hoc": [
+          6300.0,
+          6300.0,
+          1380.0,
+          0.25
+        ],
+        "full_record_relative_l2": 1.2023362622517226,
+        "active_sample_relative_l2": 1.0777363192822478,
+        "active_sample_count": 2918,
+        "active_observed_energy_fraction": 0.9865684729128797,
+        "predicted_to_observed_peak_ratio": 0.340712501631858,
+        "zero_lag_correlation": 0.04815251867083949
+      },
+      "candidate_improves": false
+    },
+    {
+      "group": "group_2",
+      "event": "test_06.npz",
+      "sha256": "bf510d8b084ff360ba9f7a36feb27dad8d1436bb5610d205aa2e9658754a4639",
+      "source_m_s": [
+        10400.0,
+        10400.0,
+        220.0,
+        0.3100000023841858
+      ],
+      "nearest_added_remote_distance_m": 3456.1394647785846,
+      "base": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_06.npz",
+        "sha256": "bf510d8b084ff360ba9f7a36feb27dad8d1436bb5610d205aa2e9658754a4639",
+        "source_m_s_post_hoc": [
+          10400.0,
+          10400.0,
+          220.0,
+          0.3100000023841858
+        ],
+        "full_record_relative_l2": 1.1149664932496728,
+        "active_sample_relative_l2": 1.0462482036525103,
+        "active_sample_count": 1249,
+        "active_observed_energy_fraction": 0.9733143316471291,
+        "predicted_to_observed_peak_ratio": 0.1407906497973612,
+        "zero_lag_correlation": -0.0653676501725378
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_06.npz",
+        "sha256": "bf510d8b084ff360ba9f7a36feb27dad8d1436bb5610d205aa2e9658754a4639",
+        "source_m_s_post_hoc": [
+          10400.0,
+          10400.0,
+          220.0,
+          0.3100000023841858
+        ],
+        "full_record_relative_l2": 1.1542496994921274,
+        "active_sample_relative_l2": 1.0692170698270944,
+        "active_sample_count": 1249,
+        "active_observed_energy_fraction": 0.9733143316471291,
+        "predicted_to_observed_peak_ratio": 0.142844802500618,
+        "zero_lag_correlation": -0.10237995868895547
+      },
+      "candidate_improves": false
+    },
+    {
+      "group": "group_2",
+      "event": "test_07.npz",
+      "sha256": "faa85f2df753bbcf96cdba3639427c0943d7fcdcb72e1cfd0ed67a98e77fd957",
+      "source_m_s": [
+        7600.0,
+        4600.0,
+        880.0,
+        0.1899999976158142
+      ],
+      "nearest_added_remote_distance_m": 4856.428729014769,
+      "base": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_07.npz",
+        "sha256": "faa85f2df753bbcf96cdba3639427c0943d7fcdcb72e1cfd0ed67a98e77fd957",
+        "source_m_s_post_hoc": [
+          7600.0,
+          4600.0,
+          880.0,
+          0.1899999976158142
+        ],
+        "full_record_relative_l2": 0.9996997158659661,
+        "active_sample_relative_l2": 0.9091097258474371,
+        "active_sample_count": 2248,
+        "active_observed_energy_fraction": 0.9709231982745841,
+        "predicted_to_observed_peak_ratio": 0.2850230370756324,
+        "zero_lag_correlation": 0.3207801106865913
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_07.npz",
+        "sha256": "faa85f2df753bbcf96cdba3639427c0943d7fcdcb72e1cfd0ed67a98e77fd957",
+        "source_m_s_post_hoc": [
+          7600.0,
+          4600.0,
+          880.0,
+          0.1899999976158142
+        ],
+        "full_record_relative_l2": 1.070812584444787,
+        "active_sample_relative_l2": 0.9473182528372288,
+        "active_sample_count": 2248,
+        "active_observed_energy_fraction": 0.9709231982745841,
+        "predicted_to_observed_peak_ratio": 0.31056173504388046,
+        "zero_lag_correlation": 0.2473263250810975
+      },
+      "candidate_improves": false
+    },
+    {
+      "group": "group_2",
+      "event": "test_08.npz",
+      "sha256": "8468027befcbb696a561f131bac172f9e93a52af2b6f6b381773f9957415fe2c",
+      "source_m_s": [
+        4700.0,
+        9400.0,
+        1120.0,
+        0.4000000059604645
+      ],
+      "nearest_added_remote_distance_m": 644.1273166075166,
+      "base": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_08.npz",
+        "sha256": "8468027befcbb696a561f131bac172f9e93a52af2b6f6b381773f9957415fe2c",
+        "source_m_s_post_hoc": [
+          4700.0,
+          9400.0,
+          1120.0,
+          0.4000000059604645
+        ],
+        "full_record_relative_l2": 1.1581712411215384,
+        "active_sample_relative_l2": 1.079365060479877,
+        "active_sample_count": 2398,
+        "active_observed_energy_fraction": 0.9912878445606457,
+        "predicted_to_observed_peak_ratio": 0.867029126010924,
+        "zero_lag_correlation": 0.17195479249083942
+      },
+      "candidate": {
+        "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_08.npz",
+        "sha256": "8468027befcbb696a561f131bac172f9e93a52af2b6f6b381773f9957415fe2c",
+        "source_m_s_post_hoc": [
+          4700.0,
+          9400.0,
+          1120.0,
+          0.4000000059604645
+        ],
+        "full_record_relative_l2": 0.8813743971074419,
+        "active_sample_relative_l2": 0.7872084889356895,
+        "active_sample_count": 2398,
+        "active_observed_energy_fraction": 0.9912878445606457,
+        "predicted_to_observed_peak_ratio": 1.0022097214093082,
+        "zero_lag_correlation": 0.5699199190969736
+      },
+      "candidate_improves": true
+    }
+  ],
+  "limits": "All 16 evaluation records were opened in earlier experiments. This audit is used only to diagnose whether four-source remote coverage expansion transfers beyond its training records. One seed, one velocity model, 5 Hz and no localization claim."
+}

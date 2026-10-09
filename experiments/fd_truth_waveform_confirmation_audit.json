@@ -1,0 +1,255 @@
+{
+  "role": "post-hoc forward-consistency and time-shift diagnostic; not localization",
+  "baseline_protocol_sha256": "b9dc92e35482be947dc531cc31e9581e10f9a323369783c7b64a407a9c50537f",
+  "config_sha256": "8af2cdceeeb4f737a8582fb11a787f05306bf0c8b1560665fbca1b1a5628d02a",
+  "candidate_solver_sha256": "b5e638ab19a7bdc6b4db9f7c5955b318506c3ae768d9767bdd1bd78362621c28",
+  "observation_solver_sha256": "a09d9d7592ee699b0898f00ea7ec367ff746718c6c9926ca6beae3926adfa120",
+  "device": "cuda",
+  "time_step_s": 0.002,
+  "waveform_window_s": [
+    0.0,
+    2.0
+  ],
+  "template_runtime_seconds": 83.44604959999998,
+  "direct_total_runtime_seconds": 67.83537319999999,
+  "events": [
+    {
+      "id": "confirm_01_west_shallow",
+      "observation_sha256": "629b01e405f011825ad94e3982170944956dde2df584075328314150679b5442",
+      "source_truth_m_s": [
+        3100.0,
+        7200.0,
+        410.0,
+        0.18000000715255737
+      ],
+      "direct_truth": {
+        "relative_l2": 2.5389530852513157e-06,
+        "normalized_mse": 6.446282769107174e-12,
+        "maximum_absolute_difference": 2.0797585875698132e-11
+      },
+      "shifted_at_nearest_truth_time": {
+        "origin_time_s": 0.18,
+        "lag_samples": -160,
+        "normalized_mse": 1.388644163723861e-06,
+        "relative_l2": 0.0011784074693092627
+      },
+      "shifted_optimized_at_truth_location": {
+        "origin_time_s": 0.18,
+        "lag_samples": -160,
+        "normalized_mse": 1.388644163723861e-06,
+        "relative_l2": 0.0011784074693092627
+      },
+      "optimized_origin_error_s": 7.152557379708213e-09,
+      "direct_runtime_seconds": 8.490458199999978
+    },
+    {
+      "id": "confirm_02_east_deep",
+      "observation_sha256": "e94ce318a54afc211feb769a51ae6899ff950581844b30545d92ccdee6749c00",
+      "source_truth_m_s": [
+        12800.0,
+        6600.0,
+        1330.0,
+        0.36000001430511475
+      ],
+      "direct_truth": {
+        "relative_l2": 1.6371266421722664e-06,
+        "normalized_mse": 2.68018364251024e-12,
+        "maximum_absolute_difference": 7.560174708487466e-12
+      },
+      "shifted_at_nearest_truth_time": {
+        "origin_time_s": 0.36,
+        "lag_samples": -70,
+        "normalized_mse": 2.3089556287934985e-12,
+        "relative_l2": 1.5195248036124644e-06
+      },
+      "shifted_optimized_at_truth_location": {
+        "origin_time_s": 0.36,
+        "lag_samples": -70,
+        "normalized_mse": 2.3089556287934985e-12,
+        "relative_l2": 1.5195248036124644e-06
+      },
+      "optimized_origin_error_s": 1.4305114759416426e-08,
+      "direct_runtime_seconds": 8.484632200000021
+    },
+    {
+      "id": "confirm_03_north_mid",
+      "observation_sha256": "f4f640ca19f0af30deda81c5d8237f91e83200413b034d562bf3f2c435b37ceb",
+      "source_truth_m_s": [
+        5800.0,
+        12100.0,
+        690.0,
+        0.23999999463558197
+      ],
+      "direct_truth": {
+        "relative_l2": 2.2413258413216354e-06,
+        "normalized_mse": 5.023541526976138e-12,
+        "maximum_absolute_difference": 1.1254996934439987e-11
+      },
+      "shifted_at_nearest_truth_time": {
+        "origin_time_s": 0.24,
+        "lag_samples": -130,
+        "normalized_mse": 1.620682261882254e-11,
+        "relative_l2": 4.025769816919808e-06
+      },
+      "shifted_optimized_at_truth_location": {
+        "origin_time_s": 0.24,
+        "lag_samples": -130,
+        "normalized_mse": 1.620682261882254e-11,
+        "relative_l2": 4.025769816919808e-06
+      },
+      "optimized_origin_error_s": 5.364418020903372e-09,
+      "direct_runtime_seconds": 8.476784099999975
+    },
+    {
+      "id": "confirm_04_south_deep",
+      "observation_sha256": "184552204773fcc4866300760449d1099f634b1ea0a436aceb337858871c8aae",
+      "source_truth_m_s": [
+        11200.0,
+        2600.0,
+        1010.0,
+        0.41999998688697815
+      ],
+      "direct_truth": {
+        "relative_l2": 1.5606428040612815e-06,
+        "normalized_mse": 2.4356059618682594e-12,
+        "maximum_absolute_difference": 1.2732925824820995e-11
+      },
+      "shifted_at_nearest_truth_time": {
+        "origin_time_s": 0.42,
+        "lag_samples": -40,
+        "normalized_mse": 1.9915507938891713e-12,
+        "relative_l2": 1.411223155241286e-06
+      },
+      "shifted_optimized_at_truth_location": {
+        "origin_time_s": 0.42,
+        "lag_samples": -40,
+        "normalized_mse": 1.9915507938891713e-12,
+        "relative_l2": 1.411223155241286e-06
+      },
+      "optimized_origin_error_s": 1.3113021835042815e-08,
+      "direct_runtime_seconds": 8.473363099999972
+    },
+    {
+      "id": "confirm_05_center_shallow",
+      "observation_sha256": "c5bcb52a630e8e738c7951c9c44fb08eb3a2b89f4edde9cc1a072c792dc04da4",
+      "source_truth_m_s": [
+        8200.0,
+        8400.0,
+        300.0,
+        0.14000000059604645
+      ],
+      "direct_truth": {
+        "relative_l2": 1.7176981022713173e-06,
+        "normalized_mse": 2.9504867705464847e-12,
+        "maximum_absolute_difference": 3.456079866737127e-11
+      },
+      "shifted_at_nearest_truth_time": {
+        "origin_time_s": 0.14,
+        "lag_samples": -180,
+        "normalized_mse": 0.00037941190963368924,
+        "relative_l2": 0.01947849864937463
+      },
+      "shifted_optimized_at_truth_location": {
+        "origin_time_s": 0.14,
+        "lag_samples": -180,
+        "normalized_mse": 0.00037941190963368924,
+        "relative_l2": 0.01947849864937463
+      },
+      "optimized_origin_error_s": 5.9604643443123e-10,
+      "direct_runtime_seconds": 8.488039100000037
+    },
+    {
+      "id": "confirm_06_southwest_deep",
+      "observation_sha256": "0891c18cc01dacf81771cead552775eaadea903cef55cd0bf22efe0a05568d16",
+      "source_truth_m_s": [
+        4200.0,
+        3600.0,
+        1420.0,
+        0.3100000023841858
+      ],
+      "direct_truth": {
+        "relative_l2": 1.7099909995997393e-06,
+        "normalized_mse": 2.9240692187121155e-12,
+        "maximum_absolute_difference": 6.0254023992456496e-12
+      },
+      "shifted_at_nearest_truth_time": {
+        "origin_time_s": 0.31,
+        "lag_samples": -95,
+        "normalized_mse": 2.635730998534869e-12,
+        "relative_l2": 1.6234934550329634e-06
+      },
+      "shifted_optimized_at_truth_location": {
+        "origin_time_s": 0.31,
+        "lag_samples": -95,
+        "normalized_mse": 2.635730998534869e-12,
+        "relative_l2": 1.6234934550329634e-06
+      },
+      "optimized_origin_error_s": 2.384185793236071e-09,
+      "direct_runtime_seconds": 8.476183500000047
+    },
+    {
+      "id": "confirm_07_northeast_mid",
+      "observation_sha256": "832f563e4e39c3fda64ea2b5cc9550e95dff1530eba72b68e3c4daae3f5aca1f",
+      "source_truth_m_s": [
+        13700.0,
+        11800.0,
+        600.0,
+        0.27000001072883606
+      ],
+      "direct_truth": {
+        "relative_l2": 2.21254006432278e-06,
+        "normalized_mse": 4.895333536233452e-12,
+        "maximum_absolute_difference": 2.1998403099132702e-11
+      },
+      "shifted_at_nearest_truth_time": {
+        "origin_time_s": 0.27,
+        "lag_samples": -115,
+        "normalized_mse": 3.703487035820751e-12,
+        "relative_l2": 1.9244446045082072e-06
+      },
+      "shifted_optimized_at_truth_location": {
+        "origin_time_s": 0.27,
+        "lag_samples": -115,
+        "normalized_mse": 3.703487035820751e-12,
+        "relative_l2": 1.9244446045082072e-06
+      },
+      "optimized_origin_error_s": 1.0728836041806744e-08,
+      "direct_runtime_seconds": 8.47460319999999
+    },
+    {
+      "id": "confirm_08_north_deep",
+      "observation_sha256": "ae78e9ce5b7d4bade471be3b7f057bf42f104e1e45d3744b810369286f55f0ea",
+      "source_truth_m_s": [
+        9500.0,
+        13200.0,
+        1240.0,
+        0.38999998569488525
+      ],
+      "direct_truth": {
+        "relative_l2": 1.8475036745874278e-06,
+        "normalized_mse": 3.4132698276140486e-12,
+        "maximum_absolute_difference": 8.185452315956354e-12
+      },
+      "shifted_at_nearest_truth_time": {
+        "origin_time_s": 0.39,
+        "lag_samples": -55,
+        "normalized_mse": 3.4409316298516495e-12,
+        "relative_l2": 1.8549748326733842e-06
+      },
+      "shifted_optimized_at_truth_location": {
+        "origin_time_s": 0.39,
+        "lag_samples": -55,
+        "normalized_mse": 3.4409316298516495e-12,
+        "relative_l2": 1.8549748326733842e-06
+      },
+      "optimized_origin_error_s": 1.4305114759416426e-08,
+      "direct_runtime_seconds": 8.471309799999972
+    }
+  ],
+  "summary": {
+    "median_direct_truth_relative_l2": 1.7826008884293726e-06,
+    "median_shifted_truth_relative_l2": 1.8897097185907957e-06,
+    "median_shifted_optimized_relative_l2": 1.8897097185907957e-06,
+    "median_optimized_origin_error_s": 8.940696710757479e-09
+  }
+}

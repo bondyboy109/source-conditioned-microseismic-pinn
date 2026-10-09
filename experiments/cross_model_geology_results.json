@@ -1,0 +1,225 @@
+{
+  "method": "zero_shot_cross_geology_audit",
+  "model": "independent_layered_undulating",
+  "checkpoint": "E:\\source-conditioned-microseismic-pinn\\outputs\\traveltime_aligned_moe_development\\traveltime_aligned_moe.pth",
+  "checkpoint_sha256": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+  "velocity_sha256": "b806f82c0150b40b9b439623ce023c477ace525d0454169cb3ffc98feb140310",
+  "fmm_spacing_m": 80.0,
+  "fmm_setup_seconds": 38.88799740000104,
+  "events": [
+    {
+      "event": "layered_west_shallow",
+      "truth_m_s": [
+        3000.0,
+        12000.0,
+        300.0,
+        0.16
+      ],
+      "valid_picks": 8,
+      "branches": {
+        "waveform_only": {
+          "estimated_source_m_s": [
+            3918.978759765625,
+            12510.7705078125,
+            1500.0,
+            0.4009791314601898
+          ],
+          "location_error_m": 1595.4336315094417,
+          "origin_time_error_s": 0.24097913146018982,
+          "forward_waveform_mse": 0.7900891900062561,
+          "arrival_mse": 6.656848907470703
+        },
+        "hybrid": {
+          "estimated_source_m_s": [
+            2737.091796875,
+            11810.71875,
+            799.996337890625,
+            0.2354099154472351
+          ],
+          "location_error_m": 595.77214837219,
+          "origin_time_error_s": 0.0754099154472351,
+          "forward_waveform_mse": 0.8379136323928833,
+          "arrival_mse": 0.3763716220855713
+        },
+        "fmm": {
+          "estimated_source_m_s": [
+            2992.5925925925926,
+            12029.62962962963,
+            270.3703703703704,
+            0.12451710212474754
+          ],
+          "location_error_m": 42.552315900281634,
+          "origin_time_error_s": 0.03548289787525247,
+          "valid_picks": 8,
+          "arrival_rmse_s": 0.00834086033541294
+        }
+      }
+    },
+    {
+      "event": "layered_center_deep",
+      "truth_m_s": [
+        8000.0,
+        8000.0,
+        1300.0,
+        0.28
+      ],
+      "valid_picks": 11,
+      "branches": {
+        "waveform_only": {
+          "estimated_source_m_s": [
+            7948.71728515625,
+            8073.74853515625,
+            1309.5181884765625,
+            0.3034123182296753
+          ],
+          "location_error_m": 90.32917131975354,
+          "origin_time_error_s": 0.023412318229675266,
+          "forward_waveform_mse": 0.40515920519828796,
+          "arrival_mse": 0.2506043016910553
+        },
+        "hybrid": {
+          "estimated_source_m_s": [
+            7949.1220703125,
+            8056.65087890625,
+            1324.7222900390625,
+            0.2997434735298157
+          ],
+          "location_error_m": 80.05671386531128,
+          "origin_time_error_s": 0.019743473529815647,
+          "forward_waveform_mse": 0.4116743803024292,
+          "arrival_mse": 0.19262565672397614
+        },
+        "fmm": {
+          "estimated_source_m_s": [
+            8000.0,
+            8029.62962962963,
+            1258.0246913580245,
+            0.25075268212605356
+          ],
+          "location_error_m": 51.379387769592256,
+          "origin_time_error_s": 0.029247317873946466,
+          "valid_picks": 11,
+          "arrival_rmse_s": 0.010861506320396376
+        }
+      }
+    },
+    {
+      "event": "layered_east_mid",
+      "truth_m_s": [
+        13000.0,
+        4500.0,
+        800.0,
+        0.37
+      ],
+      "valid_picks": 7,
+      "branches": {
+        "waveform_only": {
+          "estimated_source_m_s": [
+            14000.0,
+            4484.7900390625,
+            1106.6947021484375,
+            0.4854294955730438
+          ],
+          "location_error_m": 1046.0845965970625,
+          "origin_time_error_s": 0.11542949557304383,
+          "forward_waveform_mse": 0.3401472270488739,
+          "arrival_mse": 6.55822229385376
+        },
+        "hybrid": {
+          "estimated_source_m_s": [
+            13066.990234375,
+            4223.1123046875,
+            925.7787475585938,
+            0.3403516411781311
+          ],
+          "location_error_m": 311.4077401968257,
+          "origin_time_error_s": 0.029648358821868892,
+          "forward_waveform_mse": 0.42541536688804626,
+          "arrival_mse": 0.2897128164768219
+        },
+        "fmm": {
+          "estimated_source_m_s": [
+            12962.962962962964,
+            4503.7037037037035,
+            596.2962962962962,
+            0.30952856480932933
+          ],
+          "location_error_m": 207.07645553324983,
+          "origin_time_error_s": 0.060471435190670664,
+          "valid_picks": 7,
+          "arrival_rmse_s": 0.011390723012350296
+        }
+      }
+    },
+    {
+      "event": "layered_north_deep",
+      "truth_m_s": [
+        6000.0,
+        13500.0,
+        1450.0,
+        0.43
+      ],
+      "valid_picks": 7,
+      "branches": {
+        "waveform_only": {
+          "estimated_source_m_s": [
+            6686.18310546875,
+            12759.2294921875,
+            1291.8880615234375,
+            0.5
+          ],
+          "location_error_m": 1022.0506761234216,
+          "origin_time_error_s": 0.07,
+          "forward_waveform_mse": 0.8384122848510742,
+          "arrival_mse": 3.58311128616333
+        },
+        "hybrid": {
+          "estimated_source_m_s": [
+            5969.41162109375,
+            13637.515625,
+            1439.947998046875,
+            0.44411951303482056
+          ],
+          "location_error_m": 141.2346939902465,
+          "origin_time_error_s": 0.014119513034820563,
+          "forward_waveform_mse": 0.35275253653526306,
+          "arrival_mse": 0.11816905438899994
+        },
+        "fmm": {
+          "estimated_source_m_s": [
+            6014.814814814815,
+            13540.740740740739,
+            1337.0370370370372,
+            0.40007693227735386
+          ],
+          "location_error_m": 120.99552758458918,
+          "origin_time_error_s": 0.029923067722646135,
+          "valid_picks": 7,
+          "arrival_rmse_s": 0.004602861214930803
+        }
+      }
+    }
+  ],
+  "summary": {
+    "waveform_only": {
+      "median_location_error_m": 1034.067636360242,
+      "mean_location_error_m": 938.4745188874198,
+      "median_origin_time_error_s": 0.09271474778652192,
+      "events_below_500_m": 1
+    },
+    "hybrid": {
+      "median_location_error_m": 226.32121709353612,
+      "mean_location_error_m": 282.1178241061434,
+      "median_origin_time_error_s": 0.02469591617584227,
+      "events_below_500_m": 3
+    },
+    "fmm": {
+      "median_location_error_m": 86.18745767709072,
+      "mean_location_error_m": 105.50092169692822,
+      "median_origin_time_error_s": 0.0327029827989493,
+      "events_below_500_m": 4
+    }
+  },
+  "interpretation": "Zero-shot transfer audit only; no retraining and no claim of cross-geology generalization.",
+  "limitations": "The Overthrust-trained waveform surrogate is evaluated on a distinct synthetic geology; the FMM fields use the independent model, while picker bias and search settings remain frozen from Overthrust development."
+}

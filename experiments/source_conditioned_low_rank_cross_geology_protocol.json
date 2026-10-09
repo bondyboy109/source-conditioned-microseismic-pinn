@@ -1,0 +1,46 @@
+{
+  "purpose": "post-hoc zero-shot cross-geology audit of the frozen source-conditioned low-rank operator",
+  "prospective_blind_test": false,
+  "checkpoint": "outputs/source_conditioned_low_rank_development/source_conditioned_low_rank.pth",
+  "velocity_file": "data/velocity/independent_layered_undulating.npy",
+  "velocity_sha256": "b806f82c0150b40b9b439623ce023c477ace525d0454169cb3ffc98feb140310",
+  "fmm_cache": "outputs/source_conditioned_low_rank_cross_geology/independent_receiver_fields_stride2.npy",
+  "fmm_stride": 2,
+  "fmm_spacing_m": 80.0,
+  "observation_directory": "data/observations/independent_layered_undulating",
+  "events": [
+    {"name": "layered_west_shallow", "file": "cross_01_west_shallow.npz", "sha256": "4712843992f979338176fa18e81a464231df792abb1725a25bceb606dc8d98d2", "truth_m_s": [3000.0, 12000.0, 300.0, 0.16]},
+    {"name": "layered_center_deep", "file": "cross_02_center_deep.npz", "sha256": "c7daa2e91057d6d398bac2a6a2ec2b1d49afe9e3ab69404c060e905ddac807e3", "truth_m_s": [8000.0, 8000.0, 1300.0, 0.28]},
+    {"name": "layered_east_mid", "file": "cross_03_east_mid.npz", "sha256": "4f2249021be189e51c4cd5afa85a1144815af5684d810bd5b2fc88252a768888", "truth_m_s": [13000.0, 4500.0, 800.0, 0.37]},
+    {"name": "layered_north_deep", "file": "cross_04_north_deep.npz", "sha256": "dc6c86b0805dd5834037f5e2a3306d4d9f6ff0294b5003b46599912b9ca699c2", "truth_m_s": [6000.0, 13500.0, 1450.0, 0.43]}
+  ],
+  "shared_source_bounds_m_s": [[2000.0, 14000.0], [2000.0, 14000.0], [100.0, 1500.0], [0.05, 0.5]],
+  "search": {
+    "coarse_grid_xyzt": [11, 11, 8, 6],
+    "coarse_grid_xyz": [11, 11, 8],
+    "coarse_receiver_stride": 2,
+    "coarse_time_stride": 8,
+    "candidate_batch": 64,
+    "restarts": 5,
+    "minimum_start_separation_m": 200.0,
+    "refine_receiver_stride": 1,
+    "refine_time_stride": 4,
+    "refine_steps": 250,
+    "refine_adam_learning_rate_on_box_fractions": 0.0025,
+    "refinement_grid_xyz": 7,
+    "refinement_levels": 4
+  },
+  "arrival_constraint": {
+    "picker": "robust_mad_6sigma",
+    "minimum_valid_picks": 6,
+    "minimum_receiver_peak_fraction_of_record": 0.01,
+    "last_record_s_excluded_for_pick": 0.15,
+    "pick_bias_s": -0.26279182618600316,
+    "arrival_scale_s": 0.1,
+    "hybrid_weight": 0.25,
+    "origin_time_bounds_s": [0.05, 0.5]
+  },
+  "reporting_note": "These independent-layered FD records were generated and evaluated in earlier studies of a different frozen model. This is a post-hoc zero-shot audit for the low-rank operator, not a prospective blind test.",
+  "output_result": "experiments/source_conditioned_low_rank_cross_geology_results.json",
+  "output_report": "experiments/source_conditioned_low_rank_cross_geology_results.md"
+}

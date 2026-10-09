@@ -1,0 +1,22 @@
+{
+  "purpose": "development-only diagnostic for confidence-weighted first-arrival residuals",
+  "snr_db": [20.0, 10.0, 5.0],
+  "confidence_floors": [0.0, 0.10, 0.25, 0.50],
+  "records": [
+    {"file": "data/observations/holdout_20260927/event_01.npz", "snr_db": 20.0, "seed": 20260927},
+    {"file": "data/observations/holdout_20260927/event_03.npz", "snr_db": 20.0, "seed": 20260928},
+    {"file": "data/observations/holdout_20260927/event_06.npz", "snr_db": 20.0, "seed": 20260927},
+    {"file": "data/observations/holdout_20260927/event_08.npz", "snr_db": 20.0, "seed": 20260928},
+    {"file": "data/observations/holdout_20260927/event_01.npz", "snr_db": 10.0, "seed": 20260927},
+    {"file": "data/observations/holdout_20260927/event_03.npz", "snr_db": 10.0, "seed": 20260928},
+    {"file": "data/observations/holdout_20260927/event_06.npz", "snr_db": 10.0, "seed": 20260927},
+    {"file": "data/observations/holdout_20260927/event_08.npz", "snr_db": 10.0, "seed": 20260928},
+    {"file": "data/observations/holdout_20260927/event_01.npz", "snr_db": 5.0, "seed": 20260927},
+    {"file": "data/observations/holdout_20260927/event_03.npz", "snr_db": 5.0, "seed": 20260928},
+    {"file": "data/observations/holdout_20260927/event_06.npz", "snr_db": 5.0, "seed": 20260927},
+    {"file": "data/observations/holdout_20260927/event_08.npz", "snr_db": 5.0, "seed": 20260928}
+  ],
+  "output_result": "experiments/soft_arrival_weight_development_results.json",
+  "output_report": "experiments/soft_arrival_weight_development_results.md",
+  "interpretation": "This audit reports candidate confidence thresholds only. It does not change the locked confirmation method, does not claim calibrated probabilities, and does not establish a localization gain without a subsequent registered experiment."
+}

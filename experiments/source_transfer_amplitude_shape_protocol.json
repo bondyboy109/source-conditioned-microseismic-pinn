@@ -1,0 +1,14 @@
+{
+  "purpose": "post-hoc fixed-true-source amplitude and waveform-shape attribution on existing development events",
+  "weight_sweep_protocol": "experiments/source_transfer_fd_pair_weight_protocol.json",
+  "arms": ["source_to_target", "target_to_target"],
+  "seeds": [4101, 4102, 4103],
+  "weights": [0.0, 0.05],
+  "development_event_count": 16,
+  "active_receiver_energy_fraction": 0.0001,
+  "time_shift": "none; evaluate at each event's true position and true origin time",
+  "amplitude_fits": "one nonnegative event-wide scalar; separate nonnegative receiver scalars for attribution only",
+  "result_json": "experiments/source_transfer_amplitude_shape_results.json",
+  "report_file": "experiments/source_transfer_amplitude_shape_results.md",
+  "restriction": "Previously inspected development events only. Gains are fitted against known reference waveforms at the true source. This is an oracle diagnostic, not blind localization, improved forward prediction or independent confirmation. No test or confirmation event is loaded."
+}

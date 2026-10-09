@@ -1,0 +1,130 @@
+{
+  "source_files": {
+    "development": {
+      "file": "source_conditioned_low_rank_development_results.json",
+      "sha256": "8ab4e31656441e3da1c436edee7f0520d50362cb34749bb77e94ea1ff9c7a4f4"
+    },
+    "localization": {
+      "file": "source_conditioned_low_rank_localization_results.json",
+      "sha256": "391a97c9be37124a59fcef55e28fbaa0c94d451df11384cc087a1406a5258379"
+    },
+    "transfer": {
+      "file": "source_transfer_low_rank_results.json",
+      "sha256": "ce66eec063aa055d6633fce302c6071a7dda75de389672192257ba07ae3fa646"
+    },
+    "noise": {
+      "file": "source_conditioned_low_rank_noise_results.json",
+      "sha256": "5300d256f68649850bdc6e7815a13d9fb4a21f121b45ec330411abc3d216bdf6"
+    },
+    "cross_geology": {
+      "file": "source_conditioned_low_rank_cross_geology_results.json",
+      "sha256": "bbaf98aa1323d2ac3b0bbac8eb3f35a5c85e0391b8edb2fab4d0bf33b2c974d4"
+    },
+    "cost": {
+      "file": "source_conditioned_low_rank_cross_geology_cost_results.json",
+      "sha256": "456d875eff4a906a2c53156291c4f6813ff5268a75fa46d1eacd43ea79fdb37e"
+    }
+  },
+  "clean_paired": {
+    "attempted": 8,
+    "available": 7,
+    "unavailable": 1,
+    "unavailable_fraction": 0.125,
+    "waveform_eloc_m": {
+      "n": 7,
+      "mean": 833.4062257932189,
+      "median": 658.2764417854846
+    },
+    "hybrid_eloc_m": {
+      "n": 7,
+      "mean": 506.11485444584883,
+      "median": 394.4894751569881
+    },
+    "hybrid_minus_waveform_eloc_m": {
+      "n": 7,
+      "mean": -327.29137134737016,
+      "median": -400.31131953349643
+    },
+    "hybrid_improved": 6
+  },
+  "noise_paired": {
+    "20.0": {
+      "attempted": 24,
+      "available": 18,
+      "unavailable": 6,
+      "unavailable_fraction": 0.25,
+      "waveform_eloc_m": {
+        "n": 18,
+        "mean": 826.7912152477131,
+        "median": 632.2207418994913
+      },
+      "hybrid_eloc_m": {
+        "n": 18,
+        "mean": 781.1479662216755,
+        "median": 692.9276936591476
+      },
+      "hybrid_minus_waveform_eloc_m": {
+        "n": 18,
+        "mean": -45.64324902603772,
+        "median": 133.36578990485347
+      },
+      "hybrid_improved": 7
+    },
+    "10.0": {
+      "attempted": 24,
+      "available": 15,
+      "unavailable": 9,
+      "unavailable_fraction": 0.375,
+      "waveform_eloc_m": {
+        "n": 15,
+        "mean": 857.7540387638154,
+        "median": 596.8324744213678
+      },
+      "hybrid_eloc_m": {
+        "n": 15,
+        "mean": 771.7421972265522,
+        "median": 667.8400439453682
+      },
+      "hybrid_minus_waveform_eloc_m": {
+        "n": 15,
+        "mean": -86.01184153726318,
+        "median": -2.055836537648929
+      },
+      "hybrid_improved": 8
+    },
+    "5.0": {
+      "attempted": 24,
+      "available": 8,
+      "unavailable": 16,
+      "unavailable_fraction": 0.6666666666666666,
+      "waveform_eloc_m": {
+        "n": 8,
+        "mean": 951.0183893317542,
+        "median": 814.2604382933084
+      },
+      "hybrid_eloc_m": {
+        "n": 8,
+        "mean": 1011.0062546591686,
+        "median": 1045.0822999955979
+      },
+      "hybrid_minus_waveform_eloc_m": {
+        "n": 8,
+        "mean": 59.98786532741443,
+        "median": 93.296022290217
+      },
+      "hybrid_improved": 4
+    }
+  },
+  "timing_rerun_max_error_change": 0.0,
+  "cost": {
+    "fresh_cross_geology_fmm_setup_seconds": 36.709141600000066,
+    "mean_hybrid_search_seconds": 4.645840574999852,
+    "mean_fmm_search_seconds": 0.07544510000002447,
+    "fmm_minus_hybrid_search_seconds": -4.5703954749998275,
+    "hybrid_to_fmm_search_ratio": 61.579089629390715,
+    "favorable_break_even_vs_fmm": false,
+    "note": "Both methods reuse the same FMM fields. Hybrid adds neural training and costs more per search, with worse location errors. No finite favorable break-even event count exists for this measured comparison. No accuracy-matched FD break-even count was measured."
+  },
+  "transfer_budget_note": "source_to_target and target_to_target each use 1500 first-stage plus 1500 target-stage updates. target_only_1500 uses only 1500 total updates. Only the two staged arms match the total update budget; the shorter target-only arm is a target-stage-budget control.",
+  "scope_note": "These are synthetic, post-hoc evaluations using previously inspected event records. Current low-rank results are separate from earlier MoE/PINN results and must not inherit their prospective-test or UQ claims."
+}

@@ -1,0 +1,6556 @@
+{
+  "purpose": "registered development-only localization comparison of waveform-only and FMM-arrival-constrained objectives for the frozen traveltime-aligned MoE",
+  "protocol": "E:\\source-conditioned-microseismic-pinn\\experiments\\traveltime_aligned_moe_localization_protocol.json",
+  "protocol_sha256": "62c69be47a4037d919e9704f407bae352b7c36c67d717e02e8877d4df6c9c167",
+  "checkpoint_sha256": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+  "independent_confirmation_used": false,
+  "event_count": 16,
+  "device": "cuda",
+  "candidate_count_per_event": 5808,
+  "total_search_seconds": 168.92751919999682,
+  "summary": {
+    "waveform_only": {
+      "mean_location_error_m": 1369.8111745380775,
+      "median_location_error_m": 840.2586931337696,
+      "events_below_500_m": 3,
+      "mean_origin_time_error_s": 0.1076752059161663,
+      "median_origin_time_error_s": 0.09960012137889862,
+      "events_origin_below_0_05_s": 5
+    },
+    "hybrid": {
+      "mean_location_error_m": 388.21986708634853,
+      "median_location_error_m": 395.26554283698954,
+      "events_below_500_m": 11,
+      "mean_origin_time_error_s": 0.030047004111111164,
+      "median_origin_time_error_s": 0.01706160604953766,
+      "events_origin_below_0_05_s": 12
+    },
+    "hybrid_improved_location_events": 16,
+    "hybrid_refinement_moved_25m_events": 16
+  },
+  "development_gate_results": {
+    "all_events_have_at_least_six_valid_picks": true,
+    "hybrid_median_location_below_750m": true,
+    "hybrid_median_origin_time_below_0_10s": true,
+    "hybrid_median_location_not_worse_than_waveform_only": true,
+    "hybrid_improves_at_least_nine_events": true,
+    "hybrid_refinement_moves_25m_in_at_least_twelve_events": true
+  },
+  "all_development_gates_passed": true,
+  "events": [
+    {
+      "event": "eikonal_independent/test_01.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_01.npz",
+      "sha256": "063ddda11c1a73da3e870602f25968d41f5ecc74aadae580740947f1e54e4d41",
+      "source_truth_m_s_post_search": [
+        4700.0,
+        4300.0,
+        620.0,
+        0.17000000178813934
+      ],
+      "valid_raw_picks": 13,
+      "raw_picks_s": [
+        0.9020000696182251,
+        0.7160000205039978,
+        1.2280000448226929,
+        1.8280000686645508,
+        null,
+        0.49800002574920654,
+        0.17000000178813934,
+        0.8460000157356262,
+        1.624000072479248,
+        null,
+        0.9860000610351562,
+        0.8160000443458557,
+        1.252000093460083,
+        1.9140000343322754,
+        null,
+        1.7120001316070557,
+        1.6100001335144043,
+        1.8880001306533813,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "corrected_picks_s": [
+        1.1647918224334717,
+        0.9787918329238892,
+        1.4907917976379395,
+        2.090791940689087,
+        null,
+        0.7607918381690979,
+        0.4327918291091919,
+        1.1087918281555176,
+        1.8867919445037842,
+        null,
+        1.2487919330596924,
+        1.078791856765747,
+        1.5147919654846191,
+        null,
+        null,
+        1.9747920036315918,
+        1.8727920055389404,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "search_seconds": 10.937549800000852,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          4664.61328125,
+          4340.7080078125,
+          783.068603515625,
+          0.15031909942626953
+        ],
+        "total_loss": 0.41026848554611206,
+        "waveform_normalized_mse": 0.41026848554611206,
+        "arrival_normalized_mse": 0.16789892315864563,
+        "selected_spatial_move_m": 283.6126263788167,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              4400.0,
+              5600.0,
+              500.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.5933523178100586
+          },
+          {
+            "source_m_s": [
+              5600.0,
+              4400.0,
+              700.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.6138724088668823
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              5600.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.6705228686332703
+          },
+          {
+            "source_m_s": [
+              5600.0,
+              5600.0,
+              1100.0,
+              0.05000000074505806
+            ],
+            "coarse_total_loss": 0.6822167038917542
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              4400.0,
+              700.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.6985433101654053
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              4400.0,
+              5600.0,
+              500.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.5933523178100586,
+            "estimated_source_m_s": [
+              4499.513671875,
+              5606.68994140625,
+              485.27880859375,
+              0.1586325317621231
+            ],
+            "total_loss": 0.5045046210289001,
+            "waveform_normalized_mse": 0.5045046210289001,
+            "arrival_normalized_mse": 4.591556072235107,
+            "spatial_move_m": 100.81884586962734,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              5600.0,
+              4400.0,
+              700.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.6138724088668823,
+            "estimated_source_m_s": [
+              5414.24853515625,
+              4341.34130859375,
+              399.4063720703125,
+              0.1879865825176239
+            ],
+            "total_loss": 0.523545503616333,
+            "waveform_normalized_mse": 0.523545503616333,
+            "arrival_normalized_mse": 1.3689979314804077,
+            "spatial_move_m": 358.1912588562484,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              5600.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.6705228686332703,
+            "estimated_source_m_s": [
+              4496.9951171875,
+              5601.5966796875,
+              462.50543212890625,
+              0.1599053293466568
+            ],
+            "total_loss": 0.5042901635169983,
+            "waveform_normalized_mse": 0.5042901635169983,
+            "arrival_normalized_mse": 4.535879611968994,
+            "spatial_move_m": 189.25807146762298,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              5600.0,
+              5600.0,
+              1100.0,
+              0.05000000074505806
+            ],
+            "coarse_total_loss": 0.6822167038917542,
+            "estimated_source_m_s": [
+              5302.685546875,
+              4884.099609375,
+              1005.5176391601562,
+              0.1513541340827942
+            ],
+            "total_loss": 0.5579141974449158,
+            "waveform_normalized_mse": 0.5579141974449158,
+            "arrival_normalized_mse": 2.6448593139648438,
+            "spatial_move_m": 780.9200790374875,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              4400.0,
+              700.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.6985433101654053,
+            "estimated_source_m_s": [
+              4664.61328125,
+              4340.7080078125,
+              783.068603515625,
+              0.15031909942626953
+            ],
+            "total_loss": 0.41026848554611206,
+            "waveform_normalized_mse": 0.41026848554611206,
+            "arrival_normalized_mse": 0.16789892315864563,
+            "spatial_move_m": 283.6126263788167,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          -35.38671875,
+          40.7080078125,
+          163.068603515625,
+          -0.019680902361869812
+        ],
+        "location_error_m": 171.75776901348675,
+        "origin_time_error_s": 0.019680902361869812
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          4667.841796875,
+          4326.98828125,
+          730.821533203125,
+          0.15803830325603485
+        ],
+        "total_loss": 0.4421274662017822,
+        "waveform_normalized_mse": 0.4179378151893616,
+        "arrival_normalized_mse": 0.09675862640142441,
+        "selected_spatial_move_m": 279.3204363039862,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              4400.0,
+              4400.0,
+              700.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.7773319780826569
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              4400.0,
+              100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.1773837134242058
+          },
+          {
+            "source_m_s": [
+              5600.0,
+              4400.0,
+              700.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.2918177843093872
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              4400.0,
+              500.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.3391568511724472
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              4400.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.4568410255014896
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              4400.0,
+              4400.0,
+              700.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.7773319780826569,
+            "estimated_source_m_s": [
+              4667.841796875,
+              4326.98828125,
+              730.821533203125,
+              0.15803830325603485
+            ],
+            "total_loss": 0.4421274662017822,
+            "waveform_normalized_mse": 0.4179378151893616,
+            "arrival_normalized_mse": 0.09675862640142441,
+            "spatial_move_m": 279.3204363039862,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              4400.0,
+              100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.1773837134242058,
+            "estimated_source_m_s": [
+              4629.93994140625,
+              4299.75048828125,
+              530.9368896484375,
+              0.17755009233951569
+            ],
+            "total_loss": 0.4550265073776245,
+            "waveform_normalized_mse": 0.4509339928627014,
+            "arrival_normalized_mse": 0.01637006178498268,
+            "spatial_move_m": 498.62705914704134,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              5600.0,
+              4400.0,
+              700.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.2918177843093872,
+            "estimated_source_m_s": [
+              4667.8388671875,
+              4326.93017578125,
+              730.48583984375,
+              0.15808700025081635
+            ],
+            "total_loss": 0.4421283006668091,
+            "waveform_normalized_mse": 0.41803067922592163,
+            "arrival_normalized_mse": 0.09639047831296921,
+            "spatial_move_m": 935.5174841597676,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              4400.0,
+              500.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.3391568511724472,
+            "estimated_source_m_s": [
+              4647.24267578125,
+              4301.44287109375,
+              584.1307983398438,
+              0.17382726073265076
+            ],
+            "total_loss": 0.4515558183193207,
+            "waveform_normalized_mse": 0.445896178483963,
+            "arrival_normalized_mse": 0.022638527676463127,
+            "spatial_move_m": 279.1423285978229,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              4400.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.4568410255014896,
+            "estimated_source_m_s": [
+              4646.8564453125,
+              4300.86279296875,
+              575.3856811523438,
+              0.17483597993850708
+            ],
+            "total_loss": 0.4516645073890686,
+            "waveform_normalized_mse": 0.4464871883392334,
+            "arrival_normalized_mse": 0.020709309726953506,
+            "spatial_move_m": 382.88844823789157,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          -32.158203125,
+          26.98828125,
+          110.821533203125,
+          -0.011961698532104492
+        ],
+        "location_error_m": 118.50708660054553,
+        "origin_time_error_s": 0.011961698532104492
+      }
+    },
+    {
+      "event": "eikonal_independent/test_02.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_02.npz",
+      "sha256": "c39165b10f1e23a90f628727740d7edb2d07f90aef072a7438b2fe9173b1af75",
+      "source_truth_m_s_post_search": [
+        5400.0,
+        10800.0,
+        760.0,
+        0.28999999165534973
+      ],
+      "valid_raw_picks": 12,
+      "raw_picks_s": [
+        null,
+        1.852000117301941,
+        1.2160000801086426,
+        0.968000054359436,
+        1.3260000944137573,
+        null,
+        1.4920001029968262,
+        0.7460000514984131,
+        0.22600001096725464,
+        0.9180000424385071,
+        null,
+        1.6920000314712524,
+        1.1260000467300415,
+        0.7560000419616699,
+        1.1920000314712524,
+        null,
+        null,
+        1.8220001459121704,
+        1.6120001077651978,
+        1.7880001068115234,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "corrected_picks_s": [
+        null,
+        null,
+        1.4787919521331787,
+        1.2307918071746826,
+        1.588791847229004,
+        null,
+        1.7547919750213623,
+        1.0087919235229492,
+        0.488791823387146,
+        1.1807918548583984,
+        null,
+        1.954791784286499,
+        1.388791799545288,
+        1.018791913986206,
+        1.454791784286499,
+        null,
+        null,
+        null,
+        1.8747918605804443,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "search_seconds": 9.844984999999724,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          5543.65234375,
+          10501.9375,
+          813.6776733398438,
+          0.21764802932739258
+        ],
+        "total_loss": 0.35993167757987976,
+        "waveform_normalized_mse": 0.35993167757987976,
+        "arrival_normalized_mse": 1.0002769231796265,
+        "selected_spatial_move_m": 309.1064331507893,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              4400.0,
+              10400.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.3882240056991577
+          },
+          {
+            "source_m_s": [
+              5600.0,
+              10400.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.44305187463760376
+          },
+          {
+            "source_m_s": [
+              5600.0,
+              11600.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.487021267414093
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              11600.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.5196673274040222
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              10400.0,
+              500.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.6381296515464783
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              4400.0,
+              10400.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.3882240056991577,
+            "estimated_source_m_s": [
+              4399.83056640625,
+              10461.013671875,
+              793.6727294921875,
+              0.22155603766441345
+            ],
+            "total_loss": 0.3704375922679901,
+            "waveform_normalized_mse": 0.3704375922679901,
+            "arrival_normalized_mse": 2.7720375061035156,
+            "spatial_move_m": 111.79122109508148,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              5600.0,
+              10400.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.44305187463760376,
+            "estimated_source_m_s": [
+              5543.65234375,
+              10501.9375,
+              813.6776733398438,
+              0.21764802932739258
+            ],
+            "total_loss": 0.35993167757987976,
+            "waveform_normalized_mse": 0.35993167757987976,
+            "arrival_normalized_mse": 1.0002769231796265,
+            "spatial_move_m": 309.1064331507893,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              5600.0,
+              11600.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.487021267414093,
+            "estimated_source_m_s": [
+              5547.9013671875,
+              11517.7275390625,
+              849.9561157226562,
+              0.22135508060455322
+            ],
+            "total_loss": 0.3632284998893738,
+            "waveform_normalized_mse": 0.3632284998893738,
+            "arrival_normalized_mse": 1.8171615600585938,
+            "spatial_move_m": 178.80118011990535,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              11600.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.5196673274040222,
+            "estimated_source_m_s": [
+              4427.400390625,
+              11551.6318359375,
+              786.7747802734375,
+              0.2338942140340805
+            ],
+            "total_loss": 0.3765876293182373,
+            "waveform_normalized_mse": 0.3765876293182373,
+            "arrival_normalized_mse": 3.748899459838867,
+            "spatial_move_m": 103.0539819351143,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              10400.0,
+              500.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.6381296515464783,
+            "estimated_source_m_s": [
+              4402.0517578125,
+              10460.4482421875,
+              784.7816162109375,
+              0.22322872281074524
+            ],
+            "total_loss": 0.3705994784832001,
+            "waveform_normalized_mse": 0.3705994784832001,
+            "arrival_normalized_mse": 2.7593588829040527,
+            "spatial_move_m": 291.1335924028581,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          143.65234375,
+          -298.0625,
+          53.67767333984375,
+          -0.07235196232795715
+        ],
+        "location_error_m": 335.19925773530156,
+        "origin_time_error_s": 0.07235196232795715
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          5203.8662109375,
+          10792.203125,
+          779.0401000976562,
+          0.3026416301727295
+        ],
+        "total_loss": 0.3569261431694031,
+        "waveform_normalized_mse": 0.30863311886787415,
+        "arrival_normalized_mse": 0.1931721568107605,
+        "selected_spatial_move_m": 897.9262295813762,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              5600.0,
+              10400.0,
+              500.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.9648853242397308
+          },
+          {
+            "source_m_s": [
+              5600.0,
+              11600.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.0189459323883057
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              10400.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.115305483341217
+          },
+          {
+            "source_m_s": [
+              5600.0,
+              10400.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.146773338317871
+          },
+          {
+            "source_m_s": [
+              5600.0,
+              10400.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.176455020904541
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              5600.0,
+              10400.0,
+              500.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.9648853242397308,
+            "estimated_source_m_s": [
+              5529.6357421875,
+              10888.458984375,
+              712.7761840820312,
+              0.2761615812778473
+            ],
+            "total_loss": 0.3742370307445526,
+            "waveform_normalized_mse": 0.33936601877212524,
+            "arrival_normalized_mse": 0.13948401808738708,
+            "spatial_move_m": 537.4169821532167,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              5600.0,
+              11600.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.0189459323883057,
+            "estimated_source_m_s": [
+              5529.5341796875,
+              10888.7890625,
+              714.0765991210938,
+              0.2759426534175873
+            ],
+            "total_loss": 0.3742336630821228,
+            "waveform_normalized_mse": 0.33922070264816284,
+            "arrival_normalized_mse": 0.14005187153816223,
+            "spatial_move_m": 714.8318544208549,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              10400.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.115305483341217,
+            "estimated_source_m_s": [
+              5203.8662109375,
+              10792.203125,
+              779.0401000976562,
+              0.3026416301727295
+            ],
+            "total_loss": 0.3569261431694031,
+            "waveform_normalized_mse": 0.30863311886787415,
+            "arrival_normalized_mse": 0.1931721568107605,
+            "spatial_move_m": 897.9262295813762,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              5600.0,
+              10400.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.146773338317871,
+            "estimated_source_m_s": [
+              5529.4658203125,
+              10888.984375,
+              714.7863159179688,
+              0.2758263945579529
+            ],
+            "total_loss": 0.3742343485355377,
+            "waveform_normalized_mse": 0.33914506435394287,
+            "arrival_normalized_mse": 0.1403571367263794,
+            "spatial_move_m": 494.26655221323153,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              5600.0,
+              10400.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.176455020904541,
+            "estimated_source_m_s": [
+              5537.45556640625,
+              10915.658203125,
+              811.8448486328125,
+              0.2573690414428711
+            ],
+            "total_loss": 0.403988242149353,
+            "waveform_normalized_mse": 0.34384989738464355,
+            "arrival_normalized_mse": 0.2405533492565155,
+            "spatial_move_m": 594.0105890328164,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          -196.1337890625,
+          -7.796875,
+          19.04010009765625,
+          0.01264163851737976
+        ],
+        "location_error_m": 197.20998930963827,
+        "origin_time_error_s": 0.01264163851737976
+      }
+    },
+    {
+      "event": "eikonal_independent/test_03.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_03.npz",
+      "sha256": "d94aaae8c6ecc1801d6798f9798424143b03ea6039fa33af8f55c94ca828b97e",
+      "source_truth_m_s_post_search": [
+        7200.0,
+        13200.0,
+        1180.0,
+        0.23000000417232513
+      ],
+      "valid_raw_picks": 12,
+      "raw_picks_s": [
+        null,
+        null,
+        1.908000111579895,
+        1.5100001096725464,
+        1.4160000085830688,
+        null,
+        null,
+        1.434000015258789,
+        0.8560000658035278,
+        0.6860000491142273,
+        null,
+        null,
+        1.4420000314712524,
+        0.6800000071525574,
+        0.4360000193119049,
+        null,
+        null,
+        1.7780001163482666,
+        1.2160000801086426,
+        1.055999994277954,
+        null,
+        null,
+        null,
+        1.9140000343322754,
+        1.8240001201629639
+      ],
+      "corrected_picks_s": [
+        null,
+        null,
+        null,
+        1.772791862487793,
+        1.6787917613983154,
+        null,
+        null,
+        1.6967918872833252,
+        1.1187918186187744,
+        0.9487918615341187,
+        null,
+        null,
+        1.704791784286499,
+        0.9427918195724487,
+        0.6987918615341187,
+        null,
+        null,
+        2.0407919883728027,
+        1.4787919521331787,
+        1.3187918663024902,
+        null,
+        null,
+        null,
+        null,
+        2.0867919921875
+      ],
+      "search_seconds": 11.058084899999812,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          7789.89111328125,
+          13911.98828125,
+          908.2095947265625,
+          0.4421100318431854
+        ],
+        "total_loss": 0.5709421038627625,
+        "waveform_normalized_mse": 0.5709421038627625,
+        "arrival_normalized_mse": 10.001594543457031,
+        "selected_spatial_move_m": 297.7840937163552,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              8000.0,
+              14000.0,
+              1100.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.6334222555160522
+          },
+          {
+            "source_m_s": [
+              6800.0,
+              14000.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.6909864544868469
+          },
+          {
+            "source_m_s": [
+              9200.0,
+              14000.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.743929386138916
+          },
+          {
+            "source_m_s": [
+              6800.0,
+              14000.0,
+              700.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.7838317155838013
+          },
+          {
+            "source_m_s": [
+              8000.0,
+              12800.0,
+              1300.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.8018679618835449
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              8000.0,
+              14000.0,
+              1100.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.6334222555160522,
+            "estimated_source_m_s": [
+              7789.89111328125,
+              13911.98828125,
+              908.2095947265625,
+              0.4421100318431854
+            ],
+            "total_loss": 0.5709421038627625,
+            "waveform_normalized_mse": 0.5709421038627625,
+            "arrival_normalized_mse": 10.001594543457031,
+            "spatial_move_m": 297.7840937163552,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              6800.0,
+              14000.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.6909864544868469,
+            "estimated_source_m_s": [
+              6795.61328125,
+              13767.4755859375,
+              1195.9639892578125,
+              0.2063140869140625
+            ],
+            "total_loss": 0.5901924967765808,
+            "waveform_normalized_mse": 0.5901924967765808,
+            "arrival_normalized_mse": 1.1552085876464844,
+            "spatial_move_m": 251.58683127456035,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              9200.0,
+              14000.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.743929386138916,
+            "estimated_source_m_s": [
+              8884.1689453125,
+              13922.7578125,
+              958.0314331054688,
+              0.3298048973083496
+            ],
+            "total_loss": 0.6410750150680542,
+            "waveform_normalized_mse": 0.6410750150680542,
+            "arrival_normalized_mse": 13.252056121826172,
+            "spatial_move_m": 354.78258782089455,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              6800.0,
+              14000.0,
+              700.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.7838317155838013,
+            "estimated_source_m_s": [
+              6720.93994140625,
+              13877.3212890625,
+              932.6663818359375,
+              0.25577419996261597
+            ],
+            "total_loss": 0.5920702815055847,
+            "waveform_normalized_mse": 0.5920702815055847,
+            "arrival_normalized_mse": 2.9074530601501465,
+            "spatial_move_m": 274.6528795020364,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              8000.0,
+              12800.0,
+              1300.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.8018679618835449,
+            "estimated_source_m_s": [
+              7776.0771484375,
+              12733.015625,
+              1007.073974609375,
+              0.23047763109207153
+            ],
+            "total_loss": 0.644440770149231,
+            "waveform_normalized_mse": 0.644440770149231,
+            "arrival_normalized_mse": 1.4519455432891846,
+            "spatial_move_m": 374.7452552030127,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          589.89111328125,
+          711.98828125,
+          -271.7904052734375,
+          0.2121100276708603
+        ],
+        "location_error_m": 963.7265496831666,
+        "origin_time_error_s": 0.2121100276708603
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          7220.25537109375,
+          13221.990234375,
+          1194.4986572265625,
+          0.2302096039056778
+        ],
+        "total_loss": 0.4313785433769226,
+        "waveform_normalized_mse": 0.4226476848125458,
+        "arrival_normalized_mse": 0.03492344543337822,
+        "selected_spatial_move_m": 892.8650388177439,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              6800.0,
+              14000.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.2395200729370117
+          },
+          {
+            "source_m_s": [
+              6800.0,
+              14000.0,
+              1500.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.2656867504119873
+          },
+          {
+            "source_m_s": [
+              8000.0,
+              12800.0,
+              1300.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.349852442741394
+          },
+          {
+            "source_m_s": [
+              8000.0,
+              12800.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.3791987299919128
+          },
+          {
+            "source_m_s": [
+              6800.0,
+              12800.0,
+              900.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.5033546090126038
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              6800.0,
+              14000.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.2395200729370117,
+            "estimated_source_m_s": [
+              6847.6533203125,
+              13691.568359375,
+              1200.006591796875,
+              0.2085297405719757
+            ],
+            "total_loss": 0.8415385484695435,
+            "waveform_normalized_mse": 0.6211040019989014,
+            "arrival_normalized_mse": 0.8817380666732788,
+            "spatial_move_m": 327.72280097402694,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              6800.0,
+              14000.0,
+              1500.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.2656867504119873,
+            "estimated_source_m_s": [
+              6845.21533203125,
+              13736.7822265625,
+              1300.059814453125,
+              0.1937224417924881
+            ],
+            "total_loss": 0.8508561849594116,
+            "waveform_normalized_mse": 0.6291446685791016,
+            "arrival_normalized_mse": 0.8868460059165955,
+            "spatial_move_m": 333.62269152533685,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              8000.0,
+              12800.0,
+              1300.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.349852442741394,
+            "estimated_source_m_s": [
+              7220.25537109375,
+              13221.990234375,
+              1194.4986572265625,
+              0.2302096039056778
+            ],
+            "total_loss": 0.4313785433769226,
+            "waveform_normalized_mse": 0.4226476848125458,
+            "arrival_normalized_mse": 0.03492344543337822,
+            "spatial_move_m": 892.8650388177439,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              8000.0,
+              12800.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.3791987299919128,
+            "estimated_source_m_s": [
+              7216.81689453125,
+              13217.8271484375,
+              1165.1842041015625,
+              0.23342718183994293
+            ],
+            "total_loss": 0.43196454644203186,
+            "waveform_normalized_mse": 0.4234178364276886,
+            "arrival_normalized_mse": 0.03418687731027603,
+            "spatial_move_m": 890.0585840985086,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              6800.0,
+              12800.0,
+              900.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.5033546090126038,
+            "estimated_source_m_s": [
+              6868.31982421875,
+              13218.0830078125,
+              1049.5128173828125,
+              0.18898910284042358
+            ],
+            "total_loss": 0.8125386238098145,
+            "waveform_normalized_mse": 0.6295669674873352,
+            "arrival_normalized_mse": 0.7318865656852722,
+            "spatial_move_m": 449.2383358136014,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          20.25537109375,
+          21.990234375,
+          14.4986572265625,
+          0.00020959973335266113
+        ],
+        "location_error_m": 33.22742131713365,
+        "origin_time_error_s": 0.00020959973335266113
+      }
+    },
+    {
+      "event": "eikonal_independent/test_04.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_04.npz",
+      "sha256": "1b36b142d4fdd38d5dd8d9618dcdc3b5ddd285c036dbfcf73058b01c79069797",
+      "source_truth_m_s_post_search": [
+        8600.0,
+        6200.0,
+        520.0,
+        0.4099999964237213
+      ],
+      "valid_raw_picks": 13,
+      "raw_picks_s": [
+        null,
+        1.942000150680542,
+        1.9640001058578491,
+        null,
+        null,
+        1.5740001201629639,
+        1.1120001077651978,
+        1.2000000476837158,
+        1.7640000581741333,
+        null,
+        1.2940000295639038,
+        0.5220000147819519,
+        0.690000057220459,
+        1.564000129699707,
+        null,
+        1.5380001068115234,
+        0.9100000262260437,
+        1.0099999904632568,
+        1.7080000638961792,
+        null,
+        null,
+        1.7480000257492065,
+        1.8060001134872437,
+        null,
+        null
+      ],
+      "corrected_picks_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1.8367919921875,
+        1.3747918605804443,
+        1.462791919708252,
+        2.02679181098938,
+        null,
+        1.5567917823791504,
+        0.7847918272018433,
+        0.9527918696403503,
+        1.8267920017242432,
+        null,
+        1.8007919788360596,
+        1.172791838645935,
+        1.272791862487793,
+        1.9707918167114258,
+        null,
+        null,
+        2.010791778564453,
+        null,
+        null,
+        null
+      ],
+      "search_seconds": 9.722561000000496,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          8342.955078125,
+          5708.041015625,
+          1075.232177734375,
+          0.44555747509002686
+        ],
+        "total_loss": 0.7599343061447144,
+        "waveform_normalized_mse": 0.7599343061447144,
+        "arrival_normalized_mse": 1.4892421960830688,
+        "selected_spatial_move_m": 424.04200333815743,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              9200.0,
+              6800.0,
+              1500.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.6530377864837646
+          },
+          {
+            "source_m_s": [
+              8000.0,
+              5600.0,
+              500.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.6895855069160461
+          },
+          {
+            "source_m_s": [
+              8000.0,
+              5600.0,
+              1300.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.6979935169219971
+          },
+          {
+            "source_m_s": [
+              10400.0,
+              8000.0,
+              1300.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.7362996935844421
+          },
+          {
+            "source_m_s": [
+              10400.0,
+              2000.0,
+              700.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.7382727265357971
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              9200.0,
+              6800.0,
+              1500.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.6530377864837646,
+            "estimated_source_m_s": [
+              9186.611328125,
+              6709.2998046875,
+              1424.9820556640625,
+              0.5
+            ],
+            "total_loss": 1.0143026113510132,
+            "waveform_normalized_mse": 1.0143026113510132,
+            "arrival_normalized_mse": 3.8414113521575928,
+            "spatial_move_m": 118.46296440952287,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              8000.0,
+              5600.0,
+              500.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.6895855069160461,
+            "estimated_source_m_s": [
+              8104.6865234375,
+              5546.125,
+              189.8197479248047,
+              0.45538830757141113
+            ],
+            "total_loss": 1.2542463541030884,
+            "waveform_normalized_mse": 1.2542463541030884,
+            "arrival_normalized_mse": 2.8839683532714844,
+            "spatial_move_m": 331.77337535110007,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              8000.0,
+              5600.0,
+              1300.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.6979935169219971,
+            "estimated_source_m_s": [
+              8342.955078125,
+              5708.041015625,
+              1075.232177734375,
+              0.44555747509002686
+            ],
+            "total_loss": 0.7599343061447144,
+            "waveform_normalized_mse": 0.7599343061447144,
+            "arrival_normalized_mse": 1.4892421960830688,
+            "spatial_move_m": 424.04200333815743,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              10400.0,
+              8000.0,
+              1300.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.7362996935844421,
+            "estimated_source_m_s": [
+              10333.458984375,
+              8055.8369140625,
+              1500.0,
+              0.3604709804058075
+            ],
+            "total_loss": 1.5351316928863525,
+            "waveform_normalized_mse": 1.5351316928863525,
+            "arrival_normalized_mse": 16.55824851989746,
+            "spatial_move_m": 218.0492323591842,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              10400.0,
+              2000.0,
+              700.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.7382727265357971,
+            "estimated_source_m_s": [
+              9567.4287109375,
+              2733.90771484375,
+              800.0003051757812,
+              0.5
+            ],
+            "total_loss": 1.3390189409255981,
+            "waveform_normalized_mse": 1.3390189409255981,
+            "arrival_normalized_mse": 43.0214958190918,
+            "spatial_move_m": 1114.3588050146225,
+            "on_boundary": true
+          }
+        ],
+        "component_error_m_s": [
+          -257.044921875,
+          -491.958984375,
+          555.232177734375,
+          0.03555747866630554
+        ],
+        "location_error_m": 785.0977680267999,
+        "origin_time_error_s": 0.03555747866630554
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          8181.517578125,
+          6191.5322265625,
+          713.24072265625,
+          0.4232240319252014
+        ],
+        "total_loss": 0.8840372562408447,
+        "waveform_normalized_mse": 0.7490170001983643,
+        "arrival_normalized_mse": 0.5400809645652771,
+        "selected_spatial_move_m": 654.4697181912346,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              8000.0,
+              5600.0,
+              1300.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.2134915590286255
+          },
+          {
+            "source_m_s": [
+              8000.0,
+              5600.0,
+              1100.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.348293125629425
+          },
+          {
+            "source_m_s": [
+              8000.0,
+              5600.0,
+              500.0,
+              0.5
+            ],
+            "coarse_total_loss": 1.4265187978744507
+          },
+          {
+            "source_m_s": [
+              8000.0,
+              5600.0,
+              300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.442104160785675
+          },
+          {
+            "source_m_s": [
+              8000.0,
+              5600.0,
+              1500.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.452271819114685
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              8000.0,
+              5600.0,
+              1300.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.2134915590286255,
+            "estimated_source_m_s": [
+              8370.5771484375,
+              5752.4501953125,
+              1063.888671875,
+              0.43850910663604736
+            ],
+            "total_loss": 1.1073482036590576,
+            "waveform_normalized_mse": 0.7845014929771423,
+            "arrival_normalized_mse": 1.2913869619369507,
+            "spatial_move_m": 465.09896179613185,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              8000.0,
+              5600.0,
+              1100.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.348293125629425,
+            "estimated_source_m_s": [
+              8371.2255859375,
+              5752.51123046875,
+              1063.0101318359375,
+              0.438577800989151
+            ],
+            "total_loss": 1.1072971820831299,
+            "waveform_normalized_mse": 0.7844449281692505,
+            "arrival_normalized_mse": 1.2914087772369385,
+            "spatial_move_m": 403.0339457422006,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              8000.0,
+              5600.0,
+              500.0,
+              0.5
+            ],
+            "coarse_total_loss": 1.4265187978744507,
+            "estimated_source_m_s": [
+              8181.517578125,
+              6191.5322265625,
+              713.24072265625,
+              0.4232240319252014
+            ],
+            "total_loss": 0.8840372562408447,
+            "waveform_normalized_mse": 0.7490170001983643,
+            "arrival_normalized_mse": 0.5400809645652771,
+            "spatial_move_m": 654.4697181912346,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              8000.0,
+              5600.0,
+              300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.442104160785675,
+            "estimated_source_m_s": [
+              8315.583984375,
+              5963.6435546875,
+              154.4105987548828,
+              0.32294556498527527
+            ],
+            "total_loss": 1.2491792440414429,
+            "waveform_normalized_mse": 1.0999538898468018,
+            "arrival_normalized_mse": 0.5969015955924988,
+            "spatial_move_m": 503.01705718064153,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              8000.0,
+              5600.0,
+              1500.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.452271819114685,
+            "estimated_source_m_s": [
+              8365.328125,
+              5752.5341796875,
+              1071.1307373046875,
+              0.43778717517852783
+            ],
+            "total_loss": 1.1078791618347168,
+            "waveform_normalized_mse": 0.7857150435447693,
+            "arrival_normalized_mse": 1.288656234741211,
+            "spatial_move_m": 583.6609969612284,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          -418.482421875,
+          -8.4677734375,
+          193.24072265625,
+          0.013224035501480103
+        ],
+        "location_error_m": 461.0219273506023,
+        "origin_time_error_s": 0.013224035501480103
+      }
+    },
+    {
+      "event": "eikonal_independent/test_05.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_05.npz",
+      "sha256": "c6747ace6bd0cab4a79218f7b6a58e211dcda01f5d3425b7f8b86197a7cb306e",
+      "source_truth_m_s_post_search": [
+        9800.0,
+        3600.0,
+        1150.0,
+        0.1599999964237213
+      ],
+      "valid_raw_picks": 12,
+      "raw_picks_s": [
+        1.940000057220459,
+        1.9720001220703125,
+        null,
+        null,
+        null,
+        1.1980000734329224,
+        1.190000057220459,
+        1.5820000171661377,
+        null,
+        null,
+        0.656000018119812,
+        0.6320000290870667,
+        1.2620000839233398,
+        1.9620001316070557,
+        null,
+        0.5600000023841858,
+        0.5380000472068787,
+        1.2200000286102295,
+        1.9440001249313354,
+        null,
+        1.1540000438690186,
+        1.1660000085830688,
+        1.6100001335144043,
+        null,
+        null
+      ],
+      "corrected_picks_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1.460791826248169,
+        1.4527919292449951,
+        1.8447918891906738,
+        null,
+        null,
+        0.9187918305397034,
+        0.894791841506958,
+        1.524791955947876,
+        null,
+        null,
+        0.8227918148040771,
+        0.80079185962677,
+        1.4827919006347656,
+        null,
+        null,
+        1.4167919158935547,
+        1.4287917613983154,
+        1.8727920055389404,
+        null,
+        null
+      ],
+      "search_seconds": 9.756806600000345,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          9786.3251953125,
+          5880.625,
+          651.9051513671875,
+          0.27224382758140564
+        ],
+        "total_loss": 0.7884715795516968,
+        "waveform_normalized_mse": 0.7884715795516968,
+        "arrival_normalized_mse": 13.87489128112793,
+        "selected_spatial_move_m": 1106.4177651313514,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              12800.0,
+              5600.0,
+              900.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.6870245337486267
+          },
+          {
+            "source_m_s": [
+              10400.0,
+              6800.0,
+              700.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.739813506603241
+          },
+          {
+            "source_m_s": [
+              12800.0,
+              4400.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.7461107969284058
+          },
+          {
+            "source_m_s": [
+              9200.0,
+              5600.0,
+              700.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.7619454860687256
+          },
+          {
+            "source_m_s": [
+              11600.0,
+              6800.0,
+              900.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.7665144801139832
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              12800.0,
+              5600.0,
+              900.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.6870245337486267,
+            "estimated_source_m_s": [
+              11758.3564453125,
+              6241.87744140625,
+              788.8588256835938,
+              0.2695837914943695
+            ],
+            "total_loss": 1.0215723514556885,
+            "waveform_normalized_mse": 1.0215723514556885,
+            "arrival_normalized_mse": 29.694761276245117,
+            "spatial_move_m": 1228.5683967271316,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              10400.0,
+              6800.0,
+              700.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.739813506603241,
+            "estimated_source_m_s": [
+              9786.3251953125,
+              5880.625,
+              651.9051513671875,
+              0.27224382758140564
+            ],
+            "total_loss": 0.7884715795516968,
+            "waveform_normalized_mse": 0.7884715795516968,
+            "arrival_normalized_mse": 13.87489128112793,
+            "spatial_move_m": 1106.4177651313514,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              12800.0,
+              4400.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.7461107969284058,
+            "estimated_source_m_s": [
+              12011.2724609375,
+              3946.6943359375,
+              719.2345581054688,
+              0.30770638585090637
+            ],
+            "total_loss": 0.9872259497642517,
+            "waveform_normalized_mse": 0.9872259497642517,
+            "arrival_normalized_mse": 20.457618713378906,
+            "spatial_move_m": 986.1843020895583,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              9200.0,
+              5600.0,
+              700.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.7619454860687256,
+            "estimated_source_m_s": [
+              9156.0751953125,
+              5740.40771484375,
+              657.07080078125,
+              0.13369694352149963
+            ],
+            "total_loss": 1.1100318431854248,
+            "waveform_normalized_mse": 1.1100318431854248,
+            "arrival_normalized_mse": 13.424097061157227,
+            "spatial_move_m": 153.25348609425484,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              11600.0,
+              6800.0,
+              900.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.7665144801139832,
+            "estimated_source_m_s": [
+              11891.81640625,
+              6279.54443359375,
+              777.202880859375,
+              0.24591338634490967
+            ],
+            "total_loss": 1.0296170711517334,
+            "waveform_normalized_mse": 1.0296170711517334,
+            "arrival_normalized_mse": 31.224966049194336,
+            "spatial_move_m": 609.1879381842293,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          -13.6748046875,
+          2280.625,
+          -498.0948486328125,
+          0.11224383115768433
+        ],
+        "location_error_m": 2334.4240979613764,
+        "origin_time_error_s": 0.11224383115768433
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          9438.9248046875,
+          3170.255615234375,
+          774.1099853515625,
+          0.1630806028842926
+        ],
+        "total_loss": 1.0542973279953003,
+        "waveform_normalized_mse": 0.8654929995536804,
+        "arrival_normalized_mse": 0.7552174925804138,
+        "selected_spatial_move_m": 271.6948407832386,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              10400.0,
+              3200.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.1584770679473877
+          },
+          {
+            "source_m_s": [
+              10400.0,
+              3200.0,
+              1300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.1932929456233978
+          },
+          {
+            "source_m_s": [
+              10400.0,
+              3200.0,
+              900.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.2192627489566803
+          },
+          {
+            "source_m_s": [
+              9200.0,
+              3200.0,
+              900.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.600246399641037
+          },
+          {
+            "source_m_s": [
+              9200.0,
+              3200.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.6104327142238617
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              10400.0,
+              3200.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.1584770679473877,
+            "estimated_source_m_s": [
+              10138.12890625,
+              3219.4912109375,
+              678.5188598632812,
+              0.1532006859779358
+            ],
+            "total_loss": 1.1750985383987427,
+            "waveform_normalized_mse": 0.9685730338096619,
+            "arrival_normalized_mse": 0.8261019587516785,
+            "spatial_move_m": 496.5911079918566,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              10400.0,
+              3200.0,
+              1300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.1932929456233978,
+            "estimated_source_m_s": [
+              10139.9892578125,
+              3218.608154296875,
+              701.334228515625,
+              0.15031416714191437
+            ],
+            "total_loss": 1.1763687133789062,
+            "waveform_normalized_mse": 0.9798616170883179,
+            "arrival_normalized_mse": 0.7860285043716431,
+            "spatial_move_m": 652.9567791257035,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              10400.0,
+              3200.0,
+              900.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.2192627489566803,
+            "estimated_source_m_s": [
+              10138.08203125,
+              3219.50537109375,
+              678.1148071289062,
+              0.15324735641479492
+            ],
+            "total_loss": 1.175098180770874,
+            "waveform_normalized_mse": 0.9683912992477417,
+            "arrival_normalized_mse": 0.8268276453018188,
+            "spatial_move_m": 343.82338586994535,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              9200.0,
+              3200.0,
+              900.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.600246399641037,
+            "estimated_source_m_s": [
+              9438.9248046875,
+              3170.255615234375,
+              774.1099853515625,
+              0.1630806028842926
+            ],
+            "total_loss": 1.0542973279953003,
+            "waveform_normalized_mse": 0.8654929995536804,
+            "arrival_normalized_mse": 0.7552174925804138,
+            "spatial_move_m": 271.6948407832386,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              9200.0,
+              3200.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.6104327142238617,
+            "estimated_source_m_s": [
+              9438.8720703125,
+              3170.190673828125,
+              774.06396484375,
+              0.16308477520942688
+            ],
+            "total_loss": 1.0542973279953003,
+            "waveform_normalized_mse": 0.8654137849807739,
+            "arrival_normalized_mse": 0.7555341720581055,
+            "spatial_move_m": 405.1947197528337,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          -361.0751953125,
+          -429.744384765625,
+          -375.8900146484375,
+          0.003080606460571289
+        ],
+        "location_error_m": 675.535962047875,
+        "origin_time_error_s": 0.003080606460571289
+      }
+    },
+    {
+      "event": "eikonal_independent/test_06.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_06.npz",
+      "sha256": "b5dc551f9d625f08f38d34dcbc2e05895bf2cc1a057783e1cde834224bc9c2bb",
+      "source_truth_m_s_post_search": [
+        11800.0,
+        8800.0,
+        930.0,
+        0.30000001192092896
+      ],
+      "valid_raw_picks": 11,
+      "raw_picks_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1.8680000305175781,
+        1.9780000448226929,
+        null,
+        null,
+        1.5820000171661377,
+        1.2280000448226929,
+        1.3580000400543213,
+        1.8600001335144043,
+        1.9220000505447388,
+        1.2020000219345093,
+        0.45600003004074097,
+        0.784000039100647,
+        1.558000087738037,
+        null,
+        1.3380000591278076,
+        0.7860000133514404,
+        1.0140000581741333,
+        1.6700000762939453
+      ],
+      "corrected_picks_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1.8447918891906738,
+        1.4907917976379395,
+        1.6207919120788574,
+        null,
+        null,
+        1.4647917747497559,
+        0.7187918424606323,
+        1.0467917919158936,
+        1.8207919597625732,
+        null,
+        1.6007919311523438,
+        1.0487918853759766,
+        1.2767918109893799,
+        1.9327919483184814
+      ],
+      "search_seconds": 11.691586099999768,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          12667.7451171875,
+          9013.2275390625,
+          872.304931640625,
+          0.5
+        ],
+        "total_loss": 0.8500897288322449,
+        "waveform_normalized_mse": 0.8500897288322449,
+        "arrival_normalized_mse": 8.267351150512695,
+        "selected_spatial_move_m": 230.52618724090442,
+        "selected_on_boundary": true,
+        "starts": [
+          {
+            "source_m_s": [
+              14000.0,
+              5600.0,
+              900.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.6033188104629517
+          },
+          {
+            "source_m_s": [
+              12800.0,
+              6800.0,
+              900.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.6192703247070312
+          },
+          {
+            "source_m_s": [
+              12800.0,
+              9200.0,
+              900.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.6330892443656921
+          },
+          {
+            "source_m_s": [
+              10400.0,
+              9200.0,
+              900.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.6586889624595642
+          },
+          {
+            "source_m_s": [
+              11600.0,
+              9200.0,
+              1100.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.6608235836029053
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              14000.0,
+              5600.0,
+              900.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.6033188104629517,
+            "estimated_source_m_s": [
+              14000.0,
+              6396.24072265625,
+              1200.0074462890625,
+              0.5
+            ],
+            "total_loss": 1.365188479423523,
+            "waveform_normalized_mse": 1.365188479423523,
+            "arrival_normalized_mse": 38.95514678955078,
+            "spatial_move_m": 850.8841027102527,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              12800.0,
+              6800.0,
+              900.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.6192703247070312,
+            "estimated_source_m_s": [
+              12642.7841796875,
+              7015.10888671875,
+              915.3764038085938,
+              0.5
+            ],
+            "total_loss": 1.0377243757247925,
+            "waveform_normalized_mse": 1.0377243757247925,
+            "arrival_normalized_mse": 20.271686553955078,
+            "spatial_move_m": 266.88027483498524,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              12800.0,
+              9200.0,
+              900.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.6330892443656921,
+            "estimated_source_m_s": [
+              12667.7451171875,
+              9013.2275390625,
+              872.304931640625,
+              0.5
+            ],
+            "total_loss": 0.8500897288322449,
+            "waveform_normalized_mse": 0.8500897288322449,
+            "arrival_normalized_mse": 8.267351150512695,
+            "spatial_move_m": 230.52618724090442,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              10400.0,
+              9200.0,
+              900.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.6586889624595642,
+            "estimated_source_m_s": [
+              9921.349609375,
+              9296.451171875,
+              660.0128173828125,
+              0.4357811212539673
+            ],
+            "total_loss": 0.9867845773696899,
+            "waveform_normalized_mse": 0.9867845773696899,
+            "arrival_normalized_mse": 13.73779296875,
+            "spatial_move_m": 544.0614605189943,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              11600.0,
+              9200.0,
+              1100.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.6608235836029053,
+            "estimated_source_m_s": [
+              11882.7578125,
+              9293.982421875,
+              1026.19140625,
+              0.40259361267089844
+            ],
+            "total_loss": 0.9529268741607666,
+            "waveform_normalized_mse": 0.9529268741607666,
+            "arrival_normalized_mse": 1.9955823421478271,
+            "spatial_move_m": 306.97293799719245,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          867.7451171875,
+          213.2275390625,
+          -57.695068359375,
+          0.19999998807907104
+        ],
+        "location_error_m": 895.4196182407392,
+        "origin_time_error_s": 0.19999998807907104
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          11763.68359375,
+          9138.111328125,
+          887.162109375,
+          0.25218936800956726
+        ],
+        "total_loss": 0.8270037770271301,
+        "waveform_normalized_mse": 0.6906806230545044,
+        "arrival_normalized_mse": 0.5452926754951477,
+        "selected_spatial_move_m": 175.46320983347454,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              11600.0,
+              9200.0,
+              1300.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.0839053690433502
+          },
+          {
+            "source_m_s": [
+              11600.0,
+              9200.0,
+              1100.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.0881357192993164
+          },
+          {
+            "source_m_s": [
+              11600.0,
+              9200.0,
+              900.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.1078712046146393
+          },
+          {
+            "source_m_s": [
+              11600.0,
+              9200.0,
+              500.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.1926239579916
+          },
+          {
+            "source_m_s": [
+              11600.0,
+              9200.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.267799288034439
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              11600.0,
+              9200.0,
+              1300.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.0839053690433502,
+            "estimated_source_m_s": [
+              11843.03125,
+              9255.935546875,
+              1079.776611328125,
+              0.38970762491226196
+            ],
+            "total_loss": 1.3894660472869873,
+            "waveform_normalized_mse": 1.0051203966140747,
+            "arrival_normalized_mse": 1.53738272190094,
+            "spatial_move_m": 332.7030429660834,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              11600.0,
+              9200.0,
+              1100.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.0881357192993164,
+            "estimated_source_m_s": [
+              11843.0654296875,
+              9255.9599609375,
+              1079.7410888671875,
+              0.38970914483070374
+            ],
+            "total_loss": 1.3894658088684082,
+            "waveform_normalized_mse": 1.0050811767578125,
+            "arrival_normalized_mse": 1.537538766860962,
+            "spatial_move_m": 250.24536722501523,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              11600.0,
+              9200.0,
+              900.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.1078712046146393,
+            "estimated_source_m_s": [
+              11763.68359375,
+              9138.111328125,
+              887.162109375,
+              0.25218936800956726
+            ],
+            "total_loss": 0.8270037770271301,
+            "waveform_normalized_mse": 0.6906806230545044,
+            "arrival_normalized_mse": 0.5452926754951477,
+            "spatial_move_m": 175.46320983347454,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              11600.0,
+              9200.0,
+              500.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.1926239579916,
+            "estimated_source_m_s": [
+              11763.5537109375,
+              9138.064453125,
+              888.1361694335938,
+              0.25206613540649414
+            ],
+            "total_loss": 0.8270061612129211,
+            "waveform_normalized_mse": 0.6901843547821045,
+            "arrival_normalized_mse": 0.5472872853279114,
+            "spatial_move_m": 425.71764627592785,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              11600.0,
+              9200.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.267799288034439,
+            "estimated_source_m_s": [
+              11763.6962890625,
+              9138.0751953125,
+              886.9363403320312,
+              0.25223031640052795
+            ],
+            "total_loss": 0.8270040154457092,
+            "waveform_normalized_mse": 0.6908435821533203,
+            "arrival_normalized_mse": 0.5446417927742004,
+            "spatial_move_m": 256.07880003067726,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          -36.31640625,
+          338.111328125,
+          -42.837890625,
+          -0.047810643911361694
+        ],
+        "location_error_m": 342.7436891360159,
+        "origin_time_error_s": 0.047810643911361694
+      }
+    },
+    {
+      "event": "eikonal_independent/test_07.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_07.npz",
+      "sha256": "837736d30fd7bbb48ce9cf4452b841baf229e0481c6bbd6fd1ee23be6b675109",
+      "source_truth_m_s_post_search": [
+        13200.0,
+        11200.0,
+        380.0,
+        0.27000001072883606
+      ],
+      "valid_raw_picks": 7,
+      "raw_picks_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1.818000078201294,
+        1.502000093460083,
+        1.7620000839233398,
+        null,
+        1.936000108718872,
+        1.1400001049041748,
+        0.6360000371932983,
+        1.0320000648498535,
+        null,
+        1.8380000591278076,
+        0.9600000381469727,
+        0.24400001764297485,
+        0.8480000495910645
+      ],
+      "corrected_picks_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1.7647919654846191,
+        null,
+        null,
+        null,
+        1.402791976928711,
+        0.8987918496131897,
+        1.2947919368743896,
+        null,
+        null,
+        1.2227919101715088,
+        0.5067918300628662,
+        1.1107919216156006
+      ],
+      "search_seconds": 9.804264300000796,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          11683.5009765625,
+          12831.353515625,
+          676.0695190429688,
+          0.48794856667518616
+        ],
+        "total_loss": 1.0913649797439575,
+        "waveform_normalized_mse": 1.0913649797439575,
+        "arrival_normalized_mse": 28.603654861450195,
+        "selected_spatial_move_m": 1245.9631098926639,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              12800.0,
+              11600.0,
+              1300.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.30598554015159607
+          },
+          {
+            "source_m_s": [
+              11600.0,
+              14000.0,
+              1100.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.3461473882198334
+          },
+          {
+            "source_m_s": [
+              14000.0,
+              11600.0,
+              1300.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.36011946201324463
+          },
+          {
+            "source_m_s": [
+              11600.0,
+              14000.0,
+              1300.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.3706035017967224
+          },
+          {
+            "source_m_s": [
+              11600.0,
+              12800.0,
+              1300.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.3763485848903656
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              12800.0,
+              11600.0,
+              1300.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.30598554015159607,
+            "estimated_source_m_s": [
+              12803.880859375,
+              11750.380859375,
+              799.8995971679688,
+              0.44989722967147827
+            ],
+            "total_loss": 1.133662223815918,
+            "waveform_normalized_mse": 1.133662223815918,
+            "arrival_normalized_mse": 7.9141106605529785,
+            "spatial_move_m": 522.235461117504,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              11600.0,
+              14000.0,
+              1100.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.3461473882198334,
+            "estimated_source_m_s": [
+              11683.5009765625,
+              12831.353515625,
+              676.0695190429688,
+              0.48794856667518616
+            ],
+            "total_loss": 1.0913649797439575,
+            "waveform_normalized_mse": 1.0913649797439575,
+            "arrival_normalized_mse": 28.603654861450195,
+            "spatial_move_m": 1245.9631098926639,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              14000.0,
+              11600.0,
+              1300.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.36011946201324463,
+            "estimated_source_m_s": [
+              13992.6455078125,
+              11559.578125,
+              1500.0,
+              0.47131508588790894
+            ],
+            "total_loss": 1.5573681592941284,
+            "waveform_normalized_mse": 1.5573681592941284,
+            "arrival_normalized_mse": 13.705704689025879,
+            "spatial_move_m": 204.17643481521472,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              11600.0,
+              14000.0,
+              1300.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.3706035017967224,
+            "estimated_source_m_s": [
+              11684.9990234375,
+              12830.6904296875,
+              684.0499877929688,
+              0.4863553047180176
+            ],
+            "total_loss": 1.0915634632110596,
+            "waveform_normalized_mse": 1.0915634632110596,
+            "arrival_normalized_mse": 28.555437088012695,
+            "spatial_move_m": 1324.3504531458334,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              11600.0,
+              12800.0,
+              1300.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.3763485848903656,
+            "estimated_source_m_s": [
+              11683.7255859375,
+              12835.845703125,
+              729.9889526367188,
+              0.4758765399456024
+            ],
+            "total_loss": 1.0940368175506592,
+            "waveform_normalized_mse": 1.0940368175506592,
+            "arrival_normalized_mse": 28.355724334716797,
+            "spatial_move_m": 577.2412686990494,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          -1516.4990234375,
+          1631.353515625,
+          296.06951904296875,
+          0.2179485559463501
+        ],
+        "location_error_m": 2246.9403065358174,
+        "origin_time_error_s": 0.2179485559463501
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          13309.837890625,
+          11150.25,
+          943.1817016601562,
+          0.1833713948726654
+        ],
+        "total_loss": 0.4092627465724945,
+        "waveform_normalized_mse": 0.39566296339035034,
+        "arrival_normalized_mse": 0.05439908429980278,
+        "selected_spatial_move_m": 838.5647133114735,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              14000.0,
+              11600.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.8778821229934692
+          },
+          {
+            "source_m_s": [
+              14000.0,
+              11600.0,
+              1300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.8810189962387085
+          },
+          {
+            "source_m_s": [
+              14000.0,
+              11600.0,
+              900.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.9186122119426727
+          },
+          {
+            "source_m_s": [
+              14000.0,
+              11600.0,
+              1500.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.0093748569488525
+          },
+          {
+            "source_m_s": [
+              12800.0,
+              11600.0,
+              1300.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.0993161797523499
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              14000.0,
+              11600.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.8778821229934692,
+            "estimated_source_m_s": [
+              13309.837890625,
+              11150.25,
+              943.1817016601562,
+              0.1833713948726654
+            ],
+            "total_loss": 0.4092627465724945,
+            "waveform_normalized_mse": 0.39566296339035034,
+            "arrival_normalized_mse": 0.05439908429980278,
+            "spatial_move_m": 838.5647133114735,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              14000.0,
+              11600.0,
+              1300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.8810189962387085,
+            "estimated_source_m_s": [
+              13732.0869140625,
+              11419.3994140625,
+              1128.6495361328125,
+              0.17548154294490814
+            ],
+            "total_loss": 0.684596061706543,
+            "waveform_normalized_mse": 0.542133629322052,
+            "arrival_normalized_mse": 0.5698496103286743,
+            "spatial_move_m": 365.7252721989867,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              14000.0,
+              11600.0,
+              900.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.9186122119426727,
+            "estimated_source_m_s": [
+              13639.236328125,
+              11357.0400390625,
+              664.3013916015625,
+              0.13367564976215363
+            ],
+            "total_loss": 1.3301501274108887,
+            "waveform_normalized_mse": 1.1485501527786255,
+            "arrival_normalized_mse": 0.7264001369476318,
+            "spatial_move_m": 494.7057747433763,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              14000.0,
+              11600.0,
+              1500.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.0093748569488525,
+            "estimated_source_m_s": [
+              13911.0703125,
+              10977.5458984375,
+              1401.3255615234375,
+              0.1381070911884308
+            ],
+            "total_loss": 0.7710340619087219,
+            "waveform_normalized_mse": 0.5792001485824585,
+            "arrival_normalized_mse": 0.7673356533050537,
+            "spatial_move_m": 636.470142802859,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              12800.0,
+              11600.0,
+              1300.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.0993161797523499,
+            "estimated_source_m_s": [
+              13006.9912109375,
+              11258.623046875,
+              1280.0028076171875,
+              0.22201184928417206
+            ],
+            "total_loss": 1.45654296875,
+            "waveform_normalized_mse": 1.259014368057251,
+            "arrival_normalized_mse": 0.7901145815849304,
+            "spatial_move_m": 399.7292499098312,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          109.837890625,
+          -49.75,
+          563.1817016601562,
+          -0.08662861585617065
+        ],
+        "location_error_m": 575.9453566110059,
+        "origin_time_error_s": 0.08662861585617065
+      }
+    },
+    {
+      "event": "eikonal_independent/test_08.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_08.npz",
+      "sha256": "df432f3c2dfebc6cb0ae3c0f8bf400bd5d608feb5543868a511578076cc149c1",
+      "source_truth_m_s_post_search": [
+        3800.0,
+        12800.0,
+        1320.0,
+        0.3799999952316284
+      ],
+      "valid_raw_picks": 8,
+      "raw_picks_s": [
+        null,
+        null,
+        1.4940000772476196,
+        0.9040000438690186,
+        0.8140000104904175,
+        null,
+        null,
+        1.378000020980835,
+        0.7660000324249268,
+        0.6920000314712524,
+        null,
+        null,
+        1.846000075340271,
+        1.3700001239776611,
+        1.3200000524520874,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "corrected_picks_s": [
+        null,
+        null,
+        1.7567918300628662,
+        1.1667919158935547,
+        1.076791763305664,
+        null,
+        null,
+        1.640791893005371,
+        1.028791904449463,
+        0.9547918438911438,
+        null,
+        null,
+        null,
+        1.6327919960021973,
+        1.582791805267334,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "search_seconds": 9.786309699999038,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          4312.1455078125,
+          12819.689453125,
+          1025.8228759765625,
+          0.5
+        ],
+        "total_loss": 0.5037421584129333,
+        "waveform_normalized_mse": 0.5037421584129333,
+        "arrival_normalized_mse": 1.309079885482788,
+        "selected_spatial_move_m": 116.654755969371,
+        "selected_on_boundary": true,
+        "starts": [
+          {
+            "source_m_s": [
+              3200.0,
+              10400.0,
+              900.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.4868047833442688
+          },
+          {
+            "source_m_s": [
+              3200.0,
+              11600.0,
+              1100.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.5282995104789734
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              12800.0,
+              1100.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.5301538705825806
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              9200.0,
+              700.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.5360680818557739
+          },
+          {
+            "source_m_s": [
+              5600.0,
+              9200.0,
+              700.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.5370290279388428
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              3200.0,
+              10400.0,
+              900.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.4868047833442688,
+            "estimated_source_m_s": [
+              3275.630859375,
+              9948.8828125,
+              466.6608581542969,
+              0.5
+            ],
+            "total_loss": 0.8497732281684875,
+            "waveform_normalized_mse": 0.8497732281684875,
+            "arrival_normalized_mse": 20.069278717041016,
+            "spatial_move_m": 630.0869428922342,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              3200.0,
+              11600.0,
+              1100.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.5282995104789734,
+            "estimated_source_m_s": [
+              3288.102783203125,
+              11884.0888671875,
+              960.002197265625,
+              0.5
+            ],
+            "total_loss": 0.8892375230789185,
+            "waveform_normalized_mse": 0.8892375230789185,
+            "arrival_normalized_mse": 2.9708774089813232,
+            "spatial_move_m": 328.7369307492951,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              12800.0,
+              1100.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.5301538705825806,
+            "estimated_source_m_s": [
+              4312.1455078125,
+              12819.689453125,
+              1025.8228759765625,
+              0.5
+            ],
+            "total_loss": 0.5037421584129333,
+            "waveform_normalized_mse": 0.5037421584129333,
+            "arrival_normalized_mse": 1.309079885482788,
+            "spatial_move_m": 116.654755969371,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              9200.0,
+              700.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.5360680818557739,
+            "estimated_source_m_s": [
+              3723.002197265625,
+              9451.5439453125,
+              461.6913146972656,
+              0.5
+            ],
+            "total_loss": 0.9068174362182617,
+            "waveform_normalized_mse": 0.9068174362182617,
+            "arrival_normalized_mse": 26.155431747436523,
+            "spatial_move_m": 760.5204867860349,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              5600.0,
+              9200.0,
+              700.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.5370290279388428,
+            "estimated_source_m_s": [
+              6362.958984375,
+              9857.8115234375,
+              738.814453125,
+              0.5
+            ],
+            "total_loss": 0.9577813744544983,
+            "waveform_normalized_mse": 0.9577813744544983,
+            "arrival_normalized_mse": 30.693153381347656,
+            "spatial_move_m": 1008.1314269365324,
+            "on_boundary": true
+          }
+        ],
+        "component_error_m_s": [
+          512.1455078125,
+          19.689453125,
+          -294.1771240234375,
+          0.12000000476837158
+        ],
+        "location_error_m": 590.949131512676,
+        "origin_time_error_s": 0.12000000476837158
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          3348.9775390625,
+          12898.6748046875,
+          976.0195922851562,
+          0.36979952454566956
+        ],
+        "total_loss": 0.7431957125663757,
+        "waveform_normalized_mse": 0.6506933569908142,
+        "arrival_normalized_mse": 0.3700094521045685,
+        "selected_spatial_move_m": 369.9923361480767,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              3200.0,
+              12800.0,
+              1300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.8816330581903458
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              12800.0,
+              1100.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.9511699676513672
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              12800.0,
+              900.0,
+              0.5
+            ],
+            "coarse_total_loss": 1.0202522575855255
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              12800.0,
+              1500.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.0564492344856262
+          },
+          {
+            "source_m_s": [
+              3200.0,
+              12800.0,
+              1100.0,
+              0.5
+            ],
+            "coarse_total_loss": 1.0899828672409058
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              3200.0,
+              12800.0,
+              1300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.8816330581903458,
+            "estimated_source_m_s": [
+              3348.9775390625,
+              12898.6748046875,
+              976.0195922851562,
+              0.36979952454566956
+            ],
+            "total_loss": 0.7431957125663757,
+            "waveform_normalized_mse": 0.6506933569908142,
+            "arrival_normalized_mse": 0.3700094521045685,
+            "spatial_move_m": 369.9923361480767,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              12800.0,
+              1100.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.9511699676513672,
+            "estimated_source_m_s": [
+              4193.45849609375,
+              12828.30078125,
+              1001.8861694335938,
+              0.4921102821826935
+            ],
+            "total_loss": 0.7776973247528076,
+            "waveform_normalized_mse": 0.5471168160438538,
+            "arrival_normalized_mse": 0.9223220944404602,
+            "spatial_move_m": 230.4054053264144,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              12800.0,
+              900.0,
+              0.5
+            ],
+            "coarse_total_loss": 1.0202522575855255,
+            "estimated_source_m_s": [
+              4180.50439453125,
+              12828.3466796875,
+              946.223388671875,
+              0.4973355531692505
+            ],
+            "total_loss": 0.7771722674369812,
+            "waveform_normalized_mse": 0.5525919198989868,
+            "arrival_normalized_mse": 0.8983214497566223,
+            "spatial_move_m": 226.0939113061431,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              12800.0,
+              1500.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.0564492344856262,
+            "estimated_source_m_s": [
+              4250.70947265625,
+              12820.1123046875,
+              1300.3521728515625,
+              0.4480130672454834
+            ],
+            "total_loss": 0.8049337863922119,
+            "waveform_normalized_mse": 0.5817651152610779,
+            "arrival_normalized_mse": 0.8926746845245361,
+            "spatial_move_m": 250.10282133456667,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              3200.0,
+              12800.0,
+              1100.0,
+              0.5
+            ],
+            "coarse_total_loss": 1.0899828672409058,
+            "estimated_source_m_s": [
+              3295.7978515625,
+              12848.3564453125,
+              1500.0,
+              0.4447202682495117
+            ],
+            "total_loss": 1.1111674308776855,
+            "waveform_normalized_mse": 0.7599988579750061,
+            "arrival_normalized_mse": 1.4046741724014282,
+            "spatial_move_m": 414.144388066833,
+            "on_boundary": true
+          }
+        ],
+        "component_error_m_s": [
+          -451.0224609375,
+          98.6748046875,
+          -343.98040771484375,
+          -0.010200470685958862
+        ],
+        "location_error_m": 575.7434309151126,
+        "origin_time_error_s": 0.010200470685958862
+      }
+    },
+    {
+      "event": "eikonal_wide_search_independent/test_01.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_01.npz",
+      "sha256": "1d44a3788ce53a9f1435b142813d1011a9169b2b987e9f7bf56b06ee19718539",
+      "source_truth_m_s_post_search": [
+        2600.0,
+        2800.0,
+        300.0,
+        0.20999999344348907
+      ],
+      "valid_raw_picks": 8,
+      "raw_picks_s": [
+        0.242000013589859,
+        0.5940000414848328,
+        1.446000099182129,
+        null,
+        null,
+        0.6160000562667847,
+        0.8480000495910645,
+        1.5040000677108765,
+        null,
+        null,
+        1.3860000371932983,
+        1.5080000162124634,
+        1.9560000896453857,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "corrected_picks_s": [
+        0.5047918558120728,
+        0.8567918539047241,
+        1.708791971206665,
+        null,
+        null,
+        0.878791868686676,
+        1.1107919216156006,
+        1.766791820526123,
+        null,
+        null,
+        1.648791790008545,
+        1.77079176902771,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "search_seconds": 10.225727899998674,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          2952.494140625,
+          2410.650390625,
+          148.97528076171875,
+          0.18885356187820435
+        ],
+        "total_loss": 0.8354474306106567,
+        "waveform_normalized_mse": 0.8354474306106567,
+        "arrival_normalized_mse": 0.8848661184310913,
+        "selected_spatial_move_m": 481.9662559465253,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              3200.0,
+              2000.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.056857705116272
+          },
+          {
+            "source_m_s": [
+              2000.0,
+              3200.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.0664539337158203
+          },
+          {
+            "source_m_s": [
+              2000.0,
+              3200.0,
+              900.0,
+              0.05000000074505806
+            ],
+            "coarse_total_loss": 1.070810317993164
+          },
+          {
+            "source_m_s": [
+              2000.0,
+              3200.0,
+              100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.0885062217712402
+          },
+          {
+            "source_m_s": [
+              3200.0,
+              2000.0,
+              100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.1074281930923462
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              3200.0,
+              2000.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.056857705116272,
+            "estimated_source_m_s": [
+              2952.490478515625,
+              2410.6552734375,
+              148.964111328125,
+              0.1888555884361267
+            ],
+            "total_loss": 0.8354476094245911,
+            "waveform_normalized_mse": 0.8354476094245911,
+            "arrival_normalized_mse": 0.8848421573638916,
+            "spatial_move_m": 502.70324893952613,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              2000.0,
+              3200.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.0664539337158203,
+            "estimated_source_m_s": [
+              2219.989013671875,
+              3156.476806640625,
+              302.4900817871094,
+              0.15386562049388885
+            ],
+            "total_loss": 0.8377146124839783,
+            "waveform_normalized_mse": 0.8377146124839783,
+            "arrival_normalized_mse": 0.9296518564224243,
+            "spatial_move_m": 224.2668834309436,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              2000.0,
+              3200.0,
+              900.0,
+              0.05000000074505806
+            ],
+            "coarse_total_loss": 1.070810317993164,
+            "estimated_source_m_s": [
+              2390.752197265625,
+              3131.534912109375,
+              799.987060546875,
+              0.062327928841114044
+            ],
+            "total_loss": 0.9205597639083862,
+            "waveform_normalized_mse": 0.9205597639083862,
+            "arrival_normalized_mse": 3.5672378540039062,
+            "spatial_move_m": 409.1177532029616,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              2000.0,
+              3200.0,
+              100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.0885062217712402,
+            "estimated_source_m_s": [
+              2219.773193359375,
+              3154.666259765625,
+              236.61502075195312,
+              0.15269401669502258
+            ],
+            "total_loss": 0.8400338292121887,
+            "waveform_normalized_mse": 0.8400338292121887,
+            "arrival_normalized_mse": 0.8961925506591797,
+            "spatial_move_m": 262.71480433746325,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              3200.0,
+              2000.0,
+              100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.1074281930923462,
+            "estimated_source_m_s": [
+              2952.494140625,
+              2410.650390625,
+              148.97528076171875,
+              0.18885356187820435
+            ],
+            "total_loss": 0.8354474306106567,
+            "waveform_normalized_mse": 0.8354474306106567,
+            "arrival_normalized_mse": 0.8848661184310913,
+            "spatial_move_m": 481.9662559465253,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          352.494140625,
+          -389.349609375,
+          -151.02471923828125,
+          -0.02114643156528473
+        ],
+        "location_error_m": 546.4921804714355,
+        "origin_time_error_s": 0.02114643156528473
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          2605.217529296875,
+          2819.9013671875,
+          271.212158203125,
+          0.19431822001934052
+        ],
+        "total_loss": 0.7153995037078857,
+        "waveform_normalized_mse": 0.7100473642349243,
+        "arrival_normalized_mse": 0.02140846848487854,
+        "selected_spatial_move_m": 734.8991982242989,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              2000.0,
+              2000.0,
+              1300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.288009189069271
+          },
+          {
+            "source_m_s": [
+              2000.0,
+              3200.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.4510191082954407
+          },
+          {
+            "source_m_s": [
+              2000.0,
+              3200.0,
+              100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.458221822977066
+          },
+          {
+            "source_m_s": [
+              2000.0,
+              3200.0,
+              500.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.5308935046195984
+          },
+          {
+            "source_m_s": [
+              3200.0,
+              2000.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.7911583185195923
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              2000.0,
+              2000.0,
+              1300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.288009189069271,
+            "estimated_source_m_s": [
+              2604.654541015625,
+              2546.4052734375,
+              632.8782348632812,
+              0.19242796301841736
+            ],
+            "total_loss": 0.8861215114593506,
+            "waveform_normalized_mse": 0.8373302817344666,
+            "arrival_normalized_mse": 0.19516494870185852,
+            "spatial_move_m": 1053.1938503097408,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              2000.0,
+              3200.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.4510191082954407,
+            "estimated_source_m_s": [
+              2605.18701171875,
+              2819.855712890625,
+              271.5904846191406,
+              0.1943085491657257
+            ],
+            "total_loss": 0.7153995633125305,
+            "waveform_normalized_mse": 0.7100432515144348,
+            "arrival_normalized_mse": 0.021425141021609306,
+            "spatial_move_m": 715.2398889457583,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              2000.0,
+              3200.0,
+              100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.458221822977066,
+            "estimated_source_m_s": [
+              2605.217529296875,
+              2819.9013671875,
+              271.212158203125,
+              0.19431822001934052
+            ],
+            "total_loss": 0.7153995037078857,
+            "waveform_normalized_mse": 0.7100473642349243,
+            "arrival_normalized_mse": 0.02140846848487854,
+            "spatial_move_m": 734.8991982242989,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              2000.0,
+              3200.0,
+              500.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.5308935046195984,
+            "estimated_source_m_s": [
+              2601.307861328125,
+              2815.319580078125,
+              322.17291259765625,
+              0.19195832312107086
+            ],
+            "total_loss": 0.7172783017158508,
+            "waveform_normalized_mse": 0.7103734016418457,
+            "arrival_normalized_mse": 0.02761949598789215,
+            "spatial_move_m": 735.6443723568301,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              3200.0,
+              2000.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.7911583185195923,
+            "estimated_source_m_s": [
+              2605.2626953125,
+              2819.890380859375,
+              271.14141845703125,
+              0.19431626796722412
+            ],
+            "total_loss": 0.7153995633125305,
+            "waveform_normalized_mse": 0.7100441455841064,
+            "arrival_normalized_mse": 0.021421752870082855,
+            "spatial_move_m": 1013.2943875998502,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          5.217529296875,
+          19.9013671875,
+          -28.787841796875,
+          -0.01568177342414856
+        ],
+        "location_error_m": 35.38399162357681,
+        "origin_time_error_s": 0.01568177342414856
+      }
+    },
+    {
+      "event": "eikonal_wide_search_independent/test_02.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_02.npz",
+      "sha256": "aa56b60ef6c1c9c633db435236060c5b883fc86b339b2839cd41a76fdbffe416",
+      "source_truth_m_s_post_search": [
+        13600.0,
+        3600.0,
+        1230.0,
+        0.3199999928474426
+      ],
+      "valid_raw_picks": 8,
+      "raw_picks_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1.6140000820159912,
+        1.6360000371932983,
+        null,
+        null,
+        null,
+        0.9460000395774841,
+        0.9440000653266907,
+        1.5160000324249268,
+        null,
+        null,
+        0.6080000400543213,
+        0.5760000348091125,
+        1.3220000267028809,
+        null,
+        null
+      ],
+      "corrected_picks_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1.8767919540405273,
+        1.898791790008545,
+        null,
+        null,
+        null,
+        1.2087918519973755,
+        1.206791877746582,
+        1.778791904449463,
+        null,
+        null,
+        0.8707918524742126,
+        0.8387918472290039,
+        1.584791898727417,
+        null,
+        null
+      ],
+      "search_seconds": 11.924643299998934,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          12526.859375,
+          2979.259033203125,
+          447.8597106933594,
+          0.36061006784439087
+        ],
+        "total_loss": 0.7928276658058167,
+        "waveform_normalized_mse": 0.7928276658058167,
+        "arrival_normalized_mse": 4.05856990814209,
+        "selected_spatial_move_m": 572.5060843887185,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              14000.0,
+              3200.0,
+              700.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.5065305829048157
+          },
+          {
+            "source_m_s": [
+              12800.0,
+              2000.0,
+              700.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.553462028503418
+          },
+          {
+            "source_m_s": [
+              14000.0,
+              4400.0,
+              900.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.5607530474662781
+          },
+          {
+            "source_m_s": [
+              14000.0,
+              4400.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.5756170153617859
+          },
+          {
+            "source_m_s": [
+              12800.0,
+              3200.0,
+              900.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.5860457420349121
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              14000.0,
+              3200.0,
+              700.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.5065305829048157,
+            "estimated_source_m_s": [
+              14000.0,
+              3159.578125,
+              754.5927734375,
+              0.5
+            ],
+            "total_loss": 0.8574251532554626,
+            "waveform_normalized_mse": 0.8574251532554626,
+            "arrival_normalized_mse": 7.190461158752441,
+            "spatial_move_m": 67.92863085705342,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              12800.0,
+              2000.0,
+              700.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.553462028503418,
+            "estimated_source_m_s": [
+              12846.3564453125,
+              2309.7919921875,
+              650.0335693359375,
+              0.5
+            ],
+            "total_loss": 0.8406741619110107,
+            "waveform_normalized_mse": 0.8406741619110107,
+            "arrival_normalized_mse": 10.582735061645508,
+            "spatial_move_m": 317.201265191073,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              14000.0,
+              4400.0,
+              900.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.5607530474662781,
+            "estimated_source_m_s": [
+              14000.0,
+              4707.73388671875,
+              1411.799560546875,
+              0.06614889949560165
+            ],
+            "total_loss": 1.3977389335632324,
+            "waveform_normalized_mse": 1.3977389335632324,
+            "arrival_normalized_mse": 9.89961051940918,
+            "spatial_move_m": 597.1925445038668,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              14000.0,
+              4400.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.5756170153617859,
+            "estimated_source_m_s": [
+              14000.0,
+              4756.23583984375,
+              1476.20361328125,
+              0.05000000074505806
+            ],
+            "total_loss": 1.3738651275634766,
+            "waveform_normalized_mse": 1.3738651275634766,
+            "arrival_normalized_mse": 10.543720245361328,
+            "spatial_move_m": 518.1053292864784,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              12800.0,
+              3200.0,
+              900.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.5860457420349121,
+            "estimated_source_m_s": [
+              12526.859375,
+              2979.259033203125,
+              447.8597106933594,
+              0.36061006784439087
+            ],
+            "total_loss": 0.7928276658058167,
+            "waveform_normalized_mse": 0.7928276658058167,
+            "arrival_normalized_mse": 4.05856990814209,
+            "spatial_move_m": 572.5060843887185,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          -1073.140625,
+          -620.740966796875,
+          -782.1402893066406,
+          0.04061007499694824
+        ],
+        "location_error_m": 1465.8422770004913,
+        "origin_time_error_s": 0.04061007499694824
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          13604.4453125,
+          4047.389892578125,
+          1419.0814208984375,
+          0.374144047498703
+        ],
+        "total_loss": 1.0100297927856445,
+        "waveform_normalized_mse": 0.7989740967750549,
+        "arrival_normalized_mse": 0.8442230224609375,
+        "selected_spatial_move_m": 536.0459076451426,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              14000.0,
+              3200.0,
+              1300.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.0239050686359406
+          },
+          {
+            "source_m_s": [
+              12800.0,
+              3200.0,
+              900.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.1398283243179321
+          },
+          {
+            "source_m_s": [
+              12800.0,
+              3200.0,
+              1100.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.3462544083595276
+          },
+          {
+            "source_m_s": [
+              14000.0,
+              4400.0,
+              1300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.410831868648529
+          },
+          {
+            "source_m_s": [
+              14000.0,
+              4400.0,
+              1500.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.4159092903137207
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              14000.0,
+              3200.0,
+              1300.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.0239050686359406,
+            "estimated_source_m_s": [
+              13601.765625,
+              3148.349853515625,
+              1280.0054931640625,
+              0.4062957167625427
+            ],
+            "total_loss": 1.1178016662597656,
+            "waveform_normalized_mse": 0.8553498387336731,
+            "arrival_normalized_mse": 1.0498075485229492,
+            "spatial_move_m": 402.0673269082062,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              12800.0,
+              3200.0,
+              900.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.1398283243179321,
+            "estimated_source_m_s": [
+              13066.2255859375,
+              3162.791015625,
+              960.457275390625,
+              0.3777046501636505
+            ],
+            "total_loss": 1.1334588527679443,
+            "waveform_normalized_mse": 0.8147493004798889,
+            "arrival_normalized_mse": 1.2748384475708008,
+            "spatial_move_m": 275.5279537064108,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              12800.0,
+              3200.0,
+              1100.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.3462544083595276,
+            "estimated_source_m_s": [
+              13066.37890625,
+              3162.763671875,
+              961.4182739257812,
+              0.37763381004333496
+            ],
+            "total_loss": 1.133460283279419,
+            "waveform_normalized_mse": 0.8148767352104187,
+            "arrival_normalized_mse": 1.27433443069458,
+            "spatial_move_m": 302.5709183462428,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              14000.0,
+              4400.0,
+              1300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.410831868648529,
+            "estimated_source_m_s": [
+              13696.2890625,
+              4217.71728515625,
+              874.1165161132812,
+              0.35086268186569214
+            ],
+            "total_loss": 1.7519819736480713,
+            "waveform_normalized_mse": 1.4015580415725708,
+            "arrival_normalized_mse": 1.401695728302002,
+            "spatial_move_m": 553.9350715882014,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              14000.0,
+              4400.0,
+              1500.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.4159092903137207,
+            "estimated_source_m_s": [
+              13604.4453125,
+              4047.389892578125,
+              1419.0814208984375,
+              0.374144047498703
+            ],
+            "total_loss": 1.0100297927856445,
+            "waveform_normalized_mse": 0.7989740967750549,
+            "arrival_normalized_mse": 0.8442230224609375,
+            "spatial_move_m": 536.0459076451426,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          4.4453125,
+          447.389892578125,
+          189.0814208984375,
+          0.054144054651260376
+        ],
+        "location_error_m": 485.7254991384135,
+        "origin_time_error_s": 0.054144054651260376
+      }
+    },
+    {
+      "event": "eikonal_wide_search_independent/test_03.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_03.npz",
+      "sha256": "e2b30f94c909b7a750789632257f338d20942ef4a524b87dc00a344635a00f67",
+      "source_truth_m_s_post_search": [
+        3400.0,
+        13900.0,
+        980.0,
+        0.14000000059604645
+      ],
+      "valid_raw_picks": 8,
+      "raw_picks_s": [
+        null,
+        null,
+        1.5220000743865967,
+        0.8340000510215759,
+        0.4020000100135803,
+        null,
+        null,
+        1.4380000829696655,
+        0.7900000214576721,
+        0.4220000207424164,
+        null,
+        null,
+        1.9140000343322754,
+        1.3480000495910645,
+        1.1340000629425049,
+        null,
+        null,
+        null,
+        null,
+        1.9180001020431519,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "corrected_picks_s": [
+        null,
+        null,
+        1.7847919464111328,
+        1.0967918634414673,
+        0.6647918224334717,
+        null,
+        null,
+        1.700791835784912,
+        1.0527918338775635,
+        0.6847918033599854,
+        null,
+        null,
+        null,
+        1.6107919216156006,
+        1.396791934967041,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "search_seconds": 13.831823900000018,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          3340.529052734375,
+          14000.0,
+          1116.355224609375,
+          0.13739795982837677
+        ],
+        "total_loss": 0.6024900078773499,
+        "waveform_normalized_mse": 0.6024900078773499,
+        "arrival_normalized_mse": 0.20667043328285217,
+        "selected_spatial_move_m": 231.2440662821294,
+        "selected_on_boundary": true,
+        "starts": [
+          {
+            "source_m_s": [
+              3200.0,
+              14000.0,
+              1300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.421538382768631
+          },
+          {
+            "source_m_s": [
+              2000.0,
+              14000.0,
+              1100.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.5564413070678711
+          },
+          {
+            "source_m_s": [
+              2000.0,
+              12800.0,
+              500.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.6556844115257263
+          },
+          {
+            "source_m_s": [
+              2000.0,
+              14000.0,
+              1500.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.6703376770019531
+          },
+          {
+            "source_m_s": [
+              3200.0,
+              12800.0,
+              1100.0,
+              0.05000000074505806
+            ],
+            "coarse_total_loss": 0.683995246887207
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              3200.0,
+              14000.0,
+              1300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.421538382768631,
+            "estimated_source_m_s": [
+              3340.529052734375,
+              14000.0,
+              1116.355224609375,
+              0.13739795982837677
+            ],
+            "total_loss": 0.6024900078773499,
+            "waveform_normalized_mse": 0.6024900078773499,
+            "arrival_normalized_mse": 0.20667043328285217,
+            "spatial_move_m": 231.2440662821294,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              2000.0,
+              14000.0,
+              1100.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.5564413070678711,
+            "estimated_source_m_s": [
+              2337.9697265625,
+              13832.0810546875,
+              850.144775390625,
+              0.36177682876586914
+            ],
+            "total_loss": 0.7130783200263977,
+            "waveform_normalized_mse": 0.7130783200263977,
+            "arrival_normalized_mse": 7.177469253540039,
+            "spatial_move_m": 452.60130527009596,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              2000.0,
+              12800.0,
+              500.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.6556844115257263,
+            "estimated_source_m_s": [
+              2040.148681640625,
+              13232.3203125,
+              867.5755615234375,
+              0.2810080349445343
+            ],
+            "total_loss": 0.6996523141860962,
+            "waveform_normalized_mse": 0.6996523141860962,
+            "arrival_normalized_mse": 5.5823140144348145,
+            "spatial_move_m": 568.8800951578885,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              2000.0,
+              14000.0,
+              1500.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.6703376770019531,
+            "estimated_source_m_s": [
+              2021.88134765625,
+              14000.0,
+              1450.91552734375,
+              0.23046109080314636
+            ],
+            "total_loss": 0.721009373664856,
+            "waveform_normalized_mse": 0.721009373664856,
+            "arrival_normalized_mse": 6.333540439605713,
+            "spatial_move_m": 53.74084881350341,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              3200.0,
+              12800.0,
+              1100.0,
+              0.05000000074505806
+            ],
+            "coarse_total_loss": 0.683995246887207,
+            "estimated_source_m_s": [
+              3341.904541015625,
+              13361.1826171875,
+              955.4893188476562,
+              0.12366841733455658
+            ],
+            "total_loss": 0.6503182649612427,
+            "waveform_normalized_mse": 0.6503182649612427,
+            "arrival_normalized_mse": 2.647355556488037,
+            "spatial_move_m": 596.6122405393487,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          -59.470947265625,
+          100.0,
+          136.355224609375,
+          -0.0026020407676696777
+        ],
+        "location_error_m": 179.24715017802615,
+        "origin_time_error_s": 0.0026020407676696777
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          3332.802001953125,
+          14000.0,
+          1043.3907470703125,
+          0.1495930701494217
+        ],
+        "total_loss": 0.6490697860717773,
+        "waveform_normalized_mse": 0.601893424987793,
+        "arrival_normalized_mse": 0.18870550394058228,
+        "selected_spatial_move_m": 144.364051065406,
+        "selected_on_boundary": true,
+        "starts": [
+          {
+            "source_m_s": [
+              3200.0,
+              14000.0,
+              1300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.45600637048482895
+          },
+          {
+            "source_m_s": [
+              3200.0,
+              14000.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.85074133425951
+          },
+          {
+            "source_m_s": [
+              3200.0,
+              14000.0,
+              500.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.9806336015462875
+          },
+          {
+            "source_m_s": [
+              3200.0,
+              14000.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.0412216484546661
+          },
+          {
+            "source_m_s": [
+              3200.0,
+              14000.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.0871528312563896
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              3200.0,
+              14000.0,
+              1300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.45600637048482895,
+            "estimated_source_m_s": [
+              3336.42626953125,
+              14000.0,
+              1100.106689453125,
+              0.14144697785377502
+            ],
+            "total_loss": 0.6508929133415222,
+            "waveform_normalized_mse": 0.6031729578971863,
+            "arrival_normalized_mse": 0.19087988138198853,
+            "spatial_move_m": 242.0112861409622,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              3200.0,
+              14000.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.85074133425951,
+            "estimated_source_m_s": [
+              3092.78857421875,
+              13753.1591796875,
+              770.0291748046875,
+              0.21910695731639862
+            ],
+            "total_loss": 0.8277227282524109,
+            "waveform_normalized_mse": 0.7435551285743713,
+            "arrival_normalized_mse": 0.3366703689098358,
+            "spatial_move_m": 278.080502219091,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              3200.0,
+              14000.0,
+              500.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.9806336015462875,
+            "estimated_source_m_s": [
+              3093.029052734375,
+              13752.9921875,
+              769.650634765625,
+              0.21908634901046753
+            ],
+            "total_loss": 0.8277230858802795,
+            "waveform_normalized_mse": 0.7435842752456665,
+            "arrival_normalized_mse": 0.3365553021430969,
+            "spatial_move_m": 381.0080154333302,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              3200.0,
+              14000.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.0412216484546661,
+            "estimated_source_m_s": [
+              3283.110595703125,
+              13876.3818359375,
+              268.95135498046875,
+              0.11639483273029327
+            ],
+            "total_loss": 1.0332738161087036,
+            "waveform_normalized_mse": 0.9400001764297485,
+            "arrival_normalized_mse": 0.37309467792510986,
+            "spatial_move_m": 152.16057295456116,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              3200.0,
+              14000.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.0871528312563896,
+            "estimated_source_m_s": [
+              3332.802001953125,
+              14000.0,
+              1043.3907470703125,
+              0.1495930701494217
+            ],
+            "total_loss": 0.6490697860717773,
+            "waveform_normalized_mse": 0.601893424987793,
+            "arrival_normalized_mse": 0.18870550394058228,
+            "spatial_move_m": 144.364051065406,
+            "on_boundary": true
+          }
+        ],
+        "component_error_m_s": [
+          -67.197998046875,
+          100.0,
+          63.3907470703125,
+          0.009593069553375244
+        ],
+        "location_error_m": 136.1394790486586,
+        "origin_time_error_s": 0.009593069553375244
+      }
+    },
+    {
+      "event": "eikonal_wide_search_independent/test_04.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_04.npz",
+      "sha256": "28905a6d02cccff650b0144a39b1d188ca9a63495c8827b6f9882689211b42f1",
+      "source_truth_m_s_post_search": [
+        12900.0,
+        13700.0,
+        420.0,
+        0.3700000047683716
+      ],
+      "valid_raw_picks": 6,
+      "raw_picks_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1.7260000705718994,
+        1.5560001134872437,
+        null,
+        null,
+        1.8660000562667847,
+        1.068000078201294,
+        0.64000004529953,
+        null,
+        null,
+        1.8040001392364502,
+        0.9500000476837158,
+        0.4360000193119049
+      ],
+      "corrected_picks_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1.9887919425964355,
+        1.8187918663024902,
+        null,
+        null,
+        null,
+        1.33079195022583,
+        0.9027918577194214,
+        null,
+        null,
+        null,
+        1.212791919708252,
+        0.6987918615341187
+      ],
+      "search_seconds": 11.138584000000264,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          12913.2099609375,
+          13789.8408203125,
+          1009.4281005859375,
+          0.2802003026008606
+        ],
+        "total_loss": 0.46357086300849915,
+        "waveform_normalized_mse": 0.46357086300849915,
+        "arrival_normalized_mse": 0.5840262174606323,
+        "selected_spatial_move_m": 390.8057388199593,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              14000.0,
+              12800.0,
+              1300.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.6623283624649048
+          },
+          {
+            "source_m_s": [
+              12800.0,
+              14000.0,
+              1300.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.7953320741653442
+          },
+          {
+            "source_m_s": [
+              12800.0,
+              12800.0,
+              900.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.8101957440376282
+          },
+          {
+            "source_m_s": [
+              12800.0,
+              14000.0,
+              700.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.8585751056671143
+          },
+          {
+            "source_m_s": [
+              12800.0,
+              14000.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.8913084268569946
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              14000.0,
+              12800.0,
+              1300.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.6623283624649048,
+            "estimated_source_m_s": [
+              13717.5869140625,
+              13078.0478515625,
+              1093.0699462890625,
+              0.2981380522251129
+            ],
+            "total_loss": 0.6282954812049866,
+            "waveform_normalized_mse": 0.6282954812049866,
+            "arrival_normalized_mse": 2.2728004455566406,
+            "spatial_move_m": 447.0881411937419,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              12800.0,
+              14000.0,
+              1300.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.7953320741653442,
+            "estimated_source_m_s": [
+              12915.4599609375,
+              13832.8984375,
+              1096.2427978515625,
+              0.26804304122924805
+            ],
+            "total_loss": 0.4725777208805084,
+            "waveform_normalized_mse": 0.4725777208805084,
+            "arrival_normalized_mse": 0.7576484084129333,
+            "spatial_move_m": 287.6993781658029,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              12800.0,
+              12800.0,
+              900.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.8101957440376282,
+            "estimated_source_m_s": [
+              12939.0126953125,
+              13304.7705078125,
+              1104.5048828125,
+              0.22492563724517822
+            ],
+            "total_loss": 0.541024386882782,
+            "waveform_normalized_mse": 0.541024386882782,
+            "arrival_normalized_mse": 2.5299670696258545,
+            "spatial_move_m": 562.0854402219377,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              12800.0,
+              14000.0,
+              700.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.8585751056671143,
+            "estimated_source_m_s": [
+              12913.2099609375,
+              13789.8408203125,
+              1009.4281005859375,
+              0.2802003026008606
+            ],
+            "total_loss": 0.46357086300849915,
+            "waveform_normalized_mse": 0.46357086300849915,
+            "arrival_normalized_mse": 0.5840262174606323,
+            "spatial_move_m": 390.8057388199593,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              12800.0,
+              14000.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.8913084268569946,
+            "estimated_source_m_s": [
+              12913.2197265625,
+              13797.2998046875,
+              1028.3682861328125,
+              0.2774229049682617
+            ],
+            "total_loss": 0.46388208866119385,
+            "waveform_normalized_mse": 0.46388208866119385,
+            "arrival_normalized_mse": 0.6204628348350525,
+            "spatial_move_m": 242.9756738732574,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          13.2099609375,
+          89.8408203125,
+          589.4281005859375,
+          -0.08979970216751099
+        ],
+        "location_error_m": 596.3818926013257,
+        "origin_time_error_s": 0.08979970216751099
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          12928.548828125,
+          13726.3701171875,
+          838.6046752929688,
+          0.30785566568374634
+        ],
+        "total_loss": 0.566696286201477,
+        "waveform_normalized_mse": 0.5068787336349487,
+        "arrival_normalized_mse": 0.2392701804637909,
+        "selected_spatial_move_m": 332.5798700964365,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              12800.0,
+              14000.0,
+              700.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.9406783804297447
+          },
+          {
+            "source_m_s": [
+              12800.0,
+              14000.0,
+              1300.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.2360687255859375
+          },
+          {
+            "source_m_s": [
+              12800.0,
+              14000.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.269151657819748
+          },
+          {
+            "source_m_s": [
+              12800.0,
+              14000.0,
+              500.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.5209557935595512
+          },
+          {
+            "source_m_s": [
+              14000.0,
+              14000.0,
+              1500.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.6130331754684448
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              12800.0,
+              14000.0,
+              700.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.9406783804297447,
+            "estimated_source_m_s": [
+              12928.548828125,
+              13726.3701171875,
+              838.6046752929688,
+              0.30785566568374634
+            ],
+            "total_loss": 0.566696286201477,
+            "waveform_normalized_mse": 0.5068787336349487,
+            "arrival_normalized_mse": 0.2392701804637909,
+            "spatial_move_m": 332.5798700964365,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              12800.0,
+              14000.0,
+              1300.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.2360687255859375,
+            "estimated_source_m_s": [
+              12932.607421875,
+              13769.09765625,
+              963.20361328125,
+              0.2906663417816162
+            ],
+            "total_loss": 0.5822916626930237,
+            "waveform_normalized_mse": 0.47346627712249756,
+            "arrival_normalized_mse": 0.4353015422821045,
+            "spatial_move_m": 429.3395239113017,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              12800.0,
+              14000.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.269151657819748,
+            "estimated_source_m_s": [
+              12931.9189453125,
+              13741.5439453125,
+              903.1973876953125,
+              0.29850494861602783
+            ],
+            "total_loss": 0.5714067220687866,
+            "waveform_normalized_mse": 0.48515835404396057,
+            "arrival_normalized_mse": 0.3449934422969818,
+            "spatial_move_m": 350.6186083865765,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              12800.0,
+              14000.0,
+              500.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.5209557935595512,
+            "estimated_source_m_s": [
+              12927.3876953125,
+              13723.8046875,
+              816.9927978515625,
+              0.3113461136817932
+            ],
+            "total_loss": 0.5677079558372498,
+            "waveform_normalized_mse": 0.5167360901832581,
+            "arrival_normalized_mse": 0.2038874626159668,
+            "spatial_move_m": 439.3129971373082,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              14000.0,
+              14000.0,
+              1500.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.6130331754684448,
+            "estimated_source_m_s": [
+              13268.638671875,
+              13728.98828125,
+              1175.5262451171875,
+              0.3142910897731781
+            ],
+            "total_loss": 0.5957106351852417,
+            "waveform_normalized_mse": 0.4822351634502411,
+            "arrival_normalized_mse": 0.45390182733535767,
+            "spatial_move_m": 844.7602983002602,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          28.548828125,
+          26.3701171875,
+          418.60467529296875,
+          -0.062144339084625244
+        ],
+        "location_error_m": 420.40491534344017,
+        "origin_time_error_s": 0.062144339084625244
+      }
+    },
+    {
+      "event": "eikonal_wide_search_independent/test_05.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_05.npz",
+      "sha256": "7a2078e42bb79670e46fd63e98b990bfa1e945e9c98c72e26febca1d6087df17",
+      "source_truth_m_s_post_search": [
+        6300.0,
+        6300.0,
+        1380.0,
+        0.25
+      ],
+      "valid_raw_picks": 16,
+      "raw_picks_s": [
+        1.5260000228881836,
+        1.2060000896453857,
+        1.2060000896453857,
+        1.5980000495910645,
+        null,
+        1.096000075340271,
+        0.534000039100647,
+        0.6060000061988831,
+        1.2540000677108765,
+        1.9940000772476196,
+        1.196000099182129,
+        0.6240000128746033,
+        0.7140000462532043,
+        1.3840000629425049,
+        null,
+        1.6940001249313354,
+        1.340000033378601,
+        1.4100000858306885,
+        1.8240001201629639,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "corrected_picks_s": [
+        1.7887918949127197,
+        1.4687919616699219,
+        1.4687919616699219,
+        1.8607919216156006,
+        null,
+        1.3587918281555176,
+        0.7967918515205383,
+        0.8687918186187744,
+        1.516791820526123,
+        null,
+        1.458791971206665,
+        0.8867918252944946,
+        0.9767918586730957,
+        1.646791934967041,
+        null,
+        1.956791877746582,
+        1.6027917861938477,
+        1.6727919578552246,
+        2.0867919921875,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "search_seconds": 9.875872799999343,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          3830.174560546875,
+          5864.05224609375,
+          515.1807861328125,
+          0.3492002487182617
+        ],
+        "total_loss": 0.756076455116272,
+        "waveform_normalized_mse": 0.756076455116272,
+        "arrival_normalized_mse": 19.950946807861328,
+        "selected_spatial_move_m": 784.1743382622014,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              4400.0,
+              3200.0,
+              500.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.47021806240081787
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              3200.0,
+              300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.49159514904022217
+          },
+          {
+            "source_m_s": [
+              5600.0,
+              3200.0,
+              500.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.5092204213142395
+          },
+          {
+            "source_m_s": [
+              3200.0,
+              4400.0,
+              500.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.5246953964233398
+          },
+          {
+            "source_m_s": [
+              3200.0,
+              5600.0,
+              900.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.579807698726654
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              4400.0,
+              3200.0,
+              500.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.47021806240081787,
+            "estimated_source_m_s": [
+              3723.690673828125,
+              4849.328125,
+              288.0131530761719,
+              0.3985883295536041
+            ],
+            "total_loss": 0.7743967771530151,
+            "waveform_normalized_mse": 0.7743967771530151,
+            "arrival_normalized_mse": 35.101844787597656,
+            "spatial_move_m": 1795.1646141375943,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              3200.0,
+              300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.49159514904022217,
+            "estimated_source_m_s": [
+              3724.194580078125,
+              4849.5068359375,
+              288.4150390625,
+              0.3987713158130646
+            ],
+            "total_loss": 0.7743976712226868,
+            "waveform_normalized_mse": 0.7743976712226868,
+            "arrival_normalized_mse": 35.095298767089844,
+            "spatial_move_m": 1782.616049159282,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              5600.0,
+              3200.0,
+              500.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.5092204213142395,
+            "estimated_source_m_s": [
+              6085.8427734375,
+              4256.28173828125,
+              383.83587646484375,
+              0.45458659529685974
+            ],
+            "total_loss": 0.7931414842605591,
+            "waveform_normalized_mse": 0.7931414842605591,
+            "arrival_normalized_mse": 18.771549224853516,
+            "spatial_move_m": 1168.447009806004,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              3200.0,
+              4400.0,
+              500.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.5246953964233398,
+            "estimated_source_m_s": [
+              3714.92529296875,
+              4841.54296875,
+              278.8320007324219,
+              0.3950926661491394
+            ],
+            "total_loss": 0.7745941281318665,
+            "waveform_normalized_mse": 0.7745941281318665,
+            "arrival_normalized_mse": 35.2645378112793,
+            "spatial_move_m": 713.4588526968741,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              3200.0,
+              5600.0,
+              900.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.579807698726654,
+            "estimated_source_m_s": [
+              3830.174560546875,
+              5864.05224609375,
+              515.1807861328125,
+              0.3492002487182617
+            ],
+            "total_loss": 0.756076455116272,
+            "waveform_normalized_mse": 0.756076455116272,
+            "arrival_normalized_mse": 19.950946807861328,
+            "spatial_move_m": 784.1743382622014,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          -2469.825439453125,
+          -435.94775390625,
+          -864.8192138671875,
+          0.09920024871826172
+        ],
+        "location_error_m": 2652.922995146973,
+        "origin_time_error_s": 0.09920024871826172
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          6068.060546875,
+          6666.927734375,
+          479.88885498046875,
+          0.28039729595184326
+        ],
+        "total_loss": 1.0638272762298584,
+        "waveform_normalized_mse": 0.883258044719696,
+        "arrival_normalized_mse": 0.7222768664360046,
+        "selected_spatial_move_m": 518.795627936164,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              5600.0,
+              6800.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.0851260423660278
+          },
+          {
+            "source_m_s": [
+              6800.0,
+              5600.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.2992665767669678
+          },
+          {
+            "source_m_s": [
+              5600.0,
+              6800.0,
+              1300.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.3538090586662292
+          },
+          {
+            "source_m_s": [
+              5600.0,
+              6800.0,
+              900.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.353974610567093
+          },
+          {
+            "source_m_s": [
+              5600.0,
+              6800.0,
+              300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.3793349862098694
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              5600.0,
+              6800.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.0851260423660278,
+            "estimated_source_m_s": [
+              5970.166015625,
+              6688.2080078125,
+              715.3818969726562,
+              0.2638304531574249
+            ],
+            "total_loss": 1.0783759355545044,
+            "waveform_normalized_mse": 0.9015893936157227,
+            "arrival_normalized_mse": 0.7071462869644165,
+            "spatial_move_m": 545.3910650325051,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              6800.0,
+              5600.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.2992665767669678,
+            "estimated_source_m_s": [
+              6754.6298828125,
+              5850.1494140625,
+              760.1878662109375,
+              0.2679353356361389
+            ],
+            "total_loss": 1.3924258947372437,
+            "waveform_normalized_mse": 0.9860022664070129,
+            "arrival_normalized_mse": 1.6256945133209229,
+            "spatial_move_m": 424.3883400373946,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              5600.0,
+              6800.0,
+              1300.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.3538090586662292,
+            "estimated_source_m_s": [
+              5955.326171875,
+              6690.4560546875,
+              743.9628295898438,
+              0.2620391249656677
+            ],
+            "total_loss": 1.0847342014312744,
+            "waveform_normalized_mse": 0.9087989330291748,
+            "arrival_normalized_mse": 0.7037409543991089,
+            "spatial_move_m": 668.9050001694584,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              5600.0,
+              6800.0,
+              900.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.353974610567093,
+            "estimated_source_m_s": [
+              5972.2978515625,
+              6687.8349609375,
+              710.9915771484375,
+              0.26425623893737793
+            ],
+            "total_loss": 1.0783905982971191,
+            "waveform_normalized_mse": 0.9016513824462891,
+            "arrival_normalized_mse": 0.7069569826126099,
+            "spatial_move_m": 432.3318981694278,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              5600.0,
+              6800.0,
+              300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.3793349862098694,
+            "estimated_source_m_s": [
+              6068.060546875,
+              6666.927734375,
+              479.88885498046875,
+              0.28039729595184326
+            ],
+            "total_loss": 1.0638272762298584,
+            "waveform_normalized_mse": 0.883258044719696,
+            "arrival_normalized_mse": 0.7222768664360046,
+            "spatial_move_m": 518.795627936164,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          -231.939453125,
+          366.927734375,
+          -900.1111450195312,
+          0.03039729595184326
+        ],
+        "location_error_m": 999.3157386721507,
+        "origin_time_error_s": 0.03039729595184326
+      }
+    },
+    {
+      "event": "eikonal_wide_search_independent/test_06.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_06.npz",
+      "sha256": "bf510d8b084ff360ba9f7a36feb27dad8d1436bb5610d205aa2e9658754a4639",
+      "source_truth_m_s_post_search": [
+        10400.0,
+        10400.0,
+        220.0,
+        0.3100000023841858
+      ],
+      "valid_raw_picks": 11,
+      "raw_picks_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1.7500001192092896,
+        1.6260000467300415,
+        1.9440001249313354,
+        null,
+        1.75600004196167,
+        1.0660001039505005,
+        0.7460000514984131,
+        1.3440001010894775,
+        null,
+        1.6260000467300415,
+        0.7600000500679016,
+        0.2900000214576721,
+        1.090000033378601,
+        null,
+        1.968000054359436,
+        1.3260000944137573,
+        1.1060000658035278,
+        1.5520000457763672
+      ],
+      "corrected_picks_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1.888791799545288,
+        null,
+        null,
+        null,
+        1.328791856765747,
+        1.0087919235229492,
+        1.6067919731140137,
+        null,
+        1.888791799545288,
+        1.022791862487793,
+        0.5527918338775635,
+        1.3527917861938477,
+        null,
+        null,
+        1.588791847229004,
+        1.3687918186187744,
+        1.8147919178009033
+      ],
+      "search_seconds": 9.830423800000062,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          10444.533203125,
+          10449.71875,
+          831.7096557617188,
+          0.20737679302692413
+        ],
+        "total_loss": 0.40662646293640137,
+        "waveform_normalized_mse": 0.40662646293640137,
+        "arrival_normalized_mse": 0.576470673084259,
+        "selected_spatial_move_m": 147.65701372777883,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              11600.0,
+              10400.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.5720266699790955
+          },
+          {
+            "source_m_s": [
+              10400.0,
+              10400.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.6336890459060669
+          },
+          {
+            "source_m_s": [
+              10400.0,
+              10400.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.6487922668457031
+          },
+          {
+            "source_m_s": [
+              10400.0,
+              11600.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.6546513438224792
+          },
+          {
+            "source_m_s": [
+              10400.0,
+              10400.0,
+              1500.0,
+              0.05000000074505806
+            ],
+            "coarse_total_loss": 0.7199145555496216
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              11600.0,
+              10400.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.5720266699790955,
+            "estimated_source_m_s": [
+              11564.9296875,
+              10440.95703125,
+              899.1453247070312,
+              0.19867835938930511
+            ],
+            "total_loss": 0.4858613908290863,
+            "waveform_normalized_mse": 0.4858613908290863,
+            "arrival_normalized_mse": 4.281783580780029,
+            "spatial_move_m": 207.9663574107722,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              10400.0,
+              10400.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.6336890459060669,
+            "estimated_source_m_s": [
+              10444.5087890625,
+              10449.72265625,
+              831.6937255859375,
+              0.20737765729427338
+            ],
+            "total_loss": 0.4066266119480133,
+            "waveform_normalized_mse": 0.4066266119480133,
+            "arrival_normalized_mse": 0.5764349699020386,
+            "spatial_move_m": 276.4807981367241,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              10400.0,
+              10400.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.6487922668457031,
+            "estimated_source_m_s": [
+              10444.533203125,
+              10449.71875,
+              831.7096557617188,
+              0.20737679302692413
+            ],
+            "total_loss": 0.40662646293640137,
+            "waveform_normalized_mse": 0.40662646293640137,
+            "arrival_normalized_mse": 0.576470673084259,
+            "spatial_move_m": 147.65701372777883,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              10400.0,
+              11600.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.6546513438224792,
+            "estimated_source_m_s": [
+              10436.8330078125,
+              11528.955078125,
+              883.79736328125,
+              0.2083331048488617
+            ],
+            "total_loss": 0.513245165348053,
+            "waveform_normalized_mse": 0.513245165348053,
+            "arrival_normalized_mse": 4.697831153869629,
+            "spatial_move_m": 230.5377008492978,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              10400.0,
+              10400.0,
+              1500.0,
+              0.05000000074505806
+            ],
+            "coarse_total_loss": 0.7199145555496216,
+            "estimated_source_m_s": [
+              10565.91796875,
+              10093.4970703125,
+              966.39794921875,
+              0.12645567953586578
+            ],
+            "total_loss": 0.5178013443946838,
+            "waveform_normalized_mse": 0.5178013443946838,
+            "arrival_normalized_mse": 2.7495009899139404,
+            "spatial_move_m": 637.3413268093497,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          44.533203125,
+          49.71875,
+          611.7096557617188,
+          -0.10262320935726166
+        ],
+        "location_error_m": 615.3404449849331,
+        "origin_time_error_s": 0.10262320935726166
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          10441.4619140625,
+          10453.1455078125,
+          741.643798828125,
+          0.23077817261219025
+        ],
+        "total_loss": 0.5005255341529846,
+        "waveform_normalized_mse": 0.4410112798213959,
+        "arrival_normalized_mse": 0.2380569726228714,
+        "selected_spatial_move_m": 79.23219862664408,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              10400.0,
+              10400.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.706305667757988
+          },
+          {
+            "source_m_s": [
+              10400.0,
+              10400.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.303465187549591
+          },
+          {
+            "source_m_s": [
+              10400.0,
+              10400.0,
+              300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.810061950236559
+          },
+          {
+            "source_m_s": [
+              10400.0,
+              10400.0,
+              100.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.9012891463935375
+          },
+          {
+            "source_m_s": [
+              11600.0,
+              10400.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.9118018746376038
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              10400.0,
+              10400.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.706305667757988,
+            "estimated_source_m_s": [
+              10441.4619140625,
+              10453.1455078125,
+              741.643798828125,
+              0.23077817261219025
+            ],
+            "total_loss": 0.5005255341529846,
+            "waveform_normalized_mse": 0.4410112798213959,
+            "arrival_normalized_mse": 0.2380569726228714,
+            "spatial_move_m": 79.23219862664408,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              10400.0,
+              10400.0,
+              1100.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 1.303465187549591,
+            "estimated_source_m_s": [
+              10441.58203125,
+              10453.0654296875,
+              742.59228515625,
+              0.23052917420864105
+            ],
+            "total_loss": 0.5005306005477905,
+            "waveform_normalized_mse": 0.44035598635673523,
+            "arrival_normalized_mse": 0.24069856107234955,
+            "spatial_move_m": 363.71043397272274,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              10400.0,
+              10400.0,
+              300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.810061950236559,
+            "estimated_source_m_s": [
+              10440.6787109375,
+              10453.513671875,
+              736.3480834960938,
+              0.23213566839694977
+            ],
+            "total_loss": 0.5006705522537231,
+            "waveform_normalized_mse": 0.44471225142478943,
+            "arrival_normalized_mse": 0.2238330841064453,
+            "spatial_move_m": 441.4953233860987,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              10400.0,
+              10400.0,
+              100.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.9012891463935375,
+            "estimated_source_m_s": [
+              10434.7890625,
+              10453.4658203125,
+              706.1931762695312,
+              0.23905687034130096
+            ],
+            "total_loss": 0.5051344037055969,
+            "waveform_normalized_mse": 0.46333199739456177,
+            "arrival_normalized_mse": 0.16720962524414062,
+            "spatial_move_m": 609.5400231051776,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              11600.0,
+              10400.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 1.9118018746376038,
+            "estimated_source_m_s": [
+              10441.404296875,
+              10453.1611328125,
+              741.3626098632812,
+              0.2308468520641327
+            ],
+            "total_loss": 0.500525951385498,
+            "waveform_normalized_mse": 0.4411974847316742,
+            "arrival_normalized_mse": 0.23731395602226257,
+            "spatial_move_m": 1160.5520129818929,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          41.4619140625,
+          53.1455078125,
+          521.643798828125,
+          -0.07922182977199554
+        ],
+        "location_error_m": 525.980786886947,
+        "origin_time_error_s": 0.07922182977199554
+      }
+    },
+    {
+      "event": "eikonal_wide_search_independent/test_07.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_07.npz",
+      "sha256": "faa85f2df753bbcf96cdba3639427c0943d7fcdcb72e1cfd0ed67a98e77fd957",
+      "source_truth_m_s_post_search": [
+        7600.0,
+        4600.0,
+        880.0,
+        0.1899999976158142
+      ],
+      "valid_raw_picks": 15,
+      "raw_picks_s": [
+        1.5460001230239868,
+        1.4300000667572021,
+        1.6360000371932983,
+        null,
+        null,
+        0.89000004529953,
+        0.6060000061988831,
+        1.0220000743865967,
+        1.7040001153945923,
+        null,
+        0.6600000262260437,
+        0.1980000138282776,
+        0.8600000143051147,
+        1.7020000219345093,
+        null,
+        1.1500000953674316,
+        0.906000018119812,
+        1.2920000553131104,
+        1.9600000381469727,
+        null,
+        1.8020000457763672,
+        1.7160000801086426,
+        1.9540001153945923,
+        null,
+        null
+      ],
+      "corrected_picks_s": [
+        1.8087918758392334,
+        1.6927919387817383,
+        1.898791790008545,
+        null,
+        null,
+        1.1527918577194214,
+        0.8687918186187744,
+        1.2847919464111328,
+        1.9667918682098389,
+        null,
+        0.9227918386459351,
+        0.46079182624816895,
+        1.1227917671203613,
+        1.9647917747497559,
+        null,
+        1.4127919673919678,
+        1.1687917709350586,
+        1.5547919273376465,
+        null,
+        null,
+        null,
+        1.9787919521331787,
+        null,
+        null,
+        null
+      ],
+      "search_seconds": 9.820439499999338,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          3353.676513671875,
+          3254.218505859375,
+          100.0,
+          0.4669288396835327
+        ],
+        "total_loss": 1.0824109315872192,
+        "waveform_normalized_mse": 1.0824109315872192,
+        "arrival_normalized_mse": 84.58232116699219,
+        "selected_spatial_move_m": 1633.3575537774836,
+        "selected_on_boundary": true,
+        "starts": [
+          {
+            "source_m_s": [
+              4400.0,
+              2000.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.30132338404655457
+          },
+          {
+            "source_m_s": [
+              2000.0,
+              4400.0,
+              100.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.3101319968700409
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              2000.0,
+              100.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.3136986196041107
+          },
+          {
+            "source_m_s": [
+              2000.0,
+              4400.0,
+              300.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.3157736361026764
+          },
+          {
+            "source_m_s": [
+              2000.0,
+              5600.0,
+              100.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.3160962462425232
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              4400.0,
+              2000.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.30132338404655457,
+            "estimated_source_m_s": [
+              3430.096435546875,
+              3352.867919921875,
+              100.0,
+              0.07971006631851196
+            ],
+            "total_loss": 1.0966871976852417,
+            "waveform_normalized_mse": 1.0966871976852417,
+            "arrival_normalized_mse": 49.71660232543945,
+            "spatial_move_m": 1676.5931328419003,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              2000.0,
+              4400.0,
+              100.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.3101319968700409,
+            "estimated_source_m_s": [
+              2131.22216796875,
+              3705.77880859375,
+              100.0,
+              0.35987693071365356
+            ],
+            "total_loss": 1.1333723068237305,
+            "waveform_normalized_mse": 1.1333723068237305,
+            "arrival_normalized_mse": 115.01219940185547,
+            "spatial_move_m": 706.5142036533533,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              2000.0,
+              100.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.3136986196041107,
+            "estimated_source_m_s": [
+              3353.676513671875,
+              3254.218505859375,
+              100.0,
+              0.4669288396835327
+            ],
+            "total_loss": 1.0824109315872192,
+            "waveform_normalized_mse": 1.0824109315872192,
+            "arrival_normalized_mse": 84.58232116699219,
+            "spatial_move_m": 1633.3575537774836,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              2000.0,
+              4400.0,
+              300.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.3157736361026764,
+            "estimated_source_m_s": [
+              2524.8798828125,
+              3338.866455078125,
+              100.0,
+              0.25721049308776855
+            ],
+            "total_loss": 1.1149545907974243,
+            "waveform_normalized_mse": 1.1149545907974243,
+            "arrival_normalized_mse": 90.6563720703125,
+            "spatial_move_m": 1200.6262080846514,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              2000.0,
+              5600.0,
+              100.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.3160962462425232,
+            "estimated_source_m_s": [
+              2218.77685546875,
+              6356.01220703125,
+              100.0,
+              0.3135487139225006
+            ],
+            "total_loss": 1.0914418697357178,
+            "waveform_normalized_mse": 1.0914418697357178,
+            "arrival_normalized_mse": 108.39968872070312,
+            "spatial_move_m": 787.0309839320533,
+            "on_boundary": true
+          }
+        ],
+        "component_error_m_s": [
+          -4246.323486328125,
+          -1345.781494140625,
+          -780.0,
+          0.2769288420677185
+        ],
+        "location_error_m": 4522.255076896174,
+        "origin_time_error_s": 0.2769288420677185
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          7477.48046875,
+          4519.83349609375,
+          540.065185546875,
+          0.21537095308303833
+        ],
+        "total_loss": 0.4257234036922455,
+        "waveform_normalized_mse": 0.4060536026954651,
+        "arrival_normalized_mse": 0.0786791741847992,
+        "selected_spatial_move_m": 537.5797116862541,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              8000.0,
+              4400.0,
+              500.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.6707147061824799
+          },
+          {
+            "source_m_s": [
+              8000.0,
+              4400.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.6827802658081055
+          },
+          {
+            "source_m_s": [
+              8000.0,
+              4400.0,
+              900.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.7027020454406738
+          },
+          {
+            "source_m_s": [
+              8000.0,
+              4400.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.7073166370391846
+          },
+          {
+            "source_m_s": [
+              8000.0,
+              4400.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.8173982799053192
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              8000.0,
+              4400.0,
+              500.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.6707147061824799,
+            "estimated_source_m_s": [
+              7477.48046875,
+              4519.83349609375,
+              540.065185546875,
+              0.21537095308303833
+            ],
+            "total_loss": 0.4257234036922455,
+            "waveform_normalized_mse": 0.4060536026954651,
+            "arrival_normalized_mse": 0.0786791741847992,
+            "spatial_move_m": 537.5797116862541,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              8000.0,
+              4400.0,
+              700.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.6827802658081055,
+            "estimated_source_m_s": [
+              7506.89990234375,
+              4542.162109375,
+              640.3141479492188,
+              0.2132670134305954
+            ],
+            "total_loss": 0.4396480917930603,
+            "waveform_normalized_mse": 0.42863622307777405,
+            "arrival_normalized_mse": 0.04404747858643532,
+            "spatial_move_m": 516.6431772370371,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              8000.0,
+              4400.0,
+              900.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.7027020454406738,
+            "estimated_source_m_s": [
+              7538.3349609375,
+              4567.13232421875,
+              771.0015258789062,
+              0.2032622992992401
+            ],
+            "total_loss": 0.44289320707321167,
+            "waveform_normalized_mse": 0.4340589940547943,
+            "arrival_normalized_mse": 0.03533684089779854,
+            "spatial_move_m": 507.64990733468227,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              8000.0,
+              4400.0,
+              300.0,
+              0.14000000059604645
+            ],
+            "coarse_total_loss": 0.7073166370391846,
+            "estimated_source_m_s": [
+              7573.45361328125,
+              4758.78369140625,
+              126.80253601074219,
+              0.1370849907398224
+            ],
+            "total_loss": 1.2223960161209106,
+            "waveform_normalized_mse": 1.1535979509353638,
+            "arrival_normalized_mse": 0.27519214153289795,
+            "spatial_move_m": 583.6650741428914,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              8000.0,
+              4400.0,
+              1100.0,
+              0.22999998927116394
+            ],
+            "coarse_total_loss": 0.8173982799053192,
+            "estimated_source_m_s": [
+              7301.59375,
+              4383.81396484375,
+              1297.69482421875,
+              0.21793119609355927
+            ],
+            "total_loss": 1.3431719541549683,
+            "waveform_normalized_mse": 1.2253812551498413,
+            "arrival_normalized_mse": 0.4711627662181854,
+            "spatial_move_m": 726.0279066923147,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          -122.51953125,
+          -80.16650390625,
+          -339.934814453125,
+          0.02537095546722412
+        ],
+        "location_error_m": 370.12617033053886,
+        "origin_time_error_s": 0.02537095546722412
+      }
+    },
+    {
+      "event": "eikonal_wide_search_independent/test_08.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_08.npz",
+      "sha256": "8468027befcbb696a561f131bac172f9e93a52af2b6f6b381773f9957415fe2c",
+      "source_truth_m_s_post_search": [
+        4700.0,
+        9400.0,
+        1120.0,
+        0.4000000059604645
+      ],
+      "valid_raw_picks": 12,
+      "raw_picks_s": [
+        null,
+        1.564000129699707,
+        0.9960000514984131,
+        1.027999997138977,
+        1.590000033378601,
+        1.8860000371932983,
+        1.25600004196167,
+        0.5680000185966492,
+        0.6300000548362732,
+        1.380000114440918,
+        null,
+        1.5700000524520874,
+        1.1360000371932983,
+        1.1740000247955322,
+        1.7040001153945923,
+        null,
+        null,
+        1.936000108718872,
+        1.942000150680542,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "corrected_picks_s": [
+        null,
+        1.8267920017242432,
+        1.2587919235229492,
+        1.2907917499542236,
+        1.8527917861938477,
+        null,
+        1.518791913986206,
+        0.8307918310165405,
+        0.8927918672561646,
+        1.642791986465454,
+        null,
+        1.832791805267334,
+        1.398791790008545,
+        1.4367918968200684,
+        1.9667918682098389,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "search_seconds": 9.677856599999359,
+      "waveform_only": {
+        "estimated_source_m_s": [
+          4470.07568359375,
+          12361.6416015625,
+          604.3140869140625,
+          0.5
+        ],
+        "total_loss": 0.8531758785247803,
+        "waveform_normalized_mse": 0.8531758785247803,
+        "arrival_normalized_mse": 30.807540893554688,
+        "selected_spatial_move_m": 454.11945661346743,
+        "selected_on_boundary": true,
+        "starts": [
+          {
+            "source_m_s": [
+              3200.0,
+              11600.0,
+              1300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.638580858707428
+          },
+          {
+            "source_m_s": [
+              3200.0,
+              11600.0,
+              700.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.7044689655303955
+          },
+          {
+            "source_m_s": [
+              5600.0,
+              10400.0,
+              1300.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.7180948257446289
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              12800.0,
+              700.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.7278248071670532
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              12800.0,
+              1300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.7321900725364685
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              3200.0,
+              11600.0,
+              1300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.638580858707428,
+            "estimated_source_m_s": [
+              3630.42919921875,
+              12022.169921875,
+              767.9545288085938,
+              0.4403840899467468
+            ],
+            "total_loss": 0.8679549098014832,
+            "waveform_normalized_mse": 0.8679549098014832,
+            "arrival_normalized_mse": 25.161901473999023,
+            "spatial_move_m": 804.0952194182748,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              3200.0,
+              11600.0,
+              700.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.7044689655303955,
+            "estimated_source_m_s": [
+              3604.55029296875,
+              12008.388671875,
+              663.4173583984375,
+              0.4470364451408386
+            ],
+            "total_loss": 0.8609180450439453,
+            "waveform_normalized_mse": 0.8609180450439453,
+            "arrival_normalized_mse": 25.229534149169922,
+            "spatial_move_m": 576.0039379409452,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              5600.0,
+              10400.0,
+              1300.0,
+              0.5
+            ],
+            "coarse_total_loss": 0.7180948257446289,
+            "estimated_source_m_s": [
+              5660.7578125,
+              10393.53515625,
+              1280.0,
+              0.49844327569007874
+            ],
+            "total_loss": 0.9023975729942322,
+            "waveform_normalized_mse": 0.9023975729942322,
+            "arrival_normalized_mse": 7.295133590698242,
+            "spatial_move_m": 64.29079237726869,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              12800.0,
+              700.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.7278248071670532,
+            "estimated_source_m_s": [
+              4470.07568359375,
+              12361.6416015625,
+              604.3140869140625,
+              0.5
+            ],
+            "total_loss": 0.8531758785247803,
+            "waveform_normalized_mse": 0.8531758785247803,
+            "arrival_normalized_mse": 30.807540893554688,
+            "spatial_move_m": 454.11945661346743,
+            "on_boundary": true
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              12800.0,
+              1300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 0.7321900725364685,
+            "estimated_source_m_s": [
+              3618.36865234375,
+              12017.87109375,
+              737.5400390625,
+              0.44321155548095703
+            ],
+            "total_loss": 0.8654373288154602,
+            "waveform_normalized_mse": 0.8654373288154602,
+            "arrival_normalized_mse": 25.2207088470459,
+            "spatial_move_m": 1240.5782511750563,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          -229.92431640625,
+          2961.6416015625,
+          -515.6859130859375,
+          0.09999999403953552
+        ],
+        "location_error_m": 3014.9822766205193,
+        "origin_time_error_s": 0.09999999403953552
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          4613.42041015625,
+          9406.3623046875,
+          876.5065307617188,
+          0.41844144463539124
+        ],
+        "total_loss": 0.4971601963043213,
+        "waveform_normalized_mse": 0.4693985879421234,
+        "arrival_normalized_mse": 0.11104641854763031,
+        "selected_spatial_move_m": 479.4693316296921,
+        "selected_on_boundary": false,
+        "starts": [
+          {
+            "source_m_s": [
+              4400.0,
+              9200.0,
+              500.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.9899267666041851
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              9200.0,
+              1100.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.1118476688861847
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              9200.0,
+              1300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.1497352570295334
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              9200.0,
+              300.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.1998273842036724
+          },
+          {
+            "source_m_s": [
+              4400.0,
+              9200.0,
+              100.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.2553059086203575
+          }
+        ],
+        "refinements": [
+          {
+            "initial_source_m_s": [
+              4400.0,
+              9200.0,
+              500.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 0.9899267666041851,
+            "estimated_source_m_s": [
+              4613.42041015625,
+              9406.3623046875,
+              876.5065307617188,
+              0.41844144463539124
+            ],
+            "total_loss": 0.4971601963043213,
+            "waveform_normalized_mse": 0.4693985879421234,
+            "arrival_normalized_mse": 0.11104641854763031,
+            "spatial_move_m": 479.4693316296921,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              9200.0,
+              1100.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.1118476688861847,
+            "estimated_source_m_s": [
+              4571.23193359375,
+              9083.2919921875,
+              562.6177978515625,
+              0.3662495017051697
+            ],
+            "total_loss": 1.0675193071365356,
+            "waveform_normalized_mse": 0.9449390172958374,
+            "arrival_normalized_mse": 0.4903213381767273,
+            "spatial_move_m": 575.9520512644443,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              9200.0,
+              1300.0,
+              0.3199999928474426
+            ],
+            "coarse_total_loss": 1.1497352570295334,
+            "estimated_source_m_s": [
+              4260.873046875,
+              9398.3408203125,
+              1044.2713623046875,
+              0.36899706721305847
+            ],
+            "total_loss": 0.6435148119926453,
+            "waveform_normalized_mse": 0.5514103770256042,
+            "arrival_normalized_mse": 0.3684176802635193,
+            "spatial_move_m": 352.26769114635215,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              9200.0,
+              300.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.1998273842036724,
+            "estimated_source_m_s": [
+              4602.7900390625,
+              9418.1435546875,
+              756.508544921875,
+              0.43019673228263855
+            ],
+            "total_loss": 0.5074565410614014,
+            "waveform_normalized_mse": 0.4697888493537903,
+            "arrival_normalized_mse": 0.15067073702812195,
+            "spatial_move_m": 545.0783998484586,
+            "on_boundary": false
+          },
+          {
+            "initial_source_m_s": [
+              4400.0,
+              9200.0,
+              100.0,
+              0.4099999964237213
+            ],
+            "coarse_total_loss": 1.2553059086203575,
+            "estimated_source_m_s": [
+              4600.02880859375,
+              9419.779296875,
+              741.961181640625,
+              0.4311995506286621
+            ],
+            "total_loss": 0.5087284445762634,
+            "waveform_normalized_mse": 0.4703710973262787,
+            "arrival_normalized_mse": 0.15342944860458374,
+            "spatial_move_m": 707.4097980207314,
+            "on_boundary": false
+          }
+        ],
+        "component_error_m_s": [
+          -86.57958984375,
+          6.3623046875,
+          -243.49346923828125,
+          0.018441438674926758
+        ],
+        "location_error_m": 258.506429049922,
+        "origin_time_error_s": 0.018441438674926758
+      }
+    }
+  ],
+  "decision": "Freeze the method and register a new prospective confirmation.",
+  "limitations": "These sixteen source positions already served as forward-model development data. The comparison is a development audit, not independent confirmation. It uses one noise-free 5-Hz synthetic Overthrust model, one receiver geometry, known velocity, and a previously developed picker-bias correction."
+}

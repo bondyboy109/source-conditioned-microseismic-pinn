@@ -1,0 +1,564 @@
+{
+  "model_checkpoint": "outputs/constant_velocity_moe_development/constant_velocity_moe.pth",
+  "diagnostic": "frozen-model vavg sensitivity; no retraining",
+  "events": [
+    {
+      "event": "test_01.npz",
+      "values": [
+        {
+          "vavg_m_s": 3000.0,
+          "truth_source_loss": 5145546457088.0
+        },
+        {
+          "vavg_m_s": 3400.0,
+          "truth_source_loss": 7172672978944.0
+        },
+        {
+          "vavg_m_s": 3800.0,
+          "truth_source_loss": 9292098830336.0
+        },
+        {
+          "vavg_m_s": 4200.0,
+          "truth_source_loss": 11369210445824.0
+        },
+        {
+          "vavg_m_s": 4600.0,
+          "truth_source_loss": 13094419955712.0
+        },
+        {
+          "vavg_m_s": 5000.0,
+          "truth_source_loss": 14406453821440.0
+        },
+        {
+          "vavg_m_s": 5400.0,
+          "truth_source_loss": 15476807696384.0
+        }
+      ]
+    },
+    {
+      "event": "test_02.npz",
+      "values": [
+        {
+          "vavg_m_s": 3000.0,
+          "truth_source_loss": 790971809792.0
+        },
+        {
+          "vavg_m_s": 3400.0,
+          "truth_source_loss": 1067747377152.0
+        },
+        {
+          "vavg_m_s": 3800.0,
+          "truth_source_loss": 1358252998656.0
+        },
+        {
+          "vavg_m_s": 4200.0,
+          "truth_source_loss": 1667405578240.0
+        },
+        {
+          "vavg_m_s": 4600.0,
+          "truth_source_loss": 1962412736512.0
+        },
+        {
+          "vavg_m_s": 5000.0,
+          "truth_source_loss": 2225537810432.0
+        },
+        {
+          "vavg_m_s": 5400.0,
+          "truth_source_loss": 2469858377728.0
+        }
+      ]
+    },
+    {
+      "event": "test_03.npz",
+      "values": [
+        {
+          "vavg_m_s": 3000.0,
+          "truth_source_loss": 280290328576.0
+        },
+        {
+          "vavg_m_s": 3400.0,
+          "truth_source_loss": 521556918272.0
+        },
+        {
+          "vavg_m_s": 3800.0,
+          "truth_source_loss": 916356333568.0
+        },
+        {
+          "vavg_m_s": 4200.0,
+          "truth_source_loss": 1456905912320.0
+        },
+        {
+          "vavg_m_s": 4600.0,
+          "truth_source_loss": 2069192114176.0
+        },
+        {
+          "vavg_m_s": 5000.0,
+          "truth_source_loss": 2781551788032.0
+        },
+        {
+          "vavg_m_s": 5400.0,
+          "truth_source_loss": 3456723845120.0
+        }
+      ]
+    },
+    {
+      "event": "test_04.npz",
+      "values": [
+        {
+          "vavg_m_s": 3000.0,
+          "truth_source_loss": 455898267648.0
+        },
+        {
+          "vavg_m_s": 3400.0,
+          "truth_source_loss": 551338639360.0
+        },
+        {
+          "vavg_m_s": 3800.0,
+          "truth_source_loss": 773644615680.0
+        },
+        {
+          "vavg_m_s": 4200.0,
+          "truth_source_loss": 1101513621504.0
+        },
+        {
+          "vavg_m_s": 4600.0,
+          "truth_source_loss": 1547807621120.0
+        },
+        {
+          "vavg_m_s": 5000.0,
+          "truth_source_loss": 2137303810048.0
+        },
+        {
+          "vavg_m_s": 5400.0,
+          "truth_source_loss": 2897007083520.0
+        }
+      ]
+    },
+    {
+      "event": "test_05.npz",
+      "values": [
+        {
+          "vavg_m_s": 3000.0,
+          "truth_source_loss": 818915508224.0
+        },
+        {
+          "vavg_m_s": 3400.0,
+          "truth_source_loss": 949579808768.0
+        },
+        {
+          "vavg_m_s": 3800.0,
+          "truth_source_loss": 1112367169536.0
+        },
+        {
+          "vavg_m_s": 4200.0,
+          "truth_source_loss": 1572955750400.0
+        },
+        {
+          "vavg_m_s": 4600.0,
+          "truth_source_loss": 2458187726848.0
+        },
+        {
+          "vavg_m_s": 5000.0,
+          "truth_source_loss": 3833133793280.0
+        },
+        {
+          "vavg_m_s": 5400.0,
+          "truth_source_loss": 5683937804288.0
+        }
+      ]
+    },
+    {
+      "event": "test_06.npz",
+      "values": [
+        {
+          "vavg_m_s": 3000.0,
+          "truth_source_loss": 124063236096.0
+        },
+        {
+          "vavg_m_s": 3400.0,
+          "truth_source_loss": 175067283456.0
+        },
+        {
+          "vavg_m_s": 3800.0,
+          "truth_source_loss": 289905147904.0
+        },
+        {
+          "vavg_m_s": 4200.0,
+          "truth_source_loss": 491798364160.0
+        },
+        {
+          "vavg_m_s": 4600.0,
+          "truth_source_loss": 796653387776.0
+        },
+        {
+          "vavg_m_s": 5000.0,
+          "truth_source_loss": 1201491935232.0
+        },
+        {
+          "vavg_m_s": 5400.0,
+          "truth_source_loss": 1666446655488.0
+        }
+      ]
+    },
+    {
+      "event": "test_07.npz",
+      "values": [
+        {
+          "vavg_m_s": 3000.0,
+          "truth_source_loss": 988421160960.0
+        },
+        {
+          "vavg_m_s": 3400.0,
+          "truth_source_loss": 1150393909248.0
+        },
+        {
+          "vavg_m_s": 3800.0,
+          "truth_source_loss": 1362208751616.0
+        },
+        {
+          "vavg_m_s": 4200.0,
+          "truth_source_loss": 1589042216960.0
+        },
+        {
+          "vavg_m_s": 4600.0,
+          "truth_source_loss": 1919922864128.0
+        },
+        {
+          "vavg_m_s": 5000.0,
+          "truth_source_loss": 2373249662976.0
+        },
+        {
+          "vavg_m_s": 5400.0,
+          "truth_source_loss": 2882110226432.0
+        }
+      ]
+    },
+    {
+      "event": "test_08.npz",
+      "values": [
+        {
+          "vavg_m_s": 3000.0,
+          "truth_source_loss": 49035329536.0
+        },
+        {
+          "vavg_m_s": 3400.0,
+          "truth_source_loss": 52382752768.0
+        },
+        {
+          "vavg_m_s": 3800.0,
+          "truth_source_loss": 111938838528.0
+        },
+        {
+          "vavg_m_s": 4200.0,
+          "truth_source_loss": 304393125888.0
+        },
+        {
+          "vavg_m_s": 4600.0,
+          "truth_source_loss": 742677741568.0
+        },
+        {
+          "vavg_m_s": 5000.0,
+          "truth_source_loss": 1528867192832.0
+        },
+        {
+          "vavg_m_s": 5400.0,
+          "truth_source_loss": 2722638069760.0
+        }
+      ]
+    },
+    {
+      "event": "test_01.npz",
+      "values": [
+        {
+          "vavg_m_s": 3000.0,
+          "truth_source_loss": 933595119616.0
+        },
+        {
+          "vavg_m_s": 3400.0,
+          "truth_source_loss": 1501143236608.0
+        },
+        {
+          "vavg_m_s": 3800.0,
+          "truth_source_loss": 2196557266944.0
+        },
+        {
+          "vavg_m_s": 4200.0,
+          "truth_source_loss": 2877144956928.0
+        },
+        {
+          "vavg_m_s": 4600.0,
+          "truth_source_loss": 3571991445504.0
+        },
+        {
+          "vavg_m_s": 5000.0,
+          "truth_source_loss": 4319587860480.0
+        },
+        {
+          "vavg_m_s": 5400.0,
+          "truth_source_loss": 5083151466496.0
+        }
+      ]
+    },
+    {
+      "event": "test_02.npz",
+      "values": [
+        {
+          "vavg_m_s": 3000.0,
+          "truth_source_loss": 5066115776512.0
+        },
+        {
+          "vavg_m_s": 3400.0,
+          "truth_source_loss": 7342541766656.0
+        },
+        {
+          "vavg_m_s": 3800.0,
+          "truth_source_loss": 10540420169728.0
+        },
+        {
+          "vavg_m_s": 4200.0,
+          "truth_source_loss": 14647437557760.0
+        },
+        {
+          "vavg_m_s": 4600.0,
+          "truth_source_loss": 19055597584384.0
+        },
+        {
+          "vavg_m_s": 5000.0,
+          "truth_source_loss": 24264606482432.0
+        },
+        {
+          "vavg_m_s": 5400.0,
+          "truth_source_loss": 29924635181056.0
+        }
+      ]
+    },
+    {
+      "event": "test_03.npz",
+      "values": [
+        {
+          "vavg_m_s": 3000.0,
+          "truth_source_loss": 389489360896.0
+        },
+        {
+          "vavg_m_s": 3400.0,
+          "truth_source_loss": 343786684416.0
+        },
+        {
+          "vavg_m_s": 3800.0,
+          "truth_source_loss": 460775456768.0
+        },
+        {
+          "vavg_m_s": 4200.0,
+          "truth_source_loss": 738029862912.0
+        },
+        {
+          "vavg_m_s": 4600.0,
+          "truth_source_loss": 1149922836480.0
+        },
+        {
+          "vavg_m_s": 5000.0,
+          "truth_source_loss": 1726976753664.0
+        },
+        {
+          "vavg_m_s": 5400.0,
+          "truth_source_loss": 2431014404096.0
+        }
+      ]
+    },
+    {
+      "event": "test_04.npz",
+      "values": [
+        {
+          "vavg_m_s": 3000.0,
+          "truth_source_loss": 3772266315776.0
+        },
+        {
+          "vavg_m_s": 3400.0,
+          "truth_source_loss": 4271962324992.0
+        },
+        {
+          "vavg_m_s": 3800.0,
+          "truth_source_loss": 5171405914112.0
+        },
+        {
+          "vavg_m_s": 4200.0,
+          "truth_source_loss": 5925846384640.0
+        },
+        {
+          "vavg_m_s": 4600.0,
+          "truth_source_loss": 6533321588736.0
+        },
+        {
+          "vavg_m_s": 5000.0,
+          "truth_source_loss": 7258624753664.0
+        },
+        {
+          "vavg_m_s": 5400.0,
+          "truth_source_loss": 7984672407552.0
+        }
+      ]
+    },
+    {
+      "event": "test_05.npz",
+      "values": [
+        {
+          "vavg_m_s": 3000.0,
+          "truth_source_loss": 151415652352.0
+        },
+        {
+          "vavg_m_s": 3400.0,
+          "truth_source_loss": 239888596992.0
+        },
+        {
+          "vavg_m_s": 3800.0,
+          "truth_source_loss": 663414964224.0
+        },
+        {
+          "vavg_m_s": 4200.0,
+          "truth_source_loss": 1884286091264.0
+        },
+        {
+          "vavg_m_s": 4600.0,
+          "truth_source_loss": 4327683915776.0
+        },
+        {
+          "vavg_m_s": 5000.0,
+          "truth_source_loss": 8124720218112.0
+        },
+        {
+          "vavg_m_s": 5400.0,
+          "truth_source_loss": 13151636553728.0
+        }
+      ]
+    },
+    {
+      "event": "test_06.npz",
+      "values": [
+        {
+          "vavg_m_s": 3000.0,
+          "truth_source_loss": 2310417940480.0
+        },
+        {
+          "vavg_m_s": 3400.0,
+          "truth_source_loss": 2832020275200.0
+        },
+        {
+          "vavg_m_s": 3800.0,
+          "truth_source_loss": 3355114995712.0
+        },
+        {
+          "vavg_m_s": 4200.0,
+          "truth_source_loss": 3984785145856.0
+        },
+        {
+          "vavg_m_s": 4600.0,
+          "truth_source_loss": 4703290130432.0
+        },
+        {
+          "vavg_m_s": 5000.0,
+          "truth_source_loss": 5379130916864.0
+        },
+        {
+          "vavg_m_s": 5400.0,
+          "truth_source_loss": 6031780347904.0
+        }
+      ]
+    },
+    {
+      "event": "test_07.npz",
+      "values": [
+        {
+          "vavg_m_s": 3000.0,
+          "truth_source_loss": 82137137152.0
+        },
+        {
+          "vavg_m_s": 3400.0,
+          "truth_source_loss": 120338399232.0
+        },
+        {
+          "vavg_m_s": 3800.0,
+          "truth_source_loss": 155709423616.0
+        },
+        {
+          "vavg_m_s": 4200.0,
+          "truth_source_loss": 170827546624.0
+        },
+        {
+          "vavg_m_s": 4600.0,
+          "truth_source_loss": 181518991360.0
+        },
+        {
+          "vavg_m_s": 5000.0,
+          "truth_source_loss": 234380509184.0
+        },
+        {
+          "vavg_m_s": 5400.0,
+          "truth_source_loss": 405433909248.0
+        }
+      ]
+    },
+    {
+      "event": "test_08.npz",
+      "values": [
+        {
+          "vavg_m_s": 3000.0,
+          "truth_source_loss": 161896153088.0
+        },
+        {
+          "vavg_m_s": 3400.0,
+          "truth_source_loss": 559227469824.0
+        },
+        {
+          "vavg_m_s": 3800.0,
+          "truth_source_loss": 1490575163392.0
+        },
+        {
+          "vavg_m_s": 4200.0,
+          "truth_source_loss": 3103520718848.0
+        },
+        {
+          "vavg_m_s": 4600.0,
+          "truth_source_loss": 5400723193856.0
+        },
+        {
+          "vavg_m_s": 5000.0,
+          "truth_source_loss": 8322398814208.0
+        },
+        {
+          "vavg_m_s": 5400.0,
+          "truth_source_loss": 11667167510528.0
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "vavg_m_s": 3000.0,
+      "mean_truth_source_loss": 1345029722112.0
+    },
+    {
+      "vavg_m_s": 3400.0,
+      "mean_truth_source_loss": 1803228026368.0
+    },
+    {
+      "vavg_m_s": 3800.0,
+      "mean_truth_source_loss": 2453171627520.0
+    },
+    {
+      "vavg_m_s": 4200.0,
+      "mean_truth_source_loss": 3305318955008.0
+    },
+    {
+      "vavg_m_s": 4600.0,
+      "mean_truth_source_loss": 4344707739648.0
+    },
+    {
+      "vavg_m_s": 5000.0,
+      "mean_truth_source_loss": 5632376007680.0
+    },
+    {
+      "vavg_m_s": 5400.0,
+      "mean_truth_source_loss": 7120938846208.0
+    }
+  ]
+}

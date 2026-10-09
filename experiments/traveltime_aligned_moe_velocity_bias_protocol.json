@@ -1,0 +1,50 @@
+{
+  "purpose": "frozen stress test of FMM-aligned MoE localization under uniform inversion-velocity bias",
+  "protocol_written_before_stress_test": true,
+  "implementation": "examples/stress_test_velocity_bias.py",
+  "implementation_sha256": "7acc79c3a44b609ed7bb66450bbb01cb800c9b2b217c02a0c29da3eba41f68d9",
+  "model_checkpoint": "outputs/traveltime_aligned_moe_development/traveltime_aligned_moe.pth",
+  "model_checkpoint_sha256": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+  "receiver_fmm_fields": "outputs/traveltime_aligned_moe_development/receiver_fmm_fields_stride2.npy",
+  "receiver_fmm_fields_sha256": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",
+  "localization_protocol": "experiments/traveltime_aligned_moe_localization_protocol.json",
+  "localization_protocol_sha256": "62c69be47a4037d919e9704f407bae352b7c36c67d717e02e8877d4df6c9c167",
+  "localization_development_result": "experiments/traveltime_aligned_moe_localization_results.json",
+  "localization_development_result_sha256": "cdd8d08aab3feda97103883eb277739fb5b0de4ec333381328343770d7f3fe42",
+  "frozen_localization_implementation": "examples/run_traveltime_aligned_moe_localization.py",
+  "frozen_localization_implementation_sha256": "add81f105956c073f8b2331f15da37dbddc3906dc996bc5b6d33eb2429694c0e",
+  "frozen_localization_implementation_version": "historical runner used for the clean confirmation inherited by this velocity-bias test; the current working-tree runner has a different hash",
+  "clean_confirmation_result": "experiments/traveltime_aligned_moe_confirmation_results.json",
+  "clean_confirmation_result_sha256": "fdc1f68704bd60687f782b4fe88ab3b9c0ab34e4541613b0746ed3b816c36ad5",
+  "confirmation_directory": "data/observations/traveltime_aligned_moe_confirmation",
+  "events": [
+    {"file": "confirm_01_west_shallow.npz"},
+    {"file": "confirm_02_east_deep.npz"},
+    {"file": "confirm_03_north_mid.npz"},
+    {"file": "confirm_04_south_deep.npz"},
+    {"file": "confirm_05_center_shallow.npz"},
+    {"file": "confirm_06_southwest_deep.npz"},
+    {"file": "confirm_07_northeast_mid.npz"},
+    {"file": "confirm_08_north_deep.npz"}
+  ],
+  "conditions": [
+    {"id": "velocity_90pct", "velocity_factor": 0.90},
+    {"id": "velocity_95pct", "velocity_factor": 0.95},
+    {"id": "velocity_105pct", "velocity_factor": 1.05},
+    {"id": "velocity_110pct", "velocity_factor": 1.10}
+  ],
+  "traveltime_scaling": "For uniform v_model = a * v_true, the eikonal fields are exactly T_model = T_true / a. The same scaled fields replace the neural retarded-time features and supply the pure-FMM baseline.",
+  "frozen_components": "MoE weights, arrival picker and bias correction, hybrid weight, coarse grid, restart selection, local optimizer, receiver geometry, observations, and all stopping settings",
+  "fmm_baseline": {
+    "grid_spacing_m": 80.0,
+    "coarse_grid_xyz": [11, 11, 8],
+    "refinement_grid_xyz": 7,
+    "refinement_levels": 4,
+    "origin_time_bounds_s": [0.05, 0.50],
+    "uses_same_corrected_robust_picks_as_hybrid": true
+  },
+  "output_result": "experiments/traveltime_aligned_moe_velocity_bias_results.json",
+  "output_report": "experiments/traveltime_aligned_moe_velocity_bias_results.md",
+  "reporting": "Report all event estimates, component errors, location and origin-time errors for waveform-only, hybrid, and FMM branches, together with condition-wise mean and median values.",
+  "limitations": "The experiment applies a spatially uniform multiplicative velocity bias to the same Overthrust model and eight clean prospective events. It measures bulk calibration sensitivity, not transfer to independent geology, local structural error, anisotropy, attenuation, or field data."
+}

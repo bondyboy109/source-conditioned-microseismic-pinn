@@ -1,0 +1,21 @@
+{
+  "role": "development-only FD-midpoint teacher-weight sweep on spent depth data",
+  "base_checkpoint": "outputs/eikonal_depth_coverage33_hybrid_1000/conditioned_5Hz.pth",
+  "base_checkpoint_sha256": "3aa5ade41968a0d9e1a214c625ac4a62c075eac23bea17b7c60cc8b7d3751ab9",
+  "depth_results": "experiments/eikonal_depth_sweep_results.json",
+  "depth_results_sha256": "4d8fa26c028b562eed6272dd02244f63d14cf7982ff3b23200067f9882a11717",
+  "seed": 42,
+  "frequency_hz": 5,
+  "updates": 500,
+  "learning_rate": 0.00001,
+  "receiver_batch_size": 2112,
+  "receiver_events_per_batch": 33,
+  "receiver_loss_weight": 0.03,
+  "teacher_batch_size": 512,
+  "teacher_loss_weights": [0.003, 0.01, 0.02],
+  "selection_rule": "midpoint +/-80 m mean full L2 must improve over control and endpoint +/-160 m mean full L2 must be no more than 10% above control; among passing candidates select the lowest mean full L2 on the eight +/-80 and +/-280 m non-endpoint development records",
+  "endpoint_degradation_limit_fraction": 0.10,
+  "output_directory": "outputs/depth_midpoint_teacher_weight_sweep",
+  "result_file": "experiments/depth_midpoint_teacher_weight_sweep_results.json",
+  "limits": "Weights are selected on already inspected development records and four FD-derived pseudo-labels. One seed, one velocity model, 5 Hz, no independent validation and no localization test."
+}

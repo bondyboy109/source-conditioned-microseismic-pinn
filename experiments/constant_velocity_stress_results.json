@@ -1,0 +1,846 @@
+{
+  "method": "constant_velocity_moe_v5000",
+  "scope": "exploratory stress diagnostic using fixed coarse candidates",
+  "rows": [
+    {
+      "condition_id": "noise_20db_r1",
+      "event": "confirm_01_west_shallow.npz",
+      "location_error_m": 3325.9735416867043,
+      "origin_time_error_s": 0.08000000566244125,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r2",
+      "event": "confirm_01_west_shallow.npz",
+      "location_error_m": 3325.9735416867043,
+      "origin_time_error_s": 0.08000000566244125,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r3",
+      "event": "confirm_01_west_shallow.npz",
+      "location_error_m": 3325.9735416867043,
+      "origin_time_error_s": 0.08000000566244125,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r1",
+      "event": "confirm_01_west_shallow.npz",
+      "location_error_m": 3325.9735416867043,
+      "origin_time_error_s": 0.08000000566244125,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r2",
+      "event": "confirm_01_west_shallow.npz",
+      "location_error_m": 3325.9735416867043,
+      "origin_time_error_s": 0.08000000566244125,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r3",
+      "event": "confirm_01_west_shallow.npz",
+      "location_error_m": 3325.9735416867043,
+      "origin_time_error_s": 0.08000000566244125,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r1",
+      "event": "confirm_01_west_shallow.npz",
+      "location_error_m": 3325.9735416867043,
+      "origin_time_error_s": 0.08000000566244125,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r2",
+      "event": "confirm_01_west_shallow.npz",
+      "location_error_m": 3325.9735416867043,
+      "origin_time_error_s": 0.08000000566244125,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r3",
+      "event": "confirm_01_west_shallow.npz",
+      "location_error_m": 3325.9735416867043,
+      "origin_time_error_s": 0.08000000566244125,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r1",
+      "event": "confirm_01_west_shallow.npz",
+      "location_error_m": 3325.9735416867043,
+      "origin_time_error_s": 0.08000000566244125,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r2",
+      "event": "confirm_01_west_shallow.npz",
+      "location_error_m": 3325.9735416867043,
+      "origin_time_error_s": 0.08000000566244125,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r3",
+      "event": "confirm_01_west_shallow.npz",
+      "location_error_m": 3325.9735416867043,
+      "origin_time_error_s": 0.08000000566244125,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r1",
+      "event": "confirm_01_west_shallow.npz",
+      "location_error_m": 10135.388497734066,
+      "origin_time_error_s": 0.08000000566244125,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r2",
+      "event": "confirm_01_west_shallow.npz",
+      "location_error_m": 10135.388497734066,
+      "origin_time_error_s": 0.08000000566244125,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r3",
+      "event": "confirm_01_west_shallow.npz",
+      "location_error_m": 10135.388497734066,
+      "origin_time_error_s": 0.08000000566244125,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r1",
+      "event": "confirm_02_east_deep.npz",
+      "location_error_m": 9233.682905536663,
+      "origin_time_error_s": 0.2600000128149986,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r2",
+      "event": "confirm_02_east_deep.npz",
+      "location_error_m": 9233.682905536663,
+      "origin_time_error_s": 0.2600000128149986,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r3",
+      "event": "confirm_02_east_deep.npz",
+      "location_error_m": 9233.682905536663,
+      "origin_time_error_s": 0.2600000128149986,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r1",
+      "event": "confirm_02_east_deep.npz",
+      "location_error_m": 9233.682905536663,
+      "origin_time_error_s": 0.2600000128149986,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r2",
+      "event": "confirm_02_east_deep.npz",
+      "location_error_m": 9233.682905536663,
+      "origin_time_error_s": 0.2600000128149986,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r3",
+      "event": "confirm_02_east_deep.npz",
+      "location_error_m": 9233.682905536663,
+      "origin_time_error_s": 0.2600000128149986,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r1",
+      "event": "confirm_02_east_deep.npz",
+      "location_error_m": 9233.682905536663,
+      "origin_time_error_s": 0.2600000128149986,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r2",
+      "event": "confirm_02_east_deep.npz",
+      "location_error_m": 9233.682905536663,
+      "origin_time_error_s": 0.2600000128149986,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r3",
+      "event": "confirm_02_east_deep.npz",
+      "location_error_m": 9233.682905536663,
+      "origin_time_error_s": 0.2600000128149986,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r1",
+      "event": "confirm_02_east_deep.npz",
+      "location_error_m": 9233.682905536663,
+      "origin_time_error_s": 0.2600000128149986,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r2",
+      "event": "confirm_02_east_deep.npz",
+      "location_error_m": 9233.682905536663,
+      "origin_time_error_s": 0.2600000128149986,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r3",
+      "event": "confirm_02_east_deep.npz",
+      "location_error_m": 9233.682905536663,
+      "origin_time_error_s": 0.2600000128149986,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r1",
+      "event": "confirm_02_east_deep.npz",
+      "location_error_m": 5463.780742306558,
+      "origin_time_error_s": 0.2600000128149986,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r2",
+      "event": "confirm_02_east_deep.npz",
+      "location_error_m": 5463.780742306558,
+      "origin_time_error_s": 0.2600000128149986,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r3",
+      "event": "confirm_02_east_deep.npz",
+      "location_error_m": 5463.780742306558,
+      "origin_time_error_s": 0.2600000128149986,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r1",
+      "event": "confirm_03_north_mid.npz",
+      "location_error_m": 8306.750267102052,
+      "origin_time_error_s": 0.13999999314546585,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r2",
+      "event": "confirm_03_north_mid.npz",
+      "location_error_m": 8306.750267102052,
+      "origin_time_error_s": 0.13999999314546585,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r3",
+      "event": "confirm_03_north_mid.npz",
+      "location_error_m": 8306.750267102052,
+      "origin_time_error_s": 0.13999999314546585,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r1",
+      "event": "confirm_03_north_mid.npz",
+      "location_error_m": 8306.750267102052,
+      "origin_time_error_s": 0.13999999314546585,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r2",
+      "event": "confirm_03_north_mid.npz",
+      "location_error_m": 8306.750267102052,
+      "origin_time_error_s": 0.13999999314546585,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r3",
+      "event": "confirm_03_north_mid.npz",
+      "location_error_m": 8306.750267102052,
+      "origin_time_error_s": 0.13999999314546585,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r1",
+      "event": "confirm_03_north_mid.npz",
+      "location_error_m": 8306.750267102052,
+      "origin_time_error_s": 0.13999999314546585,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r2",
+      "event": "confirm_03_north_mid.npz",
+      "location_error_m": 8306.750267102052,
+      "origin_time_error_s": 0.13999999314546585,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r3",
+      "event": "confirm_03_north_mid.npz",
+      "location_error_m": 8306.750267102052,
+      "origin_time_error_s": 0.13999999314546585,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r1",
+      "event": "confirm_03_north_mid.npz",
+      "location_error_m": 8306.750267102052,
+      "origin_time_error_s": 0.13999999314546585,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r2",
+      "event": "confirm_03_north_mid.npz",
+      "location_error_m": 8306.750267102052,
+      "origin_time_error_s": 0.13999999314546585,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r3",
+      "event": "confirm_03_north_mid.npz",
+      "location_error_m": 8306.750267102052,
+      "origin_time_error_s": 0.13999999314546585,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r1",
+      "event": "confirm_03_north_mid.npz",
+      "location_error_m": 6214.346305123331,
+      "origin_time_error_s": 0.13999999314546585,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r2",
+      "event": "confirm_03_north_mid.npz",
+      "location_error_m": 6214.346305123331,
+      "origin_time_error_s": 0.13999999314546585,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r3",
+      "event": "confirm_03_north_mid.npz",
+      "location_error_m": 6214.346305123331,
+      "origin_time_error_s": 0.13999999314546585,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r1",
+      "event": "confirm_04_south_deep.npz",
+      "location_error_m": 7369.131563488333,
+      "origin_time_error_s": 0.31999998539686203,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r2",
+      "event": "confirm_04_south_deep.npz",
+      "location_error_m": 7369.131563488333,
+      "origin_time_error_s": 0.31999998539686203,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r3",
+      "event": "confirm_04_south_deep.npz",
+      "location_error_m": 7369.131563488333,
+      "origin_time_error_s": 0.31999998539686203,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r1",
+      "event": "confirm_04_south_deep.npz",
+      "location_error_m": 7369.131563488333,
+      "origin_time_error_s": 0.31999998539686203,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r2",
+      "event": "confirm_04_south_deep.npz",
+      "location_error_m": 7369.131563488333,
+      "origin_time_error_s": 0.31999998539686203,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r3",
+      "event": "confirm_04_south_deep.npz",
+      "location_error_m": 7369.131563488333,
+      "origin_time_error_s": 0.31999998539686203,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r1",
+      "event": "confirm_04_south_deep.npz",
+      "location_error_m": 7369.131563488333,
+      "origin_time_error_s": 0.31999998539686203,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r2",
+      "event": "confirm_04_south_deep.npz",
+      "location_error_m": 7369.131563488333,
+      "origin_time_error_s": 0.31999998539686203,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r3",
+      "event": "confirm_04_south_deep.npz",
+      "location_error_m": 7369.131563488333,
+      "origin_time_error_s": 0.31999998539686203,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r1",
+      "event": "confirm_04_south_deep.npz",
+      "location_error_m": 7369.131563488333,
+      "origin_time_error_s": 0.31999998539686203,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r2",
+      "event": "confirm_04_south_deep.npz",
+      "location_error_m": 7369.131563488333,
+      "origin_time_error_s": 0.31999998539686203,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r3",
+      "event": "confirm_04_south_deep.npz",
+      "location_error_m": 7369.131563488333,
+      "origin_time_error_s": 0.31999998539686203,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r1",
+      "event": "confirm_04_south_deep.npz",
+      "location_error_m": 9434.41042143069,
+      "origin_time_error_s": 0.31999998539686203,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r2",
+      "event": "confirm_04_south_deep.npz",
+      "location_error_m": 9434.41042143069,
+      "origin_time_error_s": 0.31999998539686203,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r3",
+      "event": "confirm_04_south_deep.npz",
+      "location_error_m": 9434.41042143069,
+      "origin_time_error_s": 0.31999998539686203,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r1",
+      "event": "confirm_05_center_shallow.npz",
+      "location_error_m": 6082.76253029822,
+      "origin_time_error_s": 0.03999999910593033,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r2",
+      "event": "confirm_05_center_shallow.npz",
+      "location_error_m": 6082.76253029822,
+      "origin_time_error_s": 0.03999999910593033,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r3",
+      "event": "confirm_05_center_shallow.npz",
+      "location_error_m": 6082.76253029822,
+      "origin_time_error_s": 0.03999999910593033,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r1",
+      "event": "confirm_05_center_shallow.npz",
+      "location_error_m": 6082.76253029822,
+      "origin_time_error_s": 0.03999999910593033,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r2",
+      "event": "confirm_05_center_shallow.npz",
+      "location_error_m": 6082.76253029822,
+      "origin_time_error_s": 0.03999999910593033,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r3",
+      "event": "confirm_05_center_shallow.npz",
+      "location_error_m": 6082.76253029822,
+      "origin_time_error_s": 0.03999999910593033,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r1",
+      "event": "confirm_05_center_shallow.npz",
+      "location_error_m": 6082.76253029822,
+      "origin_time_error_s": 0.03999999910593033,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r2",
+      "event": "confirm_05_center_shallow.npz",
+      "location_error_m": 6082.76253029822,
+      "origin_time_error_s": 0.03999999910593033,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r3",
+      "event": "confirm_05_center_shallow.npz",
+      "location_error_m": 6082.76253029822,
+      "origin_time_error_s": 0.03999999910593033,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r1",
+      "event": "confirm_05_center_shallow.npz",
+      "location_error_m": 6082.76253029822,
+      "origin_time_error_s": 0.03999999910593033,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r2",
+      "event": "confirm_05_center_shallow.npz",
+      "location_error_m": 6082.76253029822,
+      "origin_time_error_s": 0.03999999910593033,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r3",
+      "event": "confirm_05_center_shallow.npz",
+      "location_error_m": 6082.76253029822,
+      "origin_time_error_s": 0.03999999910593033,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r1",
+      "event": "confirm_05_center_shallow.npz",
+      "location_error_m": 5295.280917949491,
+      "origin_time_error_s": 0.03999999910593033,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r2",
+      "event": "confirm_05_center_shallow.npz",
+      "location_error_m": 5295.280917949491,
+      "origin_time_error_s": 0.03999999910593033,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r3",
+      "event": "confirm_05_center_shallow.npz",
+      "location_error_m": 5295.280917949491,
+      "origin_time_error_s": 0.03999999910593033,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r1",
+      "event": "confirm_06_southwest_deep.npz",
+      "location_error_m": 1205.9850745345068,
+      "origin_time_error_s": 0.21000000089406967,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r2",
+      "event": "confirm_06_southwest_deep.npz",
+      "location_error_m": 1205.9850745345068,
+      "origin_time_error_s": 0.21000000089406967,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r3",
+      "event": "confirm_06_southwest_deep.npz",
+      "location_error_m": 1205.9850745345068,
+      "origin_time_error_s": 0.21000000089406967,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r1",
+      "event": "confirm_06_southwest_deep.npz",
+      "location_error_m": 1205.9850745345068,
+      "origin_time_error_s": 0.21000000089406967,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r2",
+      "event": "confirm_06_southwest_deep.npz",
+      "location_error_m": 1205.9850745345068,
+      "origin_time_error_s": 0.21000000089406967,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r3",
+      "event": "confirm_06_southwest_deep.npz",
+      "location_error_m": 1205.9850745345068,
+      "origin_time_error_s": 0.21000000089406967,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r1",
+      "event": "confirm_06_southwest_deep.npz",
+      "location_error_m": 1205.9850745345068,
+      "origin_time_error_s": 0.21000000089406967,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r2",
+      "event": "confirm_06_southwest_deep.npz",
+      "location_error_m": 1205.9850745345068,
+      "origin_time_error_s": 0.21000000089406967,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r3",
+      "event": "confirm_06_southwest_deep.npz",
+      "location_error_m": 1205.9850745345068,
+      "origin_time_error_s": 0.21000000089406967,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r1",
+      "event": "confirm_06_southwest_deep.npz",
+      "location_error_m": 1205.9850745345068,
+      "origin_time_error_s": 0.21000000089406967,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r2",
+      "event": "confirm_06_southwest_deep.npz",
+      "location_error_m": 1205.9850745345068,
+      "origin_time_error_s": 0.21000000089406967,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r3",
+      "event": "confirm_06_southwest_deep.npz",
+      "location_error_m": 1205.9850745345068,
+      "origin_time_error_s": 0.21000000089406967,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r1",
+      "event": "confirm_06_southwest_deep.npz",
+      "location_error_m": 11467.449585675098,
+      "origin_time_error_s": 0.21000000089406967,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r2",
+      "event": "confirm_06_southwest_deep.npz",
+      "location_error_m": 11467.449585675098,
+      "origin_time_error_s": 0.21000000089406967,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r3",
+      "event": "confirm_06_southwest_deep.npz",
+      "location_error_m": 11467.449585675098,
+      "origin_time_error_s": 0.21000000089406967,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r1",
+      "event": "confirm_07_northeast_mid.npz",
+      "location_error_m": 12450.702791409005,
+      "origin_time_error_s": 0.17000000923871994,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r2",
+      "event": "confirm_07_northeast_mid.npz",
+      "location_error_m": 12450.702791409005,
+      "origin_time_error_s": 0.17000000923871994,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r3",
+      "event": "confirm_07_northeast_mid.npz",
+      "location_error_m": 12450.702791409005,
+      "origin_time_error_s": 0.17000000923871994,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r1",
+      "event": "confirm_07_northeast_mid.npz",
+      "location_error_m": 12450.702791409005,
+      "origin_time_error_s": 0.17000000923871994,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r2",
+      "event": "confirm_07_northeast_mid.npz",
+      "location_error_m": 12450.702791409005,
+      "origin_time_error_s": 0.17000000923871994,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r3",
+      "event": "confirm_07_northeast_mid.npz",
+      "location_error_m": 12450.702791409005,
+      "origin_time_error_s": 0.17000000923871994,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r1",
+      "event": "confirm_07_northeast_mid.npz",
+      "location_error_m": 12450.702791409005,
+      "origin_time_error_s": 0.17000000923871994,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r2",
+      "event": "confirm_07_northeast_mid.npz",
+      "location_error_m": 12450.702791409005,
+      "origin_time_error_s": 0.17000000923871994,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r3",
+      "event": "confirm_07_northeast_mid.npz",
+      "location_error_m": 12450.702791409005,
+      "origin_time_error_s": 0.17000000923871994,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r1",
+      "event": "confirm_07_northeast_mid.npz",
+      "location_error_m": 12450.702791409005,
+      "origin_time_error_s": 0.17000000923871994,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r2",
+      "event": "confirm_07_northeast_mid.npz",
+      "location_error_m": 12450.702791409005,
+      "origin_time_error_s": 0.17000000923871994,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r3",
+      "event": "confirm_07_northeast_mid.npz",
+      "location_error_m": 12450.702791409005,
+      "origin_time_error_s": 0.17000000923871994,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r1",
+      "event": "confirm_07_northeast_mid.npz",
+      "location_error_m": 1783.2554500127007,
+      "origin_time_error_s": 0.17000000923871994,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r2",
+      "event": "confirm_07_northeast_mid.npz",
+      "location_error_m": 1783.2554500127007,
+      "origin_time_error_s": 0.17000000923871994,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r3",
+      "event": "confirm_07_northeast_mid.npz",
+      "location_error_m": 1783.2554500127007,
+      "origin_time_error_s": 0.17000000923871994,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r1",
+      "event": "confirm_08_north_deep.npz",
+      "location_error_m": 10759.814124788587,
+      "origin_time_error_s": 0.28999998420476913,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r2",
+      "event": "confirm_08_north_deep.npz",
+      "location_error_m": 10759.814124788587,
+      "origin_time_error_s": 0.28999998420476913,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_20db_r3",
+      "event": "confirm_08_north_deep.npz",
+      "location_error_m": 10759.814124788587,
+      "origin_time_error_s": 0.28999998420476913,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r1",
+      "event": "confirm_08_north_deep.npz",
+      "location_error_m": 10759.814124788587,
+      "origin_time_error_s": 0.28999998420476913,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r2",
+      "event": "confirm_08_north_deep.npz",
+      "location_error_m": 10759.814124788587,
+      "origin_time_error_s": 0.28999998420476913,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_10db_r3",
+      "event": "confirm_08_north_deep.npz",
+      "location_error_m": 10759.814124788587,
+      "origin_time_error_s": 0.28999998420476913,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r1",
+      "event": "confirm_08_north_deep.npz",
+      "location_error_m": 10759.814124788587,
+      "origin_time_error_s": 0.28999998420476913,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r2",
+      "event": "confirm_08_north_deep.npz",
+      "location_error_m": 10759.814124788587,
+      "origin_time_error_s": 0.28999998420476913,
+      "status": "ok"
+    },
+    {
+      "condition_id": "noise_5db_r3",
+      "event": "confirm_08_north_deep.npz",
+      "location_error_m": 10759.814124788587,
+      "origin_time_error_s": 0.28999998420476913,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r1",
+      "event": "confirm_08_north_deep.npz",
+      "location_error_m": 10759.814124788587,
+      "origin_time_error_s": 0.28999998420476913,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r2",
+      "event": "confirm_08_north_deep.npz",
+      "location_error_m": 10759.814124788587,
+      "origin_time_error_s": 0.28999998420476913,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_20pct_r3",
+      "event": "confirm_08_north_deep.npz",
+      "location_error_m": 10759.814124788587,
+      "origin_time_error_s": 0.28999998420476913,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r1",
+      "event": "confirm_08_north_deep.npz",
+      "location_error_m": 2776.616646208115,
+      "origin_time_error_s": 0.28999998420476913,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r2",
+      "event": "confirm_08_north_deep.npz",
+      "location_error_m": 2776.616646208115,
+      "origin_time_error_s": 0.28999998420476913,
+      "status": "ok"
+    },
+    {
+      "condition_id": "missing_40pct_r3",
+      "event": "confirm_08_north_deep.npz",
+      "location_error_m": 2776.616646208115,
+      "origin_time_error_s": 0.28999998420476913,
+      "status": "ok"
+    }
+  ]
+}

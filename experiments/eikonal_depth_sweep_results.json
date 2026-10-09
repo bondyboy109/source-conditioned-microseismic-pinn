@@ -1,0 +1,694 @@
+{
+  "purpose": "prospectively registered depth-displacement development sweep around two trained sources",
+  "role": "development only; these events cannot serve as untouched confirmation",
+  "protocol_sha256": "f9763677de84f30d0f441e25fba58c668ccb9ecae3fdbdfae99bda1db6af956f",
+  "checkpoint_sha256": {
+    "eikonal": "ce744ba5e7249850fe99644449855c886fc255aebacfacab86f76d59990f2ec7",
+    "straight": "5f3a27f85d32e8385b2d9ae7e3eff056cc373e037fd4dcd074dc75b88b503184"
+  },
+  "velocity_sha256": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+  "arrival_rule": "per-trace first sample with three consecutive |trace| values >= 0.05 of that trace peak; FD station must have peak >= 0.01 of FD global peak and pick <= 1.85 s; compute signed bias and RMSE on paired model-FD picks, count model pick failures; same unshifted origin time",
+  "events": [
+    {
+      "anchor": "a10",
+      "offset_m": -80,
+      "file": "a10_zm80.npz",
+      "source_m_s": [
+        10000,
+        6500,
+        920,
+        0.25
+      ],
+      "sha256": "4889354580ac4f728ba6c2aa1534f191ea304f205ae1b698bd26d0b5c11e683f",
+      "nearest_training_spatial_distance_m": 80.0,
+      "fd_runtime_seconds": 9.18726340000012,
+      "models": {
+        "eikonal": {
+          "full_record_relative_l2": 0.4217016796392525,
+          "active_sample_relative_l2": 0.37334123173318023,
+          "predicted_to_observed_peak_ratio": 1.2639430568865406,
+          "fd_change_over_anchor_norm": 0.37605347100033437,
+          "model_to_fd_change_norm_ratio": 0.7618341041598758,
+          "change_relative_l2": 1.0373106460280201,
+          "change_cosine": 0.331028647276314,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 13,
+            "paired_pick_count": 13,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -0.5866154065498939,
+            "rmse_s": 0.8608391789020845,
+            "demeaned_rmse_s": 0.6300209970557471
+          }
+        },
+        "straight": {
+          "full_record_relative_l2": 0.44995352862850213,
+          "active_sample_relative_l2": 0.40349398139408343,
+          "predicted_to_observed_peak_ratio": 1.2522716148230326,
+          "fd_change_over_anchor_norm": 0.37605347100033437,
+          "model_to_fd_change_norm_ratio": 0.879647630005322,
+          "change_relative_l2": 1.1122874092229635,
+          "change_cosine": 0.30500660375496064,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 13,
+            "paired_pick_count": 13,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -0.7435384925741416,
+            "rmse_s": 1.0246478371587022,
+            "demeaned_rmse_s": 0.7050203544966485
+          }
+        }
+      }
+    },
+    {
+      "anchor": "a10",
+      "offset_m": 80,
+      "file": "a10_zp80.npz",
+      "source_m_s": [
+        10000,
+        6500,
+        1080,
+        0.25
+      ],
+      "sha256": "d342e544ff168b7dc2c27f4b9118f85c379df716d44672f8cd5adaf18385071f",
+      "nearest_training_spatial_distance_m": 80.0,
+      "fd_runtime_seconds": 8.974952599999597,
+      "models": {
+        "eikonal": {
+          "full_record_relative_l2": 0.3680129131168984,
+          "active_sample_relative_l2": 0.31143446043294476,
+          "predicted_to_observed_peak_ratio": 0.7927729119400623,
+          "fd_change_over_anchor_norm": 0.31722868774366414,
+          "model_to_fd_change_norm_ratio": 0.8179510345866511,
+          "change_relative_l2": 1.1246884038751366,
+          "change_cosine": 0.24703183447551438,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 13,
+            "paired_pick_count": 13,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -0.8470769442904454,
+            "rmse_s": 1.0795264281446155,
+            "demeaned_rmse_s": 0.6692069631393813
+          }
+        },
+        "straight": {
+          "full_record_relative_l2": 0.4085909951999869,
+          "active_sample_relative_l2": 0.35556105157722545,
+          "predicted_to_observed_peak_ratio": 0.7239577765594066,
+          "fd_change_over_anchor_norm": 0.31722868774366414,
+          "model_to_fd_change_norm_ratio": 0.9948564590611261,
+          "change_relative_l2": 1.2554844590136698,
+          "change_cosine": 0.20781799401545067,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 13,
+            "paired_pick_count": 13,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -0.8050769389821932,
+            "rmse_s": 1.0847194943835812,
+            "demeaned_rmse_s": 0.7269577042819162
+          }
+        }
+      }
+    },
+    {
+      "anchor": "a10",
+      "offset_m": -160,
+      "file": "a10_zm160.npz",
+      "source_m_s": [
+        10000,
+        6500,
+        840,
+        0.25
+      ],
+      "sha256": "b341a7258b4448dd14f0fdc7405adfd74c5f263300ddb4750f71ead12dd9da0e",
+      "nearest_training_spatial_distance_m": 160.0,
+      "fd_runtime_seconds": 9.01413600000069,
+      "models": {
+        "eikonal": {
+          "full_record_relative_l2": 0.7397804815887394,
+          "active_sample_relative_l2": 0.7086577547857089,
+          "predicted_to_observed_peak_ratio": 1.0708120057997192,
+          "fd_change_over_anchor_norm": 0.8094236563749752,
+          "model_to_fd_change_norm_ratio": 0.7047860620236722,
+          "change_relative_l2": 0.9502735240443279,
+          "change_cosine": 0.4211942138998119,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 13,
+            "paired_pick_count": 13,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -0.7404615844671543,
+            "rmse_s": 0.9952956126144769,
+            "demeaned_rmse_s": 0.6650789414934276
+          }
+        },
+        "straight": {
+          "full_record_relative_l2": 0.7660990228460581,
+          "active_sample_relative_l2": 0.7281812139920933,
+          "predicted_to_observed_peak_ratio": 1.1396234041625466,
+          "fd_change_over_anchor_norm": 0.8094236563749752,
+          "model_to_fd_change_norm_ratio": 0.7782155259101816,
+          "change_relative_l2": 0.9832818673146224,
+          "change_cosine": 0.4104108392278816,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 13,
+            "paired_pick_count": 13,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -0.8290769824614892,
+            "rmse_s": 1.061175754970475,
+            "demeaned_rmse_s": 0.6623634501462993
+          }
+        }
+      }
+    },
+    {
+      "anchor": "a10",
+      "offset_m": 160,
+      "file": "a10_zp160.npz",
+      "source_m_s": [
+        10000,
+        6500,
+        1160,
+        0.25
+      ],
+      "sha256": "a7344797db173fa990430974f66560edcbf96981602a41f2af8e6aadfc385b1f",
+      "nearest_training_spatial_distance_m": 160.0,
+      "fd_runtime_seconds": 9.007718699999714,
+      "models": {
+        "eikonal": {
+          "full_record_relative_l2": 0.6186178708482644,
+          "active_sample_relative_l2": 0.5437195334170674,
+          "predicted_to_observed_peak_ratio": 0.7651749186979547,
+          "fd_change_over_anchor_norm": 0.5812847089744992,
+          "model_to_fd_change_norm_ratio": 0.8375268853756188,
+          "change_relative_l2": 1.0024385657514516,
+          "change_cosine": 0.4158482657597055,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 13,
+            "paired_pick_count": 13,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -0.984153885824176,
+            "rmse_s": 1.1514698776861265,
+            "demeaned_rmse_s": 0.5977658473312758
+          }
+        },
+        "straight": {
+          "full_record_relative_l2": 0.6994638186123299,
+          "active_sample_relative_l2": 0.633336266953395,
+          "predicted_to_observed_peak_ratio": 0.656303474498669,
+          "fd_change_over_anchor_norm": 0.5812847089744992,
+          "model_to_fd_change_norm_ratio": 1.0073114646534531,
+          "change_relative_l2": 1.1079552696388937,
+          "change_cosine": 0.3906991704757786,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 13,
+            "paired_pick_count": 13,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -1.011076958133624,
+            "rmse_s": 1.1877498309858106,
+            "demeaned_rmse_s": 0.6232760590124402
+          }
+        }
+      }
+    },
+    {
+      "anchor": "a10",
+      "offset_m": -280,
+      "file": "a10_zm280.npz",
+      "source_m_s": [
+        10000,
+        6500,
+        720,
+        0.25
+      ],
+      "sha256": "316e60fe941500fe135894171960f63434d798aab856c709a743796f104ce917",
+      "nearest_training_spatial_distance_m": 280.0,
+      "fd_runtime_seconds": 8.966858599999796,
+      "models": {
+        "eikonal": {
+          "full_record_relative_l2": 1.2468698324987866,
+          "active_sample_relative_l2": 1.1966039526996932,
+          "predicted_to_observed_peak_ratio": 0.6387246800845676,
+          "fd_change_over_anchor_norm": 1.386469399653649,
+          "model_to_fd_change_norm_ratio": 0.6478364330536494,
+          "change_relative_l2": 0.8003604689156998,
+          "change_cosine": 0.6013208921550388,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 13,
+            "paired_pick_count": 13,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -1.0867692803820739,
+            "rmse_s": 1.2197319342283126,
+            "demeaned_rmse_s": 0.5537856287356775
+          }
+        },
+        "straight": {
+          "full_record_relative_l2": 1.213690600058759,
+          "active_sample_relative_l2": 1.1608641235314185,
+          "predicted_to_observed_peak_ratio": 0.8618843473686063,
+          "fd_change_over_anchor_norm": 1.386469399653649,
+          "model_to_fd_change_norm_ratio": 0.6699174086295753,
+          "change_relative_l2": 0.7777074229565394,
+          "change_cosine": 0.6298989157407642,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 13,
+            "paired_pick_count": 13,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -1.0786154353274748,
+            "rmse_s": 1.2550189015801558,
+            "demeaned_rmse_s": 0.6416082808044037
+          }
+        }
+      }
+    },
+    {
+      "anchor": "a10",
+      "offset_m": 280,
+      "file": "a10_zp280.npz",
+      "source_m_s": [
+        10000,
+        6500,
+        1280,
+        0.25
+      ],
+      "sha256": "d235b98753584de0dbd2b9e41e4e60efa7baafd80bf2e746c70c04f3aa839203",
+      "nearest_training_spatial_distance_m": 280.0,
+      "fd_runtime_seconds": 8.988681499999075,
+      "models": {
+        "eikonal": {
+          "full_record_relative_l2": 0.9897235849350631,
+          "active_sample_relative_l2": 0.8406280515250109,
+          "predicted_to_observed_peak_ratio": 1.0493101931268691,
+          "fd_change_over_anchor_norm": 0.8749563545063561,
+          "model_to_fd_change_norm_ratio": 0.8487270670260383,
+          "change_relative_l2": 0.7068714773332916,
+          "change_cosine": 0.7191183103848283,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 14,
+            "paired_pick_count": 14,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -1.1292857646476477,
+            "rmse_s": 1.2642553409230606,
+            "demeaned_rmse_s": 0.5683794760691677
+          }
+        },
+        "straight": {
+          "full_record_relative_l2": 0.9920469037445885,
+          "active_sample_relative_l2": 0.889515458969729,
+          "predicted_to_observed_peak_ratio": 0.8295329988413465,
+          "fd_change_over_anchor_norm": 0.8749563545063561,
+          "model_to_fd_change_norm_ratio": 1.011234743138771,
+          "change_relative_l2": 0.6813599864927187,
+          "change_cosine": 0.7705155925026044,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 14,
+            "paired_pick_count": 14,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -1.1868571958371572,
+            "rmse_s": 1.3218418448864069,
+            "demeaned_rmse_s": 0.5819242730650267
+          }
+        }
+      }
+    },
+    {
+      "anchor": "a14",
+      "offset_m": -80,
+      "file": "a14_zm80.npz",
+      "source_m_s": [
+        11000,
+        10000,
+        1120,
+        0.34
+      ],
+      "sha256": "ffce923aa8a413e382f5aea4b3d41094e843a4b3e4b484d6f213bb3304ede2cb",
+      "nearest_training_spatial_distance_m": 80.0,
+      "fd_runtime_seconds": 8.988993599999958,
+      "models": {
+        "eikonal": {
+          "full_record_relative_l2": 0.3446702058588498,
+          "active_sample_relative_l2": 0.295892626025657,
+          "predicted_to_observed_peak_ratio": 0.9190744184240728,
+          "fd_change_over_anchor_norm": 0.4360500240838706,
+          "model_to_fd_change_norm_ratio": 1.0148996462078546,
+          "change_relative_l2": 0.9165020111842731,
+          "change_cosine": 0.5862872057422541,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 10,
+            "paired_pick_count": 10,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -1.039800043683499,
+            "rmse_s": 1.1870719136698056,
+            "demeaned_rmse_s": 0.5726740760497961
+          }
+        },
+        "straight": {
+          "full_record_relative_l2": 0.3837389087860365,
+          "active_sample_relative_l2": 0.332706502321044,
+          "predicted_to_observed_peak_ratio": 0.9292698892085981,
+          "fd_change_over_anchor_norm": 0.4360500240838706,
+          "model_to_fd_change_norm_ratio": 1.1484824098831923,
+          "change_relative_l2": 1.0269375205139364,
+          "change_cosine": 0.5504704137786453,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 10,
+            "paired_pick_count": 10,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -0.8522000329568982,
+            "rmse_s": 1.0426840808598483,
+            "demeaned_rmse_s": 0.6007871472550059
+          }
+        }
+      }
+    },
+    {
+      "anchor": "a14",
+      "offset_m": 80,
+      "file": "a14_zp80.npz",
+      "source_m_s": [
+        11000,
+        10000,
+        1280,
+        0.34
+      ],
+      "sha256": "f3b25cf64e94d8b501f80a9b43d79ddb51a5cb7c9fe7acb1aeb18655a2f6cfb8",
+      "nearest_training_spatial_distance_m": 80.0,
+      "fd_runtime_seconds": 8.990225699999428,
+      "models": {
+        "eikonal": {
+          "full_record_relative_l2": 0.43287862631419866,
+          "active_sample_relative_l2": 0.3510821521743956,
+          "predicted_to_observed_peak_ratio": 1.2307935683583113,
+          "fd_change_over_anchor_norm": 0.46045745977638325,
+          "model_to_fd_change_norm_ratio": 0.8890138741314079,
+          "change_relative_l2": 0.6516748114813096,
+          "change_cosine": 0.7680789064249582,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 11,
+            "paired_pick_count": 11,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -1.083090957592834,
+            "rmse_s": 1.2590035529221082,
+            "demeaned_rmse_s": 0.6418753179949584
+          }
+        },
+        "straight": {
+          "full_record_relative_l2": 0.5195632756265687,
+          "active_sample_relative_l2": 0.4248245267677272,
+          "predicted_to_observed_peak_ratio": 1.2607448973017576,
+          "fd_change_over_anchor_norm": 0.46045745977638325,
+          "model_to_fd_change_norm_ratio": 1.0910685132165312,
+          "change_relative_l2": 0.7859940084691691,
+          "change_cosine": 0.7206898100958194,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 11,
+            "paired_pick_count": 11,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -1.0503636809616266,
+            "rmse_s": 1.2228856125045828,
+            "demeaned_rmse_s": 0.6262470430967727
+          }
+        }
+      }
+    },
+    {
+      "anchor": "a14",
+      "offset_m": -160,
+      "file": "a14_zm160.npz",
+      "source_m_s": [
+        11000,
+        10000,
+        1040,
+        0.34
+      ],
+      "sha256": "3ea5d4ebc9d919061907e18e00e3c889328e652eddae3c05533f014835fef521",
+      "nearest_training_spatial_distance_m": 160.0,
+      "fd_runtime_seconds": 8.996993599999769,
+      "models": {
+        "eikonal": {
+          "full_record_relative_l2": 0.5261206722796555,
+          "active_sample_relative_l2": 0.4780570419376008,
+          "predicted_to_observed_peak_ratio": 1.1026952831865486,
+          "fd_change_over_anchor_norm": 0.8138255629084338,
+          "model_to_fd_change_norm_ratio": 1.0568526972490933,
+          "change_relative_l2": 0.7707804548562462,
+          "change_cosine": 0.7204575992747642,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 10,
+            "paired_pick_count": 10,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -0.9846000513993204,
+            "rmse_s": 1.1174007921344533,
+            "demeaned_rmse_s": 0.5283438927887399
+          }
+        },
+        "straight": {
+          "full_record_relative_l2": 0.5583220804209604,
+          "active_sample_relative_l2": 0.5149718954270095,
+          "predicted_to_observed_peak_ratio": 1.0550259607730421,
+          "fd_change_over_anchor_norm": 0.8138255629084338,
+          "model_to_fd_change_norm_ratio": 1.1238893890221142,
+          "change_relative_l2": 0.8136304948665581,
+          "change_cosine": 0.7123177744265525,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 10,
+            "paired_pick_count": 10,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -1.0046000557020307,
+            "rmse_s": 1.1507728447555907,
+            "demeaned_rmse_s": 0.5612992680472263
+          }
+        }
+      }
+    },
+    {
+      "anchor": "a14",
+      "offset_m": 160,
+      "file": "a14_zp160.npz",
+      "source_m_s": [
+        11000,
+        10000,
+        1360,
+        0.34
+      ],
+      "sha256": "04a8a1d172a7a46a023b78cdd13d41fe08be810188b23438055003a81c250c06",
+      "nearest_training_spatial_distance_m": 160.0,
+      "fd_runtime_seconds": 8.98755859999983,
+      "models": {
+        "eikonal": {
+          "full_record_relative_l2": 0.5953663414114102,
+          "active_sample_relative_l2": 0.5098273593048639,
+          "predicted_to_observed_peak_ratio": 0.8631651953320677,
+          "fd_change_over_anchor_norm": 0.8635848973340425,
+          "model_to_fd_change_norm_ratio": 0.8185669985116641,
+          "change_relative_l2": 0.532391159848162,
+          "change_cosine": 0.8469750102857126,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 11,
+            "paired_pick_count": 11,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -1.1403637172823602,
+            "rmse_s": 1.2837613218957706,
+            "demeaned_rmse_s": 0.5895877575912964
+          }
+        },
+        "straight": {
+          "full_record_relative_l2": 0.6709569024725369,
+          "active_sample_relative_l2": 0.5875708469618718,
+          "predicted_to_observed_peak_ratio": 0.9412168922236759,
+          "fd_change_over_anchor_norm": 0.8635848973340425,
+          "model_to_fd_change_norm_ratio": 1.0191131676399623,
+          "change_relative_l2": 0.5977708410447964,
+          "change_cosine": 0.8248650510262661,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 11,
+            "paired_pick_count": 11,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -1.0932728013193065,
+            "rmse_s": 1.2249766685639343,
+            "demeaned_rmse_s": 0.5525598794894822
+          }
+        }
+      }
+    },
+    {
+      "anchor": "a14",
+      "offset_m": -280,
+      "file": "a14_zm280.npz",
+      "source_m_s": [
+        11000,
+        10000,
+        920,
+        0.34
+      ],
+      "sha256": "f3e3065d6444d2d0c384486579b6016d6dbcf9032bbfd97696c67ab53baa007c",
+      "nearest_training_spatial_distance_m": 280.0,
+      "fd_runtime_seconds": 8.993607399999746,
+      "models": {
+        "eikonal": {
+          "full_record_relative_l2": 0.6221713239389873,
+          "active_sample_relative_l2": 0.5839160625550466,
+          "predicted_to_observed_peak_ratio": 0.8921103477971237,
+          "fd_change_over_anchor_norm": 1.4708632470277803,
+          "model_to_fd_change_norm_ratio": 0.9067904784113441,
+          "change_relative_l2": 0.5261750779922909,
+          "change_cosine": 0.8521311128810962,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 10,
+            "paired_pick_count": 10,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -0.8736000396776944,
+            "rmse_s": 1.0511651169776266,
+            "demeaned_rmse_s": 0.584611900174567
+          }
+        },
+        "straight": {
+          "full_record_relative_l2": 0.63996688178343,
+          "active_sample_relative_l2": 0.5929854570263001,
+          "predicted_to_observed_peak_ratio": 0.7623012161627728,
+          "fd_change_over_anchor_norm": 1.4708632470277803,
+          "model_to_fd_change_norm_ratio": 0.8886715647177773,
+          "change_relative_l2": 0.539339004202859,
+          "change_cosine": 0.8433096365356381,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 10,
+            "paired_pick_count": 10,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -0.8734000481665134,
+            "rmse_s": 1.0301714912622149,
+            "demeaned_rmse_s": 0.5462834953320002
+          }
+        }
+      }
+    },
+    {
+      "anchor": "a14",
+      "offset_m": 280,
+      "file": "a14_zp280.npz",
+      "source_m_s": [
+        11000,
+        10000,
+        1480,
+        0.34
+      ],
+      "sha256": "00db2de41a64734355a43cba371833177fe9119b570df8c9e3d625f395977f97",
+      "nearest_training_spatial_distance_m": 280.0,
+      "fd_runtime_seconds": 8.980432600001222,
+      "models": {
+        "eikonal": {
+          "full_record_relative_l2": 0.8625678921223505,
+          "active_sample_relative_l2": 0.791950804885186,
+          "predicted_to_observed_peak_ratio": 0.3531767641949094,
+          "fd_change_over_anchor_norm": 1.2493266890752446,
+          "model_to_fd_change_norm_ratio": 0.729241640486014,
+          "change_relative_l2": 0.5990456076748928,
+          "change_cosine": 0.804217467177566,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 11,
+            "paired_pick_count": 11,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -1.2818182249638168,
+            "rmse_s": 1.3409419145859351,
+            "demeaned_rmse_s": 0.3937858002061573
+          }
+        },
+        "straight": {
+          "full_record_relative_l2": 0.8390488210135291,
+          "active_sample_relative_l2": 0.7760511817412323,
+          "predicted_to_observed_peak_ratio": 0.34480721396464714,
+          "fd_change_over_anchor_norm": 1.2493266890752446,
+          "model_to_fd_change_norm_ratio": 0.8497357633524776,
+          "change_relative_l2": 0.5792766483296699,
+          "change_cosine": 0.8158356350390741,
+          "arrival": {
+            "status": "ok",
+            "valid_fd_pick_count": 11,
+            "paired_pick_count": 11,
+            "missing_model_picks_on_valid_fd_stations": 0,
+            "signed_mean_error_s": -1.1294545767490158,
+            "rmse_s": 1.225856332784611,
+            "demeaned_rmse_s": 0.47650404792492196
+          }
+        }
+      }
+    }
+  ],
+  "magnitude_means": {
+    "80": {
+      "eikonal": {
+        "mean_full_l2": 0.3918158562322998,
+        "mean_change_l2": 0.9325439681421849,
+        "mean_change_cosine": 0.48310664847976015,
+        "mean_change_norm_ratio": 0.8709246647714474,
+        "arrival_usable_count": 4,
+        "mean_arrival_rmse_s": 1.0966102684096535
+      },
+      "straight": {
+        "mean_full_l2": 0.44046167706027356,
+        "mean_change_l2": 1.0451758493049346,
+        "mean_change_cosine": 0.445996205411219,
+        "mean_change_norm_ratio": 1.028513753041543,
+        "arrival_usable_count": 4,
+        "mean_arrival_rmse_s": 1.0937342562266785
+      }
+    },
+    "160": {
+      "eikonal": {
+        "mean_full_l2": 0.6199713415320174,
+        "mean_change_l2": 0.813970926125047,
+        "mean_change_cosine": 0.6011187723049985,
+        "mean_change_norm_ratio": 0.8544331607900121,
+        "arrival_usable_count": 4,
+        "mean_arrival_rmse_s": 1.136981901082707
+      },
+      "straight": {
+        "mean_full_l2": 0.6737104560879714,
+        "mean_change_l2": 0.8756596182162177,
+        "mean_change_cosine": 0.5845732087891198,
+        "mean_change_norm_ratio": 0.9821323868064278,
+        "arrival_usable_count": 4,
+        "mean_arrival_rmse_s": 1.1561687748189526
+      }
+    },
+    "280": {
+      "eikonal": {
+        "mean_full_l2": 0.9303331583737969,
+        "mean_change_l2": 0.6581131579790438,
+        "mean_change_cosine": 0.7441969456496323,
+        "mean_change_norm_ratio": 0.7831489047442614,
+        "arrival_usable_count": 4,
+        "mean_arrival_rmse_s": 1.2190235766787336
+      },
+      "straight": {
+        "mean_full_l2": 0.9211883016500767,
+        "mean_change_l2": 0.6444207654954468,
+        "mean_change_cosine": 0.7648899449545202,
+        "mean_change_norm_ratio": 0.8548898699596503,
+        "arrival_usable_count": 4,
+        "mean_arrival_rmse_s": 1.208222142628347
+      }
+    }
+  },
+  "limitations": "descriptive paired source-depth development, one seed, two training anchors and one velocity; compare model and FD waveforms without optimizing source, time, gain or search; no independent localization or generalization claim"
+}

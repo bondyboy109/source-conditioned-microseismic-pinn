@@ -1,0 +1,731 @@
+{
+  "protocol_sha256": "bcdbce638c63793ddaa32294dfbc1608ca82c30453d42a89e8b479723e86c985",
+  "device": "cuda",
+  "checkpoints": [
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "path": "outputs\\source_transfer_geometry_feature\\source_to_target_seed4101.pth",
+      "sha256": "bb14624daed5939b501ad8f61f8f53298b811c022121a079498e0db50517b60f"
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "path": "outputs\\source_transfer_geometry_feature\\target_to_target_seed4101.pth",
+      "sha256": "611050e84301403c9252f9c973773744ddea4478cccdd3f4a51a330fb1945a08"
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "path": "outputs\\source_transfer_geometry_feature\\source_to_target_seed4102.pth",
+      "sha256": "3e5fdd871e594b47dee68983d1132fc42de877bf7bf6a036539d3cbcd460528d"
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "path": "outputs\\source_transfer_geometry_feature\\target_to_target_seed4102.pth",
+      "sha256": "bbe5caf7ef150357f125dccf4ccc8c51407dddb1b30690aa17d40d727bb27d56"
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "path": "outputs\\source_transfer_geometry_feature\\source_to_target_seed4103.pth",
+      "sha256": "9edd44aa814aba13b6543927b665342eae00c4d4ad0c91e89c53f25708bc9b5c"
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "path": "outputs\\source_transfer_geometry_feature\\target_to_target_seed4103.pth",
+      "sha256": "82fd69ea68776755c1157f6d1157b4e5ffb6756317ab5b01fca527212db8737b"
+    }
+  ],
+  "summary": [
+    {
+      "arm": "source_to_target",
+      "outcomes": 48,
+      "mean_development_relative_l2": 1.1440808706126433,
+      "median_development_relative_l2": 1.1175294971921825
+    },
+    {
+      "arm": "target_to_target",
+      "outcomes": 48,
+      "mean_development_relative_l2": 1.1531201414007772,
+      "median_development_relative_l2": 1.1496459577116778
+    }
+  ],
+  "rows": [
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_independent\\test_01.npz",
+      "sha256": "063ddda11c1a73da3e870602f25968d41f5ecc74aadae580740947f1e54e4d41",
+      "relative_l2": 1.0008657023883067
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_independent\\test_02.npz",
+      "sha256": "c39165b10f1e23a90f628727740d7edb2d07f90aef072a7438b2fe9173b1af75",
+      "relative_l2": 1.173692825760261
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_independent\\test_03.npz",
+      "sha256": "d94aaae8c6ecc1801d6798f9798424143b03ea6039fa33af8f55c94ca828b97e",
+      "relative_l2": 1.0903405139319953
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_independent\\test_04.npz",
+      "sha256": "1b36b142d4fdd38d5dd8d9618dcdc3b5ddd285c036dbfcf73058b01c79069797",
+      "relative_l2": 1.1203884608696852
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_independent\\test_05.npz",
+      "sha256": "c6747ace6bd0cab4a79218f7b6a58e211dcda01f5d3425b7f8b86197a7cb306e",
+      "relative_l2": 1.0785987062323243
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_independent\\test_06.npz",
+      "sha256": "b5dc551f9d625f08f38d34dcbc2e05895bf2cc1a057783e1cde834224bc9c2bb",
+      "relative_l2": 1.0876417851355165
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_independent\\test_07.npz",
+      "sha256": "837736d30fd7bbb48ce9cf4452b841baf229e0481c6bbd6fd1ee23be6b675109",
+      "relative_l2": 0.9644178779865129
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_independent\\test_08.npz",
+      "sha256": "df432f3c2dfebc6cb0ae3c0f8bf400bd5d608feb5543868a511578076cc149c1",
+      "relative_l2": 1.2546879903266976
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_01.npz",
+      "sha256": "1d44a3788ce53a9f1435b142813d1011a9169b2b987e9f7bf56b06ee19718539",
+      "relative_l2": 1.0291871032944275
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_02.npz",
+      "sha256": "aa56b60ef6c1c9c633db435236060c5b883fc86b339b2839cd41a76fdbffe416",
+      "relative_l2": 1.0596002720817146
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_03.npz",
+      "sha256": "e2b30f94c909b7a750789632257f338d20942ef4a524b87dc00a344635a00f67",
+      "relative_l2": 1.1922693959591506
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_04.npz",
+      "sha256": "28905a6d02cccff650b0144a39b1d188ca9a63495c8827b6f9882689211b42f1",
+      "relative_l2": 0.9841704894106881
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_05.npz",
+      "sha256": "7a2078e42bb79670e46fd63e98b990bfa1e945e9c98c72e26febca1d6087df17",
+      "relative_l2": 1.3998887963920352
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_06.npz",
+      "sha256": "bf510d8b084ff360ba9f7a36feb27dad8d1436bb5610d205aa2e9658754a4639",
+      "relative_l2": 1.0584310050134562
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_07.npz",
+      "sha256": "faa85f2df753bbcf96cdba3639427c0943d7fcdcb72e1cfd0ed67a98e77fd957",
+      "relative_l2": 1.1067605854118925
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_08.npz",
+      "sha256": "8468027befcbb696a561f131bac172f9e93a52af2b6f6b381773f9957415fe2c",
+      "relative_l2": 1.2565443225196462
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_independent\\test_01.npz",
+      "sha256": "063ddda11c1a73da3e870602f25968d41f5ecc74aadae580740947f1e54e4d41",
+      "relative_l2": 1.088079549171429
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_independent\\test_02.npz",
+      "sha256": "c39165b10f1e23a90f628727740d7edb2d07f90aef072a7438b2fe9173b1af75",
+      "relative_l2": 1.104752965158239
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_independent\\test_03.npz",
+      "sha256": "d94aaae8c6ecc1801d6798f9798424143b03ea6039fa33af8f55c94ca828b97e",
+      "relative_l2": 1.1568537794616995
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_independent\\test_04.npz",
+      "sha256": "1b36b142d4fdd38d5dd8d9618dcdc3b5ddd285c036dbfcf73058b01c79069797",
+      "relative_l2": 1.094496059018898
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_independent\\test_05.npz",
+      "sha256": "c6747ace6bd0cab4a79218f7b6a58e211dcda01f5d3425b7f8b86197a7cb306e",
+      "relative_l2": 1.1536260419588351
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_independent\\test_06.npz",
+      "sha256": "b5dc551f9d625f08f38d34dcbc2e05895bf2cc1a057783e1cde834224bc9c2bb",
+      "relative_l2": 1.0758141074011103
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_independent\\test_07.npz",
+      "sha256": "837736d30fd7bbb48ce9cf4452b841baf229e0481c6bbd6fd1ee23be6b675109",
+      "relative_l2": 1.0841788439938724
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_independent\\test_08.npz",
+      "sha256": "df432f3c2dfebc6cb0ae3c0f8bf400bd5d608feb5543868a511578076cc149c1",
+      "relative_l2": 1.2460779438705363
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_01.npz",
+      "sha256": "1d44a3788ce53a9f1435b142813d1011a9169b2b987e9f7bf56b06ee19718539",
+      "relative_l2": 1.0883838264933914
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_02.npz",
+      "sha256": "aa56b60ef6c1c9c633db435236060c5b883fc86b339b2839cd41a76fdbffe416",
+      "relative_l2": 1.1469810338211537
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_03.npz",
+      "sha256": "e2b30f94c909b7a750789632257f338d20942ef4a524b87dc00a344635a00f67",
+      "relative_l2": 1.1869289827701803
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_04.npz",
+      "sha256": "28905a6d02cccff650b0144a39b1d188ca9a63495c8827b6f9882689211b42f1",
+      "relative_l2": 1.046874168007483
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_05.npz",
+      "sha256": "7a2078e42bb79670e46fd63e98b990bfa1e945e9c98c72e26febca1d6087df17",
+      "relative_l2": 1.2558586940910836
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_06.npz",
+      "sha256": "bf510d8b084ff360ba9f7a36feb27dad8d1436bb5610d205aa2e9658754a4639",
+      "relative_l2": 1.1114791743736245
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_07.npz",
+      "sha256": "faa85f2df753bbcf96cdba3639427c0943d7fcdcb72e1cfd0ed67a98e77fd957",
+      "relative_l2": 1.1913567487000252
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4101,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_08.npz",
+      "sha256": "8468027befcbb696a561f131bac172f9e93a52af2b6f6b381773f9957415fe2c",
+      "relative_l2": 1.2313911210908877
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_independent\\test_01.npz",
+      "sha256": "063ddda11c1a73da3e870602f25968d41f5ecc74aadae580740947f1e54e4d41",
+      "relative_l2": 1.030450010155425
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_independent\\test_02.npz",
+      "sha256": "c39165b10f1e23a90f628727740d7edb2d07f90aef072a7438b2fe9173b1af75",
+      "relative_l2": 1.2196254071732662
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_independent\\test_03.npz",
+      "sha256": "d94aaae8c6ecc1801d6798f9798424143b03ea6039fa33af8f55c94ca828b97e",
+      "relative_l2": 1.1221679906915063
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_independent\\test_04.npz",
+      "sha256": "1b36b142d4fdd38d5dd8d9618dcdc3b5ddd285c036dbfcf73058b01c79069797",
+      "relative_l2": 1.1121576271023588
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_independent\\test_05.npz",
+      "sha256": "c6747ace6bd0cab4a79218f7b6a58e211dcda01f5d3425b7f8b86197a7cb306e",
+      "relative_l2": 1.1092464407476241
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_independent\\test_06.npz",
+      "sha256": "b5dc551f9d625f08f38d34dcbc2e05895bf2cc1a057783e1cde834224bc9c2bb",
+      "relative_l2": 1.0884723348765823
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_independent\\test_07.npz",
+      "sha256": "837736d30fd7bbb48ce9cf4452b841baf229e0481c6bbd6fd1ee23be6b675109",
+      "relative_l2": 1.0008320382923
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_independent\\test_08.npz",
+      "sha256": "df432f3c2dfebc6cb0ae3c0f8bf400bd5d608feb5543868a511578076cc149c1",
+      "relative_l2": 1.2832826373009913
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_01.npz",
+      "sha256": "1d44a3788ce53a9f1435b142813d1011a9169b2b987e9f7bf56b06ee19718539",
+      "relative_l2": 1.0626622306942057
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_02.npz",
+      "sha256": "aa56b60ef6c1c9c633db435236060c5b883fc86b339b2839cd41a76fdbffe416",
+      "relative_l2": 1.0778829056388428
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_03.npz",
+      "sha256": "e2b30f94c909b7a750789632257f338d20942ef4a524b87dc00a344635a00f67",
+      "relative_l2": 1.2348591565046005
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_04.npz",
+      "sha256": "28905a6d02cccff650b0144a39b1d188ca9a63495c8827b6f9882689211b42f1",
+      "relative_l2": 1.0224194322203295
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_05.npz",
+      "sha256": "7a2078e42bb79670e46fd63e98b990bfa1e945e9c98c72e26febca1d6087df17",
+      "relative_l2": 1.4230558808205878
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_06.npz",
+      "sha256": "bf510d8b084ff360ba9f7a36feb27dad8d1436bb5610d205aa2e9658754a4639",
+      "relative_l2": 1.1227896070039012
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_07.npz",
+      "sha256": "faa85f2df753bbcf96cdba3639427c0943d7fcdcb72e1cfd0ed67a98e77fd957",
+      "relative_l2": 1.1371174655375256
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_08.npz",
+      "sha256": "8468027befcbb696a561f131bac172f9e93a52af2b6f6b381773f9957415fe2c",
+      "relative_l2": 1.2659810080225973
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_independent\\test_01.npz",
+      "sha256": "063ddda11c1a73da3e870602f25968d41f5ecc74aadae580740947f1e54e4d41",
+      "relative_l2": 1.0688956578394697
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_independent\\test_02.npz",
+      "sha256": "c39165b10f1e23a90f628727740d7edb2d07f90aef072a7438b2fe9173b1af75",
+      "relative_l2": 1.1593427940532497
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_independent\\test_03.npz",
+      "sha256": "d94aaae8c6ecc1801d6798f9798424143b03ea6039fa33af8f55c94ca828b97e",
+      "relative_l2": 1.1566309453845225
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_independent\\test_04.npz",
+      "sha256": "1b36b142d4fdd38d5dd8d9618dcdc3b5ddd285c036dbfcf73058b01c79069797",
+      "relative_l2": 1.1622049976808684
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_independent\\test_05.npz",
+      "sha256": "c6747ace6bd0cab4a79218f7b6a58e211dcda01f5d3425b7f8b86197a7cb306e",
+      "relative_l2": 1.1523108816022019
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_independent\\test_06.npz",
+      "sha256": "b5dc551f9d625f08f38d34dcbc2e05895bf2cc1a057783e1cde834224bc9c2bb",
+      "relative_l2": 1.0862911251892302
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_independent\\test_07.npz",
+      "sha256": "837736d30fd7bbb48ce9cf4452b841baf229e0481c6bbd6fd1ee23be6b675109",
+      "relative_l2": 1.1090762484550845
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_independent\\test_08.npz",
+      "sha256": "df432f3c2dfebc6cb0ae3c0f8bf400bd5d608feb5543868a511578076cc149c1",
+      "relative_l2": 1.2235438939544885
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_01.npz",
+      "sha256": "1d44a3788ce53a9f1435b142813d1011a9169b2b987e9f7bf56b06ee19718539",
+      "relative_l2": 1.1020942043045099
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_02.npz",
+      "sha256": "aa56b60ef6c1c9c633db435236060c5b883fc86b339b2839cd41a76fdbffe416",
+      "relative_l2": 1.1373083231394925
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_03.npz",
+      "sha256": "e2b30f94c909b7a750789632257f338d20942ef4a524b87dc00a344635a00f67",
+      "relative_l2": 1.1797843102098493
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_04.npz",
+      "sha256": "28905a6d02cccff650b0144a39b1d188ca9a63495c8827b6f9882689211b42f1",
+      "relative_l2": 1.101105886769532
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_05.npz",
+      "sha256": "7a2078e42bb79670e46fd63e98b990bfa1e945e9c98c72e26febca1d6087df17",
+      "relative_l2": 1.3000425883386943
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_06.npz",
+      "sha256": "bf510d8b084ff360ba9f7a36feb27dad8d1436bb5610d205aa2e9658754a4639",
+      "relative_l2": 1.1719471452446144
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_07.npz",
+      "sha256": "faa85f2df753bbcf96cdba3639427c0943d7fcdcb72e1cfd0ed67a98e77fd957",
+      "relative_l2": 1.1731831800754868
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4102,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_08.npz",
+      "sha256": "8468027befcbb696a561f131bac172f9e93a52af2b6f6b381773f9957415fe2c",
+      "relative_l2": 1.2018061018405102
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_independent\\test_01.npz",
+      "sha256": "063ddda11c1a73da3e870602f25968d41f5ecc74aadae580740947f1e54e4d41",
+      "relative_l2": 1.0151220478995842
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_independent\\test_02.npz",
+      "sha256": "c39165b10f1e23a90f628727740d7edb2d07f90aef072a7438b2fe9173b1af75",
+      "relative_l2": 1.2934695795562807
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_independent\\test_03.npz",
+      "sha256": "d94aaae8c6ecc1801d6798f9798424143b03ea6039fa33af8f55c94ca828b97e",
+      "relative_l2": 1.1266914712510117
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_independent\\test_04.npz",
+      "sha256": "1b36b142d4fdd38d5dd8d9618dcdc3b5ddd285c036dbfcf73058b01c79069797",
+      "relative_l2": 1.1370065923825
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_independent\\test_05.npz",
+      "sha256": "c6747ace6bd0cab4a79218f7b6a58e211dcda01f5d3425b7f8b86197a7cb306e",
+      "relative_l2": 1.120432412511825
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_independent\\test_06.npz",
+      "sha256": "b5dc551f9d625f08f38d34dcbc2e05895bf2cc1a057783e1cde834224bc9c2bb",
+      "relative_l2": 1.1178893060849315
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_independent\\test_07.npz",
+      "sha256": "837736d30fd7bbb48ce9cf4452b841baf229e0481c6bbd6fd1ee23be6b675109",
+      "relative_l2": 0.9920083119939962
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_independent\\test_08.npz",
+      "sha256": "df432f3c2dfebc6cb0ae3c0f8bf400bd5d608feb5543868a511578076cc149c1",
+      "relative_l2": 1.3566208766538064
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_01.npz",
+      "sha256": "1d44a3788ce53a9f1435b142813d1011a9169b2b987e9f7bf56b06ee19718539",
+      "relative_l2": 1.0563473695288212
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_02.npz",
+      "sha256": "aa56b60ef6c1c9c633db435236060c5b883fc86b339b2839cd41a76fdbffe416",
+      "relative_l2": 1.0852428223931816
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_03.npz",
+      "sha256": "e2b30f94c909b7a750789632257f338d20942ef4a524b87dc00a344635a00f67",
+      "relative_l2": 1.3603082393244978
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_04.npz",
+      "sha256": "28905a6d02cccff650b0144a39b1d188ca9a63495c8827b6f9882689211b42f1",
+      "relative_l2": 1.029666870825684
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_05.npz",
+      "sha256": "7a2078e42bb79670e46fd63e98b990bfa1e945e9c98c72e26febca1d6087df17",
+      "relative_l2": 1.4789371990013684
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_06.npz",
+      "sha256": "bf510d8b084ff360ba9f7a36feb27dad8d1436bb5610d205aa2e9658754a4639",
+      "relative_l2": 1.1171696882994335
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_07.npz",
+      "sha256": "faa85f2df753bbcf96cdba3639427c0943d7fcdcb72e1cfd0ed67a98e77fd957",
+      "relative_l2": 1.1574446231794615
+    },
+    {
+      "arm": "source_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_08.npz",
+      "sha256": "8468027befcbb696a561f131bac172f9e93a52af2b6f6b381773f9957415fe2c",
+      "relative_l2": 1.301036373023546
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_independent\\test_01.npz",
+      "sha256": "063ddda11c1a73da3e870602f25968d41f5ecc74aadae580740947f1e54e4d41",
+      "relative_l2": 1.1012864400933557
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_independent\\test_02.npz",
+      "sha256": "c39165b10f1e23a90f628727740d7edb2d07f90aef072a7438b2fe9173b1af75",
+      "relative_l2": 1.1262322204266049
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_independent\\test_03.npz",
+      "sha256": "d94aaae8c6ecc1801d6798f9798424143b03ea6039fa33af8f55c94ca828b97e",
+      "relative_l2": 1.2105634773306582
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_independent\\test_04.npz",
+      "sha256": "1b36b142d4fdd38d5dd8d9618dcdc3b5ddd285c036dbfcf73058b01c79069797",
+      "relative_l2": 1.1219295884264
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_independent\\test_05.npz",
+      "sha256": "c6747ace6bd0cab4a79218f7b6a58e211dcda01f5d3425b7f8b86197a7cb306e",
+      "relative_l2": 1.1564125297818244
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_independent\\test_06.npz",
+      "sha256": "b5dc551f9d625f08f38d34dcbc2e05895bf2cc1a057783e1cde834224bc9c2bb",
+      "relative_l2": 1.1037345268396888
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_independent\\test_07.npz",
+      "sha256": "837736d30fd7bbb48ce9cf4452b841baf229e0481c6bbd6fd1ee23be6b675109",
+      "relative_l2": 1.0892847654239506
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_independent\\test_08.npz",
+      "sha256": "df432f3c2dfebc6cb0ae3c0f8bf400bd5d608feb5543868a511578076cc149c1",
+      "relative_l2": 1.2663543567625033
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_01.npz",
+      "sha256": "1d44a3788ce53a9f1435b142813d1011a9169b2b987e9f7bf56b06ee19718539",
+      "relative_l2": 1.0840415244412942
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_02.npz",
+      "sha256": "aa56b60ef6c1c9c633db435236060c5b883fc86b339b2839cd41a76fdbffe416",
+      "relative_l2": 1.0617975730885552
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_03.npz",
+      "sha256": "e2b30f94c909b7a750789632257f338d20942ef4a524b87dc00a344635a00f67",
+      "relative_l2": 1.1765378863199392
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_04.npz",
+      "sha256": "28905a6d02cccff650b0144a39b1d188ca9a63495c8827b6f9882689211b42f1",
+      "relative_l2": 1.0625145477111362
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_05.npz",
+      "sha256": "7a2078e42bb79670e46fd63e98b990bfa1e945e9c98c72e26febca1d6087df17",
+      "relative_l2": 1.3528401347037669
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_06.npz",
+      "sha256": "bf510d8b084ff360ba9f7a36feb27dad8d1436bb5610d205aa2e9658754a4639",
+      "relative_l2": 1.1366810372767233
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_07.npz",
+      "sha256": "faa85f2df753bbcf96cdba3639427c0943d7fcdcb72e1cfd0ed67a98e77fd957",
+      "relative_l2": 1.2629695811763282
+    },
+    {
+      "arm": "target_to_target",
+      "seed": 4103,
+      "event": "data\\observations\\eikonal_wide_search_independent\\test_08.npz",
+      "sha256": "8468027befcbb696a561f131bac172f9e93a52af2b6f6b381773f9957415fe2c",
+      "relative_l2": 1.2878852739703233
+    }
+  ],
+  "restriction": "Development-only pilot. Uses the existing 16 source events and 33 target events for training and the existing 16 development events for evaluation. The four reserved source_transfer_moe_test events and eight source-conditioned confirmation events are never loaded. The 500+500 update budget is a capacity diagnostic, not a final comparison."
+}

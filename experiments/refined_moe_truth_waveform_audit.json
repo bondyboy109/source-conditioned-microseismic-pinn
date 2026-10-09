@@ -1,0 +1,76 @@
+{
+  "role": "post-selection diagnostic using known truth; never used for inversion",
+  "comparison_sha256": "91ced7c91acb7de938ddff9009fbd1f0380ab8fe1c2cbebc7baa457722b55071",
+  "summary": {
+    "mean_zero_loss": 0.9926750971384684,
+    "mean_moe_true_loss": 1.1694928780198097,
+    "moe_true_better_than_zero_count": 0,
+    "moe_fmm_better_than_zero_count": 0
+  },
+  "events": [
+    {
+      "id": "spatial_01",
+      "zero_prediction_loss": 1.0709259266039637,
+      "moe_at_true_source_loss": 1.3573203086853027,
+      "moe_at_fmm_source_loss": 1.5147966146469116,
+      "true_source_better_than_zero": false,
+      "fmm_source_better_than_zero": false
+    },
+    {
+      "id": "spatial_02",
+      "zero_prediction_loss": 1.0256609148850107,
+      "moe_at_true_source_loss": 1.0749568939208984,
+      "moe_at_fmm_source_loss": 1.1977763175964355,
+      "true_source_better_than_zero": false,
+      "fmm_source_better_than_zero": false
+    },
+    {
+      "id": "spatial_03",
+      "zero_prediction_loss": 1.034717219079784,
+      "moe_at_true_source_loss": 1.206842303276062,
+      "moe_at_fmm_source_loss": 1.2800008058547974,
+      "true_source_better_than_zero": false,
+      "fmm_source_better_than_zero": false
+    },
+    {
+      "id": "spatial_04",
+      "zero_prediction_loss": 1.0312634791581472,
+      "moe_at_true_source_loss": 1.1104093790054321,
+      "moe_at_fmm_source_loss": 1.0932683944702148,
+      "true_source_better_than_zero": false,
+      "fmm_source_better_than_zero": false
+    },
+    {
+      "id": "spatial_05",
+      "zero_prediction_loss": 0.9493755921212528,
+      "moe_at_true_source_loss": 1.2363643646240234,
+      "moe_at_fmm_source_loss": 1.2628949880599976,
+      "true_source_better_than_zero": false,
+      "fmm_source_better_than_zero": false
+    },
+    {
+      "id": "spatial_06",
+      "zero_prediction_loss": 0.9112930376941641,
+      "moe_at_true_source_loss": 1.178913950920105,
+      "moe_at_fmm_source_loss": 1.2124748229980469,
+      "true_source_better_than_zero": false,
+      "fmm_source_better_than_zero": false
+    },
+    {
+      "id": "spatial_07",
+      "zero_prediction_loss": 1.0609805113553865,
+      "moe_at_true_source_loss": 1.2900351285934448,
+      "moe_at_fmm_source_loss": 1.317010521888733,
+      "true_source_better_than_zero": false,
+      "fmm_source_better_than_zero": false
+    },
+    {
+      "id": "spatial_08",
+      "zero_prediction_loss": 0.8571840962100374,
+      "moe_at_true_source_loss": 0.9011006951332092,
+      "moe_at_fmm_source_loss": 0.8918653130531311,
+      "true_source_better_than_zero": false,
+      "fmm_source_better_than_zero": false
+    }
+  ]
+}

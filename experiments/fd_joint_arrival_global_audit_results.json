@@ -1,0 +1,307 @@
+{
+  "role": "post-hoc 75-node FD joint time/amplitude plus FMM arrival audit",
+  "protocol_sha256": "77fab7ac4b197322d30742470d02af22ef9f3b739f560fb669ec35a773373d44",
+  "input_sha256": {
+    "experiments/fd_joint_gain_fresh_source_protocol.json": "05132665d51d982b32ade44302c4ca82582795da331278801e6abedef8032dcd",
+    "experiments/fd_joint_gain_fresh_source_results.json": "c457a16b737df68edc0527e06cad812353f74d16eea956f534ada0b1c4b218e0",
+    "experiments/fd_joint_arrival_development_protocol.json": "5ae2729b08157f5be8d752dfad9661b6f56dcd126671605b6ef49093780ab4e8",
+    "experiments/traveltime_aligned_moe_localization_protocol.json": "62c69be47a4037d919e9704f407bae352b7c36c67d717e02e8877d4df6c9c167",
+    "outputs/traveltime_aligned_moe_development/receiver_fmm_fields_stride2.npy": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36"
+  },
+  "candidate_count": 75,
+  "device": "cuda",
+  "template_runtime_seconds": 777.7053220000034,
+  "peak_cuda_memory_mib": 4817.4638671875,
+  "weights": [
+    0.0,
+    0.1,
+    0.25,
+    1.0
+  ],
+  "picker_bias_s": -0.26279182618600316,
+  "arrival_scale_s": 0.1,
+  "events": [
+    {
+      "id": "fresh_west_mid",
+      "truth_source_m_s": [
+        3750.0,
+        9850.0,
+        720.0,
+        0.2199999988079071
+      ],
+      "valid_picks": 12,
+      "scores": {
+        "0.0": {
+          "candidate_index": 25,
+          "estimated_source_m_s": [
+            5000.0,
+            11000.0,
+            800.0,
+            0.5
+          ],
+          "location_error_m": 1700.4117148502594,
+          "origin_time_error_s": 0.2800000011920929,
+          "at_origin_bound": true,
+          "origin_time_s": 0.5,
+          "lag_samples": 0,
+          "nonnegative_gain": 0.22259952103604083,
+          "waveform_normalized_mse": 0.7399263819504505,
+          "arrival_normalized_mse": 15.39929485321045,
+          "total_loss": 0.7399263819504505
+        },
+        "0.1": {
+          "candidate_index": 11,
+          "estimated_source_m_s": [
+            2000.0,
+            11000.0,
+            1500.0,
+            0.04999999999999999
+          ],
+          "location_error_m": 2234.5916852973387,
+          "origin_time_error_s": 0.16999999880790712,
+          "at_origin_bound": true,
+          "origin_time_s": 0.04999999999999999,
+          "lag_samples": -225,
+          "nonnegative_gain": 0.008275693253233301,
+          "waveform_normalized_mse": 0.9998651926027926,
+          "arrival_normalized_mse": 5.907855987548828,
+          "total_loss": 1.5906507913576755
+        },
+        "0.25": {
+          "candidate_index": 11,
+          "estimated_source_m_s": [
+            2000.0,
+            11000.0,
+            1500.0,
+            0.04999999999999999
+          ],
+          "location_error_m": 2234.5916852973387,
+          "origin_time_error_s": 0.16999999880790712,
+          "at_origin_bound": true,
+          "origin_time_s": 0.04999999999999999,
+          "lag_samples": -225,
+          "nonnegative_gain": 0.008275693253233301,
+          "waveform_normalized_mse": 0.9998651926027926,
+          "arrival_normalized_mse": 5.907855987548828,
+          "total_loss": 2.4768291894899996
+        },
+        "1.0": {
+          "candidate_index": 11,
+          "estimated_source_m_s": [
+            2000.0,
+            11000.0,
+            1500.0,
+            0.04999999999999999
+          ],
+          "location_error_m": 2234.5916852973387,
+          "origin_time_error_s": 0.16999999880790712,
+          "at_origin_bound": true,
+          "origin_time_s": 0.04999999999999999,
+          "lag_samples": -225,
+          "nonnegative_gain": 0.008275693253233301,
+          "waveform_normalized_mse": 0.9998651926027926,
+          "arrival_normalized_mse": 5.907855987548828,
+          "total_loss": 6.90772118015162
+        }
+      },
+      "ranking_seconds": 1.0260250999999698
+    },
+    {
+      "id": "fresh_east_deep",
+      "truth_source_m_s": [
+        11650.0,
+        4550.0,
+        1180.0,
+        0.3400000035762787
+      ],
+      "valid_picks": 9,
+      "scores": {
+        "0.0": {
+          "candidate_index": 49,
+          "estimated_source_m_s": [
+            11000.0,
+            5000.0,
+            800.0,
+            0.5
+          ],
+          "location_error_m": 877.1544903835355,
+          "origin_time_error_s": 0.1599999964237213,
+          "at_origin_bound": true,
+          "origin_time_s": 0.5,
+          "lag_samples": 0,
+          "nonnegative_gain": 0.30935339371536646,
+          "waveform_normalized_mse": 0.6267904572807667,
+          "arrival_normalized_mse": 4.69843864440918,
+          "total_loss": 0.6267904572807667
+        },
+        "0.1": {
+          "candidate_index": 50,
+          "estimated_source_m_s": [
+            11000.0,
+            5000.0,
+            1500.0,
+            0.322
+          ],
+          "location_error_m": 852.8774824088158,
+          "origin_time_error_s": 0.018000003576278678,
+          "at_origin_bound": false,
+          "origin_time_s": 0.322,
+          "lag_samples": -89,
+          "nonnegative_gain": 0.6487820292440161,
+          "waveform_normalized_mse": 0.6735139205962517,
+          "arrival_normalized_mse": 1.9287643432617188,
+          "total_loss": 0.8663903549224236
+        },
+        "0.25": {
+          "candidate_index": 50,
+          "estimated_source_m_s": [
+            11000.0,
+            5000.0,
+            1500.0,
+            0.322
+          ],
+          "location_error_m": 852.8774824088158,
+          "origin_time_error_s": 0.018000003576278678,
+          "at_origin_bound": false,
+          "origin_time_s": 0.322,
+          "lag_samples": -89,
+          "nonnegative_gain": 0.6487820292440161,
+          "waveform_normalized_mse": 0.6735139205962517,
+          "arrival_normalized_mse": 1.9287643432617188,
+          "total_loss": 1.1557050064116814
+        },
+        "1.0": {
+          "candidate_index": 50,
+          "estimated_source_m_s": [
+            11000.0,
+            5000.0,
+            1500.0,
+            0.32599999999999996
+          ],
+          "location_error_m": 852.8774824088158,
+          "origin_time_error_s": 0.01400000357627873,
+          "at_origin_bound": false,
+          "origin_time_s": 0.32599999999999996,
+          "lag_samples": -87,
+          "nonnegative_gain": 0.6406187481513778,
+          "waveform_normalized_mse": 0.6823958277358697,
+          "arrival_normalized_mse": 1.910593032836914,
+          "total_loss": 2.5929888605727838
+        }
+      },
+      "ranking_seconds": 0.9933858000003966
+    },
+    {
+      "id": "fresh_center_shallow",
+      "truth_source_m_s": [
+        8100.0,
+        11350.0,
+        360.0,
+        0.17000000178813934
+      ],
+      "valid_picks": 11,
+      "scores": {
+        "0.0": {
+          "candidate_index": 39,
+          "estimated_source_m_s": [
+            8000.0,
+            11000.0,
+            100.0,
+            0.274
+          ],
+          "location_error_m": 447.3253849269008,
+          "origin_time_error_s": 0.10399999821186068,
+          "at_origin_bound": false,
+          "origin_time_s": 0.274,
+          "lag_samples": -113,
+          "nonnegative_gain": 0.1454004796122782,
+          "waveform_normalized_mse": 0.3002044314757505,
+          "arrival_normalized_mse": 1.293046474456787,
+          "total_loss": 0.3002044314757505
+        },
+        "0.1": {
+          "candidate_index": 39,
+          "estimated_source_m_s": [
+            8000.0,
+            11000.0,
+            100.0,
+            0.274
+          ],
+          "location_error_m": 447.3253849269008,
+          "origin_time_error_s": 0.10399999821186068,
+          "at_origin_bound": false,
+          "origin_time_s": 0.274,
+          "lag_samples": -113,
+          "nonnegative_gain": 0.1454004796122782,
+          "waveform_normalized_mse": 0.3002044314757505,
+          "arrival_normalized_mse": 1.293046474456787,
+          "total_loss": 0.4295090789214292
+        },
+        "0.25": {
+          "candidate_index": 39,
+          "estimated_source_m_s": [
+            8000.0,
+            11000.0,
+            100.0,
+            0.274
+          ],
+          "location_error_m": 447.3253849269008,
+          "origin_time_error_s": 0.10399999821186068,
+          "at_origin_bound": false,
+          "origin_time_s": 0.274,
+          "lag_samples": -113,
+          "nonnegative_gain": 0.1454004796122782,
+          "waveform_normalized_mse": 0.3002044314757505,
+          "arrival_normalized_mse": 1.293046474456787,
+          "total_loss": 0.6234660500899473
+        },
+        "1.0": {
+          "candidate_index": 39,
+          "estimated_source_m_s": [
+            8000.0,
+            11000.0,
+            100.0,
+            0.268
+          ],
+          "location_error_m": 447.3253849269008,
+          "origin_time_error_s": 0.09799999821186067,
+          "at_origin_bound": false,
+          "origin_time_s": 0.268,
+          "lag_samples": -116,
+          "nonnegative_gain": 0.1405441251001591,
+          "waveform_normalized_mse": 0.3461644263356093,
+          "arrival_normalized_mse": 1.2058552503585815,
+          "total_loss": 1.552019676694191
+        }
+      },
+      "ranking_seconds": 0.9808429999993677
+    }
+  ],
+  "summary": {
+    "0.0": {
+      "median_location_error_m": 877.1544903835355,
+      "median_origin_time_error_s": 0.1599999964237213,
+      "origin_bound_count": 2,
+      "median_waveform_normalized_mse": 0.6267904572807667
+    },
+    "0.1": {
+      "median_location_error_m": 852.8774824088158,
+      "median_origin_time_error_s": 0.10399999821186068,
+      "origin_bound_count": 1,
+      "median_waveform_normalized_mse": 0.6735139205962517
+    },
+    "0.25": {
+      "median_location_error_m": 852.8774824088158,
+      "median_origin_time_error_s": 0.10399999821186068,
+      "origin_bound_count": 1,
+      "median_waveform_normalized_mse": 0.6735139205962517
+    },
+    "1.0": {
+      "median_location_error_m": 852.8774824088158,
+      "median_origin_time_error_s": 0.09799999821186067,
+      "origin_bound_count": 1,
+      "median_waveform_normalized_mse": 0.6823958277358697
+    }
+  },
+  "limitations": "These three source records were previously inspected, including two boundary failures. The weight grid was fixed after the local development audit. This is a post-hoc diagnosis, not a second independent test; tuning or choosing a favorable weight from these events requires a genuinely new prospective evaluation. The 75-node grid is coarse, and FMM picks use a development-calibrated bias."
+}

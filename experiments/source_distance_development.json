@@ -1,0 +1,13 @@
+{
+  "purpose": "Diagnostic of source-spacing effects using the already frozen eight-source supervised model",
+  "checkpoint": "outputs/dev_relative_carrier_5hz_train8_5000/conditioned_5Hz.pth",
+  "reference_training_source": "train_01.npz",
+  "reference_source_m_s": [3500, 4000, 500, 0.12],
+  "frequency_hz": 5,
+  "events": [
+    {"file": "dev_distance_0250.npz", "source_m_s": [3750, 4000, 500, 0.12], "distance_m": 250},
+    {"file": "dev_distance_0800.npz", "source_m_s": [4300, 4000, 500, 0.12], "distance_m": 800},
+    {"file": "dev_distance_2000.npz", "source_m_s": [5500, 4000, 500, 0.12], "distance_m": 2000}
+  ],
+  "decision_rule": "Report original-amplitude relative L2 and waveform correlation for every event; no checkpoint selection or retuning"
+}

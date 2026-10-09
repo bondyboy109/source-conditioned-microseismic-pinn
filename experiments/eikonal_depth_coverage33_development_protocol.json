@@ -1,0 +1,22 @@
+{
+  "role": "development-only reuse of inspected depth FD records; neither training nor evaluation is independent confirmation",
+  "baseline_checkpoint": "outputs/eikonal_coverage_29_hybrid_1000/conditioned_5Hz.pth",
+  "baseline_sha256": "ce744ba5e7249850fe99644449855c886fc255aebacfacab86f76d59990f2ec7",
+  "baseline_training_summary": "outputs/eikonal_coverage_29_hybrid_1000/training_summary.json",
+  "baseline_training_summary_sha256": "3533ed8deb559051284139318b87c64ad17d3592f65f6ef2d0ea9193739bddfd",
+  "eikonal_checkpoint": "outputs/eikonal_overthrust_5000/eikonal.pth",
+  "eikonal_sha256": "25d8f90327a1c833870ed49bce3e7eb02c3ea0b15e7941899040d0e448458599",
+  "velocity_file": "data/velocity/vp_model.npy",
+  "velocity_sha256": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+  "original_development_result": "experiments/eikonal_causal_gate_development_results.json",
+  "original_development_sha256": "f3944c6ab923df8b7c892bd27e6a5ecfdc7ecb9499e015d95b365427280b19d2",
+  "depth_protocol": "experiments/eikonal_depth_sweep_protocol.json",
+  "training_offset_m": [-160, 160],
+  "evaluation_offset_m": [-80, 80, -280, 280],
+  "anchors": ["a10", "a14"],
+  "training_design": "29 original FD sources plus four already-inspected +/-160 m depth FD sources; scratch 5000 receiver-only steps at 128 samples per event, then 1000 physics/receiver steps at 64 samples per event; same 5 Hz eikonal carrier and seed 42, no onset gate; only the receiver training set changes",
+  "evaluation_design": "eight already-inspected +/-80 and +/-280 m depth FD sources, no retraining or tuned shift/gain; paired true-source raw and FD-active L2, finite depth-response L2 and cosine, false early threshold picks; report +/-280 m subset separately",
+  "decision_rule": "proceed only if mean FD-active L2 and finite depth-response L2 improve over the 29-source model, +/-280 m active L2 improves, and no anchor neighborhood degrades sharply; early picks alone do not count",
+  "receiver_output": "outputs/eikonal_depth_coverage33_receiver_5000",
+  "hybrid_output": "outputs/eikonal_depth_coverage33_hybrid_1000"
+}

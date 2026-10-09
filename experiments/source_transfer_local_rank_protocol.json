@@ -1,0 +1,20 @@
+{
+  "purpose": "paired development-only test of a local source-ranking auxiliary loss after target-domain fine-tuning",
+  "parent_protocol": "experiments/source_transfer_moe_protocol.json",
+  "trajectory_protocol": "experiments/source_transfer_trajectory_protocol.json",
+  "initial_target_updates": 500,
+  "additional_target_updates": 1000,
+  "arms": ["source_to_target", "target_to_target"],
+  "seeds": [4101, 4102, 4103],
+  "branches": ["restarted_control", "local_rank"],
+  "negative_samples_per_batch": 1024,
+  "negative_horizontal_radius_m": [300.0, 900.0],
+  "negative_vertical_magnitude_m": [100.0, 300.0],
+  "contrastive_margin_mse": 0.05,
+  "contrastive_weight": 0.1,
+  "checkpoint_directory": "outputs/source_transfer_local_rank",
+  "result_json": "experiments/source_transfer_local_rank_results.json",
+  "result_report": "experiments/source_transfer_local_rank_results.md",
+  "comparison": "Both branches restart Adam at the frozen 500-target-update checkpoint and use the same 1000 target batches. Only local_rank adds a hinge loss that rewards lower waveform MSE at the known training source than at independently sampled nearby false sources. The true source time is held fixed for negative candidates. The previously frozen original 1500-update checkpoints are not used as controls because their Adam target phase was uninterrupted.",
+  "restriction": "Only target training events provide gradient updates. Four previously inspected development events provide diagnostics; the four source_transfer_moe_test events are not used. This discriminative auxiliary loss does not supply physical waveforms at negative sources and cannot by itself validate the forward operator."
+}

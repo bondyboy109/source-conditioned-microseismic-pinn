@@ -1,0 +1,13 @@
+{
+  "role": "post-hoc truth-fixed-x/y/origin-time depth ranking on spent development events, not full localization or independent validation",
+  "fixed_gate_protocol": "experiments/fmm_receiver_head_fixed_gate_protocol.json",
+  "fixed_gate_result": "experiments/fmm_receiver_head_fixed_gate_results.json",
+  "fixed_gate_result_sha256": "97f4ed1673dbdde46eccf3d6846f31ad2fd7d46223ce98d5dea31c456286bba3",
+  "depth_audit_protocol": "experiments/fmm_receiver_head_depth_audit_protocol.json",
+  "depth_audit_result": "experiments/fmm_receiver_head_depth_audit_results.json",
+  "depth_audit_result_sha256": "0c5bee45e9131329a77ef42e9cf556143a054aa0b66988a1d2a31b0e8e26db22",
+  "candidate_offset_m": [-280, -160, -80, 0, 80, 160, 280],
+  "evaluation": "for each FD depth event, fix x/y and origin time to its anchor (these are truth-based constraints); score all seven candidate depths with unshifted 25x1001 normalized waveform MSE=sum((prediction-FD)^2)/sum(FD^2); include learned vs FMM head with and without the previously fixed candidate-dependent approximate onset gate; no search optimizer or parameter tuning",
+  "result_file": "experiments/fmm_receiver_head_depth_objective_results.json",
+  "limits": "candidate depths and event sources were inspected previously; x/y and origin time fixed from truth; outcome cannot establish four-parameter localization, independent accuracy, source gradients through FMM or wave-equation fidelity"
+}

@@ -1,0 +1,583 @@
+{
+  "role": "post-hoc development test of a differentiable source-region mixture-of-experts",
+  "protocol_sha256": "e3f5cbd04426f0ff8b243c29975f206d79e0142c9db8a5c531c430bc97e2024f",
+  "base_checkpoint_sha256": "dab17cae1d3aae79c0b9efeac28aa5bae2f88748ad822d49d4b5bf87a73407b4",
+  "moe_checkpoint": "E:\\source-conditioned-microseismic-pinn\\outputs\\joint_moe_development_v2\\joint_moe.pth",
+  "moe_checkpoint_sha256": "ed3af0b16ecd80b93066c272a6bcb580c4bfb1ba9430a33f6f7b07a968400aab",
+  "summary": {
+    "event_count": 16,
+    "training_seconds": 19.172279399999752,
+    "base_mean_full_l2": 1.049325784319592,
+    "moe_mean_full_l2": 1.0481110788418273,
+    "base_mean_active_l2": 0.961424696279106,
+    "moe_mean_active_l2": 0.9619727547210759,
+    "relative_improvement_over_base": 0.0011576056701516617,
+    "moe_improves_count": 9,
+    "mean_gate_usage": [
+      0.31555148615007056,
+      0.2926238472282421,
+      0.39182439586147666
+    ],
+    "gate_collapsed": false,
+    "decision_gate_passed": false
+  },
+  "training_history": [
+    {
+      "update": 1,
+      "loss": 0.003180488245561719,
+      "data_loss": 0.003180488245561719,
+      "gate_balance": 0.0,
+      "mean_gate": [
+        0.3333333432674408,
+        0.3333333432674408,
+        0.3333333432674408
+      ]
+    },
+    {
+      "update": 300,
+      "loss": 0.003420526860281825,
+      "data_loss": 0.003419972490519285,
+      "gate_balance": 5.542980943573639e-05,
+      "mean_gate": [
+        0.3410221338272095,
+        0.3232594430446625,
+        0.33571839332580566
+      ]
+    },
+    {
+      "update": 600,
+      "loss": 0.0032967764418572187,
+      "data_loss": 0.003296614158898592,
+      "gate_balance": 1.6231348126893863e-05,
+      "mean_gate": [
+        0.3331087827682495,
+        0.3285151720046997,
+        0.3383760452270508
+      ]
+    },
+    {
+      "update": 900,
+      "loss": 0.003061057534068823,
+      "data_loss": 0.003059380454942584,
+      "gate_balance": 0.00016771552327554673,
+      "mean_gate": [
+        0.3506919741630554,
+        0.31959620118141174,
+        0.32971182465553284
+      ]
+    },
+    {
+      "update": 1200,
+      "loss": 0.0032215123064816,
+      "data_loss": 0.0032212219666689634,
+      "gate_balance": 2.9027472919551656e-05,
+      "mean_gate": [
+        0.3356245756149292,
+        0.3258945643901825,
+        0.3384808897972107
+      ]
+    },
+    {
+      "update": 1500,
+      "loss": 0.0030247799586504698,
+      "data_loss": 0.0030241115018725395,
+      "gate_balance": 6.684391701128334e-05,
+      "mean_gate": [
+        0.3234764635562897,
+        0.34349602460861206,
+        0.3330274820327759
+      ]
+    },
+    {
+      "update": 1800,
+      "loss": 0.003131353994831443,
+      "data_loss": 0.003130946774035692,
+      "gate_balance": 4.073003583471291e-05,
+      "mean_gate": [
+        0.3266066014766693,
+        0.3419080674648285,
+        0.3314853310585022
+      ]
+    },
+    {
+      "update": 2100,
+      "loss": 0.0030629856046289206,
+      "data_loss": 0.003061217488721013,
+      "gate_balance": 0.00017682158795651048,
+      "mean_gate": [
+        0.31459128856658936,
+        0.3413686156272888,
+        0.3440400958061218
+      ]
+    },
+    {
+      "update": 2400,
+      "loss": 0.0031841550953686237,
+      "data_loss": 0.0031827781349420547,
+      "gate_balance": 0.00013769202632829547,
+      "mean_gate": [
+        0.3495534658432007,
+        0.32218706607818604,
+        0.3282594680786133
+      ]
+    },
+    {
+      "update": 2700,
+      "loss": 0.003166664158925414,
+      "data_loss": 0.0031661048997193575,
+      "gate_balance": 5.593035166384652e-05,
+      "mean_gate": [
+        0.322801798582077,
+        0.33944207429885864,
+        0.33775612711906433
+      ]
+    },
+    {
+      "update": 3000,
+      "loss": 0.0031230857130140066,
+      "data_loss": 0.003122796304523945,
+      "gate_balance": 2.8930369808222167e-05,
+      "mean_gate": [
+        0.3328424096107483,
+        0.327004998922348,
+        0.3401525914669037
+      ]
+    }
+  ],
+  "events": [
+    {
+      "event": "test_01.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_01.npz",
+      "sha256": "063ddda11c1a73da3e870602f25968d41f5ecc74aadae580740947f1e54e4d41",
+      "source_m_s": [
+        4700.0,
+        4300.0,
+        620.0,
+        0.17000000178813934
+      ],
+      "mean_gate": [
+        0.2055785059928894,
+        0.48705342411994934,
+        0.30725887417793274
+      ],
+      "base": {
+        "full_l2": 0.9246741979947009,
+        "active_l2": 0.8384416962445002,
+        "zero_lag_correlation": 0.4241884903397775
+      },
+      "moe": {
+        "full_l2": 0.9255940920061453,
+        "active_l2": 0.8403367278811148,
+        "zero_lag_correlation": 0.4220878129433146
+      },
+      "moe_improves": false
+    },
+    {
+      "event": "test_02.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_02.npz",
+      "sha256": "c39165b10f1e23a90f628727740d7edb2d07f90aef072a7438b2fe9173b1af75",
+      "source_m_s": [
+        5400.0,
+        10800.0,
+        760.0,
+        0.28999999165534973
+      ],
+      "mean_gate": [
+        0.06981737166643143,
+        0.3251957893371582,
+        0.6052045822143555
+      ],
+      "base": {
+        "full_l2": 0.9282557965259896,
+        "active_l2": 0.8830078348479711,
+        "zero_lag_correlation": 0.37210388182975435
+      },
+      "moe": {
+        "full_l2": 0.9280218465059422,
+        "active_l2": 0.8846081293637228,
+        "zero_lag_correlation": 0.37293782389363633
+      },
+      "moe_improves": true
+    },
+    {
+      "event": "test_03.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_03.npz",
+      "sha256": "d94aaae8c6ecc1801d6798f9798424143b03ea6039fa33af8f55c94ca828b97e",
+      "source_m_s": [
+        7200.0,
+        13200.0,
+        1180.0,
+        0.23000000417232513
+      ],
+      "mean_gate": [
+        0.34463924169540405,
+        0.06863944977521896,
+        0.5868589878082275
+      ],
+      "base": {
+        "full_l2": 1.0769132531198424,
+        "active_l2": 1.0057218695102987,
+        "zero_lag_correlation": 0.19593162593923782
+      },
+      "moe": {
+        "full_l2": 1.0732799627228906,
+        "active_l2": 1.0049433629162254,
+        "zero_lag_correlation": 0.19759625070624665
+      },
+      "moe_improves": true
+    },
+    {
+      "event": "test_04.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_04.npz",
+      "sha256": "1b36b142d4fdd38d5dd8d9618dcdc3b5ddd285c036dbfcf73058b01c79069797",
+      "source_m_s": [
+        8600.0,
+        6200.0,
+        520.0,
+        0.4099999964237213
+      ],
+      "mean_gate": [
+        0.03931855037808418,
+        0.6191368103027344,
+        0.34168538451194763
+      ],
+      "base": {
+        "full_l2": 1.4259286704275456,
+        "active_l2": 1.3338334284484787,
+        "zero_lag_correlation": -0.16304410281180198
+      },
+      "moe": {
+        "full_l2": 1.417561944989574,
+        "active_l2": 1.332655832901812,
+        "zero_lag_correlation": -0.16475388538711094
+      },
+      "moe_improves": true
+    },
+    {
+      "event": "test_05.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_05.npz",
+      "sha256": "c6747ace6bd0cab4a79218f7b6a58e211dcda01f5d3425b7f8b86197a7cb306e",
+      "source_m_s": [
+        9800.0,
+        3600.0,
+        1150.0,
+        0.1599999964237213
+      ],
+      "mean_gate": [
+        0.843761146068573,
+        0.052901387214660645,
+        0.10326580703258514
+      ],
+      "base": {
+        "full_l2": 0.8363298904563596,
+        "active_l2": 0.7723567277512823,
+        "zero_lag_correlation": 0.5650927599342589
+      },
+      "moe": {
+        "full_l2": 0.8392100167753712,
+        "active_l2": 0.7724836852484629,
+        "zero_lag_correlation": 0.5638593606357708
+      },
+      "moe_improves": false
+    },
+    {
+      "event": "test_06.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_06.npz",
+      "sha256": "b5dc551f9d625f08f38d34dcbc2e05895bf2cc1a057783e1cde834224bc9c2bb",
+      "source_m_s": [
+        11800.0,
+        8800.0,
+        930.0,
+        0.30000001192092896
+      ],
+      "mean_gate": [
+        0.43073397874832153,
+        0.13158711791038513,
+        0.4375688433647156
+      ],
+      "base": {
+        "full_l2": 0.6896381597142898,
+        "active_l2": 0.5974527032149942,
+        "zero_lag_correlation": 0.7560878184929745
+      },
+      "moe": {
+        "full_l2": 0.6917709183772469,
+        "active_l2": 0.5993412127779696,
+        "zero_lag_correlation": 0.7558511407665094
+      },
+      "moe_improves": false
+    },
+    {
+      "event": "test_07.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_07.npz",
+      "sha256": "837736d30fd7bbb48ce9cf4452b841baf229e0481c6bbd6fd1ee23be6b675109",
+      "source_m_s": [
+        13200.0,
+        11200.0,
+        380.0,
+        0.27000001072883606
+      ],
+      "mean_gate": [
+        0.004424911458045244,
+        0.4940645396709442,
+        0.5016981959342957
+      ],
+      "base": {
+        "full_l2": 0.9705172342206773,
+        "active_l2": 0.9283543241945235,
+        "zero_lag_correlation": 0.28515329942534695
+      },
+      "moe": {
+        "full_l2": 0.9705209958791441,
+        "active_l2": 0.9294594369206661,
+        "zero_lag_correlation": 0.28427128180554523
+      },
+      "moe_improves": false
+    },
+    {
+      "event": "test_08.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_08.npz",
+      "sha256": "df432f3c2dfebc6cb0ae3c0f8bf400bd5d608feb5543868a511578076cc149c1",
+      "source_m_s": [
+        3800.0,
+        12800.0,
+        1320.0,
+        0.3799999952316284
+      ],
+      "mean_gate": [
+        0.3008078336715698,
+        0.10766027867794037,
+        0.5915899872779846
+      ],
+      "base": {
+        "full_l2": 0.7914835704283051,
+        "active_l2": 0.7109756711198524,
+        "zero_lag_correlation": 0.6636925292231889
+      },
+      "moe": {
+        "full_l2": 0.7881016675952546,
+        "active_l2": 0.7108595991178379,
+        "zero_lag_correlation": 0.6648347574205613
+      },
+      "moe_improves": true
+    },
+    {
+      "event": "test_01.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_01.npz",
+      "sha256": "1d44a3788ce53a9f1435b142813d1011a9169b2b987e9f7bf56b06ee19718539",
+      "source_m_s": [
+        2600.0,
+        2800.0,
+        300.0,
+        0.20999999344348907
+      ],
+      "mean_gate": [
+        0.04242505878210068,
+        0.7404475212097168,
+        0.21683426201343536
+      ],
+      "base": {
+        "full_l2": 1.2937447255851962,
+        "active_l2": 1.2466159718110374,
+        "zero_lag_correlation": -0.11562498200707694
+      },
+      "moe": {
+        "full_l2": 1.2925113346559898,
+        "active_l2": 1.2471597931009193,
+        "zero_lag_correlation": -0.11721211231525447
+      },
+      "moe_improves": true
+    },
+    {
+      "event": "test_02.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_02.npz",
+      "sha256": "aa56b60ef6c1c9c633db435236060c5b883fc86b339b2839cd41a76fdbffe416",
+      "source_m_s": [
+        13600.0,
+        3600.0,
+        1230.0,
+        0.3199999928474426
+      ],
+      "mean_gate": [
+        0.7257261276245117,
+        0.09984874725341797,
+        0.17436227202415466
+      ],
+      "base": {
+        "full_l2": 0.9709180674477086,
+        "active_l2": 0.7798143290942811,
+        "zero_lag_correlation": 0.5086414633752067
+      },
+      "moe": {
+        "full_l2": 0.9795200592232352,
+        "active_l2": 0.7834456497537476,
+        "zero_lag_correlation": 0.5064702343057709
+      },
+      "moe_improves": false
+    },
+    {
+      "event": "test_03.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_03.npz",
+      "sha256": "e2b30f94c909b7a750789632257f338d20942ef4a524b87dc00a344635a00f67",
+      "source_m_s": [
+        3400.0,
+        13900.0,
+        980.0,
+        0.14000000059604645
+      ],
+      "mean_gate": [
+        0.032225582748651505,
+        0.2514727711677551,
+        0.7161244750022888
+      ],
+      "base": {
+        "full_l2": 1.3056565341785302,
+        "active_l2": 1.08999477749619,
+        "zero_lag_correlation": 0.19910687748460834
+      },
+      "moe": {
+        "full_l2": 1.2970273039283906,
+        "active_l2": 1.0900578086850126,
+        "zero_lag_correlation": 0.2000737590981966
+      },
+      "moe_improves": true
+    },
+    {
+      "event": "test_04.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_04.npz",
+      "sha256": "28905a6d02cccff650b0144a39b1d188ca9a63495c8827b6f9882689211b42f1",
+      "source_m_s": [
+        12900.0,
+        13700.0,
+        420.0,
+        0.3700000047683716
+      ],
+      "mean_gate": [
+        0.0026654598768800497,
+        0.3442142903804779,
+        0.6532599329948425
+      ],
+      "base": {
+        "full_l2": 1.1530184564728019,
+        "active_l2": 1.1054334507422745,
+        "zero_lag_correlation": -0.05691445334761172
+      },
+      "moe": {
+        "full_l2": 1.1511712945476547,
+        "active_l2": 1.105764837694514,
+        "zero_lag_correlation": -0.0581679019030183
+      },
+      "moe_improves": true
+    },
+    {
+      "event": "test_05.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_05.npz",
+      "sha256": "7a2078e42bb79670e46fd63e98b990bfa1e945e9c98c72e26febca1d6087df17",
+      "source_m_s": [
+        6300.0,
+        6300.0,
+        1380.0,
+        0.25
+      ],
+      "mean_gate": [
+        0.9622572064399719,
+        0.005569546949118376,
+        0.032394908368587494
+      ],
+      "base": {
+        "full_l2": 1.1492967969679473,
+        "active_l2": 1.0560696232671947,
+        "zero_lag_correlation": 0.05497993744296298
+      },
+      "moe": {
+        "full_l2": 1.1508829800123803,
+        "active_l2": 1.0578032488195943,
+        "zero_lag_correlation": 0.05471771334688439
+      },
+      "moe_improves": false
+    },
+    {
+      "event": "test_06.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_06.npz",
+      "sha256": "bf510d8b084ff360ba9f7a36feb27dad8d1436bb5610d205aa2e9658754a4639",
+      "source_m_s": [
+        10400.0,
+        10400.0,
+        220.0,
+        0.3100000023841858
+      ],
+      "mean_gate": [
+        0.0018719738582149148,
+        0.6203624606132507,
+        0.37758734822273254
+      ],
+      "base": {
+        "full_l2": 1.1149664522230696,
+        "active_l2": 1.046248174791095,
+        "zero_lag_correlation": -0.06536751760086783
+      },
+      "moe": {
+        "full_l2": 1.1125915657626584,
+        "active_l2": 1.0449520330990654,
+        "zero_lag_correlation": -0.06357611424373202
+      },
+      "moe_improves": true
+    },
+    {
+      "event": "test_07.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_07.npz",
+      "sha256": "faa85f2df753bbcf96cdba3639427c0943d7fcdcb72e1cfd0ed67a98e77fd957",
+      "source_m_s": [
+        7600.0,
+        4600.0,
+        880.0,
+        0.1899999976158142
+      ],
+      "mean_gate": [
+        0.5266551971435547,
+        0.21794584393501282,
+        0.2553337812423706
+      ],
+      "base": {
+        "full_l2": 0.9996996630591156,
+        "active_l2": 0.9091096656622185,
+        "zero_lag_correlation": 0.32078019030429056
+      },
+      "moe": {
+        "full_l2": 1.00081769935825,
+        "active_l2": 0.9102023857658315,
+        "zero_lag_correlation": 0.3200013051027483
+      },
+      "moe_improves": false
+    },
+    {
+      "event": "test_08.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_08.npz",
+      "sha256": "8468027befcbb696a561f131bac172f9e93a52af2b6f6b381773f9957415fe2c",
+      "source_m_s": [
+        4700.0,
+        9400.0,
+        1120.0,
+        0.4000000059604645
+      ],
+      "mean_gate": [
+        0.5159156322479248,
+        0.11588157713413239,
+        0.36816269159317017
+      ],
+      "base": {
+        "full_l2": 1.158171080291393,
+        "active_l2": 1.0793648922695034,
+        "zero_lag_correlation": 0.1719550100911274
+      },
+      "moe": {
+        "full_l2": 1.1511935791291088,
+        "active_l2": 1.0774903314907176,
+        "zero_lag_correlation": 0.17307865124788968
+      },
+      "moe_improves": true
+    }
+  ],
+  "decision_rule": "Proceed only if the MoE lowers mean full-record L2 by at least 5% versus the frozen base and improves at least 9 of 16 historical records without gate collapse.",
+  "limits": "The 16 evaluation records were opened earlier. This one-seed, one-model, 5 Hz experiment is a structural development diagnostic and cannot be reported as independent validation, localization evidence or calibrated UQ."
+}

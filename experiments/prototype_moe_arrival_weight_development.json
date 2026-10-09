@@ -1,0 +1,468 @@
+{
+  "role": "development-only selection of arrival-loss weight",
+  "event_count": 15,
+  "fmm_spacing_m": 160.0,
+  "local_step_m": [
+    2400.0,
+    2400.0,
+    466.6666564941406
+  ],
+  "candidate_count_per_event": 27,
+  "hybrid_arrival_scale_s": 0.1,
+  "alphas": [
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "selected_alpha_by_development_location_error": 0.25,
+  "summary": {
+    "waveform": {
+      "mean_location_error_m": 2038.231673760288,
+      "mean_origin_time_error_s": 0.17036016484101613
+    },
+    "arrival": {
+      "mean_location_error_m": 584.2412689227882,
+      "mean_origin_time_error_s": 0.13659778460860253
+    },
+    "hybrid_0.1": {
+      "mean_location_error_m": 701.2173955697708,
+      "mean_origin_time_error_s": 0.15216416418552398
+    },
+    "hybrid_0.25": {
+      "mean_location_error_m": 572.215496749285,
+      "mean_origin_time_error_s": 0.14042867943644524
+    },
+    "hybrid_0.5": {
+      "mean_location_error_m": 584.2412689227882,
+      "mean_origin_time_error_s": 0.13659778460860253
+    },
+    "hybrid_1": {
+      "mean_location_error_m": 584.2412689227882,
+      "mean_origin_time_error_s": 0.13659778460860253
+    }
+  },
+  "events": [
+    {
+      "event": "test_01.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_01.npz",
+      "truth_source_m_s": [
+        4700.0,
+        4300.0,
+        620.0,
+        0.17000000178813934
+      ],
+      "fmm_start_m_s": [
+        4622.22216796875,
+        4222.22216796875,
+        270.370361328125
+      ],
+      "valid_picks": 22,
+      "waveform_location_error_m": 3413.845290365219,
+      "waveform_origin_time_error_s": 0.12000000104308128,
+      "arrival_location_error_m": 3286.202862150832,
+      "arrival_origin_time_error_s": 0.10734428465366364,
+      "hybrid_0.1_location_error_m": 3286.202862150832,
+      "hybrid_0.1_origin_time_error_s": 0.10734428465366364,
+      "hybrid_0.25_location_error_m": 3286.202862150832,
+      "hybrid_0.25_origin_time_error_s": 0.10734428465366364,
+      "hybrid_0.5_location_error_m": 3286.202862150832,
+      "hybrid_0.5_origin_time_error_s": 0.10734428465366364,
+      "hybrid_1_location_error_m": 3286.202862150832,
+      "hybrid_1_origin_time_error_s": 0.10734428465366364
+    },
+    {
+      "event": "test_02.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_02.npz",
+      "truth_source_m_s": [
+        5400.0,
+        10800.0,
+        760.0,
+        0.28999999165534973
+      ],
+      "fmm_start_m_s": [
+        5392.5927734375,
+        10711.111328125,
+        255.55555725097656
+      ],
+      "valid_picks": 22,
+      "waveform_location_error_m": 2311.4319366951913,
+      "waveform_origin_time_error_s": 0.23999999091029167,
+      "arrival_location_error_m": 96.86703760559071,
+      "arrival_origin_time_error_s": 0.12701046466827393,
+      "hybrid_0.1_location_error_m": 512.2697129573662,
+      "hybrid_0.1_origin_time_error_s": 0.1464143842458725,
+      "hybrid_0.25_location_error_m": 96.86703760559071,
+      "hybrid_0.25_origin_time_error_s": 0.12701046466827393,
+      "hybrid_0.5_location_error_m": 96.86703760559071,
+      "hybrid_0.5_origin_time_error_s": 0.12701046466827393,
+      "hybrid_1_location_error_m": 96.86703760559071,
+      "hybrid_1_origin_time_error_s": 0.12701046466827393
+    },
+    {
+      "event": "test_03.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_03.npz",
+      "truth_source_m_s": [
+        7200.0,
+        13200.0,
+        1180.0,
+        0.23000000417232513
+      ],
+      "fmm_start_m_s": [
+        7288.888671875,
+        13259.2587890625,
+        1018.5184936523438
+      ],
+      "valid_picks": 19,
+      "waveform_location_error_m": 323.3431529595327,
+      "waveform_origin_time_error_s": 0.14896603673696518,
+      "arrival_location_error_m": 323.3431529595327,
+      "arrival_origin_time_error_s": 0.14896603673696518,
+      "hybrid_0.1_location_error_m": 323.3431529595327,
+      "hybrid_0.1_origin_time_error_s": 0.14896603673696518,
+      "hybrid_0.25_location_error_m": 323.3431529595327,
+      "hybrid_0.25_origin_time_error_s": 0.14896603673696518,
+      "hybrid_0.5_location_error_m": 323.3431529595327,
+      "hybrid_0.5_origin_time_error_s": 0.14896603673696518,
+      "hybrid_1_location_error_m": 323.3431529595327,
+      "hybrid_1_origin_time_error_s": 0.14896603673696518
+    },
+    {
+      "event": "test_04.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_04.npz",
+      "truth_source_m_s": [
+        8600.0,
+        6200.0,
+        520.0,
+        0.4099999964237213
+      ],
+      "fmm_start_m_s": [
+        8444.4443359375,
+        6222.22216796875,
+        675.3086547851562
+      ],
+      "valid_picks": 23,
+      "waveform_location_error_m": 348.7623755501281,
+      "waveform_origin_time_error_s": 0.17325645685195923,
+      "arrival_location_error_m": 641.5175096398353,
+      "arrival_origin_time_error_s": 0.15194395184516907,
+      "hybrid_0.1_location_error_m": 348.7623755501281,
+      "hybrid_0.1_origin_time_error_s": 0.17325645685195923,
+      "hybrid_0.25_location_error_m": 348.7623755501281,
+      "hybrid_0.25_origin_time_error_s": 0.17325645685195923,
+      "hybrid_0.5_location_error_m": 641.5175096398353,
+      "hybrid_0.5_origin_time_error_s": 0.15194395184516907,
+      "hybrid_1_location_error_m": 641.5175096398353,
+      "hybrid_1_origin_time_error_s": 0.15194395184516907
+    },
+    {
+      "event": "test_05.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_05.npz",
+      "truth_source_m_s": [
+        9800.0,
+        3600.0,
+        1150.0,
+        0.1599999964237213
+      ],
+      "fmm_start_m_s": [
+        9851.8515625,
+        3481.4814453125,
+        1003.7036743164062
+      ],
+      "valid_picks": 21,
+      "waveform_location_error_m": 1632.5825409305357,
+      "waveform_origin_time_error_s": 0.10999999567866325,
+      "arrival_location_error_m": 345.5031125133589,
+      "arrival_origin_time_error_s": 0.10999999567866325,
+      "hybrid_0.1_location_error_m": 345.5031125133589,
+      "hybrid_0.1_origin_time_error_s": 0.10999999567866325,
+      "hybrid_0.25_location_error_m": 345.5031125133589,
+      "hybrid_0.25_origin_time_error_s": 0.10999999567866325,
+      "hybrid_0.5_location_error_m": 345.5031125133589,
+      "hybrid_0.5_origin_time_error_s": 0.10999999567866325,
+      "hybrid_1_location_error_m": 345.5031125133589,
+      "hybrid_1_origin_time_error_s": 0.10999999567866325
+    },
+    {
+      "event": "test_06.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_06.npz",
+      "truth_source_m_s": [
+        11800.0,
+        8800.0,
+        930.0,
+        0.30000001192092896
+      ],
+      "fmm_start_m_s": [
+        11837.037109375,
+        8874.07421875,
+        776.543212890625
+      ],
+      "valid_picks": 22,
+      "waveform_location_error_m": 2384.7811252853976,
+      "waveform_origin_time_error_s": 0.0973733514547348,
+      "arrival_location_error_m": 323.97398123535805,
+      "arrival_origin_time_error_s": 0.10846495628356934,
+      "hybrid_0.1_location_error_m": 174.37810316725722,
+      "hybrid_0.1_origin_time_error_s": 0.1529708355665207,
+      "hybrid_0.25_location_error_m": 174.37810316725722,
+      "hybrid_0.25_origin_time_error_s": 0.1529708355665207,
+      "hybrid_0.5_location_error_m": 323.97398123535805,
+      "hybrid_0.5_origin_time_error_s": 0.10846495628356934,
+      "hybrid_1_location_error_m": 323.97398123535805,
+      "hybrid_1_origin_time_error_s": 0.10846495628356934
+    },
+    {
+      "event": "test_07.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_07.npz",
+      "truth_source_m_s": [
+        13200.0,
+        11200.0,
+        380.0,
+        0.27000001072883606
+      ],
+      "fmm_start_m_s": [
+        13311.111328125,
+        11200.0,
+        603.7036743164062
+      ],
+      "valid_picks": 16,
+      "waveform_location_error_m": 699.2545767015239,
+      "waveform_origin_time_error_s": 0.1386893093585968,
+      "arrival_location_error_m": 699.2545767015239,
+      "arrival_origin_time_error_s": 0.1386893093585968,
+      "hybrid_0.1_location_error_m": 699.2545767015239,
+      "hybrid_0.1_origin_time_error_s": 0.1386893093585968,
+      "hybrid_0.25_location_error_m": 699.2545767015239,
+      "hybrid_0.25_origin_time_error_s": 0.1386893093585968,
+      "hybrid_0.5_location_error_m": 699.2545767015239,
+      "hybrid_0.5_origin_time_error_s": 0.1386893093585968,
+      "hybrid_1_location_error_m": 699.2545767015239,
+      "hybrid_1_origin_time_error_s": 0.1386893093585968
+    },
+    {
+      "event": "test_08.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_08.npz",
+      "truth_source_m_s": [
+        3800.0,
+        12800.0,
+        1320.0,
+        0.3799999952316284
+      ],
+      "fmm_start_m_s": [
+        3688.888916015625,
+        12874.07421875,
+        848.1481323242188
+      ],
+      "valid_picks": 16,
+      "waveform_location_error_m": 2749.5142066277435,
+      "waveform_origin_time_error_s": 0.32999999448657036,
+      "arrival_location_error_m": 133.6396234884125,
+      "arrival_origin_time_error_s": 0.17337164282798767,
+      "hybrid_0.1_location_error_m": 1205.1442067581381,
+      "hybrid_0.1_origin_time_error_s": 0.32999999448657036,
+      "hybrid_0.25_location_error_m": 133.6396234884125,
+      "hybrid_0.25_origin_time_error_s": 0.17337164282798767,
+      "hybrid_0.5_location_error_m": 133.6396234884125,
+      "hybrid_0.5_origin_time_error_s": 0.17337164282798767,
+      "hybrid_1_location_error_m": 133.6396234884125,
+      "hybrid_1_origin_time_error_s": 0.17337164282798767
+    },
+    {
+      "event": "test_01.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_01.npz",
+      "truth_source_m_s": [
+        2600.0,
+        2800.0,
+        300.0,
+        0.20999999344348907
+      ],
+      "fmm_start_m_s": [
+        2385.185302734375,
+        2259.25927734375,
+        803.7036743164062
+      ],
+      "valid_picks": 13,
+      "waveform_location_error_m": 2017.5634938976893,
+      "waveform_origin_time_error_s": 0.09632747620344162,
+      "arrival_location_error_m": 1131.4435564552928,
+      "arrival_origin_time_error_s": 0.15999999269843102,
+      "hybrid_0.1_location_error_m": 1131.4435564552928,
+      "hybrid_0.1_origin_time_error_s": 0.15999999269843102,
+      "hybrid_0.25_location_error_m": 1131.4435564552928,
+      "hybrid_0.25_origin_time_error_s": 0.15999999269843102,
+      "hybrid_0.5_location_error_m": 1131.4435564552928,
+      "hybrid_0.5_origin_time_error_s": 0.15999999269843102,
+      "hybrid_1_location_error_m": 1131.4435564552928,
+      "hybrid_1_origin_time_error_s": 0.15999999269843102
+    },
+    {
+      "event": "test_02.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_02.npz",
+      "truth_source_m_s": [
+        13600.0,
+        3600.0,
+        1230.0,
+        0.3199999928474426
+      ],
+      "fmm_start_m_s": [
+        13814.814453125,
+        3511.111083984375,
+        1237.0369873046875
+      ],
+      "valid_picks": 15,
+      "waveform_location_error_m": 2708.336277765691,
+      "waveform_origin_time_error_s": 0.23578432202339172,
+      "arrival_location_error_m": 490.7150286983606,
+      "arrival_origin_time_error_s": 0.2433115467429161,
+      "hybrid_0.1_location_error_m": 490.7150286983606,
+      "hybrid_0.1_origin_time_error_s": 0.2433115467429161,
+      "hybrid_0.25_location_error_m": 490.7150286983606,
+      "hybrid_0.25_origin_time_error_s": 0.2433115467429161,
+      "hybrid_0.5_location_error_m": 490.7150286983606,
+      "hybrid_0.5_origin_time_error_s": 0.2433115467429161,
+      "hybrid_1_location_error_m": 490.7150286983606,
+      "hybrid_1_origin_time_error_s": 0.2433115467429161
+    },
+    {
+      "event": "test_03.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_03.npz",
+      "truth_source_m_s": [
+        3400.0,
+        13900.0,
+        980.0,
+        0.14000000059604645
+      ],
+      "fmm_start_m_s": [
+        3200.0,
+        14000.0,
+        724.6913452148438
+      ],
+      "valid_picks": 15,
+      "waveform_location_error_m": 2317.5953810138726,
+      "waveform_origin_time_error_s": 0.08999999985098839,
+      "arrival_location_error_m": 307.6885077260518,
+      "arrival_origin_time_error_s": 0.08999999985098839,
+      "hybrid_0.1_location_error_m": 755.80973141184,
+      "hybrid_0.1_origin_time_error_s": 0.08999999985098839,
+      "hybrid_0.25_location_error_m": 307.6885077260518,
+      "hybrid_0.25_origin_time_error_s": 0.08999999985098839,
+      "hybrid_0.5_location_error_m": 307.6885077260518,
+      "hybrid_0.5_origin_time_error_s": 0.08999999985098839,
+      "hybrid_1_location_error_m": 307.6885077260518,
+      "hybrid_1_origin_time_error_s": 0.08999999985098839
+    },
+    {
+      "event": "test_05.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_05.npz",
+      "truth_source_m_s": [
+        6300.0,
+        6300.0,
+        1380.0,
+        0.25
+      ],
+      "fmm_start_m_s": [
+        6222.22216796875,
+        6281.4814453125,
+        1303.7037353515625
+      ],
+      "valid_picks": 24,
+      "waveform_location_error_m": 2420.971398121527,
+      "waveform_origin_time_error_s": 0.19999999925494194,
+      "arrival_location_error_m": 144.19545077149718,
+      "arrival_origin_time_error_s": 0.1320170909166336,
+      "hybrid_0.1_location_error_m": 144.19545077149718,
+      "hybrid_0.1_origin_time_error_s": 0.1320170909166336,
+      "hybrid_0.25_location_error_m": 144.19545077149718,
+      "hybrid_0.25_origin_time_error_s": 0.1320170909166336,
+      "hybrid_0.5_location_error_m": 144.19545077149718,
+      "hybrid_0.5_origin_time_error_s": 0.1320170909166336,
+      "hybrid_1_location_error_m": 144.19545077149718,
+      "hybrid_1_origin_time_error_s": 0.1320170909166336
+    },
+    {
+      "event": "test_06.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_06.npz",
+      "truth_source_m_s": [
+        10400.0,
+        10400.0,
+        220.0,
+        0.3100000023841858
+      ],
+      "fmm_start_m_s": [
+        10340.7412109375,
+        10385.185546875,
+        100.0
+      ],
+      "valid_picks": 20,
+      "waveform_location_error_m": 352.00684889433694,
+      "waveform_origin_time_error_s": 0.08500553667545319,
+      "arrival_location_error_m": 352.00684889433694,
+      "arrival_origin_time_error_s": 0.08500553667545319,
+      "hybrid_0.1_location_error_m": 352.00684889433694,
+      "hybrid_0.1_origin_time_error_s": 0.08500553667545319,
+      "hybrid_0.25_location_error_m": 352.00684889433694,
+      "hybrid_0.25_origin_time_error_s": 0.08500553667545319,
+      "hybrid_0.5_location_error_m": 352.00684889433694,
+      "hybrid_0.5_origin_time_error_s": 0.08500553667545319,
+      "hybrid_1_location_error_m": 352.00684889433694,
+      "hybrid_1_origin_time_error_s": 0.08500553667545319
+    },
+    {
+      "event": "test_07.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_07.npz",
+      "truth_source_m_s": [
+        7600.0,
+        4600.0,
+        880.0,
+        0.1899999976158142
+      ],
+      "fmm_start_m_s": [
+        7481.4814453125,
+        4577.77783203125,
+        729.629638671875
+      ],
+      "valid_picks": 23,
+      "waveform_location_error_m": 3508.580805444703,
+      "waveform_origin_time_error_s": 0.13999999687075615,
+      "arrival_location_error_m": 338.5022888918178,
+      "arrival_origin_time_error_s": 0.1230577826499939,
+      "hybrid_0.1_location_error_m": 338.5022888918178,
+      "hybrid_0.1_origin_time_error_s": 0.1230577826499939,
+      "hybrid_0.25_location_error_m": 338.5022888918178,
+      "hybrid_0.25_origin_time_error_s": 0.1230577826499939,
+      "hybrid_0.5_location_error_m": 338.5022888918178,
+      "hybrid_0.5_origin_time_error_s": 0.1230577826499939,
+      "hybrid_1_location_error_m": 338.5022888918178,
+      "hybrid_1_origin_time_error_s": 0.1230577826499939
+    },
+    {
+      "event": "test_08.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_08.npz",
+      "truth_source_m_s": [
+        4700.0,
+        9400.0,
+        1120.0,
+        0.4000000059604645
+      ],
+      "fmm_start_m_s": [
+        4637.037109375,
+        9288.888671875,
+        729.629638671875
+      ],
+      "valid_picks": 21,
+      "waveform_location_error_m": 3384.9056961512247,
+      "waveform_origin_time_error_s": 0.3500000052154064,
+      "arrival_location_error_m": 148.76549611002392,
+      "arrival_origin_time_error_s": 0.1497841775417328,
+      "hybrid_0.1_location_error_m": 410.7299256652819,
+      "hybrid_0.1_origin_time_error_s": 0.14142921566963196,
+      "hybrid_0.25_location_error_m": 410.7299256652819,
+      "hybrid_0.25_origin_time_error_s": 0.14142921566963196,
+      "hybrid_0.5_location_error_m": 148.76549611002392,
+      "hybrid_0.5_origin_time_error_s": 0.1497841775417328,
+      "hybrid_1_location_error_m": 148.76549611002392,
+      "hybrid_1_origin_time_error_s": 0.1497841775417328
+    }
+  ],
+  "limits": "Alpha is selected only on these development events. The independent eight-event holdout must be evaluated once with the selected alpha and no retuning."
+}

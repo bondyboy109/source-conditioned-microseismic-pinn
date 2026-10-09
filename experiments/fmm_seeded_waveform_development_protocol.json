@@ -1,0 +1,18 @@
+{
+  "purpose": "post-hoc FMM-seeded waveform search development on eight already-inspected FD events",
+  "model_checkpoint": "outputs/cross_region_coverage_29_hybrid_1000/conditioned_5Hz.pth",
+  "model_sha256": "5f3a27f85d32e8385b2d9ae7e3eff056cc373e037fd4dcd074dc75b88b503184",
+  "fmm_estimates": "experiments/cross_region_fmm_baseline.json",
+  "fmm_velocity": "data/velocity/vp_model.npy",
+  "fmm_velocity_sha256": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+  "observations": "the original eight inspected cross_region_fmm/*.npz; no new FD data",
+  "spatial_offsets_m_each_axis": [-320, 0, 320],
+  "origin_time_grid_s": {"minimum": 0.05, "maximum": 0.5, "step": 0.01},
+  "fine_scoring": {"receiver_stride": 1, "time_stride": 4, "candidate_batch": 8,
+                   "normalization": "same full unstrided observation RMS as original inverse"},
+  "initialization": {"max_restarts": 12, "minimum_spatial_distance_m": 200,
+                     "rule": "one best-scoring origin time per spatial grid point, then keep spatially separated starts"},
+  "refinement": {"steps": 250, "adam_learning_rate_on_box_fractions": 0.0025,
+                 "bounds_m_s": [[2000, 14000], [2000, 14000], [100, 1500], [0.05, 0.5]]},
+  "interpretation": "FMM uses the known heterogeneous velocity and independently obtained first-arrival picks. This diagnostic is a hybrid FMM+PINN search, not a standalone PINN inversion or a fresh confirmation. Count 36.88 s stored FMM setup and 0.07--0.11 s per-event FMM search plus added waveform scoring/refinement. Do not adjust settings on these eight after seeing results."
+}

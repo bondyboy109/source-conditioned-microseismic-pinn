@@ -1,0 +1,41 @@
+{
+  "role": "prospective synthetic FD test after development-only picker and alpha selection",
+  "model_checkpoint": "outputs/prototype_moe_development/joint_moe_physics.pth",
+  "model_sha256": "3caad1791c7d22ef8d6a622152287c0f0cf9c83c427b798dd635f113452abbcc",
+  "velocity": "data/velocity/vp_model.npy",
+  "velocity_sha256": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+  "receivers": "data/observations/receiver_coords.npy",
+  "receivers_sha256": "5b50f714c585b338f40fc691645221cfc60198b6a27df3feb9e602c259f8aa12",
+  "fd_config": "data/observations/experiment_draft.json",
+  "development_groups": [
+    "data/observations/eikonal_independent",
+    "data/observations/eikonal_wide_search_independent"
+  ],
+  "picker_candidates": ["threshold_5pct", "robust_mad_6sigma"],
+  "alpha_candidates": [0.1, 0.25, 0.5, 1.0],
+  "arrival_scale_s": 0.1,
+  "min_valid_picks": 6,
+  "min_receiver_peak_fraction": 0.01,
+  "end_margin_s": 0.15,
+  "fmm_velocity_stride": 4,
+  "fmm_spacing_m": 160.0,
+  "coarse_grid": [6, 6, 4],
+  "local_step_m": [2400.0, 2400.0, 466.6666667],
+  "origin_bounds_s": [0.05, 0.5],
+  "source_bounds_m": [[2000.0, 14000.0], [2000.0, 14000.0], [100.0, 1500.0]],
+  "selection_rule": "On all 16 development records, rank picker/alpha pairs by fewest failures, then mean spatial error on successful records, then mean origin-time error. Each picker has a separately computed FMM baseline. Fix one pair before generating new FD events.",
+  "test_events": [
+    {"id": "fresh_01", "source_m_s": [3600.0, 5800.0, 480.0, 0.19]},
+    {"id": "fresh_02", "source_m_s": [12400.0, 4400.0, 1180.0, 0.33]},
+    {"id": "fresh_03", "source_m_s": [5500.0, 12500.0, 1400.0, 0.27]},
+    {"id": "fresh_04", "source_m_s": [9300.0, 9500.0, 280.0, 0.43]},
+    {"id": "fresh_05", "source_m_s": [11600.0, 11000.0, 700.0, 0.21]},
+    {"id": "fresh_06", "source_m_s": [2800.0, 9000.0, 1020.0, 0.37]},
+    {"id": "fresh_07", "source_m_s": [7500.0, 3500.0, 1250.0, 0.29]},
+    {"id": "fresh_08", "source_m_s": [13500.0, 12800.0, 350.0, 0.46]}
+  ],
+  "test_directory": "data/observations/fresh_arrival_test_20260927",
+  "development_result": "experiments/arrival_constrained_picker_development.json",
+  "test_result": "experiments/arrival_constrained_fresh_test_results.json",
+  "caveats": "All test events use the same velocity model, receiver layout and FD solver as development. This tests unseen source positions only, not unseen geology or field data. The alpha=0.1/0.25/0.5/1.0 sweep was previously viewed on another holdout, so even this prospective test is an exploratory confirmation rather than a pre-registered first-ever comparison."
+}

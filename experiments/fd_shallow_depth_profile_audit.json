@@ -1,0 +1,183 @@
+{
+  "role": "post-hoc fixed-horizontal FD depth scan on two inspected events",
+  "protocol_sha256": "b9dc92e35482be947dc531cc31e9581e10f9a323369783c7b64a407a9c50537f",
+  "grid_ranking_audit_sha256": "f9e04799db0a32153b2ce46b061bd1c41795600945cf4c4816609002e02fa18f",
+  "config_sha256": "8af2cdceeeb4f737a8582fb11a787f05306bf0c8b1560665fbca1b1a5628d02a",
+  "solver_sha256": "b5e638ab19a7bdc6b4db9f7c5955b318506c3ae768d9767bdd1bd78362621c28",
+  "device": "cuda",
+  "depths_m": [
+    100.0,
+    250.0,
+    400.0,
+    550.0,
+    800.0,
+    1100.0,
+    1500.0
+  ],
+  "template_runtime_seconds": 145.80761430000007,
+  "peak_cuda_memory_mib": 1646.43408203125,
+  "events": [
+    {
+      "id": "confirm_01_west_shallow",
+      "observation_sha256": "629b01e405f011825ad94e3982170944956dde2df584075328314150679b5442",
+      "truth_source_m_s_post_hoc": [
+        3100.0,
+        7200.0,
+        410.0,
+        0.18000000715255737
+      ],
+      "fixed_nearest_grid_xy_m": [
+        2000.0,
+        8000.0
+      ],
+      "scores": [
+        {
+          "depth_m": 100.0,
+          "location_error_m": 1395.026881461429,
+          "origin_time_s": 0.04999999999999999,
+          "lag_samples": -225,
+          "normalized_mse": 125.87710162587868,
+          "relative_l2": 11.219496496094585,
+          "shifted_prediction_to_observation_energy": 124.87308273030139
+        },
+        {
+          "depth_m": 250.0,
+          "location_error_m": 1369.5254652615993,
+          "origin_time_s": 0.04999999999999999,
+          "lag_samples": -225,
+          "normalized_mse": 23.53270491107795,
+          "relative_l2": 4.851051938608569,
+          "shifted_prediction_to_observation_energy": 22.591454809991973
+        },
+        {
+          "depth_m": 400.0,
+          "location_error_m": 1360.1838111078957,
+          "origin_time_s": 0.498,
+          "lag_samples": -1,
+          "normalized_mse": 6.051977816637938,
+          "relative_l2": 2.460076790801039,
+          "shifted_prediction_to_observation_energy": 6.215361164216822
+        },
+        {
+          "depth_m": 550.0,
+          "location_error_m": 1367.3331708109768,
+          "origin_time_s": 0.454,
+          "lag_samples": -23,
+          "normalized_mse": 3.9324355784756504,
+          "relative_l2": 1.9830369584240357,
+          "shifted_prediction_to_observation_energy": 3.907044919173702
+        },
+        {
+          "depth_m": 800.0,
+          "location_error_m": 1414.9558296992877,
+          "origin_time_s": 0.366,
+          "lag_samples": -67,
+          "normalized_mse": 3.2984784761524435,
+          "relative_l2": 1.8161713785192308,
+          "shifted_prediction_to_observation_energy": 2.8520217586757717
+        },
+        {
+          "depth_m": 1100.0,
+          "location_error_m": 1525.1557297535226,
+          "origin_time_s": 0.28,
+          "lag_samples": -110,
+          "normalized_mse": 1.559285074606147,
+          "relative_l2": 1.2487133676733613,
+          "shifted_prediction_to_observation_energy": 0.832226268403445
+        },
+        {
+          "depth_m": 1500.0,
+          "location_error_m": 1743.0146298869668,
+          "origin_time_s": 0.182,
+          "lag_samples": -159,
+          "normalized_mse": 1.3190919248629942,
+          "relative_l2": 1.148517272339861,
+          "shifted_prediction_to_observation_energy": 0.49626011699340805
+        }
+      ],
+      "profile_minimum_depth_m": 1500.0,
+      "profile_minimum_normalized_mse": 1.3190919248629942
+    },
+    {
+      "id": "confirm_05_center_shallow",
+      "observation_sha256": "c5bcb52a630e8e738c7951c9c44fb08eb3a2b89f4edde9cc1a072c792dc04da4",
+      "truth_source_m_s_post_hoc": [
+        8200.0,
+        8400.0,
+        300.0,
+        0.14000000059604645
+      ],
+      "fixed_nearest_grid_xy_m": [
+        8000.0,
+        8000.0
+      ],
+      "scores": [
+        {
+          "depth_m": 100.0,
+          "location_error_m": 489.89794855663564,
+          "origin_time_s": 0.276,
+          "lag_samples": -112,
+          "normalized_mse": 35.34820933684123,
+          "relative_l2": 5.945436008977073,
+          "shifted_prediction_to_observation_energy": 46.33790499343136
+        },
+        {
+          "depth_m": 250.0,
+          "location_error_m": 450.0,
+          "origin_time_s": 0.242,
+          "lag_samples": -129,
+          "normalized_mse": 7.289655285825746,
+          "relative_l2": 2.699936163287152,
+          "shifted_prediction_to_observation_energy": 12.703731578772446
+        },
+        {
+          "depth_m": 400.0,
+          "location_error_m": 458.257569495584,
+          "origin_time_s": 0.196,
+          "lag_samples": -152,
+          "normalized_mse": 0.6948555750699369,
+          "relative_l2": 0.8335799752092998,
+          "shifted_prediction_to_observation_energy": 2.5392271485575124
+        },
+        {
+          "depth_m": 550.0,
+          "location_error_m": 512.3475382979799,
+          "origin_time_s": 0.14999999999999997,
+          "lag_samples": -175,
+          "normalized_mse": 0.3280030415681392,
+          "relative_l2": 0.5727154979290671,
+          "shifted_prediction_to_observation_energy": 1.1157865970437717
+        },
+        {
+          "depth_m": 800.0,
+          "location_error_m": 670.820393249937,
+          "origin_time_s": 0.068,
+          "lag_samples": -216,
+          "normalized_mse": 0.33228637121115084,
+          "relative_l2": 0.5764428603176128,
+          "shifted_prediction_to_observation_energy": 0.876228330346744
+        },
+        {
+          "depth_m": 1100.0,
+          "location_error_m": 916.515138991168,
+          "origin_time_s": 0.14600000000000002,
+          "lag_samples": -177,
+          "normalized_mse": 1.1332367054212855,
+          "relative_l2": 1.064535910818083,
+          "shifted_prediction_to_observation_energy": 0.33440233862149193
+        },
+        {
+          "depth_m": 1500.0,
+          "location_error_m": 1280.6248474865697,
+          "origin_time_s": 0.5,
+          "lag_samples": 0,
+          "normalized_mse": 1.0803104313527039,
+          "relative_l2": 1.039379830164461,
+          "shifted_prediction_to_observation_energy": 0.12049562990737182
+        }
+      ],
+      "profile_minimum_depth_m": 550.0,
+      "profile_minimum_normalized_mse": 0.3280030415681392
+    }
+  ]
+}

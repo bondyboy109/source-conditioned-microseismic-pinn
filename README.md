@@ -1,135 +1,75 @@
-# Source-Conditioned PINN for Microseismic Source Imaging
+# Differentiable FMM-Aligned MoE for Microseismic Localization
 
-This repository implements a source-conditioned physics-informed neural
-network (PINN) for three-dimensional acoustic microseismic source inversion.
-The operator represents
+Code and experiment artifacts for **A Differentiable FMM-Aligned Mixture-of-Experts Interface for Microseismic Localization**, by Ruyun Tian and Xiaopeng Wu.
+[中文说明](README_zh.md) · [Experiment index](experiments/INDEX.md) · [Reproducibility limits](docs/PACKAGE_AUDIT.md) · [Large assets](https://github.com/bondyboy109/source-conditioned-microseismic-pinn/releases/tag/research-artifacts-2026-10-09)
 
-```text
-u_theta(x, y, z, t; xs, ys, zs, ts)
-```
+## Current method
 
-so source location and origin time enter the forward model explicitly. A
-single trained operator can evaluate candidate sources, and waveform-misfit
-gradients can update all four source parameters.
+The final implementation combines a receiver-supervised, source-conditioned waveform surrogate, reciprocal heterogeneous fast-marching (FMM) travel-time fields, differentiable trilinear interpolation in source coordinates, three jointly trained experts with a prototype gate, and a waveform–arrival hybrid localization objective. Source position and origin time explicitly affect the forward interface.
 
-## Status
+The final model is trained on receiver waveforms; it is not a PDE-only PINN. The repository name and original PINN modules are retained for provenance. Earlier fixed-source, physics-only, carrier, and transfer experiments are development/legacy audits; they do not independently validate the final interface.
 
-The source-conditioned implementation is complete and passes a one-step CUDA
-smoke test. Full multi-source validation is still in progress. Results from the
-earlier four-input implementation must not be interpreted as validation of the
-revised method.
+## Final archived comparison
 
-## Repository layout
+The registered experiment used 33 training sources, 16 development sources and 8 previously unused confirmation sources at 5 Hz, with known velocity. Each final observation has 25 receivers × 1001 samples, dt = 0.002 s and a 0–2 s window. The FD grid is 401 × 401 × 94 at 40 m spacing, with zero Dirichlet boundaries on all six faces and no absorbing layer. The FMM cache contains 25 reciprocal fields at 80 m spacing; FMM does not use a time step.
 
-```text
-.
-|-- source_conditioned_pinn.py       # network, PDE losses, checkpoints
-|-- train_source_conditioned_pinn.py # frequency-progressive training
-|-- invert_source_conditioned.py     # coarse search and local inversion
-|-- examples/
-|   `-- create_example_observation.py
-|-- legacy/                          # archived fixed-source implementation
-|-- data/README.md                   # required external data layout
-|-- outputs/.gitkeep                 # local outputs; contents are ignored
-|-- requirements.txt
-|-- environment.yml
-|-- CITATION.cff
-`-- README_zh.md
-```
+| Branch | Median location error (m) | Median origin-time error (s) | Location <500 m | Pipeline failures |
+|---|---:|---:|---:|---:|
+| Waveform-only | 2400.2 | 0.0923 | 0/8 | 0/8 |
+| Hybrid | 362.9 | 0.0352 | 5/8 | 0/8 |
+| FMM baseline | 276.8 | 0.0082 | 7/8 | 0/8 |
 
-## Installation
+All-event statistics include all eight estimates. Exceeding 500 m is an accuracy-threshold miss, not a pipeline failure. Waveform-only uses the same FMM-feature MoE and sets the arrival-loss weight to zero. Hybrid improves on waveform-only in all eight events, while the FMM baseline has lower overall errors. These results do not establish superior speed or accuracy over FMM, positive transfer gain, or generalization to field data.
 
-Python 3.10 and an NVIDIA GPU are recommended. Create an environment with
-Conda:
+The separate carrier ensemble uses M=5 (seeds 42, 7, 123, 2028, 4096). Its **nominal 95% ensemble-dispersion intervals** are uncalibrated and reflect initialization dispersion; their coverage does not validate uncertainty in the final three-expert MoE.
 
-```bash
-conda env create -f environment.yml
-conda activate source-conditioned-pinn
-```
+## Install
 
-Alternatively, install the packages in an existing PyTorch environment:
+Python 3.10 is the recorded environment. Install the appropriate PyTorch build for your hardware, then:
 
 ```bash
 python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
+python -m pytest -q
 ```
 
-Choose the PyTorch build that matches the local CUDA driver. See the official
-PyTorch installation page when a CUDA-specific wheel is required.
+The measured environment is in [docs/environment_snapshot.json](docs/environment_snapshot.json): RTX 4060 Laptop GPU, PyTorch 2.5.1+cu121 and CUDA 12.1. `environment.yml` is a convenience environment, not a guarantee of identical hardware or future dependency resolution. Some optional historical scripts need additional packages such as SciPy, ObsPy, segyio or tqdm; these are not required for the final replay.
 
-## Data preparation
+## Install large assets and replay
 
-Obtain the SEG/EAGE 3-D Overthrust model under its original distribution
-terms. Convert or reconstruct the velocity array and place it at:
-
-```text
-data/velocity/vp_model.npy
-```
-
-The expected physical domain is 20,000 m by 20,000 m by 4,650 m. The array must
-be a three-dimensional NumPy array in the same axis order used to generate the
-receiver data. See [data/README.md](data/README.md) for observation fields.
-
-## Smoke test
+Download the three ZIP attachments from the [artifact Release](https://github.com/bondyboy109/source-conditioned-microseismic-pinn/releases/tag/research-artifacts-2026-10-09) to a local folder. Keep them out of ordinary Git commits:
 
 ```bash
-python train_source_conditioned_pinn.py \
-  --velocity data/velocity/vp_model.npy \
-  --frequencies 5 --epochs 1 --n-phys 16 --n-ic 8 \
-  --n-bc-per-face 2 --save-every 1 --output outputs/smoke
+python scripts/install_release_assets.py --asset-dir /path/to/downloaded-assets
+python scripts/verify_package.py --require-assets
+python scripts/replay_confirmation.py --check-inputs
+python scripts/replay_confirmation.py --events 1
+python scripts/replay_confirmation.py
 ```
 
-The command should create `conditioned_5Hz.pth` and
-`training_summary.json`.
+The installer checks exact archive paths, file sizes and SHA-256. The final replay needs `receiver_fmm_fields_stride2.npy.zip`; the other two assets support transfer and geology audits. The cached replay does not require the external Overthrust velocity array. Original Overthrust exports are not redistributed; see [data/README.md](data/README.md).
 
-## Frequency-progressive training
+Replay outputs go to `outputs/reproduction/`, and existing outputs are never overwritten. This is a **current-version replay of archived events**, not a new independent confirmation. See the historical-source limitation below before interpreting reproducibility.
 
-```bash
-python train_source_conditioned_pinn.py \
-  --velocity data/velocity/vp_model.npy \
-  --frequencies 5 10 15 20 30 40 60 \
-  --epochs 2000 --n-phys 4096 --n-ic 2048 \
-  --n-bc-per-face 341 --save-every 200 \
-  --output outputs/source_conditioned
-```
+## Files
 
-This is a long GPU run. Record any reduced batch sizes in publications rather
-than reporting the defaults.
+- `traveltime_aligned_moe.py`: final travel-time interpolator and MoE.
+- `examples/run_traveltime_aligned_moe_development.py`: registered receiver-supervised training.
+- `examples/run_traveltime_aligned_moe_localization_current.py`: available current localization runner.
+- `scripts/replay_confirmation.py`: safe replay entry point using current functions.
+- `experiments/`: original protocols, JSON results and reports; [INDEX.md](experiments/INDEX.md) distinguishes evidence roles.
+- `outputs/`: selected small checkpoints and metadata; `data/observations/`: selected synthetic observations.
+- `docs/figures/`: eight current experiment figures.
+- `tests/`: numerical/interface checks; `legacy/`: original fixed-source code.
 
-## Source inversion
+Training uses seed 3101, three experts with four hidden layers of width 128 and SiLU, 153228 trainable parameters, 3000 Adam updates and learning rate 3e-4. Full settings, source lists and receiver coordinates remain in the protocols, checkpoints and observation archives. The original training entry point can write its recorded experiment output paths; run new training in a separate checkout and preserve archived results.
 
-An observation archive must contain `data`, `times`, and `receiver_coords`.
-`source_truth` is optional for inference and required for error reporting.
+## Provenance limitation
 
-```bash
-python invert_source_conditioned.py \
-  outputs/source_conditioned/conditioned_60Hz.pth \
-  data/observations/event_01.npz \
-  --output outputs/source_conditioned/event_01.json
-```
+Three historical protocols record runner SHA-256 `add81f…`, whose source has not been recovered. The available runner is `174a5…`; it must not be labelled as that historical frozen implementation. Two stress/velocity-bias protocols also retain an earlier confirmation-result hash. Original scripts, protocols and results are preserved byte-for-byte rather than retroactively changing their records. [docs/core_hash_audit.json](docs/core_hash_audit.json) and [experiments/protocol_hash_resolution.json](experiments/protocol_hash_resolution.json) list these differences.
 
-The result reports the coarse and refined source, runtime, errors when truth is
-available, and the waveform-loss gradient with respect to
-`(xs, ys, zs, ts)`.
+Use `reliability_adaptive_fusion_results_v2.json`; the annotated `_legacy.json` is superseded. The package integrity manifest is a current distribution checksum list, not a historical experimental protocol. Older audit reports reflect their original dates; use the current package audit for distribution status.
 
-Only load checkpoints created by this project or another trusted source.
-PyTorch checkpoints can contain pickled Python objects.
+## License and access
 
-## Validation required for scientific claims
-
-Use independent finite-difference observations for multiple held-out sources.
-Report component errors, location error, origin-time error, waveform error,
-runtime, and failure rate. Compare against travel-time localization, matched FD
-waveform inversion, and the archived average-velocity shift. Noise experiments
-must use multiple realizations at each SNR.
-
-## Legacy code
-
-The files under `legacy/` reproduce earlier workflow components. In particular,
-`source_inversion_legacy.py` uses a fixed-source/four-input interface and an
-average-velocity approximation. It is retained only for audit and negative
-control experiments.
-
-## License
-
-No reuse license has been selected yet. Add an appropriate `LICENSE` file
-before advertising reuse permissions.
+No software reuse license has been selected. This snapshot does not grant MIT or other license permissions. Repository visibility is controlled by the owner; a private repository and its Release assets require access. Citation does not make restricted original data redistributable.

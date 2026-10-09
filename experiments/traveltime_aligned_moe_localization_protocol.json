@@ -1,0 +1,59 @@
+{
+  "purpose": "registered development-only localization comparison of waveform-only and FMM-arrival-constrained objectives for the frozen traveltime-aligned MoE",
+  "protocol_written_before_localization": true,
+  "model_checkpoint": "outputs/traveltime_aligned_moe_development/traveltime_aligned_moe.pth",
+  "model_checkpoint_sha256": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+  "forward_development_result": "experiments/traveltime_aligned_moe_development_results.json",
+  "forward_development_result_sha256": "fa732151931737d98b11b047f68bbe2e43405bd0506f17dea0b30344ae1d6515",
+  "receiver_fmm_fields": "outputs/traveltime_aligned_moe_development/receiver_fmm_fields_stride2.npy",
+  "receiver_fmm_fields_sha256": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",
+  "development_sets": [
+    "data/observations/eikonal_independent",
+    "data/observations/eikonal_wide_search_independent"
+  ],
+  "development_event_count": 16,
+  "excluded_confirmation_directory": "data/observations/source_conditioned_ensemble_confirmation",
+  "source_bounds_m_s": [
+    [2000.0, 14000.0],
+    [2000.0, 14000.0],
+    [100.0, 1500.0],
+    [0.05, 0.50]
+  ],
+  "search": {
+    "coarse_grid_xyzt": [11, 11, 8, 6],
+    "coarse_receiver_stride": 2,
+    "coarse_time_stride": 8,
+    "candidate_batch": 64,
+    "restarts": 5,
+    "minimum_start_separation_m": 200.0,
+    "refine_receiver_stride": 1,
+    "refine_time_stride": 4,
+    "refine_steps": 250,
+    "refine_adam_learning_rate_on_box_fractions": 0.0025
+  },
+  "arrival_constraint": {
+    "picker": "robust_mad_6sigma",
+    "minimum_valid_picks": 6,
+    "minimum_receiver_peak_fraction_of_record": 0.01,
+    "last_record_s_excluded_for_pick": 0.15,
+    "development_bias_file": "experiments/arrival_bias_development_results.json",
+    "development_bias_file_sha256": "b41f0fee568bf8fc9379181a86345fab3ab733d28a250eb8f3d6fee762583a50",
+    "pick_bias_s": -0.26279182618600316,
+    "correction": "corrected_pick = raw_pick - pick_bias_s",
+    "arrival_scale_s": 0.10,
+    "hybrid_weight": 0.25
+  },
+  "normalization": "observed and predicted waveforms are divided by each event's full unstrided RMS; the same RMS is fixed across candidates",
+  "development_gates": {
+    "all_events_have_at_least_six_valid_picks": true,
+    "hybrid_median_location_error_m_below": 750.0,
+    "hybrid_median_origin_time_error_s_below": 0.10,
+    "hybrid_median_location_not_worse_than_waveform_only": true,
+    "hybrid_location_improves_events_at_least": 9,
+    "hybrid_refinement_moves_spatially_by_25m_events_at_least": 12
+  },
+  "output_result": "experiments/traveltime_aligned_moe_localization_results.json",
+  "output_report": "experiments/traveltime_aligned_moe_localization_results.md",
+  "decision_rule": "Use all sixteen development events and report every gate. Do not inspect or use the eight-event ensemble confirmation. Proceed to a new prospective confirmation only if all localization gates pass without changing this checkpoint or protocol.",
+  "limitations": "These sixteen source positions already served as forward-model development data. The comparison is a development audit, not independent confirmation. It uses one noise-free 5-Hz synthetic Overthrust model, one receiver geometry, known velocity, and a previously developed picker-bias correction."
+}

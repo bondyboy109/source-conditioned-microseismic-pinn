@@ -1,0 +1,383 @@
+{
+  "run": {
+    "device": "cuda",
+    "torch_version": "2.5.1+cu121",
+    "numpy_version": "2.2.6",
+    "seed": 42,
+    "parameter_count": 67458,
+    "frozen_parameter_count": 0,
+    "n_phys": 256,
+    "n_ic": 128,
+    "n_bc_per_face": 16,
+    "learning_rate": 1e-05,
+    "hidden_dim": 128,
+    "num_layers": 5,
+    "architecture": "travel_time_carrier",
+    "reference_velocity_m_s": 3500.0,
+    "reference_velocity_override": false,
+    "distance_core_m": 20.0,
+    "ray_travel_time": false,
+    "ray_samples": null,
+    "eikonal_checkpoint": null,
+    "wavefield_scale": 1e-05,
+    "hard_initial": false,
+    "source_near_fraction": 0.25,
+    "source_exact_fraction": 0.0,
+    "source_spatial_jitter_sigma": 2.0,
+    "source_temporal_half_width_periods": 2.0,
+    "receiver_observations": [
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_01_0to2s.npz",
+        "sha256": "cd8890778ae2b06b210ed17ceaef9de32914d05b93ab000a24203475b29d5beb",
+        "source_truth": [
+          3500.0,
+          4000.0,
+          500.0,
+          0.11999999731779099
+        ],
+        "frequency_hz": 5.0,
+        "rms": 4.4652882288311716e-07,
+        "active_sample_count": 3288
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_02_0to2s.npz",
+        "sha256": "ebc96342f62dd24d9b22b3566f29e5639dac703f18c3ef39205c0ef2591db7c1",
+        "source_truth": [
+          11500.0,
+          4000.0,
+          900.0,
+          0.2800000011920929
+        ],
+        "frequency_hz": 5.0,
+        "rms": 6.803769943874341e-07,
+        "active_sample_count": 2271
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_03_0to2s.npz",
+        "sha256": "6da2ee0494f0a519ac1ab81d84bd4933ff9c80995c1f72f810d15916d7dfedea",
+        "source_truth": [
+          4000.0,
+          12000.0,
+          1200.0,
+          0.36000001430511475
+        ],
+        "frequency_hz": 5.0,
+        "rms": 4.164480482331907e-07,
+        "active_sample_count": 2352
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_04_0to2s.npz",
+        "sha256": "51a67d4622385dd1c6e22a4ec663e7ebed5cb0f609d62168ec15bd551816a450",
+        "source_truth": [
+          12000.0,
+          12000.0,
+          400.0,
+          0.18000000715255737
+        ],
+        "frequency_hz": 5.0,
+        "rms": 5.268649420624802e-07,
+        "active_sample_count": 2887
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_05_0to2s.npz",
+        "sha256": "d3722f475dae33248f9a551fa47db1705421f4aa735011e100a0194fc17ddecb",
+        "source_truth": [
+          8000.0,
+          3000.0,
+          1300.0,
+          0.41999998688697815
+        ],
+        "frequency_hz": 5.0,
+        "rms": 2.7216013188214264e-07,
+        "active_sample_count": 1780
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_06_0to2s.npz",
+        "sha256": "11060fdb6e7805fdd29a579fbbfc71894df9c20805255fd7dcc5230cf6c81ea7",
+        "source_truth": [
+          3000.0,
+          8000.0,
+          800.0,
+          0.3100000023841858
+        ],
+        "frequency_hz": 5.0,
+        "rms": 4.565958850217941e-07,
+        "active_sample_count": 1783
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_07_0to2s.npz",
+        "sha256": "c97478a6b6206237317579b7c1442d6fc4457a7591539021895b19432448c874",
+        "source_truth": [
+          9000.0,
+          12500.0,
+          1100.0,
+          0.09000000357627869
+        ],
+        "frequency_hz": 5.0,
+        "rms": 4.1692141819735636e-07,
+        "active_sample_count": 3251
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_08_0to2s.npz",
+        "sha256": "89120e0d29458b2a1e515a4c69e7ff4674af76b9cd7d0dafbf3c41ef41fb7030",
+        "source_truth": [
+          13000.0,
+          8000.0,
+          600.0,
+          0.38999998569488525
+        ],
+        "frequency_hz": 5.0,
+        "rms": 6.065351981518909e-07,
+        "active_sample_count": 1525
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_09_0to2s.npz",
+        "sha256": "8597e4f364af973e6d2ac035bd131593bab97ed0529c2b0836cd8e2e0219ed60",
+        "source_truth": [
+          6500.0,
+          3500.0,
+          700.0,
+          0.20000000298023224
+        ],
+        "frequency_hz": 5.0,
+        "rms": 4.002656037633636e-07,
+        "active_sample_count": 3167
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_10_0to2s.npz",
+        "sha256": "fca6dd43807f42e321e8a34013c30f5130594f5509278742f46fdc8c9271eb14",
+        "source_truth": [
+          10000.0,
+          6500.0,
+          1000.0,
+          0.25
+        ],
+        "frequency_hz": 5.0,
+        "rms": 6.218053737113503e-07,
+        "active_sample_count": 2939
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_11_0to2s.npz",
+        "sha256": "169b1b62e39d10bf8a8b1c2010e8f88304b94cdc97e937093575f7fc001ce59b",
+        "source_truth": [
+          6500.0,
+          9500.0,
+          900.0,
+          0.27000001072883606
+        ],
+        "frequency_hz": 5.0,
+        "rms": 4.002820568742468e-07,
+        "active_sample_count": 3189
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_12_0to2s.npz",
+        "sha256": "197cb84bd453b8ef63b58e7e05e78fadb905990dc6327492cba2d151ea957d05",
+        "source_truth": [
+          10000.0,
+          10500.0,
+          800.0,
+          0.2199999988079071
+        ],
+        "frequency_hz": 5.0,
+        "rms": 6.634085518030501e-07,
+        "active_sample_count": 2004
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_13_0to2s.npz",
+        "sha256": "28a314abada948ac442acbab117e95432b2fe841e391bf7526fc3c602f15de50",
+        "source_truth": [
+          5000.0,
+          6000.0,
+          400.0,
+          0.15000000596046448
+        ],
+        "frequency_hz": 5.0,
+        "rms": 4.42351041536581e-07,
+        "active_sample_count": 2250
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_14_0to2s.npz",
+        "sha256": "524568b6921dee91952c558ac696b87c6c679ef59a9606a9d9f894c5cb967b6f",
+        "source_truth": [
+          11000.0,
+          10000.0,
+          1200.0,
+          0.3400000035762787
+        ],
+        "frequency_hz": 5.0,
+        "rms": 5.664122336778853e-07,
+        "active_sample_count": 1809
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_15_0to2s.npz",
+        "sha256": "a898a2eaff7bebbb22f670cd4ebde4fd35ceeb461a4b3314847f1ebea54acc74",
+        "source_truth": [
+          6000.0,
+          11000.0,
+          1400.0,
+          0.30000001192092896
+        ],
+        "frequency_hz": 5.0,
+        "rms": 3.7365980177544246e-07,
+        "active_sample_count": 2371
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_16_0to2s.npz",
+        "sha256": "b1b60f25da2d6555876bf4b94f7e7bc7e7805fc79047205ee73708dcb1ca5494",
+        "source_truth": [
+          12500.0,
+          6000.0,
+          500.0,
+          0.3499999940395355
+        ],
+        "frequency_hz": 5.0,
+        "rms": 4.256196531991367e-07,
+        "active_sample_count": 2428
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\local_density\\train_01_x3300.npz",
+        "sha256": "1a1f219b1d3618671facd96dd9c4c6bb0b293a31ff914e6c23e828ade2e90f26",
+        "source_truth": [
+          3300.0,
+          4000.0,
+          500.0,
+          0.11999999731779099
+        ],
+        "frequency_hz": 5.0,
+        "rms": 4.961447285812143e-07,
+        "active_sample_count": 3450
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\local_density\\train_01_x3700.npz",
+        "sha256": "1fc5363cd16d7661b17f9b5d62731ca27efcfeadbfa2fdf2476d3cc2068aafa9",
+        "source_truth": [
+          3700.0,
+          4000.0,
+          500.0,
+          0.11999999731779099
+        ],
+        "frequency_hz": 5.0,
+        "rms": 4.1967407206945024e-07,
+        "active_sample_count": 2903
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\local_density\\train_09_x6300.npz",
+        "sha256": "a5d59c8f41b6944612d8a1015234a0e709eafe43a26b0b7df694e1d613f732a9",
+        "source_truth": [
+          6300.0,
+          3500.0,
+          700.0,
+          0.20000000298023224
+        ],
+        "frequency_hz": 5.0,
+        "rms": 4.1253605472924496e-07,
+        "active_sample_count": 3127
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\local_density\\train_09_x6700.npz",
+        "sha256": "8f7618c5bf78d0c07a73668e1a2051bed50916f103f03d590ad6b882520ba99f",
+        "source_truth": [
+          6700.0,
+          3500.0,
+          700.0,
+          0.20000000298023224
+        ],
+        "frequency_hz": 5.0,
+        "rms": 3.865089971821909e-07,
+        "active_sample_count": 3159
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\depth_coverage\\train_01_z340.npz",
+        "sha256": "30115df7d994081e62c9d96540fb4af7d688817b6a19ce9f8eda33c833f5daaf",
+        "source_truth": [
+          3500.0,
+          4000.0,
+          340.0,
+          0.11999999731779099
+        ],
+        "frequency_hz": 5.0,
+        "rms": 6.087231159173528e-07,
+        "active_sample_count": 2531
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\depth_coverage\\train_01_z660.npz",
+        "sha256": "233d79ccff8c22d3125555a7b36bfd22676ac244f6905738c1936fac9980ff80",
+        "source_truth": [
+          3500.0,
+          4000.0,
+          660.0,
+          0.11999999731779099
+        ],
+        "frequency_hz": 5.0,
+        "rms": 3.6714989645674716e-07,
+        "active_sample_count": 3383
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\depth_coverage\\train_09_z540.npz",
+        "sha256": "88b9b42267fc1906e0f5bdfde8b70ec7ebc84796b39437d96dad5a10c2e5e210",
+        "source_truth": [
+          6500.0,
+          3500.0,
+          540.0,
+          0.20000000298023224
+        ],
+        "frequency_hz": 5.0,
+        "rms": 4.932005784049301e-07,
+        "active_sample_count": 2982
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\depth_coverage\\train_09_z860.npz",
+        "sha256": "6abca19e7c69005c9714cb0d1af15eaa5431f0e838b8f3cc2ab195f0914c2c3d",
+        "source_truth": [
+          6500.0,
+          3500.0,
+          860.0,
+          0.20000000298023224
+        ],
+        "frequency_hz": 5.0,
+        "rms": 3.7851127033604054e-07,
+        "active_sample_count": 3531
+      },
+      {
+        "path": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\depth_gap_900\\train_09_z900.npz",
+        "sha256": "f007bc660972fd2f4196a33e9284a93c887a0db8caf5bac5e5a63e32689e6383",
+        "source_truth": [
+          6500.0,
+          3500.0,
+          900.0,
+          0.20000000298023224
+        ],
+        "frequency_hz": 5.0,
+        "rms": 3.5985871156619365e-07,
+        "active_sample_count": 3559
+      }
+    ],
+    "receiver_batch_size": 1600,
+    "receiver_sampling_seed": 42,
+    "receiver_events_per_batch": 25,
+    "receiver_loss_weight": 0.03,
+    "balance_loss_gradients": false,
+    "receiver_only": false,
+    "training_type": "hybrid_physics_receiver",
+    "initial_checkpoint": {
+      "path": "E:\\source-conditioned-microseismic-pinn\\outputs\\depth_gap_25_receiver_5000\\conditioned_5Hz.pth",
+      "sha256": "d9ce4bb9633af8151e8cf407611007d387c6dd200c64fc46a122c9f3cee6f2db",
+      "epoch": 5000,
+      "training_type": "supervised_receiver_diagnostic"
+    }
+  },
+  "5Hz": {
+    "final": {
+      "physics": 0.0002491917693987489,
+      "initial": 6.19497150182724e-05,
+      "boundary": 0.0002242797054350376,
+      "total": 0.00399718526750803,
+      "receivers": 0.029523316770792007
+    },
+    "seconds": 46.84046699999817,
+    "checkpoint": "E:\\source-conditioned-microseismic-pinn\\outputs\\depth_gap_25_hybrid_1000\\conditioned_5Hz.pth",
+    "source_conditioned": true,
+    "input_dim": 8,
+    "peak_cuda_memory_bytes": 126601216
+  }
+}

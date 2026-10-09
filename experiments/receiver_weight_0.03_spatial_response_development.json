@@ -1,0 +1,69 @@
+{
+  "purpose": "frozen-model development audit of finite spatial source response",
+  "checkpoint": "outputs\\receiver_weight_0.03_hybrid_1000\\conditioned_5Hz.pth",
+  "reference": "data\\observations\\window_0to2s\\train_01_0to2s.npz",
+  "source": [
+    3500.0,
+    4000.0,
+    500.0,
+    0.11999999731779099
+  ],
+  "reference_training_sha256": "cd8890778ae2b06b210ed17ceaef9de32914d05b93ab000a24203475b29d5beb",
+  "results": [
+    {
+      "reference_change_relative_to_original": 0.34458228658368073,
+      "model_change_relative_to_original": 0.3620092022464088,
+      "model_to_fd_change_norm_ratio": 1.0352096959912644,
+      "change_cosine": 0.9064646345248163,
+      "change_relative_l2": 0.44147158142715287,
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\development_spatial_radius\\train01_dx0040_0to2s.npz",
+      "displacement_m": 40.0,
+      "raw_waveform_relative_l2": 0.1763663498346747,
+      "prediction_to_fd_peak_ratio": 0.9699580857721861
+    },
+    {
+      "reference_change_relative_to_original": 0.6631424541638593,
+      "model_change_relative_to_original": 0.705442872954032,
+      "model_to_fd_change_norm_ratio": 1.0482302468471971,
+      "change_cosine": 0.909391030628531,
+      "change_relative_l2": 0.43850231626821773,
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\development_spatial_radius\\train01_dx0080_0to2s.npz",
+      "displacement_m": 80.0,
+      "raw_waveform_relative_l2": 0.30441447921889053,
+      "prediction_to_fd_peak_ratio": 0.9551483978103567
+    },
+    {
+      "reference_change_relative_to_original": 1.1757484683723667,
+      "model_change_relative_to_original": 1.2737217540183476,
+      "model_to_fd_change_norm_ratio": 1.0674850801484221,
+      "change_cosine": 0.911991001112954,
+      "change_relative_l2": 0.43869217283202205,
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\development_spatial_radius\\train01_dx0160_0to2s.npz",
+      "displacement_m": 160.0,
+      "raw_waveform_relative_l2": 0.5467906860493021,
+      "prediction_to_fd_peak_ratio": 0.953238368631141
+    },
+    {
+      "reference_change_relative_to_original": 1.5104748250623554,
+      "model_change_relative_to_original": 1.6380200031202057,
+      "model_to_fd_change_norm_ratio": 1.068580830061131,
+      "change_cosine": 0.9037764104040096,
+      "change_relative_l2": 0.4586378710221868,
+      "observation": "data\\observations\\window_0to2s\\dev_distance_0250_0to2s.npz",
+      "displacement_m": 250.0,
+      "raw_waveform_relative_l2": 0.7404897449335752,
+      "prediction_to_fd_peak_ratio": 0.9424443995507084
+    },
+    {
+      "reference_change_relative_to_original": 1.2513567924782647,
+      "model_change_relative_to_original": 1.2030973339725834,
+      "model_to_fd_change_norm_ratio": 0.9473735999564586,
+      "change_cosine": 0.7958920012423235,
+      "change_relative_l2": 0.6241014317460584,
+      "observation": "data\\observations\\window_0to2s\\dev_distance_0800_0to2s.npz",
+      "displacement_m": 800.0,
+      "raw_waveform_relative_l2": 0.9831677442516872,
+      "prediction_to_fd_peak_ratio": 0.7665914356973231
+    }
+  ]
+}

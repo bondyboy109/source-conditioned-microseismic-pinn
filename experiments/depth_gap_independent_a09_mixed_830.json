@@ -1,0 +1,149 @@
+{
+  "event": "a09_mixed_830.npz",
+  "role": "local_mixed",
+  "region": "a09",
+  "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\depth_gap_independent_confirmation\\a09_mixed_830.npz",
+  "sha256": "53cd5c58d526ac6d8180727a20425c8eca3f136505af89d72b522abe7a4f0a4b",
+  "raw_waveform_relative_l2": 0.18659362738612043,
+  "fd_runtime_s": 8.589072300001135,
+  "inversion": {
+    "bounds_m_s": [
+      [
+        6100.0,
+        6900.0
+      ],
+      [
+        3100.0,
+        3900.0
+      ],
+      [
+        500.0,
+        1100.0
+      ],
+      [
+        0.11999999731779099,
+        0.2800000011920929
+      ]
+    ],
+    "grid_shape_xyzt": [
+      5,
+      5,
+      7,
+      5
+    ],
+    "grid_candidates": 875,
+    "coarse_starts": [
+      {
+        "source_m_s": [
+          6500.0,
+          3500.0,
+          900.0,
+          0.19999998807907104
+        ],
+        "coarse_normalized_mse": 0.32967326045036316
+      },
+      {
+        "source_m_s": [
+          6500.0,
+          3500.0,
+          800.0,
+          0.19999998807907104
+        ],
+        "coarse_normalized_mse": 0.36269327998161316
+      },
+      {
+        "source_m_s": [
+          6500.0,
+          3500.0,
+          1000.0,
+          0.19999998807907104
+        ],
+        "coarse_normalized_mse": 0.40571630001068115
+      }
+    ],
+    "refinements": [
+      {
+        "initial_source_m_s": [
+          6500.0,
+          3500.0,
+          900.0,
+          0.19999998807907104
+        ],
+        "coarse_normalized_mse": 0.32967326045036316,
+        "estimated_source_m_s": [
+          6437.59375,
+          3550.069580078125,
+          824.417236328125,
+          0.19049115478992462
+        ],
+        "normalized_mse": 0.028086019679903984,
+        "on_region_boundary": false
+      },
+      {
+        "initial_source_m_s": [
+          6500.0,
+          3500.0,
+          800.0,
+          0.19999998807907104
+        ],
+        "coarse_normalized_mse": 0.36269327998161316,
+        "estimated_source_m_s": [
+          6437.63720703125,
+          3550.048583984375,
+          824.44287109375,
+          0.19049356877803802
+        ],
+        "normalized_mse": 0.028086025267839432,
+        "on_region_boundary": false
+      },
+      {
+        "initial_source_m_s": [
+          6500.0,
+          3500.0,
+          1000.0,
+          0.19999998807907104
+        ],
+        "coarse_normalized_mse": 0.40571630001068115,
+        "estimated_source_m_s": [
+          6437.619140625,
+          3550.049072265625,
+          824.4345092773438,
+          0.1904911994934082
+        ],
+        "normalized_mse": 0.028086073696613312,
+        "on_region_boundary": false
+      }
+    ],
+    "estimated_source_m_s": [
+      6437.59375,
+      3550.069580078125,
+      824.417236328125,
+      0.19049115478992462
+    ],
+    "final_normalized_mse": 0.028086019679903984,
+    "source_truth_used_in_search": false,
+    "runtime_seconds": 1.3003239999998186,
+    "source_truth_m_s_post_search": [
+      6430.0,
+      3560.0,
+      830.0,
+      0.1899999976158142
+    ],
+    "component_error_m_s": [
+      7.59375,
+      -9.930419921875,
+      -5.582763671875,
+      0.0004911571741104126
+    ],
+    "location_error_m": 13.69107479722754,
+    "origin_time_error_s": 0.0004911571741104126,
+    "truth_source_normalized_mse": 0.03494376316666603,
+    "selected_loss_below_truth": true
+  },
+  "source_truth_m_s": [
+    6430.0,
+    3560.0,
+    830.0,
+    0.1899999976158142
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "purpose": "development-only test of a differentiable FMM-traveltime-aligned source-region mixture of experts",
+  "protocol_written_before_training": true,
+  "velocity_file": "data/velocity/vp_model.npy",
+  "velocity_sha256": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+  "training_manifest_checkpoint": "outputs/depth_midpoint_teacher_low_weight/teacher_0.002_loadable.pth",
+  "training_manifest_checkpoint_sha256": "dab17cae1d3aae79c0b9efeac28aa5bae2f88748ad822d49d4b5bf87a73407b4",
+  "training_observation_count": 33,
+  "excluded_confirmation_directory": "data/observations/source_conditioned_ensemble_confirmation",
+  "development_sets": [
+    "data/observations/eikonal_independent",
+    "data/observations/eikonal_wide_search_independent"
+  ],
+  "development_event_count": 16,
+  "fmm": {
+    "velocity_grid_stride": 2,
+    "grid_spacing_m": 80.0,
+    "cache_file": "outputs/traveltime_aligned_moe_development/receiver_fmm_fields_stride2.npy",
+    "interpolation": "piecewise-differentiable trilinear interpolation in source coordinates",
+    "reciprocity": "one receiver-centred field per fixed receiver"
+  },
+  "model": {
+    "expert_count": 3,
+    "hidden_dim": 128,
+    "hidden_layers": 4,
+    "frequency_hz": 5.0,
+    "time_length_s": 2.0,
+    "spatial_lengths_m": [16000.0, 16000.0, 3720.0],
+    "prototype_scales": [0.30, 0.30, 0.20],
+    "prototype_temperature": 1.0,
+    "prototype_bounds_normalized": [0.05, 0.95],
+    "prototype_centers": [[0.25, 0.25, 0.20], [0.75, 0.25, 0.30], [0.50, 0.75, 0.25]],
+    "features": "receiver-minus-source coordinates, source coordinates, FMM time, retarded time, and 5-Hz sine/cosine carrier",
+    "output": "dimensionless receiver waveform normalized by each observation RMS"
+  },
+  "training": {
+    "seed": 3101,
+    "updates": 3000,
+    "batch_size": 4096,
+    "events_per_batch": 8,
+    "learning_rate": 0.0003,
+    "gate_balance_weight": 0.01,
+    "prototype_separation_weight": 0.001,
+    "gradient_clip_norm": 1.0,
+    "sampling": {"fmm_arrival_window_fraction": 0.50, "observed_active_fraction": 0.25, "uniform_fraction": 0.25, "arrival_half_width_s": 0.30}
+  },
+  "development_gates": {
+    "mean_full_relative_l2_fraction_of_frozen_base_below": 0.90,
+    "events_improved_over_frozen_base_at_least": 12,
+    "events_below_zero_prediction_l2_at_least": 12,
+    "maximum_mean_gate_probability_below": 0.80,
+    "all_four_source_gradient_components_above": 1e-8
+  },
+  "output_checkpoint": "outputs/traveltime_aligned_moe_development/traveltime_aligned_moe.pth",
+  "result_file": "experiments/traveltime_aligned_moe_development_results.json",
+  "report_file": "experiments/traveltime_aligned_moe_development_results.md",
+  "decision_rule": "Proceed to development localization only if every forward gate passes. Do not use the eight-event ensemble confirmation for training, model selection, or threshold selection.",
+  "limitations": "One 5-Hz synthetic Overthrust model and one receiver geometry; receiver-supervised waveform surrogate with FMM physics in its coordinates, not a standalone PDE solution or independent validation."
+}

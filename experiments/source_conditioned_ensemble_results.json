@@ -1,0 +1,1222 @@
+{
+  "purpose": "post-hoc five-seed source-conditioned ensemble stability audit",
+  "ensemble_size": 5,
+  "seeds": [
+    42,
+    7,
+    123,
+    2028,
+    4096
+  ],
+  "interval_definition": "member mean plus or minus 1.96 sample standard deviations",
+  "calibrated_statistical_coverage_claimed": false,
+  "evaluation_status": "already-inspected development events; not independent confirmation",
+  "event_count": 8,
+  "component_summary": {
+    "x": {
+      "covered_events": 8,
+      "empirical_coverage_fraction": 1.0,
+      "mean_nominal_interval_width": 1766.5824566066794,
+      "median_nominal_interval_width": 1581.3443411185817,
+      "unit": "m"
+    },
+    "y": {
+      "covered_events": 7,
+      "empirical_coverage_fraction": 0.875,
+      "mean_nominal_interval_width": 1822.664544393147,
+      "median_nominal_interval_width": 1972.0162628991566,
+      "unit": "m"
+    },
+    "z": {
+      "covered_events": 6,
+      "empirical_coverage_fraction": 0.75,
+      "mean_nominal_interval_width": 829.1506616909874,
+      "median_nominal_interval_width": 707.9955575064212,
+      "unit": "m"
+    },
+    "origin_time": {
+      "covered_events": 7,
+      "empirical_coverage_fraction": 0.875,
+      "mean_nominal_interval_width": 0.2661951083606499,
+      "median_nominal_interval_width": 0.27998581286331065,
+      "unit": "s"
+    }
+  },
+  "ensemble_mean_summary": {
+    "mean_location_error_m": 500.636843395263,
+    "median_location_error_m": 543.7064088012667,
+    "mean_origin_time_error_s": 0.04597628312185407,
+    "median_origin_time_error_s": 0.036350426077842696
+  },
+  "member_summaries": [
+    {
+      "seed": 42,
+      "mean_location_error_m": 517.4491421240479,
+      "median_location_error_m": 311.0879731798992,
+      "mean_origin_time_error_s": 0.04572664573788643,
+      "median_origin_time_error_s": 0.015444979071617126,
+      "eight_event_inversion_seconds": 31.247692099998858
+    },
+    {
+      "seed": 7,
+      "mean_location_error_m": 563.4746759049899,
+      "median_location_error_m": 437.1284471058433,
+      "mean_origin_time_error_s": 0.05836261762306094,
+      "median_origin_time_error_s": 0.018921568989753723,
+      "eight_event_inversion_seconds": 29.813486799999737
+    },
+    {
+      "seed": 123,
+      "mean_location_error_m": 1216.7754945558872,
+      "median_location_error_m": 1048.1629261779333,
+      "mean_origin_time_error_s": 0.0759540181607008,
+      "median_origin_time_error_s": 0.02346169948577881,
+      "eight_event_inversion_seconds": 30.2206486999994
+    },
+    {
+      "seed": 2028,
+      "mean_location_error_m": 585.7108587258896,
+      "median_location_error_m": 434.8424586222967,
+      "mean_origin_time_error_s": 0.055967007763683796,
+      "median_origin_time_error_s": 0.04221350699663162,
+      "eight_event_inversion_seconds": 30.08081360000051
+    },
+    {
+      "seed": 4096,
+      "mean_location_error_m": 591.6300553057995,
+      "median_location_error_m": 692.57985054339,
+      "mean_origin_time_error_s": 0.05426326394081116,
+      "median_origin_time_error_s": 0.022201135754585266,
+      "eight_event_inversion_seconds": 30.12323380000089
+    }
+  ],
+  "cost": {
+    "five_member_training_seconds": 356.47144059999846,
+    "mean_training_seconds_per_member": 71.29428811999969,
+    "forty_member_event_inversions_seconds": 151.4858749999994,
+    "mean_inversion_seconds_per_member_event": 3.787146874999985
+  },
+  "events": [
+    {
+      "event": "region_02.npz",
+      "sha256": "4723cf83c1255d822afc4a29c41250fb3baf5f75801f35cb05041805e4ee2aba",
+      "source_truth_m_s": [
+        11400.0,
+        4300.0,
+        1040.0,
+        0.30000001192092896
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "estimated_source_m_s": [
+            11415.2509765625,
+            4279.1171875,
+            1049.0057373046875,
+            0.2865460515022278
+          ],
+          "component_error_m_s": [
+            15.2509765625,
+            -20.8828125,
+            9.0057373046875,
+            -0.013453960418701172
+          ],
+          "location_error_m": 27.382246957127546,
+          "origin_time_error_s": 0.013453960418701172,
+          "inversion_seconds": 4.713810999999623
+        },
+        {
+          "seed": 7,
+          "estimated_source_m_s": [
+            11406.880859375,
+            4282.63037109375,
+            1086.938720703125,
+            0.2797311842441559
+          ],
+          "component_error_m_s": [
+            6.880859375,
+            -17.36962890625,
+            46.938720703125,
+            -0.02026882767677307
+          ],
+          "location_error_m": 50.52023095083133,
+          "origin_time_error_s": 0.02026882767677307,
+          "inversion_seconds": 3.599875200000497
+        },
+        {
+          "seed": 123,
+          "estimated_source_m_s": [
+            11402.84765625,
+            4293.26416015625,
+            1078.188720703125,
+            0.28542599081993103
+          ],
+          "component_error_m_s": [
+            2.84765625,
+            -6.73583984375,
+            38.188720703125,
+            -0.014574021100997925
+          ],
+          "location_error_m": 38.882632028453294,
+          "origin_time_error_s": 0.014574021100997925,
+          "inversion_seconds": 3.7644460999999865
+        },
+        {
+          "seed": 2028,
+          "estimated_source_m_s": [
+            11401.970703125,
+            4284.52001953125,
+            1061.5909423828125,
+            0.2878996729850769
+          ],
+          "component_error_m_s": [
+            1.970703125,
+            -15.47998046875,
+            21.5909423828125,
+            -0.01210033893585205
+          ],
+          "location_error_m": 26.639862219945798,
+          "origin_time_error_s": 0.01210033893585205,
+          "inversion_seconds": 3.7503966000003857
+        },
+        {
+          "seed": 4096,
+          "estimated_source_m_s": [
+            11398.208984375,
+            4288.42626953125,
+            1077.8466796875,
+            0.2831304967403412
+          ],
+          "component_error_m_s": [
+            -1.791015625,
+            -11.57373046875,
+            37.8466796875,
+            -0.01686951518058777
+          ],
+          "location_error_m": 39.61729593625102,
+          "origin_time_error_s": 0.01686951518058777,
+          "inversion_seconds": 4.08342040000025
+        }
+      ],
+      "ensemble_mean_m_s": [
+        11405.0318359375,
+        4285.5916015625,
+        1070.71416015625,
+        0.28454667925834654
+      ],
+      "sample_standard_deviation_m_s": [
+        6.491190207367794,
+        5.44836464590599,
+        15.202524300388264,
+        0.0032096654918944085
+      ],
+      "nominal_95_percent_interval_lower_m_s": [
+        11392.30910313106,
+        4274.912806856524,
+        1040.917212527489,
+        0.2782557348942335
+      ],
+      "nominal_95_percent_interval_upper_m_s": [
+        11417.75456874394,
+        4296.270396268475,
+        1100.511107785011,
+        0.2908376236224596
+      ],
+      "nominal_interval_width_m_s": [
+        25.44546561288007,
+        21.357589411951267,
+        59.593895257522036,
+        0.012581888728226076
+      ],
+      "truth_covered_by_nominal_interval": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "ensemble_mean_location_error_m": 34.29695252554443,
+      "ensemble_mean_origin_time_error_s": 0.01545333266258242
+    },
+    {
+      "event": "region_03.npz",
+      "sha256": "e8ed18a7c9e087f928729946f5aff3b7388fd081c465d9233408f0c7fb836b5c",
+      "source_truth_m_s": [
+        4350.0,
+        11700.0,
+        1050.0,
+        0.3400000035762787
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "estimated_source_m_s": [
+            4334.54345703125,
+            11704.2041015625,
+            1100.4351806640625,
+            0.3412765860557556
+          ],
+          "component_error_m_s": [
+            -15.45654296875,
+            4.2041015625,
+            50.4351806640625,
+            0.0012765824794769287
+          ],
+          "location_error_m": 52.91773463697453,
+          "origin_time_error_s": 0.0012765824794769287,
+          "inversion_seconds": 3.760927299999821
+        },
+        {
+          "seed": 7,
+          "estimated_source_m_s": [
+            4341.1748046875,
+            11676.873046875,
+            1155.9852294921875,
+            0.33234336972236633
+          ],
+          "component_error_m_s": [
+            -8.8251953125,
+            -23.126953125,
+            105.9852294921875,
+            -0.0076566338539123535
+          ],
+          "location_error_m": 108.83753444313855,
+          "origin_time_error_s": 0.0076566338539123535,
+          "inversion_seconds": 3.6395410999994056
+        },
+        {
+          "seed": 123,
+          "estimated_source_m_s": [
+            4361.001953125,
+            11708.671875,
+            1055.5906982421875,
+            0.34865522384643555
+          ],
+          "component_error_m_s": [
+            11.001953125,
+            8.671875,
+            5.5906982421875,
+            0.00865522027015686
+          ],
+          "location_error_m": 15.083112921924329,
+          "origin_time_error_s": 0.00865522027015686,
+          "inversion_seconds": 3.7838081999998394
+        },
+        {
+          "seed": 2028,
+          "estimated_source_m_s": [
+            4356.23193359375,
+            11712.0263671875,
+            1148.6982421875,
+            0.33723610639572144
+          ],
+          "component_error_m_s": [
+            6.23193359375,
+            12.0263671875,
+            98.6982421875,
+            -0.002763897180557251
+          ],
+          "location_error_m": 99.62335827981252,
+          "origin_time_error_s": 0.002763897180557251,
+          "inversion_seconds": 3.892635700000028
+        },
+        {
+          "seed": 4096,
+          "estimated_source_m_s": [
+            4327.35546875,
+            11704.91796875,
+            1088.0465087890625,
+            0.3419097661972046
+          ],
+          "component_error_m_s": [
+            -22.64453125,
+            4.91796875,
+            38.0465087890625,
+            0.0019097626209259033
+          ],
+          "location_error_m": 44.54770525172327,
+          "origin_time_error_s": 0.0019097626209259033,
+          "inversion_seconds": 3.967499599999428
+        }
+      ],
+      "ensemble_mean_m_s": [
+        4344.0615234375,
+        11701.338671875,
+        1109.751171875,
+        0.3402842104434967
+      ],
+      "sample_standard_deviation_m_s": [
+        14.257594799313203,
+        14.032030851050752,
+        42.26611930885994,
+        0.006042536634163402
+      ],
+      "nominal_95_percent_interval_lower_m_s": [
+        4316.1166376308465,
+        11673.835891406941,
+        1026.9095780296345,
+        0.32844083864053647
+      ],
+      "nominal_95_percent_interval_upper_m_s": [
+        4372.0064092441535,
+        11728.84145234306,
+        1192.5927657203654,
+        0.35212758224645696
+      ],
+      "nominal_interval_width_m_s": [
+        55.88977161330695,
+        55.005560936118854,
+        165.68318769073085,
+        0.02368674360592049
+      ],
+      "truth_covered_by_nominal_interval": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "ensemble_mean_location_error_m": 60.06047025047394,
+      "ensemble_mean_origin_time_error_s": 0.0002842068672180287
+    },
+    {
+      "event": "region_04.npz",
+      "sha256": "b8dee00691fce3dd66134a4e0b18f5d9f8443a3b20e207a59c43171fec2285e1",
+      "source_truth_m_s": [
+        11700.0,
+        12250.0,
+        500.0,
+        0.1899999976158142
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "estimated_source_m_s": [
+            11647.53125,
+            12613.443359375,
+            817.6089477539062,
+            0.24124597012996674
+          ],
+          "component_error_m_s": [
+            -52.46875,
+            363.443359375,
+            317.60894775390625,
+            0.05124597251415253
+          ],
+          "location_error_m": 485.50951473034127,
+          "origin_time_error_s": 0.05124597251415253,
+          "inversion_seconds": 3.8492440999998507
+        },
+        {
+          "seed": 7,
+          "estimated_source_m_s": [
+            11712.81640625,
+            11615.568359375,
+            1366.4139404296875,
+            0.14127478003501892
+          ],
+          "component_error_m_s": [
+            12.81640625,
+            -634.431640625,
+            866.4139404296875,
+            -0.04872521758079529
+          ],
+          "location_error_m": 1073.937094557308,
+          "origin_time_error_s": 0.04872521758079529,
+          "inversion_seconds": 3.7826302000003125
+        },
+        {
+          "seed": 123,
+          "estimated_source_m_s": [
+            14000.0,
+            11505.8837890625,
+            1016.5665283203125,
+            0.20888465642929077
+          ],
+          "component_error_m_s": [
+            2300.0,
+            -744.1162109375,
+            516.5665283203125,
+            0.018884658813476562
+          ],
+          "location_error_m": 2471.9526519658266,
+          "origin_time_error_s": 0.018884658813476562,
+          "inversion_seconds": 3.7944650999997975
+        },
+        {
+          "seed": 2028,
+          "estimated_source_m_s": [
+            11707.6416015625,
+            12635.0830078125,
+            661.7332763671875,
+            0.08196406811475754
+          ],
+          "component_error_m_s": [
+            7.6416015625,
+            385.0830078125,
+            161.7332763671875,
+            -0.10803592950105667
+          ],
+          "location_error_m": 417.73791983111494,
+          "origin_time_error_s": 0.10803592950105667,
+          "inversion_seconds": 3.7549471000002086
+        },
+        {
+          "seed": 4096,
+          "estimated_source_m_s": [
+            11522.513671875,
+            12621.923828125,
+            1235.0213623046875,
+            0.1782742440700531
+          ],
+          "component_error_m_s": [
+            -177.486328125,
+            371.923828125,
+            735.0213623046875,
+            -0.011725753545761108
+          ],
+          "location_error_m": 842.6654933262002,
+          "origin_time_error_s": 0.011725753545761108,
+          "inversion_seconds": 3.6138471000003847
+        }
+      ],
+      "ensemble_mean_m_s": [
+        12118.1005859375,
+        12198.38046875,
+        1019.4688110351562,
+        0.1703287437558174
+      ],
+      "sample_standard_deviation_m_s": [
+        1054.8028869100447,
+        583.4374204404069,
+        289.6395887920241,
+        0.0617077610251935
+      ],
+      "nominal_95_percent_interval_lower_m_s": [
+        10050.686927593812,
+        11054.843124686802,
+        451.7752170027891,
+        0.04938153214643816
+      ],
+      "nominal_95_percent_interval_upper_m_s": [
+        14185.514244281188,
+        13341.917812813197,
+        1587.1624050675234,
+        0.2912759553651967
+      ],
+      "nominal_interval_width_m_s": [
+        4134.827316687377,
+        2287.074688126395,
+        1135.3871880647343,
+        0.24189442321875854
+      ],
+      "truth_covered_by_nominal_interval": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "ensemble_mean_location_error_m": 668.8202461095428,
+      "ensemble_mean_origin_time_error_s": 0.019671253859996796
+    },
+    {
+      "event": "region_05.npz",
+      "sha256": "dca5081d978dd69111ff934027d8254c84ddb8eb68c59819d76926bcce36145d",
+      "source_truth_m_s": [
+        8320.0,
+        3240.0,
+        1180.0,
+        0.38999998569488525
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "estimated_source_m_s": [
+            8259.83984375,
+            3221.303955078125,
+            1253.168701171875,
+            0.38888978958129883
+          ],
+          "component_error_m_s": [
+            -60.16015625,
+            -18.696044921875,
+            73.168701171875,
+            -0.0011101961135864258
+          ],
+          "location_error_m": 96.5528110772769,
+          "origin_time_error_s": 0.0011101961135864258,
+          "inversion_seconds": 3.9040930000001026
+        },
+        {
+          "seed": 7,
+          "estimated_source_m_s": [
+            8239.3203125,
+            3212.510498046875,
+            1347.1407470703125,
+            0.3724256753921509
+          ],
+          "component_error_m_s": [
+            -80.6796875,
+            -27.489501953125,
+            167.1407470703125,
+            -0.017574310302734375
+          ],
+          "location_error_m": 187.6190662591377,
+          "origin_time_error_s": 0.017574310302734375,
+          "inversion_seconds": 3.8173712999996496
+        },
+        {
+          "seed": 123,
+          "estimated_source_m_s": [
+            8041.4677734375,
+            2150.385986328125,
+            1424.937744140625,
+            0.5
+          ],
+          "component_error_m_s": [
+            -278.5322265625,
+            -1089.614013671875,
+            244.937744140625,
+            0.11000001430511475
+          ],
+          "location_error_m": 1151.014073992449,
+          "origin_time_error_s": 0.11000001430511475,
+          "inversion_seconds": 3.7643520999999964
+        },
+        {
+          "seed": 2028,
+          "estimated_source_m_s": [
+            7877.85546875,
+            3272.576171875,
+            878.9935913085938,
+            0.45870959758758545
+          ],
+          "component_error_m_s": [
+            -442.14453125,
+            32.576171875,
+            -301.00640869140625,
+            0.0687096118927002
+          ],
+          "location_error_m": 535.8711146923388,
+          "origin_time_error_s": 0.0687096118927002,
+          "inversion_seconds": 3.8262549999999464
+        },
+        {
+          "seed": 4096,
+          "estimated_source_m_s": [
+            7848.306640625,
+            3287.7822265625,
+            630.3671264648438,
+            0.47840023040771484
+          ],
+          "component_error_m_s": [
+            -471.693359375,
+            47.7822265625,
+            -549.6328735351562,
+            0.08840024471282959
+          ],
+          "location_error_m": 725.8609110044816,
+          "origin_time_error_s": 0.08840024471282959,
+          "inversion_seconds": 3.588519500000075
+        }
+      ],
+      "ensemble_mean_m_s": [
+        8053.3580078125,
+        3028.911767578125,
+        1106.92158203125,
+        0.43968505859375
+      ],
+      "sample_standard_deviation_m_s": [
+        193.78164864941866,
+        492.16792165322664,
+        338.85213019355285,
+        0.056130815404862484
+      ],
+      "nominal_95_percent_interval_lower_m_s": [
+        7673.545976459639,
+        2064.2626411378005,
+        442.77140685188635,
+        0.3296686604002195
+      ],
+      "nominal_95_percent_interval_upper_m_s": [
+        8433.17003916536,
+        3993.5608940184493,
+        1771.0717572106137,
+        0.5497014567872804
+      ],
+      "nominal_interval_width_m_s": [
+        759.6240627057205,
+        1929.2982528806488,
+        1328.3003503587274,
+        0.2200327963870609
+      ],
+      "truth_covered_by_nominal_interval": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "ensemble_mean_location_error_m": 347.84572591527683,
+      "ensemble_mean_origin_time_error_s": 0.04968507289886476
+    },
+    {
+      "event": "region_06.npz",
+      "sha256": "a3fc9b49e1adc40fcb25ed2c7877ebe79b967f6e26054290908e92e5c69fb7e3",
+      "source_truth_m_s": [
+        3270.0,
+        7720.0,
+        750.0,
+        0.28999999165534973
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "estimated_source_m_s": [
+            3238.905517578125,
+            7747.98583984375,
+            880.1062622070312,
+            0.2803380489349365
+          ],
+          "component_error_m_s": [
+            -31.094482421875,
+            27.98583984375,
+            130.10626220703125,
+            -0.009661942720413208
+          ],
+          "location_error_m": 136.66643162945715,
+          "origin_time_error_s": 0.009661942720413208,
+          "inversion_seconds": 3.8743296000002374
+        },
+        {
+          "seed": 7,
+          "estimated_source_m_s": [
+            3241.5126953125,
+            7759.06787109375,
+            921.7401733398438,
+            0.2771982252597809
+          ],
+          "component_error_m_s": [
+            -28.4873046875,
+            39.06787109375,
+            171.74017333984375,
+            -0.012801766395568848
+          ],
+          "location_error_m": 178.41668144810873,
+          "origin_time_error_s": 0.012801766395568848,
+          "inversion_seconds": 3.773295199999666
+        },
+        {
+          "seed": 123,
+          "estimated_source_m_s": [
+            2788.260009765625,
+            8907.275390625,
+            732.8089599609375,
+            0.3180387318134308
+          ],
+          "component_error_m_s": [
+            -481.739990234375,
+            1187.275390625,
+            -17.1910400390625,
+            0.028038740158081055
+          ],
+          "location_error_m": 1281.402280016852,
+          "origin_time_error_s": 0.028038740158081055,
+          "inversion_seconds": 3.731405200000154
+        },
+        {
+          "seed": 2028,
+          "estimated_source_m_s": [
+            3267.426513671875,
+            7730.75439453125,
+            717.0432739257812,
+            0.29218941926956177
+          ],
+          "component_error_m_s": [
+            -2.573486328125,
+            10.75439453125,
+            -32.95672607421875,
+            0.002189427614212036
+          ],
+          "location_error_m": 34.76241687722412,
+          "origin_time_error_s": 0.002189427614212036,
+          "inversion_seconds": 3.6860761000007187
+        },
+        {
+          "seed": 4096,
+          "estimated_source_m_s": [
+            2251.145263671875,
+            7799.91259765625,
+            857.87255859375,
+            0.46978604793548584
+          ],
+          "component_error_m_s": [
+            -1018.854736328125,
+            79.91259765625,
+            107.87255859375,
+            0.1797860562801361
+          ],
+          "location_error_m": 1027.6611727120885,
+          "origin_time_error_s": 0.1797860562801361,
+          "inversion_seconds": 3.683193300000312
+        }
+      ],
+      "ensemble_mean_m_s": [
+        2957.45,
+        7988.99921875,
+        821.9142456054688,
+        0.32751009464263914
+      ],
+      "sample_standard_deviation_m_s": [
+        442.5736931931768,
+        513.9628247238938,
+        91.62723332610194,
+        0.08114214349690377
+      ],
+      "nominal_95_percent_interval_lower_m_s": [
+        2090.0055613413733,
+        6981.632082291168,
+        642.324868286309,
+        0.16847149338870776
+      ],
+      "nominal_95_percent_interval_upper_m_s": [
+        3824.8944386586263,
+        8996.366355208833,
+        1001.5036229246285,
+        0.4865486958965705
+      ],
+      "nominal_interval_width_m_s": [
+        1734.888877317253,
+        2014.7342729176644,
+        359.17875463831956,
+        0.31807720250786276
+      ],
+      "truth_covered_by_nominal_interval": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "ensemble_mean_location_error_m": 418.5925714929904,
+      "ensemble_mean_origin_time_error_s": 0.037510102987289407
+    },
+    {
+      "event": "region_07.npz",
+      "sha256": "1211e44b18c4269ca765a2db7119dc18ab4bb8de61d30e8eda665a806fd0f9ca",
+      "source_truth_m_s": [
+        9160.0,
+        12150.0,
+        980.0,
+        0.10999999940395355
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "estimated_source_m_s": [
+            9298.25390625,
+            14000.0,
+            966.8231201171875,
+            0.3634660542011261
+          ],
+          "component_error_m_s": [
+            138.25390625,
+            1850.0,
+            -13.1768798828125,
+            0.25346605479717255
+          ],
+          "location_error_m": 1855.205587733292,
+          "origin_time_error_s": 0.25346605479717255,
+          "inversion_seconds": 3.7041361000001416
+        },
+        {
+          "seed": 7,
+          "estimated_source_m_s": [
+            9162.689453125,
+            11578.5400390625,
+            1360.6544189453125,
+            0.12509207427501678
+          ],
+          "component_error_m_s": [
+            2.689453125,
+            -571.4599609375,
+            380.6544189453125,
+            0.015092074871063232
+          ],
+          "location_error_m": 686.6378279525488,
+          "origin_time_error_s": 0.015092074871063232,
+          "inversion_seconds": 3.7157252999995762
+        },
+        {
+          "seed": 123,
+          "estimated_source_m_s": [
+            6763.4111328125,
+            14000.0,
+            100.0,
+            0.4907611906528473
+          ],
+          "component_error_m_s": [
+            -2396.5888671875,
+            1850.0,
+            -880.0,
+            0.38076119124889374
+          ],
+          "location_error_m": 3152.861906003348,
+          "origin_time_error_s": 0.38076119124889374,
+          "inversion_seconds": 3.7658126999995147
+        },
+        {
+          "seed": 2028,
+          "estimated_source_m_s": [
+            8017.6904296875,
+            14000.0,
+            1378.439697265625,
+            0.25717079639434814
+          ],
+          "component_error_m_s": [
+            -1142.3095703125,
+            1850.0,
+            398.439697265625,
+            0.1471707969903946
+          ],
+          "location_error_m": 2210.458175760096,
+          "origin_time_error_s": 0.1471707969903946,
+          "inversion_seconds": 3.689561700000013
+        },
+        {
+          "seed": 4096,
+          "estimated_source_m_s": [
+            9133.083984375,
+            11629.7734375,
+            1384.1221923828125,
+            0.12554560601711273
+          ],
+          "component_error_m_s": [
+            -26.916015625,
+            -520.2265625,
+            404.1221923828125,
+            0.01554560661315918
+          ],
+          "location_error_m": 659.2987900822984,
+          "origin_time_error_s": 0.01554560661315918,
+          "inversion_seconds": 3.763491300000169
+        }
+      ],
+      "ensemble_mean_m_s": [
+        8475.02578125,
+        13041.6626953125,
+        1038.0078857421875,
+        0.2724071443080902
+      ],
+      "sample_standard_deviation_m_s": [
+        1086.5549685407486,
+        1312.382409230013,
+        553.3343883941383,
+        0.15769622872141437
+      ],
+      "nominal_95_percent_interval_lower_m_s": [
+        6345.378042910133,
+        10469.393173221673,
+        -46.52751551032361,
+        -0.03667746398588195
+      ],
+      "nominal_95_percent_interval_upper_m_s": [
+        10604.673519589867,
+        15613.932217403326,
+        2122.5432869946985,
+        0.5814917526020624
+      ],
+      "nominal_interval_width_m_s": [
+        4259.295476679734,
+        5144.539044181653,
+        2169.070802505022,
+        0.6181692165879444
+      ],
+      "truth_covered_by_nominal_interval": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "ensemble_mean_location_error_m": 1125.8849663142335,
+      "ensemble_mean_origin_time_error_s": 0.16240714490413666
+    },
+    {
+      "event": "region_08.npz",
+      "sha256": "e32d3207a22b81bd605659ac9f039163657559fb517f254054a2f78beedd1de1",
+      "source_truth_m_s": [
+        12650.0,
+        7790.0,
+        700.0,
+        0.3700000047683716
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "estimated_source_m_s": [
+            13009.8056640625,
+            7966.89208984375,
+            1299.9254150390625,
+            0.3525640070438385
+          ],
+          "component_error_m_s": [
+            359.8056640625,
+            176.89208984375,
+            599.9254150390625,
+            -0.01743599772453308
+          ],
+          "location_error_m": 721.5687291939261,
+          "origin_time_error_s": 0.01743599772453308,
+          "inversion_seconds": 3.6936481999991884
+        },
+        {
+          "seed": 7,
+          "estimated_source_m_s": [
+            12719.0400390625,
+            6998.611328125,
+            1218.7083740234375,
+            0.22215116024017334
+          ],
+          "component_error_m_s": [
+            69.0400390625,
+            -791.388671875,
+            518.7083740234375,
+            -0.14784884452819824
+          ],
+          "location_error_m": 948.7470338545814,
+          "origin_time_error_s": 0.14784884452819824,
+          "inversion_seconds": 3.7470694000003277
+        },
+        {
+          "seed": 123,
+          "estimated_source_m_s": [
+            12980.556640625,
+            8008.1728515625,
+            1249.912841796875,
+            0.3580433428287506
+          ],
+          "component_error_m_s": [
+            330.556640625,
+            218.1728515625,
+            549.912841796875,
+            -0.011956661939620972
+          ],
+          "location_error_m": 677.6955211548272,
+          "origin_time_error_s": 0.011956661939620972,
+          "inversion_seconds": 3.777515499999936
+        },
+        {
+          "seed": 2028,
+          "estimated_source_m_s": [
+            12741.8115234375,
+            6906.7880859375,
+            892.7349853515625,
+            0.27895134687423706
+          ],
+          "component_error_m_s": [
+            91.8115234375,
+            -883.2119140625,
+            192.7349853515625,
+            -0.09104865789413452
+          ],
+          "location_error_m": 908.6470247331064,
+          "origin_time_error_s": 0.09104865789413452,
+          "inversion_seconds": 3.5977536999998847
+        },
+        {
+          "seed": 4096,
+          "estimated_source_m_s": [
+            13759.8740234375,
+            7737.5146484375,
+            1217.9002685546875,
+            0.4623364210128784
+          ],
+          "component_error_m_s": [
+            1109.8740234375,
+            -52.4853515625,
+            517.9002685546875,
+            0.09233641624450684
+          ],
+          "location_error_m": 1225.885699483847,
+          "origin_time_error_s": 0.09233641624450684,
+          "inversion_seconds": 3.731980399999884
+        }
+      ],
+      "ensemble_mean_m_s": [
+        13042.217578125,
+        7523.59580078125,
+        1175.836376953125,
+        0.3348092555999756
+      ],
+      "sample_standard_deviation_m_s": [
+        422.66147693294397,
+        532.2471806040745,
+        161.7399062175494,
+        0.09073337911671316
+      ],
+      "nominal_95_percent_interval_lower_m_s": [
+        12213.801083336431,
+        6480.391326797264,
+        858.8261607667282,
+        0.15697183253121783
+      ],
+      "nominal_95_percent_interval_upper_m_s": [
+        13870.63407291357,
+        8566.800274765235,
+        1492.8465931395217,
+        0.5126466786687334
+      ],
+      "nominal_interval_width_m_s": [
+        1656.8329895771385,
+        2086.4089479679715,
+        634.0204323727935,
+        0.35567484613751554
+      ],
+      "truth_covered_by_nominal_interval": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "ensemble_mean_location_error_m": 671.7336403541965,
+      "ensemble_mean_origin_time_error_s": 0.035190749168395985
+    },
+    {
+      "event": "central_gap.npz",
+      "sha256": "4276af30bccc24c6bb48a8ef3a6df55948c5542c3e35773ccae3bd5e7915c333",
+      "source_truth_m_s": [
+        7850.0,
+        8500.0,
+        850.0,
+        0.25
+      ],
+      "members": [
+        {
+          "seed": 42,
+          "estimated_source_m_s": [
+            8243.8359375,
+            7864.044921875,
+            1004.36865234375,
+            0.23183754086494446
+          ],
+          "component_error_m_s": [
+            393.8359375,
+            -635.955078125,
+            154.36865234375,
+            -0.018162459135055542
+          ],
+          "location_error_m": 763.7900810339869,
+          "origin_time_error_s": 0.018162459135055542,
+          "inversion_seconds": 3.747502799999893
+        },
+        {
+          "seed": 7,
+          "estimated_source_m_s": [
+            8905.08203125,
+            8002.38427734375,
+            1359.8216552734375,
+            0.05306673422455788
+          ],
+          "component_error_m_s": [
+            1055.08203125,
+            -497.61572265625,
+            509.8216552734375,
+            -0.19693326577544212
+          ],
+          "location_error_m": 1273.0819377742644,
+          "origin_time_error_s": 0.19693326577544212,
+          "inversion_seconds": 3.7379791000003024
+        },
+        {
+          "seed": 123,
+          "estimated_source_m_s": [
+            8345.396484375,
+            7703.0947265625,
+            964.6240234375,
+            0.21523836255073547
+          ],
+          "component_error_m_s": [
+            495.396484375,
+            -796.9052734375,
+            114.6240234375,
+            -0.034761637449264526
+          ],
+          "location_error_m": 945.3117783634174,
+          "origin_time_error_s": 0.034761637449264526,
+          "inversion_seconds": 3.838843800000177
+        },
+        {
+          "seed": 2028,
+          "estimated_source_m_s": [
+            8203.8408203125,
+            8263.6328125,
+            1002.2606811523438,
+            0.23428259789943695
+          ],
+          "component_error_m_s": [
+            353.8408203125,
+            -236.3671875,
+            152.26068115234375,
+            -0.01571740210056305
+          ],
+          "location_error_m": 451.9469974134785,
+          "origin_time_error_s": 0.01571740210056305,
+          "inversion_seconds": 3.8831876999993256
+        },
+        {
+          "seed": 4096,
+          "estimated_source_m_s": [
+            7841.734375,
+            8335.673828125,
+            818.599853515625,
+            0.27753275632858276
+          ],
+          "component_error_m_s": [
+            -8.265625,
+            -164.326171875,
+            -31.400146484375,
+            0.027532756328582764
+          ],
+          "location_error_m": 167.5033746495063,
+          "origin_time_error_s": 0.027532756328582764,
+          "inversion_seconds": 3.691282200000387
+        }
+      ],
+      "ensemble_mean_m_s": [
+        8307.9779296875,
+        8033.76611328125,
+        1029.9349731445313,
+        0.2023915983736515
+      ],
+      "sample_standard_deviation_m_s": [
+        384.1468603724556,
+        266.04540783744255,
+        199.48231700001247,
+        0.08659279329385469
+      ],
+      "nominal_95_percent_interval_lower_m_s": [
+        7555.050083357488,
+        7512.317113919862,
+        638.9496318245069,
+        0.032669723517696314
+      ],
+      "nominal_95_percent_interval_upper_m_s": [
+        9060.905776017513,
+        8555.215112642638,
+        1420.9203144645558,
+        0.3721134732296067
+      ],
+      "nominal_interval_width_m_s": [
+        1505.855692660025,
+        1042.8979987227758,
+        781.9706826400488,
+        0.3394437497119104
+      ],
+      "truth_covered_by_nominal_interval": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "ensemble_mean_location_error_m": 677.8601741998452,
+      "ensemble_mean_origin_time_error_s": 0.047608401626348495
+    }
+  ],
+  "limitations": "Eight post-hoc same-model synthetic events and M=5 only. The interval describes seed dispersion and excludes data noise, velocity uncertainty, receiver geometry, source physics and model-form uncertainty."
+}

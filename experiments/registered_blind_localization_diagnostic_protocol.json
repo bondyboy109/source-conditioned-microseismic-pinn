@@ -1,0 +1,35 @@
+{
+  "role": "post-hoc localization diagnostic on previously opened blind forward-test records; not independent confirmation",
+  "checkpoint": "outputs/registered_5hz_train8/conditioned_5Hz.pth",
+  "checkpoint_sha256": "cb3b318ab945e34c64b83875e63293ea4af8b427e4e647f73ffc2eb88f2edcf2",
+  "source_protocol": "experiments/5hz_protocol.json",
+  "observations": [
+    {
+      "name": "blind_01",
+      "path": "data/observations/blind_01.npz",
+      "sha256": "b2aa63b09f0d1dca456eb541847d69db3c5061d91850312d3b36eee9bf4842bc"
+    },
+    {
+      "name": "blind_02",
+      "path": "data/observations/blind_02.npz",
+      "sha256": "a2bc0824bc43a915f9fcdfe48a8f6f68c2b073e979369fcb502333dc4f2ca3a5"
+    },
+    {
+      "name": "blind_03",
+      "path": "data/observations/blind_03.npz",
+      "sha256": "80681141382ca88f1b1414c2ac59786ea1ca76f442f95a52799bf0053dc470cb"
+    }
+  ],
+  "inversion": {
+    "grid": [12, 12, 8, 8],
+    "candidate_batch": 16,
+    "receiver_stride": 2,
+    "time_stride": 4,
+    "iterations": 300,
+    "learning_rate": 0.005,
+    "restarts": 1
+  },
+  "raw_result_directory": "outputs/blind_localization_registered_5hz",
+  "summary_file": "experiments/registered_blind_localization_diagnostic.json",
+  "limitations": "The registered forward feasibility gate had already failed and these three records had already been inspected in forward audits before localization. This run diagnoses inversion failure only; it is not an independent localization test. One checkpoint, one velocity model, 5 Hz, noise-free FD observations and one optimizer configuration."
+}

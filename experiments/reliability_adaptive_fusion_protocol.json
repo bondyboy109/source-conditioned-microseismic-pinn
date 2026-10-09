@@ -1,0 +1,18 @@
+{
+  "purpose": "post-hoc development audit of fixed reliability-adaptive FMM/waveform fusion",
+  "source_result": "experiments/fmm_seeded_independent_results.json",
+  "fmm_result": "experiments/fmm_seeded_independent_results.json",
+  "source_result_sha256": "5cf7584f6ce52b1f1a00d0dd501df35f101b8d5b9959581822929148b05bb7be",
+  "fmm_result_sha256": "5cf7584f6ce52b1f1a00d0dd501df35f101b8d5b9959581822929148b05bb7be",
+  "minimum_valid_picks": 6,
+  "full_pick_count": 12,
+  "arrival_rmse_good_s": 0.02,
+  "arrival_rmse_bad_s": 0.1,
+  "missing_arrival_rmse_s": 0.1,
+  "fallback_reliability_threshold": 0.2,
+  "min_hybrid_weight": 0.05,
+  "max_hybrid_weight": 0.25,
+  "output_result": "experiments/reliability_adaptive_fusion_results_v2.json",
+  "output_report": "experiments/reliability_adaptive_fusion_results_v2.md",
+  "limitations": "Post-hoc development audit on already inspected synthetic events. The adaptive rule is fixed for this audit but is not an independent blind confirmation. It reuses frozen FMM-seeded candidates and does not retrain or retune the waveform operator."
+}

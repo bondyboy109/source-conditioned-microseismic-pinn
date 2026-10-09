@@ -1,0 +1,819 @@
+{
+  "role": "post-hoc development audit of a fixed local-interpolation/neural hybrid",
+  "protocol_sha256": "dcadf861972ac5e4fd4402c55fde6c62716a5e671198c64cd9fea5933f7c9cf2",
+  "checkpoint_sha256": "dab17cae1d3aae79c0b9efeac28aa5bae2f88748ad822d49d4b5bf87a73407b4",
+  "summary": {
+    "event_count": 16,
+    "local_mean_full_l2": 1.2322512641186147,
+    "neural_mean_full_l2": 1.0493258098465899,
+    "hybrid_mean_full_l2": 1.1123222431969952,
+    "local_mean_active_l2": 1.058452081308461,
+    "neural_mean_active_l2": 0.9614247211980327,
+    "hybrid_mean_active_l2": 0.9890542820578812,
+    "hybrid_improves_over_neural_count": 0,
+    "local_selected_count": 5
+  },
+  "events": [
+    {
+      "event": "test_01.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_01.npz",
+      "sha256": "063ddda11c1a73da3e870602f25968d41f5ecc74aadae580740947f1e54e4d41",
+      "source_m_s": [
+        4700.0,
+        4300.0,
+        620.0,
+        0.17000000178813934
+      ],
+      "nearest_scaled_distance": 1.4730919862656235,
+      "use_local": true,
+      "local": {
+        "full_l2": 1.1732239073147572,
+        "active_l2": 1.0431546196577388,
+        "zero_lag_correlation": -0.0024864707438647837
+      },
+      "neural": {
+        "full_l2": 0.9246741979947009,
+        "active_l2": 0.8384416962445002,
+        "zero_lag_correlation": 0.4241884903397775
+      },
+      "hybrid": {
+        "full_l2": 1.1732239073147572,
+        "active_l2": 1.0431546196577388,
+        "zero_lag_correlation": -0.0024864707438647837
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            3500.0,
+            4000.0,
+            660.0,
+            0.11999999731779099
+          ],
+          "scaled_distance": 1.4730919862656235,
+          "weight": 0.7263556116015133
+        },
+        {
+          "source_m_s": [
+            6300.0,
+            3500.0,
+            700.0,
+            0.20000000298023224
+          ],
+          "scaled_distance": 2.4000000000000004,
+          "weight": 0.2736443883984867
+        }
+      ]
+    },
+    {
+      "event": "test_02.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_02.npz",
+      "sha256": "c39165b10f1e23a90f628727740d7edb2d07f90aef072a7438b2fe9173b1af75",
+      "source_m_s": [
+        5400.0,
+        10800.0,
+        760.0,
+        0.28999999165534973
+      ],
+      "nearest_scaled_distance": 3.2771939216347876,
+      "use_local": false,
+      "local": {
+        "full_l2": 1.0774114288742829,
+        "active_l2": 1.002544937056179,
+        "zero_lag_correlation": 0.012769777934284889
+      },
+      "neural": {
+        "full_l2": 0.9282557965259896,
+        "active_l2": 0.8830078348479711,
+        "zero_lag_correlation": 0.37210388182975435
+      },
+      "hybrid": {
+        "full_l2": 0.9282557965259896,
+        "active_l2": 0.8830078348479711,
+        "zero_lag_correlation": 0.37210388182975435
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            6500.0,
+            9500.0,
+            900.0,
+            0.27000001072883606
+          ],
+          "scaled_distance": 3.2771939216347876,
+          "weight": 0.5700560448358687
+        },
+        {
+          "source_m_s": [
+            3000.0,
+            8000.0,
+            800.0,
+            0.3100000023841858
+          ],
+          "scaled_distance": 3.7735924528226414,
+          "weight": 0.4299439551641313
+        }
+      ]
+    },
+    {
+      "event": "test_03.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_03.npz",
+      "sha256": "d94aaae8c6ecc1801d6798f9798424143b03ea6039fa33af8f55c94ca828b97e",
+      "source_m_s": [
+        7200.0,
+        13200.0,
+        1180.0,
+        0.23000000417232513
+      ],
+      "nearest_scaled_distance": 2.507987240796891,
+      "use_local": false,
+      "local": {
+        "full_l2": 1.1753276368303458,
+        "active_l2": 1.0462786365382117,
+        "zero_lag_correlation": 0.05675334810911261
+      },
+      "neural": {
+        "full_l2": 1.0769133014553143,
+        "active_l2": 1.0057219060735456,
+        "zero_lag_correlation": 0.19593155084055383
+      },
+      "hybrid": {
+        "full_l2": 1.0769133014553143,
+        "active_l2": 1.0057219060735456,
+        "zero_lag_correlation": 0.19593155084055383
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            9000.0,
+            12500.0,
+            1100.0,
+            0.09000000357627869
+          ],
+          "scaled_distance": 2.507987240796891,
+          "weight": 0.653061224489796
+        },
+        {
+          "source_m_s": [
+            4000.0,
+            12000.0,
+            1200.0,
+            0.36000001430511475
+          ],
+          "scaled_distance": 3.440930106817051,
+          "weight": 0.34693877551020413
+        }
+      ]
+    },
+    {
+      "event": "test_04.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_04.npz",
+      "sha256": "1b36b142d4fdd38d5dd8d9618dcdc3b5ddd285c036dbfcf73058b01c79069797",
+      "source_m_s": [
+        8600.0,
+        6200.0,
+        520.0,
+        0.4099999964237213
+      ],
+      "nearest_scaled_distance": 3.443835071544513,
+      "use_local": false,
+      "local": {
+        "full_l2": 1.3410175672580584,
+        "active_l2": 1.0889782458104282,
+        "zero_lag_correlation": 0.08153009675519048
+      },
+      "neural": {
+        "full_l2": 1.4259286704275456,
+        "active_l2": 1.3338334284484787,
+        "zero_lag_correlation": -0.16304410281180198
+      },
+      "hybrid": {
+        "full_l2": 1.4259286704275456,
+        "active_l2": 1.3338334284484787,
+        "zero_lag_correlation": -0.16304410281180198
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            6500.0,
+            3500.0,
+            540.0,
+            0.20000000298023224
+          ],
+          "scaled_distance": 3.443835071544513,
+          "weight": 0.5650898423175651
+        },
+        {
+          "source_m_s": [
+            12500.0,
+            6000.0,
+            500.0,
+            0.3499999940395355
+          ],
+          "scaled_distance": 3.925557285278104,
+          "weight": 0.43491015768243496
+        }
+      ]
+    },
+    {
+      "event": "test_05.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_05.npz",
+      "sha256": "c6747ace6bd0cab4a79218f7b6a58e211dcda01f5d3425b7f8b86197a7cb306e",
+      "source_m_s": [
+        9800.0,
+        3600.0,
+        1150.0,
+        0.1599999964237213
+      ],
+      "nearest_scaled_distance": 2.913760456866693,
+      "use_local": false,
+      "local": {
+        "full_l2": 1.3274045666387932,
+        "active_l2": 1.1596406159758712,
+        "zero_lag_correlation": 0.012696763604125208
+      },
+      "neural": {
+        "full_l2": 0.8363298903197305,
+        "active_l2": 0.7723567277512823,
+        "zero_lag_correlation": 0.5650927600652413
+      },
+      "hybrid": {
+        "full_l2": 0.8363298903197305,
+        "active_l2": 0.7723567277512823,
+        "zero_lag_correlation": 0.5650927600652413
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            10000.0,
+            6500.0,
+            1160.0,
+            0.25
+          ],
+          "scaled_distance": 2.913760456866693,
+          "weight": 0.5974395448079659
+        },
+        {
+          "source_m_s": [
+            8000.0,
+            3000.0,
+            1300.0,
+            0.41999998688697815
+          ],
+          "scaled_distance": 3.5496478698597698,
+          "weight": 0.4025604551920341
+        }
+      ]
+    },
+    {
+      "event": "test_06.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_06.npz",
+      "sha256": "b5dc551f9d625f08f38d34dcbc2e05895bf2cc1a057783e1cde834224bc9c2bb",
+      "source_m_s": [
+        11800.0,
+        8800.0,
+        930.0,
+        0.30000001192092896
+      ],
+      "nearest_scaled_distance": 2.6305892875931813,
+      "use_local": false,
+      "local": {
+        "full_l2": 1.1401083563558965,
+        "active_l2": 0.9854739295452202,
+        "zero_lag_correlation": 0.14310340373780547
+      },
+      "neural": {
+        "full_l2": 0.6896383526553782,
+        "active_l2": 0.5974529010061587,
+        "zero_lag_correlation": 0.7560876825359778
+      },
+      "hybrid": {
+        "full_l2": 0.6896383526553782,
+        "active_l2": 0.5974529010061587,
+        "zero_lag_correlation": 0.7560876825359778
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            11000.0,
+            10000.0,
+            1040.0,
+            0.3400000035762787
+          ],
+          "scaled_distance": 2.6305892875931813,
+          "weight": 0.6025272831705916
+        },
+        {
+          "source_m_s": [
+            10000.0,
+            6500.0,
+            1000.0,
+            0.25
+          ],
+          "scaled_distance": 3.2388269481403293,
+          "weight": 0.3974727168294084
+        }
+      ]
+    },
+    {
+      "event": "test_07.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_07.npz",
+      "sha256": "837736d30fd7bbb48ce9cf4452b841baf229e0481c6bbd6fd1ee23be6b675109",
+      "source_m_s": [
+        13200.0,
+        11200.0,
+        380.0,
+        0.27000001072883606
+      ],
+      "nearest_scaled_distance": 1.4966629547095767,
+      "use_local": true,
+      "local": {
+        "full_l2": 1.1720290028246985,
+        "active_l2": 1.0479821037248795,
+        "zero_lag_correlation": 0.05499841102961795
+      },
+      "neural": {
+        "full_l2": 0.9705172342206773,
+        "active_l2": 0.9283543241945235,
+        "zero_lag_correlation": 0.28515329942534695
+      },
+      "hybrid": {
+        "full_l2": 1.1720290028246985,
+        "active_l2": 1.0479821037248795,
+        "zero_lag_correlation": 0.05499841102961795
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            12000.0,
+            12000.0,
+            400.0,
+            0.18000000715255737
+          ],
+          "scaled_distance": 1.4966629547095767,
+          "weight": 0.9109697933227345
+        },
+        {
+          "source_m_s": [
+            11600.0,
+            12200.0,
+            600.0,
+            0.20000000298023224
+          ],
+          "scaled_distance": 4.787483681434329,
+          "weight": 0.08903020667726552
+        }
+      ]
+    },
+    {
+      "event": "test_08.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_independent\\test_08.npz",
+      "sha256": "df432f3c2dfebc6cb0ae3c0f8bf400bd5d608feb5543868a511578076cc149c1",
+      "source_m_s": [
+        3800.0,
+        12800.0,
+        1320.0,
+        0.3799999952316284
+      ],
+      "nearest_scaled_distance": 2.537715508089904,
+      "use_local": false,
+      "local": {
+        "full_l2": 1.166178131352327,
+        "active_l2": 1.089782783453139,
+        "zero_lag_correlation": 0.03943397263894227
+      },
+      "neural": {
+        "full_l2": 0.7914835704283051,
+        "active_l2": 0.7109756711198524,
+        "zero_lag_correlation": 0.6636925292231889
+      },
+      "hybrid": {
+        "full_l2": 0.7914835704283051,
+        "active_l2": 0.7109756711198524,
+        "zero_lag_correlation": 0.6636925292231889
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            4000.0,
+            12000.0,
+            1200.0,
+            0.36000001430511475
+          ],
+          "scaled_distance": 2.537715508089904,
+          "weight": 0.6229508196721312
+        },
+        {
+          "source_m_s": [
+            6000.0,
+            11000.0,
+            1400.0,
+            0.30000001192092896
+          ],
+          "scaled_distance": 3.2619012860600183,
+          "weight": 0.3770491803278688
+        }
+      ]
+    },
+    {
+      "event": "test_01.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_01.npz",
+      "sha256": "1d44a3788ce53a9f1435b142813d1011a9169b2b987e9f7bf56b06ee19718539",
+      "source_m_s": [
+        2600.0,
+        2800.0,
+        300.0,
+        0.20999999344348907
+      ],
+      "nearest_scaled_distance": 1.7,
+      "use_local": true,
+      "local": {
+        "full_l2": 1.3823628403634436,
+        "active_l2": 1.1270206852242686,
+        "zero_lag_correlation": 0.004923964535829391
+      },
+      "neural": {
+        "full_l2": 1.2937447255851962,
+        "active_l2": 1.2466159718110374,
+        "zero_lag_correlation": -0.11562498200707694
+      },
+      "hybrid": {
+        "full_l2": 1.3823628403634436,
+        "active_l2": 1.1270206852242686,
+        "zero_lag_correlation": 0.004923964535829391
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            3500.0,
+            4000.0,
+            340.0,
+            0.11999999731779099
+          ],
+          "scaled_distance": 1.7,
+          "weight": 0.8611911623439
+        },
+        {
+          "source_m_s": [
+            3300.0,
+            4000.0,
+            500.0,
+            0.11999999731779099
+          ],
+          "scaled_distance": 4.2343830719480255,
+          "weight": 0.1388088376560999
+        }
+      ]
+    },
+    {
+      "event": "test_02.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_02.npz",
+      "sha256": "aa56b60ef6c1c9c633db435236060c5b883fc86b339b2839cd41a76fdbffe416",
+      "source_m_s": [
+        13600.0,
+        3600.0,
+        1230.0,
+        0.3199999928474426
+      ],
+      "nearest_scaled_distance": 4.830113870293329,
+      "use_local": false,
+      "local": {
+        "full_l2": 1.3745551115627175,
+        "active_l2": 1.003736982938571,
+        "zero_lag_correlation": 0.02439256925673239
+      },
+      "neural": {
+        "full_l2": 0.9709180645808198,
+        "active_l2": 0.7798143290942811,
+        "zero_lag_correlation": 0.5086414649197653
+      },
+      "hybrid": {
+        "full_l2": 0.9709180645808198,
+        "active_l2": 0.7798143290942811,
+        "zero_lag_correlation": 0.5086414649197653
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            10000.0,
+            6500.0,
+            1160.0,
+            0.25
+          ],
+          "scaled_distance": 4.830113870293329,
+          "weight": 0.590773548500263
+        },
+        {
+          "source_m_s": [
+            8000.0,
+            3000.0,
+            1300.0,
+            0.41999998688697815
+          ],
+          "scaled_distance": 5.8034472514187625,
+          "weight": 0.4092264514997369
+        }
+      ]
+    },
+    {
+      "event": "test_03.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_03.npz",
+      "sha256": "e2b30f94c909b7a750789632257f338d20942ef4a524b87dc00a344635a00f67",
+      "source_m_s": [
+        3400.0,
+        13900.0,
+        980.0,
+        0.14000000059604645
+      ],
+      "nearest_scaled_distance": 4.830113870293329,
+      "use_local": false,
+      "local": {
+        "full_l2": 1.330246408528244,
+        "active_l2": 1.0834744199640933,
+        "zero_lag_correlation": 0.009166486343503814
+      },
+      "neural": {
+        "full_l2": 1.305656694535132,
+        "active_l2": 1.0899949466735026,
+        "zero_lag_correlation": 0.1991067004500258
+      },
+      "hybrid": {
+        "full_l2": 1.305656694535132,
+        "active_l2": 1.0899949466735026,
+        "zero_lag_correlation": 0.1991067004500258
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            4000.0,
+            12000.0,
+            1200.0,
+            0.36000001430511475
+          ],
+          "scaled_distance": 4.830113870293329,
+          "weight": 0.574735690849435
+        },
+        {
+          "source_m_s": [
+            6500.0,
+            9500.0,
+            900.0,
+            0.27000001072883606
+          ],
+          "scaled_distance": 5.6151580565465835,
+          "weight": 0.42526430915056507
+        }
+      ]
+    },
+    {
+      "event": "test_04.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_04.npz",
+      "sha256": "28905a6d02cccff650b0144a39b1d188ca9a63495c8827b6f9882689211b42f1",
+      "source_m_s": [
+        12900.0,
+        13700.0,
+        420.0,
+        0.3700000047683716
+      ],
+      "nearest_scaled_distance": 1.96468827043885,
+      "use_local": true,
+      "local": {
+        "full_l2": 1.344710754001878,
+        "active_l2": 1.1248273259465316,
+        "zero_lag_correlation": -0.037721984783475423
+      },
+      "neural": {
+        "full_l2": 1.1530184564728019,
+        "active_l2": 1.1054334507422745,
+        "zero_lag_correlation": -0.05691445334761172
+      },
+      "hybrid": {
+        "full_l2": 1.344710754001878,
+        "active_l2": 1.1248273259465316,
+        "zero_lag_correlation": -0.037721984783475423
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            12000.0,
+            12000.0,
+            400.0,
+            0.18000000715255737
+          ],
+          "scaled_distance": 1.96468827043885,
+          "weight": 0.8140655105973025
+        },
+        {
+          "source_m_s": [
+            11600.0,
+            12200.0,
+            600.0,
+            0.20000000298023224
+          ],
+          "scaled_distance": 4.110960958218893,
+          "weight": 0.18593448940269747
+        }
+      ]
+    },
+    {
+      "event": "test_05.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_05.npz",
+      "sha256": "7a2078e42bb79670e46fd63e98b990bfa1e945e9c98c72e26febca1d6087df17",
+      "source_m_s": [
+        6300.0,
+        6300.0,
+        1380.0,
+        0.25
+      ],
+      "nearest_scaled_distance": 4.042276586281547,
+      "use_local": false,
+      "local": {
+        "full_l2": 1.1131736988113614,
+        "active_l2": 0.9661499848842774,
+        "zero_lag_correlation": 0.10566939361357443
+      },
+      "neural": {
+        "full_l2": 1.14929680535899,
+        "active_l2": 1.056069618438298,
+        "zero_lag_correlation": 0.054979917679432
+      },
+      "hybrid": {
+        "full_l2": 1.14929680535899,
+        "active_l2": 1.056069618438298,
+        "zero_lag_correlation": 0.054979917679432
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            8000.0,
+            3000.0,
+            1300.0,
+            0.41999998688697815
+          ],
+          "scaled_distance": 4.042276586281547,
+          "weight": 0.5775594622543951
+        },
+        {
+          "source_m_s": [
+            6000.0,
+            11000.0,
+            1400.0,
+            0.30000001192092896
+          ],
+          "scaled_distance": 4.72652091923859,
+          "weight": 0.42244053774560486
+        }
+      ]
+    },
+    {
+      "event": "test_06.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_06.npz",
+      "sha256": "bf510d8b084ff360ba9f7a36feb27dad8d1436bb5610d205aa2e9658754a4639",
+      "source_m_s": [
+        10400.0,
+        10400.0,
+        220.0,
+        0.3100000023841858
+      ],
+      "nearest_scaled_distance": 4.25205832509386,
+      "use_local": false,
+      "local": {
+        "full_l2": 1.1379699833505854,
+        "active_l2": 0.9958547785653055,
+        "zero_lag_correlation": 0.07166541146517116
+      },
+      "neural": {
+        "full_l2": 1.1149664522230696,
+        "active_l2": 1.046248174791095,
+        "zero_lag_correlation": -0.06536751760086783
+      },
+      "hybrid": {
+        "full_l2": 1.1149664522230696,
+        "active_l2": 1.046248174791095,
+        "zero_lag_correlation": -0.06536751760086783
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            12000.0,
+            12000.0,
+            400.0,
+            0.18000000715255737
+          ],
+          "scaled_distance": 4.25205832509386,
+          "weight": 0.7530392022947684
+        },
+        {
+          "source_m_s": [
+            12500.0,
+            6000.0,
+            500.0,
+            0.3499999940395355
+          ],
+          "scaled_distance": 7.424957912338628,
+          "weight": 0.2469607977052316
+        }
+      ]
+    },
+    {
+      "event": "test_07.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_07.npz",
+      "sha256": "faa85f2df753bbcf96cdba3639427c0943d7fcdcb72e1cfd0ed67a98e77fd957",
+      "source_m_s": [
+        7600.0,
+        4600.0,
+        880.0,
+        0.1899999976158142
+      ],
+      "nearest_scaled_distance": 1.6062378404209012,
+      "use_local": true,
+      "local": {
+        "full_l2": 1.2772707064341988,
+        "active_l2": 1.12704334785871,
+        "zero_lag_correlation": -0.08761350496213992
+      },
+      "neural": {
+        "full_l2": 0.9996996630591156,
+        "active_l2": 0.9091096656622185,
+        "zero_lag_correlation": 0.32078019030429056
+      },
+      "hybrid": {
+        "full_l2": 1.2772707064341988,
+        "active_l2": 1.12704334785871,
+        "zero_lag_correlation": -0.08761350496213992
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            6500.0,
+            3500.0,
+            860.0,
+            0.20000000298023224
+          ],
+          "scaled_distance": 1.6062378404209012,
+          "weight": 0.5
+        },
+        {
+          "source_m_s": [
+            6500.0,
+            3500.0,
+            900.0,
+            0.20000000298023224
+          ],
+          "scaled_distance": 1.6062378404209012,
+          "weight": 0.5
+        }
+      ]
+    },
+    {
+      "event": "test_08.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_08.npz",
+      "sha256": "8468027befcbb696a561f131bac172f9e93a52af2b6f6b381773f9957415fe2c",
+      "source_m_s": [
+        4700.0,
+        9400.0,
+        1120.0,
+        0.4000000059604645
+      ],
+      "nearest_scaled_distance": 3.132091952673165,
+      "use_local": false,
+      "local": {
+        "full_l2": 1.1830301253962454,
+        "active_l2": 1.0432899037919499,
+        "zero_lag_correlation": 0.1915654237679505
+      },
+      "neural": {
+        "full_l2": 1.1581710817026727,
+        "active_l2": 1.0793648922695034,
+        "zero_lag_correlation": 0.1719550096303353
+      },
+      "hybrid": {
+        "full_l2": 1.1581710817026727,
+        "active_l2": 1.0793648922695034,
+        "zero_lag_correlation": 0.1719550096303353
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            4000.0,
+            12000.0,
+            1200.0,
+            0.36000001430511475
+          ],
+          "scaled_distance": 3.132091952673165,
+          "weight": 0.6974090067859346
+        },
+        {
+          "source_m_s": [
+            6500.0,
+            9500.0,
+            900.0,
+            0.27000001072883606
+          ],
+          "scaled_distance": 4.754997371187496,
+          "weight": 0.3025909932140654
+        }
+      ]
+    }
+  ],
+  "limits": "All evaluation records were opened in earlier experiments. The threshold and interpolation parameters were fixed from the earlier local development scan and are not independent validation. This is a forward surrogate diagnostic only; it makes no localization or UQ claim."
+}

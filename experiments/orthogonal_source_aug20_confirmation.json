@@ -1,0 +1,748 @@
+{
+  "purpose": "frozen waveform error decomposition; no fitting or tuning; synthetic-confirmation",
+  "checkpoint": "outputs\\local_density_aug20_scratch_hybrid_1000\\conditioned_5Hz.pth",
+  "checkpoint_epoch": 1000,
+  "checkpoint_training_events": [
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_01_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_02_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_03_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_04_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_05_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_06_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_07_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_08_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_09_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_10_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_11_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_12_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_13_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_14_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_15_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\window_0to2s\\train_16_0to2s.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\local_density\\train_01_x3300.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\local_density\\train_01_x3700.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\local_density\\train_09_x6300.npz",
+    "E:\\source-conditioned-microseismic-pinn\\data\\observations\\local_density\\train_09_x6700.npz"
+  ],
+  "time_windows_s": [
+    [
+      0.0,
+      0.25
+    ],
+    [
+      0.25,
+      0.5
+    ],
+    [
+      0.5,
+      1.0
+    ],
+    [
+      1.0,
+      2.0
+    ]
+  ],
+  "best_shift_limit_s": 0.5,
+  "events": [
+    {
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a01_xp400.npz",
+      "sha256": "3ce728d5c2d5790b731a10d674471d23e3cb1aec9e5184308a07d4f31c6e4d1e",
+      "file_in_receiver_training_set": false,
+      "source_truth": [
+        3900.0,
+        4000.0,
+        500.0,
+        0.11999999731779099
+      ],
+      "source_in_receiver_training_set": false,
+      "receiver_count": 25,
+      "sample_count": 1001,
+      "original_amplitude_relative_l2": 0.42837561605197133,
+      "prediction_to_observation_peak_ratio": 0.9973192030654735,
+      "active_receiver_count": 13,
+      "active_receiver_energy_ratio_median": 0.9876145009871794,
+      "active_receiver_energy_ratio_p10_p90": [
+        0.7962938787006562,
+        6.65380673254154
+      ],
+      "common_time_shift_and_gain_diagnostic_only": {
+        "lag_samples": -2,
+        "gain": 1.0035916870524075,
+        "relative_l2": 0.39077943143256555,
+        "lag_s": -0.003999948501586914
+      },
+      "time_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.25
+          ],
+          "observed_energy_fraction": 1.291915950455971e-31,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.0005267252066572458
+        },
+        {
+          "window_s": [
+            0.25,
+            0.5
+          ],
+          "observed_energy_fraction": 0.023268032432183682,
+          "relative_l2_normalized_by_window_energy": 0.33534162956994595,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.0026165835174335418
+        },
+        {
+          "window_s": [
+            0.5,
+            1.0
+          ],
+          "observed_energy_fraction": 0.3920960359403864,
+          "relative_l2_normalized_by_window_energy": 0.26890346105389473,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.028352100245438452
+        },
+        {
+          "window_s": [
+            1.0,
+            2.0
+          ],
+          "observed_energy_fraction": 0.5834873359907526,
+          "relative_l2_normalized_by_window_energy": 0.5089344597519242,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.15113155474316867
+        }
+      ]
+    },
+    {
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a01_ym120.npz",
+      "sha256": "8e53c3966fba69e8431382519d5c7f46fa1580d6190d0fed61892c05a5aecb4f",
+      "file_in_receiver_training_set": false,
+      "source_truth": [
+        3500.0,
+        3880.0,
+        500.0,
+        0.11999999731779099
+      ],
+      "source_in_receiver_training_set": false,
+      "receiver_count": 25,
+      "sample_count": 1001,
+      "original_amplitude_relative_l2": 0.4088198104890088,
+      "prediction_to_observation_peak_ratio": 1.0526111508651532,
+      "active_receiver_count": 10,
+      "active_receiver_energy_ratio_median": 1.0269055917015608,
+      "active_receiver_energy_ratio_p10_p90": [
+        0.9083383088924375,
+        1.3314919078373653
+      ],
+      "common_time_shift_and_gain_diagnostic_only": {
+        "lag_samples": -3,
+        "gain": 0.9147299793796815,
+        "relative_l2": 0.33184503318388386,
+        "lag_s": -0.005999922752380371
+      },
+      "time_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.25
+          ],
+          "observed_energy_fraction": 4.605506341260151e-62,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.0003815879586752015
+        },
+        {
+          "window_s": [
+            0.25,
+            0.5
+          ],
+          "observed_energy_fraction": 8.999019276549344e-06,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.000316808605798853
+        },
+        {
+          "window_s": [
+            0.5,
+            1.0
+          ],
+          "observed_energy_fraction": 0.48109858480346995,
+          "relative_l2_normalized_by_window_energy": 0.30332015032725357,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.04426256774784978
+        },
+        {
+          "window_s": [
+            1.0,
+            2.0
+          ],
+          "observed_energy_fraction": 0.518304780078801,
+          "relative_l2_normalized_by_window_energy": 0.483853068004633,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.12134229717405956
+        }
+      ]
+    },
+    {
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a01_yp120.npz",
+      "sha256": "18856dcc0b7ecd0513af04d3e37f46537eb5c5f5f93f6616eff4f0165bf9e5c2",
+      "file_in_receiver_training_set": false,
+      "source_truth": [
+        3500.0,
+        4120.0,
+        500.0,
+        0.11999999731779099
+      ],
+      "source_in_receiver_training_set": false,
+      "receiver_count": 25,
+      "sample_count": 1001,
+      "original_amplitude_relative_l2": 0.39916073984461475,
+      "prediction_to_observation_peak_ratio": 1.0197932674264276,
+      "active_receiver_count": 11,
+      "active_receiver_energy_ratio_median": 1.004370877561892,
+      "active_receiver_energy_ratio_p10_p90": [
+        0.8744826677540873,
+        1.0765035366189541
+      ],
+      "common_time_shift_and_gain_diagnostic_only": {
+        "lag_samples": 3,
+        "gain": 0.9419956156781484,
+        "relative_l2": 0.3230936497104706,
+        "lag_s": 0.005999922752380371
+      },
+      "time_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.25
+          ],
+          "observed_energy_fraction": 9.763626767713644e-52,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.00034878152714041313
+        },
+        {
+          "window_s": [
+            0.25,
+            0.5
+          ],
+          "observed_energy_fraction": 0.00045818529817401684,
+          "relative_l2_normalized_by_window_energy": 0.901709440025885,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.0003725412629415991
+        },
+        {
+          "window_s": [
+            0.5,
+            1.0
+          ],
+          "observed_energy_fraction": 0.48466740666451485,
+          "relative_l2_normalized_by_window_energy": 0.28846685681423734,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.04033069069631375
+        },
+        {
+          "window_s": [
+            1.0,
+            2.0
+          ],
+          "observed_energy_fraction": 0.5135077498982725,
+          "relative_l2_normalized_by_window_energy": 0.47933566740660166,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.11798491786912861
+        }
+      ]
+    },
+    {
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a01_zm080.npz",
+      "sha256": "de38fa1cc82089b796dc0d07b573f478b53c062b0cf40874c59d23ab653cc97f",
+      "file_in_receiver_training_set": false,
+      "source_truth": [
+        3500.0,
+        4000.0,
+        420.0,
+        0.11999999731779099
+      ],
+      "source_in_receiver_training_set": false,
+      "receiver_count": 25,
+      "sample_count": 1001,
+      "original_amplitude_relative_l2": 0.5307186149160443,
+      "prediction_to_observation_peak_ratio": 0.7275860438265692,
+      "active_receiver_count": 10,
+      "active_receiver_energy_ratio_median": 0.7862013144562466,
+      "active_receiver_energy_ratio_p10_p90": [
+        0.7318241427903328,
+        1.1413288385121203
+      ],
+      "common_time_shift_and_gain_diagnostic_only": {
+        "lag_samples": 2,
+        "gain": 1.0452324010323024,
+        "relative_l2": 0.5123129284256736,
+        "lag_s": 0.003999948501586914
+      },
+      "time_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.25
+          ],
+          "observed_energy_fraction": 2.2675383326383656e-57,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.00027297060601611867
+        },
+        {
+          "window_s": [
+            0.25,
+            0.5
+          ],
+          "observed_energy_fraction": 2.7631183221501834e-05,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.0004641565121486579
+        },
+        {
+          "window_s": [
+            0.5,
+            1.0
+          ],
+          "observed_energy_fraction": 0.5143419694876115,
+          "relative_l2_normalized_by_window_energy": 0.44709724530080236,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.10281487494684846
+        },
+        {
+          "window_s": [
+            1.0,
+            2.0
+          ],
+          "observed_energy_fraction": 0.4851844037035064,
+          "relative_l2_normalized_by_window_energy": 0.6042196743560221,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.17713180858125024
+        }
+      ]
+    },
+    {
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a01_zp080.npz",
+      "sha256": "c4c10f25c0b821aabc779748dd0c328b5137966503aca22db6f716d4f0842bd2",
+      "file_in_receiver_training_set": false,
+      "source_truth": [
+        3500.0,
+        4000.0,
+        580.0,
+        0.11999999731779099
+      ],
+      "source_in_receiver_training_set": false,
+      "receiver_count": 25,
+      "sample_count": 1001,
+      "original_amplitude_relative_l2": 0.5852140862500775,
+      "prediction_to_observation_peak_ratio": 1.3618052019541733,
+      "active_receiver_count": 11,
+      "active_receiver_energy_ratio_median": 1.087000669920365,
+      "active_receiver_energy_ratio_p10_p90": [
+        0.8512296922213219,
+        1.32166070828927
+      ],
+      "common_time_shift_and_gain_diagnostic_only": {
+        "lag_samples": -3,
+        "gain": 0.7911388946724401,
+        "relative_l2": 0.47446830372919085,
+        "lag_s": -0.005999922752380371
+      },
+      "time_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.25
+          ],
+          "observed_energy_fraction": 7.343338829178684e-57,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.00045564321307365447
+        },
+        {
+          "window_s": [
+            0.25,
+            0.5
+          ],
+          "observed_energy_fraction": 0.00015514415983925814,
+          "relative_l2_normalized_by_window_energy": 1.6790636272609778,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.0004373908962798191
+        },
+        {
+          "window_s": [
+            0.5,
+            1.0
+          ],
+          "observed_energy_fraction": 0.43282213079375503,
+          "relative_l2_normalized_by_window_energy": 0.5372674979866897,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.12493686270370391
+        },
+        {
+          "window_s": [
+            1.0,
+            2.0
+          ],
+          "observed_energy_fraction": 0.5652792169692905,
+          "relative_l2_normalized_by_window_energy": 0.617844836898663,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.21578530312234595
+        }
+      ]
+    },
+    {
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a09_xp400.npz",
+      "sha256": "468121f669f09e2d690979e1b7e83a5df9f01aea03ccfca7e0ac82d48d382223",
+      "file_in_receiver_training_set": false,
+      "source_truth": [
+        6900.0,
+        3500.0,
+        700.0,
+        0.20000000298023224
+      ],
+      "source_in_receiver_training_set": false,
+      "receiver_count": 25,
+      "sample_count": 1001,
+      "original_amplitude_relative_l2": 0.2648609506131688,
+      "prediction_to_observation_peak_ratio": 0.9207984280637456,
+      "active_receiver_count": 12,
+      "active_receiver_energy_ratio_median": 0.9624712719077253,
+      "active_receiver_energy_ratio_p10_p90": [
+        0.929749344547228,
+        1.0927616628140544
+      ],
+      "common_time_shift_and_gain_diagnostic_only": {
+        "lag_samples": 0,
+        "gain": 0.9988554332534696,
+        "relative_l2": 0.2648586457572405,
+        "lag_s": 0.0
+      },
+      "time_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.25
+          ],
+          "observed_energy_fraction": 4.286029977017827e-74,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.00019802105901263876
+        },
+        {
+          "window_s": [
+            0.25,
+            0.5
+          ],
+          "observed_energy_fraction": 6.451475431501502e-11,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.000298742847737595
+        },
+        {
+          "window_s": [
+            0.5,
+            1.0
+          ],
+          "observed_energy_fraction": 0.5351318742097994,
+          "relative_l2_normalized_by_window_energy": 0.1059316375998628,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.006004988664862194
+        },
+        {
+          "window_s": [
+            1.0,
+            2.0
+          ],
+          "observed_energy_fraction": 0.463952910074429,
+          "relative_l2_normalized_by_window_energy": 0.36926388681534295,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.06326267861584634
+        }
+      ]
+    },
+    {
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a09_ym120.npz",
+      "sha256": "a31540617d3697e6ad22d9cb76b823448028e17876f3b9473279fb039aff56ed",
+      "file_in_receiver_training_set": false,
+      "source_truth": [
+        6500.0,
+        3380.0,
+        700.0,
+        0.20000000298023224
+      ],
+      "source_in_receiver_training_set": false,
+      "receiver_count": 25,
+      "sample_count": 1001,
+      "original_amplitude_relative_l2": 0.25534217091621864,
+      "prediction_to_observation_peak_ratio": 1.0642940079891305,
+      "active_receiver_count": 12,
+      "active_receiver_energy_ratio_median": 0.9811616215519723,
+      "active_receiver_energy_ratio_p10_p90": [
+        0.920508191956638,
+        1.042457454713136
+      ],
+      "common_time_shift_and_gain_diagnostic_only": {
+        "lag_samples": 0,
+        "gain": 0.9715773469980302,
+        "relative_l2": 0.25376944818078984,
+        "lag_s": 0.0
+      },
+      "time_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.25
+          ],
+          "observed_energy_fraction": 0.0,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.00019926611616523357
+        },
+        {
+          "window_s": [
+            0.25,
+            0.5
+          ],
+          "observed_energy_fraction": 5.185828521437677e-13,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.00018868597267457162
+        },
+        {
+          "window_s": [
+            0.5,
+            1.0
+          ],
+          "observed_energy_fraction": 0.5444655879656529,
+          "relative_l2_normalized_by_window_energy": 0.11533620828244313,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.007242721328304205
+        },
+        {
+          "window_s": [
+            1.0,
+            2.0
+          ],
+          "observed_energy_fraction": 0.4542318398788156,
+          "relative_l2_normalized_by_window_energy": 0.3555464790787397,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.05742094529239212
+        }
+      ]
+    },
+    {
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a09_yp120.npz",
+      "sha256": "96041a52694bdb48bdb3e14034ad60a055b5c892f672b53958ed4ed498d1e657",
+      "file_in_receiver_training_set": false,
+      "source_truth": [
+        6500.0,
+        3620.0,
+        700.0,
+        0.20000000298023224
+      ],
+      "source_in_receiver_training_set": false,
+      "receiver_count": 25,
+      "sample_count": 1001,
+      "original_amplitude_relative_l2": 0.24244595340263944,
+      "prediction_to_observation_peak_ratio": 0.9652451305947806,
+      "active_receiver_count": 13,
+      "active_receiver_energy_ratio_median": 0.9876356883865286,
+      "active_receiver_energy_ratio_p10_p90": [
+        0.9319681547305202,
+        1.0965698677539213
+      ],
+      "common_time_shift_and_gain_diagnostic_only": {
+        "lag_samples": 0,
+        "gain": 0.9811655509722412,
+        "relative_l2": 0.24172936495970085,
+        "lag_s": 0.0
+      },
+      "time_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.25
+          ],
+          "observed_energy_fraction": 4.288527842408007e-81,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.00020701875113528887
+        },
+        {
+          "window_s": [
+            0.25,
+            0.5
+          ],
+          "observed_energy_fraction": 3.828542316663177e-12,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.00023177725192997342
+        },
+        {
+          "window_s": [
+            0.5,
+            1.0
+          ],
+          "observed_energy_fraction": 0.5350155899752566,
+          "relative_l2_normalized_by_window_energy": 0.09881080108245338,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.005223664523531027
+        },
+        {
+          "window_s": [
+            1.0,
+            2.0
+          ],
+          "observed_energy_fraction": 0.4637995701069548,
+          "relative_l2_normalized_by_window_energy": 0.3380386227657959,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.05299842811734571
+        }
+      ]
+    },
+    {
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a09_zm080.npz",
+      "sha256": "408997ca51d78f0258fb3e5fb585d0bc84d898e118321f4b4ebfc02e5b2752ab",
+      "file_in_receiver_training_set": false,
+      "source_truth": [
+        6500.0,
+        3500.0,
+        620.0,
+        0.20000000298023224
+      ],
+      "source_in_receiver_training_set": false,
+      "receiver_count": 25,
+      "sample_count": 1001,
+      "original_amplitude_relative_l2": 0.46049740451171683,
+      "prediction_to_observation_peak_ratio": 0.9207430283933102,
+      "active_receiver_count": 12,
+      "active_receiver_energy_ratio_median": 1.0507445743510737,
+      "active_receiver_energy_ratio_p10_p90": [
+        0.8188991666534648,
+        1.3661337683185384
+      ],
+      "common_time_shift_and_gain_diagnostic_only": {
+        "lag_samples": 3,
+        "gain": 0.9159278850355352,
+        "relative_l2": 0.40536835684732253,
+        "lag_s": 0.005999922752380371
+      },
+      "time_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.25
+          ],
+          "observed_energy_fraction": 0.0,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.00023662620982698238
+        },
+        {
+          "window_s": [
+            0.25,
+            0.5
+          ],
+          "observed_energy_fraction": 4.2176059752778413e-14,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.00021626455801509702
+        },
+        {
+          "window_s": [
+            0.5,
+            1.0
+          ],
+          "observed_energy_fraction": 0.6232243373955325,
+          "relative_l2_normalized_by_window_energy": 0.3145269828576513,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.0616538529706126
+        },
+        {
+          "window_s": [
+            1.0,
+            2.0
+          ],
+          "observed_energy_fraction": 0.37610130873466907,
+          "relative_l2_normalized_by_window_energy": 0.6305590001011019,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.14953963020505087
+        }
+      ]
+    },
+    {
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\orthogonal_confirmation\\a09_zp080.npz",
+      "sha256": "d23cc17c5078f1e1cd0fcbb72a489634d886103cba54081509a477710bf42707",
+      "file_in_receiver_training_set": false,
+      "source_truth": [
+        6500.0,
+        3500.0,
+        780.0,
+        0.20000000298023224
+      ],
+      "source_in_receiver_training_set": false,
+      "receiver_count": 25,
+      "sample_count": 1001,
+      "original_amplitude_relative_l2": 0.4188532464862288,
+      "prediction_to_observation_peak_ratio": 0.9923647647612758,
+      "active_receiver_count": 13,
+      "active_receiver_energy_ratio_median": 0.9063669923504979,
+      "active_receiver_energy_ratio_p10_p90": [
+        0.725178885641782,
+        1.0842211417802647
+      ],
+      "common_time_shift_and_gain_diagnostic_only": {
+        "lag_samples": -3,
+        "gain": 1.019050248045384,
+        "relative_l2": 0.36704259665847166,
+        "lag_s": -0.005999922752380371
+      },
+      "time_windows": [
+        {
+          "window_s": [
+            0.0,
+            0.25
+          ],
+          "observed_energy_fraction": 0.0,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.00019499897934024024
+        },
+        {
+          "window_s": [
+            0.25,
+            0.5
+          ],
+          "observed_energy_fraction": 3.3793278891585035e-15,
+          "relative_l2_normalized_by_window_energy": null,
+          "window_energy_too_small_for_local_relative_l2": true,
+          "error_energy_fraction_of_full_record": 0.000238257840687144
+        },
+        {
+          "window_s": [
+            0.5,
+            1.0
+          ],
+          "observed_energy_fraction": 0.4706890484379153,
+          "relative_l2_normalized_by_window_energy": 0.3049416764873943,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.0437691044664716
+        },
+        {
+          "window_s": [
+            1.0,
+            2.0
+          ],
+          "observed_energy_fraction": 0.5276003496723347,
+          "relative_l2_normalized_by_window_energy": 0.49773045380806463,
+          "window_energy_too_small_for_local_relative_l2": false,
+          "error_energy_fraction_of_full_record": 0.13070539163856254
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "role": "noise-augmented MoE forward holdout audit",
+  "snr_db": 10.0,
+  "events": [
+    "event_01.npz",
+    "event_03.npz",
+    "event_06.npz",
+    "event_08.npz"
+  ],
+  "seeds": [
+    20260927,
+    20260928
+  ],
+  "summary": {
+    "base_vs_clean_l2": 1.164741337299347,
+    "noise_moe_vs_clean_l2": 1.1652965247631073,
+    "base_vs_noisy_l2": 1.150897428393364,
+    "noise_moe_vs_noisy_l2": 1.151409164071083
+  },
+  "records": [
+    {
+      "event": "event_01.npz",
+      "seed": 20260927,
+      "base_vs_clean_l2": 1.1626185178756714,
+      "noise_moe_vs_clean_l2": 1.1628026962280273,
+      "base_vs_noisy_l2": 1.1492754220962524,
+      "noise_moe_vs_noisy_l2": 1.1494438648223877
+    },
+    {
+      "event": "event_01.npz",
+      "seed": 20260928,
+      "base_vs_clean_l2": 1.1626185178756714,
+      "noise_moe_vs_clean_l2": 1.1628026962280273,
+      "base_vs_noisy_l2": 1.1495145559310913,
+      "noise_moe_vs_noisy_l2": 1.1496843099594116
+    },
+    {
+      "event": "event_03.npz",
+      "seed": 20260927,
+      "base_vs_clean_l2": 1.2335562705993652,
+      "noise_moe_vs_clean_l2": 1.2345212697982788,
+      "base_vs_noisy_l2": 1.2138662338256836,
+      "noise_moe_vs_noisy_l2": 1.214754343032837
+    },
+    {
+      "event": "event_03.npz",
+      "seed": 20260928,
+      "base_vs_clean_l2": 1.2335562705993652,
+      "noise_moe_vs_clean_l2": 1.2345212697982788,
+      "base_vs_noisy_l2": 1.213451623916626,
+      "noise_moe_vs_noisy_l2": 1.2143419981002808
+    },
+    {
+      "event": "event_06.npz",
+      "seed": 20260927,
+      "base_vs_clean_l2": 1.1593559980392456,
+      "noise_moe_vs_clean_l2": 1.1597931385040283,
+      "base_vs_noisy_l2": 1.1457799673080444,
+      "noise_moe_vs_noisy_l2": 1.1461846828460693
+    },
+    {
+      "event": "event_06.npz",
+      "seed": 20260928,
+      "base_vs_clean_l2": 1.1593559980392456,
+      "noise_moe_vs_clean_l2": 1.1597931385040283,
+      "base_vs_noisy_l2": 1.1463218927383423,
+      "noise_moe_vs_noisy_l2": 1.1467268466949463
+    },
+    {
+      "event": "event_08.npz",
+      "seed": 20260927,
+      "base_vs_clean_l2": 1.1034345626831055,
+      "noise_moe_vs_clean_l2": 1.1040689945220947,
+      "base_vs_noisy_l2": 1.0940730571746826,
+      "noise_moe_vs_noisy_l2": 1.0946556329727173
+    },
+    {
+      "event": "event_08.npz",
+      "seed": 20260928,
+      "base_vs_clean_l2": 1.1034345626831055,
+      "noise_moe_vs_clean_l2": 1.1040689945220947,
+      "base_vs_noisy_l2": 1.094896674156189,
+      "noise_moe_vs_noisy_l2": 1.0954816341400146
+    }
+  ],
+  "checkpoint": "E:\\source-conditioned-microseismic-pinn\\outputs\\joint_moe_noise10_development\\joint_moe_noise10.pth",
+  "limits": "Four independent events, two noisy realizations, one seed and receiver-only noise augmentation; no localization or UQ claim."
+}

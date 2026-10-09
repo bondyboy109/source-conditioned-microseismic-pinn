@@ -1,0 +1,240 @@
+{
+  "role": "independent holdout forward audit; no localization",
+  "base_checkpoint_sha256": "dab17cae1d3aae79c0b9efeac28aa5bae2f88748ad822d49d4b5bf87a73407b4",
+  "moe_checkpoint_sha256": "24d7d84a08d6e596c99b19751fbcf9aee89bfe255dc1a043f605c8863233f279",
+  "observation_directory": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\holdout_20260927",
+  "summary": {
+    "event_count": 8,
+    "base_mean_full_l2": 1.1326453966752184,
+    "moe_mean_full_l2": 1.0695956765088104,
+    "base_mean_active_l2": 1.054251907970703,
+    "moe_mean_active_l2": 1.0241104845315165,
+    "relative_improvement_over_base": 0.055665895390989026,
+    "moe_improves_count": 8,
+    "mean_gate_usage": [
+      0.36641987413167953,
+      0.3997073732316494,
+      0.23353853076696396
+    ],
+    "gate_collapsed": false
+  },
+  "events": [
+    {
+      "event": "event_01.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\holdout_20260927\\event_01.npz",
+      "sha256": "b6b12683374ca6f4c517df810a5a8bcc97245e2e75e8b6de72290189f13ef7da",
+      "source_m_s": [
+        4200.0,
+        7200.0,
+        380.0,
+        0.18000000715255737
+      ],
+      "base": {
+        "full_l2": 1.1626184947551605,
+        "active_l2": 1.0526956411727428,
+        "zero_lag_correlation": 0.04765191827266715
+      },
+      "moe": {
+        "full_l2": 1.0854758292309805,
+        "active_l2": 1.0211541007397082,
+        "zero_lag_correlation": 0.05777939570621816
+      },
+      "mean_gate": [
+        0.3594687879085541,
+        0.37775206565856934,
+        0.26223301887512207
+      ],
+      "moe_improves": true
+    },
+    {
+      "event": "event_02.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\holdout_20260927\\event_02.npz",
+      "sha256": "3091553851978c09d3cf802c91f3a779123d80eea16a24ced6fef5bb2831fdbf",
+      "source_m_s": [
+        8800.0,
+        5200.0,
+        900.0,
+        0.2800000011920929
+      ],
+      "base": {
+        "full_l2": 1.0964985158158482,
+        "active_l2": 1.0333410371738103,
+        "zero_lag_correlation": 0.03699293954430707
+      },
+      "moe": {
+        "full_l2": 1.055502350421485,
+        "active_l2": 1.016217644403655,
+        "zero_lag_correlation": 0.049913505345098946
+      },
+      "mean_gate": [
+        0.3596760928630829,
+        0.37348097562789917,
+        0.26715126633644104
+      ],
+      "moe_improves": true
+    },
+    {
+      "event": "event_03.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\holdout_20260927\\event_03.npz",
+      "sha256": "f5fb3fc6ca0aa856240a7a18b4cd17be40c5bdcec269fa2a8510ceedec143c05",
+      "source_m_s": [
+        11800.0,
+        13200.0,
+        1280.0,
+        0.36000001430511475
+      ],
+      "base": {
+        "full_l2": 1.2335564123769969,
+        "active_l2": 1.1134101425335559,
+        "zero_lag_correlation": 0.008904321892728688
+      },
+      "moe": {
+        "full_l2": 1.1231355223286208,
+        "active_l2": 1.0576756555580964,
+        "zero_lag_correlation": 0.017021701294640316
+      },
+      "mean_gate": [
+        0.3762255907058716,
+        0.4375811219215393,
+        0.18554972112178802
+      ],
+      "moe_improves": true
+    },
+    {
+      "event": "event_04.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\holdout_20260927\\event_04.npz",
+      "sha256": "a8833a2058a462b0379f573332373a582574faf2325e7ff19ea2553f411ae7eb",
+      "source_m_s": [
+        13200.0,
+        6200.0,
+        700.0,
+        0.4399999976158142
+      ],
+      "base": {
+        "full_l2": 1.0602736504157544,
+        "active_l2": 1.0374505330556376,
+        "zero_lag_correlation": 0.05598860622529999
+      },
+      "moe": {
+        "full_l2": 1.0272073768239411,
+        "active_l2": 1.014122752250985,
+        "zero_lag_correlation": 0.08370885838415405
+      },
+      "mean_gate": [
+        0.36563143134117126,
+        0.3918028771877289,
+        0.24233345687389374
+      ],
+      "moe_improves": true
+    },
+    {
+      "event": "event_05.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\holdout_20260927\\event_05.npz",
+      "sha256": "8a5eba9ed423d57b0eb8a88cf9dda9952aa66f4dabaa30a72429536e85b3eac1",
+      "source_m_s": [
+        3000.0,
+        11000.0,
+        600.0,
+        0.11999999731779099
+      ],
+      "base": {
+        "full_l2": 1.1053490737617762,
+        "active_l2": 1.0497672316827844,
+        "zero_lag_correlation": -0.011453576683212943
+      },
+      "moe": {
+        "full_l2": 1.0570567661625698,
+        "active_l2": 1.0265124695831633,
+        "zero_lag_correlation": 0.0006736736555218909
+      },
+      "mean_gate": [
+        0.3672603368759155,
+        0.40346667170524597,
+        0.2286684364080429
+      ],
+      "moe_improves": true
+    },
+    {
+      "event": "event_06.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\holdout_20260927\\event_06.npz",
+      "sha256": "4c98a97561b9380aa8b9bc88f4273cb5eed67ddcc412a0a8dcb43cb5cac56dd0",
+      "source_m_s": [
+        7000.0,
+        14000.0,
+        1100.0,
+        0.23999999463558197
+      ],
+      "base": {
+        "full_l2": 1.1593559237010997,
+        "active_l2": 1.0644586239281602,
+        "zero_lag_correlation": 0.005355158219049216
+      },
+      "moe": {
+        "full_l2": 1.0839070296522584,
+        "active_l2": 1.0356604985758242,
+        "zero_lag_correlation": 0.007005806081223424
+      },
+      "mean_gate": [
+        0.37500008940696716,
+        0.4336756467819214,
+        0.19084656238555908
+      ],
+      "moe_improves": true
+    },
+    {
+      "event": "event_07.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\holdout_20260927\\event_07.npz",
+      "sha256": "03b0087dce1c1033d76ac1f7a930a70499df62ed72cdbbf62ced43d8b2948e8f",
+      "source_m_s": [
+        10000.0,
+        3000.0,
+        450.0,
+        0.3199999928474426
+      ],
+      "base": {
+        "full_l2": 1.1400765755231028,
+        "active_l2": 1.0677364253197144,
+        "zero_lag_correlation": 0.03196732331898246
+      },
+      "moe": {
+        "full_l2": 1.0854183336956607,
+        "active_l2": 1.0379305963241703,
+        "zero_lag_correlation": 0.03480791396505799
+      },
+      "mean_gate": [
+        0.35425814986228943,
+        0.3605765104293823,
+        0.2851499319076538
+      ],
+      "moe_improves": true
+    },
+    {
+      "event": "event_08.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\holdout_20260927\\event_08.npz",
+      "sha256": "13088330b66a704b0aeb74d98a9f976dfd61be941eebaca737671e8366573532",
+      "source_m_s": [
+        14000.0,
+        10000.0,
+        1400.0,
+        0.4000000059604645
+      ],
+      "base": {
+        "full_l2": 1.103434527052008,
+        "active_l2": 1.0151556288992165,
+        "zero_lag_correlation": 0.1038179183665652
+      },
+      "moe": {
+        "full_l2": 1.0390622037549657,
+        "active_l2": 0.98361015881653,
+        "zero_lag_correlation": 0.13767230094325195
+      },
+      "mean_gate": [
+        0.37383851408958435,
+        0.4193231165409088,
+        0.206375852227211
+      ],
+      "moe_improves": true
+    }
+  ],
+  "limits": "These four records were generated after the development audit and were not used for MoE training. This is a forward-only, one-seed holdout and does not establish localization or calibrated UQ."
+}

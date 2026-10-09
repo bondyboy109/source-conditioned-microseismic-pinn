@@ -1,0 +1,17 @@
+{
+  "purpose": "development-only fixed approximate earliest-signal gate on frozen 5 Hz receiver predictions",
+  "depth_protocol": "experiments/eikonal_depth_sweep_protocol.json",
+  "depth_result": "experiments/eikonal_depth_sweep_results.json",
+  "eikonal_sha256": "ce744ba5e7249850fe99644449855c886fc255aebacfacab86f76d59990f2ec7",
+  "straight_sha256": "5f3a27f85d32e8385b2d9ae7e3eff056cc373e037fd4dcd074dc75b88b503184",
+  "velocity_sha256": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+  "source_support_radius_m": 200.0,
+  "source_lead_s": 0.20,
+  "gate_rise_s": 0.10,
+  "maximum_speed_rule": "maximum of registered 401x401x94 velocity array; not selected using waveform results",
+  "gate_formula": "tau0 = ts - 0.20 + max(||receiver-source||-200, 0)/vmax; s=clip((t-tau0)/0.10,0,1); gate=6s^5-15s^4+10s^3; corrected=unmodified_waveform*gate",
+  "data_role": "same twelve already-inspected +/-80/160/280 m depth development observations; two trained anchors for finite responses; no new confirmation or retraining",
+  "measurements": "raw true-source full-record relative L2 before/after; fraction of FD observed energy removed; false pre-origin threshold picks before/after; count matched picks; finite depth-response L2 and cosine before/after",
+  "evaluation_rule": "no time shift, gain or source refitting; evaluate all twelve regardless of outcome; if FD energy removed is appreciable, flag physical mismatch; improvements in picker alone are insufficient",
+  "limitations": "The Ricker pulse and Gaussian source have tails, so this is an approximate earliest-signal taper, not exact causality or a physics-constrained trained operator. A postprocessing audit is not independent validation."
+}

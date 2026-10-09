@@ -1,0 +1,123 @@
+{
+  "role": "post-hoc localization diagnostic on previously opened blind forward-test records; not independent confirmation",
+  "protocol_sha256": "6fdbe252984a40cafe377e8bc038ad929cc869e3674f9a2f2511644c17177022",
+  "checkpoint_sha256": "cb3b318ab945e34c64b83875e63293ea4af8b427e4e647f73ffc2eb88f2edcf2",
+  "configuration": {
+    "grid": [
+      12,
+      12,
+      8,
+      8
+    ],
+    "candidate_batch": 16,
+    "receiver_stride": 2,
+    "time_stride": 4,
+    "iterations": 300,
+    "learning_rate": 0.005,
+    "restarts": 1
+  },
+  "summary": {
+    "event_count": 3,
+    "mean_location_error_m": 6094.305501302083,
+    "median_location_error_m": 6115.126953125,
+    "minimum_location_error_m": 4218.1044921875,
+    "maximum_location_error_m": 7949.68505859375,
+    "mean_origin_time_error_s": 0.09681818385918935,
+    "median_origin_time_error_s": 0.10854128003120422,
+    "mean_runtime_seconds": 6.742297433333306,
+    "truth_misfit_exceeds_optimized_count": 3
+  },
+  "events": [
+    {
+      "event": "blind_01",
+      "observation_sha256": "b2aa63b09f0d1dca456eb541847d69db3c5061d91850312d3b36eee9bf4842bc",
+      "truth_source_m_s": [
+        6000.0,
+        6000.0,
+        350.0,
+        0.23999999463558197
+      ],
+      "estimated_source_m_s": [
+        7424.494140625,
+        2030.150390625,
+        409.2949523925781,
+        0.13145871460437775
+      ],
+      "component_error_m_s": [
+        1424.494140625,
+        -3969.849609375,
+        59.294952392578125,
+        -0.10854128003120422
+      ],
+      "location_error_m": 4218.1044921875,
+      "origin_time_error_s": 0.10854128003120422,
+      "coarse_normalized_mse": 1.216100811958313,
+      "final_normalized_mse": 1.191357135772705,
+      "truth_normalized_mse": 1.3588510751724243,
+      "truth_to_optimized_misfit_ratio": 1.1405908726866223,
+      "runtime_seconds": 6.833084500000041,
+      "all_source_gradient_paths_nonzero": true
+    },
+    {
+      "event": "blind_02",
+      "observation_sha256": "a2bc0824bc43a915f9fcdfe48a8f6f68c2b073e979369fcb502333dc4f2ca3a5",
+      "truth_source_m_s": [
+        10500.0,
+        9500.0,
+        1000.0,
+        0.33000001311302185
+      ],
+      "estimated_source_m_s": [
+        7058.54541015625,
+        4462.48291015625,
+        582.1604614257812,
+        0.15983906388282776
+      ],
+      "component_error_m_s": [
+        -3441.45458984375,
+        -5037.51708984375,
+        -417.83953857421875,
+        -0.1701609492301941
+      ],
+      "location_error_m": 6115.126953125,
+      "origin_time_error_s": 0.1701609492301941,
+      "coarse_normalized_mse": 1.0472279787063599,
+      "final_normalized_mse": 1.0349456071853638,
+      "truth_normalized_mse": 1.1413891315460205,
+      "truth_to_optimized_misfit_ratio": 1.1028493899791896,
+      "runtime_seconds": 6.6774436000000605,
+      "all_source_gradient_paths_nonzero": true
+    },
+    {
+      "event": "blind_03",
+      "observation_sha256": "80681141382ca88f1b1414c2ac59786ea1ca76f442f95a52799bf0053dc470cb",
+      "truth_source_m_s": [
+        7000.0,
+        11000.0,
+        1400.0,
+        0.1599999964237213
+      ],
+      "estimated_source_m_s": [
+        7313.2958984375,
+        3105.171142578125,
+        521.9295654296875,
+        0.17175231873989105
+      ],
+      "component_error_m_s": [
+        313.2958984375,
+        -7894.8291015625,
+        -878.0704345703125,
+        0.011752322316169739
+      ],
+      "location_error_m": 7949.68505859375,
+      "origin_time_error_s": 0.011752322316169739,
+      "coarse_normalized_mse": 1.0946803092956543,
+      "final_normalized_mse": 1.0898849964141846,
+      "truth_normalized_mse": 1.1624155044555664,
+      "truth_to_optimized_misfit_ratio": 1.0665487719163154,
+      "runtime_seconds": 6.716364199999816,
+      "all_source_gradient_paths_nonzero": true
+    }
+  ],
+  "limitations": "The registered forward feasibility gate had already failed and these three records had already been inspected in forward audits before localization. This run diagnoses inversion failure only; it is not an independent localization test. One checkpoint, one velocity model, 5 Hz, noise-free FD observations and one optimizer configuration."
+}

@@ -1,0 +1,88 @@
+{
+  "method": "constant_velocity_moe_zero_shot_cross_geology",
+  "vavg_m_s": 5000,
+  "candidate_count": 968,
+  "events": [
+    {
+      "event": "layered_west_shallow",
+      "status": "ok",
+      "estimated_source_m_s": [
+        2000.0,
+        11600.0,
+        100.0,
+        0.5
+      ],
+      "truth_m_s": [
+        3000.0,
+        12000.0,
+        300.0,
+        0.1599999964237213
+      ],
+      "location_error_m": 1095.4451150103323,
+      "origin_time_error_s": 0.3400000035762787,
+      "waveform_loss": 11069276160.0
+    },
+    {
+      "event": "layered_center_deep",
+      "status": "ok",
+      "estimated_source_m_s": [
+        3200.0,
+        12800.0,
+        300.0,
+        0.05000000074505806
+      ],
+      "truth_m_s": [
+        8000.0,
+        8000.0,
+        1300.0,
+        0.2800000011920929
+      ],
+      "location_error_m": 6861.486719363377,
+      "origin_time_error_s": 0.23000000044703484,
+      "waveform_loss": 24846821376.0
+    },
+    {
+      "event": "layered_east_mid",
+      "status": "ok",
+      "estimated_source_m_s": [
+        3200.0,
+        12800.0,
+        300.0,
+        0.05000000074505806
+      ],
+      "truth_m_s": [
+        13000.0,
+        4500.0,
+        800.0,
+        0.3700000047683716
+      ],
+      "location_error_m": 12852.237159343116,
+      "origin_time_error_s": 0.3200000040233135,
+      "waveform_loss": 25041135616.0
+    },
+    {
+      "event": "layered_north_deep",
+      "status": "ok",
+      "estimated_source_m_s": [
+        3200.0,
+        12800.0,
+        300.0,
+        0.5
+      ],
+      "truth_m_s": [
+        6000.0,
+        13500.0,
+        1450.0,
+        0.4300000071525574
+      ],
+      "location_error_m": 3106.847276581197,
+      "origin_time_error_s": 0.06999999284744263,
+      "waveform_loss": 62786478080.0
+    }
+  ],
+  "summary": {
+    "median_location_error_m": 4984.166997972287,
+    "mean_location_error_m": 5979.004067574506,
+    "median_origin_time_error_s": 0.2750000022351742
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "purpose": "frozen-model development audit of finite spatial source response",
+  "checkpoint": "outputs\\local_density_train20_hybrid_5hz_1000\\conditioned_5Hz.pth",
+  "reference": "data\\observations\\window_0to2s\\train_09_0to2s.npz",
+  "source": [
+    6500.0,
+    3500.0,
+    700.0,
+    0.20000000298023224
+  ],
+  "reference_training_sha256": "8597e4f364af973e6d2ac035bd131593bab97ed0529c2b0836cd8e2e0219ed60",
+  "results": [
+    {
+      "reference_change_relative_to_original": 0.2690007954271642,
+      "model_change_relative_to_original": 0.2843272744342116,
+      "model_to_fd_change_norm_ratio": 1.0199578555775717,
+      "change_cosine": 0.9908751815397795,
+      "change_relative_l2": 0.1378846493910681,
+      "observation": "data\\observations\\local_density\\dev_train_09_x6540.npz",
+      "displacement_m": 40.0,
+      "raw_waveform_relative_l2": 0.15278512615393994,
+      "prediction_to_fd_peak_ratio": 1.0015987922843295
+    },
+    {
+      "reference_change_relative_to_original": 0.9891414803278162,
+      "model_change_relative_to_original": 1.0336752270571048,
+      "model_to_fd_change_norm_ratio": 1.0084235119601443,
+      "change_cosine": 0.9895716073984249,
+      "change_relative_l2": 0.1452701901165602,
+      "observation": "data\\observations\\local_density\\dev_train_09_x6660.npz",
+      "displacement_m": 160.0,
+      "raw_waveform_relative_l2": 0.18209452855456285,
+      "prediction_to_fd_peak_ratio": 0.9623361483664201
+    }
+  ]
+}

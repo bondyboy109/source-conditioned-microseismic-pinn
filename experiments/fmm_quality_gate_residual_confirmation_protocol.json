@@ -1,0 +1,102 @@
+{
+  "purpose": "third source-held-out confirmation of the development-only FMM arrival-residual gate",
+  "protocol_written_before_generation": true,
+  "runner": "examples/run_fmm_quality_gate_residual_confirmation.py",
+  "runner_sha256": "95c3ff1c6fc732b274c12aed48377b3641e6841483f99b977b29421d8366d77c",
+  "confirmation_engine": "examples/confirm_fmm_quality_gate.py",
+  "confirmation_engine_sha256": "5d05c4eea94b00374827e4795a69089d1a0db193f82d050966a653404c30dad0",
+  "gate_file": "experiments/fmm_quality_gate_residual_candidate.json",
+  "gate_sha256": "8b27c1ce6f263f875e6b020bd4ba23e5d69213777d903b99e2be209df027cd5f",
+  "development_results": "experiments/fmm_quality_gate_development_results.json",
+  "development_results_sha256": "99dcac507af8d7da864231bfebcc1c317f56fd21319c2cdb2d020961eee81763",
+  "development_protocol": "experiments/fmm_quality_gate_development_protocol.json",
+  "development_protocol_sha256": "3b06c4dd7dd888b04fec6c9c22b8fc60b09f2988f1b4dae7ad61f3f6f711a193",
+  "prior_holdouts": [
+    {"protocol": "experiments/fmm_quality_gate_confirmation_protocol.json", "protocol_sha256": "0c0be3fad85d77db37eb704f3acc7e6c0bb03a7297df017ecc4401fa439b0772", "results": "experiments/fmm_quality_gate_confirmation_results.json", "results_sha256": "ce3bdb724b0eeb45038994f9aedf0fbd5df8238efa4b7b7c31dc28406714ad7d"},
+    {"protocol": "experiments/fmm_quality_gate_replication2_protocol.json", "protocol_sha256": "f7815008826e69f2bd9fd910c38760a507c7e1c7d69db6b180f25082dc1c2105", "results": "experiments/fmm_quality_gate_replication2_results.json", "results_sha256": "3dc04a1cb4c8d56b311ab6c7a99a1b462b12f0e24e6bb4b50015ff7c665f6b2b"}
+  ],
+  "velocity_file": "data/velocity/vp_model.npy",
+  "velocity_sha256": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+  "receivers_file": "data/observations/receiver_coords.npy",
+  "receivers_sha256": "5b50f714c585b338f40fc691645221cfc60198b6a27df3feb9e602c259f8aa12",
+  "fmm_cache": "outputs/low_rank_pick_perturbation/fmm_fields_stride2.npy",
+  "fmm_cache_sha256": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",
+  "fmm_spacing_m": 80.0,
+  "fmm_cache_shape": [25, 201, 201, 47],
+  "source_registry_audit": {
+    "scope": "all existing data/observations/**/*.npz archives with source_truth, excluding this protocol's output directory",
+    "archive_count": 583,
+    "unique_xyz_count": 236,
+    "manifest_sha256": "c82c94a24ddf852df0c9049ac6c27a96070723307df592f15e78a22396ebbd44",
+    "minimum_new_to_existing_distance_m": 750.0,
+    "minimum_new_to_new_distance_m": 1500.0
+  },
+  "design": {
+    "gate_feature": "arrival_rmse_s",
+    "gate_threshold_s": 0.09508478690085563,
+    "selection_basis": "threshold from the original development set only; LOEO source-grouped coverage 0.4167 and precision 0.7000 versus always-accept precision 0.4167",
+    "post_holdout_adaptation": "The residual feature was a predeclared development candidate, selected for this follow-up after the azimuth feature failed independent generalization. No prior holdout observations are used to fit this threshold.",
+    "source_selection": "500 m spatial lattice; twelve maximin-distance locations across four horizontal quadrants and shallow, middle, and deep depth bands. Source-location outcomes are not used for selection.",
+    "noise_levels": "Same 1/2/3 dB levels as prior tests; new noise realization seeds.",
+    "no_tuning_on_confirmation": true
+  },
+  "fd": {
+    "generator": "examples/generate_fd_observation.py",
+    "generator_sha256": "a09d9d7592ee699b0898f00ea7ec367ff746718c6c9926ca6beae3926adfa120",
+    "config_file": "data/observations/adaptive_fusion_transition_confirmation/fd_config.json",
+    "config_sha256": "b035c75f2cc659337b483b4f86c0269cbf1636e45e5c759e216a8d62ffdd59d1",
+    "output_directory": "data/observations/fmm_quality_gate_residual_confirmation",
+    "frequency_hz": 5.0,
+    "duration_s": 2.0,
+    "time_step_s": 0.002,
+    "boundary": "zero Dirichlet on all six faces",
+    "receiver_sampling": "trilinear",
+    "source": "unit Ricker times Gaussian, sigma=50 m"
+  },
+  "events": [
+    {"name": "r3_01_sw_shallow", "file": "r3_01_clean.npz", "source_m_s": [5500.0, 7500.0, 200.0, 0.14]},
+    {"name": "r3_02_sw_mid", "file": "r3_02_clean.npz", "source_m_s": [3500.0, 2000.0, 1000.0, 0.17]},
+    {"name": "r3_03_sw_deep", "file": "r3_03_clean.npz", "source_m_s": [2000.0, 7000.0, 1400.0, 0.20]},
+    {"name": "r3_04_se_shallow", "file": "r3_04_clean.npz", "source_m_s": [9000.0, 4000.0, 200.0, 0.23]},
+    {"name": "r3_05_se_mid", "file": "r3_05_clean.npz", "source_m_s": [11500.0, 7000.0, 1000.0, 0.26]},
+    {"name": "r3_06_se_deep", "file": "r3_06_clean.npz", "source_m_s": [12500.0, 3000.0, 1100.0, 0.29]},
+    {"name": "r3_07_nw_shallow", "file": "r3_07_clean.npz", "source_m_s": [2000.0, 8500.0, 200.0, 0.32]},
+    {"name": "r3_08_nw_mid", "file": "r3_08_clean.npz", "source_m_s": [7500.0, 9500.0, 700.0, 0.35]},
+    {"name": "r3_09_nw_deep", "file": "r3_09_clean.npz", "source_m_s": [2500.0, 10000.0, 1400.0, 0.38]},
+    {"name": "r3_10_ne_shallow", "file": "r3_10_clean.npz", "source_m_s": [13500.0, 9500.0, 200.0, 0.41]},
+    {"name": "r3_11_ne_mid", "file": "r3_11_clean.npz", "source_m_s": [9500.0, 8500.0, 1000.0, 0.44]},
+    {"name": "r3_12_ne_deep", "file": "r3_12_clean.npz", "source_m_s": [14000.0, 14000.0, 1400.0, 0.47]}
+  ],
+  "noise": {
+    "snr_db": [1, 2, 3],
+    "realization_seeds": [20261501, 20261502, 20261503],
+    "definition": "Independent Gaussian noise per receiver; standard deviation is that receiver's full-record signal RMS divided by 10^(SNR/20). The same standardized realization is reused across SNR levels.",
+    "clean_control": true
+  },
+  "picker": {
+    "implementation": "examples/run_holdout_noise_picker_comparison.py::robust_arrival",
+    "noise_window_s": 0.1,
+    "smooth_samples": 5,
+    "sigma_multiplier": 6.0,
+    "consecutive_samples": 3,
+    "minimum_receiver_peak_fraction_of_record": 0.01,
+    "last_record_s_excluded_for_pick": 0.15,
+    "pick_bias_s": -0.26279182618600316
+  },
+  "search": {
+    "source_bounds_m_s": [[2000.0, 14000.0], [2000.0, 14000.0], [100.0, 1500.0], [0.05, 0.5]],
+    "coarse_grid_xyz": [11, 11, 8],
+    "refinement_grid_xyz": 7,
+    "refinement_levels": 4,
+    "origin_time_bounds_s": [0.05, 0.5],
+    "minimum_valid_picks": 4
+  },
+  "success_threshold_m": 500.0,
+  "outputs": {
+    "manifest": "experiments/fmm_quality_gate_residual_confirmation_manifest.json",
+    "result": "experiments/fmm_quality_gate_residual_confirmation_results.json",
+    "report": "experiments/fmm_quality_gate_residual_confirmation_results.md",
+    "partial": "experiments/fmm_quality_gate_residual_confirmation_results.partial.json"
+  },
+  "limitations": "Synthetic source-held-out confirmation on the same Overthrust model and receiver geometry. The rule only accepts or abstains from FMM outputs; it cannot improve the underlying estimate. Observations share source waveforms across noise conditions and are clustered by source. The new residual candidate was selected after prior holdouts were reviewed, but its threshold uses development data only."
+}

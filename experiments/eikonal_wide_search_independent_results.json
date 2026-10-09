@@ -1,0 +1,647 @@
+{
+  "protocol_sha256": "14a1a9dac1cd6b4fe3ffdf8f84db9a456a456d7c8c64e0a3d5f8cb8f39faf144",
+  "checkpoint_sha256": "ce744ba5e7249850fe99644449855c886fc255aebacfacab86f76d59990f2ec7",
+  "velocity_sha256": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+  "fmm_setup_seconds": 37.09976009999991,
+  "fmm_receiver_fields_mib": 181.08816146850586,
+  "events": [
+    {
+      "event": "test_01.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_01.npz",
+      "observation_sha256": "1d44a3788ce53a9f1435b142813d1011a9169b2b987e9f7bf56b06ee19718539",
+      "fmm": {
+        "estimated_source_m_s": [
+          2385.185185185185,
+          2259.259259259259,
+          803.7037037037038,
+          0.10043330227710406
+        ],
+        "arrival_rmse_s": 0.08790451098722309,
+        "valid_fd_picks": 8,
+        "picked_arrivals_s": [
+          0.36000001430511475,
+          0.8100000619888306,
+          1.724000096321106,
+          null,
+          null,
+          0.7680000066757202,
+          1.00600004196167,
+          1.790000081062317,
+          null,
+          null,
+          1.562000036239624,
+          1.7540000677108765,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "candidate_count": 2340,
+        "source_truth_used_in_search": false,
+        "status": "ok",
+        "search_seconds": 0.06438889999844832,
+        "component_error_m_s": [
+          -214.81481481481478,
+          -540.7407407407409,
+          503.7037037037038,
+          -0.10956669116638501
+        ],
+        "location_error_m": 769.5864957791274,
+        "origin_time_error_s": 0.10956669116638501
+      },
+      "pinn": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          2265.300048828125,
+          2953.157470703125,
+          534.6873168945312,
+          0.09432745724916458
+        ],
+        "normalized_mse": 0.848118245601654,
+        "on_boundary": false,
+        "candidate_count": 13524,
+        "start_count": 20,
+        "scoring_seconds": 10.443444599999566,
+        "refinement_seconds": 17.869437200000903,
+        "component_error_m_s": [
+          -334.699951171875,
+          153.157470703125,
+          234.68731689453125,
+          -0.1156725361943245
+        ],
+        "location_error_m": 436.5311041126259,
+        "origin_time_error_s": 0.1156725361943245,
+        "truth_source_raw_waveform_relative_l2": 1.2610091837599553
+      },
+      "truth_post_search_m_s": [
+        2600.0,
+        2800.0,
+        300.0,
+        0.20999999344348907
+      ],
+      "fd_generation_seconds": 8.580687799998486
+    },
+    {
+      "event": "test_02.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_02.npz",
+      "observation_sha256": "aa56b60ef6c1c9c633db435236060c5b883fc86b339b2839cd41a76fdbffe416",
+      "fmm": {
+        "estimated_source_m_s": [
+          13814.814814814816,
+          3511.111111111111,
+          1237.037037037037,
+          0.21997742056210684
+        ],
+        "arrival_rmse_s": 0.035879000427327175,
+        "valid_fd_picks": 8,
+        "picked_arrivals_s": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1.7760001420974731,
+          1.8100000619888306,
+          null,
+          null,
+          null,
+          1.0920000076293945,
+          1.090000033378601,
+          1.6700000762939453,
+          null,
+          null,
+          0.7480000257492065,
+          0.7160000205039978,
+          1.4700000286102295,
+          null,
+          null
+        ],
+        "candidate_count": 2340,
+        "source_truth_used_in_search": false,
+        "status": "ok",
+        "search_seconds": 0.05976120000013907,
+        "component_error_m_s": [
+          214.8148148148157,
+          -88.88888888888914,
+          7.037037037036953,
+          -0.10002257228533579
+        ],
+        "location_error_m": 232.58581023374032,
+        "origin_time_error_s": 0.10002257228533579
+      },
+      "pinn": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          13431.123046875,
+          3562.3994140625,
+          715.9891967773438,
+          0.35253602266311646
+        ],
+        "normalized_mse": 0.6129068732261658,
+        "on_boundary": false,
+        "candidate_count": 11592,
+        "start_count": 20,
+        "scoring_seconds": 8.572944700001244,
+        "refinement_seconds": 17.090720500000316,
+        "component_error_m_s": [
+          -168.876953125,
+          -37.6005859375,
+          -514.0108032226562,
+          0.03253602981567383
+        ],
+        "location_error_m": 542.3470615659561,
+        "origin_time_error_s": 0.03253602981567383,
+        "truth_source_raw_waveform_relative_l2": 0.8662111249495985
+      },
+      "truth_post_search_m_s": [
+        13600.0,
+        3600.0,
+        1230.0,
+        0.3199999928474426
+      ],
+      "fd_generation_seconds": 8.593997699999818
+    },
+    {
+      "event": "test_03.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_03.npz",
+      "observation_sha256": "e2b30f94c909b7a750789632257f338d20942ef4a524b87dc00a344635a00f67",
+      "fmm": {
+        "estimated_source_m_s": [
+          3200.0,
+          14000.0,
+          724.6913580246913,
+          0.07276349027215695
+        ],
+        "arrival_rmse_s": 0.057362883964744225,
+        "valid_fd_picks": 8,
+        "picked_arrivals_s": [
+          null,
+          null,
+          1.6660001277923584,
+          0.9720000624656677,
+          0.5,
+          null,
+          null,
+          1.6080000400543213,
+          0.9200000166893005,
+          0.5300000309944153,
+          null,
+          null,
+          null,
+          1.5360000133514404,
+          1.402000069618225,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "candidate_count": 2340,
+        "source_truth_used_in_search": false,
+        "status": "ok",
+        "search_seconds": 0.060703399998601526,
+        "component_error_m_s": [
+          -200.0,
+          100.0,
+          -255.30864197530866,
+          -0.0672365103238895
+        ],
+        "location_error_m": 339.38547798524957,
+        "origin_time_error_s": 0.0672365103238895
+      },
+      "pinn": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          2459.42529296875,
+          13734.9189453125,
+          975.66162109375,
+          0.35457202792167664
+        ],
+        "normalized_mse": 0.8202689290046692,
+        "on_boundary": false,
+        "candidate_count": 9016,
+        "start_count": 20,
+        "scoring_seconds": 6.699608799999623,
+        "refinement_seconds": 17.119477300000653,
+        "component_error_m_s": [
+          -940.57470703125,
+          -165.0810546875,
+          -4.33837890625,
+          0.2145720273256302
+        ],
+        "location_error_m": 954.9614419730219,
+        "origin_time_error_s": 0.2145720273256302,
+        "truth_source_raw_waveform_relative_l2": 1.0393722554650398
+      },
+      "truth_post_search_m_s": [
+        3400.0,
+        13900.0,
+        980.0,
+        0.14000000059604645
+      ],
+      "fd_generation_seconds": 8.589027300000453
+    },
+    {
+      "event": "test_04.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_04.npz",
+      "observation_sha256": "28905a6d02cccff650b0144a39b1d188ca9a63495c8827b6f9882689211b42f1",
+      "fmm": {
+        "status": "insufficient_valid_picks",
+        "valid_fd_picks": 5,
+        "estimated_source_m_s": null,
+        "reason": "Only 5 usable first-arrival picks",
+        "search_seconds": 0.000304600000163191,
+        "component_error_m_s": null,
+        "location_error_m": null,
+        "origin_time_error_s": null
+      },
+      "pinn": {
+        "status": "fmm_initializer_unavailable",
+        "estimated_source_m_s": null,
+        "component_error_m_s": null,
+        "location_error_m": null,
+        "origin_time_error_s": null,
+        "truth_source_raw_waveform_relative_l2": 1.1243217993835557
+      },
+      "truth_post_search_m_s": [
+        12900.0,
+        13700.0,
+        420.0,
+        0.3700000047683716
+      ],
+      "fd_generation_seconds": 8.587256400000115
+    },
+    {
+      "event": "test_05.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_05.npz",
+      "observation_sha256": "7a2078e42bb79670e46fd63e98b990bfa1e945e9c98c72e26febca1d6087df17",
+      "fmm": {
+        "estimated_source_m_s": [
+          6222.222222222223,
+          6281.481481481482,
+          1303.7037037037037,
+          0.12950813803907535
+        ],
+        "arrival_rmse_s": 0.022422802255713678,
+        "valid_fd_picks": 14,
+        "picked_arrivals_s": [
+          1.6480001211166382,
+          1.350000023841858,
+          1.3580000400543213,
+          1.7340000867843628,
+          null,
+          1.2400000095367432,
+          0.6660000085830688,
+          0.7380000352859497,
+          1.3980001211166382,
+          null,
+          1.340000033378601,
+          0.7580000162124634,
+          0.8400000333786011,
+          1.5420000553131104,
+          null,
+          null,
+          1.5180001258850098,
+          1.5840001106262207,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "candidate_count": 2340,
+        "source_truth_used_in_search": false,
+        "status": "ok",
+        "search_seconds": 0.10548700000072131,
+        "component_error_m_s": [
+          -77.77777777777737,
+          -18.51851851851825,
+          -76.2962962962963,
+          -0.12049186196092465
+        ],
+        "location_error_m": 110.51444734830945,
+        "origin_time_error_s": 0.12049186196092465
+      },
+      "pinn": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          5454.51171875,
+          6323.638671875,
+          573.0585327148438,
+          0.4086548089981079
+        ],
+        "normalized_mse": 0.6814192533493042,
+        "on_boundary": false,
+        "candidate_count": 13524,
+        "start_count": 20,
+        "scoring_seconds": 10.05516020000141,
+        "refinement_seconds": 17.070133899998837,
+        "component_error_m_s": [
+          -845.48828125,
+          23.638671875,
+          -806.9414672851562,
+          0.1586548089981079
+        ],
+        "location_error_m": 1169.0011771437246,
+        "origin_time_error_s": 0.1586548089981079,
+        "truth_source_raw_waveform_relative_l2": 1.1354978188690152
+      },
+      "truth_post_search_m_s": [
+        6300.0,
+        6300.0,
+        1380.0,
+        0.25
+      ],
+      "fd_generation_seconds": 8.580594999999448
+    },
+    {
+      "event": "test_06.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_06.npz",
+      "observation_sha256": "bf510d8b084ff360ba9f7a36feb27dad8d1436bb5610d205aa2e9658754a4639",
+      "fmm": {
+        "estimated_source_m_s": [
+          10340.740740740739,
+          10385.185185185184,
+          100.0,
+          0.23645066605837417
+        ],
+        "arrival_rmse_s": 0.04807310021713484,
+        "valid_fd_picks": 10,
+        "picked_arrivals_s": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1.8060001134872437,
+          null,
+          null,
+          null,
+          1.28000009059906,
+          0.9580000638961792,
+          1.5760000944137573,
+          null,
+          null,
+          0.9860000610351562,
+          0.43400001525878906,
+          1.3640000820159912,
+          null,
+          null,
+          1.6080000400543213,
+          1.3560000658035278,
+          1.8240001201629639
+        ],
+        "candidate_count": 2340,
+        "source_truth_used_in_search": false,
+        "status": "ok",
+        "search_seconds": 0.07562920000054874,
+        "component_error_m_s": [
+          -59.25925925926094,
+          -14.81481481481569,
+          -120.0,
+          -0.07354933632581162
+        ],
+        "location_error_m": 134.65191623572827,
+        "origin_time_error_s": 0.07354933632581162
+      },
+      "pinn": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          10227.255859375,
+          10582.4677734375,
+          994.356689453125,
+          0.1672554463148117
+        ],
+        "normalized_mse": 0.4029912054538727,
+        "on_boundary": false,
+        "candidate_count": 9016,
+        "start_count": 20,
+        "scoring_seconds": 6.696735899999112,
+        "refinement_seconds": 17.27626539999983,
+        "component_error_m_s": [
+          -172.744140625,
+          182.4677734375,
+          774.356689453125,
+          -0.14274455606937408
+        ],
+        "location_error_m": 814.1027631474494,
+        "origin_time_error_s": 0.14274455606937408,
+        "truth_source_raw_waveform_relative_l2": 1.030001073436137
+      },
+      "truth_post_search_m_s": [
+        10400.0,
+        10400.0,
+        220.0,
+        0.3100000023841858
+      ],
+      "fd_generation_seconds": 8.63853349999954
+    },
+    {
+      "event": "test_07.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_07.npz",
+      "observation_sha256": "faa85f2df753bbcf96cdba3639427c0943d7fcdcb72e1cfd0ed67a98e77fd957",
+      "fmm": {
+        "estimated_source_m_s": [
+          7481.481481481482,
+          4577.777777777777,
+          729.6296296296297,
+          0.08253003383187885
+        ],
+        "arrival_rmse_s": 0.027683040570896756,
+        "valid_fd_picks": 15,
+        "picked_arrivals_s": [
+          1.6920000314712524,
+          1.590000033378601,
+          1.758000135421753,
+          null,
+          null,
+          1.0080000162124634,
+          0.7280000448226929,
+          1.162000060081482,
+          1.8240001201629639,
+          null,
+          0.796000063419342,
+          0.3060000240802765,
+          1.002000093460083,
+          1.8320001363754272,
+          null,
+          1.308000087738037,
+          1.0820000171661377,
+          1.5140000581741333,
+          null,
+          null,
+          null,
+          1.846000075340271,
+          null,
+          null,
+          null
+        ],
+        "candidate_count": 2340,
+        "source_truth_used_in_search": false,
+        "status": "ok",
+        "search_seconds": 0.11461430000053952,
+        "component_error_m_s": [
+          -118.51851851851825,
+          -22.222222222222626,
+          -150.37037037037032,
+          -0.10746996378393536
+        ],
+        "location_error_m": 192.7478007076619,
+        "origin_time_error_s": 0.10746996378393536
+      },
+      "pinn": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          7684.34423828125,
+          4437.1806640625,
+          592.677734375,
+          0.2617664635181427
+        ],
+        "normalized_mse": 0.6893399953842163,
+        "on_boundary": false,
+        "candidate_count": 15778,
+        "start_count": 20,
+        "scoring_seconds": 11.647997500000201,
+        "refinement_seconds": 17.045129000000088,
+        "component_error_m_s": [
+          84.34423828125,
+          -162.8193359375,
+          -287.322265625,
+          0.07176646590232849
+        ],
+        "location_error_m": 340.84919100718986,
+        "origin_time_error_s": 0.07176646590232849,
+        "truth_source_raw_waveform_relative_l2": 1.030285174986069
+      },
+      "truth_post_search_m_s": [
+        7600.0,
+        4600.0,
+        880.0,
+        0.1899999976158142
+      ],
+      "fd_generation_seconds": 8.587880200000654
+    },
+    {
+      "event": "test_08.npz",
+      "observation": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\eikonal_wide_search_independent\\test_08.npz",
+      "observation_sha256": "8468027befcbb696a561f131bac172f9e93a52af2b6f6b381773f9957415fe2c",
+      "fmm": {
+        "estimated_source_m_s": [
+          4637.037037037037,
+          9288.888888888889,
+          729.6296296296296,
+          0.29357440271490753
+        ],
+        "arrival_rmse_s": 0.02457627173271249,
+        "valid_fd_picks": 12,
+        "picked_arrivals_s": [
+          null,
+          1.7140001058578491,
+          1.1299999952316284,
+          1.1600000858306885,
+          1.718000054359436,
+          null,
+          1.4100000858306885,
+          0.7000000476837158,
+          0.7680000066757202,
+          1.5560001134872437,
+          null,
+          1.696000099182129,
+          1.2920000553131104,
+          1.3240001201629639,
+          1.8440001010894775,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "candidate_count": 2340,
+        "source_truth_used_in_search": false,
+        "status": "ok",
+        "search_seconds": 0.09000809999997728,
+        "component_error_m_s": [
+          -62.96296296296259,
+          -111.11111111111131,
+          -390.37037037037044,
+          -0.10642560324555694
+        ],
+        "location_error_m": 410.72988664147795,
+        "origin_time_error_s": 0.10642560324555694
+      },
+      "pinn": {
+        "status": "ok",
+        "estimated_source_m_s": [
+          4884.857421875,
+          9333.255859375,
+          908.1677856445312,
+          0.38269299268722534
+        ],
+        "normalized_mse": 0.6374284625053406,
+        "on_boundary": false,
+        "candidate_count": 15778,
+        "start_count": 20,
+        "scoring_seconds": 11.663510699998369,
+        "refinement_seconds": 17.438314099999843,
+        "component_error_m_s": [
+          184.857421875,
+          -66.744140625,
+          -211.83221435546875,
+          -0.017307013273239136
+        ],
+        "location_error_m": 288.9635509346858,
+        "origin_time_error_s": 0.017307013273239136,
+        "truth_source_raw_waveform_relative_l2": 1.2357330436600356
+      },
+      "truth_post_search_m_s": [
+        4700.0,
+        9400.0,
+        1120.0,
+        0.4000000059604645
+      ],
+      "fd_generation_seconds": 8.576067400001193
+    }
+  ],
+  "checks": {
+    "fmm_picks": false,
+    "pinn_location": false,
+    "pinn_origin_time": false,
+    "pinn_median_location": false,
+    "pinn_beats_fmm": false
+  },
+  "all_gates_passed": false,
+  "median_location_error_m": {
+    "fmm": 232.58581023374032,
+    "pinn": 542.3470615659561
+  },
+  "limitations": "Independent event positions only: identical velocity geology, FD solver, receiver array and single frozen training run; FMM is a required initializer whose setup and search costs must be included. Development records and the earlier independent test cannot be reused as new confirmation."
+}

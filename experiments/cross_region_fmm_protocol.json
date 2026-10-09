@@ -1,0 +1,55 @@
+{
+  "purpose": "one-time synthetic cross-region PINN waveform vs reciprocal-FMM first-arrival localization comparison",
+  "fixed_pinn_checkpoint": "outputs/depth_gap_25_hybrid_1000/conditioned_5Hz.pth",
+  "fixed_pinn_sha256": "3a8b5251f12c308f9899ef5557347984e09b7a3d948ffd7a3146d6242b20041a",
+  "fixed_velocity_file": "data/velocity/vp_model.npy",
+  "fixed_velocity_sha256": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+  "observations": "eight new 5 Hz, 0--2 s, dt 0.002 s, 25-receiver FD records with six zero-Dirichlet faces",
+  "events": [
+    {"file": "region_02.npz", "source_m_s": [11400, 4300, 1040, 0.30]},
+    {"file": "region_03.npz", "source_m_s": [4350, 11700, 1050, 0.34]},
+    {"file": "region_04.npz", "source_m_s": [11700, 12250, 500, 0.19]},
+    {"file": "region_05.npz", "source_m_s": [8320, 3240, 1180, 0.39]},
+    {"file": "region_06.npz", "source_m_s": [3270, 7720, 750, 0.29]},
+    {"file": "region_07.npz", "source_m_s": [9160, 12150, 980, 0.11]},
+    {"file": "region_08.npz", "source_m_s": [12650, 7790, 700, 0.37]},
+    {"file": "central_gap.npz", "source_m_s": [7850, 8500, 850, 0.25]}
+  ],
+  "shared_source_bounds_m_s": [[2000, 14000], [2000, 14000], [100, 1500], [0.05, 0.50]],
+  "pinn_inversion": {
+    "coarse_grid_xyzt": [11, 11, 8, 6],
+    "coarse_receiver_stride": 2,
+    "coarse_time_stride": 8,
+    "restarts": 5,
+    "refine_receiver_stride": 1,
+    "refine_time_stride": 4,
+    "refine_steps": 250,
+    "refine_adam_learning_rate_on_box_fractions": 0.0025,
+    "misfit_scale": "each event's full unstrided 2-s observation RMS, fixed across candidates"
+  },
+  "fmm_baseline": {
+    "velocity_grid_stride": 2,
+    "effective_grid_spacing_m": 80,
+    "receiver_reciprocal_fields": 25,
+    "coarse_grid_xyz": [11, 11, 8],
+    "refinement_grid_xyz": 7,
+    "refinement_levels": 4,
+    "pick_threshold_fraction_per_trace": 0.05,
+    "pick_consecutive_samples": 3,
+    "minimum_station_peak_fraction_of_record": 0.01,
+    "last_record_s_excluded_for_pick": 0.15,
+    "minimum_valid_picks": 6,
+    "origin_time_estimator": "clipped median of FD first-arrival picks minus FMM traveltimes",
+    "pick_rule_provenance": "fixed on an earlier inspected development record before any new cross-region FD event was generated"
+  },
+  "predeclared_gates": {
+    "all_eight_pinn_raw_waveform_relative_l2_below": 0.75,
+    "at_least_six_of_eight_pinn_location_error_m_below": 500,
+    "at_least_six_of_eight_pinn_origin_time_error_s_below": 0.05,
+    "pinn_median_location_error_m_below": 500,
+    "pinn_median_location_error_below_fmm_median": true,
+    "at_least_six_valid_fmm_first_arrivals_each_event": true
+  },
+  "reporting": "every event's raw PINN L2, full-source estimate and error, FMM valid picks and errors, truth-source PINN misfit, all coarse starts, coarse/refinement vs field setup timing and memory; report failed gates without changing weights, picks or search rules",
+  "limitations": "synthetic same-velocity-model evaluation, one PINN training seed, FD source/receiver setup shared, first-arrival FMM and full-waveform PINN use different data summaries; no field data, noise robustness or calibrated UQ; once inspected, these events cannot be reused as untouched tests for revised models"
+}

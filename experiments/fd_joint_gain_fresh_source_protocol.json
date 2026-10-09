@@ -1,0 +1,21 @@
+{
+  "role": "prospective source-position check of the post-hoc FD gain objective",
+  "fd_config": "data/observations/experiment_draft.json",
+  "spatial_grid_counts": {"x": 5, "y": 5, "z": 3},
+  "waveform_window_s": [0.0, 2.0],
+  "template_duration_s": 2.5,
+  "reference_origin_time_s": 0.5,
+  "origin_time_bounds_s": [0.05, 0.5],
+  "template_batch_size": 12,
+  "observations": [
+    {"id": "fresh_west_mid", "source_m_s": [3750.0, 9850.0, 720.0, 0.22]},
+    {"id": "fresh_east_deep", "source_m_s": [11650.0, 4550.0, 1180.0, 0.34]},
+    {"id": "fresh_center_shallow", "source_m_s": [8100.0, 11350.0, 360.0, 0.17]}
+  ],
+  "observation_directory": "data/observations/fd_joint_gain_fresh_source",
+  "result": "experiments/fd_joint_gain_fresh_source_results.json",
+  "report": "experiments/fd_joint_gain_fresh_source_results.md",
+  "primary_comparison": "median spatial error of joint time/nonnegative-gain objective versus original unit-gain objective, same 75 candidates",
+  "other_reporting": "all event positions and errors, origin-time error, objective values, fitted gains, waveform norms, per-event ranking and template generation time; no tuning after examining fresh records",
+  "limitations": "The three source positions are new but the velocity model, source pulse, receiver array, solver and search grid are shared with development. The joint objective was selected after inspecting the earlier eight events. This is prospective only with respect to source positions, not an independent geological or field test."
+}

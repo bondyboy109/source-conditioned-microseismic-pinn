@@ -1,0 +1,423 @@
+{
+  "role": "development-only local waveform surrogate diagnostic on already spent depth records",
+  "protocol_sha256": "f17f63ae5c8629a2a2d9979c41bc8826348dc8fad2a02091ba1c584a513756e2",
+  "checkpoint_sha256": "3aa5ade41968a0d9e1a214c625ac4a62c075eac23bea17b7c60cc8b7d3751ab9",
+  "candidate_count": 75,
+  "best_configuration": {
+    "z_scale_m": 50.0,
+    "neighbour_count": 2,
+    "inverse_distance_power": 2.0,
+    "mean_full_l2": 0.43677209475531775,
+    "mean_active_l2": 0.3866639180204142
+  },
+  "top_configurations": [
+    {
+      "z_scale_m": 50.0,
+      "neighbour_count": 2,
+      "inverse_distance_power": 2.0,
+      "mean_full_l2": 0.43677209475531775,
+      "mean_active_l2": 0.3866639180204142
+    },
+    {
+      "z_scale_m": 50.0,
+      "neighbour_count": 2,
+      "inverse_distance_power": 4.0,
+      "mean_full_l2": 0.4452107962097224,
+      "mean_active_l2": 0.40517797611586304
+    },
+    {
+      "z_scale_m": 50.0,
+      "neighbour_count": 3,
+      "inverse_distance_power": 4.0,
+      "mean_full_l2": 0.44697458965021636,
+      "mean_active_l2": 0.406388014495061
+    },
+    {
+      "z_scale_m": 50.0,
+      "neighbour_count": 4,
+      "inverse_distance_power": 4.0,
+      "mean_full_l2": 0.4473706230107566,
+      "mean_active_l2": 0.40859070344210235
+    },
+    {
+      "z_scale_m": 50.0,
+      "neighbour_count": 6,
+      "inverse_distance_power": 4.0,
+      "mean_full_l2": 0.45107965325910954,
+      "mean_active_l2": 0.4147919426813155
+    },
+    {
+      "z_scale_m": 50.0,
+      "neighbour_count": 2,
+      "inverse_distance_power": 1.0,
+      "mean_full_l2": 0.45116012854163995,
+      "mean_active_l2": 0.38798014473006015
+    },
+    {
+      "z_scale_m": 50.0,
+      "neighbour_count": 8,
+      "inverse_distance_power": 4.0,
+      "mean_full_l2": 0.45195849139229954,
+      "mean_active_l2": 0.41784550866598946
+    },
+    {
+      "z_scale_m": 100.0,
+      "neighbour_count": 8,
+      "inverse_distance_power": 4.0,
+      "mean_full_l2": 0.479806166931852,
+      "mean_active_l2": 0.4427030336595583
+    },
+    {
+      "z_scale_m": 100.0,
+      "neighbour_count": 6,
+      "inverse_distance_power": 4.0,
+      "mean_full_l2": 0.4819988695528741,
+      "mean_active_l2": 0.4443147045201239
+    },
+    {
+      "z_scale_m": 100.0,
+      "neighbour_count": 4,
+      "inverse_distance_power": 4.0,
+      "mean_full_l2": 0.4860670877480878,
+      "mean_active_l2": 0.44737681967089366
+    }
+  ],
+  "summary": {
+    "event_count": 8,
+    "interpolator_mean_full_l2": 0.43677209475531775,
+    "interpolator_mean_active_l2": 0.3866639180204142,
+    "neural_control_mean_full_l2": 0.42400301142123764,
+    "neural_control_mean_active_l2": 0.3685603764814023
+  },
+  "events": [
+    {
+      "event": "a10_zm80.npz",
+      "anchor": "a10",
+      "offset_m": -80,
+      "sha256": "4889354580ac4f728ba6c2aa1534f191ea304f205ae1b698bd26d0b5c11e683f",
+      "source_m_s": [
+        10000.0,
+        6500.0,
+        920.0,
+        0.25
+      ],
+      "metrics": {
+        "full_l2": 0.13349594251726718,
+        "active_l2": 0.12639099882083077,
+        "zero_lag_correlation": 0.9913874309655057
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            10000.0,
+            6500.0,
+            1000.0,
+            0.25
+          ],
+          "scaled_distance": 1.6,
+          "weight": 0.5,
+          "sha256": "fca6dd43807f42e321e8a34013c30f5130594f5509278742f46fdc8c9271eb14"
+        },
+        {
+          "source_m_s": [
+            10000.0,
+            6500.0,
+            840.0,
+            0.25
+          ],
+          "scaled_distance": 1.6,
+          "weight": 0.5,
+          "sha256": "b341a7258b4448dd14f0fdc7405adfd74c5f263300ddb4750f71ead12dd9da0e"
+        }
+      ]
+    },
+    {
+      "event": "a10_zp80.npz",
+      "anchor": "a10",
+      "offset_m": 80,
+      "sha256": "d342e544ff168b7dc2c27f4b9118f85c379df716d44672f8cd5adaf18385071f",
+      "source_m_s": [
+        10000.0,
+        6500.0,
+        1080.0,
+        0.25
+      ],
+      "metrics": {
+        "full_l2": 0.13129709615866383,
+        "active_l2": 0.12687213068011075,
+        "zero_lag_correlation": 0.995382698937614
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            10000.0,
+            6500.0,
+            1000.0,
+            0.25
+          ],
+          "scaled_distance": 1.6,
+          "weight": 0.5,
+          "sha256": "fca6dd43807f42e321e8a34013c30f5130594f5509278742f46fdc8c9271eb14"
+        },
+        {
+          "source_m_s": [
+            10000.0,
+            6500.0,
+            1160.0,
+            0.25
+          ],
+          "scaled_distance": 1.6,
+          "weight": 0.5,
+          "sha256": "a7344797db173fa990430974f66560edcbf96981602a41f2af8e6aadfc385b1f"
+        }
+      ]
+    },
+    {
+      "event": "a10_zm280.npz",
+      "anchor": "a10",
+      "offset_m": -280,
+      "sha256": "316e60fe941500fe135894171960f63434d798aab856c709a743796f104ce917",
+      "source_m_s": [
+        10000.0,
+        6500.0,
+        720.0,
+        0.25
+      ],
+      "metrics": {
+        "full_l2": 0.9946512479479396,
+        "active_l2": 0.8780710824505034,
+        "zero_lag_correlation": 0.4258795327643746
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            10000.0,
+            6500.0,
+            840.0,
+            0.25
+          ],
+          "scaled_distance": 2.4,
+          "weight": 0.6319488817891374,
+          "sha256": "b341a7258b4448dd14f0fdc7405adfd74c5f263300ddb4750f71ead12dd9da0e"
+        },
+        {
+          "source_m_s": [
+            12600.0,
+            7800.0,
+            780.0,
+            0.3499999940395355
+          ],
+          "scaled_distance": 3.144837038703278,
+          "weight": 0.3680511182108625,
+          "sha256": "d68ae6f3a1f3edd70c3d8526f46aa34ad568e8cbc91499c4c31f6d2596b5b2a1"
+        }
+      ]
+    },
+    {
+      "event": "a10_zp280.npz",
+      "anchor": "a10",
+      "offset_m": 280,
+      "sha256": "d235b98753584de0dbd2b9e41e4e60efa7baafd80bf2e746c70c04f3aa839203",
+      "source_m_s": [
+        10000.0,
+        6500.0,
+        1280.0,
+        0.25
+      ],
+      "metrics": {
+        "full_l2": 0.7029469289557558,
+        "active_l2": 0.5375994962155042,
+        "zero_lag_correlation": 0.8064845280149707
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            10000.0,
+            6500.0,
+            1160.0,
+            0.25
+          ],
+          "scaled_distance": 2.4,
+          "weight": 0.732962447844228,
+          "sha256": "a7344797db173fa990430974f66560edcbf96981602a41f2af8e6aadfc385b1f"
+        },
+        {
+          "source_m_s": [
+            11000.0,
+            10000.0,
+            1200.0,
+            0.3400000035762787
+          ],
+          "scaled_distance": 3.976179070414209,
+          "weight": 0.26703755215577185,
+          "sha256": "524568b6921dee91952c558ac696b87c6c679ef59a9606a9d9f894c5cb967b6f"
+        }
+      ]
+    },
+    {
+      "event": "a14_zm80.npz",
+      "anchor": "a14",
+      "offset_m": -80,
+      "sha256": "ffce923aa8a413e382f5aea4b3d41094e843a4b3e4b484d6f213bb3304ede2cb",
+      "source_m_s": [
+        11000.0,
+        10000.0,
+        1120.0,
+        0.3400000035762787
+      ],
+      "metrics": {
+        "full_l2": 0.19997049116175472,
+        "active_l2": 0.19589727368313212,
+        "zero_lag_correlation": 0.9925198237389349
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            11000.0,
+            10000.0,
+            1200.0,
+            0.3400000035762787
+          ],
+          "scaled_distance": 1.6,
+          "weight": 0.5,
+          "sha256": "524568b6921dee91952c558ac696b87c6c679ef59a9606a9d9f894c5cb967b6f"
+        },
+        {
+          "source_m_s": [
+            11000.0,
+            10000.0,
+            1040.0,
+            0.3400000035762787
+          ],
+          "scaled_distance": 1.6,
+          "weight": 0.5,
+          "sha256": "3ea5d4ebc9d919061907e18e00e3c889328e652eddae3c05533f014835fef521"
+        }
+      ]
+    },
+    {
+      "event": "a14_zp80.npz",
+      "anchor": "a14",
+      "offset_m": 80,
+      "sha256": "f3b25cf64e94d8b501f80a9b43d79ddb51a5cb7c9fe7acb1aeb18655a2f6cfb8",
+      "source_m_s": [
+        11000.0,
+        10000.0,
+        1280.0,
+        0.3400000035762787
+      ],
+      "metrics": {
+        "full_l2": 0.14729959994584108,
+        "active_l2": 0.14151314177109714,
+        "zero_lag_correlation": 0.9929553159463332
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            11000.0,
+            10000.0,
+            1200.0,
+            0.3400000035762787
+          ],
+          "scaled_distance": 1.6,
+          "weight": 0.5,
+          "sha256": "524568b6921dee91952c558ac696b87c6c679ef59a9606a9d9f894c5cb967b6f"
+        },
+        {
+          "source_m_s": [
+            11000.0,
+            10000.0,
+            1360.0,
+            0.3400000035762787
+          ],
+          "scaled_distance": 1.6,
+          "weight": 0.5,
+          "sha256": "04a8a1d172a7a46a023b78cdd13d41fe08be810188b23438055003a81c250c06"
+        }
+      ]
+    },
+    {
+      "event": "a14_zm280.npz",
+      "anchor": "a14",
+      "offset_m": -280,
+      "sha256": "f3e3065d6444d2d0c384486579b6016d6dbcf9032bbfd97696c67ab53baa007c",
+      "source_m_s": [
+        11000.0,
+        10000.0,
+        920.0,
+        0.3400000035762787
+      ],
+      "metrics": {
+        "full_l2": 0.6217368785556688,
+        "active_l2": 0.5633491097595724,
+        "zero_lag_correlation": 0.7833410270999868
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            11000.0,
+            10000.0,
+            1040.0,
+            0.3400000035762787
+          ],
+          "scaled_distance": 2.4,
+          "weight": 0.5489428347689899,
+          "sha256": "3ea5d4ebc9d919061907e18e00e3c889328e652eddae3c05533f014835fef521"
+        },
+        {
+          "source_m_s": [
+            10000.0,
+            10500.0,
+            800.0,
+            0.2199999988079071
+          ],
+          "scaled_distance": 2.6476404589747453,
+          "weight": 0.45105716523101014,
+          "sha256": "197cb84bd453b8ef63b58e7e05e78fadb905990dc6327492cba2d151ea957d05"
+        }
+      ]
+    },
+    {
+      "event": "a14_zp280.npz",
+      "anchor": "a14",
+      "offset_m": 280,
+      "sha256": "00db2de41a64734355a43cba371833177fe9119b570df8c9e3d625f395977f97",
+      "source_m_s": [
+        11000.0,
+        10000.0,
+        1480.0,
+        0.3400000035762787
+      ],
+      "metrics": {
+        "full_l2": 0.562778572799651,
+        "active_l2": 0.5236181107825632,
+        "zero_lag_correlation": 0.8292385809200019
+      },
+      "neighbours": [
+        {
+          "source_m_s": [
+            11000.0,
+            10000.0,
+            1360.0,
+            0.3400000035762787
+          ],
+          "scaled_distance": 2.4,
+          "weight": 0.8321678321678321,
+          "sha256": "04a8a1d172a7a46a023b78cdd13d41fe08be810188b23438055003a81c250c06"
+        },
+        {
+          "source_m_s": [
+            6000.0,
+            11000.0,
+            1400.0,
+            0.30000001192092896
+          ],
+          "scaled_distance": 5.344155686354955,
+          "weight": 0.1678321678321678,
+          "sha256": "a898a2eaff7bebbb22f670cd4ebde4fd35ceeb461a4b3314847f1ebea54acc74"
+        }
+      ]
+    }
+  ],
+  "limits": "Hyperparameters are selected on eight already inspected depth records. This is a lower-complexity FD-record interpolation baseline, not a PINN, not independent validation, and not yet a continuous inversion operator. Convex local interpolation cannot be expected to extrapolate reliably outside source coverage."
+}

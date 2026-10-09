@@ -1,0 +1,48 @@
+{
+  "status": "development_uniform_3500_5hz",
+  "velocity_file": "E:\\source-conditioned-microseismic-pinn\\data\\velocity\\uniform_3500.npy",
+  "velocity_shape": [
+    401,
+    401,
+    94
+  ],
+  "grid_spacing_m": [
+    40.0,
+    40.0,
+    40.0
+  ],
+  "domain_extent_m": [
+    16000.0,
+    16000.0,
+    3720.0
+  ],
+  "velocity_min_max_m_per_s": [
+    3500.0,
+    3500.0
+  ],
+  "receivers_file": "E:\\source-conditioned-microseismic-pinn\\data\\observations\\receiver_coords.npy",
+  "receiver_count": 25,
+  "receiver_layout": "5 x 5 surface grid; x,y=2000..14000 m; z=100 m",
+  "source_location_bounds_m": [
+    [
+      2000.0,
+      2000.0,
+      100.0
+    ],
+    [
+      14000.0,
+      14000.0,
+      1500.0
+    ]
+  ],
+  "origin_time_bounds_s": [
+    0.05,
+    0.5
+  ],
+  "time_step_s": 0.002,
+  "record_length_s": 9.0,
+  "n_time_samples": 4501,
+  "conservative_latest_arrival_s": 7.942811686627466,
+  "frequency_validity": "60 Hz requires a refined-grid dispersion study",
+  "boundary_condition": "zero top; lateral and bottom damped sponge ending at zero faces"
+}

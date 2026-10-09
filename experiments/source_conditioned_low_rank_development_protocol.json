@@ -1,0 +1,54 @@
+{
+  "purpose": "development-only test of a factorized source-conditioned waveform operator with explicit FMM retarded time",
+  "protocol_written_before_training": true,
+  "velocity_file": "data/velocity/vp_model.npy",
+  "training_manifest_checkpoint": "outputs/depth_midpoint_teacher_low_weight/teacher_0.002_loadable.pth",
+  "training_observation_count": 33,
+  "excluded_confirmation_directory": "data/observations/source_conditioned_ensemble_confirmation",
+  "development_sets": [
+    "data/observations/eikonal_independent",
+    "data/observations/eikonal_wide_search_independent"
+  ],
+  "development_event_count": 16,
+  "fmm": {
+    "velocity_grid_stride": 2,
+    "grid_spacing_m": 80.0,
+    "cache_file": "outputs/source_conditioned_low_rank_development/receiver_fmm_fields_stride2.npy"
+  },
+  "model": {
+    "rank": 8,
+    "hidden_dim": 128,
+    "hidden_layers": 3,
+    "frequency_hz": 5.0,
+    "time_length_s": 2.0,
+    "spatial_lengths_m": [16000.0, 16000.0, 3720.0],
+    "causal_width_s": 0.04,
+    "output": "dimensionless receiver waveform normalized by each observation RMS"
+  },
+  "training": {
+    "seed": 3201,
+    "updates": 3000,
+    "batch_size": 4096,
+    "events_per_batch": 8,
+    "learning_rate": 0.0003,
+    "coefficient_weight": 0.001,
+    "gradient_clip_norm": 1.0,
+    "sampling": {
+      "fmm_arrival_window_fraction": 0.50,
+      "observed_active_fraction": 0.25,
+      "uniform_fraction": 0.25,
+      "arrival_half_width_s": 0.30
+    }
+  },
+  "development_gates": {
+    "mean_full_relative_l2_fraction_of_frozen_base_below": 0.90,
+    "events_improved_over_frozen_base_at_least": 12,
+    "events_below_zero_prediction_l2_at_least": 12,
+    "all_four_source_gradient_components_above": 1e-8
+  },
+  "output_checkpoint": "outputs/source_conditioned_low_rank_development/source_conditioned_low_rank.pth",
+  "result_file": "experiments/source_conditioned_low_rank_development_results.json",
+  "report_file": "experiments/source_conditioned_low_rank_development_results.md",
+  "decision_rule": "Proceed to localization only if all forward gates pass; do not use the eight-event confirmation set for training or model selection.",
+  "limitations": "One 5-Hz synthetic Overthrust model and one receiver geometry; the operator is a receiver-supervised waveform surrogate with FMM travel time, not an independent PDE solver."
+}

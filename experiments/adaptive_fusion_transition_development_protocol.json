@@ -1,0 +1,39 @@
+{
+  "purpose": "development-only calibration of noise levels that yield four to five valid arrival picks",
+  "protocol_written_before_calibration": true,
+  "source_protocol": "experiments/low_rank_pick_perturbation_protocol.json",
+  "observation_directory": "data/observations/fresh_arrival_test_20260927",
+  "model_window_s": 2.0,
+  "snr_db": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "realization_seeds": [20261101, 20261102, 20261103],
+  "noise_definition": "Independent Gaussian noise per receiver; standard deviation is the receiver's 0-2 s signal RMS divided by 10^(SNR/20). The same standardized realization is reused across SNR levels.",
+  "picker": {
+    "implementation": "examples/run_holdout_noise_picker_comparison.py::robust_arrival",
+    "noise_window_s": 0.10,
+    "smooth_samples": 5,
+    "sigma_multiplier": 6.0,
+    "consecutive_samples": 3,
+    "minimum_receiver_peak_fraction_of_record": 0.01,
+    "last_record_s_excluded_for_pick": 0.15
+  },
+  "selection_rule": {
+    "primary": "Choose SNR with the largest fraction of trials having 4-5 valid picks.",
+    "tie_break_1": "Choose the SNR whose median valid-pick count is closest to 4.5.",
+    "tie_break_2": "Choose the lower SNR.",
+    "confirmation_snr_rule": "Select the chosen SNR and the two other tested SNRs nearest to it, ties resolved toward lower SNR; use these three values for the new-source confirmation.",
+    "scope": "The selected levels apply only to the subsequent confirmation. No localization errors or model outputs are used for this selection."
+  },
+  "events": [
+    {"name": "fresh_01", "file": "fresh_01.npz", "sha256": "d920b1577fbc9bb641e8968a91e24e1757d0118039229eb5b79e3a74f8a230e7"},
+    {"name": "fresh_02", "file": "fresh_02.npz", "sha256": "18683ee15711314bc181b1fadfda0d74631067ddd5097505fce1512f68566e87"},
+    {"name": "fresh_03", "file": "fresh_03.npz", "sha256": "aaa6d39ecf72986bd8a96fcba5c88a001b8102f8a931d91fbe0d38fe0bb89c43"},
+    {"name": "fresh_04", "file": "fresh_04.npz", "sha256": "1af0bdcf303f847fba85f7f734bf481c20ab35ec9e72ec9116c8802a61175af1"},
+    {"name": "fresh_05", "file": "fresh_05.npz", "sha256": "adc06b2ff53aefc37a467d2c82790151ce0d33400314ca39f1194bade23f1fe5"},
+    {"name": "fresh_06", "file": "fresh_06.npz", "sha256": "9d9c1a6b3c59c653a04c58fdb46bc078b858e8e548c37aaca9441682ad302ea8"},
+    {"name": "fresh_07", "file": "fresh_07.npz", "sha256": "be6b75da89852ab1436441644dff2db6db54a4513469a412ef048dce9e0ee45b"},
+    {"name": "fresh_08", "file": "fresh_08.npz", "sha256": "284e5154d16dbb7a6c26a398c4119f02010c5298e7666d22e19ffe39ebb8132e"}
+  ],
+  "output_result": "experiments/adaptive_fusion_transition_development_results.json",
+  "output_report": "experiments/adaptive_fusion_transition_development_results.md",
+  "limitations": "This SNR calibration uses events already seen during development and is not independent validation. It selects only noise levels for a separate locked-source experiment; it does not select a model, picker, fusion weight, or source-search setting."
+}
