@@ -1,0 +1,69 @@
+{
+  "role": "16 inspected development observations",
+  "records": [
+    {
+      "path": "data/observations/eikonal_independent/test_01.npz",
+      "sha256": "063ddda11c1a73da3e870602f25968d41f5ecc74aadae580740947f1e54e4d41"
+    },
+    {
+      "path": "data/observations/eikonal_independent/test_02.npz",
+      "sha256": "c39165b10f1e23a90f628727740d7edb2d07f90aef072a7438b2fe9173b1af75"
+    },
+    {
+      "path": "data/observations/eikonal_independent/test_03.npz",
+      "sha256": "d94aaae8c6ecc1801d6798f9798424143b03ea6039fa33af8f55c94ca828b97e"
+    },
+    {
+      "path": "data/observations/eikonal_independent/test_04.npz",
+      "sha256": "1b36b142d4fdd38d5dd8d9618dcdc3b5ddd285c036dbfcf73058b01c79069797"
+    },
+    {
+      "path": "data/observations/eikonal_independent/test_05.npz",
+      "sha256": "c6747ace6bd0cab4a79218f7b6a58e211dcda01f5d3425b7f8b86197a7cb306e"
+    },
+    {
+      "path": "data/observations/eikonal_independent/test_06.npz",
+      "sha256": "b5dc551f9d625f08f38d34dcbc2e05895bf2cc1a057783e1cde834224bc9c2bb"
+    },
+    {
+      "path": "data/observations/eikonal_independent/test_07.npz",
+      "sha256": "837736d30fd7bbb48ce9cf4452b841baf229e0481c6bbd6fd1ee23be6b675109"
+    },
+    {
+      "path": "data/observations/eikonal_independent/test_08.npz",
+      "sha256": "df432f3c2dfebc6cb0ae3c0f8bf400bd5d608feb5543868a511578076cc149c1"
+    },
+    {
+      "path": "data/observations/eikonal_wide_search_independent/test_01.npz",
+      "sha256": "1d44a3788ce53a9f1435b142813d1011a9169b2b987e9f7bf56b06ee19718539"
+    },
+    {
+      "path": "data/observations/eikonal_wide_search_independent/test_02.npz",
+      "sha256": "aa56b60ef6c1c9c633db435236060c5b883fc86b339b2839cd41a76fdbffe416"
+    },
+    {
+      "path": "data/observations/eikonal_wide_search_independent/test_03.npz",
+      "sha256": "e2b30f94c909b7a750789632257f338d20942ef4a524b87dc00a344635a00f67"
+    },
+    {
+      "path": "data/observations/eikonal_wide_search_independent/test_04.npz",
+      "sha256": "28905a6d02cccff650b0144a39b1d188ca9a63495c8827b6f9882689211b42f1"
+    },
+    {
+      "path": "data/observations/eikonal_wide_search_independent/test_05.npz",
+      "sha256": "7a2078e42bb79670e46fd63e98b990bfa1e945e9c98c72e26febca1d6087df17"
+    },
+    {
+      "path": "data/observations/eikonal_wide_search_independent/test_06.npz",
+      "sha256": "bf510d8b084ff360ba9f7a36feb27dad8d1436bb5610d205aa2e9658754a4639"
+    },
+    {
+      "path": "data/observations/eikonal_wide_search_independent/test_07.npz",
+      "sha256": "faa85f2df753bbcf96cdba3639427c0943d7fcdcb72e1cfd0ed67a98e77fd957"
+    },
+    {
+      "path": "data/observations/eikonal_wide_search_independent/test_08.npz",
+      "sha256": "8468027befcbb696a561f131bac172f9e93a52af2b6f6b381773f9957415fe2c"
+    }
+  ]
+}

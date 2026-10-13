@@ -1,9 +1,0 @@
-{
-  "purpose": "Locked test evaluation of the 1500+1500 geometry-feature ablation",
-  "parent_protocol": "experiments/source_transfer_moe_protocol.json",
-  "ablation_protocol": "experiments/source_transfer_geometry_ablation_protocol.json",
-  "checkpoint_directory": "outputs/source_transfer_geometry_ablation_1500",
-  "result_json": "experiments/source_transfer_geometry_ablation_test_results.json",
-  "report_file": "experiments/source_transfer_geometry_ablation_test_results.md",
-  "restriction": "Locked evaluation only. No training, tuning, or model selection uses these four reserved test events."
-}

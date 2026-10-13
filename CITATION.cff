@@ -1,12 +1,12 @@
 cff-version: 1.2.0
-message: "If you use this software, cite this repository. The associated manuscript is not yet published."
-title: "A Differentiable FMM-Aligned Mixture-of-Experts Interface for Microseismic Localization"
+message: "If you use this software, please cite the associated manuscript."
+title: "Traveltime-Constrained Mixture-of-Experts for Microseismic Localization: A Reproducible Evaluation"
 type: software
 authors:
   - family-names: Tian
     given-names: Ruyun
   - family-names: Wu
     given-names: Xiaopeng
-version: "2026.10.09"
-date-released: 2026-10-09
+version: 0.3.0
+date-released: 2026-10-13
 repository-code: "https://github.com/bondyboy109/source-conditioned-microseismic-pinn"

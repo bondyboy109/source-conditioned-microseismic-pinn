@@ -14,13 +14,6 @@
     "asset_name": null
   },
   {
-    "path": "outputs/source_transfer_moe/source_fmm_fields_stride2.npy",
-    "size_bytes": 189884828,
-    "sha256": "46127de16f6ab903b5c1a37909dd1107690837d5b3605ecb5fcc7d0156651874",
-    "distribution": "separate_release_asset",
-    "asset_name": "source_fmm_fields_stride2.npy.zip"
-  },
-  {
     "path": "outputs/traveltime_aligned_moe_development/receiver_fmm_fields_stride2.npy",
     "size_bytes": 189884828,
     "sha256": "f0023bb953e8d94ef5184293c0393331232f7fe93207525a7242d5dfffbf3a36",

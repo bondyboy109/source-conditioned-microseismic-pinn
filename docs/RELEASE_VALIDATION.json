@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-13",
+  "numerical_tests": "5 passed",
+  "replay_input_check": "passed",
+  "training_input_check": "33 training / 16 development passed",
+  "new_training_smoke": "1 update passed, archived files untouched",
+  "current_one_event_neural_replay": {
+    "waveform_only": 2699.3990702279093,
+    "hybrid": 215.55742367787266
+  },
+  "absolute_error_difference_from_archived_first_event_m": {
+    "waveform_only": 0.0,
+    "hybrid": 0.0
+  },
+  "current_figures_7_8_regenerated": true,
+  "scope": "Installation/packaging checks, not new independent confirmation"
+}

@@ -1,43 +1,50 @@
-# Differentiable FMM-Aligned MoE for Microseismic Localization
+# Traveltime-Constrained MoE for Microseismic Localization
 
-Code and experiment artifacts for **A Differentiable FMM-Aligned Mixture-of-Experts Interface for Microseismic Localization**, by Ruyun Tian and Xiaopeng Wu.
-[中文说明](README_zh.md) · [Experiment index](experiments/INDEX.md) · [Reproducibility limits](docs/PACKAGE_AUDIT.md) · [Large assets](https://github.com/bondyboy109/source-conditioned-microseismic-pinn/releases/tag/research-artifacts-2026-10-09)
+Code and data for **Traveltime-Constrained Mixture-of-Experts for Microseismic
+Localization: A Reproducible Evaluation**, by Ruyun Tian and Xiaopeng Wu.
+[中文说明](README_zh.md) · [Data](data/README.md) · [Provenance](docs/PROVENANCE.md)
 
-## Current method
+## Current workflow
 
-The final implementation combines a receiver-supervised, source-conditioned waveform surrogate, reciprocal heterogeneous fast-marching (FMM) travel-time fields, differentiable trilinear interpolation in source coordinates, three jointly trained experts with a prototype gate, and a waveform–arrival hybrid localization objective. Source position and origin time explicitly affect the forward interface.
+The method combines cached reciprocal Eikonal fields, differentiable trilinear
+interpolation, source-conditioned retarded-time features, three jointly trained
+waveform experts and a prototype gate. Localization optimizes source position
+and origin time through a waveform–arrival hybrid objective. The final network
+uses receiver-waveform supervision; the repository name retains its origin.
 
-The final model is trained on receiver waveforms; it is not a PDE-only PINN. The repository name and original PINN modules are retained for provenance. Earlier fixed-source, physics-only, carrier, and transfer experiments are development/legacy audits; they do not independently validate the final interface.
+## Primary neural ablation
 
-## Final archived comparison
+The two branches share the same frozen surrogate. Waveform-only sets the
+arrival-loss weight to zero; hybrid adds the registered arrival term. All eight
+previously unused confirmation sources are included.
 
-The registered experiment used 33 training sources, 16 development sources and 8 previously unused confirmation sources at 5 Hz, with known velocity. Each final observation has 25 receivers × 1001 samples, dt = 0.002 s and a 0–2 s window. The FD grid is 401 × 401 × 94 at 40 m spacing, with zero Dirichlet boundaries on all six faces and no absorbing layer. The FMM cache contains 25 reciprocal fields at 80 m spacing; FMM does not use a time step.
-
-| Branch | Median location error (m) | Median origin-time error (s) | Location <500 m | Pipeline failures |
+| Branch | Median location error (m) | Median origin-time error (s) | Below 500 m | Pipeline failures |
 |---|---:|---:|---:|---:|
 | Waveform-only | 2400.2 | 0.0923 | 0/8 | 0/8 |
 | Hybrid | 362.9 | 0.0352 | 5/8 | 0/8 |
-| FMM baseline | 276.8 | 0.0082 | 7/8 | 0/8 |
 
-All-event statistics include all eight estimates. Exceeding 500 m is an accuracy-threshold miss, not a pipeline failure. Waveform-only uses the same FMM-feature MoE and sets the arrival-loss weight to zero. Hybrid improves on waveform-only in all eight events, while the FMM baseline has lower overall errors. These results do not establish superior speed or accuracy over FMM, positive transfer gain, or generalization to field data.
+The location-error median decreases by 84.9% within this neural ablation, and
+all eight location estimates improve. The final acquisition has 25 receivers,
+1001 samples, dt=0.002 s and a 0–2-s window. Training uses 33 sources and
+development uses 16 inspected sources. The FD grid is 401×401×94 at 40 m,
+with zero Dirichlet boundaries and no absorbing layer. The reciprocal cache
+uses 25 fields at 80-m spacing and has no temporal time step.
 
-The separate carrier ensemble uses M=5 (seeds 42, 7, 123, 2028, 4096). Its **nominal 95% ensemble-dispersion intervals** are uncalibrated and reflect initialization dispersion; their coverage does not validate uncertainty in the final three-expert MoE.
+## Quick start
 
-## Install
-
-Python 3.10 is the recorded environment. Install the appropriate PyTorch build for your hardware, then:
+Use Python 3.10 and a suitable PyTorch build for your GPU:
 
 ```bash
 python -m pip install -r requirements.txt
 python -m pip install -r requirements-dev.txt
 python -m pytest -q
+python scripts/verify_package.py
 ```
 
-The measured environment is in [docs/environment_snapshot.json](docs/environment_snapshot.json): RTX 4060 Laptop GPU, PyTorch 2.5.1+cu121 and CUDA 12.1. `environment.yml` is a convenience environment, not a guarantee of identical hardware or future dependency resolution. Some optional historical scripts need additional packages such as SciPy, ObsPy, segyio or tqdm; these are not required for the final replay.
-
-## Install large assets and replay
-
-Download the three ZIP attachments from the [artifact Release](https://github.com/bondyboy109/source-conditioned-microseismic-pinn/releases/tag/research-artifacts-2026-10-09) to a local folder. Keep them out of ordinary Git commits:
+Download `receiver_fmm_fields_stride2.npy.zip` and
+`independent_layered_undulating.npy.zip` from the
+[existing data Release](https://github.com/bondyboy109/source-conditioned-microseismic-pinn/releases/tag/research-artifacts-2026-10-09),
+then install the hash-verified assets:
 
 ```bash
 python scripts/install_release_assets.py --asset-dir /path/to/downloaded-assets
@@ -47,29 +54,53 @@ python scripts/replay_confirmation.py --events 1
 python scripts/replay_confirmation.py
 ```
 
-The installer checks exact archive paths, file sizes and SHA-256. The final replay needs `receiver_fmm_fields_stride2.npy.zip`; the other two assets support transfer and geology audits. The cached replay does not require the external Overthrust velocity array. Original Overthrust exports are not redistributed; see [data/README.md](data/README.md).
+The primary replay runs waveform-only and hybrid. It writes new outputs under
+`outputs/reproduction/` and refuses to overwrite existing results. This is a
+current-version replay of archived events, not a new independent confirmation.
+Historical runner source/hash differences are documented in
+[PROVENANCE.md](docs/PROVENANCE.md).
 
-Replay outputs go to `outputs/reproduction/`, and existing outputs are never overwritten. This is a **current-version replay of archived events**, not a new independent confirmation. See the historical-source limitation below before interpreting reproducibility.
+## Train a new model
 
-## Files
+The 33/16 observation files and relative manifests are included. After installing
+the reciprocal cache, use a new output directory:
 
-- `traveltime_aligned_moe.py`: final travel-time interpolator and MoE.
-- `examples/run_traveltime_aligned_moe_development.py`: registered receiver-supervised training.
-- `examples/run_traveltime_aligned_moe_localization_current.py`: available current localization runner.
-- `scripts/replay_confirmation.py`: safe replay entry point using current functions.
-- `experiments/`: original protocols, JSON results and reports; [INDEX.md](experiments/INDEX.md) distinguishes evidence roles.
-- `outputs/`: selected small checkpoints and metadata; `data/observations/`: selected synthetic observations.
-- `docs/figures/`: eight current experiment figures.
-- `tests/`: numerical/interface checks; `legacy/`: original fixed-source code.
+```bash
+python scripts/train_moe.py --check-inputs
+python scripts/train_moe.py --output outputs/new_training/moe_run1
+```
 
-Training uses seed 3101, three experts with four hidden layers of width 128 and SiLU, 153228 trainable parameters, 3000 Adam updates and learning rate 3e-4. Full settings, source lists and receiver coordinates remain in the protocols, checkpoints and observation archives. The original training entry point can write its recorded experiment output paths; run new training in a separate checkout and preserve archived results.
+Defaults preserve seed 3101, three experts, four 128-unit hidden layers, SiLU,
+153228 parameters, 3000 Adam updates and learning rate 3e-4. This creates a new
+training run and does not alter the archived checkpoint or experiment records.
+Generating new FD observations or rebuilding the cache requires the external
+Overthrust velocity export; see the data instructions.
 
-## Provenance limitation
+## Files and evaluation scope
 
-Three historical protocols record runner SHA-256 `add81f…`, whose source has not been recovered. The available runner is `174a5…`; it must not be labelled as that historical frozen implementation. Two stress/velocity-bias protocols also retain an earlier confirmation-result hash. Original scripts, protocols and results are preserved byte-for-byte rather than retroactively changing their records. [docs/core_hash_audit.json](docs/core_hash_audit.json) and [experiments/protocol_hash_resolution.json](experiments/protocol_hash_resolution.json) list these differences.
+- `scripts/`: current replay, fresh training and package/asset verification.
+- `traveltime_aligned_moe.py`: source-conditioned MoE and differentiable fields.
+- `data/`: manifests, included synthetic observations and saved figure arrays.
+- `outputs/traveltime_aligned_moe_development/`: final archived model weights.
+- `results/final_neural_ablation.json`: derived neural view with all trials retained.
+- `docs/figures/`: latest nine manuscript figures; Fig. 7/8 use single columns.
+- `archive/`: complete unmodified supporting records and legacy research snapshot.
 
-Use `reliability_adaptive_fusion_results_v2.json`; the annotated `_legacy.json` is superseded. The package integrity manifest is a current distribution checksum list, not a historical experimental protocol. Older audit reports reflect their original dates; use the current package audit for distribution status.
+Regenerate the current single-column stress and velocity-bias figures from the
+preserved inputs with `python scripts/render_neural_figures.py`. It writes only
+to a new `outputs/figure_reproduction/` directory and retains every trial.
 
-## License and access
+Stress evaluation keeps its gate failures: 11/24 at 5 dB and 7/24 with 40%
+receiver loss. Conditional error summaries use completed trials; failure rates
+use every registered trial. The scope is synthetic, fixed-array, known-velocity
+acoustic data. Separate transfer/carrier audits remain supporting records;
+carrier intervals do not validate uncertainty of the final MoE. FD figure
+snapshots illustrate reference propagation rather than MoE full-space accuracy.
 
-No software reuse license has been selected. This snapshot does not grant MIT or other license permissions. Repository visibility is controlled by the owner; a private repository and its Release assets require access. Citation does not make restricted original data redistributable.
+## Data access and software terms
+
+The processed Overthrust velocity array is not redistributed; follow its original
+terms. Large cached/synthetic assets use the existing Release and unchanged
+checksums. Repository and asset access follow the owner's GitHub visibility.
+No software reuse license has been selected; this update does not introduce a
+new license. Cite the associated manuscript using CITATION.cff.

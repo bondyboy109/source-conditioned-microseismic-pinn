@@ -1,0 +1,57 @@
+{
+  "role": "post hoc FD spatial propagation illustration, not a MoE full-wavefield prediction",
+  "event": "confirm_05_center_shallow.npz",
+  "selection": "same rank-4 source as the receiver comparison",
+  "source_m_s": [
+    8200.0,
+    8400.0,
+    300.0,
+    0.14
+  ],
+  "frequency_hz": 5.0,
+  "shape": [
+    401,
+    401,
+    94
+  ],
+  "spacing_m": [
+    40.0,
+    40.0,
+    40.0
+  ],
+  "dt_s": 0.002,
+  "duration_s": 2.0,
+  "boundary": "zero Dirichlet on all six faces; no absorbing layer",
+  "sigma_m": 50.0,
+  "source_kernel_truncation_sigma": 4,
+  "plane_y_m": 8400.0,
+  "snapshot_times_s": [
+    0.0,
+    0.182,
+    0.364,
+    0.546,
+    0.728,
+    0.91,
+    1.09,
+    1.272,
+    1.454,
+    1.6360000000000001,
+    1.818,
+    2.0
+  ],
+  "shared_display_limit_abs": 8.196681141853333e-06,
+  "per_panel_normalization": false,
+  "display_clipping": "one global 99.5th-percentile absolute amplitude across all twelve slices, with extended colorbar",
+  "visual_style": "Times New Roman; 3x4; seismic signed color map; one slim shared colorbar",
+  "cfl": 0.5340097133962067,
+  "runtime_s": 8.70039510000015,
+  "device": "cuda",
+  "regenerated_receiver_relative_l2": 0.0,
+  "regenerated_receiver_max_abs_difference": 0.0,
+  "velocity_sha256": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+  "observation_sha256": "c5bcb52a630e8e738c7951c9c44fb08eb3a2b89f4edde9cc1a072c792dc04da4",
+  "generator_sha256": "a09d9d7592ee699b0898f00ea7ec367ff746718c6c9926ca6beae3926adfa120",
+  "diagnostic_script_sha256": "b60e769c626b93b2e5d019ea323cefed684347dbdbbd4b965e4d976803dc71b5",
+  "new_training": false,
+  "new_localization": false
+}

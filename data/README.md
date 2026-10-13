@@ -1,9 +1,24 @@
-# Data and assets
+# Data included in the current package
 
-Final confirmation archives contain `data` (25×1001 float32 receiver samples), `times` (0–2 s, dt=0.002 s), `receiver_coords` (25×3, metres), and `source_truth` (x,y,z in metres and origin time in seconds). Sidecar JSON records source/FD provenance. Truth is used only after searches to score estimates. Receiver coordinates are stored in every NPZ; do not substitute a different geometry.
+The relative manifests list 33 training and 16 inspected development NPZ files.
+Eight final confirmation records and four independent-geology records are
+included with their original sidecars. Receiver coordinates are in
+`observations/receiver_coords.npy`; confirmation data are 25 receivers by 1001
+samples, dt=0.002 s, 0–2 s. NPZ keys include data, times, receiver_coords and
+source_truth. The source truth is read after inversion for scoring, not fed to
+the localization search. Training supervision uses the training source truth.
 
-Older diagnostics may use different lengths and grids. Read the associated protocol rather than treating all NPZ files as final observations. Selected training/development/confirmation archives and small checkpoints are committed. Large caches and the independent synthetic geology array are separate Release ZIP assets; paths and SHA-256 are in `release_assets_manifest.json`.
+The final checkpoint is committed under its original outputs path. The 25-field
+reciprocal cache is installed from the existing Release asset, with its exact
+SHA-256. Noise/receiver-loss trials are generated from the eight confirmation
+records using the registered seeds. Velocity-bias trials scale the fields by
+the inverse factor. Protocols retain their historical bytes and documented
+implementation/version limitations.
 
-The original `data/velocity/vp_model.npy` Overthrust export (401×401×94 float32) is not redistributed. Obtain it under the source dataset's terms for regenerating FD data or FMM fields. Its recorded SHA-256 is in the asset manifest. The final archived-event replay uses the supplied reciprocal FMM cache without loading that external velocity array.
-
-FD for final confirmation: 40 m spacing, 5 Hz, dt=0.002 s, 0–2 s, zero Dirichlet on six faces, no absorbing layer. FMM: 80 m spacing, 25 reciprocal receiver fields, no time-stepping parameter. The supplied independent layered/undulating array is a separate synthetic geology audit, not an Overthrust export.
+The original SEG/EAGE Overthrust volume and processed `velocity/vp_model.npy`
+are external data and are not redistributed. Obtain them under their original
+distribution terms and verify the expected SHA-256 in release_assets_manifest.
+Cached inference and cached training do not need this array; generating FD data
+or rebuilding the receiver cache does. The independent synthetic layered model
+is available in the existing Release. Figure-array snapshots are FD fields;
+they are not full-space predictions from the final receiver-only MoE.

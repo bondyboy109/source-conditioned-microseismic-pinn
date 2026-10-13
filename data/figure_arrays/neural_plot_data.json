@@ -1,0 +1,639 @@
+{
+  "confirmation": {
+    "event_order": [
+      "confirm_01_west_shallow.npz",
+      "confirm_02_east_deep.npz",
+      "confirm_03_north_mid.npz",
+      "confirm_04_south_deep.npz",
+      "confirm_05_center_shallow.npz",
+      "confirm_06_southwest_deep.npz",
+      "confirm_07_northeast_mid.npz",
+      "confirm_08_north_deep.npz"
+    ],
+    "source_truth_m_s": [
+      [
+        3100.0,
+        7200.0,
+        410.0,
+        0.18000000715255737
+      ],
+      [
+        12800.0,
+        6600.0,
+        1330.0,
+        0.36000001430511475
+      ],
+      [
+        5800.0,
+        12100.0,
+        690.0,
+        0.23999999463558197
+      ],
+      [
+        11200.0,
+        2600.0,
+        1010.0,
+        0.41999998688697815
+      ],
+      [
+        8200.0,
+        8400.0,
+        300.0,
+        0.14000000059604645
+      ],
+      [
+        4200.0,
+        3600.0,
+        1420.0,
+        0.3100000023841858
+      ],
+      [
+        13700.0,
+        11800.0,
+        600.0,
+        0.27000001072883606
+      ],
+      [
+        9500.0,
+        13200.0,
+        1240.0,
+        0.38999998569488525
+      ]
+    ],
+    "receivers_m": [
+      [
+        2000.0,
+        2000.0,
+        100.0
+      ],
+      [
+        2000.0,
+        5000.0,
+        100.0
+      ],
+      [
+        2000.0,
+        8000.0,
+        100.0
+      ],
+      [
+        2000.0,
+        11000.0,
+        100.0
+      ],
+      [
+        2000.0,
+        14000.0,
+        100.0
+      ],
+      [
+        5000.0,
+        2000.0,
+        100.0
+      ],
+      [
+        5000.0,
+        5000.0,
+        100.0
+      ],
+      [
+        5000.0,
+        8000.0,
+        100.0
+      ],
+      [
+        5000.0,
+        11000.0,
+        100.0
+      ],
+      [
+        5000.0,
+        14000.0,
+        100.0
+      ],
+      [
+        8000.0,
+        2000.0,
+        100.0
+      ],
+      [
+        8000.0,
+        5000.0,
+        100.0
+      ],
+      [
+        8000.0,
+        8000.0,
+        100.0
+      ],
+      [
+        8000.0,
+        11000.0,
+        100.0
+      ],
+      [
+        8000.0,
+        14000.0,
+        100.0
+      ],
+      [
+        11000.0,
+        2000.0,
+        100.0
+      ],
+      [
+        11000.0,
+        5000.0,
+        100.0
+      ],
+      [
+        11000.0,
+        8000.0,
+        100.0
+      ],
+      [
+        11000.0,
+        11000.0,
+        100.0
+      ],
+      [
+        11000.0,
+        14000.0,
+        100.0
+      ],
+      [
+        14000.0,
+        2000.0,
+        100.0
+      ],
+      [
+        14000.0,
+        5000.0,
+        100.0
+      ],
+      [
+        14000.0,
+        8000.0,
+        100.0
+      ],
+      [
+        14000.0,
+        11000.0,
+        100.0
+      ],
+      [
+        14000.0,
+        14000.0,
+        100.0
+      ]
+    ],
+    "branches": {
+      "waveform_only": {
+        "estimated_source_m_s": [
+          [
+            3289.757080078125,
+            4512.80712890625,
+            237.54112243652344,
+            0.5
+          ],
+          [
+            12759.4482421875,
+            8953.70703125,
+            945.4276123046875,
+            0.45468243956565857
+          ],
+          [
+            4492.4208984375,
+            12064.37109375,
+            801.33251953125,
+            0.2896044850349426
+          ],
+          [
+            9551.42578125,
+            6286.28759765625,
+            839.1432495117188,
+            0.5
+          ],
+          [
+            8219.54296875,
+            7735.634765625,
+            779.4511108398438,
+            0.05000000074505806
+          ],
+          [
+            3503.707275390625,
+            5572.7236328125,
+            265.17535400390625,
+            0.3088074326515198
+          ],
+          [
+            3191.32958984375,
+            12716.388671875,
+            382.91558837890625,
+            0.5
+          ],
+          [
+            7116.39111328125,
+            13016.5634765625,
+            929.3773193359375,
+            0.4985167682170868
+          ]
+        ],
+        "location_error_m": [
+          2699.3990702279093,
+          2385.2624919272607,
+          1312.7937597767375,
+          4041.7453205946654,
+          819.5342945595823,
+          2389.577798022257,
+          10550.784218673189,
+          2410.7523167505956
+        ],
+        "origin_time_error_s": [
+          0.3199999928474426,
+          0.09468242526054382,
+          0.04960449039936066,
+          0.08000001311302185,
+          0.08999999985098839,
+          0.0011925697326660156,
+          0.22999998927116394,
+          0.10851678252220154
+        ]
+      },
+      "hybrid": {
+        "estimated_source_m_s": [
+          [
+            3260.625,
+            7195.10595703125,
+            553.6685791015625,
+            0.24357835948467255
+          ],
+          [
+            12792.6962890625,
+            6567.70947265625,
+            922.3184204101562,
+            0.38070249557495117
+          ],
+          [
+            5994.05712890625,
+            12013.705078125,
+            766.6077270507812,
+            0.22303535044193268
+          ],
+          [
+            11673.8798828125,
+            2451.98291015625,
+            1199.8541259765625,
+            0.36053216457366943
+          ],
+          [
+            8198.48828125,
+            8287.4794921875,
+            596.200927734375,
+            0.10408743470907211
+          ],
+          [
+            4074.250244140625,
+            3239.1162109375,
+            180.64373779296875,
+            0.3097734749317169
+          ],
+          [
+            13711.2060546875,
+            11685.177734375,
+            886.6417846679688,
+            0.23555856943130493
+          ],
+          [
+            9268.9365234375,
+            13374.5234375,
+            774.5192260742188,
+            0.3482925593852997
+          ]
+        ],
+        "location_error_m": [
+          215.55742367787266,
+          409.02358451129214,
+          225.77361817678408,
+          531.522145700935,
+          316.85665459741637,
+          1296.9402665422117,
+          308.9874448299728,
+          548.1980584902775
+        ],
+        "origin_time_error_s": [
+          0.06357835233211517,
+          0.020702481269836426,
+          0.016964644193649292,
+          0.059467822313308716,
+          0.035912565886974335,
+          0.00022652745246887207,
+          0.03444144129753113,
+          0.04170742630958557
+        ]
+      }
+    }
+  },
+  "stress": [
+    {
+      "condition": "clean",
+      "trial_count": 8,
+      "failures": 0,
+      "branches": {
+        "waveform_only": {
+          "mean_location_error_m": 3326.2311588165244,
+          "median_location_error_m": 2400.1650573864263,
+          "events_below_500_m": 0,
+          "mean_origin_time_error_s": 0.1217495328746736,
+          "median_origin_time_error_s": 0.0923412125557661,
+          "events_origin_below_0_05_s": 2
+        },
+        "hybrid": {
+          "mean_location_error_m": 481.6073995658453,
+          "median_location_error_m": 362.9401195543543,
+          "events_below_500_m": 5,
+          "mean_origin_time_error_s": 0.03412515763193369,
+          "median_origin_time_error_s": 0.03517700359225273,
+          "events_origin_below_0_05_s": 6
+        }
+      }
+    },
+    {
+      "condition": "noise:20.0",
+      "trial_count": 24,
+      "failures": 0,
+      "branches": {
+        "waveform_only": {
+          "successful_trials": 24,
+          "failure_count": 0,
+          "failure_rate": 0.0,
+          "median_location_error_m": 2390.4308135061656,
+          "mean_location_error_m": 3259.6319664127095,
+          "median_origin_time_error_s": 0.08999999985098839,
+          "events_below_500_m": 0
+        },
+        "hybrid": {
+          "successful_trials": 24,
+          "failure_count": 0,
+          "failure_rate": 0.0,
+          "median_location_error_m": 547.3758810145015,
+          "mean_location_error_m": 653.8645705876156,
+          "median_origin_time_error_s": 0.15451785176992416,
+          "events_below_500_m": 7
+        }
+      }
+    },
+    {
+      "condition": "noise:10.0",
+      "trial_count": 24,
+      "failures": 0,
+      "branches": {
+        "waveform_only": {
+          "successful_trials": 24,
+          "failure_count": 0,
+          "failure_rate": 0.0,
+          "median_location_error_m": 2403.6631781894544,
+          "mean_location_error_m": 3234.1141709082317,
+          "median_origin_time_error_s": 0.08999999985098839,
+          "events_below_500_m": 0
+        },
+        "hybrid": {
+          "successful_trials": 24,
+          "failure_count": 0,
+          "failure_rate": 0.0,
+          "median_location_error_m": 636.5864869987295,
+          "mean_location_error_m": 716.4051351186426,
+          "median_origin_time_error_s": 0.19601677358150482,
+          "events_below_500_m": 6
+        }
+      }
+    },
+    {
+      "condition": "noise:5.0",
+      "trial_count": 24,
+      "failures": 11,
+      "branches": {
+        "waveform_only": {
+          "successful_trials": 13,
+          "failure_count": 11,
+          "failure_rate": 0.4583333333333333,
+          "median_location_error_m": 2401.752298493308,
+          "mean_location_error_m": 2416.7824735410645,
+          "median_origin_time_error_s": 0.08000001311302185,
+          "events_below_500_m": 0
+        },
+        "hybrid": {
+          "successful_trials": 13,
+          "failure_count": 11,
+          "failure_rate": 0.4583333333333333,
+          "median_location_error_m": 710.919279925449,
+          "mean_location_error_m": 799.2324969722862,
+          "median_origin_time_error_s": 0.17915061116218567,
+          "events_below_500_m": 3
+        }
+      }
+    },
+    {
+      "condition": "missing_receivers:20.0",
+      "trial_count": 24,
+      "failures": 3,
+      "branches": {
+        "waveform_only": {
+          "successful_trials": 21,
+          "failure_count": 3,
+          "failure_rate": 0.125,
+          "median_location_error_m": 1294.5538894776594,
+          "mean_location_error_m": 1685.4294161273547,
+          "median_origin_time_error_s": 0.04819841682910919,
+          "events_below_500_m": 4
+        },
+        "hybrid": {
+          "successful_trials": 21,
+          "failure_count": 3,
+          "failure_rate": 0.125,
+          "median_location_error_m": 364.0443454923018,
+          "mean_location_error_m": 495.0073488332051,
+          "median_origin_time_error_s": 0.0313740074634552,
+          "events_below_500_m": 14
+        }
+      }
+    },
+    {
+      "condition": "missing_receivers:40.0",
+      "trial_count": 24,
+      "failures": 7,
+      "branches": {
+        "waveform_only": {
+          "successful_trials": 17,
+          "failure_count": 7,
+          "failure_rate": 0.2916666666666667,
+          "median_location_error_m": 781.2339588898919,
+          "mean_location_error_m": 1840.9020636345895,
+          "median_origin_time_error_s": 0.09122061729431152,
+          "events_below_500_m": 2
+        },
+        "hybrid": {
+          "successful_trials": 17,
+          "failure_count": 7,
+          "failure_rate": 0.2916666666666667,
+          "median_location_error_m": 302.4834802658815,
+          "mean_location_error_m": 436.7430941131464,
+          "median_origin_time_error_s": 0.03267146646976471,
+          "events_below_500_m": 14
+        }
+      }
+    }
+  ],
+  "velocity_bias": {
+    "factors_percent": [
+      90,
+      95,
+      100,
+      105,
+      110
+    ],
+    "points": [
+      {
+        "velocity_percent": 90,
+        "branches": {
+          "waveform_only": {
+            "median_location_error_m": 1560.0354160507063,
+            "mean_location_error_m": 1951.979009171972,
+            "median_origin_time_error_s": 0.060659751296043396,
+            "mean_origin_time_error_s": 0.0961479521356523,
+            "events_below_500_m": 0
+          },
+          "hybrid": {
+            "median_location_error_m": 442.61265289845494,
+            "mean_location_error_m": 498.41695785081345,
+            "median_origin_time_error_s": 0.11705335229635239,
+            "mean_origin_time_error_s": 0.11646649846807122,
+            "events_below_500_m": 5
+          }
+        }
+      },
+      {
+        "velocity_percent": 95,
+        "branches": {
+          "waveform_only": {
+            "median_location_error_m": 1171.2017320844643,
+            "mean_location_error_m": 2342.1912687789763,
+            "median_origin_time_error_s": 0.07456613704562187,
+            "mean_origin_time_error_s": 0.10939542669802904,
+            "events_below_500_m": 1
+          },
+          "hybrid": {
+            "median_location_error_m": 328.8115060106726,
+            "mean_location_error_m": 412.5879236697177,
+            "median_origin_time_error_s": 0.04935382306575775,
+            "mean_origin_time_error_s": 0.05613211588934064,
+            "events_below_500_m": 6
+          }
+        }
+      },
+      {
+        "velocity_percent": 100,
+        "branches": {
+          "waveform_only": {
+            "mean_location_error_m": 3326.2311588165244,
+            "median_location_error_m": 2400.1650573864263,
+            "events_below_500_m": 0,
+            "mean_origin_time_error_s": 0.1217495328746736,
+            "median_origin_time_error_s": 0.0923412125557661,
+            "events_origin_below_0_05_s": 2
+          },
+          "hybrid": {
+            "mean_location_error_m": 481.6073995658453,
+            "median_location_error_m": 362.9401195543543,
+            "events_below_500_m": 5,
+            "mean_origin_time_error_s": 0.03412515763193369,
+            "median_origin_time_error_s": 0.03517700359225273,
+            "events_origin_below_0_05_s": 6
+          }
+        }
+      },
+      {
+        "velocity_percent": 105,
+        "branches": {
+          "waveform_only": {
+            "median_location_error_m": 1503.1307455736219,
+            "mean_location_error_m": 2502.9004882880154,
+            "median_origin_time_error_s": 0.06851564347743988,
+            "mean_origin_time_error_s": 0.11094537749886513,
+            "events_below_500_m": 1
+          },
+          "hybrid": {
+            "median_location_error_m": 361.08670450740306,
+            "mean_location_error_m": 344.04044436060315,
+            "median_origin_time_error_s": 0.013885781168937683,
+            "mean_origin_time_error_s": 0.02674928680062294,
+            "events_below_500_m": 6
+          }
+        }
+      },
+      {
+        "velocity_percent": 110,
+        "branches": {
+          "waveform_only": {
+            "median_location_error_m": 1107.1102217268285,
+            "mean_location_error_m": 3717.1872048959594,
+            "median_origin_time_error_s": 0.08728620409965515,
+            "mean_origin_time_error_s": 0.11232662200927734,
+            "events_below_500_m": 1
+          },
+          "hybrid": {
+            "median_location_error_m": 289.9011227327512,
+            "mean_location_error_m": 438.71082461830065,
+            "median_origin_time_error_s": 0.04963245987892151,
+            "mean_origin_time_error_s": 0.05602910928428173,
+            "events_below_500_m": 7
+          }
+        }
+      }
+    ]
+  },
+  "independent_geology": {
+    "event_order": [
+      "layered_west_shallow",
+      "layered_center_deep",
+      "layered_east_mid",
+      "layered_north_deep"
+    ],
+    "section_y_m": 8000,
+    "section_y_index": 200,
+    "velocity_clim_m_s": [
+      2200,
+      6200
+    ],
+    "branches": {
+      "waveform_only": {
+        "location_error_m": [
+          1595.4336315094417,
+          90.32917131975354,
+          1046.0845965970625,
+          1022.0506761234216
+        ],
+        "origin_time_error_s": [
+          0.24097913146018982,
+          0.023412318229675266,
+          0.11542949557304383,
+          0.07
+        ]
+      },
+      "hybrid": {
+        "location_error_m": [
+          595.77214837219,
+          80.05671386531128,
+          311.4077401968257,
+          141.2346939902465
+        ],
+        "origin_time_error_s": [
+          0.0754099154472351,
+          0.019743473529815647,
+          0.029648358821868892,
+          0.014119513034820563
+        ]
+      }
+    }
+  }
+}

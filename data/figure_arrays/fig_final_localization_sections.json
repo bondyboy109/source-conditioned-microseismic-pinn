@@ -1,0 +1,56 @@
+{
+  "role": "post hoc source-localization projections on fixed input velocity sections",
+  "event": "confirm_05_center_shallow.npz",
+  "selection": "rank 4 of 8 archived hybrid location errors",
+  "result_sha256": "a8fcdfbe2413f0332a819ae5de6853ebaba12e4ed4822b1940f2ad442d807e2d",
+  "velocity_sha256": "04cafefb221510f9a276c833b2877249e9d372b37b0526ee850e504a8a2d85d8",
+  "shape": [
+    401,
+    401,
+    94
+  ],
+  "assigned_spacing_m": 40.0,
+  "plane_y_m": 8400.0,
+  "plane_x_m": 8200.0,
+  "velocity_color_limits_m_s": [
+    2200,
+    6200
+  ],
+  "depth_direction": "positive downward",
+  "truth_source_m_s": [
+    8200.0,
+    8400.0,
+    300.0,
+    0.14000000059604645
+  ],
+  "estimates_m_s": {
+    "fmm": [
+      8207.407407407409,
+      8414.814814814816,
+      492.59259259259267,
+      0.16301914829022063
+    ],
+    "hybrid": [
+      8198.48828125,
+      8287.4794921875,
+      596.200927734375,
+      0.10408743470907211
+    ],
+    "waveform_only": [
+      8219.54296875,
+      7735.634765625,
+      779.4511108398438,
+      0.05000000074505806
+    ]
+  },
+  "location_errors_m": {
+    "fmm": 193.30353112148003,
+    "hybrid": 316.85665459741637,
+    "waveform_only": 819.5342945595823
+  },
+  "projection_note": "markers are orthogonal projections; estimated sources need not lie in the section planes",
+  "velocity_note": "fixed input volume; not a new MoE velocity prediction",
+  "new_training": false,
+  "new_localization": false,
+  "script_sha256": "3c2553866e5bc948f1f6c015fe1f5e363a351be2e12d5177e808bbd5c406b6be"
+}

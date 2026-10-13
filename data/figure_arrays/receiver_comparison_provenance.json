@@ -1,0 +1,33 @@
+{
+  "role": "post hoc current-checkpoint receiver reconstruction, not a new acceptance metric",
+  "event": "confirm_05_center_shallow.npz",
+  "selection": "rank 4 of the 8 archived hybrid location errors",
+  "location_error_m": 316.85665459741637,
+  "estimated_source_m_s": [
+    8198.48828125,
+    8287.4794921875,
+    596.200927734375,
+    0.10408743470907211
+  ],
+  "relative_l2_full_record": 0.6110305614915147,
+  "nr_nt": [
+    25,
+    1001
+  ],
+  "dt_s": 0.0020000000949949026,
+  "window_s": [
+    0.0,
+    2.0
+  ],
+  "trace_receiver_number_1_based": 13,
+  "shared_display_limit_abs": 5.229610919952392e-06,
+  "wiggle_gain_receiver_units_per_1e_minus_6": 0.08604846648975878,
+  "visual_style": "Times New Roman; 2x2; white-background blue/orange wiggle gathers; OrRd absolute residual",
+  "display_scale": "one common wiggle gain; no per-receiver normalization; no trace clipping or fitted amplitude/time shift",
+  "display_clipping": "residual colors only: pooled FD/MoE 99.5th-percentile threshold, with extended colorbar; wiggle traces and profile are not clipped",
+  "checkpoint_sha256": "61e36ef179d092aff71c1cd7f6648e6adfa2c19e5c8da12f0a19813ce97387eb",
+  "observation_sha256": "c5bcb52a630e8e738c7951c9c44fb08eb3a2b89f4edde9cc1a072c792dc04da4",
+  "result_sha256": "a8fcdfbe2413f0332a819ae5de6853ebaba12e4ed4822b1940f2ad442d807e2d",
+  "new_training": false,
+  "new_localization": false
+}
